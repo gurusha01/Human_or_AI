@@ -190,8 +190,24 @@
 
             const pdf_src = pdfViewer.querySelector('iframe');
             pdf_src.src = 'data/'+conference+'/dev/pdfs/'+paper_no+".pdf"
+            
+            fetch('data/'+conference+'/dev/reviews_llm/'+paper_no+".json")
+                .then(response => response.json())
+                .then(data => {
+                    const textLeft = document.getElementById('textLeft');
+                    textLeft.innerHTML = '';
+                    const reviews = data.reviews[0];
+                        // Create a new paragraph element
+                        const para = document.createElement('p');
+                        
+                        // Construct the text content from the JSON data
+                        para.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
+                        
+                        // Append the paragraph to the textLeft div
+                        textLeft.appendChild(para);
+                })
+                .catch(error => console.error('Error fetching file names:', error));
 
-            // Add code for llm response
             // Add code to randomly assign side to llm and human response
         }
 
