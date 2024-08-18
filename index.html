@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Evaluation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            padding: 10px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .dropdown-container {
+            display: flex;
+            justify-content: left;
+            margin: 20px;
+        }
+        .dropdown-container div {
+            margin: 0 15px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .text-region {
+            width: 40%;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow-y: auto;
+            height: 600px;
+        }
+        .sidebar {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            border-radius: 10px 0 0 10px;
+        }
+        .pdf-viewer {
+            display: none;
+            position: fixed;
+            top: 10%;
+            right: 40px;
+            width: 800px;
+            height: 90%;
+            border: 2px solid #ddd;
+            background-color: #fff;
+            z-index: 1000;
+            overflow-y: scroll;
+        }
+        .pdf-viewer iframe {
+            width: 100%;
+            height: 100%;
+        }
+        .options {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .options button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Paper Evaluation</h1>
+    </div>
+
+    <div class="dropdown-container">
+        <div>
+            <label for="paper">Conference:</label>
+            <select id="paper" name="paper">
+                <option value="iclr_2017">ICLR</option>
+                <option value="conll_2016">CoNLL</option>
+                <option value="acl_2017">ACL</option>
+            </select>
+            
+        </div>
+        <button onclick="loadPapers()">Load Papers</button>
+        <div>
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+            </select>
+        </div>
+
+        <button onclick="loadReviews()">Show Reviews</button>
+    </div>
+
+    <div class="content">
+        <div class="text-region" id="textLeft">
+            <p>Left Text Region</p>
+            <!-- Populate this region with the required content -->
+        </div>
+        <div class="text-region" id="textRight">
+            <p>Right Text Region</p>
+            <!-- Populate this region with the required content -->
+        </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        PAPER
+    </div>
+
+    <div class="pdf-viewer" id="pdfViewer">
+        <iframe src="data\acl_2017\dev\pdfs\37.pdf"></iframe>
+    </div>
+
+    <div class="options">
+        <button onclick="saveAnswer('Right Human Left LLM')">Right Human Left LLM</button>
+        <button onclick="saveAnswer('Right LLM Left Human')">Right LLM Left Human</button>
+        <button onclick="saveAnswer('Indeterminate')">Indeterminate</button>
+        <button onclick="saveAnswer('Dont have subject knowledge')">Don't have subject knowledge</button>
+    </div>
+
+    <script>
+        const paperDropdown = document.getElementById('paper');
+        const yearDropdown = document.getElementById('year');
+        const sidebar = document.getElementById('sidebar');
+        const pdfViewer = document.getElementById('pdfViewer');
+
+        sidebar.addEventListener('click', () => {
+            pdfViewer.style.display = pdfViewer.style.display === 'none' ? 'block' : 'none';
+        });
+
+        function saveAnswer(answer) {
+            const paper = paperDropdown.value;
+            const year = yearDropdown.value;
+            const data = { paper, year, answer };
+            console.log(data);
+
+            // Save the data to a JSONL file using JavaScript (browser environment won't allow direct file write)
+            // Here we just log it to console. In a real scenario, you would send this to a server-side script.
+        }
+
+        function loadPapers() {
+            const conference = paperDropdown.value;
+            fetch('data/'+conference+'/dev/papers.json')
+                .then(response => response.json())
+                .then(data => {
+                    const select = document.getElementById('year');
+                    select.innerHTML = '';
+                    // Iterate over the keys in the JSON object
+                    for (const [key, value] of Object.entries(data)) {
+                        const opt = document.createElement('option');
+                        opt.value = value;  // The key (e.g., "paper_1") will be the value of the option
+                        opt.textContent = value;  // The file name (e.g., "file1.txt") will be the visible text
+                        select.appendChild(opt);
+                    }
+                })
+                .catch(error => console.error('Error fetching file names:', error));
+        }
+
+        function loadReviews() {
+            const conference = paperDropdown.value;
+            const paper_no = yearDropdown.value;
+            fetch('data/'+conference+'/dev/reviews/'+paper_no+".json")
+                .then(response => response.json())
+                .then(data => {
+                    const textLeft = document.getElementById('textLeft');
+                    textLeft.innerHTML = '';
+                    const reviews = data.reviews[0];
+                        // Create a new paragraph element
+                        const para = document.createElement('p');
+                        
+                        // Construct the text content from the JSON data
+                        para.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
+                        
+                        // Append the paragraph to the textLeft div
+                        textLeft.appendChild(para);
+                })
+                .catch(error => console.error('Error fetching file names:', error));
+
+            const pdf_src = pdfViewer.querySelector('iframe');
+            pdf_src.src = 'data/'+conference+'/dev/pdfs/'+paper_no+".pdf"
+
+            // Add code for llm response
+            // Add code to randomly assign side to llm and human response
+        }
+
+            
+        
+    </script>
+</body>
+</html>
