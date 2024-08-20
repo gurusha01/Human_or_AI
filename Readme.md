@@ -58,5 +58,3 @@ To interact with the data and AI-generated reviews via the WebUI:
    - Click on the "PAPER" tab located at the right end of the interface.
 
 5. Finally, select the appropriate answers and view your score.
-
-### NOTE: as of now the web UI contains code to display ony dev folder papers.
