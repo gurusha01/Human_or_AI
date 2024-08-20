@@ -71,11 +71,16 @@
         .options {
             display: flex;
             justify-content: space-around;
-            margin: 20px 0;
+            margin: 20px 20px;
         }
         .options button {
             padding: 10px 20px;
             font-size: 16px;
+        }
+        #result {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -88,9 +93,10 @@
         <div>
             <label for="paper">Conference:</label>
             <select id="paper" name="paper">
+                
+                <option value="acl_2017">ACL</option>
                 <option value="iclr_2017">ICLR</option>
                 <option value="conll_2016">CoNLL</option>
-                <option value="acl_2017">ACL</option>
             </select>
             
         </div>
@@ -105,6 +111,7 @@
     </div>
 
     <div class="content">
+        
         <div class="text-region" id="textLeft">
             <p>Left Text Region</p>
             <!-- Populate this region with the required content -->
@@ -126,32 +133,25 @@
     <div class="options">
         <button onclick="saveAnswer('Right Human Left LLM')">Right Human Left LLM</button>
         <button onclick="saveAnswer('Right LLM Left Human')">Right LLM Left Human</button>
-        <button onclick="saveAnswer('Indeterminate')">Indeterminate</button>
-        <button onclick="saveAnswer('Dont have subject knowledge')">Don't have subject knowledge</button>
+        <!-- <button onclick="saveAnswer('Indeterminate')">Indeterminate</button>
+        <button onclick="saveAnswer('Dont have subject knowledge')">Don't have subject knowledge</button> -->
     </div>
+    <div id="result"></div>
 
     <script>
         const paperDropdown = document.getElementById('paper');
         const yearDropdown = document.getElementById('year');
         const sidebar = document.getElementById('sidebar');
         const pdfViewer = document.getElementById('pdfViewer');
+        const randomPosition = Math.random() < 0.5;
 
         sidebar.addEventListener('click', () => {
             pdfViewer.style.display = pdfViewer.style.display === 'none' ? 'block' : 'none';
         });
 
-        function saveAnswer(answer) {
-            const paper = paperDropdown.value;
-            const year = yearDropdown.value;
-            const data = { paper, year, answer };
-            console.log(data);
-
-            // Save the data to a JSONL file using JavaScript (browser environment won't allow direct file write)
-            // Here we just log it to console. In a real scenario, you would send this to a server-side script.
-        }
-
         function loadPapers() {
             const conference = paperDropdown.value;
+            
             fetch('data/'+conference+'/dev/papers.json')
                 .then(response => response.json())
                 .then(data => {
@@ -169,47 +169,64 @@
         }
 
         function loadReviews() {
+            // extract conference and paper number
             const conference = paperDropdown.value;
             const paper_no = yearDropdown.value;
+
+            // set right and left text to blank
+            const textLeft = document.getElementById('textLeft');
+            textLeft.innerHTML = '';
+            const textRight = document.getElementById('textRight');
+            textRight.innerHTML = '';
+            const llm_text = document.createElement('p');
+            const human_text = document.createElement('p');
+
+            // set llm_text and human_text
             fetch('data/'+conference+'/dev/reviews/'+paper_no+".json")
                 .then(response => response.json())
                 .then(data => {
-                    const textLeft = document.getElementById('textLeft');
-                    textLeft.innerHTML = '';
                     const reviews = data.reviews[0];
-                        // Create a new paragraph element
-                        const para = document.createElement('p');
+                    
+                    human_text.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
                         
-                        // Construct the text content from the JSON data
-                        para.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
-                        
-                        // Append the paragraph to the textLeft div
-                        textLeft.appendChild(para);
                 })
                 .catch(error => console.error('Error fetching file names:', error));
-
-            const pdf_src = pdfViewer.querySelector('iframe');
-            pdf_src.src = 'data/'+conference+'/dev/pdfs/'+paper_no+".pdf"
             
             fetch('data/'+conference+'/dev/reviews_llm/'+paper_no+".json")
                 .then(response => response.json())
                 .then(data => {
-                    const textLeft = document.getElementById('textLeft');
-                    textLeft.innerHTML = '';
                     const reviews = data.reviews[0];
-                        // Create a new paragraph element
-                        const para = document.createElement('p');
-                        
-                        // Construct the text content from the JSON data
-                        para.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
-                        
-                        // Append the paragraph to the textLeft div
-                        textLeft.appendChild(para);
+                    
+                    llm_text.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
                 })
                 .catch(error => console.error('Error fetching file names:', error));
 
             // Add code to randomly assign side to llm and human response
+            
+            const leftText = randomPosition ? human_text : llm_text;
+            const rightText = randomPosition ? llm_text : human_text;
+            textLeft.appendChild(leftText);
+            textRight.appendChild(rightText);
+
+            // add code to tell if the chosen answer is correct
+
+            // Update the pdf
+            const pdf_src = pdfViewer.querySelector('iframe');
+            pdf_src.src = 'data/'+conference+'/dev/pdfs/'+paper_no+".pdf"
+
+            
         }
+
+        function saveAnswer(answer) {
+            const trueAnswer = randomPosition? "Left Human Right LLM": "Right Human Left LLM";
+            const isCorrect = answer === trueAnswer; 
+            if (isCorrect) {
+                document.getElementById('result').innerText = "CORRECT!";
+            } else {
+                document.getElementById('result').innerText = "INCORRECT! Try Again.";
+            }       
+
+       }
 
             
         
