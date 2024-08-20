@@ -100,9 +100,21 @@
             </select>
             
         </div>
+
+        <div>
+            <label for="split">Split:</label>
+            <select id="split" name="split">
+                
+                <option value="train">train</option>
+                <option value="test">test</option>
+                <option value="dev">dev</option>
+            </select>
+            
+        </div>
+
         <button onclick="loadPapers()">Load Papers</button>
         <div>
-            <label for="year">Year:</label>
+            <label for="year">Number:</label>
             <select id="year" name="year">
             </select>
         </div>
@@ -140,6 +152,7 @@
 
     <script>
         const paperDropdown = document.getElementById('paper');
+        const splitDropdown = document.getElementById('split');
         const yearDropdown = document.getElementById('year');
         const sidebar = document.getElementById('sidebar');
         const pdfViewer = document.getElementById('pdfViewer');
@@ -151,8 +164,10 @@
 
         function loadPapers() {
             const conference = paperDropdown.value;
+            const split = splitDropdown.value;
+            console.log(`data/${conference}/${split}/papers.json`)
             
-            fetch('data/'+conference+'/dev/papers.json')
+            fetch(`data/${conference}/${split}/papers.json`)
                 .then(response => response.json())
                 .then(data => {
                     const select = document.getElementById('year');
@@ -172,6 +187,7 @@
             // extract conference and paper number
             const conference = paperDropdown.value;
             const paper_no = yearDropdown.value;
+            const split = splitDropdown.value;
 
             // set right and left text to blank
             const textLeft = document.getElementById('textLeft');
@@ -182,7 +198,7 @@
             const human_text = document.createElement('p');
 
             // set llm_text and human_text
-            fetch('data/'+conference+'/dev/reviews/'+paper_no+".json")
+            fetch(`data/${conference}/${split}/reviews/${paper_no}.json`)
                 .then(response => response.json())
                 .then(data => {
                     const reviews = data.reviews[0];
@@ -192,7 +208,7 @@
                 })
                 .catch(error => console.error('Error fetching file names:', error));
             
-            fetch('data/'+conference+'/dev/reviews_llm/'+paper_no+".json")
+            fetch(`data/${conference}/${split}/reviews_llm/${paper_no}.json`)
                 .then(response => response.json())
                 .then(data => {
                     const reviews = data.reviews[0];
@@ -212,7 +228,7 @@
 
             // Update the pdf
             const pdf_src = pdfViewer.querySelector('iframe');
-            pdf_src.src = 'data/'+conference+'/dev/pdfs/'+paper_no+".pdf"
+            pdf_src.src = `data/${conference}/${split}/pdfs/${paper_no}.pdf`;
 
             
         }

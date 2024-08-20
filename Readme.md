@@ -50,7 +50,7 @@ To interact with the data and AI-generated reviews via the WebUI:
 2. Open your web browser and navigate to [http://localhost:8000/](http://localhost:8000/).
 
 3. In the WebUI:
-   - Select the conference name.
+   - Select the conference name and split.
    - Click the 'Load Papers' button.
    - Select the desired paper number and click "Load Reviews" to view the reviews.
 
