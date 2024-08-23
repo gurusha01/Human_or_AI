@@ -156,7 +156,7 @@
         const yearDropdown = document.getElementById('year');
         const sidebar = document.getElementById('sidebar');
         const pdfViewer = document.getElementById('pdfViewer');
-        const randomPosition = Math.random() < 0.5;
+        let randomPosition = Math.random() < 0.5;
 
         sidebar.addEventListener('click', () => {
             pdfViewer.style.display = pdfViewer.style.display === 'none' ? 'block' : 'none';
@@ -184,6 +184,8 @@
         }
 
         function loadReviews() {
+            randomPosition = Math.random() < 0.5;
+            document.getElementById('result').innerText = ""
             // extract conference and paper number
             const conference = paperDropdown.value;
             const paper_no = yearDropdown.value;
@@ -234,12 +236,12 @@
         }
 
         function saveAnswer(answer) {
-            const trueAnswer = randomPosition? "Left Human Right LLM": "Right Human Left LLM";
+            const trueAnswer = randomPosition? "Right LLM Left Human": "Right Human Left LLM";
             const isCorrect = answer === trueAnswer; 
             if (isCorrect) {
                 document.getElementById('result').innerText = "CORRECT!";
             } else {
-                document.getElementById('result').innerText = "INCORRECT! Try Again.";
+                document.getElementById('result').innerText = `INCORRECT! Try Again.`;
             }       
 
        }

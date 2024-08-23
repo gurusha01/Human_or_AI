@@ -20,7 +20,7 @@ def generate_review(paper_address, paper_number,  language_model, prompt_templat
         prompts = yaml.safe_load(f)
     prompt_template = prompts.get(prompt_template_name, None)
     Prompt = make_prompt(prompt_template, PaperString)
-    LLMReview = llm_call(Prompt, language_model, 0)
+    LLMReview = llm_call(Prompt, language_model, 0.7)
     ExtractedReview = extract_answer(LLMReview)
     write_review(paper_address, paper_number, ExtractedReview)
 
