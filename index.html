@@ -243,7 +243,21 @@
             } else {
                 document.getElementById('result').innerText = `INCORRECT! Try Again.`;
             }       
-
+            // Send answer to the server
+            fetch('/save-answer', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ answer, isCorrect })
+            })
+            .then(response => response.text())
+            .then(data => {
+                console.log(data); // Handle response from server
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
        }
 
             
