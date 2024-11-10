@@ -3,6 +3,7 @@ import re
 import os
 from openai import AzureOpenAI, OpenAI
 import time
+import yaml
 
 def clean_text(text):
     
@@ -29,29 +30,87 @@ def get_paper(paper_address, paper_number):
             final_string += "##"+heading + "\n\n" + text
     return final_string
 
-def make_prompt(prompt_template, paper_contents):
+def summarize(comments, level, llm_name, temperature):
+    if(level =="3"):
+        prompt_template = "summarization_3_prompt"
+    if(level =="4"):
+        prompt_template = "summarization_4_prompt"
+    
+    prompt_path = "AI_generation/prompts.yaml"
+    with open(prompt_path) as f:
+        prompts = yaml.safe_load(f)
+    prompt_template = prompts.get(prompt_template, None)
+
+    summarization_prompt = make_prompt(prompt_template=prompt_template, paper_contents= "", human_input=comments)
+
+    summarized_comments = llm_call(summarization_prompt, llm_name, temperature=temperature)
+    summarized_comments = extract_answer(summarized_comments)
+    return summarized_comments
+
+def get_human_review(paper_address, paper_number, level, llm_name, temperature):
+    final_address = f'{paper_address}/reviews/{paper_number}.json'
+    with open(final_address, "r", encoding='utf-8') as file:
+        data = json.load(file)
+    # Extracting the comments section from the reviews
+    reviews = data.get('reviews', [])
+    comments_string = ""
+
+    comments = reviews[0].get('comments', "")
+    if comments:
+        comments_string += comments + "\n\n"  
+        if(level=="3" or level =="4"):
+            comments_string = summarize(comments_string, level, llm_name, temperature)
+
+    return comments_string
+
+
+def make_prompt(prompt_template, paper_contents, human_input):
     formatted_prompt = prompt_template.format(
             PaperInPromptFormat=paper_contents,
+            HumanInput = human_input
         )
     return formatted_prompt
 
+# complete this
 def llm_call(prompt, llm_name, temperature):
-    api_key = os.environ.get("OPENAI_API_KEY")
-    api_endpoint = os.environ.get("OPENAI_ENDPOINT")
-    api_version = os.environ.get("OPENAI_VERSION")
-
-    client = AzureOpenAI(api_key=api_key, azure_endpoint=api_endpoint, api_version=api_version)
     
-    while True:
+    # api_key = os.environ.get("OPENAI_API_KEY")
+    # api_endpoint = os.environ.get("OPENAI_ENDPOINT")
+    # api_version = os.environ.get("OPENAI_VERSION")
+
+    # client = AzureOpenAI(api_key=api_key, azure_endpoint=api_endpoint, api_version=api_version)
+    
+    # while True:
+    #     try:
+    #         messages = [{"role": "user", "content": prompt}]
+    #         response = client.chat.completions.create(model = llm_name, temperature= temperature, messages=messages)
+    #         # print(response)
+    #         return response.choices[0].message.content
+    #     except Exception as e:
+    #         pass
+    #         print(f"Got error {e}. Sleeping for 5 seconds...")
+    #         time.sleep(5)    
+      
+    # populate this
+    client = OpenAI(
+    api_key = "",
+    organization='',
+    project='',
+    )
+    messages = [{"role": "user", "content": prompt}]
+    complete = False
+    while(not complete):
         try:
-            messages = [{"role": "user", "content": prompt}]
-            response = client.chat.completions.create(model = llm_name, temperature= temperature, messages=messages)
-            # print(response)
-            return response.choices[0].message.content
-        except Exception as e:
-            pass
-            print(f"Got error {e}. Sleeping for 5 seconds...")
-            time.sleep(5)      
+            result = client.chat.completions.create(
+                model=llm_name,
+                messages=messages,
+                temperature=temperature
+            )
+            complete = True
+        except Exception as e: 
+            print(e)
+    final_answer = result.choices[0].message.content
+    return final_answer
 
 def extract_answer(answer_string):
     pattern = r"<Answer>(.*?)<\/Answer>"
@@ -59,7 +118,8 @@ def extract_answer(answer_string):
     answer = match.group(1) if match else answer_string
     return answer
 
-def write_review(paper_address, paper_number, Review):
+# changed this added level
+def write_review(paper_address, paper_number, Review, level):
     # Check if the directory 'reviews_llm' exists, and if not, create it
     reviews_llm_dir = os.path.join(paper_address, 'reviews_llm')
     if not os.path.exists(reviews_llm_dir):
@@ -68,18 +128,29 @@ def write_review(paper_address, paper_number, Review):
     # Define the final address for the JSON file
     final_address = os.path.join(reviews_llm_dir, f'{paper_number}.json')
     
-    # Create the JSON object
-    json_object = {
-        "reviews": [
-            {
-                "comments": Review,
-            }
-        ],
+    # Check if the file already exists
+    if os.path.exists(final_address):
+        # Read the existing data from the file
+        with open(final_address, 'r', encoding='utf-8') as json_file:
+            data = json.load(json_file)
+    else:
+        # If the file does not exist, create the structure
+        data = {"reviews": []}
+    
+    # Append the new review to the 'reviews' list
+    new_review = {
+        "level": level,
+        "comments": Review,
+        "GPTZero":";;",
     }
-
-    # Write the JSON object to the final address
+    data["reviews"].append(new_review)
+    
+    # Write the updated data back to the file
     with open(final_address, 'w', encoding='utf-8') as json_file:
-        json.dump(json_object, json_file, ensure_ascii=False, indent=4)
+        json.dump(data, json_file, ensure_ascii=False, indent=4)
 
     return final_address
+
+
+
 
