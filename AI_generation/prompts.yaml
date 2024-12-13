@@ -57,3 +57,89 @@ paper_prompt_3: |
   {PaperInPromptFormat}
   
   Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+
+
+level_1_prompt: |
+  You are a reviewer at an AI conference. 
+  Write a complete review of this research paper. 
+  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
+  Write the review independently based on the paper's content.
+  Here is the paper:
+
+  {PaperInPromptFormat}
+  
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+
+level_3_prompt: |
+  You are a reviewer at an AI conference. 
+  Write a complete review of this research paper. 
+  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
+  
+  You are given the areas to evaluate by your supervisor, you can elaborate on that. 
+
+  Here is the paper:
+
+  {PaperInPromptFormat}
+
+  Areas to evaluate: 
+
+  {HumanInput}
+  
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+
+
+level_4_prompt: |
+  You are a reviewer at an AI conference. 
+  Write a complete review of this research paper. 
+  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
+  
+  You are given the key points to evaluate by your supervisor, you can elaborate on that. 
+
+  Here is the paper:
+
+  {PaperInPromptFormat}
+
+  Key points: 
+
+  {HumanInput}
+  
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+
+level_5_prompt: |
+  You are a helpful assistant that is helping a reviewer write a review at an AI conference. 
+  
+  The reviewer has the following tasks: 
+  Write a complete review of this research paper. 
+  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
+  
+  You are given the review written by thereviewer you have to make it better, you can improve english or robustness of what the reviewer has said. 
+
+  Here is the paper:
+
+  {PaperInPromptFormat}
+
+  Reviewer response: 
+  {HumanInput}
+  
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+
+summarization_3_prompt: |
+  You are given a review written by a reviewer of an AI conference.
+  You need to give the key areas discussed in the review as a short phrase. 
+  For example if there is questions/discussion on efficiency of training, one of the key areas could be efficiency.
+
+  Now summarize the given review: 
+  {HumanInput}
+
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>key areas:...</Answer> 
+
+summarization_4_prompt: |
+  You are given a review written by a reviewer of an AI conference.
+  You need to give the key points discussed in the review as a one or two liner for each point. 
+  For example if there is questions/discussion on efficiency of training, one of the key point could be: using adapters for making training more efficient than full finetuning.
+
+  Now summarize the given review: 
+  {HumanInput}
+
+  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>key points:...</Answer> 
+

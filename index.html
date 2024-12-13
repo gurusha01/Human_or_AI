@@ -93,23 +93,19 @@
         <div>
             <label for="paper">Conference:</label>
             <select id="paper" name="paper">
-                
                 <option value="acl_2017">ACL</option>
                 <option value="iclr_2017">ICLR</option>
                 <option value="conll_2016">CoNLL</option>
             </select>
-            
         </div>
 
         <div>
             <label for="split">Split:</label>
             <select id="split" name="split">
-                
                 <option value="train">train</option>
                 <option value="test">test</option>
                 <option value="dev">dev</option>
             </select>
-            
         </div>
 
         <button onclick="loadPapers()">Load Papers</button>
@@ -123,14 +119,11 @@
     </div>
 
     <div class="content">
-        
         <div class="text-region" id="textLeft">
             <p>Left Text Region</p>
-            <!-- Populate this region with the required content -->
         </div>
         <div class="text-region" id="textRight">
             <p>Right Text Region</p>
-            <!-- Populate this region with the required content -->
         </div>
     </div>
 
@@ -145,10 +138,17 @@
     <div class="options">
         <button onclick="saveAnswer('Right Human Left LLM')">Right Human Left LLM</button>
         <button onclick="saveAnswer('Right LLM Left Human')">Right LLM Left Human</button>
-        <!-- <button onclick="saveAnswer('Indeterminate')">Indeterminate</button>
-        <button onclick="saveAnswer('Dont have subject knowledge')">Don't have subject knowledge</button> -->
     </div>
     <div id="result"></div>
+
+    <!-- Hidden form to submit data to Google Sheets -->
+    <form id="submit-form" action="https://script.google.com/macros/s/AKfycbxEbedxVSBSW1u-U7GdWbigdoJQhQfbscKRZO9pUM928zNBLNDtr2JGplqX_lZ5j5R6/exec" method="POST" style="display: none;">
+        <!-- <input type="hidden" name="conference" id="conference">
+        <input type="hidden" name="split" id="splitInput">
+        <input type="hidden" name="paper_no" id="paperNo">
+        <input type="hidden" name="answer" id="answer"> -->
+        <input type="hidden" name="correct" id="correct">
+    </form>
 
     <script>
         const paperDropdown = document.getElementById('paper');
@@ -172,11 +172,10 @@
                 .then(data => {
                     const select = document.getElementById('year');
                     select.innerHTML = '';
-                    // Iterate over the keys in the JSON object
                     for (const [key, value] of Object.entries(data)) {
                         const opt = document.createElement('option');
-                        opt.value = value;  // The key (e.g., "paper_1") will be the value of the option
-                        opt.textContent = value;  // The file name (e.g., "file1.txt") will be the visible text
+                        opt.value = value;
+                        opt.textContent = value;
                         select.appendChild(opt);
                     }
                 })
@@ -186,12 +185,9 @@
         function loadReviews() {
             randomPosition = Math.random() < 0.5;
             document.getElementById('result').innerText = ""
-            // extract conference and paper number
             const conference = paperDropdown.value;
             const paper_no = yearDropdown.value;
             const split = splitDropdown.value;
-
-            // set right and left text to blank
             const textLeft = document.getElementById('textLeft');
             textLeft.innerHTML = '';
             const textRight = document.getElementById('textRight');
@@ -199,14 +195,11 @@
             const llm_text = document.createElement('p');
             const human_text = document.createElement('p');
 
-            // set llm_text and human_text
             fetch(`data/${conference}/${split}/reviews/${paper_no}.json`)
                 .then(response => response.json())
                 .then(data => {
                     const reviews = data.reviews[0];
-                    
                     human_text.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
-                        
                 })
                 .catch(error => console.error('Error fetching file names:', error));
             
@@ -214,36 +207,43 @@
                 .then(response => response.json())
                 .then(data => {
                     const reviews = data.reviews[0];
-                    
                     llm_text.innerHTML  = `<br> ${reviews.comments.replace(/\n/g, '<br>')}`;
                 })
                 .catch(error => console.error('Error fetching file names:', error));
 
-            // Add code to randomly assign side to llm and human response
-            
             const leftText = randomPosition ? human_text : llm_text;
             const rightText = randomPosition ? llm_text : human_text;
             textLeft.appendChild(leftText);
             textRight.appendChild(rightText);
 
-            // add code to tell if the chosen answer is correct
-
-            // Update the pdf
             const pdf_src = pdfViewer.querySelector('iframe');
             pdf_src.src = `data/${conference}/${split}/pdfs/${paper_no}.pdf`;
-
-            
         }
 
         function saveAnswer(answer) {
-            const trueAnswer = randomPosition? "Right LLM Left Human": "Right Human Left LLM";
-            const isCorrect = answer === trueAnswer; 
-            if (isCorrect) {
-                document.getElementById('result').innerText = "CORRECT!";
-            } else {
-                document.getElementById('result').innerText = `INCORRECT! Try Again.`;
-            }       
+            const trueAnswer = randomPosition ? "Right LLM Left Human" : "Right Human Left LLM";
+            const isCorrect = answer === trueAnswer;
+            document.getElementById('result').innerText = isCorrect ? "CORRECT!" : "INCORRECT! Try Again.";
 
+            // Populate the hidden form with data to send to Google Sheets
+            // document.getElementById('conference').value = paperDropdown.value;
+            // document.getElementById('splitInput').value = splitDropdown.value;
+            // document.getElementById('paperNo').value = yearDropdown.value;
+            // document.getElementById('answer').value = answer;
+            document.getElementById('correct').value = isCorrect ? `${paperDropdown.value};${splitDropdown.value};${yearDropdown.value};${answer}; Yes` : `${paperDropdown.value};${splitDropdown.value};${yearDropdown.value};${answer}; No`;
+            console.log("answer", answer)
+            // Use fetch API to submit the form without refreshing the page
+            const formData = new FormData(document.getElementById('submit-form'));
+            for(const pair of formData.entries()){
+                console.log(`${pair[0]}: ${pair[1]}`);
+            }
+            fetch(document.getElementById('submit-form').action, {
+                method: 'POST',
+                body: formData,
+            })
+            .then(response => response.text())
+            .then(result => console.log('Form submitted successfully:', result))
+            .catch(error => console.error('Error submitting form:', error));
        }
 
             

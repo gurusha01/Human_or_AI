@@ -1,0 +1,1 @@
+In this folder we have the code to analyse how do AI response generator like DetectGPT perform versus how humans perform in AI generated content. 
