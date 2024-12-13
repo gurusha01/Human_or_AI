@@ -74,12 +74,37 @@ def make_prompt(prompt_template, paper_contents, human_input):
 # complete this
 def llm_call(prompt, llm_name, temperature):
     
+<<<<<<< HEAD
     
     # populate this
     client = OpenAI(
     api_key = "",
     # organization='',
     # project='',
+=======
+    # api_key = os.environ.get("OPENAI_API_KEY")
+    # api_endpoint = os.environ.get("OPENAI_ENDPOINT")
+    # api_version = os.environ.get("OPENAI_VERSION")
+
+    # client = AzureOpenAI(api_key=api_key, azure_endpoint=api_endpoint, api_version=api_version)
+    
+    # while True:
+    #     try:
+    #         messages = [{"role": "user", "content": prompt}]
+    #         response = client.chat.completions.create(model = llm_name, temperature= temperature, messages=messages)
+    #         # print(response)
+    #         return response.choices[0].message.content
+    #     except Exception as e:
+    #         pass
+    #         print(f"Got error {e}. Sleeping for 5 seconds...")
+    #         time.sleep(5)    
+      
+    # populate this
+    client = OpenAI(
+    api_key = "",
+    organization='',
+    project='',
+>>>>>>> origin
     )
     messages = [{"role": "user", "content": prompt}]
     complete = False
