@@ -4,31 +4,85 @@ import os
 from openai import AzureOpenAI, OpenAI
 import time
 import yaml
-
-def clean_text(text):
+#old
+# def clean_text(text):
     
-    numbers = re.findall(r'(\d+)\n', text)
-    cleaned_text = text
-    for number in numbers:
-        cleaned_text = cleaned_text.replace(f'{number}\n', '')
-    # print(cleaned_text, numbers)
+#     numbers = re.findall(r'(\d+)\n', text)
+#     cleaned_text = text
+#     for number in numbers:
+#         cleaned_text = cleaned_text.replace(f'{number}\n', '')
+#     # print(cleaned_text, numbers)
+#     return cleaned_text
+
+#new
+def clean_text(text):
+    cleaned_text = re.sub(r'\n(\d+\n)+', '', text)
     return cleaned_text
 
+#old
+# def get_paper(paper_address, paper_number):
+#     final_address = f'{paper_address}/parsed_pdfs/{paper_number}.pdf.json'
+#     with open(final_address, "r", encoding='utf-8') as file:
+#         data = json.load(file)
+#     data_dict = {}
+#     sections = data.get('metadata', {}).get('sections', [])
+#     final_string = ""
+#     for section in sections:
+#         heading = section.get('heading')
+#         text = section.get('text')
+#         text = clean_text(text)
+#         data_dict[heading] = text
+#         if(heading!= None and text!= None):
+#             final_string += "##"+heading + "\n\n" + text
+#     return final_string
+
+#new
 def get_paper(paper_address, paper_number):
     final_address = f'{paper_address}/parsed_pdfs/{paper_number}.pdf.json'
     with open(final_address, "r", encoding='utf-8') as file:
         data = json.load(file)
     data_dict = {}
-    sections = data.get('metadata', {}).get('sections', [])
     final_string = ""
+    abstract_text = data.get('metadata', {}).get('abstractText',"")
+    if len(abstract_text)>0:
+        final_string += "Abstract" + "\n" + abstract_text +"\n"
+    sections = data.get('metadata', {}).get('sections', [])
     for section in sections:
         heading = section.get('heading')
         text = section.get('text')
         text = clean_text(text)
         data_dict[heading] = text
-        if(heading!= None and text!= None):
-            final_string += "##"+heading + "\n\n" + text
+        if(heading!= None and text!= None and heading != "Acknowledgements"):
+            final_string += heading + "\n" + text + "\n"
+
     return final_string
+
+def preprocess_iclr(json_data):
+
+    seen_combinations = set()
+    unique_reviews = []
+    seen_reviewer = []
+
+    for review in json_data.get("reviews", []):
+        other_key = review.get("OTHER_KEYS")
+        title = review.get("TITLE")
+        comments = review.get("comments")
+        if comments and other_key:
+            unique_identifier = (other_key, title)
+            if 'AnonReviewer' in other_key and  unique_identifier not in seen_combinations:
+                seen_combinations.add(unique_identifier)    
+                if other_key in seen_reviewer:
+                    for rev in unique_reviews:
+                        if rev.get("OTHER_KEYS") == other_key:
+                            rev["comments"] = rev.get("comments")+ "\n" +comments
+                else:
+                    seen_reviewer.append(other_key)               
+                    unique_reviews.append(review) 
+
+    json_data["reviews"] = unique_reviews
+    # print(unique_reviews)
+    return json_data
+
 
 def summarize(comments, level, llm_name, temperature):
     if(level =="3"):
@@ -47,21 +101,32 @@ def summarize(comments, level, llm_name, temperature):
     summarized_comments = extract_answer(summarized_comments)
     return summarized_comments
 
-def get_human_review(paper_address, paper_number, level, llm_name, temperature):
+#modified
+def get_human_review_all(paper_address, paper_number):
     final_address = f'{paper_address}/reviews/{paper_number}.json'
     with open(final_address, "r", encoding='utf-8') as file:
         data = json.load(file)
+    if "iclr" in final_address:
+        data = preprocess_iclr(data)
     # Extracting the comments section from the reviews
-    reviews = data.get('reviews', [])
-    comments_string = ""
+    all_reviews = []
+    for review in data.get("reviews", []):
+        if review:
+            comments = review.get("comments", "")
+            if comments:
+                all_reviews.append(comments)
+                
+    return all_reviews
+    # reviews = data.get('reviews', [])
+    # comments_string = ""
 
-    comments = reviews[0].get('comments', "")
-    if comments:
-        comments_string += comments + "\n\n"  
-        if(level=="3" or level =="4"):
-            comments_string = summarize(comments_string, level, llm_name, temperature)
+    # comments = reviews[0].get('comments', "")
+    # if comments:
+    #     comments_string += comments + "\n\n"  
+    #     if(level=="3" or level =="4"):
+    #         comments_string = summarize(comments_string, level, llm_name, temperature)
 
-    return comments_string
+    # return comments_string
 
 
 def make_prompt(prompt_template, paper_contents, human_input):
@@ -74,14 +139,6 @@ def make_prompt(prompt_template, paper_contents, human_input):
 # complete this
 def llm_call(prompt, llm_name, temperature):
     
-<<<<<<< HEAD
-    
-    # populate this
-    client = OpenAI(
-    api_key = "",
-    # organization='',
-    # project='',
-=======
     # api_key = os.environ.get("OPENAI_API_KEY")
     # api_endpoint = os.environ.get("OPENAI_ENDPOINT")
     # api_version = os.environ.get("OPENAI_VERSION")
@@ -104,7 +161,6 @@ def llm_call(prompt, llm_name, temperature):
     api_key = "",
     organization='',
     project='',
->>>>>>> origin
     )
     messages = [{"role": "user", "content": prompt}]
     complete = False
@@ -128,15 +184,43 @@ def extract_answer(answer_string):
     return answer
 
 # changed this added level
-def write_review(paper_address, paper_number, Review, level):
-    # Check if the directory 'reviews_llm' exists, and if not, create it
-    reviews_llm_dir = os.path.join(paper_address, 'reviews_llm')
-    if not os.path.exists(reviews_llm_dir):
-        os.makedirs(reviews_llm_dir)
+# old
+# def write_review(paper_address, paper_number, Review, level):
+#     # Check if the directory 'reviews_llm' exists, and if not, create it
+#     reviews_llm_dir = os.path.join(paper_address, 'reviews_llm')
+#     if not os.path.exists(reviews_llm_dir):
+#         os.makedirs(reviews_llm_dir)
     
-    # Define the final address for the JSON file
+#     # Define the final address for the JSON file
+#     final_address = os.path.join(reviews_llm_dir, f'{paper_number}.json')
+    
+#     # Check if the file already exists
+#     if os.path.exists(final_address):
+#         # Read the existing data from the file
+#         with open(final_address, 'r', encoding='utf-8') as json_file:
+#             data = json.load(json_file)
+#     else:
+#         # If the file does not exist, create the structure
+#         data = {"reviews": []}
+    
+#     # Append the new review to the 'reviews' list
+#     new_review = {
+#         # "level": level,
+#         "comments": Review,
+#         "GPTZero":";;",
+#     }
+#     data["reviews"].append(new_review)
+    
+#     # Write the updated data back to the file
+#     with open(final_address, 'w', encoding='utf-8') as json_file:
+#         json.dump(data, json_file, ensure_ascii=False, indent=4)
+
+#     return final_address
+
+
+#modified
+def write_review(reviews_llm_dir, paper_number, Review):    #reviews_llm_dir = ""../data/nips_2013-2017/2017/test/reviews_llama_3_1_70b/level1"
     final_address = os.path.join(reviews_llm_dir, f'{paper_number}.json')
-    
     # Check if the file already exists
     if os.path.exists(final_address):
         # Read the existing data from the file
@@ -148,9 +232,7 @@ def write_review(paper_address, paper_number, Review, level):
     
     # Append the new review to the 'reviews' list
     new_review = {
-        "level": level,
         "comments": Review,
-        "GPTZero":";;",
     }
     data["reviews"].append(new_review)
     
@@ -158,7 +240,6 @@ def write_review(paper_address, paper_number, Review, level):
     with open(final_address, 'w', encoding='utf-8') as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=4)
 
-    return final_address
 
 
 
