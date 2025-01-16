@@ -1,145 +1,36 @@
-paper_prompt_1: |
-  Write a review for the following paper:
-
-  {PaperInPromptFormat}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper presents ...</Answer> 
-
-
-paper_prompt_2: |
-  Writing reviews for machine learning (ML) research papers in conferences like ICLR, NeurIPS, and ACL involves providing constructive feedback that evaluates the paper's contributions, methodology, clarity, and significance. Below is a set of instructions that can guide you through writing an effective review -
-
-  1. Read the Paper Thoroughly: Start with an initial read to get a general understanding of the paper. Note the key ideas, the problem being addressed, and the proposed solution. Carefully go through the paper a second time, focusing on the methodology, experiments, and results. Take notes on areas that are unclear or require further explanation.
-
-  2. Structure Your Review
-    Summary: Begin with a brief summary of the paper. This should be a few sentences that encapsulate the problem, the proposed solution, and the main contributions.
-    Strengths: Highlight the strengths of the paper. What are the key contributions? Is the problem significant? Is the methodology sound? Are the results convincing?
-    Weaknesses: Identify the weaknesses. Are there flaws in the methodology? Are the experiments lacking in rigor or scope? Is the writing unclear in places? Are there any unsupported claims or assumptions?
-    Questions and Suggestions: Provide constructive feedback on how the paper could be improved. This might include suggesting additional experiments, clarifying certain sections, or addressing potential limitations.
-
-  3. Evaluate Specific Aspects
-    Novelty and Originality: Assess whether the paper presents a novel idea or method. Does it advance the state of the art in a significant way?
-    Technical Soundness: Evaluate the correctness of the methodology. Are the experiments well-designed? Is the theoretical analysis solid?
-    Clarity and Presentation: Consider the quality of writing and presentation. Is the paper well-structured? Are the figures and tables clear and informative? Are the equations properly defined?
-    Reproducibility: Check if the authors have provided enough detail for the work to be replicated. Are the datasets and code available?
-    Impact: Consider the potential impact of the work. Does it address an important problem? Could it lead to further research or practical applications?
-
-  4. Be constructive and respectful. 
-
-  Now, Write a review for the following paper:
-
-  {PaperInPromptFormat}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
-
-
-paper_prompt_3: |
-  Writing reviews for machine learning (ML) research papers in conferences like ICLR, NeurIPS, and ACL involves providing constructive feedback that evaluates the paper's contributions, methodology, clarity, and significance. Below is a set of instructions that can guide you through writing an effective review -
-
-  1. Read the Paper Thoroughly: Start with an initial read to get a general understanding of the paper. Note the key ideas, the problem being addressed, and the proposed solution. Carefully go through the paper a second time, focusing on the methodology, experiments, and results. Take notes on areas that are unclear or require further explanation.
-
-  2. Your review should have the following structure:
-    Strengths: Begin with a brief summary of the paper. This should be a few sentences that encapsulate the problem, the proposed solution, and the main contributions. Highlight the strengths of the paper. What are the key contributions? Is the problem significant? Is the methodology sound? Are the results convincing?
-    Weaknesses: Identify the weaknesses. Are there flaws in the methodology? Are the experiments lacking in rigor or scope? Is the writing unclear in places? Are there any unsupported claims or assumptions?
-    General discussion: Provide constructive feedback on how the paper could be improved. This might include suggesting additional experiments, clarifying certain sections, or addressing potential limitations.
-
-  3. Evaluate Specific Aspects while keeping the structure of review limited to three sections - strengths, weaknesses and general discussion:  
-    Novelty and Originality: Assess whether the paper presents a novel idea or method. Does it advance the state of the art in a significant way?
-    Technical Soundness: Evaluate the correctness of the methodology. Are the experiments well-designed? Is the theoretical analysis solid?
-    Clarity and Presentation: Consider the quality of writing and presentation. Is the paper well-structured? Are the figures and tables clear and informative? Are the equations properly defined?
-    Reproducibility: Check if the authors have provided enough detail for the work to be replicated. Are the datasets and code available?
-    Impact: Consider the potential impact of the work. Does it address an important problem? Could it lead to further research or practical applications?
-
-  4. Be constructive and respectful. 
-
-  Now, Write a review for the following paper:
-
-  {PaperInPromptFormat}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
-
-
 level_1_prompt: |
-  You are a reviewer at an AI conference. 
-  Write a complete review of this research paper. 
-  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
-  Write the review independently based on the paper's content.
-  Here is the paper:
+  You are a reviewer at an AI conference. Write a review of the given research paper following the provided reviewer guidelines in 300-400 words.
+  Conference guidelines-{guidelines}
+  Paper-{PaperInPromptFormat}
 
-  {PaperInPromptFormat}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
+level_2_prompt: |
+  You are a reviewer at an AI conference. Write a review of the given research paper following the provided reviewer guidelinesin 300-400 words. Here are some tips and tricks that would help you write a good review.
+  1.Identify Claims- Clearly outline the main claims of the paper. Look for key phrases like “The contributions of this paper are…” to identify them. Conference papers usually have 1-2 claims, while journal articles should have several.
+  2.Evaluate Support for Claims- Assess how the claims are supported. Prioritize real-world statistically significant experiments, followed by laboratory experiments, demonstrations, simulations, and theoretical analysis (in decreasing order of reliability). Avoid papers with unexplained data or unsupported claims.
+  3.Assess Usefulness- Determine whether the ideas presented are practically useful. Consider if you or the target audience would use it and why.
+  4.Check Field Knowledge- Ensure the paper reflects common knowledge in the field. Look for correct use of terms and evidence of understanding of relevant literature
+  5.Evaluate Novelty- The work should present a significant improvement or innovation over existing approaches. Ensure references are comprehensive, accessible, and relevant, with proper citations.
+  6.Assess Completeness- Particularly for journal articles, the paper should provide sufficient details for reproducibility. Conference papers may have more limited scope.
+  7.Discuss Limitations-Check if the paper acknowledges its limitations. Journal articles have more space for this, but it is also important for conference papers.
+  8.Be Constructive- Suggest solutions to shortcomings rather than just pointing them out. Focus your criticisms on the paper, not the authors.
+  9.Avoid Bias- Keep your identity anonymous, and ensure your review is impartial and professional. Avoid comments that could indirectly reveal your identity.
+  10.Encourage Potential- If the paper has a good idea but is poorly executed, encourage the authors to revise and resubmit.
+  Conference guidelines-{guidelines}
+  Paper-{PaperInPromptFormat}
 
-level_3_prompt: |
-  You are a reviewer at an AI conference. 
-  Write a complete review of this research paper. 
-  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
-  
-  You are given the areas to evaluate by your supervisor, you can elaborate on that. 
+level_3_summarizationprompt: |
+  You are given a review written by a reviewer of an AI conference. You need to give the key points discussed in the review as a one or two liner for each point. Now summarize the given review.
+  Review- {humanreview}
 
-  Here is the paper:
-
-  {PaperInPromptFormat}
-
-  Areas to evaluate: 
-
-  {HumanInput}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
-
+level_3_generation: |
+  You are a reviewer at an AI conference. You are given the key points to evaluate by your supervisor, you can elaborate on that. Write a review of this research paper following the provided reviewer guidelines in 300-400 words.
+  Keypoints- {summarized_humanreview}
+  Conference guidelines-{guidelines}
+  Paper-{PaperInPromptFormat}
 
 level_4_prompt: |
-  You are a reviewer at an AI conference. 
-  Write a complete review of this research paper. 
-  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
-  
-  You are given the key points to evaluate by your supervisor, you can elaborate on that. 
+  I am a reviewer for a renowned scientific conference. Help me paraphrase my review while keeping the original structure, meaning, and technical content intact.
+  Review- {humanreview}
 
-  Here is the paper:
-
-  {PaperInPromptFormat}
-
-  Key points: 
-
-  {HumanInput}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
-
-level_5_prompt: |
-  You are a helpful assistant that is helping a reviewer write a review at an AI conference. 
-  
-  The reviewer has the following tasks: 
-  Write a complete review of this research paper. 
-  Evaluate its contributions, clarity, relevance, methodology, and overall quality. 
-  
-  You are given the review written by thereviewer you have to make it better, you can improve english or robustness of what the reviewer has said. 
-
-  Here is the paper:
-
-  {PaperInPromptFormat}
-
-  Reviewer response: 
-  {HumanInput}
-  
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>The paper ...</Answer> 
-
-summarization_3_prompt: |
-  You are given a review written by a reviewer of an AI conference.
-  You need to give the key areas discussed in the review as a short phrase. 
-  For example if there is questions/discussion on efficiency of training, one of the key areas could be efficiency.
-
-  Now summarize the given review: 
-  {HumanInput}
-
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>key areas:...</Answer> 
-
-summarization_4_prompt: |
-  You are given a review written by a reviewer of an AI conference.
-  You need to give the key points discussed in the review as a one or two liner for each point. 
-  For example if there is questions/discussion on efficiency of training, one of the key point could be: using adapters for making training more efficient than full finetuning.
-
-  Now summarize the given review: 
-  {HumanInput}
-
-  Output format: Give your answer as the correct option between <Answer></Answer> tags like <Answer>key points:...</Answer> 
-
+output_format:
+  Provide the review strictly in the following format. <Answer> Your review </Answer>
