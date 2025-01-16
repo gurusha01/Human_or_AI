@@ -1,7 +1,9 @@
 level_1_prompt: |
   You are a reviewer at an AI conference. Write a review of the given research paper following the provided reviewer guidelines in 300-400 words.
+  {OutputFormat}
   Conference guidelines-{guidelines}
   Paper-{PaperInPromptFormat}
+  
 
 level_2_prompt: |
   You are a reviewer at an AI conference. Write a review of the given research paper following the provided reviewer guidelinesin 300-400 words. Here are some tips and tricks that would help you write a good review.
@@ -15,22 +17,29 @@ level_2_prompt: |
   8.Be Constructive- Suggest solutions to shortcomings rather than just pointing them out. Focus your criticisms on the paper, not the authors.
   9.Avoid Bias- Keep your identity anonymous, and ensure your review is impartial and professional. Avoid comments that could indirectly reveal your identity.
   10.Encourage Potential- If the paper has a good idea but is poorly executed, encourage the authors to revise and resubmit.
+  {OutputFormat}
   Conference guidelines-{guidelines}
   Paper-{PaperInPromptFormat}
 
 level_3_summarizationprompt: |
   You are given a review written by a reviewer of an AI conference. You need to give the key points discussed in the review as a one or two liner for each point. Now summarize the given review.
+  {OutputFormat}
   Review- {humanreview}
+  
 
 level_3_generation: |
   You are a reviewer at an AI conference. You are given the key points to evaluate by your supervisor, you can elaborate on that. Write a review of this research paper following the provided reviewer guidelines in 300-400 words.
+  {OutputFormat}
   Keypoints- {summarized_humanreview}
   Conference guidelines-{guidelines}
   Paper-{PaperInPromptFormat}
+  
 
 level_4_prompt: |
   I am a reviewer for a renowned scientific conference. Help me paraphrase my review while keeping the original structure, meaning, and technical content intact.
+  {OutputFormat}
   Review- {humanreview}
+  
 
 output_format:
-  Provide the review strictly in the following format. <Answer> Your review </Answer>
+  You must always format the output strictly as <Answer> Your Review </Answer>

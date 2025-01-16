@@ -8,20 +8,22 @@ import sys
 # VLLM by default has logs on, this is to switch it off
 # os.environ['VLLM_LOGGING_LEVEL'] = 'ERROR'
 sys.stdout = open("playground.txt", "w")
-# os.environ['CUDA_VISIBLE_DEVICES'] = "1,2,3,4"
-os.environ['CUDA_VISIBLE_DEVICES'] = "1"
+os.environ["NCCL_P2P_DISABLE"] = "1"
+os.environ['CUDA_VISIBLE_DEVICES'] = "2,3,4,5"
+# os.environ['CUDA_VISIBLE_DEVICES'] = "1"
 # NUM_GPU_UTILIZATION = 4
-NUM_GPU_UTILIZATION = 1
-PER_GPU_UTILIZATION = 0.8
+NUM_GPU_UTILIZATION = len(os.environ['CUDA_VISIBLE_DEVICES'].split(','))
+PER_GPU_UTILIZATION = 0.9
 batch_size = 10
-outputpath_model = "reviews_llama_3_1_70b"
+
 
 print(f"Using GPUs :{torch.cuda.device_count()}")
 
-# MODEL = '/assets/models/meta-llama-3.1-instruct-70b'
-MODEL = '/assets/models/meta-llama-3.1-instruct-8b' #single_gpu
+MODEL = '/assets/models/meta-llama-3.1-instruct-70b'
+# MODEL = '/assets/models/meta-llama-3.1-instruct-8b' #single_gpu
 # MODEL = "/assets/models/meta-llama-3.2-instruct-3b" #single_gpu
 print("MODEL :",MODEL)
+outputpath_model = MODEL.split('/')[-1]
 
 def get_tokenizer_and_config(model_name):
     tokenizer_args = {}
@@ -75,17 +77,17 @@ def prompt_model(batch_prompts):
     outputs = model.generate(tokens, sampling_params=gen_kwargs)
     return outputs
 
-def process_llm_output(outputs,reviews_llm_dir,papername_list,level):
+def process_llm_output(outputs,reviews_llm_dir,papername_list,write_= True):
     out_strings = [[ response.text for response in output.outputs ] for output in outputs]
-    for (each_output,paper_number) in zip(out_strings,papername_list):
-        print("$"*50)
-        print(each_output[0])    
-        print("$"*50)
-        answer = extract_answer(each_output[0])
-        if level == "level3":
-            return answer
-        else:
+    if write_:
+        for (each_output,paper_number) in zip(out_strings,papername_list):
+            print("$"*50)
+            print(each_output[0])    
+        # print("$"*50)
+            answer = extract_answer(each_output[0])
             write_review(reviews_llm_dir, paper_number, answer) 
+    else:
+        return [out_text[0] for out_text in out_strings] #for level3 summarization
 
 def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
     folders = os.listdir(data_dir) #dev,test,train folders
@@ -101,24 +103,31 @@ def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
         os.makedirs(file_output_path, exist_ok=True)
         
         papername_list = []
+
         for each_paper in os.listdir(parsed_pdfs):
             paper_name = each_paper.split('.')[0]
-            papername_list.append(each_paper)
+            papername_list.append(paper_name)
             PaperString = get_paper(folderpath,paper_name)
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
-                                                     PaperInPromptFormat=PaperString) + output_format
-            print('#'*50)
-            print(complete_prompt)
-            print('#'*50)
+                                                     PaperInPromptFormat=PaperString,
+                                                     OutputFormat=output_format)
+            # print('#'*50)
+            # print(complete_prompt)
+            # print('#'*50)
             batch_prompts.append([dict(role='system', content=output_format),
                                           dict(role='user', content=complete_prompt)])
             
             #Time to process
             if len(batch_prompts)== batch_size:
                 outputs = prompt_model(batch_prompts) 
-                process_llm_output(outputs,file_output_path,papername_list,"1")
+                process_llm_output(outputs,file_output_path,papername_list)
                 batch_prompts =[]   
                 papername_list = []
+        if batch_prompts:
+            outputs = prompt_model(batch_prompts) 
+            process_llm_output(outputs,file_output_path,papername_list)
+            batch_prompts =[]   
+            papername_list = []
                 
 def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
     folders = os.listdir(data_dir) #dev,test,train folders
@@ -130,25 +139,97 @@ def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
         os.makedirs(output_path, exist_ok=True)
         file_output_path = os.path.join(output_path,"level2")
         os.makedirs(file_output_path, exist_ok=True)
+        
         papername_list = []
         for each_paper in os.listdir(parsed_pdfs): 
             paper_name = each_paper.split('.')[0]
             papername_list.append(paper_name)
             PaperString = get_paper(folderpath,paper_name)
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
-                                                     PaperInPromptFormat=PaperString) + output_format
+                                                     PaperInPromptFormat=PaperString,
+                                                     OutputFormat=output_format)
             print('#'*50)
             print(complete_prompt)
             print('#'*50)
             batch_prompts.append([dict(role='system', content=output_format),
                                           dict(role='user', content=complete_prompt)])
+            papers_processed +=1
             #Time to process
             if len(batch_prompts)== batch_size:
                 outputs = prompt_model(batch_prompts) 
-                process_llm_output(outputs,file_output_path,papername_list,"2")
+                process_llm_output(outputs,file_output_path,papername_list)
                 batch_prompts =[]   
                 papername_list = []
+        if batch_prompts:
+            outputs = prompt_model(batch_prompts) 
+            process_llm_output(outputs,file_output_path,papername_list)
+            batch_prompts =[]   
+            papername_list = []
 
+def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,generatn_prompt):
+    folders = os.listdir(data_dir) #dev,test,train folders
+    batch_prompts =[]
+    
+    for folder in folders:
+        folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
+        human_reviews = os.path.join(folderpath,"reviews")
+        output_path = os.path.join(folderpath,outputpath_model)
+        os.makedirs(output_path, exist_ok=True)
+        
+        file_output_path = os.path.join(output_path,"level3")
+        os.makedirs(file_output_path, exist_ok=True)
+        
+        papername_list = []
+        for each_paper in os.listdir(human_reviews): 
+            paper_name = each_paper.split('.')[0]
+            # print(f"paper_name : {paper_name}")
+            human_reviews = get_human_review_all(folderpath,paper_name)
+            PaperString = get_paper(folderpath,paper_name)
+            papers_processed +=1
+            for each_review in human_reviews:
+                papername_list.append(paper_name)
+                complete_prompt = summarize_prompt.format(humanreview = each_review,
+                                                          OutputFormat=output_format)
+                
+                print(f"Level 3 summarization :\n{complete_prompt}")
+                print('#'*50)
+                batch_prompts.append([dict(role='system', content=output_format),
+                                            dict(role='user', content=complete_prompt)])
+                #Time to process
+                if len(batch_prompts)== batch_size:
+                    outputs = prompt_model(batch_prompts) 
+                    keypoints = process_llm_output(outputs,file_output_path,papername_list,False)
+                    batch_prompts =[] 
+                    for each_summarized in keypoints:
+                        complete_prompt = generatn_prompt.format(summarized_humanreview = each_summarized,
+                                                                guidelines=guideline_in_prompt,
+                                                                PaperInPromptFormat=PaperString,
+                                                                OutputFormat=output_format)
+                        print(f"Level 3 generation :\n{complete_prompt}")
+                        print('#'*50)
+                        batch_prompts.append([dict(role='system', content=output_format),
+                                            dict(role='user', content=complete_prompt)])
+                    outputs = prompt_model(batch_prompts) 
+                    process_llm_output(outputs,file_output_path,papername_list)
+                    batch_prompts =[] 
+                    papername_list = []
+        if batch_prompts:
+            outputs = prompt_model(batch_prompts) 
+            keypoints = process_llm_output(outputs,file_output_path,papername_list,False)
+            batch_prompts =[] 
+            for each_summarized in keypoints:
+                complete_prompt = generatn_prompt.format(summarized_humanreview = each_summarized,
+                                                        guidelines=guideline_in_prompt,
+                                                        PaperInPromptFormat=PaperString,
+                                                        OutputFormat=output_format)
+                print(f"Level 3 generation :\n{complete_prompt}")
+                print('#'*50)
+                batch_prompts.append([dict(role='system', content=output_format),
+                                    dict(role='user', content=complete_prompt)])
+            outputs = prompt_model(batch_prompts) 
+            process_llm_output(outputs,file_output_path,papername_list)
+            batch_prompts =[] 
+            papername_list = []                 
 
 def generate_level4(data_dir,output_format,prompt_template):
     folders = os.listdir(data_dir) #dev,test,train folders
@@ -171,7 +252,8 @@ def generate_level4(data_dir,output_format,prompt_template):
             
             for each_review in human_reviews:
                 papername_list.append(paper_name)
-                complete_prompt = prompt_template.format(humanreview = each_review) + output_format
+                complete_prompt = prompt_template.format(humanreview = each_review,
+                                                         OutputFormat=output_format)
                 print('#'*50)
                 print(complete_prompt)
                 print('#'*50)
@@ -180,10 +262,14 @@ def generate_level4(data_dir,output_format,prompt_template):
                 #Time to process
                 if len(batch_prompts)== batch_size:
                     outputs = prompt_model(batch_prompts) 
-                    process_llm_output(outputs,file_output_path,paper_name,"4")
+                    process_llm_output(outputs,file_output_path,papername_list)
                     batch_prompts =[] 
                     papername_list = []
-
+        if batch_prompts:
+            outputs = prompt_model(batch_prompts) 
+            process_llm_output(outputs,file_output_path,papername_list)
+            batch_prompts =[]   
+            papername_list = []
 
 def generate_llm_review(data_dir,level,conference):
     prompt_path = "./prompts.yaml"
@@ -209,125 +295,15 @@ def generate_llm_review(data_dir,level,conference):
         prompt_template = promptsyaml.get(prompt_template_name, None)
         generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template)
         
-    # elif level == '3':
-    #     build_prompt_3(data_dir,guideline_in_prompt,output_format)
+    elif level == '3':
+        summarize_prompt = promptsyaml.get("level_3_summarizationprompt", None)
+        generatn_prompt = promptsyaml.get("level_3_generation", None)
+        generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,generatn_prompt)
         
     elif level == '4':
         prompt_template_name = f"level_{level}_prompt"
         prompt_template = promptsyaml.get(prompt_template_name, None)
         generate_level4(data_dir,output_format,prompt_template)
-    
-    # for folder in folders:
-    #     folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
-    #     parsed_pdfs = os.path.join(folderpath,"parsed_pdfs")
-    #     human_reviews = os.path.join(folderpath,"reviews")
-    #     output_path = os.path.join(folderpath,"reviews_llama_3_1_70b")
-        
-    #     os.makedirs(output_path, exist_ok=True)
-            
-    #     for each_paper in os.listdir(parsed_pdfs): 
-    #         paper_name = each_paper.split('.')[0]
-    #         PaperString = get_paper(folderpath,paper_name)
-
-    #         if level in ("1","2","4"): #Direct batching
-    #             prompt_template_name = f"level_{level}_prompt"
-    #             prompt_template = prompts.get(prompt_template_name, None)
-    #             if level in ('1','2'): #only guidelines and paper, no human review
-    #                 complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
-    #                                                  PaperInPromptFormat=PaperString )
-                
-    #                 batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-                    
-    #             elif level == "4":# human written review needed
-    #                 human_reviews = get_human_review_all(folderpath,paper_name)
-    #                 for each_rev in human_reviews:
-    #                     complete_prompt = prompt_template.format(humanreview= each_rev)
-    #                     print(f"Level4 prompt: {complete_prompt}")
-    #                     batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-    #                     if len(batch_prompts)== batch_size:
-    #                         outputs = prompt_model(batch_prompts) 
-    #                         process_llm_output(outputs,file_output_path,paper_name)
-    #                         batch_prompts =[] 
-                            
-    #             file_output_path = os.path.join(output_path,f"level{level}")
-
-    # write_review(paper_address, paper_number, ExtractedReview, level)
- 
-                
-    #     folders = os.listdir(base_dir) #dev,test,train folders
-    #     for folder in folders:
-    #         folderpath = os.path.join(base_dir,folder) #../data/nips_2013-2017/2017/test
-    #         parsed_pdfs = os.path.join(folderpath,"parsed_pdfs")
-    #         # human_reviews = os.path.join(folderpath,"reviews")
-    #         output_path = os.path.join(folderpath,"reviews_llama_3_1_70b")
-    #         if not os.path.exists(output_path):
-    #             os.makedirs(output_path)
-    #             print(f"Folder '{output_path}' created.")
-    #         else:
-    #             print(f"Folder '{output_path}' already exists.")
-    #         for each_paper in os.listdir(parsed_pdfs): 
-    #             paper_name = each_paper.split('.')[0]
-    #             PaperString = get_paper(folderpath,paper_name)
-    #             # print(f"\n\n*********NEW PAPER {Total_count} : {paper_name}******")
-    #             # print(PaperString)
-    #             if level == "level1":
-    #                 complete_prompt = level1 + '\n' + guidelines + '\n' + "Paper:" + PaperString
-    #                 file_output_path = os.path.join(output_path,"level1")
-    #                 os.makedirs(file_output_path) if not os.path.exists(file_output_path) else print(f"already exists")
-    #                 print(f"Level1 prompt: {complete_prompt}")
-    #                 batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-    #                 if len(batch_prompts)== batch_size:
-    #                     outputs = prompt_model(batch_prompts) 
-    #                     process_llm_output(outputs,file_output_path,paper_name,level)
-    #                     batch_prompts =[]      
-    #                 break
-    #             elif level == "level2":
-    #                 complete_prompt = level2 + '\n' + guidelines + '\n' + "Paper:" + PaperString
-    #                 file_output_path = os.path.join(output_path,"level2")
-    #                 os.makedirs(file_output_path) if not os.path.exists(file_output_path) else print(f"already exists")
-    #                 print(f"Level2 prompt: {complete_prompt}")
-    #                 batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-    #                 if len(batch_prompts)== batch_size:
-    #                     outputs = prompt_model(batch_prompts) 
-    #                     process_llm_output(outputs,file_output_path,paper_name,level)
-    #                     batch_prompts =[]    
-                        
-    #             elif level == "level3":
-    #                 file_output_path = os.path.join(output_path,"level3")
-    #                 os.makedirs(file_output_path) if not os.path.exists(file_output_path) else print(f"already exists")
-    #                 human_reviews = get_human_review_all(folderpath,paper_name)
-    #                 for each_rev in human_reviews:
-    #                     summarization_prompt = level3_summarizationprompt + '\n'+ "Review:" + each_rev
-    #                     prompt = [[dict(role='system', content=output_format),
-    #                                       dict(role='user', content=summarization_prompt)]]
-    #                     outputs = prompt_model(prompt)
-    #                     keypoints = process_llm_output(outputs,file_output_path,paper_name,level)
-    #                     complete_prompt = level3_generation + "\n" + "keypoints:" + keypoints+ '\n' + guidelines + '\n' + "Paper:" + PaperString
-    #                     print(f"Level3 prompt: {complete_prompt}")
-    #                     batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-    #                     if len(batch_prompts)== batch_size:
-    #                         outputs = prompt_model(batch_prompts) 
-    #                         process_llm_output(outputs,file_output_path,paper_name,"some string")
-    #                         batch_prompts =[]   
-                            
-    #             elif level == "level4": 
-    #                 file_output_path = os.path.join(output_path,"level4")
-    #                 os.makedirs(file_output_path) if not os.path.exists(file_output_path) else print(f"already exists")
-    #                 human_reviews = get_human_review_all(folderpath,paper_name)
-    #                 for each_rev in human_reviews:
-    #                     complete_prompt = level4 + '\n' + "Review :" + each_rev
-    #                     print(f"Level4 prompt: {complete_prompt}")
-    #                     batch_prompts.append([dict(role='system', content=output_format),
-    #                                       dict(role='user', content=complete_prompt)])
-    #                     if len(batch_prompts)== batch_size:
-    #                         outputs = prompt_model(batch_prompts) 
-    #                         process_llm_output(outputs,file_output_path,paper_name)
-    #                         batch_prompts =[] 
 
 
 if __name__ == "__main__":
