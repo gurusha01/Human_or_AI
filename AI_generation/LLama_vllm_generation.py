@@ -7,7 +7,7 @@ import sys
 
 # VLLM by default has logs on, this is to switch it off
 # os.environ['VLLM_LOGGING_LEVEL'] = 'ERROR'
-sys.stdout = open("playground.txt", "w")
+# sys.stdout = open("playground.txt", "w")
 os.environ["NCCL_P2P_DISABLE"] = "1"
 os.environ['CUDA_VISIBLE_DEVICES'] = "2,3,4,5"
 # os.environ['CUDA_VISIBLE_DEVICES'] = "1"
@@ -20,8 +20,8 @@ batch_size = 10
 print(f"Using GPUs :{torch.cuda.device_count()}")
 
 MODEL = '/assets/models/meta-llama-3.1-instruct-70b'
-# MODEL = '/assets/models/meta-llama-3.1-instruct-8b' #single_gpu
-# MODEL = "/assets/models/meta-llama-3.2-instruct-3b" #single_gpu
+# MODEL = '/assets/models/meta-llama-3.1-instruct-8b' #single_gpu*48GB
+# MODEL = "/assets/models/meta-llama-3.2-instruct-3b" #single_gpu*48GB
 print("MODEL :",MODEL)
 outputpath_model = MODEL.split('/')[-1]
 
@@ -81,13 +81,12 @@ def process_llm_output(outputs,reviews_llm_dir,papername_list,write_= True):
     out_strings = [[ response.text for response in output.outputs ] for output in outputs]
     if write_:
         for (each_output,paper_number) in zip(out_strings,papername_list):
-            print("$"*50)
-            print(each_output[0])    
-        # print("$"*50)
+            # print("$"*50)
+            # print(each_output[0])    
             answer = extract_answer(each_output[0])
             write_review(reviews_llm_dir, paper_number, answer) 
     else:
-        return [out_text[0] for out_text in out_strings] #for level3 summarization
+        return [extract_answer(out_text[0]) for out_text in out_strings] #for level3 summarization
 
 def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
     folders = os.listdir(data_dir) #dev,test,train folders
@@ -109,13 +108,12 @@ def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
             papername_list.append(paper_name)
             PaperString = get_paper(folderpath,paper_name)
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
-                                                     PaperInPromptFormat=PaperString,
-                                                     OutputFormat=output_format)
+                                                     PaperInPromptFormat=PaperString)
+                                                    #  OutputFormat=output_format)
             # print('#'*50)
             # print(complete_prompt)
             # print('#'*50)
-            batch_prompts.append([dict(role='system', content=output_format),
-                                          dict(role='user', content=complete_prompt)])
+            batch_prompts.append([dict(role='user', content=complete_prompt)])
             
             #Time to process
             if len(batch_prompts)== batch_size:
@@ -146,14 +144,13 @@ def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
             papername_list.append(paper_name)
             PaperString = get_paper(folderpath,paper_name)
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
-                                                     PaperInPromptFormat=PaperString,
-                                                     OutputFormat=output_format)
-            print('#'*50)
-            print(complete_prompt)
-            print('#'*50)
-            batch_prompts.append([dict(role='system', content=output_format),
-                                          dict(role='user', content=complete_prompt)])
-            papers_processed +=1
+                                                     PaperInPromptFormat=PaperString)
+                                                    #  OutputFormat=output_format)
+            # print('#'*50)
+            # print(complete_prompt)
+            
+            batch_prompts.append([dict(role='user', content=complete_prompt)])
+            # papers_processed +=1
             #Time to process
             if len(batch_prompts)== batch_size:
                 outputs = prompt_model(batch_prompts) 
@@ -185,16 +182,14 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
             # print(f"paper_name : {paper_name}")
             human_reviews = get_human_review_all(folderpath,paper_name)
             PaperString = get_paper(folderpath,paper_name)
-            papers_processed +=1
             for each_review in human_reviews:
                 papername_list.append(paper_name)
-                complete_prompt = summarize_prompt.format(humanreview = each_review,
-                                                          OutputFormat=output_format)
+                complete_prompt = summarize_prompt.format(humanreview = each_review)
+                                                        #   OutputFormat=output_format)
                 
-                print(f"Level 3 summarization :\n{complete_prompt}")
-                print('#'*50)
-                batch_prompts.append([dict(role='system', content=output_format),
-                                            dict(role='user', content=complete_prompt)])
+                # print(f"Level 3 summarization :\n{complete_prompt}")
+                # print('#'*50)
+                batch_prompts.append([dict(role='user', content=complete_prompt)])
                 #Time to process
                 if len(batch_prompts)== batch_size:
                     outputs = prompt_model(batch_prompts) 
@@ -203,12 +198,11 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
                     for each_summarized in keypoints:
                         complete_prompt = generatn_prompt.format(summarized_humanreview = each_summarized,
                                                                 guidelines=guideline_in_prompt,
-                                                                PaperInPromptFormat=PaperString,
-                                                                OutputFormat=output_format)
-                        print(f"Level 3 generation :\n{complete_prompt}")
-                        print('#'*50)
-                        batch_prompts.append([dict(role='system', content=output_format),
-                                            dict(role='user', content=complete_prompt)])
+                                                                PaperInPromptFormat=PaperString)
+                                                                # OutputFormat=output_format)
+                        # print(f"Level 3 generation :\n{complete_prompt}")
+                        # print('#'*50)
+                        batch_prompts.append([dict(role='user', content=complete_prompt)])
                     outputs = prompt_model(batch_prompts) 
                     process_llm_output(outputs,file_output_path,papername_list)
                     batch_prompts =[] 
@@ -220,12 +214,11 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
             for each_summarized in keypoints:
                 complete_prompt = generatn_prompt.format(summarized_humanreview = each_summarized,
                                                         guidelines=guideline_in_prompt,
-                                                        PaperInPromptFormat=PaperString,
-                                                        OutputFormat=output_format)
-                print(f"Level 3 generation :\n{complete_prompt}")
-                print('#'*50)
-                batch_prompts.append([dict(role='system', content=output_format),
-                                    dict(role='user', content=complete_prompt)])
+                                                        PaperInPromptFormat=PaperString)
+                                                        # OutputFormat=output_format)
+                # print(f"Level 3 generation :\n{complete_prompt}")
+                # print('#'*50)
+                batch_prompts.append([dict(role='user', content=complete_prompt)])
             outputs = prompt_model(batch_prompts) 
             process_llm_output(outputs,file_output_path,papername_list)
             batch_prompts =[] 
@@ -247,18 +240,16 @@ def generate_level4(data_dir,output_format,prompt_template):
         papername_list = []
         for each_paper in os.listdir(human_reviews): 
             paper_name = each_paper.split('.')[0]
-            print(f"paper_name : {paper_name}")
+            # print(f"paper_name : {paper_name}")
             human_reviews = get_human_review_all(folderpath,paper_name)
             
             for each_review in human_reviews:
                 papername_list.append(paper_name)
-                complete_prompt = prompt_template.format(humanreview = each_review,
-                                                         OutputFormat=output_format)
+                complete_prompt = prompt_template.format(humanreview = each_review)
+                                                        #  OutputFormat=output_format)
                 print('#'*50)
                 print(complete_prompt)
-                print('#'*50)
-                batch_prompts.append([dict(role='system', content=output_format),
-                                            dict(role='user', content=complete_prompt)])
+                batch_prompts.append([dict(role='user', content=complete_prompt)])
                 #Time to process
                 if len(batch_prompts)== batch_size:
                     outputs = prompt_model(batch_prompts) 
@@ -308,7 +299,8 @@ def generate_llm_review(data_dir,level,conference):
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
-        print("Usage: script.py '../data/nips_2013-2017/2017/' '1' 'nips_2017'")
+        print("Usage: script.py '../data/nips_2013-2017/2017/' '1' 'nips'")
+        print("where \n directory to process : '../data/nips_2013-2017/2017/ \n Level: '1' \n Guidelines:'nips'(check guidelines.yaml)")
         sys.exit(1)
         
     data_dir = sys.argv[1]
@@ -332,5 +324,4 @@ if __name__ == "__main__":
 
     # data_dir = ["../data/nips_2013-2017/2017/"]
         
-    # output = get_llm_output(data_dir,level,conference)
     generate_llm_review(data_dir,level,conference)

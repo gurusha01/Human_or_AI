@@ -178,10 +178,22 @@ def llm_call(prompt, llm_name, temperature):
     return final_answer
 
 def extract_answer(answer_string):
-    pattern = r"<Answer>(.*?)<\/Answer>"
-    match = re.search(pattern, answer_string, re.DOTALL)
-    answer = match.group(1) if match else answer_string
-    return answer
+    # start_tag = "<Answer>"
+    # end_tag = "</Answer>"
+
+    # Check if both <Answer> and </Answer> are present
+    # pattern = r"<Answer>(.*?)<\/Answer>"
+    # match = re.search(pattern, answer_string, re.DOTALL)
+    
+    # if match:
+    #     return match.group(1).strip()
+    
+    # # Check if only <Answer> is present
+    # if start_tag in answer_string and end_tag not in answer_string:
+    #     return answer_string.split(start_tag, 1)[-1].strip()
+    
+    # # If no tags are present, return as is
+    return answer_string.strip()
 
 # changed this added level
 # old
