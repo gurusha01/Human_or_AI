@@ -4,10 +4,11 @@ import torch
 import transformers
 from utils import *
 import sys
+import time
 
 # VLLM by default has logs on, this is to switch it off
 # os.environ['VLLM_LOGGING_LEVEL'] = 'ERROR'
-# sys.stdout = open("playground.txt", "w")
+
 os.environ["NCCL_P2P_DISABLE"] = "1"
 os.environ['CUDA_VISIBLE_DEVICES'] = "2,3,4,5"
 # os.environ['CUDA_VISIBLE_DEVICES'] = "1"
@@ -19,7 +20,7 @@ batch_size = 10
 
 print(f"Using GPUs :{torch.cuda.device_count()}")
 
-MODEL = '/assets/models/meta-llama-3.1-instruct-70b'
+MODEL = '/assets/models/meta-llama-Llama-3.3-70B-Instruct'
 # MODEL = '/assets/models/meta-llama-3.1-instruct-8b' #single_gpu*48GB
 # MODEL = "/assets/models/meta-llama-3.2-instruct-3b" #single_gpu*48GB
 print("MODEL :",MODEL)
@@ -72,7 +73,7 @@ def prompt_model(batch_prompts):
 
     # generation arguments in this separate object (mostly has one-to-one mapping with HF tokenizers)
     max_new_tokens = 8000
-    gen_kwargs = vllm.SamplingParams(temperature=0, top_p=0.9, max_tokens=max_new_tokens + max_input_len)
+    gen_kwargs = vllm.SamplingParams(temperature=0.3, top_p=0.9, max_tokens=max_new_tokens + max_input_len)
     # outputs have both tokens and detokenized strings for direct use.
     outputs = model.generate(tokens, sampling_params=gen_kwargs)
     return outputs
@@ -81,8 +82,8 @@ def process_llm_output(outputs,reviews_llm_dir,papername_list,write_= True):
     out_strings = [[ response.text for response in output.outputs ] for output in outputs]
     if write_:
         for (each_output,paper_number) in zip(out_strings,papername_list):
-            # print("$"*50)
-            # print(each_output[0])    
+            print("$"*50)
+            print(each_output[0])    
             answer = extract_answer(each_output[0])
             write_review(reviews_llm_dir, paper_number, answer) 
     else:
@@ -110,8 +111,8 @@ def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
                                                      PaperInPromptFormat=PaperString)
                                                     #  OutputFormat=output_format)
-            # print('#'*50)
-            # print(complete_prompt)
+            print('#'*50)
+            print(complete_prompt)
             # print('#'*50)
             batch_prompts.append([dict(role='user', content=complete_prompt)])
             
@@ -146,8 +147,8 @@ def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
             complete_prompt = prompt_template.format(guidelines= guideline_in_prompt,
                                                      PaperInPromptFormat=PaperString)
                                                     #  OutputFormat=output_format)
-            # print('#'*50)
-            # print(complete_prompt)
+            print('#'*50)
+            print(complete_prompt)
             
             batch_prompts.append([dict(role='user', content=complete_prompt)])
             # papers_processed +=1
@@ -187,8 +188,10 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
                 complete_prompt = summarize_prompt.format(humanreview = each_review)
                                                         #   OutputFormat=output_format)
                 
-                # print(f"Level 3 summarization :\n{complete_prompt}")
-                # print('#'*50)
+                
+                print(f"Level 3 summarization :\n{complete_prompt}")
+                print('#'*50)
+                
                 batch_prompts.append([dict(role='user', content=complete_prompt)])
                 #Time to process
                 if len(batch_prompts)== batch_size:
@@ -200,8 +203,9 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
                                                                 guidelines=guideline_in_prompt,
                                                                 PaperInPromptFormat=PaperString)
                                                                 # OutputFormat=output_format)
-                        # print(f"Level 3 generation :\n{complete_prompt}")
-                        # print('#'*50)
+                        print(f"Level 3 generation :\n{complete_prompt}")
+                        print('#'*50)
+                        
                         batch_prompts.append([dict(role='user', content=complete_prompt)])
                     outputs = prompt_model(batch_prompts) 
                     process_llm_output(outputs,file_output_path,papername_list)
@@ -216,8 +220,8 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
                                                         guidelines=guideline_in_prompt,
                                                         PaperInPromptFormat=PaperString)
                                                         # OutputFormat=output_format)
-                # print(f"Level 3 generation :\n{complete_prompt}")
-                # print('#'*50)
+                print(f"Level 3 generation :\n{complete_prompt}")
+                print('#'*50)
                 batch_prompts.append([dict(role='user', content=complete_prompt)])
             outputs = prompt_model(batch_prompts) 
             process_llm_output(outputs,file_output_path,papername_list)
@@ -273,8 +277,10 @@ def generate_llm_review(data_dir,level,conference):
         guidelinesyaml = yaml.safe_load(f)
         
     guideline_in_prompt = guidelinesyaml.get(conference,None)
+    if not guideline_in_prompt:
+        print("Guidelines not loaded properly")
     output_format = promptsyaml.get("output_format",None)
-    
+
     # folders = os.listdir(data_dir) #dev,test,train folders
     if level == '1':
         prompt_template_name = f"level_{level}_prompt"
@@ -303,13 +309,15 @@ if __name__ == "__main__":
         print("where \n directory to process : '../data/nips_2013-2017/2017/ \n Level: '1' \n Guidelines:'nips'(check guidelines.yaml)")
         sys.exit(1)
         
+    start_time = time.time()
     data_dir = sys.argv[1]
     level = sys.argv[2]
     conference = sys.argv[3]
     print("Processing directory :",data_dir)
     print("Level :",level)
     print("Using guidelines from :",conference)
-    
+    loggingfile = f"loggings{level}.txt"
+    sys.stdout = open(loggingfile, "w")
     tokenizer, model = load_model()
     # print("Successfully loaded model!")
     
@@ -323,5 +331,6 @@ if __name__ == "__main__":
     #                        "../data/nips_2013-2017/2017/"]
 
     # data_dir = ["../data/nips_2013-2017/2017/"]
-        
+    
     generate_llm_review(data_dir,level,conference)
+    print(f"{data_dir} level {level} took {(time.time()-start_time)/60} min")

@@ -47,13 +47,14 @@ def get_paper(paper_address, paper_number):
     if len(abstract_text)>0:
         final_string += "Abstract" + "\n" + abstract_text +"\n"
     sections = data.get('metadata', {}).get('sections', [])
-    for section in sections:
-        heading = section.get('heading')
-        text = section.get('text')
-        text = clean_text(text)
-        data_dict[heading] = text
-        if(heading!= None and text!= None and heading != "Acknowledgements"):
-            final_string += heading + "\n" + text + "\n"
+    if sections: #sections = null exists in data
+        for section in sections:
+            heading = section.get('heading')
+            text = section.get('text')
+            text = clean_text(text)
+            data_dict[heading] = text
+            if(heading!= None and text!= None and heading != "Acknowledgements"):
+                final_string += heading + "\n" + text + "\n"
 
     return final_string
 
@@ -137,7 +138,7 @@ def make_prompt(prompt_template, paper_contents, human_input):
     return formatted_prompt
 
 # complete this
-def llm_call(prompt, llm_name, temperature):
+def llm_call(prompt, llm_name, temperature=0.3):
     
     # api_key = os.environ.get("OPENAI_API_KEY")
     # api_endpoint = os.environ.get("OPENAI_ENDPOINT")
