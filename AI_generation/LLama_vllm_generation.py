@@ -73,7 +73,7 @@ def prompt_model(batch_prompts):
 
     # generation arguments in this separate object (mostly has one-to-one mapping with HF tokenizers)
     max_new_tokens = 8000
-    gen_kwargs = vllm.SamplingParams(temperature=0.3, top_p=0.9, max_tokens=max_new_tokens + max_input_len)
+    gen_kwargs = vllm.SamplingParams(temperature=0.7, top_p=0.9, max_tokens=max_new_tokens + max_input_len)
     # outputs have both tokens and detokenized strings for direct use.
     outputs = model.generate(tokens, sampling_params=gen_kwargs)
     return outputs
@@ -90,7 +90,8 @@ def process_llm_output(outputs,reviews_llm_dir,papername_list,write_= True):
         return [extract_answer(out_text[0]) for out_text in out_strings] #for level3 summarization
 
 def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     batch_prompts =[]
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
@@ -129,7 +130,8 @@ def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
             papername_list = []
                 
 def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     batch_prompts =[]
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
@@ -165,7 +167,8 @@ def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
             papername_list = []
 
 def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,generatn_prompt):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     batch_prompts =[]
     
     for folder in folders:
@@ -229,7 +232,8 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
             papername_list = []                 
 
 def generate_level4(data_dir,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     batch_prompts =[]
     
     for folder in folders:

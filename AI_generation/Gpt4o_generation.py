@@ -1,13 +1,24 @@
 import os
 from utils import *
 import sys
-
+import time
 
 outputpath_model = "gpt_4o_latest"
 llm_name = "chatgpt-4o-latest"
 
+from ftfy import fix_text
+def remove_markdown(text):
+    text = re.sub(r"#+\s*", "", text) # Remove headings (###, ##, #)
+    text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)  # Remove **bold**
+    text = re.sub(r"\*(.*?)\*", r"\1", text)  # Remove *italic*
+    text = re.sub(r"_(.*?)_", r"\1", text)  # Remove _italic_
+    text = re.sub(r"\n{2,}", "\n", text)  # Reduce multiple newlines to 1
+    text = text.strip() 
+    return text
+
 def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
         parsed_pdfs = os.path.join(folderpath,"parsed_pdfs")
@@ -27,10 +38,14 @@ def generate_level1(data_dir,guideline_in_prompt,output_format,prompt_template):
             print('#'*50)
             print(complete_prompt)
             answer = llm_call(complete_prompt,llm_name)
+            print("$"*50)
+            print(answer)
+            print("$"*50)
             write_review(file_output_path, paper_name, answer) 
 
 def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
         parsed_pdfs = os.path.join(folderpath,"parsed_pdfs")
@@ -48,10 +63,14 @@ def generate_level2(data_dir,guideline_in_prompt,output_format,prompt_template):
             print('#'*50)
             print(complete_prompt)
             answer = llm_call(complete_prompt,llm_name)
+            print("$"*50)
+            print(answer)
+            print("$"*50)
             write_review(file_output_path, paper_name, answer) 
 
 def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,generatn_prompt):
-    folders = os.listdir(data_dir) #dev,test,train folders    
+    # folders = os.listdir(data_dir) #dev,test,train folders  
+    folders = ['dev','test','train']  
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
         human_reviews = os.path.join(folderpath,"reviews")
@@ -74,18 +93,23 @@ def generate_level3(data_dir,guideline_in_prompt,output_format,summarize_prompt,
                 print(f"Level 3 summarization :\n{complete_prompt}")
                 print('#'*50)
                 each_summarized = llm_call(complete_prompt,llm_name)
-                complete_prompt = generatn_prompt.format(summarized_humanreview = each_summarized,
+                clean_summarized = remove_markdown(each_summarized)
+                clean_summarized = fix_text(clean_summarized)
+                complete_prompt = generatn_prompt.format(summarized_humanreview = clean_summarized,
                                                                 guidelines=guideline_in_prompt,
                                                                 PaperInPromptFormat=PaperString)
                                                                 # OutputFormat=output_format)
                 print(f"Level 3 generation :\n{complete_prompt}")
                 print('#'*50)
                 answer = llm_call(complete_prompt,llm_name)
+                print("$"*50)
+                print(answer)
+                print("$"*50)
                 write_review(file_output_path, paper_name, answer)
 
 def generate_level4(data_dir,output_format,prompt_template):
-    folders = os.listdir(data_dir) #dev,test,train folders
-    
+    # folders = os.listdir(data_dir) #dev,test,train folders
+    folders = ['dev','test','train']
     for folder in folders:
         folderpath = os.path.join(data_dir,folder) #../data/nips_2013-2017/2017/test
         human_reviews = os.path.join(folderpath,"reviews")
@@ -106,6 +130,9 @@ def generate_level4(data_dir,output_format,prompt_template):
                 print('#'*50)
                 print(complete_prompt)
                 answer = llm_call(complete_prompt,llm_name)
+                print("$"*50)
+                print(answer)
+                print("$"*50)
                 write_review(file_output_path, paper_name, answer) 
 
 def generate_llm_review(data_dir,level,conference):
@@ -150,7 +177,7 @@ if __name__ == "__main__":
         print("Usage: script.py '../data/nips_2013-2017/2017/' '1' 'nips'")
         print("where \n directory to process : '../data/nips_2013-2017/2017/ \n Level: '1' \n Guidelines:'nips'(check guidelines.yaml)")
         sys.exit(1)
-        
+    start_time = time.time()
     data_dir = sys.argv[1]
     level = sys.argv[2]
     conference = sys.argv[3]
@@ -174,3 +201,4 @@ if __name__ == "__main__":
     # data_dir = ["../data/nips_2013-2017/2017/"]
     
     generate_llm_review(data_dir,level,conference)
+    print(f"\n{data_dir} level {level} took {(time.time()-start_time)/60} min")
