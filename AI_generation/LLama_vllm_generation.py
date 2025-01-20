@@ -50,7 +50,7 @@ def load_model():
 
     context_window = min(
          getattr(config, 'sliding_window', None) or config.max_position_embeddings,
-         config.max_position_embeddings, 25600
+         config.max_position_embeddings, 51200
     )
 
     model = vllm.LLM(MODEL, trust_remote_code=True, dtype=torch.float16,
