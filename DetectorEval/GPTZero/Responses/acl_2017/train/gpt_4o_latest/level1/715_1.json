@@ -1,0 +1,397 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "85c6dd0f-ed7e-40ad-9de7-06a61ea60ba4",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "Summary:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "This paper addresses the challenging task of open-domain question answering (QA) using Wikipedia as the sole knowledge source.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "The proposed system, DrWiki, integrates a two-stage pipeline: (1) a Document Retriever module that efficiently identifies relevant Wikipedia articles using bigram hashing and TF-IDF matching, and (2) a Document Reader module, a multi-layer recurrent neural network trained to extract answer spans from the retrieved articles.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "The authors evaluate their system on multiple QA datasets (SQuAD, CuratedTREC, WebQuestions, and WikiMovies) and demonstrate that multitask learning with distant supervision improves performance across datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "The work highlights the unique challenges of combining document retrieval and machine comprehension in a single system.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "Main Contributions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "1. Development of DrWiki as a unified QA system: The paper presents a novel approach to open-domain QA by combining document retrieval and machine comprehension into a cohesive pipeline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "The system is designed to operate solely on Wikipedia, making it a focused and resource-efficient solution compared to systems that rely on multiple redundant knowledge sources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "2. Evaluation across multiple benchmarks: The authors evaluate DrWiki on diverse QA datasets, demonstrating its generalizability and robustness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "The multitask learning approach, which combines SQuAD training with distant supervision from other datasets, is shown to improve performance across most datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "3. Analysis of individual components: The paper provides a detailed analysis of the Document Retriever and Document Reader modules, highlighting their strengths and limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "For example, the Document Retriever outperforms Wikipedia's built-in search engine, and the Document Reader achieves state-of-the-art results on the SQuAD benchmark for machine comprehension.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "1. Clear focus on a challenging problem: The paper tackles the realistic and underexplored problem of QA using a single knowledge source, which avoids the redundancy and complexity of multi-source systems like IBM's DeepQA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "2. Strong empirical results: The system achieves competitive performance on multiple datasets, and the multitask learning approach demonstrates the benefits of leveraging diverse training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "3. Thorough evaluation and ablation studies: The authors provide detailed evaluations of both the Document Retriever and Document Reader, including feature ablation studies and comparisons to baseline systems like YodaQA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989964962005615,
+                    "sentence": "4. Scalability and generalizability: The system is designed to be generic and adaptable to other document collections, making it a versatile contribution to the QA field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998317956924438,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978808760643005,
+                    "sentence": "1. Limited novelty in individual components: While the integration of retrieval and comprehension is valuable, the individual components (e.g., TF-IDF-based retrieval and LSTM-based comprehension) rely on well-established techniques, limiting the methodological novelty of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985795021057129,
+                    "sentence": "2. Performance gap in open-domain QA: The system's performance drops significantly when transitioning from machine comprehension (given a paragraph) to open-domain QA (given all of Wikipedia).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988853931427002,
+                    "sentence": "For example, the exact match score on SQuAD drops from 69.5% to 26.7%, indicating limitations in the end-to-end pipeline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991980791091919,
+                    "sentence": "3. Lack of end-to-end training: The Document Retriever and Document Reader are trained independently, which may limit the system's ability to optimize for the overall QA task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983969926834106,
+                    "sentence": "End-to-end training could potentially improve performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997875452041626,
+                    "sentence": "Questions to Authors:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996310472488403,
+                    "sentence": "1. Have you considered incorporating end-to-end training for the Document Retriever and Document Reader?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999379575252533,
+                    "sentence": "If not, what are the technical challenges in doing so?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986058473587036,
+                    "sentence": "2. How does the system handle ambiguous or multi-answer questions, especially when multiple relevant spans are retrieved?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988599419593811,
+                    "sentence": "3. Could the Document Reader be enhanced to better aggregate information across multiple paragraphs or documents?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998540878295898,
+                    "sentence": "Conclusion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989897012710571,
+                    "sentence": "This paper makes a meaningful contribution to the field of open-domain QA by presenting a scalable and generalizable system for answering questions using Wikipedia as the sole knowledge source.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986796379089355,
+                    "sentence": "While the system demonstrates strong performance and thoughtful design, there is room for improvement in terms of methodological novelty and end-to-end optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996224641799927,
+                    "sentence": "The work provides a solid foundation for future research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.995354473843668,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.995354473843668,
+                "mixed": 0.004645526156332054
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.995354473843668,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.995354473843668,
+                    "human": 0,
+                    "mixed": 0.004645526156332054
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary: \nThis paper addresses the challenging task of open-domain question answering (QA) using Wikipedia as the sole knowledge source. The proposed system, DrWiki, integrates a two-stage pipeline: (1) a Document Retriever module that efficiently identifies relevant Wikipedia articles using bigram hashing and TF-IDF matching, and (2) a Document Reader module, a multi-layer recurrent neural network trained to extract answer spans from the retrieved articles. The authors evaluate their system on multiple QA datasets (SQuAD, CuratedTREC, WebQuestions, and WikiMovies) and demonstrate that multitask learning with distant supervision improves performance across datasets. The work highlights the unique challenges of combining document retrieval and machine comprehension in a single system.\nMain Contributions: \n1. Development of DrWiki as a unified QA system: The paper presents a novel approach to open-domain QA by combining document retrieval and machine comprehension into a cohesive pipeline. The system is designed to operate solely on Wikipedia, making it a focused and resource-efficient solution compared to systems that rely on multiple redundant knowledge sources.\n \n2. Evaluation across multiple benchmarks: The authors evaluate DrWiki on diverse QA datasets, demonstrating its generalizability and robustness. The multitask learning approach, which combines SQuAD training with distant supervision from other datasets, is shown to improve performance across most datasets.\n3. Analysis of individual components: The paper provides a detailed analysis of the Document Retriever and Document Reader modules, highlighting their strengths and limitations. For example, the Document Retriever outperforms Wikipedia's built-in search engine, and the Document Reader achieves state-of-the-art results on the SQuAD benchmark for machine comprehension.\nStrengths: \n1. Clear focus on a challenging problem: The paper tackles the realistic and underexplored problem of QA using a single knowledge source, which avoids the redundancy and complexity of multi-source systems like IBM's DeepQA.\n \n2. Strong empirical results: The system achieves competitive performance on multiple datasets, and the multitask learning approach demonstrates the benefits of leveraging diverse training data.\n3. Thorough evaluation and ablation studies: The authors provide detailed evaluations of both the Document Retriever and Document Reader, including feature ablation studies and comparisons to baseline systems like YodaQA.\n4. Scalability and generalizability: The system is designed to be generic and adaptable to other document collections, making it a versatile contribution to the QA field.\nWeaknesses: \n1. Limited novelty in individual components: While the integration of retrieval and comprehension is valuable, the individual components (e.g., TF-IDF-based retrieval and LSTM-based comprehension) rely on well-established techniques, limiting the methodological novelty of the work.\n2. Performance gap in open-domain QA: The system's performance drops significantly when transitioning from machine comprehension (given a paragraph) to open-domain QA (given all of Wikipedia). For example, the exact match score on SQuAD drops from 69.5% to 26.7%, indicating limitations in the end-to-end pipeline.\n3. Lack of end-to-end training: The Document Retriever and Document Reader are trained independently, which may limit the system's ability to optimize for the overall QA task. End-to-end training could potentially improve performance.\nQuestions to Authors: \n1. Have you considered incorporating end-to-end training for the Document Retriever and Document Reader? If not, what are the technical challenges in doing so? \n2. How does the system handle ambiguous or multi-answer questions, especially when multiple relevant spans are retrieved? \n3. Could the Document Reader be enhanced to better aggregate information across multiple paragraphs or documents?\nConclusion: \nThis paper makes a meaningful contribution to the field of open-domain QA by presenting a scalable and generalizable system for answering questions using Wikipedia as the sole knowledge source. While the system demonstrates strong performance and thoughtful design, there is room for improvement in terms of methodological novelty and end-to-end optimization. The work provides a solid foundation for future research in this area."
+        }
+    ]
+}

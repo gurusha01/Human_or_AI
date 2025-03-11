@@ -1,0 +1,896 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "fb9c8d7c-439e-4b5c-afc9-be7d63ab29bb",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.004262429196387529,
+                    "sentence": "This paper proposes a method for recognizing lexical entailment (specifically,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002880570013076067,
+                    "sentence": "hypernymy) in context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004998587071895599,
+                    "sentence": "The proposed method represents each context by",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002355715958401561,
+                    "sentence": "averaging, min-pooling, and max-pooling its word embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030100103467702866,
+                    "sentence": "These",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026015539187937975,
+                    "sentence": "representations are combined with the target word's embedding via element-wise",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0019025373039767146,
+                    "sentence": "multiplication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024766523856669664,
+                    "sentence": "The in-context representation of the left-hand-side argument is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00375041039660573,
+                    "sentence": "concatenated to that of the right-hand-side argument's, creating a single",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002067409921437502,
+                    "sentence": "vectorial representation of the input.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0034337027464061975,
+                    "sentence": "This input is then fed into a logistic",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0029570013284683228,
+                    "sentence": "regression classifier.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0029651259537786245,
+                    "sentence": "In my view, the paper has two major weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0021348395384848118,
+                    "sentence": "First, the classification model",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0027261993382126093,
+                    "sentence": "used in this paper (concat + linear classifier) was shown to be inherently",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024161923211067915,
+                    "sentence": "unable to learn relations in \"Do Supervised Distributional Methods Really Learn",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012351510813459754,
+                    "sentence": "Lexical Inference Relations?\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014360101195052266,
+                    "sentence": "(Levy et al., 2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0023980862461030483,
+                    "sentence": "Second, the paper makes",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002232941333204508,
+                    "sentence": "superiority claims in the text that are simply not substantiated in the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009530425304546952,
+                    "sentence": "quantitative results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0028817844577133656,
+                    "sentence": "In addition, there are several clarity and experiment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0021005035378038883,
+                    "sentence": "setup issues that give an overall feeling that the paper is still half-baked.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003694891231134534,
+                    "sentence": "= Classification Model =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0023856055922806263,
+                    "sentence": "Concatenating two word vectors as input for a linear classifier was",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00168485043104738,
+                    "sentence": "mathematically proven to be incapable of learning a relation between words",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009335177019238472,
+                    "sentence": "(Levy et al., 2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001639550318941474,
+                    "sentence": "What is the motivation behind using this model in the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004337408114224672,
+                    "sentence": "contextual setting?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0023467321880161762,
+                    "sentence": "While this handicap might be somewhat mitigated by adding similarity features,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001748782698996365,
+                    "sentence": "all these features are symmetric (including the Euclidean distance, since \"L-R\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024662120267748833,
+                    "sentence": "= \"R-L\").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026525864377617836,
+                    "sentence": "Why do we expect these features to detect entailment?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0019332024967297912,
+                    "sentence": "I am not convinced that this is a reasonable classification model for the task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003024475183337927,
+                    "sentence": "= Superiority Claims =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002931314054876566,
+                    "sentence": "The authors claim that their contextual representation is superior to",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002839250722900033,
+                    "sentence": "context2vec.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0021975364070385695,
+                    "sentence": "This is not evident from the paper, because:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0031241104006767273,
+                    "sentence": "1) The best result (F1) in both table 3 and table 4 (excluding PPDB features)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004208316560834646,
+                    "sentence": "is the 7th row.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0018527645152062178,
+                    "sentence": "To my understanding, this variant does not use the proposed",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0016648704186081886,
+                    "sentence": "contextual representation; in fact, it uses the context2vec representation for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012866626493632793,
+                    "sentence": "the word type.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013307799817994237,
+                    "sentence": "2) This experiment uses ready-made embeddings (GloVe) and parameters",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0025464901700615883,
+                    "sentence": "(context2vec) that were tuned on completely different datasets with very",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0018883103039115667,
+                    "sentence": "different sizes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009422266157343984,
+                    "sentence": "Comparing the two is empirically flawed, and probably biased",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014301232295110822,
+                    "sentence": "towards the method using GloVe (which was a trained on a much larger corpus).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008695523720234632,
+                    "sentence": "In addition, it seems that the biggest boost in performance comes from adding",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012595363659784198,
+                    "sentence": "similarity features and not from the proposed context representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006141001358628273,
+                    "sentence": "This is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0028741289861500263,
+                    "sentence": "not discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008249688544310629,
+                    "sentence": "= Miscellaneous Comments =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001117593259550631,
+                    "sentence": "- I liked the WordNet dataset - using the example sentences is a nice trick.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012594766449183226,
+                    "sentence": "- I don't quite understand why the task of cross-lingual lexical entailment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001632212195545435,
+                    "sentence": "is interesting or even reasonable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001661278773099184,
+                    "sentence": "- Some basic baselines are really missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008878675289452076,
+                    "sentence": "Instead of the \"random\" baseline,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009220987558364868,
+                    "sentence": "how well does the \"all true\" baseline perform?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001486476743593812,
+                    "sentence": "What about the context-agnostic",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0023971463087946177,
+                    "sentence": "symmetric cosine similarity of the two target words?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00149555376265198,
+                    "sentence": "- In general, the tables are very difficult to read.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009693901520222425,
+                    "sentence": "The caption should make",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0011882090475410223,
+                    "sentence": "the tables self-explanatory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012667365372180939,
+                    "sentence": "Also, it is unclear what each variant means;",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009968553204089403,
+                    "sentence": "perhaps a more precise description (in text) of each variant could help the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001448158174753189,
+                    "sentence": "reader understand?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008636176353320479,
+                    "sentence": "- What are the PPDB-specific features?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009281776729039848,
+                    "sentence": "This is really unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006832553772255778,
+                    "sentence": "- I could not understand 8.1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007838357705622911,
+                    "sentence": "- Table 4 is overfull.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007200054824352264,
+                    "sentence": "- In table 4, the F1 of \"random\" should be 0.25.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0010504488600417972,
+                    "sentence": "- Typo in line 462: should be \"Table 3\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001334527158178389,
+                    "sentence": "= Author Response =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007522473460994661,
+                    "sentence": "Thank you for addressing my comments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014703255146741867,
+                    "sentence": "Unfortunately, there are still some",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0016759342979639769,
+                    "sentence": "standing issues that prevent me from accepting this paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001475196797400713,
+                    "sentence": "- The problem I see with the base model is not that it is learning prototypical",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013588635483756661,
+                    "sentence": "hypernyms, but that it's mathematically not able to learn a relation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0011618686839938164,
+                    "sentence": "- It appears that we have a different reading of tables 3 and 4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012689820723608136,
+                    "sentence": "Maybe this is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009744679555296898,
+                    "sentence": "a clarity issue, but it prevents me from understanding how the claim that",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002271887846291065,
+                    "sentence": "contextual representations substantially improve performance is supported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024980490561574697,
+                    "sentence": "Furthermore, it seems like other factors (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001351353363133967,
+                    "sentence": "similarity features) have a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0021989087108522654,
+                    "sentence": "greater effect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 60,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 61,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 63,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 65,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 66,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 67,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 69,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 70,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 71,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 72,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 73,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 74,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 76,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 77,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 78,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 79,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 81,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 82,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 83,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 85,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.017486769031531738,
+            "class_probabilities": {
+                "human": 0.9825132309684682,
+                "ai": 0.017486769031531738,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9825132309684682,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.017486769031531738,
+                    "human": 0.9825132309684682,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a method for recognizing lexical entailment (specifically,\nhypernymy) in context. The proposed method represents each context by\naveraging, min-pooling, and max-pooling its word embeddings. These\nrepresentations are combined with the target word's embedding via element-wise\nmultiplication. The in-context representation of the left-hand-side argument is\nconcatenated to that of the right-hand-side argument's, creating a single\nvectorial representation of the input. This input is then fed into a logistic\nregression classifier.\nIn my view, the paper has two major weaknesses. First, the classification model\nused in this paper (concat + linear classifier) was shown to be inherently\nunable to learn relations in \"Do Supervised Distributional Methods Really Learn\nLexical Inference Relations?\" (Levy et al., 2015). Second, the paper makes\nsuperiority claims in the text that are simply not substantiated in the\nquantitative results. In addition, there are several clarity and experiment\nsetup issues that give an overall feeling that the paper is still half-baked.\n= Classification Model =\nConcatenating two word vectors as input for a linear classifier was\nmathematically proven to be incapable of learning a relation between words\n(Levy et al., 2015). What is the motivation behind using this model in the\ncontextual setting?\nWhile this handicap might be somewhat mitigated by adding similarity features,\nall these features are symmetric (including the Euclidean distance, since \"L-R\"\n= \"R-L\"). Why do we expect these features to detect entailment?\nI am not convinced that this is a reasonable classification model for the task.\n= Superiority Claims =\nThe authors claim that their contextual representation is superior to\ncontext2vec. This is not evident from the paper, because:\n1) The best result (F1) in both table 3 and table 4 (excluding PPDB features)\nis the 7th row. To my understanding, this variant does not use the proposed\ncontextual representation; in fact, it uses the context2vec representation for\nthe word type.\n2) This experiment uses ready-made embeddings (GloVe) and parameters\n(context2vec) that were tuned on completely different datasets with very\ndifferent sizes. Comparing the two is empirically flawed, and probably biased\ntowards the method using GloVe (which was a trained on a much larger corpus).\nIn addition, it seems that the biggest boost in performance comes from adding\nsimilarity features and not from the proposed context representation. This is\nnot discussed.\n= Miscellaneous Comments =\n- I liked the WordNet dataset - using the example sentences is a nice trick.\n- I don't quite understand why the task of cross-lingual lexical entailment\nis interesting or even reasonable.\n- Some basic baselines are really missing. Instead of the \"random\" baseline,\nhow well does the \"all true\" baseline perform? What about the context-agnostic\nsymmetric cosine similarity of the two target words?\n- In general, the tables are very difficult to read. The caption should make\nthe tables self-explanatory. Also, it is unclear what each variant means;\nperhaps a more precise description (in text) of each variant could help the\nreader understand?\n- What are the PPDB-specific features? This is really unclear.\n- I could not understand 8.1.\n- Table 4 is overfull.\n- In table 4, the F1 of \"random\" should be 0.25.\n- Typo in line 462: should be \"Table 3\"\n= Author Response =\nThank you for addressing my comments. Unfortunately, there are still some\nstanding issues that prevent me from accepting this paper:\n- The problem I see with the base model is not that it is learning prototypical\nhypernyms, but that it's mathematically not able to learn a relation.\n- It appears that we have a different reading of tables 3 and 4. Maybe this is\na clarity issue, but it prevents me from understanding how the claim that\ncontextual representations substantially improve performance is supported.\nFurthermore, it seems like other factors (e.g. similarity features) have a\ngreater effect."
+        }
+    ]
+}

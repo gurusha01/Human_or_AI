@@ -1,0 +1,414 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "32196c4a-909e-48d1-a8d4-63ef503cf5af",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9230089783668518,
+                    "sentence": "This paper proposes a model-based reinforcement learning approach focusing on predicting future rewards given a current state and future actions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9342058300971985,
+                    "sentence": "This is achieved with a \"residual recurrent neural network\", that outputs the expected reward increase at various time steps in the future.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9103943705558777,
+                    "sentence": "To demonstrate the usefulness of this approach, experiments are conducted on Atari games, with a simple playing strategy that consists in evaluating random sequences of moves and picking the one with highest expected reward (and low enough chance of dying).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9566987752914429,
+                    "sentence": "Interestingly, out of the 3 games tested, one of them exhibits better performance when the agent is trained in a multitask setting (i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9734272360801697,
+                    "sentence": "learning all games simultaneously), hinting that transfer learning is occurring.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9957197308540344,
+                    "sentence": "This submission is easy enough to read, and the reward prediction architecture looks like an original and sound idea.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.998039722442627,
+                    "sentence": "There are however several points that I believe prevent this work from reaching the ICLR bar, as detailed below.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9979225397109985,
+                    "sentence": "The first issue is the discrepancy between the algorithm proposed in Section 3 vs its actual implementation in Section 4 (experiments): in Section 3 the output is supposed to be the expected accumulated reward in future time steps (as a single scalar), while in experiments it is instead two numbers, one which is the probability of dying and another one which is the probability of having a higher score without dying.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9985926747322083,
+                    "sentence": "This might work better, but it also means the idea as presented in the main body of the paper is not actually evaluated (and I guess it would not work well, as otherwise why implement it differently?)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.998687207698822,
+                    "sentence": "In addition, the experimental results are quite limited: only on 3 games that were hand-picked to be easy enough, and no comparison to other RL techniques (DQN & friends).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07668303698301315,
+                    "sentence": "I realize that the main focus of the paper is not about exhibiting state-of-the-art results, since the policy being used is only a simple heuristic to show that the model predictions can ne used to drive decisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07996878027915955,
+                    "sentence": "That being said, I think experiments should have tried to demonstrate how to use this model to obtain better reinforcement learning algorithms: there is actually no reinforcement learning done here, since the model is a supervised algorithm, used in a manually-defined hardcoded policy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08984633535146713,
+                    "sentence": "Another question that could have been addressed (but was not) in the experiments is how good these predictions are (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.20099902153015137,
+                    "sentence": "classification error on dying probability, MSE on future rewards,...), compared to simpler baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13417725265026093,
+                    "sentence": "Finally, the paper's \"previous work\" section is too limited, focusing only on DQN and in particular saying very little on the topic of model-based RL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1911109983921051,
+                    "sentence": "I think a paper like for instance \"Action-Conditional Video Prediction using Deep Networks in Atari Games\" should have been an obvious \"must cite\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.16282017529010773,
+                    "sentence": "Minor comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11394451558589935,
+                    "sentence": "- Notations are unusual, with \"a\" denoting a state rather than an action, this is potentially confusing and I see no reason to stray away from standard RL notations",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11039552092552185,
+                    "sentence": "- Using a dot for tensor concatenation is not a great choice either, since the dot usually indicates a dot product",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09822942316532135,
+                    "sentence": "- The ri in 3.2.2 is a residual that has nothing to do with ri the reward",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09950706362724304,
+                    "sentence": "- c_i is defined as \"The control that was performed at time i\", but instead it seems to be the control performed at time i-1",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10185042023658752,
+                    "sentence": "- There is a recurrent confusion between mean and median in 3.2.2",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0031765622552484274,
+                    "sentence": "- x should not be used in Observation 1 since the x from Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003546173218637705,
+                    "sentence": "3 does not go through layer normalization",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002960490295663476,
+                    "sentence": "- The inequality in Observation 1 should be about \"xi\", not xi",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030483354348689318,
+                    "sentence": "- Observation 1 (with its proof) takes too much space for such a simple result",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003998487256467342,
+                    "sentence": "- In 3.2.3 the first rj should be ri",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003287817817181349,
+                    "sentence": "- The probability of dying comes out of nowhere in 3.3, since we do not know yet it will be an output of the model",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004029234871268272,
+                    "sentence": "- \"Our approach is not able to learn from good strategies\" => did you mean \"only from good strategies\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0042698862962424755,
+                    "sentence": "- Please say that in Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004643249325454235,
+                    "sentence": "4 \"fc\" means \"fully connected\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004550470970571041,
+                    "sentence": "- It would be nice also to say how the architecture of Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005862643010914326,
+                    "sentence": "4 differs from the classical DQN architecture from Mnih et al (2015)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004193548578768969,
+                    "sentence": "- Please clarify r_j2 as per your answer in OpenReview comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006244448944926262,
+                    "sentence": "- Table 3 says \"After one iteration\" but has \"PRL Iteration 2\" in it, which is confusing",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006402710452675819,
+                    "sentence": "- \"Figure 5 shows that not only there is no degradation in Pong and Demon Attack\"=> to me it seems to be a bit worse, actually",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006041673477739096,
+                    "sentence": "- \"A model that has learned only from random play is able to play at least 7 times better.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007241987623274326,
+                    "sentence": "=> not clear where this 7 comes from",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007226729765534401,
+                    "sentence": "- \"Demon Attack's plot in Figure 5c shows a potential problem we mentioned earlier\" => where was it mentioned?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.0022792978668507114
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.21155670802790458,
+            "class_probabilities": {
+                "human": 0.7883725486917423,
+                "ai": 0.21155670802790458,
+                "mixed": 7.074328035304754e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.7883725486917423,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.21155670802790458,
+                    "human": 0.7883725486917423,
+                    "mixed": 7.074328035304754e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a model-based reinforcement learning approach focusing on predicting future rewards given a current state and future actions. This is achieved with a \"residual recurrent neural network\", that outputs the expected reward increase at various time steps in the future. To demonstrate the usefulness of this approach, experiments are conducted on Atari games, with a simple playing strategy that consists in evaluating random sequences of moves and picking the one with highest expected reward (and low enough chance of dying). Interestingly, out of the 3 games tested, one of them exhibits better performance when the agent is trained in a multitask setting (i.e. learning all games simultaneously), hinting that transfer learning is occurring.\nThis submission is easy enough to read, and the reward prediction architecture looks like an original and sound idea. There are however several points that I believe prevent this work from reaching the ICLR bar, as detailed below.\nThe first issue is the discrepancy between the algorithm proposed in Section 3 vs its actual implementation in Section 4 (experiments): in Section 3 the output is supposed to be the expected accumulated reward in future time steps (as a single scalar), while in experiments it is instead two numbers, one which is the probability of dying and another one which is the probability of having a higher score without dying. This might work better, but it also means the idea as presented in the main body of the paper is not actually evaluated (and I guess it would not work well, as otherwise why implement it differently?)\nIn addition, the experimental results are quite limited: only on 3 games that were hand-picked to be easy enough, and no comparison to other RL techniques (DQN & friends). I realize that the main focus of the paper is not about exhibiting state-of-the-art results, since the policy being used is only a simple heuristic to show that the model predictions can ne used to drive decisions. That being said, I think experiments should have tried to demonstrate how to use this model to obtain better reinforcement learning algorithms: there is actually no reinforcement learning done here, since the model is a supervised algorithm, used in a manually-defined hardcoded policy. Another question that could have been addressed (but was not) in the experiments is how good these predictions are (e.g. classification error on dying probability, MSE on future rewards, ...), compared to simpler baselines.\nFinally, the paper's \"previous work\" section is too limited, focusing only on DQN and in particular saying very little on the topic of model-based RL. I think a paper like for instance \"Action-Conditional Video Prediction using Deep Networks in Atari Games\" should have been an obvious \"must cite\".\nMinor comments:\n- Notations are unusual, with \"a\" denoting a state rather than an action, this is potentially confusing and I see no reason to stray away from standard RL notations\n- Using a dot for tensor concatenation is not a great choice either, since the dot usually indicates a dot product\n- The ri in 3.2.2 is a residual that has nothing to do with ri the reward\n- c_i is defined as \"The control that was performed at time i\", but instead it seems to be the control performed at time i-1\n- There is a recurrent confusion between mean and median in 3.2.2\n- x should not be used in Observation 1 since the x from Fig. 3 does not go through layer normalization\n- The inequality in Observation 1 should be about \"xi\", not xi\n- Observation 1 (with its proof) takes too much space for such a simple result\n- In 3.2.3 the first rj should be ri\n- The probability of dying comes out of nowhere in 3.3, since we do not know yet it will be an output of the model\n- \"Our approach is not able to learn from good strategies\" => did you mean \"only from good strategies\"?\n- Please say that in Fig. 4 \"fc\" means \"fully connected\"\n- It would be nice also to say how the architecture of Fig. 4 differs from the classical DQN architecture from Mnih et al (2015)\n- Please clarify r_j2 as per your answer in OpenReview comments\n- Table 3 says \"After one iteration\" but has \"PRL Iteration 2\" in it, which is confusing\n- \"Figure 5 shows that not only there is no degradation in Pong and Demon Attack\"=> to me it seems to be a bit worse, actually\n- \"A model that has learned only from random play is able to play at least 7 times better.\" => not clear where this 7 comes from\n- \"Demon Attack's plot in Figure 5c shows a potential problem we mentioned earlier\" => where was it mentioned?"
+        }
+    ]
+}

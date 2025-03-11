@@ -1,0 +1,410 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "be94b93e-3f01-487b-b087-08f30f57676d",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "Summary of Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "This paper proposes a novel end-to-end speech recognition system that combines a convolutional neural network (ConvNet) acoustic model with a graph-based decoder.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "The main contribution is the introduction of the AutoSegCriterion (ASG), a variant of the Connectionist Temporal Classification (CTC) criterion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "ASG eliminates the need for blank labels, introduces letter repetition symbols, and uses unnormalized scores with global normalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999956488609314,
+                    "sentence": "The approach is evaluated on the LibriSpeech dataset, achieving competitive word error rates (WERs) with MFCC features and promising results with raw waveform inputs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The system is computationally efficient, avoiding the need for HMM/GMM pre-training or the computational overhead of RNN-based models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "The authors also provide a detailed comparison of ASG and CTC in terms of accuracy and speed, demonstrating that ASG is faster for longer sequences while maintaining comparable accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "Decision: Reject",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999989926815033,
+                    "sentence": "While the paper introduces an interesting variant of CTC and demonstrates competitive results, it falls short in several key areas, particularly in its evaluation and positioning within the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999992847442627,
+                    "sentence": "The lack of direct comparisons to state-of-the-art word-level models, insufficient justification of design choices, and incomplete analysis of the proposed approach's limitations prevent the paper from meeting the standards of acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999905228614807,
+                    "sentence": "Supporting Arguments for Decision",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994695186615,
+                    "sentence": "1. Evaluation Gaps: The paper claims competitive performance but does not provide a direct comparison to word-level hybrid DNN/HMM models, such as those from Panayotov et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "(2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "Additionally, the results are not contextualized against Baidu's Deep Speech models, which use significantly larger training datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "This omission makes it difficult to assess the true competitiveness of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "2. Unjustified Design Choices: The use of a large analysis window (~2 seconds) is not adequately justified, and the observed advantages are not explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964833259583,
+                    "sentence": "Similarly, the decision to replace blank symbols with letter repetition symbols in ASG is not rigorously analyzed in terms of its impact on beam pruning and language model integration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "3. Incomplete Technical Details: The paper lacks sufficient discussion on critical aspects such as the handling of non-normalized scores, beam pruning strategies, and the role of transition scalars.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "These details are essential for reproducibility and understanding the approach's limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982523918151855,
+                    "sentence": "4. Clarity and Presentation Issues: Inconsistent notation (e.g., variable 't' for different time scales) and missing units in Table 1 reduce readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9962033629417419,
+                    "sentence": "Furthermore, Figure 4 does not specify the corpus used, and prior related work (e.g., the NIPS end-to-end workshop paper) is not clearly referenced.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992099404335022,
+                    "sentence": "Suggestions for Improvement",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994726836681366,
+                    "sentence": "1. Comparative Evaluation: Include direct comparisons to word-level hybrid DNN/HMM models and clarify how the results compare to Baidu's Deep Speech models, accounting for differences in training data size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9941227436065674,
+                    "sentence": "2. Justification of Design Choices: Provide a detailed explanation of the advantages of the large analysis window and the use of letter repetition symbols.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934136271476746,
+                    "sentence": "Analyze the impact of dropping normalization on beam pruning and language model scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926498532295227,
+                    "sentence": "3. Technical Details: Expand on the handling of non-normalized scores, beam pruning, and transition scalars.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9905173778533936,
+                    "sentence": "Clarify how digits are used to label character repetitions and how numbers are processed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937403202056885,
+                    "sentence": "4. Presentation: Fix inconsistent notation, include units in all tables, and specify the corpus used in figures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992838442325592,
+                    "sentence": "Clearly reference prior related work to better position the paper in the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945557117462158,
+                    "sentence": "Questions for the Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982891082763672,
+                    "sentence": "1. How does the proposed ASG criterion perform when compared to word-level models, particularly hybrid DNN/HMM systems?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984785914421082,
+                    "sentence": "2. What specific advantages does the large analysis window provide, and how does it affect computational efficiency and accuracy?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980880618095398,
+                    "sentence": "3. Can you provide more details on the impact of dropping normalization on beam pruning and language model integration?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997851550579071,
+                    "sentence": "4. How are digits used to label character repetitions, and how are numbers handled during training and decoding?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996669590473175,
+                    "sentence": "While the paper presents an interesting approach, addressing the above issues would significantly strengthen its contributions and make it more suitable for acceptance in a future submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary of Contributions\nThis paper proposes a novel end-to-end speech recognition system that combines a convolutional neural network (ConvNet) acoustic model with a graph-based decoder. The main contribution is the introduction of the AutoSegCriterion (ASG), a variant of the Connectionist Temporal Classification (CTC) criterion. ASG eliminates the need for blank labels, introduces letter repetition symbols, and uses unnormalized scores with global normalization. The approach is evaluated on the LibriSpeech dataset, achieving competitive word error rates (WERs) with MFCC features and promising results with raw waveform inputs. The system is computationally efficient, avoiding the need for HMM/GMM pre-training or the computational overhead of RNN-based models. The authors also provide a detailed comparison of ASG and CTC in terms of accuracy and speed, demonstrating that ASG is faster for longer sequences while maintaining comparable accuracy.\nDecision: Reject \nWhile the paper introduces an interesting variant of CTC and demonstrates competitive results, it falls short in several key areas, particularly in its evaluation and positioning within the literature. The lack of direct comparisons to state-of-the-art word-level models, insufficient justification of design choices, and incomplete analysis of the proposed approach's limitations prevent the paper from meeting the standards of acceptance.\nSupporting Arguments for Decision\n1. Evaluation Gaps: The paper claims competitive performance but does not provide a direct comparison to word-level hybrid DNN/HMM models, such as those from Panayotov et al. (2015). Additionally, the results are not contextualized against Baidu's Deep Speech models, which use significantly larger training datasets. This omission makes it difficult to assess the true competitiveness of the proposed approach.\n \n2. Unjustified Design Choices: The use of a large analysis window (~2 seconds) is not adequately justified, and the observed advantages are not explained. Similarly, the decision to replace blank symbols with letter repetition symbols in ASG is not rigorously analyzed in terms of its impact on beam pruning and language model integration.\n3. Incomplete Technical Details: The paper lacks sufficient discussion on critical aspects such as the handling of non-normalized scores, beam pruning strategies, and the role of transition scalars. These details are essential for reproducibility and understanding the approach's limitations.\n4. Clarity and Presentation Issues: Inconsistent notation (e.g., variable 't' for different time scales) and missing units in Table 1 reduce readability. Furthermore, Figure 4 does not specify the corpus used, and prior related work (e.g., the NIPS end-to-end workshop paper) is not clearly referenced.\nSuggestions for Improvement\n1. Comparative Evaluation: Include direct comparisons to word-level hybrid DNN/HMM models and clarify how the results compare to Baidu's Deep Speech models, accounting for differences in training data size.\n \n2. Justification of Design Choices: Provide a detailed explanation of the advantages of the large analysis window and the use of letter repetition symbols. Analyze the impact of dropping normalization on beam pruning and language model scores.\n3. Technical Details: Expand on the handling of non-normalized scores, beam pruning, and transition scalars. Clarify how digits are used to label character repetitions and how numbers are processed.\n4. Presentation: Fix inconsistent notation, include units in all tables, and specify the corpus used in figures. Clearly reference prior related work to better position the paper in the literature.\nQuestions for the Authors\n1. How does the proposed ASG criterion perform when compared to word-level models, particularly hybrid DNN/HMM systems?\n2. What specific advantages does the large analysis window provide, and how does it affect computational efficiency and accuracy?\n3. Can you provide more details on the impact of dropping normalization on beam pruning and language model integration?\n4. How are digits used to label character repetitions, and how are numbers handled during training and decoding?\nWhile the paper presents an interesting approach, addressing the above issues would significantly strengthen its contributions and make it more suitable for acceptance in a future submission."
+        }
+    ]
+}

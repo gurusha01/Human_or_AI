@@ -1,0 +1,690 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "81aa6868-d23e-418f-b621-9648d3eb36ce",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.006844172719866037,
+                    "sentence": "Summary",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03100888803601265,
+                    "sentence": "===",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00624122517183423,
+                    "sentence": "This paper proposes the Neural Physics Engine (NPE), a network architecture",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004175033885985613,
+                    "sentence": "which simulates object interactions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004834756255149841,
+                    "sentence": "While NPE decides to explicitly represent",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002558981766924262,
+                    "sentence": "objects (rather than video frames), it incorporates knowledge of physics",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005613965913653374,
+                    "sentence": "almost exclusively through training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0062884315848350525,
+                    "sentence": "It is tested in a toy domain with",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005917940754443407,
+                    "sentence": "bouncing 2d balls.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00544689130038023,
+                    "sentence": "The proposed architecture processes each object in a scene one at a time.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002906838431954384,
+                    "sentence": "Pairs of objects are embedded in a common space where the effect of the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0029115001671016216,
+                    "sentence": "objects on each other can be represented.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00487643713131547,
+                    "sentence": "These embeddings are summed",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003030631225556135,
+                    "sentence": "and combined with the focus object's state to predict the focus object's",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0032903312239795923,
+                    "sentence": "change in velocity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001877290429547429,
+                    "sentence": "Alternative baselines are presented which either",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0037520350888371468,
+                    "sentence": "forego the pairwise embedding for a single object embedding or",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0028752516955137253,
+                    "sentence": "encode a focus object's neighbors in a sequence of LSTM states.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013845122884958982,
+                    "sentence": "NPE outperforms the baselines dramatically, showing the importance of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0032276527490466833,
+                    "sentence": "architecture choices in learning to do this object based simulation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024648811668157578,
+                    "sentence": "The model is tested in multiple ways.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002847866155207157,
+                    "sentence": "Ability to predict object trajectory",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001576450769789517,
+                    "sentence": "over long time spans is measured.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001591998152434826,
+                    "sentence": "Generalization to different numbers of objects",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0033072023652493954,
+                    "sentence": "is measured.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004110556095838547,
+                    "sentence": "Generalization to slightly altered environments (difference",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0037581278011202812,
+                    "sentence": "shaped walls) is measured.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003865219186991453,
+                    "sentence": "Finally, the NPE is also trained to predict",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0052368054166436195,
+                    "sentence": "object mass using only interactions with other objects, where it also",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003956856206059456,
+                    "sentence": "outperforms baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004367952235043049,
+                    "sentence": "Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011332708410918713,
+                    "sentence": "===",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00721930293366313,
+                    "sentence": "* I have one more clarifying question.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01359165646135807,
+                    "sentence": "Are the inputs to the blue box in",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06007807329297066,
+                    "sentence": "figure 3 (b)/(c) the concatenation of the summed embeddings and state vector",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07438348978757858,
+                    "sentence": "of object 3?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0550544410943985,
+                    "sentence": "Or is the input to the blue module some other combination of the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.045254915952682495,
+                    "sentence": "two vectors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04943842813372612,
+                    "sentence": "* Section 2.1 begins with \"First, because physics does not",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06658882647752762,
+                    "sentence": "change across inertial frames, it suffices to separately predict the future state of each object conditioned",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.048488713800907135,
+                    "sentence": "on the past states of itself and the other objects in its neighborhood, similar to Fragkiadaki",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0541958324611187,
+                    "sentence": "et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06812672317028046,
+                    "sentence": "(2015).\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04435482621192932,
+                    "sentence": "I think this is an argument to forego the visual representation used by previous",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05916177108883858,
+                    "sentence": "work in favor of an object only representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0414293110370636,
+                    "sentence": "This would be more clear if there",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.052875418215990067,
+                    "sentence": "were contrast with a visual representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03100578300654888,
+                    "sentence": "* As addressed in the paper, this approach is novel, though less so after taking",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026292022317647934,
+                    "sentence": "into consideration the concurrent work of Battaglia et.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.013765226118266582,
+                    "sentence": "al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04047364369034767,
+                    "sentence": "in NIPS 2016 titled",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.022072767838835716,
+                    "sentence": "\"Interaction Networks for Learning about Objects, Relations and Physics.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027477120980620384,
+                    "sentence": "This work offers a different network architecture and set of experiments, as",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02028637006878853,
+                    "sentence": "well as great presentation, but the use of an object based representation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.034244224429130554,
+                    "sentence": "for learning to predict physical behavior is shared.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.042466286569833755,
+                    "sentence": "Overall Evaluation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04001683369278908,
+                    "sentence": "===",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026708604767918587,
+                    "sentence": "This paper was a pleasure to read and provided many experiments that offered",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03107021562755108,
+                    "sentence": "clear and interesting conclusions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03660765290260315,
+                    "sentence": "It offers a novel approach (though",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030401667580008507,
+                    "sentence": "less so compared to the concurrent work of Battaglia et.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04702557250857353,
+                    "sentence": "al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03240938112139702,
+                    "sentence": "2016) which",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03813699260354042,
+                    "sentence": "represents a significant step forward in the current investigation of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05734574794769287,
+                    "sentence": "intuitive physics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 57,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 60,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 63,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 64,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.03751552122182913,
+            "class_probabilities": {
+                "human": 0.9622006644706045,
+                "ai": 0.03751552122182913,
+                "mixed": 0.00028381430756647936
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9622006644706045,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.03751552122182913,
+                    "human": 0.9622006644706045,
+                    "mixed": 0.00028381430756647936
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Summary\n===\nThis paper proposes the Neural Physics Engine (NPE), a network architecture\nwhich simulates object interactions. While NPE decides to explicitly represent\nobjects (rather than video frames), it incorporates knowledge of physics\nalmost exclusively through training data. It is tested in a toy domain with\nbouncing 2d balls.\nThe proposed architecture processes each object in a scene one at a time.\nPairs of objects are embedded in a common space where the effect of the\nobjects on each other can be represented. These embeddings are summed\nand combined with the focus object's state to predict the focus object's\nchange in velocity. Alternative baselines are presented which either\nforego the pairwise embedding for a single object embedding or\nencode a focus object's neighbors in a sequence of LSTM states.\nNPE outperforms the baselines dramatically, showing the importance of\narchitecture choices in learning to do this object based simulation.\nThe model is tested in multiple ways. Ability to predict object trajectory\nover long time spans is measured. Generalization to different numbers of objects\nis measured. Generalization to slightly altered environments (difference\nshaped walls) is measured. Finally, the NPE is also trained to predict\nobject mass using only interactions with other objects, where it also\noutperforms baselines.\nComments\n===\n* I have one more clarifying question. Are the inputs to the blue box in\nfigure 3 (b)/(c) the concatenation of the summed embeddings and state vector\nof object 3? Or is the input to the blue module some other combination of the\ntwo vectors?\n* Section 2.1 begins with \"First, because physics does not\nchange across inertial frames, it suffices to separately predict the future state of each object conditioned\non the past states of itself and the other objects in its neighborhood, similar to Fragkiadaki\net al. (2015).\"\nI think this is an argument to forego the visual representation used by previous\nwork in favor of an object only representation. This would be more clear if there\nwere contrast with a visual representation.\n* As addressed in the paper, this approach is novel, though less so after taking\ninto consideration the concurrent work of Battaglia et. al. in NIPS 2016 titled\n\"Interaction Networks for Learning about Objects, Relations and Physics.\"\nThis work offers a different network architecture and set of experiments, as\nwell as great presentation, but the use of an object based representation\nfor learning to predict physical behavior is shared.\nOverall Evaluation\n===\nThis paper was a pleasure to read and provided many experiments that offered\nclear and interesting conclusions. It offers a novel approach (though\nless so compared to the concurrent work of Battaglia et. al. 2016) which\nrepresents a significant step forward in the current investigation of\nintuitive physics."
+        }
+    ]
+}

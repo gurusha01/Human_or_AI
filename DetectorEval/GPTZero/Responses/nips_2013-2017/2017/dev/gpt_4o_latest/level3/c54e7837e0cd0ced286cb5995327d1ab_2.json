@@ -1,0 +1,345 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "8f19b6cb-0a58-4b33-97e1-e2147778aba6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "The paper addresses critical limitations of Batch Normalization (BN) in scenarios involving small or non-i.i.d.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "mini-batches, such as unreliable mean/variance estimates and mismatched normalization during training and inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The authors propose Batch Renormalization (BR), a straightforward yet effective extension to BN that introduces an affine transformation to align local (mini-batch) and global (population) normalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "This ensures that activations during training and inference are consistent, even when mini-batches are small or non-i.i.d., while retaining the benefits of BN, such as faster training and reduced sensitivity to initialization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The paper is technically sound and well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "The authors provide a clear hypothesis about the drawbacks of BN and support their claims with theoretical insights and experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "The proposed method is simple to implement, computationally efficient, and compatible with existing architectures, making it a practical contribution to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961853027344,
+                    "sentence": "The experimental results demonstrate that BR outperforms BN in challenging settings, such as small mini-batches and non-i.i.d.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "sampling, while maintaining comparable performance in standard scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "However, the evaluation could be further strengthened by including results for a broader range of mini-batch sizes, particularly for extreme cases like a mini-batch size of one, where BN is known to fail entirely.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "This would provide a more comprehensive understanding of BR's robustness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "The paper is clearly written and well-organized, with sufficient detail for reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "The authors provide a thorough explanation of BR, including its algorithm, theoretical grounding, and implementation considerations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "The related work section is comprehensive, situating the contribution within the broader context of normalization techniques and highlighting its novelty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9634131193161011,
+                    "sentence": "The originality of the work lies in its novel approach to addressing BN's limitations without introducing significant computational overhead or altering the class of functions representable by the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9244115352630615,
+                    "sentence": "The idea of using a per-dimension affine correction that is identity in expectation is elegant and practical.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9331135153770447,
+                    "sentence": "While the concept of aligning training and inference activations is not entirely new, the proposed method is a novel and effective instantiation of this idea.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9150764346122742,
+                    "sentence": "The significance of the work is high, as it addresses a fundamental issue in deep learning that affects a wide range of applications, including image classification, metric learning, and potentially recurrent networks and generative adversarial networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.954699695110321,
+                    "sentence": "The proposed method has the potential to be widely adopted, given its ease of implementation and demonstrated effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5033040046691895,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5068724155426025,
+                    "sentence": "1. Addresses a well-motivated and practical problem in deep learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7037416100502014,
+                    "sentence": "2. Simple, computationally efficient, and easy to integrate into existing architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5472702383995056,
+                    "sentence": "3. Strong experimental results demonstrating improvements over BN in challenging scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8095706105232239,
+                    "sentence": "4. Clear and detailed presentation, with sufficient information for reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.34211301803588867,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6507040858268738,
+                    "sentence": "1. Limited evaluation on extreme mini-batch sizes (e.g., size of one).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7624104619026184,
+                    "sentence": "2. Additional hyperparameters (e.g., correction limits) require tuning, though the authors provide some guidance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.768261194229126,
+                    "sentence": "In conclusion, the paper makes a solid contribution to the field by extending BN to handle small and non-i.i.d.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7454512119293213,
+                    "sentence": "mini-batches effectively.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7455047965049744,
+                    "sentence": "While additional experiments on extreme mini-batch sizes would strengthen the work, the proposed method is a valuable addition to the deep learning toolkit.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7894850969314575,
+                    "sentence": "I recommend acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses critical limitations of Batch Normalization (BN) in scenarios involving small or non-i.i.d. mini-batches, such as unreliable mean/variance estimates and mismatched normalization during training and inference. The authors propose Batch Renormalization (BR), a straightforward yet effective extension to BN that introduces an affine transformation to align local (mini-batch) and global (population) normalization. This ensures that activations during training and inference are consistent, even when mini-batches are small or non-i.i.d., while retaining the benefits of BN, such as faster training and reduced sensitivity to initialization.\nThe paper is technically sound and well-motivated. The authors provide a clear hypothesis about the drawbacks of BN and support their claims with theoretical insights and experimental results. The proposed method is simple to implement, computationally efficient, and compatible with existing architectures, making it a practical contribution to the field. The experimental results demonstrate that BR outperforms BN in challenging settings, such as small mini-batches and non-i.i.d. sampling, while maintaining comparable performance in standard scenarios. However, the evaluation could be further strengthened by including results for a broader range of mini-batch sizes, particularly for extreme cases like a mini-batch size of one, where BN is known to fail entirely. This would provide a more comprehensive understanding of BR's robustness.\nThe paper is clearly written and well-organized, with sufficient detail for reproducibility. The authors provide a thorough explanation of BR, including its algorithm, theoretical grounding, and implementation considerations. The related work section is comprehensive, situating the contribution within the broader context of normalization techniques and highlighting its novelty.\nThe originality of the work lies in its novel approach to addressing BN's limitations without introducing significant computational overhead or altering the class of functions representable by the model. The idea of using a per-dimension affine correction that is identity in expectation is elegant and practical. While the concept of aligning training and inference activations is not entirely new, the proposed method is a novel and effective instantiation of this idea.\nThe significance of the work is high, as it addresses a fundamental issue in deep learning that affects a wide range of applications, including image classification, metric learning, and potentially recurrent networks and generative adversarial networks. The proposed method has the potential to be widely adopted, given its ease of implementation and demonstrated effectiveness.\nPros:\n1. Addresses a well-motivated and practical problem in deep learning.\n2. Simple, computationally efficient, and easy to integrate into existing architectures.\n3. Strong experimental results demonstrating improvements over BN in challenging scenarios.\n4. Clear and detailed presentation, with sufficient information for reproducibility.\nCons:\n1. Limited evaluation on extreme mini-batch sizes (e.g., size of one).\n2. Additional hyperparameters (e.g., correction limits) require tuning, though the authors provide some guidance.\nIn conclusion, the paper makes a solid contribution to the field by extending BN to handle small and non-i.i.d. mini-batches effectively. While additional experiments on extreme mini-batch sizes would strengthen the work, the proposed method is a valuable addition to the deep learning toolkit. I recommend acceptance."
+        }
+    ]
+}

@@ -1,0 +1,568 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6115e688-3c5a-4398-ae21-13968171895d",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9646973013877869,
+                    "sentence": "This paper investigates three simple weight-pruning techniques for NMT, and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9859364032745361,
+                    "sentence": "shows that pruning weights based on magnitude works best, and that retraining",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9862951040267944,
+                    "sentence": "after pruning can recover original performance, even with fairly severe",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9881764650344849,
+                    "sentence": "pruning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9816333651542664,
+                    "sentence": "The main strength of paper is that the technique is very straightforward and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9923933744430542,
+                    "sentence": "the results are good.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9914801716804504,
+                    "sentence": "It's also clearly written and does a nice job covering",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9952621459960938,
+                    "sentence": "previous work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9796522855758667,
+                    "sentence": "A weakness is that the work isn't very novel, being just an application of a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9761495590209961,
+                    "sentence": "known technique to a new kind of neural net and application (namely NMT), with",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9870007038116455,
+                    "sentence": "results that aren't very surprising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9719818830490112,
+                    "sentence": "It's not clear to me what practical significance these results have, since to",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9765503406524658,
+                    "sentence": "take advantage of them you would need sparse matrix representations, which are",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9571527242660522,
+                    "sentence": "trickier to get working fast on a GPU - and after all, speed is the main",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9619423747062683,
+                    "sentence": "problem with NMT, not space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9910603165626526,
+                    "sentence": "(There may be new work that changes this picture,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9873892068862915,
+                    "sentence": "since the field is evolving fast, but if so you need to describe it, and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9908003807067871,
+                    "sentence": "generally do a better job explaining why we should care about pruning.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9903339743614197,
+                    "sentence": "A suggestion for dealing with the above weakness would be to use the pruning",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9884310364723206,
+                    "sentence": "results to inform architecture changes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.985244870185852,
+                    "sentence": "For instance, figure 3 suggests that",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9859521389007568,
+                    "sentence": "you might be able to reduce the number of hidden layers to two, and also",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.971440315246582,
+                    "sentence": "potentially reduce the dimension of source and target embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.983901858329773,
+                    "sentence": "Another suggestion is that you try to make a link between pruning+retraining",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009689443977549672,
+                    "sentence": "and dropout (eg \"A Theoretically Grounded Application of Dropout in Recurrent",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0016871839761734009,
+                    "sentence": "Neural Networks\", Gal, arXiv 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0015616845339536667,
+                    "sentence": "Detailed comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008813429158180952,
+                    "sentence": "Line 111: \"softmax weights\" - \"output embeddings\" may be a preferable",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0015146555379033089,
+                    "sentence": "term",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002154039917513728,
+                    "sentence": "S3.2: It's misleading to call n the \"dimension\" of the network, and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00164886808488518,
+                    "sentence": "specify all parameter sizes as integer multiples of this number as if this were",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005509932991117239,
+                    "sentence": "a logical constraint.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0022917408496141434,
+                    "sentence": "Line 319: You should cite Bahdanau et al here for the attention idea, rather",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030583608895540237,
+                    "sentence": "than Luong for their use of it.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0032882490195333958,
+                    "sentence": "S3.3: Class-uniform and class-distribution seem very similar (and naturally get",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005323711782693863,
+                    "sentence": "very similar results); consider dropping one or the other.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003988645039498806,
+                    "sentence": "Figure 3 suggestion that you could hybridize pruning: use class-blind for most",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00490079540759325,
+                    "sentence": "classes, but class-uniform for the embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0037823158781975508,
+                    "sentence": "Figure 4 should show perplexity too.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0036528529599308968,
+                    "sentence": "What pruning is used in section 4.2 & figure 6?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0039404937997460365,
+                    "sentence": "Figure 7: does loss pertain to training or test corpora?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003369550220668316,
+                    "sentence": "Figure 8: This seems to be missing softmax weights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013434217544272542,
+                    "sentence": "I found this diagram",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004664748441427946,
+                    "sentence": "somewhat hard to interpret; it might be better to give relevant statistics,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004735913127660751,
+                    "sentence": "such as the proportion of each class that is removed by class-blind pruning at",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012180338613688946,
+                    "sentence": "various levels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009443332441151142,
+                    "sentence": "Line 762: You might want to cite Le et al, \"A Simple Way to Initialize",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009469958022236824,
+                    "sentence": "Recurrent Networks of Rectified Linear Units\", arXiv 2015.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.3178082191780822,
+            "class_probabilities": {
+                "human": 0.6821917808219177,
+                "ai": 0.3178082191780822,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.6821917808219177,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.3178082191780822,
+                    "human": 0.6821917808219177,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper investigates three simple weight-pruning techniques for NMT, and\nshows that pruning weights based on magnitude works best, and that retraining\nafter pruning can recover original performance, even with fairly severe\npruning.\nThe main strength of paper is that the technique is very straightforward and\nthe results are good. It's also clearly written and does a nice job covering\nprevious work.\nA weakness is that the work isn't very novel, being just an application of a\nknown technique to a new kind of neural net and application (namely NMT), with\nresults that aren't very surprising. \nIt's not clear to me what practical significance these results have, since to\ntake advantage of them you would need sparse matrix representations, which are\ntrickier to get working fast on a GPU - and after all, speed is the main\nproblem with NMT, not space. (There may be new work that changes this picture,\nsince the field is evolving fast, but if so you need to describe it, and\ngenerally do a better job explaining why we should care about pruning.)\nA suggestion for dealing with the above weakness would be to use the pruning\nresults to inform architecture changes. For instance, figure 3 suggests that\nyou might be able to reduce the number of hidden layers to two, and also\npotentially reduce the dimension of source and target embeddings.\nAnother suggestion is that you try to make a link between pruning+retraining\nand dropout (eg \"A Theoretically Grounded Application of Dropout in Recurrent\nNeural Networks\", Gal, arXiv 2016).\nDetailed comments:\nLine 111: \"softmax weights\" - \"output embeddings\" may be a preferable\nterm\nS3.2: It's misleading to call n the \"dimension\" of the network, and\nspecify all parameter sizes as integer multiples of this number as if this were\na logical constraint.\nLine 319: You should cite Bahdanau et al here for the attention idea, rather\nthan Luong for their use of it.\nS3.3: Class-uniform and class-distribution seem very similar (and naturally get\nvery similar results); consider dropping one or the other.\nFigure 3 suggestion that you could hybridize pruning: use class-blind for most\nclasses, but class-uniform for the embeddings.\nFigure 4 should show perplexity too.\nWhat pruning is used in section 4.2 & figure 6?\nFigure 7: does loss pertain to training or test corpora?\nFigure 8: This seems to be missing softmax weights. I found this diagram\nsomewhat hard to interpret; it might be better to give relevant statistics,\nsuch as the proportion of each class that is removed by class-blind pruning at\nvarious levels.\nLine 762: You might want to cite Le et al, \"A Simple Way to Initialize\nRecurrent Networks of Rectified Linear Units\", arXiv 2015."
+        }
+    ]
+}

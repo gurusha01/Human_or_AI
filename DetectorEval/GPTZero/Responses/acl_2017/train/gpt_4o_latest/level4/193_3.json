@@ -1,0 +1,552 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "0613cabe-a2a3-47c3-96cb-95dc22658c04",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999057650566101,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999911367893219,
+                    "sentence": "- Summary:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997771382331848,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998068809509277,
+                    "sentence": "The paper introduces a transition-based system for parsing UCCA graphs, which include non-terminal nodes, reentrancy, and discontinuities.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998399019241333,
+                    "sentence": "The transition set combines previously proposed transitions, with key features being the swap transition for handling discontinuities and transitions that avoid popping the stack to support multiple parent nodes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997787475585938,
+                    "sentence": "The system achieves its best performance using an MLP as the transition classifier, leveraging features derived from bidirectional LSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999848484992981,
+                    "sentence": "The authors evaluate the system's performance against other state-of-the-art parsers by employing conversion schemes (to bilexical graphs and tree approximations).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998737573623657,
+                    "sentence": "These parsers are trained on the converted data, used to predict graphs (or trees), and the resulting structures are converted back to UCCA format for comparison with gold-standard UCCA representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999572038650513,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999224543571472,
+                    "sentence": "- Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999459385871887,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997568130493164,
+                    "sentence": "The paper provides a robust contribution, employing state-of-the-art transition-based parsing techniques and machine learning methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996541738510132,
+                    "sentence": "It is exceptionally well-written, with precise descriptions of both formal and experimental aspects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997484087944031,
+                    "sentence": "The authors exhibit a strong understanding of related work, encompassing both parsing methodologies and shallow semantic representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999269843101501,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998254776000977,
+                    "sentence": "- Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998819231987,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999746561050415,
+                    "sentence": "The primary limitation of the paper is that its originality lies more in the targeted UCCA representations than in the design of the proposed parser itself.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999563097953796,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997727274894714,
+                    "sentence": "- More detailed comments and clarification questions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999551177024841,
+                    "sentence": "=========================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998382925987244,
+                    "sentence": "Introduction",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998215436935425,
+                    "sentence": "Lines 46-49: The term \"discontinuous nodes\" could be associated with non-projectivity in dependency syntax.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998525381088257,
+                    "sentence": "It might be more accurate to state that the distinction lies with phrase-structure syntax rather than dependency syntax.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998162984848022,
+                    "sentence": "Section 2:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998570084571838,
+                    "sentence": "The description of the UCCA scheme, specifically the phrase \"a node (or unit) corresponds to a terminal or to several sub-units,\" is somewhat unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998295307159424,
+                    "sentence": "Are you suggesting something beyond the idea that a node is either a terminal or a non-terminal?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998435974121094,
+                    "sentence": "For instance, could a non-terminal node have only one child, making it neither a terminal nor composed of multiple sub-units?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997768402099609,
+                    "sentence": "The phrase \"movement, action or state\" is somewhat imprecise, as there are processes that are neither movements nor actions (e.g., agentless transformations).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998327493667603,
+                    "sentence": "While the UCCA guidelines use these terms, they later clarify the state/process dichotomy, with processes encompassing \"action, movement, or some other relation that evolves in time.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9807459115982056,
+                    "sentence": "Lines 178-181: The contrast between \"John and Mary's trip\" and \"John and Mary's children\" is not ideal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9490160942077637,
+                    "sentence": "The relational noun \"children\" implies an underlying relationship between two participants (the children and John+Mary), which UCCA must also account for.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9710401892662048,
+                    "sentence": "Section 4:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9631994962692261,
+                    "sentence": "Regarding the conversion procedures:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9352111220359802,
+                    "sentence": "- While the detailed description of the conversion procedure in the supplementary material is thorough, a more informal explanation in the main paper would improve readability (e.g., framing it as a variant of the constituent-to-dependency conversion procedure described by Manning, 1995).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9759722352027893,
+                    "sentence": "Additionally, it would be helpful to explain the rationale behind the priority order used to determine the head of an edge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8581265211105347,
+                    "sentence": "- Clarify how l(u) is selected when multiple children share the same label (e.g., is the leftmost child chosen?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7492035031318665,
+                    "sentence": ").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9136002063751221,
+                    "sentence": "- In the converted graphs shown in Figure 4, some edges appear to be reversed (e.g., the direction between \"John\" and \"moved\" and between \"John\" and \"gave\" should be consistent).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9209659695625305,
+                    "sentence": "- Furthermore, the low upper bound for remote edges in bilexical approximations is puzzling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9124022126197815,
+                    "sentence": "The current description of the conversions does not provide a clear understanding of which types of remote edges cannot be accommodated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8875055313110352,
+                    "sentence": "Regarding the comparison to other parsers:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.905882716178894,
+                    "sentence": "It seems somewhat unfair to fine-tune the proposed parser while using default settings for the other parsers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8878868818283081,
+                    "sentence": "Section 5:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8478046655654907,
+                    "sentence": "Line 595: Please provide a more detailed justification for the claim \"using better input encoding.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8901628255844116,
+                    "sentence": "Section 6:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9406638145446777,
+                    "sentence": "The purported superiority of representations with non-terminal nodes is not entirely convincing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9466365575790405,
+                    "sentence": "While avoiding the selection of a head for certain constructions may be considered more elegant, it is worth noting that co-head labels in bilexical dependencies can formally encode the same information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.995354473843668,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.995354473843668,
+                "mixed": 0.004645526156332054
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.995354473843668,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.995354473843668,
+                    "human": 0,
+                    "mixed": 0.004645526156332054
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "=========================\n- Summary:\n=========================\nThe paper introduces a transition-based system for parsing UCCA graphs, which include non-terminal nodes, reentrancy, and discontinuities. The transition set combines previously proposed transitions, with key features being the swap transition for handling discontinuities and transitions that avoid popping the stack to support multiple parent nodes. The system achieves its best performance using an MLP as the transition classifier, leveraging features derived from bidirectional LSTMs.\nThe authors evaluate the system's performance against other state-of-the-art parsers by employing conversion schemes (to bilexical graphs and tree approximations). These parsers are trained on the converted data, used to predict graphs (or trees), and the resulting structures are converted back to UCCA format for comparison with gold-standard UCCA representations.\n=========================\n- Strengths:\n=========================\nThe paper provides a robust contribution, employing state-of-the-art transition-based parsing techniques and machine learning methods. \nIt is exceptionally well-written, with precise descriptions of both formal and experimental aspects. The authors exhibit a strong understanding of related work, encompassing both parsing methodologies and shallow semantic representations.\n=========================\n- Weaknesses:\n=========================\nThe primary limitation of the paper is that its originality lies more in the targeted UCCA representations than in the design of the proposed parser itself.\n=========================\n- More detailed comments and clarification questions:\n=========================\nIntroduction\nLines 46-49: The term \"discontinuous nodes\" could be associated with non-projectivity in dependency syntax. It might be more accurate to state that the distinction lies with phrase-structure syntax rather than dependency syntax.\nSection 2:\nThe description of the UCCA scheme, specifically the phrase \"a node (or unit) corresponds to a terminal or to several sub-units,\" is somewhat unclear. Are you suggesting something beyond the idea that a node is either a terminal or a non-terminal? For instance, could a non-terminal node have only one child, making it neither a terminal nor composed of multiple sub-units?\nThe phrase \"movement, action or state\" is somewhat imprecise, as there are processes that are neither movements nor actions (e.g., agentless transformations). While the UCCA guidelines use these terms, they later clarify the state/process dichotomy, with processes encompassing \"action, movement, or some other relation that evolves in time.\"\nLines 178-181: The contrast between \"John and Mary's trip\" and \"John and Mary's children\" is not ideal. The relational noun \"children\" implies an underlying relationship between two participants (the children and John+Mary), which UCCA must also account for.\nSection 4:\nRegarding the conversion procedures:\n- While the detailed description of the conversion procedure in the supplementary material is thorough, a more informal explanation in the main paper would improve readability (e.g., framing it as a variant of the constituent-to-dependency conversion procedure described by Manning, 1995). Additionally, it would be helpful to explain the rationale behind the priority order used to determine the head of an edge.\n- Clarify how l(u) is selected when multiple children share the same label (e.g., is the leftmost child chosen?).\n- In the converted graphs shown in Figure 4, some edges appear to be reversed (e.g., the direction between \"John\" and \"moved\" and between \"John\" and \"gave\" should be consistent).\n- Furthermore, the low upper bound for remote edges in bilexical approximations is puzzling. The current description of the conversions does not provide a clear understanding of which types of remote edges cannot be accommodated.\nRegarding the comparison to other parsers:\nIt seems somewhat unfair to fine-tune the proposed parser while using default settings for the other parsers.\nSection 5:\nLine 595: Please provide a more detailed justification for the claim \"using better input encoding.\"\nSection 6:\nThe purported superiority of representations with non-terminal nodes is not entirely convincing. While avoiding the selection of a head for certain constructions may be considered more elegant, it is worth noting that co-head labels in bilexical dependencies can formally encode the same information."
+        }
+    ]
+}

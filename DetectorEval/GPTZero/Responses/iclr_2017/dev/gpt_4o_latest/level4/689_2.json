@@ -1,0 +1,325 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "119d9141-2af9-4991-bf74-347eba424bf9",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9802944660186768,
+                    "sentence": "This paper employs tensors to construct generative models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9697163105010986,
+                    "sentence": "The core idea involves partitioning the input into regions represented by mixture models, with the joint distribution of the mixture components captured using a tensor.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9610342979431152,
+                    "sentence": "By constraining the tensors to those with efficient decompositions, the authors train convolutional arithmetic circuits to estimate the probability of the input and class label, thereby creating a generative model for both the input and labels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9393993616104126,
+                    "sentence": "The proposed approach is conceptually elegant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9500463008880615,
+                    "sentence": "However, it is not entirely clear how the authors determine the specific architecture of their model and how these design choices correspond to the class of joint distributions the model can represent.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9637182950973511,
+                    "sentence": "While these choices may be somewhat heuristic, the overall framework offers a compelling mechanism for controlling the generality of the distributions being modeled.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9704340100288391,
+                    "sentence": "The experiments are conducted on simple, synthetic datasets involving missing data, which represents a limitation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9719241261482239,
+                    "sentence": "The paper would be more persuasive if it included experiments on real-world problems with missing data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9816844463348389,
+                    "sentence": "A key challenge here is the need to know which elements of the input are missing, which constrains the method's applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9729019403457642,
+                    "sentence": "Could the authors consider experiments on problems like the Netflix challenge, a canonical example of prediction with missing data?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9621772170066833,
+                    "sentence": "Despite these limitations, the experiments provide meaningful comparisons to prior work and serve as a reasonable initial evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9759499430656433,
+                    "sentence": "I found the handling of missing data in the experiments somewhat unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.990294873714447,
+                    "sentence": "From the introductory discussion, I understood that the generative model operates over region patches in the image, suggesting that missing regions would be marginalized.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948150515556335,
+                    "sentence": "However, when missing data consists of IID randomly missing pixels, it seems likely that every region would contain some missing information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9694830179214478,
+                    "sentence": "Why is it valid to marginalize over missing pixels in this case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.966703474521637,
+                    "sentence": "Specifically, in Equation 6, $x_i$ represents a local region, and the subsequent discussion outlines how to marginalize over missing regions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9622877240180969,
+                    "sentence": "How does this process work when only part of a region is missing?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9572288990020752,
+                    "sentence": "Additionally, the summation in the equation following Equation 6 appears potentially large.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9745558500289917,
+                    "sentence": "What is the computational cost of this operation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9507623314857483,
+                    "sentence": "The paper also appears inconsistent regarding the broader applicability of its results beyond images.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9705886840820312,
+                    "sentence": "The probabilistic model is primarily motivated in the context of images, yet the authors note in the experiments that they avoid using state-of-the-art inpainting algorithms because their method is not restricted to images and they wish to compare to image-specific methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9315362572669983,
+                    "sentence": "This argument would be more convincing if the paper included experiments in non-image domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8701868057250977,
+                    "sentence": "It is also unclear whether the proposed network leverages translation invariance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.942533016204834,
+                    "sentence": "A key factor in the success of CNNs is their encoding of translation invariance through weight sharing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9231416583061218,
+                    "sentence": "Does the authors' network incorporate such invariance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.927505612373352,
+                    "sentence": "If not, why should we expect it to perform well in challenging image-related tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9000019431114197,
+                    "sentence": "Finally, as a minor issue, the paper would benefit from more thorough proofreading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.958040714263916,
+                    "sentence": "For instance, a few errors from the first page include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.933868944644928,
+                    "sentence": "- \"significantly lesser\" â ' \"significantly less\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9297981858253479,
+                    "sentence": "- \"the the\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9100324511528015,
+                    "sentence": "- \"provenly\" â ' \"provably\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.8923758534658037,
+            "class_probabilities": {
+                "human": 0.10626570421472266,
+                "ai": 0.8923758534658037,
+                "mixed": 0.00135844231947367
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8923758534658037,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8923758534658037,
+                    "human": 0.10626570421472266,
+                    "mixed": 0.00135844231947367
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper employs tensors to construct generative models. The core idea involves partitioning the input into regions represented by mixture models, with the joint distribution of the mixture components captured using a tensor. By constraining the tensors to those with efficient decompositions, the authors train convolutional arithmetic circuits to estimate the probability of the input and class label, thereby creating a generative model for both the input and labels.\nThe proposed approach is conceptually elegant. However, it is not entirely clear how the authors determine the specific architecture of their model and how these design choices correspond to the class of joint distributions the model can represent. While these choices may be somewhat heuristic, the overall framework offers a compelling mechanism for controlling the generality of the distributions being modeled.\nThe experiments are conducted on simple, synthetic datasets involving missing data, which represents a limitation. The paper would be more persuasive if it included experiments on real-world problems with missing data. A key challenge here is the need to know which elements of the input are missing, which constrains the method's applicability. Could the authors consider experiments on problems like the Netflix challenge, a canonical example of prediction with missing data? Despite these limitations, the experiments provide meaningful comparisons to prior work and serve as a reasonable initial evaluation.\nI found the handling of missing data in the experiments somewhat unclear. From the introductory discussion, I understood that the generative model operates over region patches in the image, suggesting that missing regions would be marginalized. However, when missing data consists of IID randomly missing pixels, it seems likely that every region would contain some missing information. Why is it valid to marginalize over missing pixels in this case? Specifically, in Equation 6, $x_i$ represents a local region, and the subsequent discussion outlines how to marginalize over missing regions. How does this process work when only part of a region is missing? Additionally, the summation in the equation following Equation 6 appears potentially large. What is the computational cost of this operation?\nThe paper also appears inconsistent regarding the broader applicability of its results beyond images. The probabilistic model is primarily motivated in the context of images, yet the authors note in the experiments that they avoid using state-of-the-art inpainting algorithms because their method is not restricted to images and they wish to compare to image-specific methods. This argument would be more convincing if the paper included experiments in non-image domains.\nIt is also unclear whether the proposed network leverages translation invariance. A key factor in the success of CNNs is their encoding of translation invariance through weight sharing. Does the authors' network incorporate such invariance? If not, why should we expect it to perform well in challenging image-related tasks?\nFinally, as a minor issue, the paper would benefit from more thorough proofreading. For instance, a few errors from the first page include:\n- \"significantly lesser\" â ' \"significantly less\" \n- \"the the\" \n- \"provenly\" â ' \"provably\""
+        }
+    ]
+}

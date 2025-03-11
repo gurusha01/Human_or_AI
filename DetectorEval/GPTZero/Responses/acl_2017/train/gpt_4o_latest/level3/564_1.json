@@ -1,0 +1,407 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a1313945-e05b-4e1d-a586-6eae90378eb6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997615814209,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "This paper introduces Grid Beam Search (GBS), a novel extension to traditional beam search, designed to incorporate pre-specified lexical constraints into sequence generation tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "The proposed method is model-agnostic and does not require modifications to the underlying model parameters or training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997615814209,
+                    "sentence": "The authors demonstrate the utility of GBS in two key applications: interactive translation (via simulated post-editing) and domain adaptation (using domain-specific terminologies).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "The primary contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "1. Formalization of Lexically Constrained Decoding: The paper provides a clear and general framework for incorporating lexical constraints into sequence generation, which is applicable across a wide range of tasks (e.g., machine translation, summarization, and dialog generation).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "2. Algorithmic Innovation: GBS extends beam search by organizing hypotheses in a grid structure indexed by time steps and constraint coverage, enabling the handling of unordered and multi-token constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "3. Empirical Demonstration: The authors show that GBS improves translation quality in interactive scenarios and achieves significant BLEU gains in domain adaptation without retraining the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "1. General Applicability: The method is highly flexible and can be applied to any sequence generation model that uses beam search.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "This generality is a notable strength, as it broadens the potential impact of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "2. Practical Relevance: The focus on interactive translation and domain adaptation addresses real-world challenges in machine translation, such as user-guided corrections and terminology integration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "3. Handling of Unordered Constraints: The ability to incorporate unordered lexical constraints without alignment information is a significant advancement, particularly for tasks involving non-compositional constructions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "4. Simplicity and Efficiency: Despite its simplicity, GBS is effective and does not require changes to the underlying model, making it easy to adopt in existing systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "5. Significant BLEU Gains: The experimental results, particularly in domain adaptation for English-Portuguese, demonstrate the practical utility of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "1. Limited Experiments: The experimental evaluation is somewhat narrow in scope.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "While the results are promising, the lack of comparison to standard fine-tuning baselines in domain adaptation limits the ability to assess the true effectiveness of GBS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "2. Terminology Ambiguity: The term \"coverage vector\" is potentially misleading, as it implies a continuous representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "\"Coverage set\" would be a more accurate descriptor.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998582601547241,
+                    "sentence": "3. Incomplete Analysis: Table 2 does not report the number of constraints per source sentence, which is critical for calibrating BLEU gains and understanding the relationship between constraint density and performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998717904090881,
+                    "sentence": "4. No Comparison to Related Methods: The paper does not compare GBS to other approaches for handling lexical constraints, such as prefix decoding or phrase-based SMT methods, which could provide additional context for its contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997673630714417,
+                    "sentence": "5. Scalability Concerns: While the authors discuss efficiency, the O(ktc) complexity of GBS could become a bottleneck for tasks with a large number of constraints, especially in real-time applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997681975364685,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999378323554993,
+                    "sentence": "1. How does GBS compare to standard fine-tuning approaches for domain adaptation in terms of BLEU gains and computational cost?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999332427978516,
+                    "sentence": "2. Can you provide additional details on the scalability of GBS for tasks with a high number of constraints?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999553561210632,
+                    "sentence": "Are there any optimizations or heuristics that could mitigate the increased complexity?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997765421867371,
+                    "sentence": "3. Have you considered evaluating GBS on tasks beyond machine translation, such as summarization or dialog generation, to further validate its generality?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983189702033997,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997144937515259,
+                    "sentence": "Overall, this paper makes a valuable contribution to the field of machine translation and sequence generation by introducing a simple yet effective method for incorporating lexical constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989744424819946,
+                    "sentence": "Despite some weaknesses in experimental design and analysis, the proposed algorithm is practical, generalizable, and addresses important real-world challenges.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985243082046509,
+                    "sentence": "I recommend this paper for acceptance, provided the authors address the experimental limitations and clarify certain aspects of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces Grid Beam Search (GBS), a novel extension to traditional beam search, designed to incorporate pre-specified lexical constraints into sequence generation tasks. The proposed method is model-agnostic and does not require modifications to the underlying model parameters or training data. The authors demonstrate the utility of GBS in two key applications: interactive translation (via simulated post-editing) and domain adaptation (using domain-specific terminologies). The primary contributions of the paper are:\n1. Formalization of Lexically Constrained Decoding: The paper provides a clear and general framework for incorporating lexical constraints into sequence generation, which is applicable across a wide range of tasks (e.g., machine translation, summarization, and dialog generation).\n2. Algorithmic Innovation: GBS extends beam search by organizing hypotheses in a grid structure indexed by time steps and constraint coverage, enabling the handling of unordered and multi-token constraints.\n3. Empirical Demonstration: The authors show that GBS improves translation quality in interactive scenarios and achieves significant BLEU gains in domain adaptation without retraining the model.\nStrengths\n1. General Applicability: The method is highly flexible and can be applied to any sequence generation model that uses beam search. This generality is a notable strength, as it broadens the potential impact of the work.\n2. Practical Relevance: The focus on interactive translation and domain adaptation addresses real-world challenges in machine translation, such as user-guided corrections and terminology integration.\n3. Handling of Unordered Constraints: The ability to incorporate unordered lexical constraints without alignment information is a significant advancement, particularly for tasks involving non-compositional constructions.\n4. Simplicity and Efficiency: Despite its simplicity, GBS is effective and does not require changes to the underlying model, making it easy to adopt in existing systems.\n5. Significant BLEU Gains: The experimental results, particularly in domain adaptation for English-Portuguese, demonstrate the practical utility of the proposed method.\nWeaknesses\n1. Limited Experiments: The experimental evaluation is somewhat narrow in scope. While the results are promising, the lack of comparison to standard fine-tuning baselines in domain adaptation limits the ability to assess the true effectiveness of GBS.\n2. Terminology Ambiguity: The term \"coverage vector\" is potentially misleading, as it implies a continuous representation. \"Coverage set\" would be a more accurate descriptor.\n3. Incomplete Analysis: Table 2 does not report the number of constraints per source sentence, which is critical for calibrating BLEU gains and understanding the relationship between constraint density and performance.\n4. No Comparison to Related Methods: The paper does not compare GBS to other approaches for handling lexical constraints, such as prefix decoding or phrase-based SMT methods, which could provide additional context for its contributions.\n5. Scalability Concerns: While the authors discuss efficiency, the O(ktc) complexity of GBS could become a bottleneck for tasks with a large number of constraints, especially in real-time applications.\nQuestions to Authors\n1. How does GBS compare to standard fine-tuning approaches for domain adaptation in terms of BLEU gains and computational cost?\n2. Can you provide additional details on the scalability of GBS for tasks with a high number of constraints? Are there any optimizations or heuristics that could mitigate the increased complexity?\n3. Have you considered evaluating GBS on tasks beyond machine translation, such as summarization or dialog generation, to further validate its generality?\nConclusion\nOverall, this paper makes a valuable contribution to the field of machine translation and sequence generation by introducing a simple yet effective method for incorporating lexical constraints. Despite some weaknesses in experimental design and analysis, the proposed algorithm is practical, generalizable, and addresses important real-world challenges. I recommend this paper for acceptance, provided the authors address the experimental limitations and clarify certain aspects of the method."
+        }
+    ]
+}

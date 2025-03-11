@@ -1,0 +1,492 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6efe609b-58e6-47a7-b554-502798a0a120",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999570250511169,
+                    "sentence": "This paper presents the deep dynamic Poisson factorization model, which extends traditional PF by incorporating temporal dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998944997787476,
+                    "sentence": "Unlike prior work on dynamic PF, the authors employ a simplified recurrent neural network variant to capture long-term dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99970543384552,
+                    "sentence": "Variational inference is used for parameter estimation, with an additional optimization step for the neural network parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999862551689148,
+                    "sentence": "The model is evaluated on five real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999752938747406,
+                    "sentence": "Overall, I find the proposed idea potentially promising, but I believe the paper requires significant improvements in its execution to meet the standards of a conference like NIPS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993828535079956,
+                    "sentence": "Below are my detailed comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999722957611084,
+                    "sentence": "+ The structure in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994821548461914,
+                    "sentence": "4 does not align with a typical RNN framework, as h_t^{(n)} depends solely on the top-layer memory vectors and not on previous time steps within the same layer.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999515950679779,
+                    "sentence": "Could the authors clarify the rationale behind this simplified structure?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992496371269226,
+                    "sentence": "+ In Section 2, several model equations are missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995983839035034,
+                    "sentence": "For instance, it is unclear how the Gamma distribution in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995492696762085,
+                    "sentence": "4 is parameterized or what distribution generates theta_t in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995929598808289,
+                    "sentence": "3.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992188811302185,
+                    "sentence": "+ I disagree with the discussion in lines 110-118 regarding \"implicit distributions.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992454051971436,
+                    "sentence": "Equations 9 and 10 are explicit, as they represent Gamma distributions with specified shapes and rates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993624091148376,
+                    "sentence": "Since the distribution of theta_tk (Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988691210746765,
+                    "sentence": "9) can be derived in closed form given h^{(0)}, it cannot be classified as implicit.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983353614807129,
+                    "sentence": "The same critique applies to h in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960947036743164,
+                    "sentence": "10.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991217255592346,
+                    "sentence": "+ Lines 30-31: The statement, \"This method may have weak points in analyzing other data with different pattern long-time dependence, such as fanatical data and disaster data,\" is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993510246276855,
+                    "sentence": "Could the authors elaborate?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989968538284302,
+                    "sentence": "+ The subsection in lines 133-155 is difficult to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926818013191223,
+                    "sentence": "What exactly is the \"loss function\" referenced in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9914469718933105,
+                    "sentence": "15?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9943794012069702,
+                    "sentence": "+ MSE/PMSE is generally not an appropriate metric for PF-like models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947544932365417,
+                    "sentence": "The authors should include additional metrics, such as predictive log-likelihood, to better evaluate the model's performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9897311925888062,
+                    "sentence": "+ The value of K used in the experiments (line 207) appears too small.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958887696266174,
+                    "sentence": "I recommend testing with larger values, such as K=100 or higher.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9877651929855347,
+                    "sentence": "+ The discussion in lines 224-232 does not clearly connect to Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944369792938232,
+                    "sentence": "3. Further clarification is needed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9938189387321472,
+                    "sentence": "+ The update equations for the variational inference procedure (Eqs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9896367788314819,
+                    "sentence": "11-14) could be moved to the supplementary material for conciseness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.963201105594635,
+                    "sentence": "+ The caption for Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9851484298706055,
+                    "sentence": "4 is difficult to read and should be revised for clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9875844717025757,
+                    "sentence": "+ I strongly recommend adhering to general writing guidelines, particularly regarding the overuse of passive voice (notably in the abstract).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961264729499817,
+                    "sentence": "+ The paper's writing quality is subpar and contains numerous typos.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944767355918884,
+                    "sentence": "Below are some examples:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9920486807823181,
+                    "sentence": "- Line 15: \"high-dimensional\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9916162490844727,
+                    "sentence": "- Line 22: \"factorize\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944651126861572,
+                    "sentence": "- Line 24: \"property of the\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972213506698608,
+                    "sentence": "- Lines 29, 34: \"Dirichlet\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952610731124878,
+                    "sentence": "- Line 34: \"nested\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963127970695496,
+                    "sentence": "- Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961380958557129,
+                    "sentence": "1: \"visual representation\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958963394165039,
+                    "sentence": "- Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919731616973877,
+                    "sentence": "1: \"transmission\" (this term may not be appropriate in this context)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9904562830924988,
+                    "sentence": "- Incomplete sentences (e.g., line 49)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993008553981781,
+                    "sentence": "- Missing articles (e.g., \"Although Dirichlet distribution is often used as prior distribution\")",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984930238596827,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984930238596827,
+                "mixed": 0.001506976140317253
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984930238596827,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984930238596827,
+                    "human": 0,
+                    "mixed": 0.001506976140317253
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper presents the deep dynamic Poisson factorization model, which extends traditional PF by incorporating temporal dependencies. Unlike prior work on dynamic PF, the authors employ a simplified recurrent neural network variant to capture long-term dependencies. Variational inference is used for parameter estimation, with an additional optimization step for the neural network parameters. The model is evaluated on five real-world datasets.\nOverall, I find the proposed idea potentially promising, but I believe the paper requires significant improvements in its execution to meet the standards of a conference like NIPS. Below are my detailed comments:\n+ The structure in Eq. 4 does not align with a typical RNN framework, as h_t^{(n)} depends solely on the top-layer memory vectors and not on previous time steps within the same layer. Could the authors clarify the rationale behind this simplified structure?\n+ In Section 2, several model equations are missing. For instance, it is unclear how the Gamma distribution in Eq. 4 is parameterized or what distribution generates theta_t in Eq. 3.\n+ I disagree with the discussion in lines 110-118 regarding \"implicit distributions.\" Equations 9 and 10 are explicit, as they represent Gamma distributions with specified shapes and rates. Since the distribution of theta_tk (Eq. 9) can be derived in closed form given h^{(0)}, it cannot be classified as implicit. The same critique applies to h in Eq. 10.\n+ Lines 30-31: The statement, \"This method may have weak points in analyzing other data with different pattern long-time dependence, such as fanatical data and disaster data,\" is unclear. Could the authors elaborate?\n+ The subsection in lines 133-155 is difficult to follow. What exactly is the \"loss function\" referenced in Eq. 15?\n+ MSE/PMSE is generally not an appropriate metric for PF-like models. The authors should include additional metrics, such as predictive log-likelihood, to better evaluate the model's performance.\n+ The value of K used in the experiments (line 207) appears too small. I recommend testing with larger values, such as K=100 or higher.\n+ The discussion in lines 224-232 does not clearly connect to Fig. 3. Further clarification is needed.\n+ The update equations for the variational inference procedure (Eqs. 11-14) could be moved to the supplementary material for conciseness.\n+ The caption for Fig. 4 is difficult to read and should be revised for clarity.\n+ I strongly recommend adhering to general writing guidelines, particularly regarding the overuse of passive voice (notably in the abstract).\n+ The paper's writing quality is subpar and contains numerous typos. Below are some examples:\n - Line 15: \"high-dimensional\"\n - Line 22: \"factorize\"\n - Line 24: \"property of the\"\n - Lines 29, 34: \"Dirichlet\"\n - Line 34: \"nested\"\n - Fig. 1: \"visual representation\"\n - Fig. 1: \"transmission\" (this term may not be appropriate in this context)\n - Incomplete sentences (e.g., line 49)\n - Missing articles (e.g., \"Although Dirichlet distribution is often used as prior distribution\")"
+        }
+    ]
+}

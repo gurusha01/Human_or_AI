@@ -1,0 +1,415 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "eb4c4ee9-b20a-4df6-ae4c-44e31f00dcc5",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999929070472717,
+                    "sentence": "The paper introduces a novel method, Bounding Divergences with Reverse Annealing (BREAD), to evaluate the quality of Markov chain Monte Carlo (MCMC)-based posterior inference algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999914765357971,
+                    "sentence": "Building on the bidirectional Monte Carlo (BDMC) framework, the authors propose a technique to upper bound the symmetrized KL divergence (Jeffreys divergence) between approximate and true posterior distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999907612800598,
+                    "sentence": "The method leverages annealed importance sampling (AIS) chains run in both forward and reverse directions and is validated on simulated data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "BREAD is integrated into probabilistic programming languages WebPPL and Stan, and its utility is demonstrated through experiments on various models and datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999904036521912,
+                    "sentence": "The authors also propose a protocol for applying BREAD to real-world data by simulating datasets from fitted hyperparameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999889135360718,
+                    "sentence": "The paper contributes to the broader goal of rigorously diagnosing inference quality in probabilistic programming and MCMC methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "1. Technical Contribution: The extension of BDMC to bound Jeffreys divergence is a significant theoretical advancement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The method provides rigorous guarantees for simulated data, addressing a critical gap in evaluating MCMC-based inference algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "2. Practical Relevance: By integrating BREAD into WebPPL and Stan, the authors make the method accessible to practitioners.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The experiments demonstrate its utility in guiding model representation choices and debugging probabilistic programming implementations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "3. Validation: The paper provides thorough validation of BREAD on both simulated and real-world data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "The consistency between simulated and real data results strengthens the method's credibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "4. Novel Applications: The use of BREAD to compare collapsed and uncollapsed model representations is insightful, offering practical guidance for users of probabilistic programming languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "5. Clarity of Experiments: The experiments are well-designed, and the results are clearly presented, highlighting the practical implications of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "1. Scope of Applicability: The method requires exact posterior samples, limiting its direct applicability to simulated data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "While the authors propose a heuristic for real-world data, its reliance on approximate posterior samples introduces potential inaccuracies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "2. Computational Overhead: Running both forward and reverse AIS chains can be computationally expensive, particularly for large models or datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "The paper does not discuss the scalability of BREAD in detail.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "3. Comparison to Related Work: While the authors mention related work, such as [CTM16], the comparison lacks depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "It would be helpful to more explicitly contrast BREAD's advantages and limitations relative to other divergence estimation methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9825220108032227,
+                    "sentence": "4. Clarity of Presentation: The paper is dense, with some sections (e.g., the derivation of bounds) being difficult to follow without significant prior knowledge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9503047466278076,
+                    "sentence": "A more intuitive explanation of the key ideas could improve accessibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999739944934845,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996126890182495,
+                    "sentence": "- The paper addresses an important problem in probabilistic inference and provides a rigorous, theoretically grounded solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996530413627625,
+                    "sentence": "- It demonstrates practical utility through integration into widely used probabilistic programming languages and real-world experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995565414428711,
+                    "sentence": "- The method has the potential to advance the state of the art in evaluating and improving MCMC-based inference algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999303817749023,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997571110725403,
+                    "sentence": "- The reliance on exact posterior samples limits the method's applicability to real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998056888580322,
+                    "sentence": "- The computational cost of the method may hinder its adoption for large-scale problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996644854545593,
+                    "sentence": "- The paper could benefit from clearer exposition and a more detailed comparison to related work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997031092643738,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994106292724609,
+                    "sentence": "Overall, the paper represents a significant contribution to the field of probabilistic inference and probabilistic programming.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991000294685364,
+                    "sentence": "While there are limitations in scope and scalability, the strengths outweigh the weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979668259620667,
+                    "sentence": "I recommend acceptance, with minor revisions to improve clarity and address the computational concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a novel method, Bounding Divergences with Reverse Annealing (BREAD), to evaluate the quality of Markov chain Monte Carlo (MCMC)-based posterior inference algorithms. Building on the bidirectional Monte Carlo (BDMC) framework, the authors propose a technique to upper bound the symmetrized KL divergence (Jeffreys divergence) between approximate and true posterior distributions. The method leverages annealed importance sampling (AIS) chains run in both forward and reverse directions and is validated on simulated data. BREAD is integrated into probabilistic programming languages WebPPL and Stan, and its utility is demonstrated through experiments on various models and datasets. The authors also propose a protocol for applying BREAD to real-world data by simulating datasets from fitted hyperparameters. The paper contributes to the broader goal of rigorously diagnosing inference quality in probabilistic programming and MCMC methods.\nStrengths:\n1. Technical Contribution: The extension of BDMC to bound Jeffreys divergence is a significant theoretical advancement. The method provides rigorous guarantees for simulated data, addressing a critical gap in evaluating MCMC-based inference algorithms.\n2. Practical Relevance: By integrating BREAD into WebPPL and Stan, the authors make the method accessible to practitioners. The experiments demonstrate its utility in guiding model representation choices and debugging probabilistic programming implementations.\n3. Validation: The paper provides thorough validation of BREAD on both simulated and real-world data. The consistency between simulated and real data results strengthens the method's credibility.\n4. Novel Applications: The use of BREAD to compare collapsed and uncollapsed model representations is insightful, offering practical guidance for users of probabilistic programming languages.\n5. Clarity of Experiments: The experiments are well-designed, and the results are clearly presented, highlighting the practical implications of the method.\nWeaknesses:\n1. Scope of Applicability: The method requires exact posterior samples, limiting its direct applicability to simulated data. While the authors propose a heuristic for real-world data, its reliance on approximate posterior samples introduces potential inaccuracies.\n2. Computational Overhead: Running both forward and reverse AIS chains can be computationally expensive, particularly for large models or datasets. The paper does not discuss the scalability of BREAD in detail.\n3. Comparison to Related Work: While the authors mention related work, such as [CTM16], the comparison lacks depth. It would be helpful to more explicitly contrast BREAD's advantages and limitations relative to other divergence estimation methods.\n4. Clarity of Presentation: The paper is dense, with some sections (e.g., the derivation of bounds) being difficult to follow without significant prior knowledge. A more intuitive explanation of the key ideas could improve accessibility.\nArguments for Acceptance:\n- The paper addresses an important problem in probabilistic inference and provides a rigorous, theoretically grounded solution.\n- It demonstrates practical utility through integration into widely used probabilistic programming languages and real-world experiments.\n- The method has the potential to advance the state of the art in evaluating and improving MCMC-based inference algorithms.\nArguments Against Acceptance:\n- The reliance on exact posterior samples limits the method's applicability to real-world datasets.\n- The computational cost of the method may hinder its adoption for large-scale problems.\n- The paper could benefit from clearer exposition and a more detailed comparison to related work.\nRecommendation:\nOverall, the paper represents a significant contribution to the field of probabilistic inference and probabilistic programming. While there are limitations in scope and scalability, the strengths outweigh the weaknesses. I recommend acceptance, with minor revisions to improve clarity and address the computational concerns."
+        }
+    ]
+}

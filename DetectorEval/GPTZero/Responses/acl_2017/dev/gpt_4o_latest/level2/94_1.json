@@ -1,0 +1,421 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "1979e1b4-cf74-43ef-89aa-5c9d94a22056",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9887860417366028,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985109567642212,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928470253944397,
+                    "sentence": "This paper introduces a fully non-monotonic transition system for the non-projective Covington dependency parser, along with a novel dynamic oracle for training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9962263703346252,
+                    "sentence": "The key contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9809969663619995,
+                    "sentence": "1. Full Non-Monotonicity: Unlike prior work that restricted non-monotonicity to specific cases, this system allows the repair of erroneous attachments in both directions (leftward and rightward arcs) without relying on monotonic decisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9882562160491943,
+                    "sentence": "This is a significant departure from previous approaches (e.g., Honnibal et al., 2013), which were limited to projective trees and partial non-monotonicity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919378757476807,
+                    "sentence": "2. Approximate Dynamic Oracle: The authors propose an approximate dynamic oracle based on efficiently computable bounds of the loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912627935409546,
+                    "sentence": "This innovation addresses the computational challenges of exact loss calculation in non-monotonic and non-projective scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950181841850281,
+                    "sentence": "3. Empirical Validation: The proposed system is evaluated on CoNLL-X and CoNLL-XI datasets, demonstrating consistent improvements in parsing accuracy (UAS and LAS) over the monotonic oracle for most languages, with statistically significant gains in 14 out of 19 datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948687553405762,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9894614219665527,
+                    "sentence": "1. Novelty: The paper is the first to implement full non-monotonicity for a non-projective parser, which is a meaningful extension of the Covington algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9889547228813171,
+                    "sentence": "This innovation addresses limitations of prior work and expands the applicability of non-monotonic systems to non-projective dependency parsing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9805392622947693,
+                    "sentence": "2. Practical Feasibility: The introduction of approximate loss bounds (lower and upper) is a practical solution to the computational infeasibility of exact loss calculation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987773299217224,
+                    "sentence": "The empirical results show that these approximations are tight and effective, with less than 1% relative error in most cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978224039077759,
+                    "sentence": "3. Comprehensive Evaluation: The authors conduct experiments across 19 languages, providing robust evidence for the effectiveness of the proposed system.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944902062416077,
+                    "sentence": "The results demonstrate clear improvements over both static and monotonic dynamic oracles, particularly with the best-performing loss expression.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944559335708618,
+                    "sentence": "4. Efficiency: The lower-bound loss expression not only achieves competitive accuracy but also makes the non-monotonic system faster than the monotonic oracle, which is a notable strength for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994434118270874,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976048469543457,
+                    "sentence": "1. Limited Theoretical Analysis of Loss Approximations: While the empirical results validate the effectiveness of the loss bounds, the paper lacks a deeper theoretical analysis of why the upper bound \"U(c, tG)\" + nc(A â^ª I(c, tG)) outperforms the closer approximation \"U(c, tG)\" + npc(A â^ª I(c, tG)) in practice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981833100318909,
+                    "sentence": "This could provide additional insights into the behavior of the non-monotonic oracle.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986445307731628,
+                    "sentence": "2. Unexplained Performance Drop in Basque: The non-monotonic system underperforms in Basque compared to the monotonic oracle, but the paper does not provide an explanation for this anomaly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975793957710266,
+                    "sentence": "A detailed error analysis could strengthen the paper's conclusions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990010857582092,
+                    "sentence": "3. Lack of Neural Integration: While the authors mention the potential applicability of their oracle in neural network-based parsers, no experiments are conducted in this context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990346431732178,
+                    "sentence": "This limits the paper's relevance to modern NLP systems, where neural models dominate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9736689925193787,
+                    "sentence": "4. Complexity of Cycle Handling: The proposed method for handling cycles in non-monotonic scenarios is computationally expensive (O((n + e)(c + 1))).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9714796543121338,
+                    "sentence": "While this is mitigated by the use of the lower-bound loss expression, the scalability of the system for very large datasets or sentences remains unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959205389022827,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999346911907196,
+                    "sentence": "1. Can you provide more insights into why the upper bound \"U(c, tG)\" + nc(A â^ª I(c, tG)) achieves better results than the closer approximation \"U(c, tG)\" + npc(A â^ª I(c, tG))?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995527863502502,
+                    "sentence": "2. Have you considered applying your non-monotonic oracle to neural parsers?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99924236536026,
+                    "sentence": "If so, what challenges do you anticipate in integrating it with neural architectures?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978717565536499,
+                    "sentence": "3. Could you elaborate on why the non-monotonic system underperforms in Basque?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986223578453064,
+                    "sentence": "Is this due to language-specific characteristics or limitations of the proposed approach?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966651201248169,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995114803314209,
+                    "sentence": "Accept with Minor Revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993794560432434,
+                    "sentence": "The paper makes a significant contribution to dependency parsing by introducing full non-monotonicity and a practical dynamic oracle for non-projective parsers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995912313461304,
+                    "sentence": "While there are some areas for improvement, particularly in theoretical analysis and neural integration, the strengths of the work outweigh its limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996222853660583,
+                    "sentence": "This paper is likely to inspire further research in non-monotonic parsing and dynamic oracle design.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary and Contributions\nThis paper introduces a fully non-monotonic transition system for the non-projective Covington dependency parser, along with a novel dynamic oracle for training. The key contributions of the paper are:\n1. Full Non-Monotonicity: Unlike prior work that restricted non-monotonicity to specific cases, this system allows the repair of erroneous attachments in both directions (leftward and rightward arcs) without relying on monotonic decisions. This is a significant departure from previous approaches (e.g., Honnibal et al., 2013), which were limited to projective trees and partial non-monotonicity.\n \n2. Approximate Dynamic Oracle: The authors propose an approximate dynamic oracle based on efficiently computable bounds of the loss. This innovation addresses the computational challenges of exact loss calculation in non-monotonic and non-projective scenarios.\n3. Empirical Validation: The proposed system is evaluated on CoNLL-X and CoNLL-XI datasets, demonstrating consistent improvements in parsing accuracy (UAS and LAS) over the monotonic oracle for most languages, with statistically significant gains in 14 out of 19 datasets.\nStrengths\n1. Novelty: The paper is the first to implement full non-monotonicity for a non-projective parser, which is a meaningful extension of the Covington algorithm. This innovation addresses limitations of prior work and expands the applicability of non-monotonic systems to non-projective dependency parsing.\n2. Practical Feasibility: The introduction of approximate loss bounds (lower and upper) is a practical solution to the computational infeasibility of exact loss calculation. The empirical results show that these approximations are tight and effective, with less than 1% relative error in most cases.\n3. Comprehensive Evaluation: The authors conduct experiments across 19 languages, providing robust evidence for the effectiveness of the proposed system. The results demonstrate clear improvements over both static and monotonic dynamic oracles, particularly with the best-performing loss expression.\n4. Efficiency: The lower-bound loss expression not only achieves competitive accuracy but also makes the non-monotonic system faster than the monotonic oracle, which is a notable strength for real-world applications.\nWeaknesses\n1. Limited Theoretical Analysis of Loss Approximations: While the empirical results validate the effectiveness of the loss bounds, the paper lacks a deeper theoretical analysis of why the upper bound \"U(c, tG)\" + nc(A âˆª I(c, tG)) outperforms the closer approximation \"U(c, tG)\" + npc(A âˆª I(c, tG)) in practice. This could provide additional insights into the behavior of the non-monotonic oracle.\n2. Unexplained Performance Drop in Basque: The non-monotonic system underperforms in Basque compared to the monotonic oracle, but the paper does not provide an explanation for this anomaly. A detailed error analysis could strengthen the paper's conclusions.\n3. Lack of Neural Integration: While the authors mention the potential applicability of their oracle in neural network-based parsers, no experiments are conducted in this context. This limits the paper's relevance to modern NLP systems, where neural models dominate.\n4. Complexity of Cycle Handling: The proposed method for handling cycles in non-monotonic scenarios is computationally expensive (O((n + e)(c + 1))). While this is mitigated by the use of the lower-bound loss expression, the scalability of the system for very large datasets or sentences remains unclear.\nQuestions to Authors\n1. Can you provide more insights into why the upper bound \"U(c, tG)\" + nc(A âˆª I(c, tG)) achieves better results than the closer approximation \"U(c, tG)\" + npc(A âˆª I(c, tG))?\n2. Have you considered applying your non-monotonic oracle to neural parsers? If so, what challenges do you anticipate in integrating it with neural architectures?\n3. Could you elaborate on why the non-monotonic system underperforms in Basque? Is this due to language-specific characteristics or limitations of the proposed approach?\nRecommendation\nAccept with Minor Revisions. The paper makes a significant contribution to dependency parsing by introducing full non-monotonicity and a practical dynamic oracle for non-projective parsers. While there are some areas for improvement, particularly in theoretical analysis and neural integration, the strengths of the work outweigh its limitations. This paper is likely to inspire further research in non-monotonic parsing and dynamic oracle design."
+        }
+    ]
+}

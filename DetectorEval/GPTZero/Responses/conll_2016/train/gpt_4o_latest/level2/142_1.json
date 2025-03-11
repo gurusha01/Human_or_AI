@@ -1,0 +1,390 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "571d944a-38e7-4b46-9d84-910cf6fa037e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "Summary of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "This paper addresses the challenge of incorporating uncertainty estimates into Machine Translation (MT) Quality Estimation (QE) models, a task traditionally reliant on point estimate metrics like MAE and Pearson's r. The authors propose the use of Gaussian Processes (GPs) as a probabilistic framework to model uncertainty, leveraging well-calibrated posterior predictive distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "They extend traditional GPs with MatÃ¨rn kernels and Warped Gaussian Processes (WGPs) to better handle noisy and non-Gaussian data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "The paper evaluates these models using Negative Log Predictive Density (NLPD), a metric that accounts for predictive uncertainty, and demonstrates their utility in asymmetric risk scenarios, such as post-editing and gisting workflows.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "The authors argue that these probabilistic approaches can improve decision-making in translation workflows and have broader applicability in other text regression tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "1. Introduction of Probabilistic Models for QE: The paper proposes the use of GPs and WGPs for MT QE, emphasizing their ability to provide uncertainty estimates, which are critical for decision-making in real-world translation workflows.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "2. Evaluation Using NLPD: The authors advocate for NLPD as a superior evaluation metric for probabilistic models, highlighting its ability to penalize overconfident or underconfident predictions more effectively than point estimate metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "3. Application to Asymmetric Risk Scenarios: The paper demonstrates how predictive uncertainty can be leveraged in practical scenarios, such as post-editing and gisting, using asymmetric loss functions like AL and linex loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "1. Novelty and Practical Relevance: The focus on uncertainty modeling for QE is novel and addresses a significant gap in real-world MT workflows, where point estimates alone are often insufficient for decision-making.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "2. Comprehensive Evaluation: The use of NLPD alongside traditional metrics provides a robust evaluation framework, offering deeper insights into model performance and uncertainty calibration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "3. Scalability of GPs for Small Datasets: The paper effectively demonstrates the suitability of GPs for QE tasks, which typically involve small datasets, and provides practical extensions like MatÃ¨rn kernels and WGPs to enhance performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "4. Asymmetric Risk Scenarios: The exploration of asymmetric loss functions is a valuable contribution, showcasing how uncertainty estimates can be tailored to specific application needs, such as minimizing risks in post-editing workflows.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999808669090271,
+                    "sentence": "1. Limited Dataset Variety: The experiments are conducted on only three datasets with specific language pairs, which limits the generalizability of the findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995986819267273,
+                    "sentence": "Expanding the evaluation to more diverse datasets and languages would strengthen the claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998611211776733,
+                    "sentence": "2. Overfitting Concerns: The paper notes potential overfitting in smaller datasets (e.g., en-es) when using NLL as a metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996934533119202,
+                    "sentence": "While this is acknowledged, further analysis or mitigation strategies (e.g., regularization techniques) are not explored in depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998664259910583,
+                    "sentence": "3. Unclear Results for Linex Loss: The results for linex loss in pessimistic scenarios are inconclusive, and the paper does not provide sufficient explanation or analysis to address this inconsistency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998809695243835,
+                    "sentence": "4. Lack of Comparison with Non-GP Models: While the paper focuses on GPs, it would benefit from a comparison with other probabilistic models or recent deep learning approaches that can also provide uncertainty estimates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996351599693298,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997321367263794,
+                    "sentence": "1. How do the proposed models scale to larger datasets or more complex feature sets, given the computational limitations of GPs?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987340569496155,
+                    "sentence": "2. Could you elaborate on why the linex loss results in pessimistic scenarios were worse for warped GPs?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998502135276794,
+                    "sentence": "Are there alternative loss functions that might address this issue?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993918538093567,
+                    "sentence": "3. Have you considered extending the evaluation to other regression tasks in NLP to validate the broader applicability of the proposed methods?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998136579990387,
+                    "sentence": "Overall Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991786479949951,
+                    "sentence": "This paper makes a valuable contribution to the field of MT QE by introducing probabilistic modeling and uncertainty estimation, which are highly relevant for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989668130874634,
+                    "sentence": "Despite some limitations in dataset diversity and inconclusive results for certain loss functions, the paper provides a strong foundation for further research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9887217283248901,
+                    "sentence": "I recommend acceptance, provided the authors address the identified weaknesses and clarify the questions raised.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary of the Paper\nThis paper addresses the challenge of incorporating uncertainty estimates into Machine Translation (MT) Quality Estimation (QE) models, a task traditionally reliant on point estimate metrics like MAE and Pearson's r. The authors propose the use of Gaussian Processes (GPs) as a probabilistic framework to model uncertainty, leveraging well-calibrated posterior predictive distributions. They extend traditional GPs with MatÃ¨rn kernels and Warped Gaussian Processes (WGPs) to better handle noisy and non-Gaussian data. The paper evaluates these models using Negative Log Predictive Density (NLPD), a metric that accounts for predictive uncertainty, and demonstrates their utility in asymmetric risk scenarios, such as post-editing and gisting workflows. The authors argue that these probabilistic approaches can improve decision-making in translation workflows and have broader applicability in other text regression tasks.\nContributions\n1. Introduction of Probabilistic Models for QE: The paper proposes the use of GPs and WGPs for MT QE, emphasizing their ability to provide uncertainty estimates, which are critical for decision-making in real-world translation workflows.\n2. Evaluation Using NLPD: The authors advocate for NLPD as a superior evaluation metric for probabilistic models, highlighting its ability to penalize overconfident or underconfident predictions more effectively than point estimate metrics.\n3. Application to Asymmetric Risk Scenarios: The paper demonstrates how predictive uncertainty can be leveraged in practical scenarios, such as post-editing and gisting, using asymmetric loss functions like AL and linex loss.\nStrengths\n1. Novelty and Practical Relevance: The focus on uncertainty modeling for QE is novel and addresses a significant gap in real-world MT workflows, where point estimates alone are often insufficient for decision-making.\n2. Comprehensive Evaluation: The use of NLPD alongside traditional metrics provides a robust evaluation framework, offering deeper insights into model performance and uncertainty calibration.\n3. Scalability of GPs for Small Datasets: The paper effectively demonstrates the suitability of GPs for QE tasks, which typically involve small datasets, and provides practical extensions like MatÃ¨rn kernels and WGPs to enhance performance.\n4. Asymmetric Risk Scenarios: The exploration of asymmetric loss functions is a valuable contribution, showcasing how uncertainty estimates can be tailored to specific application needs, such as minimizing risks in post-editing workflows.\nWeaknesses\n1. Limited Dataset Variety: The experiments are conducted on only three datasets with specific language pairs, which limits the generalizability of the findings. Expanding the evaluation to more diverse datasets and languages would strengthen the claims.\n2. Overfitting Concerns: The paper notes potential overfitting in smaller datasets (e.g., en-es) when using NLL as a metric. While this is acknowledged, further analysis or mitigation strategies (e.g., regularization techniques) are not explored in depth.\n3. Unclear Results for Linex Loss: The results for linex loss in pessimistic scenarios are inconclusive, and the paper does not provide sufficient explanation or analysis to address this inconsistency.\n4. Lack of Comparison with Non-GP Models: While the paper focuses on GPs, it would benefit from a comparison with other probabilistic models or recent deep learning approaches that can also provide uncertainty estimates.\nQuestions to Authors\n1. How do the proposed models scale to larger datasets or more complex feature sets, given the computational limitations of GPs?\n2. Could you elaborate on why the linex loss results in pessimistic scenarios were worse for warped GPs? Are there alternative loss functions that might address this issue?\n3. Have you considered extending the evaluation to other regression tasks in NLP to validate the broader applicability of the proposed methods?\nOverall Recommendation\nThis paper makes a valuable contribution to the field of MT QE by introducing probabilistic modeling and uncertainty estimation, which are highly relevant for real-world applications. Despite some limitations in dataset diversity and inconclusive results for certain loss functions, the paper provides a strong foundation for further research in this area. I recommend acceptance, provided the authors address the identified weaknesses and clarify the questions raised."
+        }
+    ]
+}

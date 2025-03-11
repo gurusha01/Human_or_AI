@@ -1,0 +1,339 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "f0a4efdb-b98d-474b-a4f5-4cb947cdb86e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9966347813606262,
+                    "sentence": "This paper proposes a novel approach to semantic parsing by employing a neural sequence-to-sequence (seq2seq) model, referred to as the \"programmer,\" which encodes a natural language question and generates a corresponding program.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996179461479187,
+                    "sentence": "The programmer is augmented with a 'key variable' memory module that stores (a) entities mentioned in the question and (b) intermediate variable values produced during the execution of partial programs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9957259297370911,
+                    "sentence": "These stored variables are subsequently utilized to incrementally construct the program.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942500591278076,
+                    "sentence": "Additionally, the model incorporates discrete operations (e.g., argmax or \"hop to next edges in a KB\"), which are executed by a separate component termed the \"interpreter/computer.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979255795478821,
+                    "sentence": "This component not only performs the operations but also maintains intermediate values, as described earlier.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967248439788818,
+                    "sentence": "Since the programmer is fundamentally a seq2seq model, the interpreter/computer also functions as a syntax and type checker, ensuring that the decoder generates only valid tokens.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961472153663635,
+                    "sentence": "For instance, the second argument of the \"hop\" operation must be a KB predicate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9783843159675598,
+                    "sentence": "The model is trained using weak supervision and directly optimizes the evaluation metric (F-score).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.989745557308197,
+                    "sentence": "Given the involvement of discrete operations and non-differentiable reward functions, the training process employs policy gradients (REINFORCE).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9936618208885193,
+                    "sentence": "However, as REINFORCE gradients are known to exhibit high variance, it is standard practice to pretrain the model using a maximum likelihood objective or identify effective action sequences through an auxiliary objective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907628297805786,
+                    "sentence": "This paper adopts the latter strategy, employing an iterative maximum likelihood approach to discover high-quality sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994592070579529,
+                    "sentence": "The results and discussion sections are well-structured, and the model achieves state-of-the-art (SOTA) performance on the WebQuestions dataset compared to other weakly supervised models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998989999294281,
+                    "sentence": "The paper is well-written, with clear explanations that make it easy to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988037347793579,
+                    "sentence": "This work introduces an innovative and promising research direction, with significant potential for future exploration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9943408370018005,
+                    "sentence": "I strongly recommend its acceptance and look forward to seeing it presented at the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8781748414039612,
+                    "sentence": "Questions for the Authors (in order of importance):",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9624113440513611,
+                    "sentence": "1. An alternative training strategy could involve bootstrapping the parameters (\\(\\theta\\)) from the iterative ML method instead of adding pseudo-gold programs to the beam (i.e., omitting Line 510).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.974917471408844,
+                    "sentence": "Did you explore this approach, and if so, why do you believe it was unsuccessful?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9709320068359375,
+                    "sentence": "2. What baseline model did you use in the REINFORCE training?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9371982216835022,
+                    "sentence": "Did you implement a separate network to predict the value function?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.888421356678009,
+                    "sentence": "This aspect should be elaborated upon in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9396383166313171,
+                    "sentence": "3. Did the generated programs involve multiple hop operations, or were they restricted to single hops?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9295341968536377,
+                    "sentence": "If multiple hops were present, could you provide an example?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.947032630443573,
+                    "sentence": "(I understand if this is constrained by the word limit of your response.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9371870756149292,
+                    "sentence": "4. Could you provide an example where the filter operation is applied?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9354132413864136,
+                    "sentence": "5. I am unclear about the rationale for replacing entities in the question with the special ENT symbol.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8810893297195435,
+                    "sentence": "Could you clarify the motivation behind this design choice?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9212697744369507,
+                    "sentence": "Minor Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9409390687942505,
+                    "sentence": "- Line 161: \"describe\" â ' \"describing\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9724989533424377,
+                    "sentence": "- Line 318: \"decoder reads ')'\" â ' \"decoder generates ')'\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.8923758534658037,
+            "class_probabilities": {
+                "human": 0.10626570421472266,
+                "ai": 0.8923758534658037,
+                "mixed": 0.00135844231947367
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8923758534658037,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8923758534658037,
+                    "human": 0.10626570421472266,
+                    "mixed": 0.00135844231947367
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a novel approach to semantic parsing by employing a neural sequence-to-sequence (seq2seq) model, referred to as the \"programmer,\" which encodes a natural language question and generates a corresponding program. The programmer is augmented with a 'key variable' memory module that stores (a) entities mentioned in the question and (b) intermediate variable values produced during the execution of partial programs. These stored variables are subsequently utilized to incrementally construct the program. \nAdditionally, the model incorporates discrete operations (e.g., argmax or \"hop to next edges in a KB\"), which are executed by a separate component termed the \"interpreter/computer.\" This component not only performs the operations but also maintains intermediate values, as described earlier. Since the programmer is fundamentally a seq2seq model, the interpreter/computer also functions as a syntax and type checker, ensuring that the decoder generates only valid tokens. For instance, the second argument of the \"hop\" operation must be a KB predicate. The model is trained using weak supervision and directly optimizes the evaluation metric (F-score). \nGiven the involvement of discrete operations and non-differentiable reward functions, the training process employs policy gradients (REINFORCE). However, as REINFORCE gradients are known to exhibit high variance, it is standard practice to pretrain the model using a maximum likelihood objective or identify effective action sequences through an auxiliary objective. This paper adopts the latter strategy, employing an iterative maximum likelihood approach to discover high-quality sequences. The results and discussion sections are well-structured, and the model achieves state-of-the-art (SOTA) performance on the WebQuestions dataset compared to other weakly supervised models. \nThe paper is well-written, with clear explanations that make it easy to follow. \nThis work introduces an innovative and promising research direction, with significant potential for future exploration. I strongly recommend its acceptance and look forward to seeing it presented at the conference. \nQuestions for the Authors (in order of importance): \n1. An alternative training strategy could involve bootstrapping the parameters (\\(\\theta\\)) from the iterative ML method instead of adding pseudo-gold programs to the beam (i.e., omitting Line 510). Did you explore this approach, and if so, why do you believe it was unsuccessful? \n2. What baseline model did you use in the REINFORCE training? Did you implement a separate network to predict the value function? This aspect should be elaborated upon in the paper. \n3. Did the generated programs involve multiple hop operations, or were they restricted to single hops? If multiple hops were present, could you provide an example? (I understand if this is constrained by the word limit of your response.) \n4. Could you provide an example where the filter operation is applied? \n5. I am unclear about the rationale for replacing entities in the question with the special ENT symbol. Could you clarify the motivation behind this design choice? \nMinor Comments: \n- Line 161: \"describe\" â ' \"describing\" \n- Line 318: \"decoder reads ')'\" â ' \"decoder generates ')'\""
+        }
+    ]
+}

@@ -1,0 +1,409 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "0f34505d-9634-4a8b-937a-c6c77e6b9e11",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999950528144836,
+                    "sentence": "Review of \"Selective Classification for Deep Neural Networks with Guaranteed Risk Control\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "This paper addresses the problem of selective classification (or the reject option) in the context of deep neural networks (DNNs), proposing a method to construct a selective classifier that guarantees a desired error rate with high probability while maximizing coverage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943971633911,
+                    "sentence": "The authors present a novel algorithm, Selection with Guaranteed Risk (SGR), which learns a rejection function \\( g \\) for a pre-trained classifier \\( f \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "The method is demonstrated on CIFAR-10, CIFAR-100, and ImageNet datasets using VGG-16 and RESNET-50 architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999991774559021,
+                    "sentence": "The empirical results show that the proposed approach achieves unprecedented levels of guaranteed risk control, such as 2% top-5 error on ImageNet with 60% coverage and 99.9% confidence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938607215881,
+                    "sentence": "The paper also explores two confidence-rate functions\"\"softmax response (SR) and Monte Carlo dropout (MC-dropout)\"\"and demonstrates their effectiveness in selective classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999929070472717,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999898672103882,
+                    "sentence": "1. Novelty and Originality: The paper introduces selective classification techniques to DNNs, a largely unexplored area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999818801879883,
+                    "sentence": "While selective classification has been studied for other models (e.g., SVMs and boosting), its application to DNNs is novel and timely, given the increasing deployment of DNNs in mission-critical applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999973714351654,
+                    "sentence": "2. Technical Soundness: The proposed SGR algorithm is well-grounded in theory, with rigorous guarantees on risk control.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999818801879883,
+                    "sentence": "The use of numerical bounds (e.g., Gascuel and Caraux's bound) ensures tight generalization guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999805092811584,
+                    "sentence": "3. Empirical Validation: The extensive experiments on multiple datasets and architectures convincingly demonstrate the effectiveness of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999887347221375,
+                    "sentence": "The results show that the proposed approach can significantly reduce error rates with minimal coverage trade-offs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999854564666748,
+                    "sentence": "4. Practical Relevance: The work has clear applications in safety-critical domains, such as autonomous driving and medical diagnosis, where controlled risk is essential.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999707937240601,
+                    "sentence": "5. Clarity: The paper is well-organized and clearly written, with sufficient details provided to reproduce the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999864101409912,
+                    "sentence": "The risk-coverage trade-offs and the role of confidence-rate functions are well-explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999890923500061,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855160713196,
+                    "sentence": "1. Limited Exploration of Joint Training: While the authors acknowledge that jointly training \\( f \\) and \\( g \\) could yield better results, this aspect is not explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999877214431763,
+                    "sentence": "The current approach assumes a pre-trained classifier, which may limit the method's optimality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992504119873047,
+                    "sentence": "2. Dependence on Confidence-Rate Functions: The performance of the method heavily relies on the choice of confidence-rate functions (e.g., SR and MC-dropout).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990261197090149,
+                    "sentence": "While SR performs well empirically, the paper does not provide a theoretical justification for its superiority over MC-dropout.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983903765678406,
+                    "sentence": "3. Scalability: The computational cost of the SGR algorithm, particularly for large-scale datasets like ImageNet, is not thoroughly discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961832761764526,
+                    "sentence": "The binary search and repeated evaluations of the rejection function could be computationally expensive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984337091445923,
+                    "sentence": "4. Limited Scope of Loss Functions: The method is restricted to 0/1 loss, and its applicability to other loss functions or regression tasks is not explored, despite the authors mentioning this as future work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997842311859131,
+                    "sentence": "Arguments for Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999930202960968,
+                    "sentence": "- The paper addresses an important and underexplored problem in DNNs, with significant implications for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999386072158813,
+                    "sentence": "- The theoretical guarantees and empirical results are strong and demonstrate the method's effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999567270278931,
+                    "sentence": "- The work is a valuable contribution to the field, providing a foundation for future research on selective classification in DNNs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999698281288147,
+                    "sentence": "Arguments Against Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999900758266449,
+                    "sentence": "- The lack of exploration of joint training for \\( f \\) and \\( g \\) limits the method's potential.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998564124107361,
+                    "sentence": "- The reliance on specific confidence-rate functions without deeper theoretical justification may raise concerns about generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994849562644958,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998865127563477,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998205900192261,
+                    "sentence": "While there are areas for improvement, the paper makes a significant contribution to the field of selective classification for DNNs, providing both theoretical insights and practical results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997345805168152,
+                    "sentence": "It is likely to stimulate further research in this direction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of \"Selective Classification for Deep Neural Networks with Guaranteed Risk Control\"\nThis paper addresses the problem of selective classification (or the reject option) in the context of deep neural networks (DNNs), proposing a method to construct a selective classifier that guarantees a desired error rate with high probability while maximizing coverage. The authors present a novel algorithm, Selection with Guaranteed Risk (SGR), which learns a rejection function \\( g \\) for a pre-trained classifier \\( f \\). The method is demonstrated on CIFAR-10, CIFAR-100, and ImageNet datasets using VGG-16 and RESNET-50 architectures. The empirical results show that the proposed approach achieves unprecedented levels of guaranteed risk control, such as 2% top-5 error on ImageNet with 60% coverage and 99.9% confidence. The paper also explores two confidence-rate functions\"\"softmax response (SR) and Monte Carlo dropout (MC-dropout)\"\"and demonstrates their effectiveness in selective classification.\nStrengths\n1. Novelty and Originality: The paper introduces selective classification techniques to DNNs, a largely unexplored area. While selective classification has been studied for other models (e.g., SVMs and boosting), its application to DNNs is novel and timely, given the increasing deployment of DNNs in mission-critical applications.\n2. Technical Soundness: The proposed SGR algorithm is well-grounded in theory, with rigorous guarantees on risk control. The use of numerical bounds (e.g., Gascuel and Caraux's bound) ensures tight generalization guarantees.\n3. Empirical Validation: The extensive experiments on multiple datasets and architectures convincingly demonstrate the effectiveness of the method. The results show that the proposed approach can significantly reduce error rates with minimal coverage trade-offs.\n4. Practical Relevance: The work has clear applications in safety-critical domains, such as autonomous driving and medical diagnosis, where controlled risk is essential.\n5. Clarity: The paper is well-organized and clearly written, with sufficient details provided to reproduce the results. The risk-coverage trade-offs and the role of confidence-rate functions are well-explained.\nWeaknesses\n1. Limited Exploration of Joint Training: While the authors acknowledge that jointly training \\( f \\) and \\( g \\) could yield better results, this aspect is not explored. The current approach assumes a pre-trained classifier, which may limit the method's optimality.\n2. Dependence on Confidence-Rate Functions: The performance of the method heavily relies on the choice of confidence-rate functions (e.g., SR and MC-dropout). While SR performs well empirically, the paper does not provide a theoretical justification for its superiority over MC-dropout.\n3. Scalability: The computational cost of the SGR algorithm, particularly for large-scale datasets like ImageNet, is not thoroughly discussed. The binary search and repeated evaluations of the rejection function could be computationally expensive.\n4. Limited Scope of Loss Functions: The method is restricted to 0/1 loss, and its applicability to other loss functions or regression tasks is not explored, despite the authors mentioning this as future work.\nArguments for Acceptance\n- The paper addresses an important and underexplored problem in DNNs, with significant implications for real-world applications.\n- The theoretical guarantees and empirical results are strong and demonstrate the method's effectiveness.\n- The work is a valuable contribution to the field, providing a foundation for future research on selective classification in DNNs.\nArguments Against Acceptance\n- The lack of exploration of joint training for \\( f \\) and \\( g \\) limits the method's potential.\n- The reliance on specific confidence-rate functions without deeper theoretical justification may raise concerns about generalizability.\nRecommendation\nI recommend acceptance of this paper. While there are areas for improvement, the paper makes a significant contribution to the field of selective classification for DNNs, providing both theoretical insights and practical results. It is likely to stimulate further research in this direction."
+        }
+    ]
+}

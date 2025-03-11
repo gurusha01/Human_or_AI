@@ -1,0 +1,285 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "f8c16d5b-4dc3-4b81-828c-8f62dbbfc3ae",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.051519960165023804,
+                    "sentence": "The paper provides an interesting use of generative models to address the classification with missing data problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04013041406869888,
+                    "sentence": "The tensorial mixture models proposed take into account the general problem of dependent samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04880935698747635,
+                    "sentence": "This is an nice extension of current mixture models where samples are usually considered as independent.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03684008866548538,
+                    "sentence": "Indeed the TMM model is reduced to the conventional latent variable models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02207063138484955,
+                    "sentence": "As much as I love the ideas behind the paper, I feel pitiful about the sloppiness of the presentation (such as missing notations) and flaws in the technical derivations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.038604896515607834,
+                    "sentence": "Before going into the technical details, my high level concerns are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0558614656329155,
+                    "sentence": "(1) The joint density over all samples is modeled as a tensorial mixture generative model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04716290161013603,
+                    "sentence": "The interpretation of the CP decomposition or HT decomposition on the prior density tensor is not clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07007881999015808,
+                    "sentence": "The authors have an interpretation of TMM as product of mixture models when samples are independent, however their interpretation seems flawed to me, and I will elaborate on this in the detailed technical comments below.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08347649872303009,
+                    "sentence": "(2) The authors employ convolution operators to compute an inner product.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10788899660110474,
+                    "sentence": "It is realizable by zero padding, but the invariance structure, which is the advantage of CNN compared to feed-forward neural network, will be lost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07760979235172272,
+                    "sentence": "However, I am not sure how much this would affect the performance in practice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07471991330385208,
+                    "sentence": "(3) The author could comment in the paper a little bit on the sample complexity of this method given the complexity of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10225111991167068,
+                    "sentence": "Because I liked the ideas of the paper so much, and the ICLR paper submitted didn't present the technical details well due to sloppiness of notations, so I read the technical details in the arXiv version the authors pointed out.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07791221141815186,
+                    "sentence": "There are a few technical typos that I would like to point out (my reference to equations are to the ones in the arXiv paper).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07957565784454346,
+                    "sentence": "(1) The generative model as in figure (5) is flawed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.16623704135417938,
+                    "sentence": "P(xi\"di;\\theta{di}) are vectors of length s, there the product of vectors is not well defined.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09821321070194244,
+                    "sentence": "It is obvious that the dimensions of the terms between two sides of the equation are not equal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1563381403684616,
+                    "sentence": "In fact, this should be a tucker decomposition instead of multiplication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.147139310836792,
+                    "sentence": "It should be P(X) = \\sum{d1,\\ldots,dN} P(d1,\\ldots,dN) (P(x1\"d1;theta{d1},P(x2\"d2;theta{d2},\\ldots,P(xN\"dN;theta{dN}), which means a sum of multi-linear operation on tensor P(d1,\\ldots,dN), and each mode is projected onto P(xi\"di;theta{di}.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08072895556688309,
+                    "sentence": "(2) I suspect the special case for diagonal Gaussian Mixture Models has some typos as I couldn't derive the third last equation on page 6.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11336709558963776,
+                    "sentence": "But it might be just I didn't understand this example.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10530520975589752,
+                    "sentence": "(3) The claim that TMM reduces to product of mixture model is not accurate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09442582726478577,
+                    "sentence": "The first equation on page 7 is only right when \"sum of product\" operation is equal to \"product of sum\" operation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09048980474472046,
+                    "sentence": "Similarly, in equation (6), the second equality doesn't hold unless in some special cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05123746022582054,
+                    "sentence": "However, this is not true.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04810105264186859,
+                    "sentence": "This might be just a typo, but it is good if the authors could fix this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05272773653268814,
+                    "sentence": "I also suspect that if the authors correct this typo,the performance on MNIST might be improved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06642256677150726,
+                    "sentence": "Overall, I like the ideas behind this paper very much.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05596533045172691,
+                    "sentence": "I suggest the authors fix the technical typos if the paper is accepted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.06633396618935229,
+            "class_probabilities": {
+                "human": 0.9336248632755252,
+                "ai": 0.06633396618935229,
+                "mixed": 4.117053512248776e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9336248632755252,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.06633396618935229,
+                    "human": 0.9336248632755252,
+                    "mixed": 4.117053512248776e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper provides an interesting use of generative models to address the classification with missing data problem. The tensorial mixture models proposed take into account the general problem of dependent samples. This is an nice extension of current mixture models where samples are usually considered as independent. Indeed the TMM model is reduced to the conventional latent variable models. As much as I love the ideas behind the paper, I feel pitiful about the sloppiness of the presentation (such as missing notations) and flaws in the technical derivations. Before going into the technical details, my high level concerns are as follows:\n(1) The joint density over all samples is modeled as a tensorial mixture generative model. The interpretation of the CP decomposition or HT decomposition on the prior density tensor is not clear. The authors have an interpretation of TMM as product of mixture models when samples are independent, however their interpretation seems flawed to me, and I will elaborate on this in the detailed technical comments below. \n(2) The authors employ convolution operators to compute an inner product. It is realizable by zero padding, but the invariance structure, which is the advantage of CNN compared to feed-forward neural network, will be lost. However, I am not sure how much this would affect the performance in practice. \n(3) The author could comment in the paper a little bit on the sample complexity of this method given the complexity of the model. \nBecause I liked the ideas of the paper so much, and the ICLR paper submitted didn't present the technical details well due to sloppiness of notations, so I read the technical details in the arXiv version the authors pointed out. There are a few technical typos that I would like to point out (my reference to equations are to the ones in the arXiv paper). \n(1) The generative model as in figure (5) is flawed. P(xi\"di;\\theta{di}) are vectors of length s, there the product of vectors is not well defined. It is obvious that the dimensions of the terms between two sides of the equation are not equal. In fact, this should be a tucker decomposition instead of multiplication. It should be P(X) = \\sum{d1,\\ldots,dN} P(d1,\\ldots,dN) (P(x1\"d1;theta{d1},P(x2\"d2;theta{d2},\\ldots,P(xN\"dN;theta{dN}), which means a sum of multi-linear operation on tensor P(d1,\\ldots,dN), and each mode is projected onto P(xi\"di;theta{di}. \n(2) I suspect the special case for diagonal Gaussian Mixture Models has some typos as I couldn't derive the third last equation on page 6. But it might be just I didn't understand this example. \n(3) The claim that TMM reduces to product of mixture model is not accurate. The first equation on page 7 is only right when \"sum of product\" operation is equal to \"product of sum\" operation. Similarly, in equation (6), the second equality doesn't hold unless in some special cases. However, this is not true. This might be just a typo, but it is good if the authors could fix this. I also suspect that if the authors correct this typo,the performance on MNIST might be improved.\nOverall, I like the ideas behind this paper very much. I suggest the authors fix the technical typos if the paper is accepted."
+        }
+    ]
+}

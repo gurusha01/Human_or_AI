@@ -1,0 +1,349 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "8776d3f1-dfdc-4502-8bae-02d7ed270c90",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9997954368591309,
+                    "sentence": "The paper addresses the problem of multitask learning for weighted finite automata (WFAs) by introducing vector-valued WFAs (vv-WFAs) and proposing a spectral learning algorithm for this new model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998560547828674,
+                    "sentence": "The authors define a notion of relatedness between WFAs based on shared feature representations and leverage the Hankel tensor's rank factorization to jointly learn multiple tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998371601104736,
+                    "sentence": "The paper claims theoretical advantages of this multitask approach and demonstrates its performance on synthetic and real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999558925628662,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999052286148071,
+                    "sentence": "1. Relevance and Scope: The paper tackles a meaningful problem in multitask learning, particularly for sequence data, which has applications in NLP, computational biology, and reinforcement learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999088644981384,
+                    "sentence": "The extension of spectral learning to multitask settings is a valuable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999883770942688,
+                    "sentence": "2. Theoretical Foundation: The authors provide a solid theoretical framework, including a generalization of the Fliess theorem to vector-valued functions, and analyze the computational complexity of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998815655708313,
+                    "sentence": "The use of asymmetric bounds for singular subspace estimation is a novel angle.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99991774559021,
+                    "sentence": "3. Experimental Validation: The experiments on synthetic and real-world datasets, including the Universal Dependencies dataset, provide empirical evidence for the method's effectiveness under certain conditions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999374151229858,
+                    "sentence": "The comparison with single-task learning (SL) and naive baselines is thorough.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998487830162048,
+                    "sentence": "4. Clarity in Algorithm Design: The multitask spectral learning (MT-SL) algorithm is clearly described, and the projection step to reduce redundancy is well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999395608901978,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998577237129211,
+                    "sentence": "1. Novelty Concerns: The novelty of the Hankel tensor factorization technique is questionable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997149109840393,
+                    "sentence": "While the extension to multitask settings is interesting, the core spectral learning approach relies heavily on existing methods, and the novelty appears incremental.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998393058776855,
+                    "sentence": "2. Unclear Relatedness Measure: The definition and purpose of the relatedness measure \"tau\" are not sufficiently clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994292259216309,
+                    "sentence": "Its connection to other quantities and its practical utility in guiding the algorithm are underexplored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999447226524353,
+                    "sentence": "3. Lack of Evident Benefits: The paper claims advantages of multitask learning, but these are not consistently demonstrated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996013641357422,
+                    "sentence": "For example, when tasks are minimally related (e.g., dS = dT), MT-SL offers no clear improvement over single-task learning (SL).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996485114097595,
+                    "sentence": "Additionally, the computational complexity of MT-SL appears worse than estimating individual WFAs separately, especially as the number of tasks grows.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988937973976135,
+                    "sentence": "4. Ambiguity in Error Analysis: The claim that estimation error improves with \"enough\" tasks (O(T^2) vs. O(T)) is confusing, particularly for T â ¤ 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994775652885437,
+                    "sentence": "This raises questions about the practical implications of the theoretical results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997868537902832,
+                    "sentence": "5. Limited Exploration of Task Relatedness: The paper does not explore how performance varies when tasks are minimally vs. maximally related.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997296929359436,
+                    "sentence": "A more general version of Theorem 5 could clarify this distinction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997159242630005,
+                    "sentence": "Pro and Con Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999098181724548,
+                    "sentence": "- Pro: The paper introduces a novel multitask framework for WFAs, supported by theoretical insights and experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998573660850525,
+                    "sentence": "It addresses a relevant problem and demonstrates potential benefits in specific scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997285008430481,
+                    "sentence": "- Con: The novelty is limited, and the practical advantages of the method are not consistently evident.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997680187225342,
+                    "sentence": "Key concepts, such as the relatedness measure and computational trade-offs, require further clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991931915283203,
+                    "sentence": "Recommendation: While the paper offers an interesting extension of spectral learning to multitask settings, the concerns about novelty, clarity, and practical benefits temper its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998032808303833,
+                    "sentence": "I recommend acceptance only if the authors address the unclear aspects of the relatedness measure, computational complexity, and error analysis in a revised version.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses the problem of multitask learning for weighted finite automata (WFAs) by introducing vector-valued WFAs (vv-WFAs) and proposing a spectral learning algorithm for this new model. The authors define a notion of relatedness between WFAs based on shared feature representations and leverage the Hankel tensor's rank factorization to jointly learn multiple tasks. The paper claims theoretical advantages of this multitask approach and demonstrates its performance on synthetic and real-world datasets.\nStrengths:\n1. Relevance and Scope: The paper tackles a meaningful problem in multitask learning, particularly for sequence data, which has applications in NLP, computational biology, and reinforcement learning. The extension of spectral learning to multitask settings is a valuable contribution.\n2. Theoretical Foundation: The authors provide a solid theoretical framework, including a generalization of the Fliess theorem to vector-valued functions, and analyze the computational complexity of the proposed method. The use of asymmetric bounds for singular subspace estimation is a novel angle.\n3. Experimental Validation: The experiments on synthetic and real-world datasets, including the Universal Dependencies dataset, provide empirical evidence for the method's effectiveness under certain conditions. The comparison with single-task learning (SL) and naive baselines is thorough.\n4. Clarity in Algorithm Design: The multitask spectral learning (MT-SL) algorithm is clearly described, and the projection step to reduce redundancy is well-motivated.\nWeaknesses:\n1. Novelty Concerns: The novelty of the Hankel tensor factorization technique is questionable. While the extension to multitask settings is interesting, the core spectral learning approach relies heavily on existing methods, and the novelty appears incremental.\n2. Unclear Relatedness Measure: The definition and purpose of the relatedness measure \"tau\" are not sufficiently clear. Its connection to other quantities and its practical utility in guiding the algorithm are underexplored.\n3. Lack of Evident Benefits: The paper claims advantages of multitask learning, but these are not consistently demonstrated. For example, when tasks are minimally related (e.g., dS = dT), MT-SL offers no clear improvement over single-task learning (SL). Additionally, the computational complexity of MT-SL appears worse than estimating individual WFAs separately, especially as the number of tasks grows.\n4. Ambiguity in Error Analysis: The claim that estimation error improves with \"enough\" tasks (O(T^2) vs. O(T)) is confusing, particularly for T â ¤ 1. This raises questions about the practical implications of the theoretical results.\n5. Limited Exploration of Task Relatedness: The paper does not explore how performance varies when tasks are minimally vs. maximally related. A more general version of Theorem 5 could clarify this distinction.\nPro and Con Arguments for Acceptance:\n- Pro: The paper introduces a novel multitask framework for WFAs, supported by theoretical insights and experiments. It addresses a relevant problem and demonstrates potential benefits in specific scenarios.\n- Con: The novelty is limited, and the practical advantages of the method are not consistently evident. Key concepts, such as the relatedness measure and computational trade-offs, require further clarification.\nRecommendation: While the paper offers an interesting extension of spectral learning to multitask settings, the concerns about novelty, clarity, and practical benefits temper its impact. I recommend acceptance only if the authors address the unclear aspects of the relatedness measure, computational complexity, and error analysis in a revised version."
+        }
+    ]
+}

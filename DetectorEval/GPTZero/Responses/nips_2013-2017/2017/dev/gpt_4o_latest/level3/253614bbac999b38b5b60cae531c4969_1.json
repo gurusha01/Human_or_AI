@@ -1,0 +1,397 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "01525df0-e564-4f2e-a853-9edbeb85947e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "This paper addresses the critical issue of privacy in the repeated collection of telemetry data, particularly counter data, under the framework of Local Differential Privacy (LDP).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "The authors propose novel mechanisms that extend the utility and privacy guarantees of LDP to scenarios involving continuous data collection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "Their contributions include a 1-bit mechanism for mean and histogram estimation, a randomized Î±-point rounding technique for memoization, and an output perturbation mechanism to mitigate privacy leakage from behavior changes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "The paper also demonstrates the deployment of these mechanisms at scale by Microsoft, showcasing their practical relevance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999885559082031,
+                    "sentence": "The paper builds on prior work such as [12], which introduced memoization for continual data collection but was limited to static or infrequently changing values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999939203262329,
+                    "sentence": "By addressing the limitations of [12] and other LDP mechanisms, the authors make a significant contribution to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "However, there are areas where further clarification and comparison would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "1. Novelty and Practical Impact: The proposed mechanisms, particularly the Î±-point rounding and output perturbation, are innovative and address a real-world challenge in telemetry data collection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "The deployment by Microsoft highlights the practical significance of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "2. Theoretical Rigor: The paper provides formal privacy guarantees for the proposed mechanisms, even in the challenging setting of repeated data collection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932646751404,
+                    "sentence": "3. Empirical Validation: Extensive experiments on real-world and synthetic datasets demonstrate the effectiveness of the proposed methods in terms of accuracy and privacy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999959468841553,
+                    "sentence": "4. Scalability: The mechanisms are designed to scale to millions of users, which is a critical requirement for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "1. Line 122: The authors should clarify whether the 1-bit mechanism differs from the basic randomizer in [3] and explicitly state equivalence if applicable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999891519546509,
+                    "sentence": "While the paper mentions that the mechanism is inspired by [4] and [7], a direct comparison with [3] would help contextualize the novelty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999843239784241,
+                    "sentence": "2. Theorem 2: The utility of the proposed method for histogram estimation should be compared more explicitly with existing protocols in terms of parameters \\( n \\) (number of users) and \\( d \\) (number of bits).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999663829803467,
+                    "sentence": "While the paper provides theoretical bounds, a more detailed discussion of how these bounds compare to prior work would be beneficial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999802112579346,
+                    "sentence": "3. Section 3.1: The privacy guarantees after Î±-point rounding are not fully explored in the context of the composition theorem for repeated data submissions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9241257309913635,
+                    "sentence": "The authors should elaborate on how privacy degrades over time and whether additional safeguards are needed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9621964693069458,
+                    "sentence": "4. Clarity: While the paper is generally well-written, some sections, such as the explanation of d-bit memoization, are dense and could benefit from clearer exposition or illustrative examples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989913702011108,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993101358413696,
+                    "sentence": "- The paper addresses a critical and underexplored problem in LDP, making a strong case for its significance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997953474521637,
+                    "sentence": "- The proposed mechanisms are novel, theoretically sound, and practically validated, advancing the state of the art.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992616176605225,
+                    "sentence": "- The deployment by Microsoft demonstrates the real-world applicability and impact of the research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982105493545532,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.984125018119812,
+                    "sentence": "- Some aspects, such as the equivalence of the 1-bit mechanism to prior work and the utility comparison in Theorem 2, require further clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9820979237556458,
+                    "sentence": "- The privacy guarantees under repeated data collection could be more thoroughly analyzed, especially in light of the composition theorem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9315146803855896,
+                    "sentence": "Conclusion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9798142910003662,
+                    "sentence": "Overall, this paper makes a valuable contribution to the field of privacy-preserving data collection and is well-suited for the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6237338781356812,
+                    "sentence": "Addressing the identified weaknesses would further strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5448482036590576,
+                    "sentence": "I recommend acceptance, contingent on minor revisions to clarify the points mentioned above.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                }
+            ],
+            "completely_generated_prob": 0.8596764774936939,
+            "class_probabilities": {
+                "human": 0.1099278184806362,
+                "ai": 0.8596764774936939,
+                "mixed": 0.030395704025669885
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8596764774936939,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8596764774936939,
+                    "human": 0.1099278184806362,
+                    "mixed": 0.030395704025669885
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nThis paper addresses the critical issue of privacy in the repeated collection of telemetry data, particularly counter data, under the framework of Local Differential Privacy (LDP). The authors propose novel mechanisms that extend the utility and privacy guarantees of LDP to scenarios involving continuous data collection. Their contributions include a 1-bit mechanism for mean and histogram estimation, a randomized Î±-point rounding technique for memoization, and an output perturbation mechanism to mitigate privacy leakage from behavior changes. The paper also demonstrates the deployment of these mechanisms at scale by Microsoft, showcasing their practical relevance.\nThe paper builds on prior work such as [12], which introduced memoization for continual data collection but was limited to static or infrequently changing values. By addressing the limitations of [12] and other LDP mechanisms, the authors make a significant contribution to the field. However, there are areas where further clarification and comparison would strengthen the paper.\nStrengths:\n1. Novelty and Practical Impact: The proposed mechanisms, particularly the Î±-point rounding and output perturbation, are innovative and address a real-world challenge in telemetry data collection. The deployment by Microsoft highlights the practical significance of the work.\n2. Theoretical Rigor: The paper provides formal privacy guarantees for the proposed mechanisms, even in the challenging setting of repeated data collection.\n3. Empirical Validation: Extensive experiments on real-world and synthetic datasets demonstrate the effectiveness of the proposed methods in terms of accuracy and privacy.\n4. Scalability: The mechanisms are designed to scale to millions of users, which is a critical requirement for real-world applications.\nWeaknesses:\n1. Line 122: The authors should clarify whether the 1-bit mechanism differs from the basic randomizer in [3] and explicitly state equivalence if applicable. While the paper mentions that the mechanism is inspired by [4] and [7], a direct comparison with [3] would help contextualize the novelty.\n2. Theorem 2: The utility of the proposed method for histogram estimation should be compared more explicitly with existing protocols in terms of parameters \\( n \\) (number of users) and \\( d \\) (number of bits). While the paper provides theoretical bounds, a more detailed discussion of how these bounds compare to prior work would be beneficial.\n3. Section 3.1: The privacy guarantees after Î±-point rounding are not fully explored in the context of the composition theorem for repeated data submissions. The authors should elaborate on how privacy degrades over time and whether additional safeguards are needed.\n4. Clarity: While the paper is generally well-written, some sections, such as the explanation of d-bit memoization, are dense and could benefit from clearer exposition or illustrative examples.\nArguments for Acceptance:\n- The paper addresses a critical and underexplored problem in LDP, making a strong case for its significance.\n- The proposed mechanisms are novel, theoretically sound, and practically validated, advancing the state of the art.\n- The deployment by Microsoft demonstrates the real-world applicability and impact of the research.\nArguments Against Acceptance:\n- Some aspects, such as the equivalence of the 1-bit mechanism to prior work and the utility comparison in Theorem 2, require further clarification.\n- The privacy guarantees under repeated data collection could be more thoroughly analyzed, especially in light of the composition theorem.\nConclusion:\nOverall, this paper makes a valuable contribution to the field of privacy-preserving data collection and is well-suited for the conference. Addressing the identified weaknesses would further strengthen the paper. I recommend acceptance, contingent on minor revisions to clarify the points mentioned above."
+        }
+    ]
+}

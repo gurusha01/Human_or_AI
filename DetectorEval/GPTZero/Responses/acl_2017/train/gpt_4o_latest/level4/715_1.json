@@ -1,0 +1,344 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "63bab085-b7a6-41d7-b1a1-5e528ffaf2cc",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9930422902107239,
+                    "sentence": "Paraphrased Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975911378860474,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970011711120605,
+                    "sentence": "- Clearly defined task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934183359146118,
+                    "sentence": "- Simple model achieving state-of-the-art results on SQuAD (single model).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9931738972663879,
+                    "sentence": "- Comprehensive evaluation and comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993679404258728,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9930150508880615,
+                    "sentence": "- Limited analysis of errors and results (see detailed comments below).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969793558120728,
+                    "sentence": "General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993436336517334,
+                    "sentence": "This paper introduces a method for directly querying Wikipedia to answer open-domain questions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9783538579940796,
+                    "sentence": "The proposed system comprises two main components: a module for querying and retrieving Wikipedia articles, and another module for answering questions based on the retrieved articles.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9707761406898499,
+                    "sentence": "The document retrieval component is a traditional information retrieval (IR) system that leverages term frequency models and n-gram counts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9819931983947754,
+                    "sentence": "The answering module employs a feature representation for paragraphs that includes word embeddings, indicator features to identify whether a paragraph word appears in the question, token-level features such as POS and NER, and a soft feature designed to capture similarity between question and paragraph tokens in embedding space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9841549396514893,
+                    "sentence": "These features are combined and input into a bi-directional LSTM RNN for encoding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9634926319122314,
+                    "sentence": "For questions, a separate RNN processes the word embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9873645305633545,
+                    "sentence": "The system independently trains classifiers to predict the start and end spans of sentences within paragraphs to generate answers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9872652292251587,
+                    "sentence": "The training process incorporates multiple open-domain QA datasets, such as SQuAD and WebQuestions, by modifying the training data to include articles retrieved by the IR engine instead of solely relying on the correct document or passage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9877536296844482,
+                    "sentence": "Overall, this is an engaging and easy-to-follow paper, but I have a few concerns and questions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9930985569953918,
+                    "sentence": "1) The IR system achieves an impressive Accuracy@5 of over 75%, and the document reader performs well individually, outperforming the best single models on SQuAD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9953616857528687,
+                    "sentence": "However, there is a notable performance drop in Table 6.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9949308633804321,
+                    "sentence": "The authors mention that when testing with the best paragraph instead of the retrieved results, accuracy improves to 0.49 (from 0.26), but this is still far below the 0.78\"\"0.79 accuracy achieved on the SQuAD task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9923171401023865,
+                    "sentence": "This suggests that the neural network for matching struggles to learn effectively when using the modified training set (which includes retrieved articles) compared to the scenario where training and testing are conducted on the document understanding task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934943914413452,
+                    "sentence": "The paper would benefit from an analysis of this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970929026603699,
+                    "sentence": "What were the training accuracies in both scenarios?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968885183334351,
+                    "sentence": "Are there potential strategies to mitigate this gap?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948998093605042,
+                    "sentence": "While the authors briefly touch on this in the conclusion, a more detailed discussion in the main paper would provide valuable insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982317686080933,
+                    "sentence": "2) The authors chose to treat this as a pure machine comprehension task and avoided relying on external resources like Freebase, which could have assisted with entity typing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991528391838074,
+                    "sentence": "While this approach aligns with their goals, it would have been interesting to explore the impact of incorporating such resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9953968524932861,
+                    "sentence": "Building on the first question, if the errors stem from highly relevant topical sentences, as the authors suggest, could entity typing have helped reduce these errors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9957290291786194,
+                    "sentence": "Additionally, the authors should reference QuASE (Sun et al., 2015, WWW 2015) and similar systems in their related work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919900894165039,
+                    "sentence": "QuASE is another open-domain QA system that answers questions using retrieved passages, though it relies on the web rather than solely on Wikipedia.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Paraphrased Review\nStrengths:\n- Clearly defined task.\n- Simple model achieving state-of-the-art results on SQuAD (single model).\n- Comprehensive evaluation and comparison.\nWeaknesses:\n- Limited analysis of errors and results (see detailed comments below).\nGeneral Discussion:\nThis paper introduces a method for directly querying Wikipedia to answer open-domain questions. The proposed system comprises two main components: a module for querying and retrieving Wikipedia articles, and another module for answering questions based on the retrieved articles.\nThe document retrieval component is a traditional information retrieval (IR) system that leverages term frequency models and n-gram counts. The answering module employs a feature representation for paragraphs that includes word embeddings, indicator features to identify whether a paragraph word appears in the question, token-level features such as POS and NER, and a soft feature designed to capture similarity between question and paragraph tokens in embedding space. These features are combined and input into a bi-directional LSTM RNN for encoding. For questions, a separate RNN processes the word embeddings. The system independently trains classifiers to predict the start and end spans of sentences within paragraphs to generate answers.\nThe training process incorporates multiple open-domain QA datasets, such as SQuAD and WebQuestions, by modifying the training data to include articles retrieved by the IR engine instead of solely relying on the correct document or passage.\nOverall, this is an engaging and easy-to-follow paper, but I have a few concerns and questions:\n1) The IR system achieves an impressive Accuracy@5 of over 75%, and the document reader performs well individually, outperforming the best single models on SQuAD. However, there is a notable performance drop in Table 6. The authors mention that when testing with the best paragraph instead of the retrieved results, accuracy improves to 0.49 (from 0.26), but this is still far below the 0.78\"\"0.79 accuracy achieved on the SQuAD task. This suggests that the neural network for matching struggles to learn effectively when using the modified training set (which includes retrieved articles) compared to the scenario where training and testing are conducted on the document understanding task. The paper would benefit from an analysis of this issue. What were the training accuracies in both scenarios? Are there potential strategies to mitigate this gap? While the authors briefly touch on this in the conclusion, a more detailed discussion in the main paper would provide valuable insights.\n2) The authors chose to treat this as a pure machine comprehension task and avoided relying on external resources like Freebase, which could have assisted with entity typing. While this approach aligns with their goals, it would have been interesting to explore the impact of incorporating such resources. Building on the first question, if the errors stem from highly relevant topical sentences, as the authors suggest, could entity typing have helped reduce these errors?\nAdditionally, the authors should reference QuASE (Sun et al., 2015, WWW 2015) and similar systems in their related work. QuASE is another open-domain QA system that answers questions using retrieved passages, though it relies on the web rather than solely on Wikipedia."
+        }
+    ]
+}

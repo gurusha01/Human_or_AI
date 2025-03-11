@@ -1,0 +1,414 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "9bcaeca3-b59b-4357-8a23-53c7709cc315",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999778270721436,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995231628418,
+                    "sentence": "This paper introduces TextFlow (XF), a novel standalone text similarity measure inspired by DNA sequence alignment algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999910593032837,
+                    "sentence": "Unlike traditional similarity measures that rely on token overlap or n-grams, TextFlow considers the sequential nature of language by representing text pairs as continuous curves and calculating similarity based on sub-sequence matching, positional differences, and unmatched words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951124191284,
+                    "sentence": "The authors also propose a neural network architecture for task-specific parameter optimization of TextFlow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "The paper evaluates TextFlow on eight datasets across three tasks: textual entailment recognition, paraphrase detection, and ranking relevance, demonstrating its superior performance compared to state-of-the-art similarity measures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "Key contributions include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "1. A novel similarity measure (TextFlow) that integrates sequence matching and positional information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938607215881,
+                    "sentence": "2. A neural network-based framework for training task-specific parameters for TextFlow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999993622303009,
+                    "sentence": "3. Comprehensive empirical evaluation across multiple datasets and tasks, introducing a new evaluation metric (CORE) for performance consistency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999915361404419,
+                    "sentence": "1. Novelty of Approach: The introduction of a similarity measure inspired by DNA sequence alignment is innovative and addresses limitations of traditional measures like n-grams and skip-grams.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999891519546509,
+                    "sentence": "The asymmetric nature of TextFlow adds flexibility for different tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999910593032837,
+                    "sentence": "2. Empirical Validation: The experiments are thorough, covering eight datasets across three tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999993622303009,
+                    "sentence": "TextFlow consistently outperforms baseline measures in accuracy, precision, and CORE, demonstrating its robustness and generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999991238117218,
+                    "sentence": "3. Task-Specific Adaptability: The neural network-based parameter training for TextFlow is a significant strength, allowing the measure to be fine-tuned for specific tasks, such as optimizing for accuracy or F1 score.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999918341636658,
+                    "sentence": "4. Practical Utility: TextFlow is computationally efficient (O(nm)) and does not require training corpora for its canonical version, making it a practical tool for real-world applications like plagiarism detection and ranking relevance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999904632568359,
+                    "sentence": "5. Reproducibility: The authors provide implementation details, including code and datasets, which enhances the reproducibility of their work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940991401672,
+                    "sentence": "1. Limited Discussion of Limitations: While the paper briefly acknowledges areas for improvement (e.g., incorporating word weights), it does not sufficiently discuss the limitations of TextFlow, such as its reliance on token-level matching, which may struggle with semantic variations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943971633911,
+                    "sentence": "2. Recall Performance: TextFlow underperforms on recall compared to some baselines, particularly for the trained version (XFt).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999918341636658,
+                    "sentence": "This is attributed to its optimization for accuracy, but the trade-off could be better explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999523758888245,
+                    "sentence": "3. Evaluation Scope: While the evaluation is extensive, the datasets are predominantly English-based and focused on sentence-level tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999273419380188,
+                    "sentence": "The applicability of TextFlow to multilingual or document-level tasks remains unexplored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999793767929077,
+                    "sentence": "4. Complexity of Neural Network Training: The neural network architecture for parameter training adds complexity and may not be accessible to all users.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999598860740662,
+                    "sentence": "A more detailed explanation of its design and hyperparameter choices would be beneficial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997912049293518,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999101758003235,
+                    "sentence": "1. How does TextFlow handle semantic variations, such as synonyms or paraphrasing, beyond token-level matching?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999730587005615,
+                    "sentence": "Could embeddings or semantic similarity measures be integrated into the framework?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999580383300781,
+                    "sentence": "2. Have you evaluated the scalability of TextFlow on larger datasets or document-level tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999052882194519,
+                    "sentence": "If not, what are the anticipated challenges?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999280571937561,
+                    "sentence": "3. Could you elaborate on the choice of the CORE metric and its advantages over traditional evaluation metrics like mean rank or variance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998612999916077,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998259544372559,
+                    "sentence": "I recommend acceptance of this paper, as it presents a novel and practical contribution to text similarity measures, supported by strong empirical results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999798059463501,
+                    "sentence": "Addressing the identified weaknesses, particularly the recall performance and applicability to broader tasks, could further enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces TextFlow (XF), a novel standalone text similarity measure inspired by DNA sequence alignment algorithms. Unlike traditional similarity measures that rely on token overlap or n-grams, TextFlow considers the sequential nature of language by representing text pairs as continuous curves and calculating similarity based on sub-sequence matching, positional differences, and unmatched words. The authors also propose a neural network architecture for task-specific parameter optimization of TextFlow. The paper evaluates TextFlow on eight datasets across three tasks: textual entailment recognition, paraphrase detection, and ranking relevance, demonstrating its superior performance compared to state-of-the-art similarity measures. Key contributions include:\n1. A novel similarity measure (TextFlow) that integrates sequence matching and positional information.\n2. A neural network-based framework for training task-specific parameters for TextFlow.\n3. Comprehensive empirical evaluation across multiple datasets and tasks, introducing a new evaluation metric (CORE) for performance consistency.\nStrengths\n1. Novelty of Approach: The introduction of a similarity measure inspired by DNA sequence alignment is innovative and addresses limitations of traditional measures like n-grams and skip-grams. The asymmetric nature of TextFlow adds flexibility for different tasks.\n2. Empirical Validation: The experiments are thorough, covering eight datasets across three tasks. TextFlow consistently outperforms baseline measures in accuracy, precision, and CORE, demonstrating its robustness and generalizability.\n3. Task-Specific Adaptability: The neural network-based parameter training for TextFlow is a significant strength, allowing the measure to be fine-tuned for specific tasks, such as optimizing for accuracy or F1 score.\n4. Practical Utility: TextFlow is computationally efficient (O(nm)) and does not require training corpora for its canonical version, making it a practical tool for real-world applications like plagiarism detection and ranking relevance.\n5. Reproducibility: The authors provide implementation details, including code and datasets, which enhances the reproducibility of their work.\nWeaknesses\n1. Limited Discussion of Limitations: While the paper briefly acknowledges areas for improvement (e.g., incorporating word weights), it does not sufficiently discuss the limitations of TextFlow, such as its reliance on token-level matching, which may struggle with semantic variations.\n2. Recall Performance: TextFlow underperforms on recall compared to some baselines, particularly for the trained version (XFt). This is attributed to its optimization for accuracy, but the trade-off could be better explored.\n3. Evaluation Scope: While the evaluation is extensive, the datasets are predominantly English-based and focused on sentence-level tasks. The applicability of TextFlow to multilingual or document-level tasks remains unexplored.\n4. Complexity of Neural Network Training: The neural network architecture for parameter training adds complexity and may not be accessible to all users. A more detailed explanation of its design and hyperparameter choices would be beneficial.\nQuestions to Authors\n1. How does TextFlow handle semantic variations, such as synonyms or paraphrasing, beyond token-level matching? Could embeddings or semantic similarity measures be integrated into the framework?\n2. Have you evaluated the scalability of TextFlow on larger datasets or document-level tasks? If not, what are the anticipated challenges?\n3. Could you elaborate on the choice of the CORE metric and its advantages over traditional evaluation metrics like mean rank or variance?\nRecommendation\nI recommend acceptance of this paper, as it presents a novel and practical contribution to text similarity measures, supported by strong empirical results. Addressing the identified weaknesses, particularly the recall performance and applicability to broader tasks, could further enhance its impact."
+        }
+    ]
+}

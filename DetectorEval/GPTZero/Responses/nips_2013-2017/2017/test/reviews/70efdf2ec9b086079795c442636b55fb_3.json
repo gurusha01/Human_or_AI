@@ -1,0 +1,246 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "ca5d33ea-7494-4f85-9ae0-b382d5de41c8",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.4226107597351074,
+                    "sentence": "This paper proposes Tensorized LSTMs for efficient sequence learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4641575813293457,
+                    "sentence": "It represents hidden layers as tensors, and employs cross-layer memory cell convolution for efficiency and effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3176417946815491,
+                    "sentence": "The model is clearly formulated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2940394878387451,
+                    "sentence": "Experimental results show the utility of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.22910389304161072,
+                    "sentence": "Although the paper is well written, I still have some questions/confusion as follows.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.41241341829299927,
+                    "sentence": "I would re-consider my final decision if the authors address these points in rebuttal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3162565231323242,
+                    "sentence": "1. My biggest confusion comes from Sec 2.1, when the authors describe how to widen the network with convolution (lines 65-73).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3139803111553192,
+                    "sentence": "As mentioned in text, \"P is akin to the number of stacked hidden layers\", and the model \"locally-connects\" along the P direction to share parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2527961730957031,
+                    "sentence": "I think it is a strategy to deepen the network instead of widening it, since increasing P (the number of hidden layers) won't incur more parameters in the convolution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.37729814648628235,
+                    "sentence": "Similarly, as mentioned in lines 103-104, tRNN can be \"widened without additional parameters by increasing the tensor size P\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4050865173339844,
+                    "sentence": "It does not make sense, as increasing P is conceptually equivalent to increasing the number of hidden layers in sRNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4777270555496216,
+                    "sentence": "This is to deepen the network, not to widen it.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.48987969756126404,
+                    "sentence": "2. The authors claim to deepen the network with delayed outputs (Sec 2.2).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4258583188056946,
+                    "sentence": "They use the parameter L to set up the network depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.41758131980895996,
+                    "sentence": "However, as shown in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025403205305337906,
+                    "sentence": "9, L is determined by P and K, meaning that we can not really set up the network depth as a free parameter.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04169361665844917,
+                    "sentence": "I guess in practice, we would always pre-set P and K before experiments, and then derive L from Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03169304132461548,
+                    "sentence": "9. It seems over-claimed in lines 6-10, which reads like \"we could freely set up the width and depth of the network\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.049914922565221786,
+                    "sentence": "3. The authors claims that the proposed memory cell convolution is able to prevent gradient vanishing/exploding (line 36).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04746893420815468,
+                    "sentence": "This is not verified theoretically or empirically.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0416080504655838,
+                    "sentence": "The words \"gradient vanishing/exploding\" are even not mentioned in the later text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06512017548084259,
+                    "sentence": "4. In the experiments, the authors compared tLSTM variants in the following dimentions: tensor shape (2D or 3D), normalization (no normalization, LN, CN), memory cell convolution (yes or no), and feedback connections (yes or no).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0501711368560791,
+                    "sentence": "There are 2x3x2x2=24 combinations in total.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08994269371032715,
+                    "sentence": "Why just pick up the six combinations in lines 166-171?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06656886637210846,
+                    "sentence": "I understand it become messy when comparing too many methods, but there are some interesting variants like 2D tLSTM+CN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08126524090766907,
+                    "sentence": "Also, it might help to split the experiments in groups, like one for normalization strategy, one for memory cell convolution, one for feedback connections, etc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                }
+            ],
+            "completely_generated_prob": 0.11703911875702723,
+            "class_probabilities": {
+                "human": 0.8811108260166219,
+                "ai": 0.11703911875702723,
+                "mixed": 0.0018500552263509536
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.8811108260166219,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.11703911875702723,
+                    "human": 0.8811108260166219,
+                    "mixed": 0.0018500552263509536
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes Tensorized LSTMs for efficient sequence learning. It represents hidden layers as tensors, and employs cross-layer memory cell convolution for efficiency and effectiveness. The model is clearly formulated. Experimental results show the utility of the proposed method.\nAlthough the paper is well written, I still have some questions/confusion as follows. I would re-consider my final decision if the authors address these points in rebuttal.\n1. My biggest confusion comes from Sec 2.1, when the authors describe how to widen the network with convolution (lines 65-73). As mentioned in text, \"P is akin to the number of stacked hidden layers\", and the model \"locally-connects\" along the P direction to share parameters. I think it is a strategy to deepen the network instead of widening it, since increasing P (the number of hidden layers) won't incur more parameters in the convolution. Similarly, as mentioned in lines 103-104, tRNN can be \"widened without additional parameters by increasing the tensor size P\". It does not make sense, as increasing P is conceptually equivalent to increasing the number of hidden layers in sRNN. This is to deepen the network, not to widen it.\n2. The authors claim to deepen the network with delayed outputs (Sec 2.2). They use the parameter L to set up the network depth. However, as shown in Eq. 9, L is determined by P and K, meaning that we can not really set up the network depth as a free parameter. I guess in practice, we would always pre-set P and K before experiments, and then derive L from Eq. 9. It seems over-claimed in lines 6-10, which reads like \"we could freely set up the width and depth of the network\".\n3. The authors claims that the proposed memory cell convolution is able to prevent gradient vanishing/exploding (line 36). This is not verified theoretically or empirically. The words \"gradient vanishing/exploding\" are even not mentioned in the later text.\n4. In the experiments, the authors compared tLSTM variants in the following dimentions: tensor shape (2D or 3D), normalization (no normalization, LN, CN), memory cell convolution (yes or no), and feedback connections (yes or no). There are 2x3x2x2=24 combinations in total. Why just pick up the six combinations in lines 166-171? I understand it become messy when comparing too many methods, but there are some interesting variants like 2D tLSTM+CN. Also, it might help to split the experiments in groups, like one for normalization strategy, one for memory cell convolution, one for feedback connections, etc."
+        }
+    ]
+}

@@ -1,0 +1,401 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a0583905-1a3c-4f41-b6e0-a7fc6388f100",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999997615814209,
+                    "sentence": "Review of \"Stochastic Gradient Richardson-Romberg Langevin Dynamics (SGRRLD)\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "Summary:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "This paper introduces a novel sampling algorithm, Stochastic Gradient Richardson-Romberg Langevin Dynamics (SGRRLD), which applies Richardson-Romberg (RR) extrapolation to Stochastic Gradient Langevin Dynamics (SGLD) to reduce bias while maintaining reasonable variance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "The authors provide a comprehensive theoretical analysis, demonstrating that SGRRLD achieves higher rates of convergence for bias and mean squared error (MSE) compared to SGLD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "The proposed method is shown to achieve the theoretical accuracy of higher-order integrators while retaining the simplicity of first-order methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "The paper supports its theoretical claims with experiments on synthetic data and a large-scale matrix factorization task, showing that SGRRLD outperforms SGLD in terms of both accuracy and computational efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "1. Technical Soundness: The paper provides a rigorous theoretical analysis, including asymptotic and non-asymptotic bounds for bias and MSE, as well as a central limit theorem for the proposed estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "These results are well-supported and align with the experimental findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "2. Novelty: The application of RR extrapolation to SG-MCMC methods, particularly SGLD, is novel and addresses a critical limitation of these methods\"\"bias reduction\"\"without requiring higher-order integrators.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "3. Practical Relevance: The proposed algorithm is computationally efficient and well-suited for parallel and distributed architectures, making it attractive for large-scale Bayesian inference tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "4. Experimental Validation: The experiments are thorough and demonstrate clear improvements in bias, MSE, and convergence rates over SGLD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "The large-scale matrix factorization task highlights the practical utility of SGRRLD in real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "5. Clarity: The paper is well-written and organized, with clear explanations of the algorithm, theoretical results, and experimental setup.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "1. Limited Scope of Comparison: While the paper compares SGRRLD to SGLD and briefly to SGHMC, it does not provide a comprehensive comparison to other advanced SG-MCMC methods, such as those using adaptive step sizes or preconditioning techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "2. Computational Overhead: Although the authors emphasize the parallelizability of SGRRLD, running two chains in parallel may still introduce additional computational overhead compared to single-chain methods, which is not fully addressed in the discussion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3414348363876343,
+                    "sentence": "3. Assumptions: The theoretical results rely on several technical assumptions (e.g., smoothness of the potential energy function and ergodicity conditions), which may limit the applicability of SGRRLD in certain scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.180439755320549,
+                    "sentence": "This is not thoroughly discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.18216381967067719,
+                    "sentence": "4. Supplementary Material Dependence: Many key details, including proofs and experimental configurations, are relegated to the supplementary material, which may hinder accessibility for readers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944342374801636,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959796071052551,
+                    "sentence": "- The paper addresses a significant limitation of SG-MCMC methods (bias) with a novel and theoretically sound approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99869304895401,
+                    "sentence": "- The results are well-supported by both theoretical analysis and empirical validation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985657930374146,
+                    "sentence": "- The proposed method is practical and scalable, making it relevant for large-scale applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985644817352295,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958205819129944,
+                    "sentence": "- The comparison to other SG-MCMC methods is somewhat limited, leaving open questions about the relative performance of SGRRLD in a broader context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958529472351074,
+                    "sentence": "- The computational trade-offs of running two chains in parallel are not fully explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969236850738525,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9902254343032837,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996559739112854,
+                    "sentence": "While there are minor shortcomings, the contributions are significant, and the proposed method has the potential to advance the state of the art in scalable Bayesian inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968816041946411,
+                    "sentence": "The combination of theoretical rigor and practical relevance makes this paper a strong candidate for inclusion in the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907359480857849,
+                    "sentence": "Score: 8/10",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of \"Stochastic Gradient Richardson-Romberg Langevin Dynamics (SGRRLD)\"\nSummary:\nThis paper introduces a novel sampling algorithm, Stochastic Gradient Richardson-Romberg Langevin Dynamics (SGRRLD), which applies Richardson-Romberg (RR) extrapolation to Stochastic Gradient Langevin Dynamics (SGLD) to reduce bias while maintaining reasonable variance. The authors provide a comprehensive theoretical analysis, demonstrating that SGRRLD achieves higher rates of convergence for bias and mean squared error (MSE) compared to SGLD. The proposed method is shown to achieve the theoretical accuracy of higher-order integrators while retaining the simplicity of first-order methods. The paper supports its theoretical claims with experiments on synthetic data and a large-scale matrix factorization task, showing that SGRRLD outperforms SGLD in terms of both accuracy and computational efficiency.\nStrengths:\n1. Technical Soundness: The paper provides a rigorous theoretical analysis, including asymptotic and non-asymptotic bounds for bias and MSE, as well as a central limit theorem for the proposed estimator. These results are well-supported and align with the experimental findings.\n2. Novelty: The application of RR extrapolation to SG-MCMC methods, particularly SGLD, is novel and addresses a critical limitation of these methods\"\"bias reduction\"\"without requiring higher-order integrators.\n3. Practical Relevance: The proposed algorithm is computationally efficient and well-suited for parallel and distributed architectures, making it attractive for large-scale Bayesian inference tasks.\n4. Experimental Validation: The experiments are thorough and demonstrate clear improvements in bias, MSE, and convergence rates over SGLD. The large-scale matrix factorization task highlights the practical utility of SGRRLD in real-world applications.\n5. Clarity: The paper is well-written and organized, with clear explanations of the algorithm, theoretical results, and experimental setup.\nWeaknesses:\n1. Limited Scope of Comparison: While the paper compares SGRRLD to SGLD and briefly to SGHMC, it does not provide a comprehensive comparison to other advanced SG-MCMC methods, such as those using adaptive step sizes or preconditioning techniques.\n2. Computational Overhead: Although the authors emphasize the parallelizability of SGRRLD, running two chains in parallel may still introduce additional computational overhead compared to single-chain methods, which is not fully addressed in the discussion.\n3. Assumptions: The theoretical results rely on several technical assumptions (e.g., smoothness of the potential energy function and ergodicity conditions), which may limit the applicability of SGRRLD in certain scenarios. This is not thoroughly discussed.\n4. Supplementary Material Dependence: Many key details, including proofs and experimental configurations, are relegated to the supplementary material, which may hinder accessibility for readers.\nArguments for Acceptance:\n- The paper addresses a significant limitation of SG-MCMC methods (bias) with a novel and theoretically sound approach.\n- The results are well-supported by both theoretical analysis and empirical validation.\n- The proposed method is practical and scalable, making it relevant for large-scale applications.\nArguments Against Acceptance:\n- The comparison to other SG-MCMC methods is somewhat limited, leaving open questions about the relative performance of SGRRLD in a broader context.\n- The computational trade-offs of running two chains in parallel are not fully explored.\nRecommendation:\nI recommend acceptance of this paper. While there are minor shortcomings, the contributions are significant, and the proposed method has the potential to advance the state of the art in scalable Bayesian inference. The combination of theoretical rigor and practical relevance makes this paper a strong candidate for inclusion in the conference. \nScore: 8/10"
+        }
+    ]
+}

@@ -1,0 +1,396 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "bd446b8c-129c-4def-8ca2-713e50c79bfa",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9995206594467163,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999468326568604,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999855101108551,
+                    "sentence": "This paper addresses the challenge of zero pronoun (ZP) resolution, particularly the lack of annotated data, by proposing a novel approach to automatically generate large-scale pseudo training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998230934143066,
+                    "sentence": "The authors adapt cloze-style reading comprehension neural networks for ZP resolution and introduce a two-step training mechanism to bridge the gap between pseudo and real-world data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997730851173401,
+                    "sentence": "The main contributions of the paper, as I see them, are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998513460159302,
+                    "sentence": "1. Pseudo Training Data Generation: The paper presents a simple yet effective method to generate pseudo training data for ZP resolution, leveraging frequency-based blanking of nouns/pronouns in documents.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998759031295776,
+                    "sentence": "2. Two-Step Training Mechanism: The proposed pre-training and adaptation method effectively combines pseudo data and task-specific data, significantly improving performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998680949211121,
+                    "sentence": "3. Attention-Based Neural Network Model: The authors develop an attention-based neural network architecture tailored for ZP resolution, incorporating mechanisms to handle unknown words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999907374382019,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996253848075867,
+                    "sentence": "1. Significant Performance Improvement: The proposed approach achieves a 3.1% absolute improvement in F-score over the state-of-the-art on the OntoNotes 5.0 dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999262809753418,
+                    "sentence": "The results are statistically significant and consistent across most domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991445541381836,
+                    "sentence": "2. Practical Contribution: The pseudo training data generation method is simple, domain-agnostic, and scalable, making it a valuable contribution for tasks with limited annotated data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999656617641449,
+                    "sentence": "3. Innovative Two-Step Training: The pre-training and adaptation approach effectively leverages both pseudo and task-specific data, demonstrating a clear advantage over using either data type alone.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999706506729126,
+                    "sentence": "4. Comprehensive Evaluation: The paper provides detailed experimental results, including domain-specific performance, ablation studies (e.g., UNK processing, domain adaptation), and error analysis, which strengthen the validity of the claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998069405555725,
+                    "sentence": "5. Novelty in Neural Architecture: The attention-based model, combined with the proposed unknown word processing mechanism, is well-suited for ZP resolution and addresses key challenges like long-distance dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999263286590576,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998714923858643,
+                    "sentence": "1. Limited Error Mitigation: While the paper identifies key error sources (e.g., unknown words and long-distance antecedents), the proposed solutions (e.g., UNK processing) are incremental and do not fully address these challenges.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998856782913208,
+                    "sentence": "For instance, the performance drop in BN and TC domains suggests that the model struggles with noisy or oral-style text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998032808303833,
+                    "sentence": "2. Lack of Theoretical Justification: While the two-step training method is empirically effective, the paper does not provide a theoretical explanation for why this approach works better than alternatives like joint training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967935681343079,
+                    "sentence": "3. Domain-Specific Limitations: The reliance on task-specific data in the adaptation step limits the generalizability of the approach to domains without annotated data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9853695034980774,
+                    "sentence": "This dependency is not sufficiently discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9904653429985046,
+                    "sentence": "4. Evaluation Scope: The evaluation focuses exclusively on Chinese ZP resolution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9751614332199097,
+                    "sentence": "It would strengthen the paper to include experiments on other languages or tasks to demonstrate the broader applicability of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5663061141967773,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7822801470756531,
+                    "sentence": "1. How does the model handle cases where the pseudo training data introduces noise or incorrect labels?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.737112283706665,
+                    "sentence": "Is there a mechanism to filter low-quality pseudo samples?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7490407228469849,
+                    "sentence": "2. Could the proposed two-step training method be extended to a multi-task learning framework to jointly train on pseudo and task-specific data?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6635817289352417,
+                    "sentence": "3. Have you considered alternative neural architectures (e.g., transformers) for ZP resolution, and how might they compare to the proposed attention-based model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5804492235183716,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.744156539440155,
+                    "sentence": "Overall, this paper makes a strong contribution to the field of ZP resolution by addressing a critical bottleneck (data scarcity) and achieving state-of-the-art performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.47952333092689514,
+                    "sentence": "While there are some limitations, the proposed methods are innovative, practical, and well-supported by experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6071280837059021,
+                    "sentence": "I recommend acceptance with minor revisions to address the identified weaknesses and provide additional theoretical insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.8348273442980747,
+            "class_probabilities": {
+                "human": 0.12939434094629354,
+                "ai": 0.8348273442980747,
+                "mixed": 0.035778314755631764
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8348273442980747,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8348273442980747,
+                    "human": 0.12939434094629354,
+                    "mixed": 0.035778314755631764
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper addresses the challenge of zero pronoun (ZP) resolution, particularly the lack of annotated data, by proposing a novel approach to automatically generate large-scale pseudo training data. The authors adapt cloze-style reading comprehension neural networks for ZP resolution and introduce a two-step training mechanism to bridge the gap between pseudo and real-world data. The main contributions of the paper, as I see them, are:\n1. Pseudo Training Data Generation: The paper presents a simple yet effective method to generate pseudo training data for ZP resolution, leveraging frequency-based blanking of nouns/pronouns in documents.\n2. Two-Step Training Mechanism: The proposed pre-training and adaptation method effectively combines pseudo data and task-specific data, significantly improving performance.\n3. Attention-Based Neural Network Model: The authors develop an attention-based neural network architecture tailored for ZP resolution, incorporating mechanisms to handle unknown words.\nStrengths\n1. Significant Performance Improvement: The proposed approach achieves a 3.1% absolute improvement in F-score over the state-of-the-art on the OntoNotes 5.0 dataset. The results are statistically significant and consistent across most domains.\n2. Practical Contribution: The pseudo training data generation method is simple, domain-agnostic, and scalable, making it a valuable contribution for tasks with limited annotated data.\n3. Innovative Two-Step Training: The pre-training and adaptation approach effectively leverages both pseudo and task-specific data, demonstrating a clear advantage over using either data type alone.\n4. Comprehensive Evaluation: The paper provides detailed experimental results, including domain-specific performance, ablation studies (e.g., UNK processing, domain adaptation), and error analysis, which strengthen the validity of the claims.\n5. Novelty in Neural Architecture: The attention-based model, combined with the proposed unknown word processing mechanism, is well-suited for ZP resolution and addresses key challenges like long-distance dependencies.\nWeaknesses\n1. Limited Error Mitigation: While the paper identifies key error sources (e.g., unknown words and long-distance antecedents), the proposed solutions (e.g., UNK processing) are incremental and do not fully address these challenges. For instance, the performance drop in BN and TC domains suggests that the model struggles with noisy or oral-style text.\n2. Lack of Theoretical Justification: While the two-step training method is empirically effective, the paper does not provide a theoretical explanation for why this approach works better than alternatives like joint training.\n3. Domain-Specific Limitations: The reliance on task-specific data in the adaptation step limits the generalizability of the approach to domains without annotated data. This dependency is not sufficiently discussed.\n4. Evaluation Scope: The evaluation focuses exclusively on Chinese ZP resolution. It would strengthen the paper to include experiments on other languages or tasks to demonstrate the broader applicability of the approach.\nQuestions to Authors\n1. How does the model handle cases where the pseudo training data introduces noise or incorrect labels? Is there a mechanism to filter low-quality pseudo samples?\n2. Could the proposed two-step training method be extended to a multi-task learning framework to jointly train on pseudo and task-specific data?\n3. Have you considered alternative neural architectures (e.g., transformers) for ZP resolution, and how might they compare to the proposed attention-based model?\nRecommendation\nOverall, this paper makes a strong contribution to the field of ZP resolution by addressing a critical bottleneck (data scarcity) and achieving state-of-the-art performance. While there are some limitations, the proposed methods are innovative, practical, and well-supported by experimental results. I recommend acceptance with minor revisions to address the identified weaknesses and provide additional theoretical insights."
+        }
+    ]
+}

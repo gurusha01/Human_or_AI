@@ -1,0 +1,398 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "4044d06b-4b81-4de0-8490-b4f80aea8993",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9997996687889099,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945759773254,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999865889549255,
+                    "sentence": "This paper introduces a compositional method for extracting fine-grained class-instance relationships (e.g., \"1950s American jazz composers\") from text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999869465827942,
+                    "sentence": "Unlike traditional approaches that treat class labels as atomic units, the proposed method decomposes class labels into their head noun and modifiers, interpreting each modifier as a function that applies properties to the head noun.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999844431877136,
+                    "sentence": "The authors operationalize this approach using a formal semantics framework and employ unsupervised learning to build \"property profiles\" for modifiers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999831318855286,
+                    "sentence": "The method is evaluated on reconstructing Wikipedia category pages, demonstrating a >10-point improvement in AUC over a strong baseline using Hearst patterns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999802708625793,
+                    "sentence": "The key contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999745488166809,
+                    "sentence": "1. A novel compositional approach for IsA extraction that models modifiers as functions, enabling the handling of fine-grained class labels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999502897262573,
+                    "sentence": "2. The integration of formal semantics with NLP, bridging intrinsic meaning assignment and truth-theoretic reasoning for modifiers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999385476112366,
+                    "sentence": "3. An unsupervised method for learning modifier interpretations using property profiles derived from web-scale corpora.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999849796295166,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999908804893494,
+                    "sentence": "1. Novelty of the Compositional Framework: The paper addresses a significant limitation of existing IsA extraction methods by introducing a compositional approach that models modifiers as functions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999901056289673,
+                    "sentence": "This is a substantial conceptual advancement, as it allows the method to generalize to unseen fine-grained class labels, which are rarely observed verbatim in text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999930262565613,
+                    "sentence": "2. Empirical Gains: The proposed method demonstrates a clear improvement over traditional Hearst pattern-based methods, achieving a >10-point increase in AUC.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999993622303009,
+                    "sentence": "This improvement is particularly notable given the challenging nature of the task and the reliance on unsupervised learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "3. Integration of Formal Semantics: The operationalization of formal semantics in a computational setting is a valuable contribution, as it bridges theoretical linguistics and practical NLP.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945163726807,
+                    "sentence": "The dual focus on intrinsic meaning and truth-theoretic reasoning is innovative and well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951720237732,
+                    "sentence": "4. Scalability: The use of web-scale corpora and unsupervised methods ensures that the approach is scalable and applicable to large datasets, which is critical for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999991774559021,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999992311000824,
+                    "sentence": "1. Limited Precision: While the method achieves significant gains in recall, its precision remains relatively low compared to the Hearst baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999761581420898,
+                    "sentence": "For example, the MAP for the proposed methods is much lower than that of Hearst on classes where Hearst is applicable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999905824661255,
+                    "sentence": "This suggests that the method may overgenerate instances, which could limit its utility in high-precision applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991575479507446,
+                    "sentence": "2. Dependence on Property Profiles: The quality of the learned property profiles is crucial to the method's success, yet the paper provides limited analysis of failure cases where the profiles do not capture the intended semantics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993297457695007,
+                    "sentence": "A deeper exploration of these limitations would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998823881149292,
+                    "sentence": "3. Evaluation Scope: The evaluation is limited to Wikipedia category pages, which may not fully represent the diversity of fine-grained class labels in natural language.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994966983795166,
+                    "sentence": "Additional evaluations on other datasets or tasks would provide a more comprehensive assessment of the method's generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9559261798858643,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9924432039260864,
+                    "sentence": "1. How does the method handle ambiguous or polysemous modifiers (e.g., \"light\" in \"light novel\" vs. \"light bulb\")?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9871457815170288,
+                    "sentence": "2. Could the method be extended to handle non-compositional class labels (e.g., idiomatic expressions)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.984755277633667,
+                    "sentence": "3. What are the computational costs of building property profiles, and how do they scale with larger datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9838894009590149,
+                    "sentence": "Overall Assessment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9633055329322815,
+                    "sentence": "This paper makes a strong conceptual contribution by introducing a compositional framework for fine-grained IsA extraction, supported by solid empirical results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9158316254615784,
+                    "sentence": "However, the method's relatively low precision and limited evaluation scope leave room for improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9349203109741211,
+                    "sentence": "With some refinements, this work has the potential to significantly advance the field of semantic taxonomy induction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions \nThis paper introduces a compositional method for extracting fine-grained class-instance relationships (e.g., \"1950s American jazz composers\") from text. Unlike traditional approaches that treat class labels as atomic units, the proposed method decomposes class labels into their head noun and modifiers, interpreting each modifier as a function that applies properties to the head noun. The authors operationalize this approach using a formal semantics framework and employ unsupervised learning to build \"property profiles\" for modifiers. The method is evaluated on reconstructing Wikipedia category pages, demonstrating a >10-point improvement in AUC over a strong baseline using Hearst patterns. The key contributions of this work are: \n1. A novel compositional approach for IsA extraction that models modifiers as functions, enabling the handling of fine-grained class labels. \n2. The integration of formal semantics with NLP, bridging intrinsic meaning assignment and truth-theoretic reasoning for modifiers. \n3. An unsupervised method for learning modifier interpretations using property profiles derived from web-scale corpora. \nStrengths \n1. Novelty of the Compositional Framework: The paper addresses a significant limitation of existing IsA extraction methods by introducing a compositional approach that models modifiers as functions. This is a substantial conceptual advancement, as it allows the method to generalize to unseen fine-grained class labels, which are rarely observed verbatim in text. \n2. Empirical Gains: The proposed method demonstrates a clear improvement over traditional Hearst pattern-based methods, achieving a >10-point increase in AUC. This improvement is particularly notable given the challenging nature of the task and the reliance on unsupervised learning. \n3. Integration of Formal Semantics: The operationalization of formal semantics in a computational setting is a valuable contribution, as it bridges theoretical linguistics and practical NLP. The dual focus on intrinsic meaning and truth-theoretic reasoning is innovative and well-motivated. \n4. Scalability: The use of web-scale corpora and unsupervised methods ensures that the approach is scalable and applicable to large datasets, which is critical for real-world applications. \nWeaknesses \n1. Limited Precision: While the method achieves significant gains in recall, its precision remains relatively low compared to the Hearst baseline. For example, the MAP for the proposed methods is much lower than that of Hearst on classes where Hearst is applicable. This suggests that the method may overgenerate instances, which could limit its utility in high-precision applications. \n2. Dependence on Property Profiles: The quality of the learned property profiles is crucial to the method's success, yet the paper provides limited analysis of failure cases where the profiles do not capture the intended semantics. A deeper exploration of these limitations would strengthen the paper. \n3. Evaluation Scope: The evaluation is limited to Wikipedia category pages, which may not fully represent the diversity of fine-grained class labels in natural language. Additional evaluations on other datasets or tasks would provide a more comprehensive assessment of the method's generalizability. \nQuestions to Authors \n1. How does the method handle ambiguous or polysemous modifiers (e.g., \"light\" in \"light novel\" vs. \"light bulb\")? \n2. Could the method be extended to handle non-compositional class labels (e.g., idiomatic expressions)? \n3. What are the computational costs of building property profiles, and how do they scale with larger datasets? \nOverall Assessment \nThis paper makes a strong conceptual contribution by introducing a compositional framework for fine-grained IsA extraction, supported by solid empirical results. However, the method's relatively low precision and limited evaluation scope leave room for improvement. With some refinements, this work has the potential to significantly advance the field of semantic taxonomy induction."
+        }
+    ]
+}

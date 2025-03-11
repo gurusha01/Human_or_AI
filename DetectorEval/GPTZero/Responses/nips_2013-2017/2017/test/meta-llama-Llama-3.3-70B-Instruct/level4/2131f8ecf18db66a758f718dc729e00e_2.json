@@ -1,0 +1,340 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2fef14dc-d62d-4d7f-a3e6-826031a17115",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999443888664246,
+                    "sentence": "This paper investigates a clustering problem aimed at reconstructing true labels from potentially noisy and non-adaptive query answers, where each query is associated with only a few elements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999237060546875,
+                    "sentence": "It establishes lower bounds on the number of queries required for exact or partial reconstruction of ground-truth labels across various scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999310970306396,
+                    "sentence": "Additionally, it proposes an \"AND-queries\" algorithm applicable to the arbitrary k-cluster case and evaluates its performance using a real dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999091625213623,
+                    "sentence": "Although the paper attempts to provide theoretical analyses for multiple scenarios and develops an algorithm with real-data simulation, it has limitations in terms of presentation, clarity of results, and comparison to related works.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998747110366821,
+                    "sentence": "Significant revisions and possibly new developments are necessary for publication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999076128005981,
+                    "sentence": "Detailed comments are provided below.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999933660030365,
+                    "sentence": "1. The constraint of not repeating the same question seems restrictive and may compromise performance compared to the unrestricted case, as repeating questions is a natural way to mitigate the noise effect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999666810035706,
+                    "sentence": "A justification for this restricted model could involve extensive real-data simulations comparing the proposed algorithm to one tailored for the unrestricted case, demonstrating potentially better performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999588131904602,
+                    "sentence": "If not, investigating the unrestricted case might be more plausible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999635815620422,
+                    "sentence": "The authors' concern about independence versus dependence for multiple answers to the same query could be addressed by focusing on a setting where the same query is given to distinct annotators, assuming independent answers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999697208404541,
+                    "sentence": "2. The noiseless setting with exact recovery has been studied in recent work [Ahn-Lee-Suh], which also considers XOR-operation ('same-cluster' queries) under a non-adaptive measurement setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999480247497559,
+                    "sentence": "However, the result in [Ahn-Lee-Suh] does not align with Theorem 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999514222145081,
+                    "sentence": "For instance, when p=1/2 and Δ is a constant, the query complexity in Theorem 1 is m=n/log2, whereas in [Ahn-Lee-Suh] it is m=nlogn/Δ.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999333024024963,
+                    "sentence": "This discrepancy needs clarification, and the proof of Theorem 1 is challenging to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999461770057678,
+                    "sentence": "3. The expression for the lower bound on δ in Theorem 3 is difficult to interpret, making it hard to infer the bound on m in terms of n and δ, which would directly show the performance improvement due to the relaxed constraint reflected in δ.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999540448188782,
+                    "sentence": "4. Similar comments apply to Theorem 4, with the additional question of how different the upper bound is from the lower bound in Theorem 3 and whether the gap can be unbounded.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999452829360962,
+                    "sentence": "The proof is also hard to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.10286872088909149,
+                    "sentence": "5. Figure 2 lacks a comparison to the same-cluster query method, only comparing to the same-cluster-query 'lower' bound.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.15232843160629272,
+                    "sentence": "It is unclear if there is a crossing point when compared to the same-cluster-query 'method', and if so, what the intuition behind it might be.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.25515449047088623,
+                    "sentence": "The paper claims the proposed approach outperforms the same-cluster query scheme, but Figure 2 does not support this claim.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3022274971008301,
+                    "sentence": "6. Algorithm 1 requires prior knowledge of p or the relative sizes of clusters (as per Theorem 6).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.36545440554618835,
+                    "sentence": "It is unclear how to obtain such information in practice, and a proper justification is needed to validate the algorithm's practicality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.36064156889915466,
+                    "sentence": "The pseudo-code is difficult to follow without relying on the detailed proof of Theorem 5, which is also challenging to grasp.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5664737820625305,
+                    "sentence": "7. Figures 3, 4, and 5 do not compare the proposed algorithm to state-of-the-art methods like the same-cluster-query method, which is crucial for supporting the claim that the AND-queries algorithm outperforms the same-cluster-query scheme.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7446249723434448,
+                    "sentence": "[Ahn-Lee-Suh] K. Ahn, K. Lee, and C. Suh, \"Community recovery in hypergraphs,\" Proceedings of Allerton Conference on Communication, Control, and Computing, 2016.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9604324102401733,
+                    "sentence": "Additional comments: Upon reviewing the rebuttal, some comments were adequately addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9801416397094727,
+                    "sentence": "However, further clarification is needed:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9618977904319763,
+                    "sentence": "1. It remains unclear whether repeating the same question is not helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9933276176452637,
+                    "sentence": "Did the Nature paper demonstrate its lack of usefulness?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9769211411476135,
+                    "sentence": "This could be clarified in a revision.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9641199111938477,
+                    "sentence": "2. Regarding the comparison to the same-query method, including the detailed discussion from the response would provide clearer insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9304437370893981,
+            "class_probabilities": {
+                "human": 0.05461488332272685,
+                "ai": 0.9304437370893981,
+                "mixed": 0.014941379587875211
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9304437370893981,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9304437370893981,
+                    "human": 0.05461488332272685,
+                    "mixed": 0.014941379587875211
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper investigates a clustering problem aimed at reconstructing true labels from potentially noisy and non-adaptive query answers, where each query is associated with only a few elements. It establishes lower bounds on the number of queries required for exact or partial reconstruction of ground-truth labels across various scenarios. Additionally, it proposes an \"AND-queries\" algorithm applicable to the arbitrary k-cluster case and evaluates its performance using a real dataset.\nAlthough the paper attempts to provide theoretical analyses for multiple scenarios and develops an algorithm with real-data simulation, it has limitations in terms of presentation, clarity of results, and comparison to related works. Significant revisions and possibly new developments are necessary for publication. Detailed comments are provided below.\n1. The constraint of not repeating the same question seems restrictive and may compromise performance compared to the unrestricted case, as repeating questions is a natural way to mitigate the noise effect. A justification for this restricted model could involve extensive real-data simulations comparing the proposed algorithm to one tailored for the unrestricted case, demonstrating potentially better performance. If not, investigating the unrestricted case might be more plausible. The authors' concern about independence versus dependence for multiple answers to the same query could be addressed by focusing on a setting where the same query is given to distinct annotators, assuming independent answers.\n2. The noiseless setting with exact recovery has been studied in recent work [Ahn-Lee-Suh], which also considers XOR-operation ('same-cluster' queries) under a non-adaptive measurement setting. However, the result in [Ahn-Lee-Suh] does not align with Theorem 1. For instance, when p=1/2 and Δ is a constant, the query complexity in Theorem 1 is m=n/log2, whereas in [Ahn-Lee-Suh] it is m=nlogn/Δ. This discrepancy needs clarification, and the proof of Theorem 1 is challenging to follow.\n3. The expression for the lower bound on δ in Theorem 3 is difficult to interpret, making it hard to infer the bound on m in terms of n and δ, which would directly show the performance improvement due to the relaxed constraint reflected in δ.\n4. Similar comments apply to Theorem 4, with the additional question of how different the upper bound is from the lower bound in Theorem 3 and whether the gap can be unbounded. The proof is also hard to follow.\n5. Figure 2 lacks a comparison to the same-cluster query method, only comparing to the same-cluster-query 'lower' bound. It is unclear if there is a crossing point when compared to the same-cluster-query 'method', and if so, what the intuition behind it might be. The paper claims the proposed approach outperforms the same-cluster query scheme, but Figure 2 does not support this claim.\n6. Algorithm 1 requires prior knowledge of p or the relative sizes of clusters (as per Theorem 6). It is unclear how to obtain such information in practice, and a proper justification is needed to validate the algorithm's practicality. The pseudo-code is difficult to follow without relying on the detailed proof of Theorem 5, which is also challenging to grasp.\n7. Figures 3, 4, and 5 do not compare the proposed algorithm to state-of-the-art methods like the same-cluster-query method, which is crucial for supporting the claim that the AND-queries algorithm outperforms the same-cluster-query scheme.\n[Ahn-Lee-Suh] K. Ahn, K. Lee, and C. Suh, \"Community recovery in hypergraphs,\" Proceedings of Allerton Conference on Communication, Control, and Computing, 2016.\nAdditional comments: Upon reviewing the rebuttal, some comments were adequately addressed. However, further clarification is needed:\n1. It remains unclear whether repeating the same question is not helpful. Did the Nature paper demonstrate its lack of usefulness? This could be clarified in a revision.\n2. Regarding the comparison to the same-query method, including the detailed discussion from the response would provide clearer insights."
+        }
+    ]
+}

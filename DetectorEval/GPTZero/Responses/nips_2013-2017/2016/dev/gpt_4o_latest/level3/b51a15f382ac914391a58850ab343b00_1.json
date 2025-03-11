@@ -1,0 +1,410 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "4b4b699a-3bde-4004-9b5f-23035cf438a9",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "The paper addresses the stochastic combinatorial partial monitoring (CPM) problem, a complex and underexplored area in online learning, with a focus on minimizing regret under limited feedback.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "The authors propose a novel Phased Exploration and Greedy Exploitation (PEGE) framework, which alternates between exploration and exploitation phases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "This approach is further extended with a variant algorithm, PEGE2, that incorporates gap estimation to improve problem-dependent regret bounds.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "The paper provides both problem-dependent and problem-independent regret bounds, which are independent of the number of arms\"\"a significant improvement over prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "Additionally, the authors demonstrate the applicability of their framework to online ranking, a practical and relevant problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "1. Technical Contributions: The PEGE framework introduces a fresh perspective by leveraging phased exploration, a classic idea in bandit literature, and adapting it to the CPM setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924302101135,
+                    "sentence": "The regret bounds achieved are competitive with prior work, matching the complexity over \\( T \\) while removing dependencies on the size of the learner's action space (\\( \"X\" \\)) and the assumption of a unique optimal arm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999959468841553,
+                    "sentence": "This is a notable advancement, as it broadens the applicability of CPM algorithms to problems with infinite or continuous action spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995231628418,
+                    "sentence": "2. Practicality: The removal of the need for an \"arg-secondmax\" oracle in some variants of the PEGE framework is a substantial practical advantage, as such oracles are computationally expensive and often infeasible in real-world scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "The application to online ranking demonstrates the framework's relevance to practical problems, particularly in scenarios with limited feedback.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "3. Clarity and Organization: The paper is well-written and logically structured, making it accessible to readers familiar with the CPM framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "The theoretical results are rigorously derived, and the assumptions are clearly stated and justified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "4. Originality: The use of phased exploration in CPM, combined with gap estimation, is novel.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The paper also extends the CPM framework to handle infinite action spaces, which is a meaningful theoretical contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "1. Regret Lower Bounds: While the paper achieves strong regret bounds, it does not provide a discussion or derivation of regret lower bounds for the CPM setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964833259583,
+                    "sentence": "This omission makes it difficult to assess the optimality of the proposed algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963641166687,
+                    "sentence": "2. Global Observable Set: The paper assumes the existence of a global observable set but does not explore scenarios where this assumption might fail or discuss its implications in more detail.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991167187690735,
+                    "sentence": "A deeper analysis of this assumption's limitations would strengthen the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995570182800293,
+                    "sentence": "3. Dependence on Time Horizon: The PEGE2 algorithm requires knowledge of the time horizon \\( T \\), which limits its practicality in settings where \\( T \\) is unknown.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990929365158081,
+                    "sentence": "This contrasts with the GCB algorithm, which is an anytime algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993280172348022,
+                    "sentence": "4. Experimental Validation: While the theoretical results are strong, the paper lacks empirical validation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987471103668213,
+                    "sentence": "Experiments on practical CPM problems, such as online ranking, would provide additional evidence of the framework's effectiveness and scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975849986076355,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991169571876526,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993211030960083,
+                    "sentence": "Its contributions to the CPM framework, particularly the reduction in dependency on the action space size and the removal of the unique optimal arm assumption, are significant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996858239173889,
+                    "sentence": "However, addressing the concerns about regret lower bounds and providing empirical validation in future work would further enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999560713768005,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999208450317383,
+                    "sentence": "- Innovative algorithmic framework with strong theoretical guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998863935470581,
+                    "sentence": "- Practical improvements over prior work, such as reduced oracle requirements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998946189880371,
+                    "sentence": "- Clear and well-organized presentation of results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999235272407532,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998475313186646,
+                    "sentence": "- Lack of regret lower bounds and empirical validation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998501539230347,
+                    "sentence": "- Dependence on the global observable set and time horizon \\( T \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998701810836792,
+                    "sentence": "Overall, the paper advances the state of the art in CPM and has the potential to inspire further research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses the stochastic combinatorial partial monitoring (CPM) problem, a complex and underexplored area in online learning, with a focus on minimizing regret under limited feedback. The authors propose a novel Phased Exploration and Greedy Exploitation (PEGE) framework, which alternates between exploration and exploitation phases. This approach is further extended with a variant algorithm, PEGE2, that incorporates gap estimation to improve problem-dependent regret bounds. The paper provides both problem-dependent and problem-independent regret bounds, which are independent of the number of arms\"\"a significant improvement over prior work. Additionally, the authors demonstrate the applicability of their framework to online ranking, a practical and relevant problem.\nStrengths:\n1. Technical Contributions: The PEGE framework introduces a fresh perspective by leveraging phased exploration, a classic idea in bandit literature, and adapting it to the CPM setting. The regret bounds achieved are competitive with prior work, matching the complexity over \\( T \\) while removing dependencies on the size of the learner's action space (\\( \"X\" \\)) and the assumption of a unique optimal arm. This is a notable advancement, as it broadens the applicability of CPM algorithms to problems with infinite or continuous action spaces.\n \n2. Practicality: The removal of the need for an \"arg-secondmax\" oracle in some variants of the PEGE framework is a substantial practical advantage, as such oracles are computationally expensive and often infeasible in real-world scenarios. The application to online ranking demonstrates the framework's relevance to practical problems, particularly in scenarios with limited feedback.\n3. Clarity and Organization: The paper is well-written and logically structured, making it accessible to readers familiar with the CPM framework. The theoretical results are rigorously derived, and the assumptions are clearly stated and justified.\n4. Originality: The use of phased exploration in CPM, combined with gap estimation, is novel. The paper also extends the CPM framework to handle infinite action spaces, which is a meaningful theoretical contribution.\nWeaknesses:\n1. Regret Lower Bounds: While the paper achieves strong regret bounds, it does not provide a discussion or derivation of regret lower bounds for the CPM setting. This omission makes it difficult to assess the optimality of the proposed algorithms.\n2. Global Observable Set: The paper assumes the existence of a global observable set but does not explore scenarios where this assumption might fail or discuss its implications in more detail. A deeper analysis of this assumption's limitations would strengthen the work.\n3. Dependence on Time Horizon: The PEGE2 algorithm requires knowledge of the time horizon \\( T \\), which limits its practicality in settings where \\( T \\) is unknown. This contrasts with the GCB algorithm, which is an anytime algorithm.\n4. Experimental Validation: While the theoretical results are strong, the paper lacks empirical validation. Experiments on practical CPM problems, such as online ranking, would provide additional evidence of the framework's effectiveness and scalability.\nRecommendation:\nI recommend acceptance of this paper. Its contributions to the CPM framework, particularly the reduction in dependency on the action space size and the removal of the unique optimal arm assumption, are significant. However, addressing the concerns about regret lower bounds and providing empirical validation in future work would further enhance its impact.\nArguments for Acceptance:\n- Innovative algorithmic framework with strong theoretical guarantees.\n- Practical improvements over prior work, such as reduced oracle requirements.\n- Clear and well-organized presentation of results.\nArguments Against Acceptance:\n- Lack of regret lower bounds and empirical validation.\n- Dependence on the global observable set and time horizon \\( T \\).\nOverall, the paper advances the state of the art in CPM and has the potential to inspire further research in this area."
+        }
+    ]
+}

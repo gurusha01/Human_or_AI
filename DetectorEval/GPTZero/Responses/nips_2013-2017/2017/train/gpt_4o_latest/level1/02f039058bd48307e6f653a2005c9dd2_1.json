@@ -1,0 +1,375 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "311776c2-143d-475c-a0fc-ba63dbb2593a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999880194664001,
+                    "sentence": "The paper addresses the challenging problem of non-parametric Conditional Independence (CI) testing for continuous random variables, proposing a novel model-driven approach that reduces CI testing to a binary classification problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999746084213257,
+                    "sentence": "The authors leverage powerful classifiers, such as gradient-boosted trees and deep neural networks, to distinguish between the joint distribution \\(f(x, y, z)\\) and the conditional independence distribution \\(f{CI}(x, y, z)\\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999976396560669,
+                    "sentence": "A key contribution is the development of a nearest-neighbor bootstrap procedure to generate samples approximating \\(f{CI}\\), with theoretical guarantees on their closeness in total variation distance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999768137931824,
+                    "sentence": "The paper also provides generalization bounds for classification under near-independent samples and demonstrates the empirical superiority of the proposed method over state-of-the-art kernel-based CI tests (KCIT, RCIT) on synthetic and real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999915361404419,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938011169434,
+                    "sentence": "1. Novelty and Originality: The paper introduces a novel reduction of CI testing to binary classification, which is a significant departure from traditional kernel-based methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999900460243225,
+                    "sentence": "This approach enables the use of modern supervised learning tools, making it highly relevant in high-dimensional settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999870657920837,
+                    "sentence": "2. Theoretical Contributions: The authors provide rigorous theoretical guarantees, including bounds on the total variation distance of the bootstrapped samples and generalization risk for classifiers trained on near-independent samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999788403511047,
+                    "sentence": "The analysis of Rademacher complexity in this context is particularly noteworthy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855756759644,
+                    "sentence": "3. Empirical Validation: The proposed method (CCIT) demonstrates superior performance compared to KCIT and RCIT in both synthetic experiments and real-world applications, such as the flow-cytometry dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999802112579346,
+                    "sentence": "The scalability of CCIT with respect to the dimensionality of \\(Z\\) is a clear advantage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999927878379822,
+                    "sentence": "4. Flexibility: The modular design allows the use of different classifiers, enabling domain-specific adaptations and improvements as classification techniques evolve.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999895095825195,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999858736991882,
+                    "sentence": "1. Computational Complexity: While the method is scalable in terms of dimensionality, the nearest-neighbor bootstrap and repeated classification steps may still be computationally expensive, especially for very large datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999978244304657,
+                    "sentence": "A more detailed discussion of runtime trade-offs would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999752640724182,
+                    "sentence": "2. Bias Correction: The bias correction mechanism in Algorithm 3, while effective, introduces additional complexity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999707341194153,
+                    "sentence": "The empirical evaluation does not clearly quantify the impact of this correction on performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999864101409912,
+                    "sentence": "3. Limited Real-World Evaluation: Although the flow-cytometry dataset is a well-known benchmark, additional real-world datasets from diverse domains would enhance the generalizability of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999456524848938,
+                    "sentence": "4. Comparison with Other Approaches: The paper primarily compares CCIT with kernel-based methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994948506355286,
+                    "sentence": "Including comparisons with other recent CI testing methods, such as those based on mutual information or entropy estimation, would provide a more comprehensive evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999754428863525,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999332427978516,
+                    "sentence": "- The paper presents a significant methodological innovation by reframing CI testing as a classification problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999579191207886,
+                    "sentence": "- Theoretical guarantees and empirical results demonstrate the robustness and effectiveness of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999717473983765,
+                    "sentence": "- The flexibility and scalability of the method make it a valuable contribution to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999487996101379,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999334812164307,
+                    "sentence": "- The computational overhead of the nearest-neighbor bootstrap and classification steps may limit practical applicability in some scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995819330215454,
+                    "sentence": "- The evaluation could benefit from additional datasets and comparisons with a broader range of methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997076988220215,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997260570526123,
+                    "sentence": "Overall, this paper makes a strong contribution to the field of CI testing and statistical learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999663233757019,
+                    "sentence": "While there are areas for improvement, the novelty, theoretical rigor, and empirical performance justify its acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994070529937744,
+                    "sentence": "I recommend acceptance with minor revisions to address computational concerns and expand the evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.998497598755069,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.998497598755069,
+                "mixed": 0.001502401244930925
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.998497598755069,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.998497598755069,
+                    "human": 0,
+                    "mixed": 0.001502401244930925
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses the challenging problem of non-parametric Conditional Independence (CI) testing for continuous random variables, proposing a novel model-driven approach that reduces CI testing to a binary classification problem. The authors leverage powerful classifiers, such as gradient-boosted trees and deep neural networks, to distinguish between the joint distribution \\(f(x, y, z)\\) and the conditional independence distribution \\(f{CI}(x, y, z)\\). A key contribution is the development of a nearest-neighbor bootstrap procedure to generate samples approximating \\(f{CI}\\), with theoretical guarantees on their closeness in total variation distance. The paper also provides generalization bounds for classification under near-independent samples and demonstrates the empirical superiority of the proposed method over state-of-the-art kernel-based CI tests (KCIT, RCIT) on synthetic and real-world datasets.\nStrengths:\n1. Novelty and Originality: The paper introduces a novel reduction of CI testing to binary classification, which is a significant departure from traditional kernel-based methods. This approach enables the use of modern supervised learning tools, making it highly relevant in high-dimensional settings.\n2. Theoretical Contributions: The authors provide rigorous theoretical guarantees, including bounds on the total variation distance of the bootstrapped samples and generalization risk for classifiers trained on near-independent samples. The analysis of Rademacher complexity in this context is particularly noteworthy.\n3. Empirical Validation: The proposed method (CCIT) demonstrates superior performance compared to KCIT and RCIT in both synthetic experiments and real-world applications, such as the flow-cytometry dataset. The scalability of CCIT with respect to the dimensionality of \\(Z\\) is a clear advantage.\n4. Flexibility: The modular design allows the use of different classifiers, enabling domain-specific adaptations and improvements as classification techniques evolve.\nWeaknesses:\n1. Computational Complexity: While the method is scalable in terms of dimensionality, the nearest-neighbor bootstrap and repeated classification steps may still be computationally expensive, especially for very large datasets. A more detailed discussion of runtime trade-offs would strengthen the paper.\n2. Bias Correction: The bias correction mechanism in Algorithm 3, while effective, introduces additional complexity. The empirical evaluation does not clearly quantify the impact of this correction on performance.\n3. Limited Real-World Evaluation: Although the flow-cytometry dataset is a well-known benchmark, additional real-world datasets from diverse domains would enhance the generalizability of the results.\n4. Comparison with Other Approaches: The paper primarily compares CCIT with kernel-based methods. Including comparisons with other recent CI testing methods, such as those based on mutual information or entropy estimation, would provide a more comprehensive evaluation.\nArguments for Acceptance:\n- The paper presents a significant methodological innovation by reframing CI testing as a classification problem.\n- Theoretical guarantees and empirical results demonstrate the robustness and effectiveness of the approach.\n- The flexibility and scalability of the method make it a valuable contribution to the field.\nArguments Against Acceptance:\n- The computational overhead of the nearest-neighbor bootstrap and classification steps may limit practical applicability in some scenarios.\n- The evaluation could benefit from additional datasets and comparisons with a broader range of methods.\nRecommendation:\nOverall, this paper makes a strong contribution to the field of CI testing and statistical learning. While there are areas for improvement, the novelty, theoretical rigor, and empirical performance justify its acceptance. I recommend acceptance with minor revisions to address computational concerns and expand the evaluation."
+        }
+    ]
+}

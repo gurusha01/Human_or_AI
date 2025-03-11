@@ -1,0 +1,392 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "64aff932-677f-4532-9240-077ca216d107",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999935030937195,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "This paper introduces a semi-supervised method to enhance NLP tasks by incorporating context-dependent word representations derived from pre-trained bidirectional neural language models (LMs).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "The proposed method, TagLM, is evaluated on two sequence labeling tasks: Named Entity Recognition (NER) and Chunking, achieving state-of-the-art results on both datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "The primary contributions of the paper are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "1. Integration of LM Embeddings: The paper demonstrates that pre-trained bidirectional LM embeddings can significantly improve sequence tagging tasks by providing context-sensitive representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "This is a notable contribution as it avoids the need for additional labeled data or task-specific resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "2. Empirical Results: The method achieves substantial performance improvements, with a 1.06% F1 increase for NER and a 1.37% F1 increase for Chunking, surpassing prior state-of-the-art systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "3. Analysis and Insights: The paper provides a thorough analysis of the proposed method, addressing questions such as the optimal layer for integrating LM embeddings, the impact of LM size and domain, and the importance of task-specific RNNs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "These insights enhance the interpretability and generalizability of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "1. Significant Performance Gains: The method establishes new benchmarks for NER and Chunking tasks, demonstrating its practical utility and effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "2. Generalizability: The approach is domain-agnostic, as shown by its application to scientific text in the ScienceIE task, where it also improves performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "3. Comprehensive Analysis: The paper includes detailed experiments to explore various aspects of the method, such as the role of backward LMs, the impact of LM size, and the transferability across domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "This adds depth to the work and provides actionable insights for future research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "4. Simplicity and Scalability: The method is straightforward to implement and leverages large-scale unlabeled data effectively, making it accessible to a wide range of NLP tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "1. Overuse of Test Data: The paper appears to rely on the test set for multiple experiments (e.g., Tables 5 and 6).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "This practice risks overfitting and undermines the validity of the reported results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "It is recommended to use development data for such analyses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "2. Limited Task Scope: The evaluation is restricted to NER and Chunking tasks, which primarily involve short-range dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8742288947105408,
+                    "sentence": "Including results on tasks with long-range dependencies (e.g., Semantic Role Labeling or CCG Supertagging) would better showcase the model's potential.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6117002964019775,
+                    "sentence": "3. Unclear Training Details: It is not explicitly stated whether backpropagation into the LM was performed during the CRF experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6662980914115906,
+                    "sentence": "Clarifying this is important, as it could eliminate the need for a task-specific RNN and simplify the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7202393412590027,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9383301734924316,
+                    "sentence": "1. Did you perform backpropagation into the pre-trained LM during the CRF experiments?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9791668057441711,
+                    "sentence": "If so, how does this affect the results and model complexity?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9839109778404236,
+                    "sentence": "2. Can you provide additional results on tasks involving long-range dependencies to demonstrate the broader applicability of the method?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9877982139587402,
+                    "sentence": "3. How does the method perform when using smaller LMs or fewer computational resources, given the high cost of training large LMs?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9294356107711792,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9807773232460022,
+                    "sentence": "The paper is well-written and addresses an important problem in NLP.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9300802946090698,
+                    "sentence": "Addressing the weaknesses and clarifying the questions raised would further strengthen the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9911337494850159,
+                    "sentence": "Overall, the proposed method is a valuable contribution to the field and has the potential to inspire future research on leveraging pre-trained LMs for diverse NLP tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces a semi-supervised method to enhance NLP tasks by incorporating context-dependent word representations derived from pre-trained bidirectional neural language models (LMs). The proposed method, TagLM, is evaluated on two sequence labeling tasks: Named Entity Recognition (NER) and Chunking, achieving state-of-the-art results on both datasets. The primary contributions of the paper are as follows:\n1. Integration of LM Embeddings: The paper demonstrates that pre-trained bidirectional LM embeddings can significantly improve sequence tagging tasks by providing context-sensitive representations. This is a notable contribution as it avoids the need for additional labeled data or task-specific resources.\n2. Empirical Results: The method achieves substantial performance improvements, with a 1.06% F1 increase for NER and a 1.37% F1 increase for Chunking, surpassing prior state-of-the-art systems.\n3. Analysis and Insights: The paper provides a thorough analysis of the proposed method, addressing questions such as the optimal layer for integrating LM embeddings, the impact of LM size and domain, and the importance of task-specific RNNs. These insights enhance the interpretability and generalizability of the approach.\nStrengths\n1. Significant Performance Gains: The method establishes new benchmarks for NER and Chunking tasks, demonstrating its practical utility and effectiveness.\n2. Generalizability: The approach is domain-agnostic, as shown by its application to scientific text in the ScienceIE task, where it also improves performance.\n3. Comprehensive Analysis: The paper includes detailed experiments to explore various aspects of the method, such as the role of backward LMs, the impact of LM size, and the transferability across domains. This adds depth to the work and provides actionable insights for future research.\n4. Simplicity and Scalability: The method is straightforward to implement and leverages large-scale unlabeled data effectively, making it accessible to a wide range of NLP tasks.\nWeaknesses\n1. Overuse of Test Data: The paper appears to rely on the test set for multiple experiments (e.g., Tables 5 and 6). This practice risks overfitting and undermines the validity of the reported results. It is recommended to use development data for such analyses.\n2. Limited Task Scope: The evaluation is restricted to NER and Chunking tasks, which primarily involve short-range dependencies. Including results on tasks with long-range dependencies (e.g., Semantic Role Labeling or CCG Supertagging) would better showcase the model's potential.\n3. Unclear Training Details: It is not explicitly stated whether backpropagation into the LM was performed during the CRF experiments. Clarifying this is important, as it could eliminate the need for a task-specific RNN and simplify the model.\nQuestions to Authors\n1. Did you perform backpropagation into the pre-trained LM during the CRF experiments? If so, how does this affect the results and model complexity?\n2. Can you provide additional results on tasks involving long-range dependencies to demonstrate the broader applicability of the method?\n3. How does the method perform when using smaller LMs or fewer computational resources, given the high cost of training large LMs?\nAdditional Comments\nThe paper is well-written and addresses an important problem in NLP. Addressing the weaknesses and clarifying the questions raised would further strengthen the work. Overall, the proposed method is a valuable contribution to the field and has the potential to inspire future research on leveraging pre-trained LMs for diverse NLP tasks."
+        }
+    ]
+}

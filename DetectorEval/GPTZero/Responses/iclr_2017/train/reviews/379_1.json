@@ -1,0 +1,116 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "3892e7ca-dfd8-44a2-a57e-476d06beaf43",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.05808178707957268,
+                    "sentence": "Authors describe implementation of TensorFlow Fold which allows one to run various computations without modifying computation graph.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.062845878303051,
+                    "sentence": "They achieve this by creating a generic scheduler as a TensorFlow computation graph, which can accept graph description as input and execute it.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08723476529121399,
+                    "sentence": "They show clear benefits to this approach for tasks where computation changes for each datapoint, such as the case with TreeRNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1379406899213791,
+                    "sentence": "In the experiments, they compare against having static batch (same graph structure repeated many times) and batch size 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03795349597930908,
+                    "sentence": "The reason my score is 7 and not higher is because they do not provide comparison to the main alternative of their method -- someone could create a new TensorFlow graph for each dynamic batch.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05174854025244713,
+                    "sentence": "In other words, instead of using their graph as the scheduling algorithm, one could explicitly create each non-uniform batch as a TensorFlow graph, and run that using standard TensorFlow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.037526171686261885,
+            "class_probabilities": {
+                "human": 0.9624738283137382,
+                "ai": 0.037526171686261885,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9624738283137382,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.037526171686261885,
+                    "human": 0.9624738283137382,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Authors describe implementation of TensorFlow Fold which allows one to run various computations without modifying computation graph. They achieve this by creating a generic scheduler as a TensorFlow computation graph, which can accept graph description as input and execute it.\nThey show clear benefits to this approach for tasks where computation changes for each datapoint, such as the case with TreeRNN.\nIn the experiments, they compare against having static batch (same graph structure repeated many times) and batch size 1.\nThe reason my score is 7 and not higher is because they do not provide comparison to the main alternative of their method -- someone could create a new TensorFlow graph for each dynamic batch. In other words, instead of using their graph as the scheduling algorithm, one could explicitly create each non-uniform batch as a TensorFlow graph, and run that using standard TensorFlow."
+        }
+    ]
+}

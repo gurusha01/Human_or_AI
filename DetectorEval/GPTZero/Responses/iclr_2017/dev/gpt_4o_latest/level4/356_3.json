@@ -1,0 +1,296 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a787b7ae-2d39-4905-bab7-d7405b60ac3c",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9993169903755188,
+                    "sentence": "This paper introduces a model capable of inferring programs from input/output example pairs, focusing on a constrained domain-specific language that supports a broad range of string transformations, akin to the one employed by Flash Fill in Excel.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989670515060425,
+                    "sentence": "The proposed method involves modeling successive \"extensions\" of a program tree, conditioned on an embedding of the input/output pairs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991638660430908,
+                    "sentence": "Extension probabilities are derived as a function of leaf and production rule embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992721080780029,
+                    "sentence": "A key contribution is the \"Recursive-Reverse-Recursive Neural Net\" (R3NN), which computes globally informed embeddings of leaves by performing an operation resembling belief propagation on a tree, while training this process in an end-to-end differentiable manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966824054718018,
+                    "sentence": "This paper has several notable strengths.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9956667423248291,
+                    "sentence": "Unlike some related work in the deep learning community, this approach seems practical and could be applied in real-world scenarios in the near future.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9956129193305969,
+                    "sentence": "The R3NN concept is innovative, and the authors provide strong motivation for its use.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944770336151123,
+                    "sentence": "Additionally, the authors have conducted an extensive exploration of model variants to identify what works effectively and what does not.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969514012336731,
+                    "sentence": "The exposition is clear and well-structured (even though the paper is lengthy), making it an enjoyable read.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9925781488418579,
+                    "sentence": "However, there are some weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968846440315247,
+                    "sentence": "The results are not highly accurate, potentially because the model is trained on small programs but tasked with inferring longer ones.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981153011322021,
+                    "sentence": "It is unclear why the authors did not train on longer programs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975743889808655,
+                    "sentence": "Furthermore, the model appears to use a fixed number of I/O pairs, which raises concerns about scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997303485870361,
+                    "sentence": "For instance, if additional I/O pairs were provided, the model might not leverage them effectively (and experiments suggest that more pairs could even degrade performance).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998422861099243,
+                    "sentence": "Despite these limitations, I strongly support accepting this paper at ICLR.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996998310089111,
+                    "sentence": "Additional comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998611211776733,
+                    "sentence": "- The expansion probability expression contains too many e's; it might be clearer to simply write \"Softmax.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996405243873596,
+                    "sentence": "- There is a mention of adding a bidirectional LSTM to process global leaf representations before scoring, but no implementation details are provided (at least none that I could find).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997290968894958,
+                    "sentence": "- The authors emphasize the importance of using hyperbolic tangent activation functions, but further discussion on why alternatives like ReLU would not work as well would be valuable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997818470001221,
+                    "sentence": "- The batching process is unclear, given that each program has a unique tree topology.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997538328170776,
+                    "sentence": "More explanation on this aspect would be helpful, along with details about the optimization algorithm (e.g., SGD, Adagrad, Adam), learning rate schedules, and weight initialization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995673894882202,
+                    "sentence": "These omissions make the results less reproducible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997500777244568,
+                    "sentence": "- In Figure 6 (unsolved benchmarks), it would be helpful to include the program sizes for the harder examples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998234510421753,
+                    "sentence": "This would clarify whether the failures are due to the benchmarks requiring longer programs or some other factor.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996732473373413,
+                    "sentence": "- The paper overlooks a related work by Piech et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995782375335693,
+                    "sentence": "(\"Learning Program Embeddings\"¦\"), where a recursive neural network was trained to match abstract syntax trees for programs submitted to an online course, predicting program outputs but not synthesizing programs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984204769134521,
+                    "sentence": "Including this reference would strengthen the discussion of related work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 11,
+                    "completely_generated_prob": 0.9367359127724141
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997862822885396,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997862822885396,
+                "mixed": 0.00021371771146045916
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997862822885396,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997862822885396,
+                    "human": 0,
+                    "mixed": 0.00021371771146045916
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a model capable of inferring programs from input/output example pairs, focusing on a constrained domain-specific language that supports a broad range of string transformations, akin to the one employed by Flash Fill in Excel. The proposed method involves modeling successive \"extensions\" of a program tree, conditioned on an embedding of the input/output pairs. Extension probabilities are derived as a function of leaf and production rule embeddings. A key contribution is the \"Recursive-Reverse-Recursive Neural Net\" (R3NN), which computes globally informed embeddings of leaves by performing an operation resembling belief propagation on a tree, while training this process in an end-to-end differentiable manner.\nThis paper has several notable strengths. Unlike some related work in the deep learning community, this approach seems practical and could be applied in real-world scenarios in the near future. The R3NN concept is innovative, and the authors provide strong motivation for its use. Additionally, the authors have conducted an extensive exploration of model variants to identify what works effectively and what does not. The exposition is clear and well-structured (even though the paper is lengthy), making it an enjoyable read. However, there are some weaknesses. The results are not highly accurate, potentially because the model is trained on small programs but tasked with inferring longer ones. It is unclear why the authors did not train on longer programs. Furthermore, the model appears to use a fixed number of I/O pairs, which raises concerns about scalability. For instance, if additional I/O pairs were provided, the model might not leverage them effectively (and experiments suggest that more pairs could even degrade performance). Despite these limitations, I strongly support accepting this paper at ICLR.\nAdditional comments:\n- The expansion probability expression contains too many e's; it might be clearer to simply write \"Softmax.\"\n- There is a mention of adding a bidirectional LSTM to process global leaf representations before scoring, but no implementation details are provided (at least none that I could find).\n- The authors emphasize the importance of using hyperbolic tangent activation functions, but further discussion on why alternatives like ReLU would not work as well would be valuable.\n- The batching process is unclear, given that each program has a unique tree topology. More explanation on this aspect would be helpful, along with details about the optimization algorithm (e.g., SGD, Adagrad, Adam), learning rate schedules, and weight initialization. These omissions make the results less reproducible.\n- In Figure 6 (unsolved benchmarks), it would be helpful to include the program sizes for the harder examples. This would clarify whether the failures are due to the benchmarks requiring longer programs or some other factor.\n- The paper overlooks a related work by Piech et al. (\"Learning Program Embeddings\"¦\"), where a recursive neural network was trained to match abstract syntax trees for programs submitted to an online course, predicting program outputs but not synthesizing programs. Including this reference would strengthen the discussion of related work."
+        }
+    ]
+}

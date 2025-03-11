@@ -1,0 +1,302 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "f73b3e74-1a5c-4b6c-9b79-cb23f7786cd1",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9993796944618225,
+                    "sentence": "- Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9992044568061829,
+                    "sentence": "This paper introduces an evaluation metric designed for automatically assessing the quality of dialogue responses in non-task-oriented dialogue systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9978506565093994,
+                    "sentence": "The proposed metric leverages continuous vector space representations derived from RNNs and consists of two components: one that evaluates the relationship between the context and the given response, and another that compares the given response to a reference response.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9976558685302734,
+                    "sentence": "These comparisons are performed using dot products after projecting the response into the respective context and reference response spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9959045648574829,
+                    "sentence": "The projection matrices are trained by minimizing the squared error between the model's predictions and human annotations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9925183653831482,
+                    "sentence": "This work represents a significant advancement in the evaluation of non-task-oriented dialogue systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9830532670021057,
+                    "sentence": "Unlike prior approaches in this domain, which primarily focused on semantic similarity, the authors take an innovative step by learning projection matrices that map the response vector into both context and reference space representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.98349529504776,
+                    "sentence": "This approach effectively goes beyond pure semantic similarity in a sophisticated manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9820593595504761,
+                    "sentence": "I am particularly interested in understanding how the projection matrices M and N evolve from their initial identity initialization after training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9603284001350403,
+                    "sentence": "Including a more detailed discussion on this aspect would enhance the paper's value, as opposed to placing excessive emphasis on the resulting correlations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9960105419158936,
+                    "sentence": "- Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9781736135482788,
+                    "sentence": "The paper leaves several implementation details unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9765464067459106,
+                    "sentence": "For example, it is not specified whether the human scores used for training and evaluation were derived from single AMT annotations or averaged across multiple annotations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9561828374862671,
+                    "sentence": "Additionally, the methodology for splitting the dataset into train/dev/test sets is not described, nor is it mentioned whether n-fold cross-validation was performed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9750625491142273,
+                    "sentence": "Furthermore, in Table 2, it is unclear why correlations for ADEM-related scores are reported for the validation and test sets, while for other scores, they are presented for the full dataset and test set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9712679386138916,
+                    "sentence": "The section discussing pre-training with VHRED is also poorly structured and difficult to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9657028317451477,
+                    "sentence": "A higher-level explanation of the pre-training strategy and its benefits, with fewer technical details, would improve clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.985899031162262,
+                    "sentence": "- General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9608016014099121,
+                    "sentence": "\"There are many obvious cases where these metrics fail, as they are often incapable of considering the semantic similarity between responses (see Figure 1).\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9617907404899597,
+                    "sentence": "Be cautious with such statements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.980674147605896,
+                    "sentence": "The issue here is not with semantic similarity itself.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9790188670158386,
+                    "sentence": "On the contrary, the challenge lies in the fact that pragmatically valid responses can arise from entirely different semantic cues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9857283234596252,
+                    "sentence": "Thus, semantic similarity alone is insufficient for evaluating dialogue system responses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9771133065223694,
+                    "sentence": "Evaluation must extend beyond semantics\"\"this is precisely what your M and N matrices aim to achieve.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030190475285053253,
+                    "sentence": "\"an accurate model that can evaluate dialogue response quality automatically \"\" what could be considered an automatic Turing test \"\"\" The original purpose of the Turing Test was to serve as a proxy for identifying or defining intelligent behavior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.024308348074555397,
+                    "sentence": "It evaluates whether a machine can imitate human behavior to the extent that a typical human cannot distinguish between the machine's responses and those of a human.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01870589889585972,
+                    "sentence": "While this concept is tangentially related to dialogue system performance, it is inaccurate to equate automatic evaluation of dialogue response quality with an automatic Turing Test.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.015545915812253952,
+                    "sentence": "The title of the paper, \"Towards an Automatic Turing Test,\" is therefore somewhat misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012177006341516972,
+                    "sentence": "\"the simplifying assumption that a 'good' chatbot is one whose responses are scored highly on appropriateness by human evaluators.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012389939278364182,
+                    "sentence": "This is indeed the right perspective for framing the problem of non-task-oriented dialogue systems, rather than invoking the Turing Test.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.013092534616589546,
+                    "sentence": "On this topic, you may want to refer to related work from the WOCHAT workshop series, particularly the shared task descriptions and corresponding annotation guidelines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.021170100197196007,
+                    "sentence": "In the discussion section: \"and has has been used\" should be corrected to \"and it has been used.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.42672741791535534,
+            "class_probabilities": {
+                "human": 0.5723566160928178,
+                "ai": 0.42672741791535534,
+                "mixed": 0.000915965991826765
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5723566160928178,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.42672741791535534,
+                    "human": 0.5723566160928178,
+                    "mixed": 0.000915965991826765
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "- Strengths: \nThis paper introduces an evaluation metric designed for automatically assessing the quality of dialogue responses in non-task-oriented dialogue systems. The proposed metric leverages continuous vector space representations derived from RNNs and consists of two components: one that evaluates the relationship between the context and the given response, and another that compares the given response to a reference response. These comparisons are performed using dot products after projecting the response into the respective context and reference response spaces. The projection matrices are trained by minimizing the squared error between the model's predictions and human annotations.\nThis work represents a significant advancement in the evaluation of non-task-oriented dialogue systems. Unlike prior approaches in this domain, which primarily focused on semantic similarity, the authors take an innovative step by learning projection matrices that map the response vector into both context and reference space representations. This approach effectively goes beyond pure semantic similarity in a sophisticated manner. I am particularly interested in understanding how the projection matrices M and N evolve from their initial identity initialization after training. Including a more detailed discussion on this aspect would enhance the paper's value, as opposed to placing excessive emphasis on the resulting correlations.\n- Weaknesses: \nThe paper leaves several implementation details unclear. For example, it is not specified whether the human scores used for training and evaluation were derived from single AMT annotations or averaged across multiple annotations. Additionally, the methodology for splitting the dataset into train/dev/test sets is not described, nor is it mentioned whether n-fold cross-validation was performed. Furthermore, in Table 2, it is unclear why correlations for ADEM-related scores are reported for the validation and test sets, while for other scores, they are presented for the full dataset and test set. The section discussing pre-training with VHRED is also poorly structured and difficult to follow. A higher-level explanation of the pre-training strategy and its benefits, with fewer technical details, would improve clarity.\n- General Discussion: \n\"There are many obvious cases where these metrics fail, as they are often incapable of considering the semantic similarity between responses (see Figure 1).\" Be cautious with such statements. The issue here is not with semantic similarity itself. On the contrary, the challenge lies in the fact that pragmatically valid responses can arise from entirely different semantic cues. Thus, semantic similarity alone is insufficient for evaluating dialogue system responses. Evaluation must extend beyond semantics\"\"this is precisely what your M and N matrices aim to achieve.\n\"an accurate model that can evaluate dialogue response quality automatically \"\" what could be considered an automatic Turing test \"\"\" The original purpose of the Turing Test was to serve as a proxy for identifying or defining intelligent behavior. It evaluates whether a machine can imitate human behavior to the extent that a typical human cannot distinguish between the machine's responses and those of a human. While this concept is tangentially related to dialogue system performance, it is inaccurate to equate automatic evaluation of dialogue response quality with an automatic Turing Test. The title of the paper, \"Towards an Automatic Turing Test,\" is therefore somewhat misleading.\n\"the simplifying assumption that a 'good' chatbot is one whose responses are scored highly on appropriateness by human evaluators.\" This is indeed the right perspective for framing the problem of non-task-oriented dialogue systems, rather than invoking the Turing Test. On this topic, you may want to refer to related work from the WOCHAT workshop series, particularly the shared task descriptions and corresponding annotation guidelines.\nIn the discussion section: \"and has has been used\" should be corrected to \"and it has been used.\""
+        }
+    ]
+}

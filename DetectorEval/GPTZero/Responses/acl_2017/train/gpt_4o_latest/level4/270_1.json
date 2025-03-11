@@ -1,0 +1,351 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b284c068-4424-47a1-a9ff-23bb1b63b069",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999682903289795,
+                    "sentence": "This paper introduces a custom-designed neural network architecture for textual entailment/NLI, structured around a three-step process: encoding, attention-based matching, and aggregation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999598860740662,
+                    "sentence": "The proposed model comes in two variantsᅳone leveraging TreeRNNs and the other using sequential BiLSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999750852584839,
+                    "sentence": "The sequential variant achieves state-of-the-art performance, and an ensemble combining the sequential and tree-based models performs even better.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999692440032959,
+                    "sentence": "The paper is well-written, the model is thoughtfully designed, and the results are impressive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999791979789734,
+                    "sentence": "While the contributions are incremental, I still recommend acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855756759644,
+                    "sentence": "Major points for discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999867677688599,
+                    "sentence": "- The paper frequently suggests that the proposed system could serve as a new baseline for future NLI research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999871850013733,
+                    "sentence": "However, this claim is not particularly meaningful, as it could apply to almost any model in any domain.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999831318855286,
+                    "sentence": "While the model might be considered relatively simple or elegant, this does not seem to be its primary strength.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999812841415405,
+                    "sentence": "- The architecture exhibits symmetry in certain aspects that may be excessive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999768137931824,
+                    "sentence": "For instance, attention is computed bidirectionally across sentences, and a separate inference composition (aggregation) network is applied for each direction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999784827232361,
+                    "sentence": "This likely doubles the runtime of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999861717224121,
+                    "sentence": "Is this level of symmetry necessary for the inherently asymmetric task of NLI?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999799132347107,
+                    "sentence": "Have you conducted ablation studies to explore this?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999865293502808,
+                    "sentence": "- Results are provided for the full sequential model (ESIM) and the ensemble of the sequential and tree-based models (HIM).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9825959205627441,
+                    "sentence": "However, the performance of the tree-based model on its own is not reported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9639281034469604,
+                    "sentence": "Why is this omitted?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9740263223648071,
+                    "sentence": "Minor points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9715495109558105,
+                    "sentence": "- The quote from Barker and Jacobson may not align with the intended meaning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9726861715316772,
+                    "sentence": "In its original context, it addresses a specific and unresolved issue regarding direct compositionality in formal grammar.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9811471700668335,
+                    "sentence": "A broader statement about the widely accepted principle of compositionality might be more appropriate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9480987787246704,
+                    "sentence": "- The vector difference feature used in the model (also seen in prior work) is somewhat unconventional, as it introduces redundant parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9785919189453125,
+                    "sentence": "Any model that uses vectors `a`, `b`, and `(a - b)` as input to a matrix multiplication is mathematically equivalent to another model that uses only `a` and `b` with a different matrix parameter.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9534221887588501,
+                    "sentence": "While there might be learning-related benefits to including this feature, it would be helpful to discuss this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9676890969276428,
+                    "sentence": "- How are the tree-structured components of the model implemented?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9653905630111694,
+                    "sentence": "Are there significant challenges related to speed or scalability?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9382853507995605,
+                    "sentence": "- Typo: (Klein and D. Manning, 2003).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9522911310195923,
+                    "sentence": "- Figure 3: Consider using standard tree-drawing tools like (tikz-)qtree, which produce more readable parse trees without crossing lines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9933143258094788,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9201297760009766,
+                    "sentence": "Thank you for the response!",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8615760207176208,
+                    "sentence": "I continue to support publication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.669745147228241,
+                    "sentence": "While this work is not groundbreaking, it introduces some novel elements, and the results are sufficiently surprising to add value to the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                }
+            ],
+            "completely_generated_prob": 0.8931983919465463,
+            "class_probabilities": {
+                "human": 0.10545354789372409,
+                "ai": 0.8931983919465463,
+                "mixed": 0.0013480601597296081
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8931983919465463,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8931983919465463,
+                    "human": 0.10545354789372409,
+                    "mixed": 0.0013480601597296081
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a custom-designed neural network architecture for textual entailment/NLI, structured around a three-step process: encoding, attention-based matching, and aggregation. The proposed model comes in two variants—one leveraging TreeRNNs and the other using sequential BiLSTMs. The sequential variant achieves state-of-the-art performance, and an ensemble combining the sequential and tree-based models performs even better.\nThe paper is well-written, the model is thoughtfully designed, and the results are impressive. While the contributions are incremental, I still recommend acceptance.\nMajor points for discussion:\n– The paper frequently suggests that the proposed system could serve as a new baseline for future NLI research. However, this claim is not particularly meaningful, as it could apply to almost any model in any domain. While the model might be considered relatively simple or elegant, this does not seem to be its primary strength. \n– The architecture exhibits symmetry in certain aspects that may be excessive. For instance, attention is computed bidirectionally across sentences, and a separate inference composition (aggregation) network is applied for each direction. This likely doubles the runtime of the model. Is this level of symmetry necessary for the inherently asymmetric task of NLI? Have you conducted ablation studies to explore this? \n– Results are provided for the full sequential model (ESIM) and the ensemble of the sequential and tree-based models (HIM). However, the performance of the tree-based model on its own is not reported. Why is this omitted?\nMinor points:\n– The quote from Barker and Jacobson may not align with the intended meaning. In its original context, it addresses a specific and unresolved issue regarding direct compositionality in formal grammar. A broader statement about the widely accepted principle of compositionality might be more appropriate. \n– The vector difference feature used in the model (also seen in prior work) is somewhat unconventional, as it introduces redundant parameters. Any model that uses vectors `a`, `b`, and `(a - b)` as input to a matrix multiplication is mathematically equivalent to another model that uses only `a` and `b` with a different matrix parameter. While there might be learning-related benefits to including this feature, it would be helpful to discuss this. \n– How are the tree-structured components of the model implemented? Are there significant challenges related to speed or scalability? \n– Typo: (Klein and D. Manning, 2003). \n– Figure 3: Consider using standard tree-drawing tools like (tikz-)qtree, which produce more readable parse trees without crossing lines.\n---\nThank you for the response! I continue to support publication. While this work is not groundbreaking, it introduces some novel elements, and the results are sufficiently surprising to add value to the conference."
+        }
+    ]
+}

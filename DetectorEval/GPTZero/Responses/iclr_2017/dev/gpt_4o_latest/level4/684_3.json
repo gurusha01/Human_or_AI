@@ -1,0 +1,344 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "42ba2f7b-133b-4399-a80d-9d3481bfdbb7",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999750852584839,
+                    "sentence": "This paper introduces a novel approach to model-based reinforcement learning and evaluates its performance on three ATARI games.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999588131904602,
+                    "sentence": "The method involves training a model to predict a sequence of rewards and probabilities of losing a life, conditioned on a context of frames and a sequence of actions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999337792396545,
+                    "sentence": "The controller samples random action sequences and selects the one that optimally balances the probabilities of earning a point and losing a life, based on predefined thresholds.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999591708183289,
+                    "sentence": "The proposed system demonstrates the ability to play three ATARI games at a super-human level, both individually and in a multi-task training setup.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999734163284302,
+                    "sentence": "The results presented are highly promising; however, the system design includes several ad-hoc choices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999847412109375,
+                    "sentence": "Additionally, the paper provides limited analysis of the relative importance of the system's various components.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999947190284729,
+                    "sentence": "Main concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999870657920837,
+                    "sentence": "- The combination of predicted rewards and life-loss probabilities is handled in an ad-hoc manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999902844429016,
+                    "sentence": "A more natural approach would involve learning a Q-value, whereas the current method employs different rules for different games.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999915361404419,
+                    "sentence": "- It is unclear whether the model is genuinely being learned and improved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926090240479,
+                    "sentence": "Visualizing predictions for multiple action sequences from carefully selected starting states would provide valuable insight.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994158744812,
+                    "sentence": "This should be demonstrated for both a game where the approach succeeds and one where it fails.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999899864196777,
+                    "sentence": "Furthermore, tracking the training loss on a fixed holdout set of sequences could help illustrate the learning progress.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999840259552002,
+                    "sentence": "- The significance of the proposed RRNN architecture is not well-explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999986469745636,
+                    "sentence": "Would the system still perform effectively without the residual connections?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884963035583,
+                    "sentence": "Could a standard LSTM achieve similar results?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999880790710449,
+                    "sentence": "Minor points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998780488967896,
+                    "sentence": "- Introduction, paragraph 2: There is a substantial body of earlier work on using models in reinforcement learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998531937599182,
+                    "sentence": "For instance, consider Dyna and \"Memory approaches to reinforcement learning in non-Markovian domains\" by Lin and Mitchell, among others.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999487996101379,
+                    "sentence": "- Section 3.1: Using \\(ai\\) to represent observations is unconventional.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998714923858643,
+                    "sentence": "It would be clearer to use \\(oi\\) for observations and \\(a_i\\) for actions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998950362205505,
+                    "sentence": "- Section 3.2.2: The notation is inconsistent窶能(r_i\\) was previously used to denote the reward at time \\(i\\), but it is reused here for a different purpose.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998933672904968,
+                    "sentence": "- Observation 1 appears somewhat misplaced.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998620748519897,
+                    "sentence": "Citing the layer normalization paper should suffice for providing motivation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999889075756073,
+                    "sentence": "- Section 3.2.2, second-to-last paragraph: It is unclear how memory is decoupled from computation in this approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998908042907715,
+                    "sentence": "Models like neural Turing machines achieve this by utilizing external memory, but this appears to be an RNN with skip connections.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999200701713562,
+                    "sentence": "- Section 3.3, second paragraph: Whether the model overfits depends on the dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998603463172913,
+                    "sentence": "The approach's inability to work with demonstrations is precisely due to overfitting concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998591542243958,
+                    "sentence": "- Figure 4: The reference for Batch Normalization should cite Ioffe and Szegedy rather than Morimoto et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944031238555908,
+                    "sentence": "In summary, while the paper presents innovative ideas and encouraging results, it would benefit from additional exploratory and ablation experiments, as well as further refinement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 1,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 1,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 1,
+                    "human": 0,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a novel approach to model-based reinforcement learning and evaluates its performance on three ATARI games. The method involves training a model to predict a sequence of rewards and probabilities of losing a life, conditioned on a context of frames and a sequence of actions. The controller samples random action sequences and selects the one that optimally balances the probabilities of earning a point and losing a life, based on predefined thresholds. The proposed system demonstrates the ability to play three ATARI games at a super-human level, both individually and in a multi-task training setup.\nThe results presented are highly promising; however, the system design includes several ad-hoc choices. Additionally, the paper provides limited analysis of the relative importance of the system's various components.\nMain concerns:\n- The combination of predicted rewards and life-loss probabilities is handled in an ad-hoc manner. A more natural approach would involve learning a Q-value, whereas the current method employs different rules for different games.\n- It is unclear whether the model is genuinely being learned and improved. Visualizing predictions for multiple action sequences from carefully selected starting states would provide valuable insight. This should be demonstrated for both a game where the approach succeeds and one where it fails. Furthermore, tracking the training loss on a fixed holdout set of sequences could help illustrate the learning progress.\n- The significance of the proposed RRNN architecture is not well-explored. Would the system still perform effectively without the residual connections? Could a standard LSTM achieve similar results?\nMinor points:\n- Introduction, paragraph 2: There is a substantial body of earlier work on using models in reinforcement learning. For instance, consider Dyna and \"Memory approaches to reinforcement learning in non-Markovian domains\" by Lin and Mitchell, among others.\n- Section 3.1: Using \\(ai\\) to represent observations is unconventional. It would be clearer to use \\(oi\\) for observations and \\(a_i\\) for actions.\n- Section 3.2.2: The notation is inconsistent窶能(r_i\\) was previously used to denote the reward at time \\(i\\), but it is reused here for a different purpose.\n- Observation 1 appears somewhat misplaced. Citing the layer normalization paper should suffice for providing motivation.\n- Section 3.2.2, second-to-last paragraph: It is unclear how memory is decoupled from computation in this approach. Models like neural Turing machines achieve this by utilizing external memory, but this appears to be an RNN with skip connections.\n- Section 3.3, second paragraph: Whether the model overfits depends on the dataset. The approach's inability to work with demonstrations is precisely due to overfitting concerns.\n- Figure 4: The reference for Batch Normalization should cite Ioffe and Szegedy rather than Morimoto et al.\nIn summary, while the paper presents innovative ideas and encouraging results, it would benefit from additional exploratory and ablation experiments, as well as further refinement."
+        }
+    ]
+}

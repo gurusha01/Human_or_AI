@@ -1,0 +1,276 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "0f53c6ec-e9b4-4f47-bcbe-3dd844b923e3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999173879623413,
+                    "sentence": "This manuscript presents a novel Monte Carlo-based planning algorithm, TrailBlazer, which operates under the assumption of access to a generative model of the Markov Decision Process (MDP).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999417066574097,
+                    "sentence": "The primary objective of TrailBlazer is to efficiently compute the optimal value function of the root node, V(s0), by minimizing the number of calls to the generative model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999330043792725,
+                    "sentence": "The algorithm is designed to handle both finite and infinite state spaces within a discounted reward setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999276995658875,
+                    "sentence": "The paper provides several key theoretical guarantees for TrailBlazer, including Probably Approximately Correct (PAC) consistency, a high-probability upper bound on the number of calls to the generative model for finite state spaces, and an upper bound on the expected number of calls for infinite state spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998815059661865,
+                    "sentence": "These guarantees position TrailBlazer as either improving upon previous worst-case upper bounds in certain scenarios (such as finite state spaces with stochastic dynamics), matching existing results in others (like deterministic dynamics or scenarios without control), or offering new insights, particularly for infinite state spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998564124107361,
+                    "sentence": "TrailBlazer's operational mechanism involves alternating between two node types: Avg and Max.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999882161617279,
+                    "sentence": "The Avg node calculates the average value of its children, generated based on transition probabilities, effectively functioning as a Monte Carlo estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998664259910583,
+                    "sentence": "The parameter m is crucial as it controls the variance of this estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999891996383667,
+                    "sentence": "In contrast, the Max node aims to identify the child node with the maximum value by probabilistically eliminating nodes that cannot achieve the maximum value.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998621344566345,
+                    "sentence": "This paper is commendable for introducing a novel algorithm with significant potential for application across various domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999080896377563,
+                    "sentence": "TrailBlazer not only boasts basic theoretical justification, such as consistency, but also offers stronger guarantees than existing knowledge, particularly for finite state spaces with generative models and stochastic systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999874830245972,
+                    "sentence": "The manuscript is generally well-written, although it could benefit from additional intuitive explanations to clarify why TrailBlazer outperforms other approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999890327453613,
+                    "sentence": "The induction-based proofs on the tree structure, while not straightforward, contribute to the paper's technical depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999906420707703,
+                    "sentence": "Several aspects warrant further clarification or consideration:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "1. The expectation-based guarantee in Theorem 3 prompts the question of whether there are fundamental limitations preventing a stronger guarantee.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999861717224121,
+                    "sentence": "2. The algorithm's current formulation does not leverage potential regularities in the value function, such as smoothness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999887943267822,
+                    "sentence": "Exploring whether incorporating such properties, akin to the StoSO algorithm, could enhance performance is worthwhile.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999805688858032,
+                    "sentence": "3. For scenarios with non-vanishing action-gaps, especially when these gaps follow a state-dependent distribution, an analysis similar to that by Farahmand could provide valuable insights into TrailBlazer's applicability and efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999731183052063,
+                    "sentence": "4. Section 3.1 could be expanded to better contrast the separate bias and variance computation in existing algorithms versus TrailBlazer's approach, enhancing clarity for readers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999566078186035,
+                    "sentence": "5. Several typographical errors were noted, including those at lines L81, L84, L220, L229, and L472, as well as the inconsistent representation of \\Delta in Appendix D.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999586343765259,
+                    "sentence": "Overall, the paper contributes meaningfully to the field by presenting a novel algorithm with robust theoretical backing, suggesting avenues for both theoretical refinement and practical application.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998840689659119,
+                    "sentence": "Addressing the raised questions and revising for clarity and readability will further strengthen the manuscript.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 1,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 1,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 1,
+                    "human": 0,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This manuscript presents a novel Monte Carlo-based planning algorithm, TrailBlazer, which operates under the assumption of access to a generative model of the Markov Decision Process (MDP). The primary objective of TrailBlazer is to efficiently compute the optimal value function of the root node, V(s0), by minimizing the number of calls to the generative model. The algorithm is designed to handle both finite and infinite state spaces within a discounted reward setting. \nThe paper provides several key theoretical guarantees for TrailBlazer, including Probably Approximately Correct (PAC) consistency, a high-probability upper bound on the number of calls to the generative model for finite state spaces, and an upper bound on the expected number of calls for infinite state spaces. These guarantees position TrailBlazer as either improving upon previous worst-case upper bounds in certain scenarios (such as finite state spaces with stochastic dynamics), matching existing results in others (like deterministic dynamics or scenarios without control), or offering new insights, particularly for infinite state spaces.\nTrailBlazer's operational mechanism involves alternating between two node types: Avg and Max. The Avg node calculates the average value of its children, generated based on transition probabilities, effectively functioning as a Monte Carlo estimator. The parameter m is crucial as it controls the variance of this estimator. In contrast, the Max node aims to identify the child node with the maximum value by probabilistically eliminating nodes that cannot achieve the maximum value.\nThis paper is commendable for introducing a novel algorithm with significant potential for application across various domains. TrailBlazer not only boasts basic theoretical justification, such as consistency, but also offers stronger guarantees than existing knowledge, particularly for finite state spaces with generative models and stochastic systems. The manuscript is generally well-written, although it could benefit from additional intuitive explanations to clarify why TrailBlazer outperforms other approaches. The induction-based proofs on the tree structure, while not straightforward, contribute to the paper's technical depth.\nSeveral aspects warrant further clarification or consideration: \n1. The expectation-based guarantee in Theorem 3 prompts the question of whether there are fundamental limitations preventing a stronger guarantee.\n2. The algorithm's current formulation does not leverage potential regularities in the value function, such as smoothness. Exploring whether incorporating such properties, akin to the StoSO algorithm, could enhance performance is worthwhile.\n3. For scenarios with non-vanishing action-gaps, especially when these gaps follow a state-dependent distribution, an analysis similar to that by Farahmand could provide valuable insights into TrailBlazer's applicability and efficiency.\n4. Section 3.1 could be expanded to better contrast the separate bias and variance computation in existing algorithms versus TrailBlazer's approach, enhancing clarity for readers.\n5. Several typographical errors were noted, including those at lines L81, L84, L220, L229, and L472, as well as the inconsistent representation of \\Delta in Appendix D.\nOverall, the paper contributes meaningfully to the field by presenting a novel algorithm with robust theoretical backing, suggesting avenues for both theoretical refinement and practical application. Addressing the raised questions and revising for clarity and readability will further strengthen the manuscript."
+        }
+    ]
+}

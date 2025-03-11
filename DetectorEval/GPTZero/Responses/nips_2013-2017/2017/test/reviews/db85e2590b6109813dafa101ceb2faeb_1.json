@@ -1,0 +1,130 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "76910cc5-ce50-4dee-9e9a-a170670a4c94",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.5696431994438171,
+                    "sentence": "The authors present a regularization term that encourages weight matrices to be low rank during network training, effectively increasing the compression of the network, and making it possible to explicitly reduce the rank during post-processing, reducing the number of operations required for inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36663350462913513,
+                    "sentence": "Overall the paper seems like a good and well written paper on an interesting topic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2155786156654358,
+                    "sentence": "I have some caveats however: firstly the authors do not mention variational inference, which also explicitly compresses the network (in the literal sense of reducing the number of bits in its description length) and can be used to prune away many weights after training - see 'Practical Variational Inference for Neural Networks' for details.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1401900202035904,
+                    "sentence": "More generally, almost any regularizer provides a form of implicit 'compression-aware training' (that's why they work - simpler models generalize better) and can often be used to prune networks post-hoc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1823466718196869,
+                    "sentence": "For example a network trained with l1 or l2 regularization will generally end up with many weights very close to 0, which can be removed without greatly altering network performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10061519593000412,
+                    "sentence": "I think it's important to clarify this, especially since the authors use an l2 term in addition to their own regularizer during training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11119873076677322,
+                    "sentence": "They also don't compare seem to compare how well previous low rank post processing works with and without their regulariser, or with other regularisers used in previous work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1635756939649582,
+                    "sentence": "All of these caveats could be answered by providing more baseline results in the experimental section, demonstrating that training with this particular regulariser does indeed lead to a better accuracy / compression tradeoff than other approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2034328430891037,
+                    "sentence": "In general I found the results a little hard to interpret, so may be missing something: the graph I wanted to see was a set of curves for accuracy vs compression ratio (either in terms of number of parameters or number of MACs) rather than accuracy against the strength of the regularisation term.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.44250115752220154,
+                    "sentence": "On this graph it should be possible to explicitly compare your approach vs previous regularisers / compressors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 3.002405151306975e-07
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.11117960964635752,
+            "class_probabilities": {
+                "human": 0.888453242841436,
+                "ai": 0.11117960964635752,
+                "mixed": 0.00036714751220645104
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.888453242841436,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.11117960964635752,
+                    "human": 0.888453242841436,
+                    "mixed": 0.00036714751220645104
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The authors present a regularization term that encourages weight matrices to be low rank during network training, effectively increasing the compression of the network, and making it possible to explicitly reduce the rank during post-processing, reducing the number of operations required for inference. Overall the paper seems like a good and well written paper on an interesting topic. I have some caveats however: firstly the authors do not mention variational inference, which also explicitly compresses the network (in the literal sense of reducing the number of bits in its description length) and can be used to prune away many weights after training - see 'Practical Variational Inference for Neural Networks' for details. More generally, almost any regularizer provides a form of implicit 'compression-aware training' (that's why they work - simpler models generalize better) and can often be used to prune networks post-hoc. For example a network trained with l1 or l2 regularization will generally end up with many weights very close to 0, which can be removed without greatly altering network performance. I think it's important to clarify this, especially since the authors use an l2 term in addition to their own regularizer during training. They also don't compare seem to compare how well previous low rank post processing works with and without their regulariser, or with other regularisers used in previous work. All of these caveats could be answered by providing more baseline results in the experimental section, demonstrating that training with this particular regulariser does indeed lead to a better accuracy / compression tradeoff than other approaches.\nIn general I found the results a little hard to interpret, so may be missing something: the graph I wanted to see was a set of curves for accuracy vs compression ratio (either in terms of number of parameters or number of MACs) rather than accuracy against the strength of the regularisation term. On this graph it should be possible to explicitly compare your approach vs previous regularisers / compressors."
+        }
+    ]
+}

@@ -1,0 +1,415 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "15f9a004-9be8-472b-9117-bfe13ffe01bf",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "This paper addresses the task of identifying all mentions of the \"main concept\" (MC) in a Wikipedia article, a seldom-studied problem in coreference resolution (CR).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "The authors propose a binary classification approach that leverages Wikipedia markup and external knowledge bases like Freebase to extract features for mention classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "The main contributions of the paper are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "1. Novel Task Definition and Dataset: The paper revisits the task of identifying mentions of the MC in Wikipedia articles and introduces a dedicated dataset (WCR) annotated with OntoNotes guidelines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "This dataset highlights the limitations of existing CR systems when applied to Wikipedia texts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "2. Classifier Design: The authors develop a classifier that outperforms state-of-the-art CR systems and baselines on the task of identifying MC mentions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "The classifier uses features derived from Wikipedia markup, Freebase attributes, and linguistic cues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "3. Integration into a Full CR Pipeline: The authors demonstrate that incorporating their classifier into the Stanford deterministic rule-based CR system (Dcoref) improves performance on a full CR task for Wikipedia articles.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "1. Clear Motivation and Novelty: The paper addresses a gap in the CR literature by focusing on Wikipedia, a resource widely used in NLP but underexplored for CR.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "The task of identifying MC mentions is well-motivated, and the proposed approach is novel in leveraging Wikipedia-specific features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "2. Strong Empirical Results: The classifier achieves significant improvements over baselines, with a 13-point F1 gain for MC mention identification and a 4-point CoNLL F1 gain when integrated into Dcoref.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "The results are robust across pronominal and non-pronominal mentions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "3. Feature Engineering: The paper provides a thorough exploration of features, including linguistic, positional, and semantic attributes derived from Wikipedia and Freebase.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "The feature ablation study is insightful and demonstrates the utility of each feature family.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "4. Reproducibility and Resource Sharing: The authors commit to sharing their dataset (WCR) and classifier outputs, which will facilitate future research on this task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "1. Limited Dataset Size: While the WCR dataset is diverse, its small size (30 articles, ~60k tokens) raises concerns about generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "The authors acknowledge this limitation but do not explore strategies for scaling the dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "2. Error Analysis: Although the paper provides examples of classification errors, the analysis is limited.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9747612476348877,
+                    "sentence": "A deeper discussion of failure cases (e.g., ambiguous mentions, noisy redirects) could help identify areas for improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9823706150054932,
+                    "sentence": "3. Baseline Comparisons: The baselines are derived from existing CR systems but are not optimized for the MC task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.979840099811554,
+                    "sentence": "While this highlights the novelty of the proposed approach, additional baselines (e.g., rule-based systems tailored to Wikipedia) could provide a more comprehensive evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9797596335411072,
+                    "sentence": "4. Integration with Other CR Systems: The integration of the classifier into Dcoref is promising, but it would be valuable to test its impact on other CR systems (e.g., Scoref) to assess general applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9665335416793823,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9668152332305908,
+                    "sentence": "1. How does the classifier perform on other text genres (e.g., newswire, blogs)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9783340096473694,
+                    "sentence": "Could the approach generalize beyond Wikipedia?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9672154784202576,
+                    "sentence": "2. Have you considered semi-supervised or unsupervised methods to expand the WCR dataset?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9242610931396484,
+                    "sentence": "3. Could noisy redirects in Wikipedia be filtered or weighted to reduce their negative impact on classification?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9557531476020813,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9382712244987488,
+                    "sentence": "This paper makes a significant contribution to the field of CR by addressing a novel and practically useful task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9726811051368713,
+                    "sentence": "The proposed classifier demonstrates strong performance, and its integration into a full CR pipeline is a valuable extension.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9842756390571594,
+                    "sentence": "While the dataset size and baseline comparisons could be improved, the work lays a solid foundation for future research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8710998892784119,
+                    "sentence": "I recommend acceptance, with minor revisions to address the identified weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary and Contributions\nThis paper addresses the task of identifying all mentions of the \"main concept\" (MC) in a Wikipedia article, a seldom-studied problem in coreference resolution (CR). The authors propose a binary classification approach that leverages Wikipedia markup and external knowledge bases like Freebase to extract features for mention classification. The main contributions of the paper are as follows:\n1. Novel Task Definition and Dataset: The paper revisits the task of identifying mentions of the MC in Wikipedia articles and introduces a dedicated dataset (WCR) annotated with OntoNotes guidelines. This dataset highlights the limitations of existing CR systems when applied to Wikipedia texts.\n \n2. Classifier Design: The authors develop a classifier that outperforms state-of-the-art CR systems and baselines on the task of identifying MC mentions. The classifier uses features derived from Wikipedia markup, Freebase attributes, and linguistic cues.\n3. Integration into a Full CR Pipeline: The authors demonstrate that incorporating their classifier into the Stanford deterministic rule-based CR system (Dcoref) improves performance on a full CR task for Wikipedia articles.\nStrengths\n1. Clear Motivation and Novelty: The paper addresses a gap in the CR literature by focusing on Wikipedia, a resource widely used in NLP but underexplored for CR. The task of identifying MC mentions is well-motivated, and the proposed approach is novel in leveraging Wikipedia-specific features.\n2. Strong Empirical Results: The classifier achieves significant improvements over baselines, with a 13-point F1 gain for MC mention identification and a 4-point CoNLL F1 gain when integrated into Dcoref. The results are robust across pronominal and non-pronominal mentions.\n3. Feature Engineering: The paper provides a thorough exploration of features, including linguistic, positional, and semantic attributes derived from Wikipedia and Freebase. The feature ablation study is insightful and demonstrates the utility of each feature family.\n4. Reproducibility and Resource Sharing: The authors commit to sharing their dataset (WCR) and classifier outputs, which will facilitate future research on this task.\nWeaknesses\n1. Limited Dataset Size: While the WCR dataset is diverse, its small size (30 articles, ~60k tokens) raises concerns about generalizability. The authors acknowledge this limitation but do not explore strategies for scaling the dataset.\n2. Error Analysis: Although the paper provides examples of classification errors, the analysis is limited. A deeper discussion of failure cases (e.g., ambiguous mentions, noisy redirects) could help identify areas for improvement.\n3. Baseline Comparisons: The baselines are derived from existing CR systems but are not optimized for the MC task. While this highlights the novelty of the proposed approach, additional baselines (e.g., rule-based systems tailored to Wikipedia) could provide a more comprehensive evaluation.\n4. Integration with Other CR Systems: The integration of the classifier into Dcoref is promising, but it would be valuable to test its impact on other CR systems (e.g., Scoref) to assess general applicability.\nQuestions to Authors\n1. How does the classifier perform on other text genres (e.g., newswire, blogs)? Could the approach generalize beyond Wikipedia?\n2. Have you considered semi-supervised or unsupervised methods to expand the WCR dataset?\n3. Could noisy redirects in Wikipedia be filtered or weighted to reduce their negative impact on classification?\nConclusion\nThis paper makes a significant contribution to the field of CR by addressing a novel and practically useful task. The proposed classifier demonstrates strong performance, and its integration into a full CR pipeline is a valuable extension. While the dataset size and baseline comparisons could be improved, the work lays a solid foundation for future research. I recommend acceptance, with minor revisions to address the identified weaknesses."
+        }
+    ]
+}

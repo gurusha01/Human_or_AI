@@ -1,0 +1,233 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "8b68fd40-8025-4266-b5c1-2d0acfacc525",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9807893633842468,
+                    "sentence": "The submission considers algorithms for solving a specific class of optimization problems, namely min{x in Omega1} F(x), where F(x) = max{u in Omega2} \\langle Ax, u \\rangle - phi(u) + g(x).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9605035781860352,
+                    "sentence": "Here, g is convex, Omega1 is closed and convex, Omega2 is closed, convex, and bounded, and the set of optimal solutions Omega \\subset Omega1 is convex, compact, and non-empty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8051959276199341,
+                    "sentence": "The submission also assumes a proximal mapping for g can be computed efficiently.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.21807388961315155,
+                    "sentence": "The above framework is apparently general enough to capture a number of applications, including various natural regularized empirical loss minimization problems that arise in machine learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0017045936547219753,
+                    "sentence": "Classic work of Nesterov combined a smooth approximation technique with accelerated proximal gradient descent to converge to a solution with epsilon of optimal in O(1/epsilon) iterations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008099788683466613,
+                    "sentence": "Roughly, the smoothing parameter mu controls both the quality of the smooth approximation to the original problem (smaller mu means a better approximation), and the speed of convergence (smaller mu means slower convergence).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.000527950469404459,
+                    "sentence": "Choosing mu to balance these costs yields an eps-accurate solution in O(1/eps) iterations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.000715453817974776,
+                    "sentence": "The submission shows that if F satisfies a \"Local Error Bound\" (LEB), then one can obtain faster convergence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00031938261236064136,
+                    "sentence": "Roughly, an LEB guarantees that the distance of any x from an optimal solution falls like a constant power of the distance of the value F(x) from the optimal value F(x^).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00026339100440964103,
+                    "sentence": "The key idea is to use Nesterov's approach, but the start with a large mu, and gradually decrease it over the course of the execution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0002898889943026006,
+                    "sentence": "The point is that one does not need a good approximation to the original problem at the start (since one is far from an optimal solution then anyway).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0004936929908581078,
+                    "sentence": "But as a good solution is approached, one can afford to drop mu to get a better smooth approximation, without killing the convergence rate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013221771223470569,
+                    "sentence": "A primal-dual version of the algorithm that does not require hand-tuning of parameters is also described (mostly in the supplement).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0018573811976239085,
+                    "sentence": "Applications to specific classes of problems are discussed, and some experimental results from 3 different application domains are provided.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0131211644038558,
+                    "sentence": "The experiments show significantly improved iteration complexity for small values of epsilon, compared to basic Accelerated Proximal Gradient Descent, and a first-order primal-dual method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0172176081687212,
+                    "sentence": "This seems like a nice contribution, both in terms of the analysis (which is clean, intuitive, and apparently the first for this kind of smoothing algorithm), and the concrete efficiency as demonstrated in the experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025979075580835342,
+                    "sentence": "(However, I am not knowledgeable enough about the area to know for certain that the algorithms experimentally compared against truly state of the art).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025443576276302338,
+                    "sentence": "The class of problems considered capture a variety of important applications, and the theoretical results do seem to generalize or asymptotically improve on several directly comparable prior works.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.035860415548086166,
+                    "sentence": "For applications where theta=1, such as regularized empirical loss minimization with L1-norm or L{infty}-norm as the regularizer and a non-smooth loss function like hinge or absolute loss, the submission's algorithm will converge in O(log(epsilon0/epsilon)) iterations, while the submission suggests that prior work would require O(1/epsilon) iterations to converge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.024780767038464546,
+                    "sentence": "Is this accurate?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.018193254247307777,
+                    "sentence": "If so, then this is an exponential improvement on prior work, which seems rather impressive, and perhaps the submission should emphasize this point more.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.022649914026260376,
+                    "sentence": "It would be nice to see how the proposed algorithm fares against prior art for larger values of epsilon.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026298554614186287,
+                    "sentence": "My understanding from the experiments is that the advantage of the present algorithm is seen only at small values of epsilon.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04617967829108238,
+                    "sentence": "But if this is the case, why not use the other methods to quickly find a reasonably good solution, and then run the new algorithm starting from said solution?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.024724863469600677,
+                    "sentence": "Smaller questions: The submission states that if Lmu is difficult to compute, one can use the \"backtracking trick\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.024180496111512184,
+                    "sentence": "Was this necessary in any of the applications considered in the experiments?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.058330148458480835,
+                    "sentence": "Since the proposed primal-dual method requires operating on the dual as well as the primal, it is perhaps surprising that the experimental wall time for this version of the algorithm was best overall.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06864116340875626,
+                    "sentence": "Did the reported wall time account for both the time to update the primal solution and the dual?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 28,
+                    "completely_generated_prob": 2.712874215862266e-20
+                }
+            ],
+            "completely_generated_prob": 0.034677550677350163,
+            "class_probabilities": {
+                "human": 0.9634167323475518,
+                "ai": 0.034677550677350163,
+                "mixed": 0.001905716975098081
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9634167323475518,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.034677550677350163,
+                    "human": 0.9634167323475518,
+                    "mixed": 0.001905716975098081
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The submission considers algorithms for solving a specific class of optimization problems, namely min{x in Omega1} F(x), where F(x) = max{u in Omega2} \\langle Ax, u \\rangle - phi(u) + g(x). Here, g is convex, Omega1 is closed and convex, Omega2 is closed, convex, and bounded, and the set of optimal solutions Omega \\subset Omega1 is convex, compact, and non-empty. The submission also assumes a proximal mapping for g can be computed efficiently. The above framework is apparently general enough to capture a number of applications, including various natural regularized empirical loss minimization problems that arise in machine learning. Classic work of Nesterov combined a smooth approximation technique with accelerated proximal gradient descent to converge to a solution with epsilon of optimal in O(1/epsilon) iterations. Roughly, the smoothing parameter mu controls both the quality of the smooth approximation to the original problem (smaller mu means a better approximation), and the speed of convergence (smaller mu means slower convergence). Choosing mu to balance these costs yields an eps-accurate solution in O(1/eps) iterations. The submission shows that if F satisfies a \"Local Error Bound\" (LEB), then one can obtain faster convergence. Roughly, an LEB guarantees that the distance of any x from an optimal solution falls like a constant power of the distance of the value F(x) from the optimal value F(x^). The key idea is to use Nesterov's approach, but the start with a large mu, and gradually decrease it over the course of the execution. The point is that one does not need a good approximation to the original problem at the start (since one is far from an optimal solution then anyway). But as a good solution is approached, one can afford to drop mu to get a better smooth approximation, without killing the convergence rate. A primal-dual version of the algorithm that does not require hand-tuning of parameters is also described (mostly in the supplement). Applications to specific classes of problems are discussed, and some experimental results from 3 different application domains are provided. The experiments show significantly improved iteration complexity for small values of epsilon, compared to basic Accelerated Proximal Gradient Descent, and a first-order primal-dual method. This seems like a nice contribution, both in terms of the analysis (which is clean, intuitive, and apparently the first for this kind of smoothing algorithm), and the concrete efficiency as demonstrated in the experiments. (However, I am not knowledgeable enough about the area to know for certain that the algorithms experimentally compared against truly state of the art). The class of problems considered capture a variety of important applications, and the theoretical results do seem to generalize or asymptotically improve on several directly comparable prior works. For applications where theta=1, such as regularized empirical loss minimization with L1-norm or L{infty}-norm as the regularizer and a non-smooth loss function like hinge or absolute loss, the submission's algorithm will converge in O(log(epsilon0/epsilon)) iterations, while the submission suggests that prior work would require O(1/epsilon) iterations to converge. Is this accurate? If so, then this is an exponential improvement on prior work, which seems rather impressive, and perhaps the submission should emphasize this point more. It would be nice to see how the proposed algorithm fares against prior art for larger values of epsilon. My understanding from the experiments is that the advantage of the present algorithm is seen only at small values of epsilon. But if this is the case, why not use the other methods to quickly find a reasonably good solution, and then run the new algorithm starting from said solution? Smaller questions: The submission states that if Lmu is difficult to compute, one can use the \"backtracking trick\". Was this necessary in any of the applications considered in the experiments? Since the proposed primal-dual method requires operating on the dual as well as the primal, it is perhaps surprising that the experimental wall time for this version of the algorithm was best overall. Did the reported wall time account for both the time to update the primal solution and the dual?"
+        }
+    ]
+}

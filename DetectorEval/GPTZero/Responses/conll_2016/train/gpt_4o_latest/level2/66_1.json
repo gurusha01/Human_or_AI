@@ -1,0 +1,414 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "66f44c84-f3c6-4a2c-9cb8-e948c2763e38",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9996783137321472,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999823570251465,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99994957447052,
+                    "sentence": "This paper introduces a transition-based parser that jointly predicts syntactic and semantic dependencies using stack LSTMs to represent the entire algorithmic state.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999557733535767,
+                    "sentence": "The key contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999358057975769,
+                    "sentence": "1. Joint Syntactic-Semantic Parsing with Stack LSTMs: The parser learns representations for the entire state of the algorithm, eliminating the need for expert-crafted features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999887228012085,
+                    "sentence": "This approach is applied to a greedy inference algorithm that operates in linear time.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998959302902222,
+                    "sentence": "2. Empirical Performance: The model achieves state-of-the-art performance among joint parsers on the CoNLL 2008 and 2009 English shared tasks and demonstrates competitive results across multiple languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999052286148071,
+                    "sentence": "3. Efficiency: The proposed system is computationally efficient, with an end-to-end runtime significantly faster than comparable systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999421834945679,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999290704727173,
+                    "sentence": "1. Novel Representation Learning: The use of stack LSTMs to encode the entire parser state is a significant innovation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998557567596436,
+                    "sentence": "This approach obviates the need for handcrafted features, which is a notable step forward in parser design.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998432993888855,
+                    "sentence": "2. Strong Empirical Results: The parser achieves competitive performance on both syntactic and semantic tasks, outperforming previous joint models and rivaling pipeline-based systems that rely on carefully designed features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997751712799072,
+                    "sentence": "3. Efficiency: The system's runtime efficiency (177.6 seconds for the CoNLL 2009 English test set) makes it practical for real-world applications, especially compared to slower pipeline-based systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998356103897095,
+                    "sentence": "4. Comprehensive Evaluation: The paper evaluates the model on multiple datasets (CoNLL 2008, CoNLL 2009 English, and multilingual datasets) and provides detailed comparisons with both joint and pipeline-based systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99993896484375,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998862743377686,
+                    "sentence": "1. Limited Novelty in Transition-Based Parsing: While the use of stack LSTMs is innovative, the transition-based parsing framework largely builds on prior work (e.g., Henderson et al., 2008).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998214840888977,
+                    "sentence": "The novelty lies more in the representation learning than in the parsing algorithm itself.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998775124549866,
+                    "sentence": "2. Overfitting in Joint Parsing: The joint model shows signs of overfitting to the in-domain (WSJ) data, as evidenced by its weaker performance on out-of-domain (Brown corpus) data compared to the hybrid model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999098777770996,
+                    "sentence": "This suggests that the joint approach may not generalize as well as pipeline-based alternatives in some scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999015927314758,
+                    "sentence": "3. Dependence on Pretrained Embeddings: The model's strong performance in some languages (e.g., Chinese) relies heavily on pretrained embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978267550468445,
+                    "sentence": "The paper does not explore scenarios where such embeddings are unavailable or less effective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961207509040833,
+                    "sentence": "4. Lack of Morphological Features: The absence of morphological features limits the parser's performance on morphologically rich languages like Czech.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976125359535217,
+                    "sentence": "While the authors suggest future work on character-based embeddings, this omission weakens the current system's applicability to such languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9932674169540405,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980111122131348,
+                    "sentence": "1. How does the model perform when pretrained embeddings are unavailable or of lower quality, particularly for low-resource languages?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969522953033447,
+                    "sentence": "2. Could you elaborate on the scalability of the parser to longer sentences or larger datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968871474266052,
+                    "sentence": "Does the linear runtime hold in practice for such cases?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982708096504211,
+                    "sentence": "3. Have you considered incorporating morphological features or character-based embeddings to improve performance on morphologically rich languages?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9829238653182983,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988025426864624,
+                    "sentence": "The paper is well-written and provides a thorough analysis of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995750784873962,
+                    "sentence": "The open-source implementation is a valuable contribution to the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986199140548706,
+                    "sentence": "However, addressing the identified weaknesses, particularly overfitting and reliance on pretrained embeddings, would further strengthen the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990208745002747,
+                    "sentence": "Encouragingly, the parser's efficiency and performance make it a promising candidate for practical applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999760091304779,
+                    "sentence": "Overall, this paper presents a meaningful contribution to joint syntactic and semantic parsing, with strong empirical results and practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997027516365051,
+                    "sentence": "While there are areas for improvement, the work is a significant step forward in the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces a transition-based parser that jointly predicts syntactic and semantic dependencies using stack LSTMs to represent the entire algorithmic state. The key contributions of the paper are: \n1. Joint Syntactic-Semantic Parsing with Stack LSTMs: The parser learns representations for the entire state of the algorithm, eliminating the need for expert-crafted features. This approach is applied to a greedy inference algorithm that operates in linear time. \n2. Empirical Performance: The model achieves state-of-the-art performance among joint parsers on the CoNLL 2008 and 2009 English shared tasks and demonstrates competitive results across multiple languages. \n3. Efficiency: The proposed system is computationally efficient, with an end-to-end runtime significantly faster than comparable systems. \nStrengths\n1. Novel Representation Learning: The use of stack LSTMs to encode the entire parser state is a significant innovation. This approach obviates the need for handcrafted features, which is a notable step forward in parser design. \n2. Strong Empirical Results: The parser achieves competitive performance on both syntactic and semantic tasks, outperforming previous joint models and rivaling pipeline-based systems that rely on carefully designed features. \n3. Efficiency: The system's runtime efficiency (177.6 seconds for the CoNLL 2009 English test set) makes it practical for real-world applications, especially compared to slower pipeline-based systems. \n4. Comprehensive Evaluation: The paper evaluates the model on multiple datasets (CoNLL 2008, CoNLL 2009 English, and multilingual datasets) and provides detailed comparisons with both joint and pipeline-based systems. \nWeaknesses\n1. Limited Novelty in Transition-Based Parsing: While the use of stack LSTMs is innovative, the transition-based parsing framework largely builds on prior work (e.g., Henderson et al., 2008). The novelty lies more in the representation learning than in the parsing algorithm itself. \n2. Overfitting in Joint Parsing: The joint model shows signs of overfitting to the in-domain (WSJ) data, as evidenced by its weaker performance on out-of-domain (Brown corpus) data compared to the hybrid model. This suggests that the joint approach may not generalize as well as pipeline-based alternatives in some scenarios. \n3. Dependence on Pretrained Embeddings: The model's strong performance in some languages (e.g., Chinese) relies heavily on pretrained embeddings. The paper does not explore scenarios where such embeddings are unavailable or less effective. \n4. Lack of Morphological Features: The absence of morphological features limits the parser's performance on morphologically rich languages like Czech. While the authors suggest future work on character-based embeddings, this omission weakens the current system's applicability to such languages. \nQuestions to Authors\n1. How does the model perform when pretrained embeddings are unavailable or of lower quality, particularly for low-resource languages? \n2. Could you elaborate on the scalability of the parser to longer sentences or larger datasets? Does the linear runtime hold in practice for such cases? \n3. Have you considered incorporating morphological features or character-based embeddings to improve performance on morphologically rich languages? \nAdditional Comments\nThe paper is well-written and provides a thorough analysis of the proposed method. The open-source implementation is a valuable contribution to the community. However, addressing the identified weaknesses, particularly overfitting and reliance on pretrained embeddings, would further strengthen the work. Encouragingly, the parser's efficiency and performance make it a promising candidate for practical applications. \nOverall, this paper presents a meaningful contribution to joint syntactic and semantic parsing, with strong empirical results and practical utility. While there are areas for improvement, the work is a significant step forward in the field."
+        }
+    ]
+}

@@ -1,0 +1,364 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2f69eb69-fc7b-485d-819c-509ad01cbc88",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "The paper introduces the Cholesky-CMA-ES, a novel variant of the Covariance Matrix Adaptation Evolution Strategy (CMA-ES), aimed at improving computational efficiency without compromising optimization performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "CMA-ES is a widely used derivative-free optimization algorithm, particularly in machine learning applications such as reinforcement learning and hyperparameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "The proposed method replaces the standard covariance matrix update with a numerically stable, quadratic-time update based on maintaining triangular Cholesky factors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "This modification reduces both the runtime and memory complexity while preserving the algorithm's performance in terms of objective function evaluations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "Empirical results demonstrate that the Cholesky-CMA-ES achieves significant speed-ups, particularly in high-dimensional optimization problems, compared to the standard CMA-ES and other variants.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "1. Technical Soundness: The paper provides a rigorous theoretical justification for the proposed modification, including proofs and lemmas to support the convergence and stability of the Cholesky-based updates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "The authors also address potential concerns about the introduced approximation in step-size adaptation, showing that its impact is negligible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938607215881,
+                    "sentence": "2. Empirical Validation: The experiments are thorough, covering a range of benchmark functions and dimensions up to 256.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999952912330627,
+                    "sentence": "The results convincingly demonstrate that the Cholesky-CMA-ES achieves substantial runtime improvements while maintaining the same number of function evaluations as the standard CMA-ES.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949932098389,
+                    "sentence": "3. Practical Significance: The proposed method is particularly relevant for large-scale optimization problems where the computational cost of updating and storing the covariance matrix becomes a bottleneck.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955892562866,
+                    "sentence": "The ability to scale CMA-ES to higher dimensions without sacrificing performance is a valuable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999887943267822,
+                    "sentence": "4. Clarity and Reproducibility: The paper is well-organized and clearly written, with detailed algorithmic descriptions (Algorithms 1 and 2) and references to open-source implementations, which facilitate reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "1. Limited Scope of Empirical Comparisons: While the Cholesky-CMA-ES is compared against the standard CMA-ES and a few variants, the paper does not include comparisons with other state-of-the-art derivative-free optimization methods outside the CMA-ES family.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999825358390808,
+                    "sentence": "This limits the broader context of the contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999826550483704,
+                    "sentence": "2. Error Analysis: Although the theoretical analysis suggests that the error introduced by the Cholesky approximation diminishes over time, the paper does not provide quantitative metrics or visualizations to explicitly measure this error during optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952133297920227,
+                    "sentence": "3. Scalability Beyond Quadratic Complexity: The authors acknowledge that the method still scales quadratically with dimensionality, which may not be feasible for extremely high-dimensional problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935789108276367,
+                    "sentence": "While this limitation is discussed, it would be helpful to explore hybrid approaches or extensions for such cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998192310333252,
+                    "sentence": "Arguments for Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996798038482666,
+                    "sentence": "- The paper addresses a well-recognized computational bottleneck in CMA-ES and provides a theoretically sound and empirically validated solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987244009971619,
+                    "sentence": "- The proposed method is practical and directly applicable to real-world machine learning problems, making it a significant contribution to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989098906517029,
+                    "sentence": "- The clarity and rigor of the paper make it a strong candidate for acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990944862365723,
+                    "sentence": "Arguments Against Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973262548446655,
+                    "sentence": "- The lack of comparisons with non-CMA-ES optimization methods slightly weakens the evaluation of the broader impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947502613067627,
+                    "sentence": "- The scalability limitation to quadratic complexity, while acknowledged, may restrict the applicability of the method to very high-dimensional problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.987862765789032,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9809554815292358,
+                    "sentence": "Overall, the paper makes a strong contribution to the field of derivative-free optimization by improving the efficiency of CMA-ES without compromising its performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9802030324935913,
+                    "sentence": "While there are minor limitations, they do not detract significantly from the overall quality and impact of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9264692664146423,
+                    "sentence": "I recommend acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8879436132063807,
+            "class_probabilities": {
+                "human": 0.10791216944302143,
+                "ai": 0.8879436132063807,
+                "mixed": 0.004144217350597961
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8879436132063807,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8879436132063807,
+                    "human": 0.10791216944302143,
+                    "mixed": 0.004144217350597961
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces the Cholesky-CMA-ES, a novel variant of the Covariance Matrix Adaptation Evolution Strategy (CMA-ES), aimed at improving computational efficiency without compromising optimization performance. CMA-ES is a widely used derivative-free optimization algorithm, particularly in machine learning applications such as reinforcement learning and hyperparameter tuning. The proposed method replaces the standard covariance matrix update with a numerically stable, quadratic-time update based on maintaining triangular Cholesky factors. This modification reduces both the runtime and memory complexity while preserving the algorithm's performance in terms of objective function evaluations. Empirical results demonstrate that the Cholesky-CMA-ES achieves significant speed-ups, particularly in high-dimensional optimization problems, compared to the standard CMA-ES and other variants.\nStrengths\n1. Technical Soundness: The paper provides a rigorous theoretical justification for the proposed modification, including proofs and lemmas to support the convergence and stability of the Cholesky-based updates. The authors also address potential concerns about the introduced approximation in step-size adaptation, showing that its impact is negligible.\n2. Empirical Validation: The experiments are thorough, covering a range of benchmark functions and dimensions up to 256. The results convincingly demonstrate that the Cholesky-CMA-ES achieves substantial runtime improvements while maintaining the same number of function evaluations as the standard CMA-ES.\n3. Practical Significance: The proposed method is particularly relevant for large-scale optimization problems where the computational cost of updating and storing the covariance matrix becomes a bottleneck. The ability to scale CMA-ES to higher dimensions without sacrificing performance is a valuable contribution.\n4. Clarity and Reproducibility: The paper is well-organized and clearly written, with detailed algorithmic descriptions (Algorithms 1 and 2) and references to open-source implementations, which facilitate reproducibility.\nWeaknesses\n1. Limited Scope of Empirical Comparisons: While the Cholesky-CMA-ES is compared against the standard CMA-ES and a few variants, the paper does not include comparisons with other state-of-the-art derivative-free optimization methods outside the CMA-ES family. This limits the broader context of the contribution.\n2. Error Analysis: Although the theoretical analysis suggests that the error introduced by the Cholesky approximation diminishes over time, the paper does not provide quantitative metrics or visualizations to explicitly measure this error during optimization.\n3. Scalability Beyond Quadratic Complexity: The authors acknowledge that the method still scales quadratically with dimensionality, which may not be feasible for extremely high-dimensional problems. While this limitation is discussed, it would be helpful to explore hybrid approaches or extensions for such cases.\nArguments for Acceptance\n- The paper addresses a well-recognized computational bottleneck in CMA-ES and provides a theoretically sound and empirically validated solution.\n- The proposed method is practical and directly applicable to real-world machine learning problems, making it a significant contribution to the field.\n- The clarity and rigor of the paper make it a strong candidate for acceptance.\nArguments Against Acceptance\n- The lack of comparisons with non-CMA-ES optimization methods slightly weakens the evaluation of the broader impact.\n- The scalability limitation to quadratic complexity, while acknowledged, may restrict the applicability of the method to very high-dimensional problems.\nRecommendation\nOverall, the paper makes a strong contribution to the field of derivative-free optimization by improving the efficiency of CMA-ES without compromising its performance. While there are minor limitations, they do not detract significantly from the overall quality and impact of the work. I recommend acceptance."
+        }
+    ]
+}

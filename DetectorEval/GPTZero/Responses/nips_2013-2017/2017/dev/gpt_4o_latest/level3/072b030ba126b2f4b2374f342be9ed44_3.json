@@ -1,0 +1,397 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "45c00290-61ca-4449-ab5f-d0d57ba3d7b1",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999720454216003,
+                    "sentence": "This paper addresses a critical gap in the literature by extending asynchronous stochastic optimization methods to nonsmooth composite objectives, a class of problems frequently encountered in machine learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999965250492096,
+                    "sentence": "The authors propose PROXASAGA, a sparse, lock-free asynchronous variant of the SAGA algorithm, and provide theoretical guarantees for its convergence and speedup.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999788403511047,
+                    "sentence": "The contributions are significant, particularly in proving a convergence rate for nonsmooth objectives in asynchronous settings (Theorem 2), which had not been rigorously established before.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999838471412659,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999709129333496,
+                    "sentence": "1. Theoretical Contributions: The paper provides two key theoretical results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999841451644897,
+                    "sentence": "Theorem 1 establishes convergence for Sparse Proximal SAGA, while Theorem 2 extends this to the asynchronous setting, offering a novel convergence rate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999794363975525,
+                    "sentence": "These results slightly improve upon prior work and represent a meaningful advancement in the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999769330024719,
+                    "sentence": "2. Practical Relevance: The block separability assumption allows for efficient, lock-free updates, making the algorithm well-suited for large-scale, sparse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999803900718689,
+                    "sentence": "The empirical results demonstrate significant speedups (up to 12x on a 20-core machine) and orders-of-magnitude improvements over state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999807476997375,
+                    "sentence": "3. Clarity of Contributions: The authors clearly position their work relative to existing methods, such as ASAGA and ASYSPCD, and highlight the unique challenges of extending asynchronous methods to nonsmooth objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999846816062927,
+                    "sentence": "4. Open Problems: The paper acknowledges its reliance on sparsity assumptions and identifies asynchrony without sparsity for nonsmooth functions as an open problem, which is a valuable direction for future research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943971633911,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999861121177673,
+                    "sentence": "1. Borrowed Proof Techniques: Theorem 2 heavily borrows from Leblond et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999740123748779,
+                    "sentence": "(2017), which assumes smooth \\( g(x) \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995583176612854,
+                    "sentence": "It is unclear whether this assumption is fully avoided in the current proof, raising concerns about the novelty of the theoretical analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945282936096191,
+                    "sentence": "2. Minor Errors: The paper contains typos (e.g., \"a a\" on line 127) and formatting issues (e.g., semicolon after \"sparse\" on line 61).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9913488030433655,
+                    "sentence": "Additionally, there are errors in equations (e.g., eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9914313554763794,
+                    "sentence": "(14) is backwards) and unclear notations (e.g., lines 425 and 447), which hinder readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9936509132385254,
+                    "sentence": "3. Loose Inequalities: Some inequalities in the proofs (e.g., Lemma 7) appear loose, which could affect the tightness of the convergence guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9964326620101929,
+                    "sentence": "4. Limited Exploration of Proximal Decomposition: While the block separability assumption is practical, the paper does not explore element-wise proximal decomposition, which could further broaden the applicability of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963846802711487,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980554580688477,
+                    "sentence": "The paper makes strong theoretical and practical contributions to asynchronous optimization for nonsmooth objectives, addressing a previously unproven problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994021654129028,
+                    "sentence": "However, the reliance on prior work for key proofs and the presence of minor errors detract from its overall quality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999637246131897,
+                    "sentence": "I recommend acceptance, contingent on addressing the proof-related concerns and improving the manuscript's clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999290704727173,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999153017997742,
+                    "sentence": "- Novel convergence proof for nonsmooth objectives in asynchronous settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999797940254211,
+                    "sentence": "- Significant empirical improvements over state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999174475669861,
+                    "sentence": "- Clear identification of open problems and future directions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998993277549744,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998401999473572,
+                    "sentence": "- Heavy reliance on prior work for Theorem 2.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999255537986755,
+                    "sentence": "- Minor errors and unclear notations reduce clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999520182609558,
+                    "sentence": "- Limited exploration of alternative proximal decomposition methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996541142463684,
+                    "sentence": "Overall, the paper is a valuable contribution to the field and merits inclusion in the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper addresses a critical gap in the literature by extending asynchronous stochastic optimization methods to nonsmooth composite objectives, a class of problems frequently encountered in machine learning. The authors propose PROXASAGA, a sparse, lock-free asynchronous variant of the SAGA algorithm, and provide theoretical guarantees for its convergence and speedup. The contributions are significant, particularly in proving a convergence rate for nonsmooth objectives in asynchronous settings (Theorem 2), which had not been rigorously established before.\nStrengths:\n1. Theoretical Contributions: The paper provides two key theoretical results. Theorem 1 establishes convergence for Sparse Proximal SAGA, while Theorem 2 extends this to the asynchronous setting, offering a novel convergence rate. These results slightly improve upon prior work and represent a meaningful advancement in the field.\n2. Practical Relevance: The block separability assumption allows for efficient, lock-free updates, making the algorithm well-suited for large-scale, sparse datasets. The empirical results demonstrate significant speedups (up to 12x on a 20-core machine) and orders-of-magnitude improvements over state-of-the-art methods.\n3. Clarity of Contributions: The authors clearly position their work relative to existing methods, such as ASAGA and ASYSPCD, and highlight the unique challenges of extending asynchronous methods to nonsmooth objectives.\n4. Open Problems: The paper acknowledges its reliance on sparsity assumptions and identifies asynchrony without sparsity for nonsmooth functions as an open problem, which is a valuable direction for future research.\nWeaknesses:\n1. Borrowed Proof Techniques: Theorem 2 heavily borrows from Leblond et al. (2017), which assumes smooth \\( g(x) \\). It is unclear whether this assumption is fully avoided in the current proof, raising concerns about the novelty of the theoretical analysis.\n2. Minor Errors: The paper contains typos (e.g., \"a a\" on line 127) and formatting issues (e.g., semicolon after \"sparse\" on line 61). Additionally, there are errors in equations (e.g., eq. (14) is backwards) and unclear notations (e.g., lines 425 and 447), which hinder readability.\n3. Loose Inequalities: Some inequalities in the proofs (e.g., Lemma 7) appear loose, which could affect the tightness of the convergence guarantees.\n4. Limited Exploration of Proximal Decomposition: While the block separability assumption is practical, the paper does not explore element-wise proximal decomposition, which could further broaden the applicability of the method.\nRecommendation:\nThe paper makes strong theoretical and practical contributions to asynchronous optimization for nonsmooth objectives, addressing a previously unproven problem. However, the reliance on prior work for key proofs and the presence of minor errors detract from its overall quality. I recommend acceptance, contingent on addressing the proof-related concerns and improving the manuscript's clarity.\nArguments for Acceptance:\n- Novel convergence proof for nonsmooth objectives in asynchronous settings.\n- Significant empirical improvements over state-of-the-art methods.\n- Clear identification of open problems and future directions.\nArguments Against Acceptance:\n- Heavy reliance on prior work for Theorem 2.\n- Minor errors and unclear notations reduce clarity.\n- Limited exploration of alternative proximal decomposition methods. \nOverall, the paper is a valuable contribution to the field and merits inclusion in the conference."
+        }
+    ]
+}

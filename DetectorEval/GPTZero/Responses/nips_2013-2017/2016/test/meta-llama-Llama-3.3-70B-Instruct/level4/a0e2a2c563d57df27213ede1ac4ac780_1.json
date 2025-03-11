@@ -1,0 +1,262 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5052a3ea-bb6a-48e0-b158-c28844a32e72",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999586939811707,
+                    "sentence": "The paper presents a novel approach, termed Sparse Diverse Region Classifier (SDR), which builds upon the Region Ranking SVM (RRSVM) method [29] by introducing diversity in the selected regions through a mechanism known as \"Inhibition of Return\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999428987503052,
+                    "sentence": "This mechanism ensures that only regions with low spatial overlap are selected, with overlap being calculated using the intersection over union criterion commonly employed in non-maximum suppression (NMS).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998880624771118,
+                    "sentence": "Experimental evaluations are conducted on the POET [26], MIT900 [8], and PET [13] datasets, utilizing RRSVM and SDR models trained on the Pascal VOC 2007 dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999845564365387,
+                    "sentence": "The experiments encompass various scenarios, including single-target presence, target absence, and multiple-target presence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997460246086121,
+                    "sentence": "Performance is assessed using the Judd variation of the Area Under Curve (AUC-Judd), which measures the method's ability to recover visual fixation points.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991392493247986,
+                    "sentence": "The results indicate that the introduced Inhibition of Return mechanism, facilitated by NMS, yields a performance boost of approximately 4%.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981554746627808,
+                    "sentence": "The content of the paper is well-organized and accompanied by clear illustrations, making it easy to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969942569732666,
+                    "sentence": "The experimental protocol is also transparent, facilitating the reproducibility of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9832398295402527,
+                    "sentence": "However, two significant flaws are identified:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9858264327049255,
+                    "sentence": "Firstly, the comparison to methods combining object detector outputs to create priority maps is appreciated, but the choice of R-CNN as a baseline is questionable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9868409037590027,
+                    "sentence": "R-CNN, despite considering object annotations during training, is not a strong baseline due to its reliance on Selective Search (Uijlings et al., IJCV'13), a generic object proposal generation method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.972675621509552,
+                    "sentence": "Moreover, R-CNN is optimized for object detection, which differs from human visual attention prediction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9700101017951965,
+                    "sentence": "It is suggested that experiments be repeated with Faster-RCNN (Ren et al., CVPR'15) to address these weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9698619842529297,
+                    "sentence": "Secondly, regarding the AnnoBoxes baseline, while it is acknowledged that this method exploits more information (annotated bounding boxes on test images), the utilization of this information is believed to reduce its advantage in visual attention prediction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912682771682739,
+                    "sentence": "The priority map creation process in AnnoBoxes, which involves applying a Gaussian filter to a binary map centered on object bounding boxes, may not accurately represent fixation points, particularly in animal-related classes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959644079208374,
+                    "sentence": "This is evident in the significant performance advantage of the proposed SDR method over AnnoBoxes in these classes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9927799701690674,
+                    "sentence": "It is argued that comparisons to R-CNN and AnnoBoxes do not provide strong empirical evidence for the proposed method's effectiveness in predicting visual attention.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9898026585578918,
+                    "sentence": "Instead, these comparisons may highlight the distinction between object localization and visual attention prediction, motivating the need for diversity introduced by SDR via NMS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9884878993034363,
+                    "sentence": "To strengthen the paper, it is recommended that experiments be conducted to evaluate the impact of parameters such as overlap in NMS for SDR and the width of the Gaussian blur kernel on performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9827898740768433,
+                    "sentence": "Additionally, more concrete conclusions should be drawn, and comparisons to existing work, such as the method from Li et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912833571434021,
+                    "sentence": "(arXiv:1506.06343), which detects visual patterns in image regions informative for image classification, should be considered.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9757448434829712,
+                    "sentence": "In its current state, the paper is considered premature for publication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9612347483634949,
+                    "sentence": "The authors are encouraged to properly position their work within the existing literature, revise the baselines, and provide insights into the effects of different parameters through an ablation study to fully realize the potential of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel approach, termed Sparse Diverse Region Classifier (SDR), which builds upon the Region Ranking SVM (RRSVM) method [29] by introducing diversity in the selected regions through a mechanism known as \"Inhibition of Return\". This mechanism ensures that only regions with low spatial overlap are selected, with overlap being calculated using the intersection over union criterion commonly employed in non-maximum suppression (NMS). Experimental evaluations are conducted on the POET [26], MIT900 [8], and PET [13] datasets, utilizing RRSVM and SDR models trained on the Pascal VOC 2007 dataset. The experiments encompass various scenarios, including single-target presence, target absence, and multiple-target presence. Performance is assessed using the Judd variation of the Area Under Curve (AUC-Judd), which measures the method's ability to recover visual fixation points. The results indicate that the introduced Inhibition of Return mechanism, facilitated by NMS, yields a performance boost of approximately 4%. \nThe content of the paper is well-organized and accompanied by clear illustrations, making it easy to follow. The experimental protocol is also transparent, facilitating the reproducibility of the results. However, two significant flaws are identified: \nFirstly, the comparison to methods combining object detector outputs to create priority maps is appreciated, but the choice of R-CNN as a baseline is questionable. R-CNN, despite considering object annotations during training, is not a strong baseline due to its reliance on Selective Search (Uijlings et al., IJCV'13), a generic object proposal generation method. Moreover, R-CNN is optimized for object detection, which differs from human visual attention prediction. It is suggested that experiments be repeated with Faster-RCNN (Ren et al., CVPR'15) to address these weaknesses.\nSecondly, regarding the AnnoBoxes baseline, while it is acknowledged that this method exploits more information (annotated bounding boxes on test images), the utilization of this information is believed to reduce its advantage in visual attention prediction. The priority map creation process in AnnoBoxes, which involves applying a Gaussian filter to a binary map centered on object bounding boxes, may not accurately represent fixation points, particularly in animal-related classes. This is evident in the significant performance advantage of the proposed SDR method over AnnoBoxes in these classes. \nIt is argued that comparisons to R-CNN and AnnoBoxes do not provide strong empirical evidence for the proposed method's effectiveness in predicting visual attention. Instead, these comparisons may highlight the distinction between object localization and visual attention prediction, motivating the need for diversity introduced by SDR via NMS.\nTo strengthen the paper, it is recommended that experiments be conducted to evaluate the impact of parameters such as overlap in NMS for SDR and the width of the Gaussian blur kernel on performance. Additionally, more concrete conclusions should be drawn, and comparisons to existing work, such as the method from Li et al. (arXiv:1506.06343), which detects visual patterns in image regions informative for image classification, should be considered. \nIn its current state, the paper is considered premature for publication. The authors are encouraged to properly position their work within the existing literature, revise the baselines, and provide insights into the effects of different parameters through an ablation study to fully realize the potential of the proposed method."
+        }
+    ]
+}

@@ -1,0 +1,413 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "d6f83c85-6a76-40a1-96d4-4feb73ab3850",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9972052574157715,
+                    "sentence": "This paper introduces a method to annotate word senses with temporal information (past, present, future, or atemporal).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974814653396606,
+                    "sentence": "The authors frame the problem as a graph-based semi-supervised classification task, leveraging both item-specific featuresᅳsuch as temporal indicators in glossesᅳand the structural relationships within WordNet, such as semantic links between synsets, while also incorporating unlabeled data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9956949353218079,
+                    "sentence": "The authors conduct a complete annotation of WordNet, using a previously labeled dataset for training and treating the remaining WordNet data as unlabeled.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9957250952720642,
+                    "sentence": "They decompose the task into two stages: first, a binary classification (temporal vs. atemporal), and second, a finer-grained classification (past, present, or future) for the temporal subset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9887920618057251,
+                    "sentence": "To evaluate their approach intrinsically, they annotate a subset of WordNet synsets via crowdsourcing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9931283593177795,
+                    "sentence": "Their system is compared against a state-of-the-art temporal tagger (Stanford's SUTime) with a heuristic backup strategy, as well as prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951172471046448,
+                    "sentence": "The proposed method achieves an 11% improvement in accuracy and demonstrates superior performance over previous systems using only 400 labeled examples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9883135557174683,
+                    "sentence": "Additionally, the authors evaluate their resource on the TempEval-3 task, achieving a 10% improvement in F1 score across four labels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9750730991363525,
+                    "sentence": "The paper is well-organized and generally clear, with a sound and well-motivated approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.976373016834259,
+                    "sentence": "The resulting resource, which provides fine-grained temporal annotations at the word sense level, has significant potential to enhance various NLP tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9616297483444214,
+                    "sentence": "However, I have several remarks, particularly regarding the experimental setup.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9616579413414001,
+                    "sentence": "More details are needed about the task described in the extrinsic evaluation section.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9788528680801392,
+                    "sentence": "For example, providing an example would clarify what the system is predicting (the features mention \"entity pairs,\" but it is not clear what these pairs represent) and what the features entail (e.g., what are the entity attributes?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9817253947257996,
+                    "sentence": "Is the POS for a pair treated as one dimension or two?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9913504719734192,
+                    "sentence": "Are the lemmas obtained automatically?).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926837086677551,
+                    "sentence": "The description of the labels is also unclear; phrases like \"event to document creation time\" and \"event to same sentence event\" need further explanationᅳare these the types of pairs being considered, or are they relations (as suggested on p.8)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994472086429596,
+                    "sentence": "The footnote about the 14 relations is ambiguous: why are the other relations excluded, and what makes a mapping \"too complex\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926669001579285,
+                    "sentence": "Additionally, are the reported scores macro- or micro-averaged?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9395700693130493,
+                    "sentence": "Lastly, the ablation study suggests potential redundancy between Lexica and Entity features due to their similar scoresᅳcould the authors provide insights into this behavior?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7937726974487305,
+                    "sentence": "I also have questions regarding the use of SVMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2530197203159332,
+                    "sentence": "For the extrinsic evaluation, the authors mention optimizing the algorithm's parametersᅳwhat are these parameters?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.12431057542562485,
+                    "sentence": "Since an SVM is also employed within the MinCut framework, was it optimized as well, and if so, how?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3713701069355011,
+                    "sentence": "If the LibSVM library (via the Weka wrapper) was used, a citation for LibSVM should be included.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.06988883018493652,
+                    "sentence": "Other remarks:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.0941118597984314,
+                    "sentence": "- It would be helpful to provide the number of examples per label in the gold dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.031733181327581406,
+                    "sentence": "While figures are given for coarse-grained labels (127 temporal vs. 271 atemporal), the finer-grained distribution is missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.09601334482431412,
+                    "sentence": "- An estimate of the number of words that are temporally ambiguous (e.g., \"present\") would be informative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.11711615324020386,
+                    "sentence": "- Table 3's caption claims the results are \"significantly better,\" but no significance test or p-value is reported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.05734222009778023,
+                    "sentence": "Minor remarks:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.13216422498226166,
+                    "sentence": "- Related work: What specific task was performed in (Filannino and Nenadic, 2014)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.15196631848812103,
+                    "sentence": "- Related work: The phrase \"requires a post-calibration procedure\" needs a reference, and the explanation of calibration in footnote 3.3 on p.4 could be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.12125462293624878,
+                    "sentence": "- Related work: The statement \"their model differs from ours\" should specify how.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.22644317150115967,
+                    "sentence": "- Table 3 is too smallᅳconsider removing the parentheses, placing \"(p, r, f1)\" in the caption, and reporting only two metrics (e.g., precision and F1).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.15551398694515228,
+                    "sentence": "The caption could also be shortened.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.37072575092315674,
+                    "sentence": "- The information in Table 4 would be more effectively conveyed as a graph.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.485888808965683,
+                    "sentence": "- On p.7, the number \"1064\" should be corrected to \"1264.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.28209972381591797,
+                    "sentence": "- TempEval-3: A reference is needed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1860514134168625,
+                    "sentence": "- Table 6: Ordering the scores in one column would improve clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.20751403272151947,
+                    "sentence": "- On p.5, paragraph 3: \"atemporal)\" should be corrected to \"atemporal.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.7936028431808086,
+            "class_probabilities": {
+                "human": 0.1936532144943455,
+                "ai": 0.7936028431808086,
+                "mixed": 0.012743942324846002
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7936028431808086,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7936028431808086,
+                    "human": 0.1936532144943455,
+                    "mixed": 0.012743942324846002
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a method to annotate word senses with temporal information (past, present, future, or atemporal). The authors frame the problem as a graph-based semi-supervised classification task, leveraging both item-specific features—such as temporal indicators in glosses—and the structural relationships within WordNet, such as semantic links between synsets, while also incorporating unlabeled data. The authors conduct a complete annotation of WordNet, using a previously labeled dataset for training and treating the remaining WordNet data as unlabeled. They decompose the task into two stages: first, a binary classification (temporal vs. atemporal), and second, a finer-grained classification (past, present, or future) for the temporal subset. To evaluate their approach intrinsically, they annotate a subset of WordNet synsets via crowdsourcing. Their system is compared against a state-of-the-art temporal tagger (Stanford's SUTime) with a heuristic backup strategy, as well as prior work. The proposed method achieves an 11% improvement in accuracy and demonstrates superior performance over previous systems using only 400 labeled examples. Additionally, the authors evaluate their resource on the TempEval-3 task, achieving a 10% improvement in F1 score across four labels.\nThe paper is well-organized and generally clear, with a sound and well-motivated approach. The resulting resource, which provides fine-grained temporal annotations at the word sense level, has significant potential to enhance various NLP tasks. However, I have several remarks, particularly regarding the experimental setup.\nMore details are needed about the task described in the extrinsic evaluation section. For example, providing an example would clarify what the system is predicting (the features mention \"entity pairs,\" but it is not clear what these pairs represent) and what the features entail (e.g., what are the entity attributes? Is the POS for a pair treated as one dimension or two? Are the lemmas obtained automatically?). The description of the labels is also unclear; phrases like \"event to document creation time\" and \"event to same sentence event\" need further explanation—are these the types of pairs being considered, or are they relations (as suggested on p.8)? The footnote about the 14 relations is ambiguous: why are the other relations excluded, and what makes a mapping \"too complex\"? Additionally, are the reported scores macro- or micro-averaged? Lastly, the ablation study suggests potential redundancy between Lexica and Entity features due to their similar scores—could the authors provide insights into this behavior?\nI also have questions regarding the use of SVMs. For the extrinsic evaluation, the authors mention optimizing the algorithm's parameters—what are these parameters? Since an SVM is also employed within the MinCut framework, was it optimized as well, and if so, how? If the LibSVM library (via the Weka wrapper) was used, a citation for LibSVM should be included.\nOther remarks:\n- It would be helpful to provide the number of examples per label in the gold dataset. While figures are given for coarse-grained labels (127 temporal vs. 271 atemporal), the finer-grained distribution is missing.\n- An estimate of the number of words that are temporally ambiguous (e.g., \"present\") would be informative.\n- Table 3's caption claims the results are \"significantly better,\" but no significance test or p-value is reported.\nMinor remarks:\n- Related work: What specific task was performed in (Filannino and Nenadic, 2014)?\n- Related work: The phrase \"requires a post-calibration procedure\" needs a reference, and the explanation of calibration in footnote 3.3 on p.4 could be clarified.\n- Related work: The statement \"their model differs from ours\" should specify how.\n- Table 3 is too small—consider removing the parentheses, placing \"(p, r, f1)\" in the caption, and reporting only two metrics (e.g., precision and F1). The caption could also be shortened.\n- The information in Table 4 would be more effectively conveyed as a graph.\n- On p.7, the number \"1064\" should be corrected to \"1264.\"\n- TempEval-3: A reference is needed.\n- Table 6: Ordering the scores in one column would improve clarity.\n- On p.5, paragraph 3: \"atemporal)\" should be corrected to \"atemporal.\""
+        }
+    ]
+}

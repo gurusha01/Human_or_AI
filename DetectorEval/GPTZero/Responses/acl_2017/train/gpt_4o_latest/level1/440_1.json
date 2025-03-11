@@ -1,0 +1,403 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "87b88fc6-eae0-4025-a384-c3920ccf9788",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999755620956421,
+                    "sentence": "Summary",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "This paper introduces a novel A* CCG parsing model that incorporates bilexical dependency modeling into the parsing process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "By extending the bi-directional LSTM (bi-LSTM) architecture, the authors propose a factored model that predicts both supertags and head dependencies, enabling efficient precomputation of probabilities while explicitly modeling sentence structures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "The proposed method achieves state-of-the-art results on English and Japanese CCG parsing, demonstrating its effectiveness across languages with different syntactic characteristics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "Main Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "1. Integration of Dependency Modeling in A* CCG Parsing: The primary contribution is the introduction of a dependency-factored model that resolves attachment ambiguities without relying on deterministic heuristics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "This is a significant improvement over prior methods, such as the attach-low heuristic, which are language-specific and prone to errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "2. Efficient A Search with Precomputed Probabilities: The authors demonstrate that their model retains the efficiency of A parsing by precomputing probabilities for both supertags and dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "This ensures tractability while enhancing the expressiveness of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "3. State-of-the-Art Results on English and Japanese Parsing: The model achieves the best-reported F1 scores for English CCG parsing and significantly outperforms existing methods on Japanese CCG parsing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999931454658508,
+                    "sentence": "The results highlight the model's robustness across languages with different syntactic properties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973177909851,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "1. Novelty and Generality: The integration of dependency modeling into A* CCG parsing is a novel approach that addresses a key limitation of prior methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "The model's ability to generalize across English and Japanese demonstrates its versatility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "2. Empirical Performance: The proposed method achieves state-of-the-art results on both labeled and unlabeled F1 metrics for English CCG parsing and significantly improves Japanese parsing accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "The results are well-supported by experiments and ablation studies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "3. Efficiency: Despite the added complexity of dependency modeling, the model maintains competitive parsing speeds due to the precomputation of probabilities.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "The detailed comparison with existing parsers highlights its efficiency in A* search.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999968409538269,
+                    "sentence": "4. Thorough Evaluation: The paper provides extensive experiments, including comparisons with baseline models, ablation studies, and evaluations of different dependency conversion strategies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932646751404,
+                    "sentence": "The analysis of normal form constraints and tri-training further strengthens the empirical findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949932098389,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999881982803345,
+                    "sentence": "1. Implementation Details: While the paper mentions implementation differences (e.g., Python vs. C++), it does not provide sufficient details about the optimization of the supertagging component, which is slower than competing methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999796152114868,
+                    "sentence": "This could hinder reproducibility and practical adoption.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999984085559845,
+                    "sentence": "2. Limited Discussion on Linguistic Insights: Although the paper demonstrates the effectiveness of dependency modeling, it does not delve deeply into the linguistic implications of the proposed method, particularly for languages with freer word order like Japanese.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999338388442993,
+                    "sentence": "3. Evaluation on Broader Datasets: The experiments are limited to English and Japanese CCGbanks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999765157699585,
+                    "sentence": "Evaluating the model on additional languages or datasets could further validate its generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991316199302673,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999344944953918,
+                    "sentence": "1. Can you provide more details on the implementation of the supertagging component and potential optimizations to improve its speed?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995622038841248,
+                    "sentence": "2. How does the model handle cases where dependency predictions conflict with supertag predictions during parsing?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998293519020081,
+                    "sentence": "3. Have you considered evaluating the model on other languages or datasets to further demonstrate its generalizability?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991253614425659,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992727041244507,
+                    "sentence": "The paper is well-written and provides a significant contribution to the field of CCG parsing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990901947021484,
+                    "sentence": "Addressing the weaknesses mentioned above could further enhance the impact and applicability of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary\nThis paper introduces a novel A* CCG parsing model that incorporates bilexical dependency modeling into the parsing process. By extending the bi-directional LSTM (bi-LSTM) architecture, the authors propose a factored model that predicts both supertags and head dependencies, enabling efficient precomputation of probabilities while explicitly modeling sentence structures. The proposed method achieves state-of-the-art results on English and Japanese CCG parsing, demonstrating its effectiveness across languages with different syntactic characteristics.\nMain Contributions\n1. Integration of Dependency Modeling in A* CCG Parsing: The primary contribution is the introduction of a dependency-factored model that resolves attachment ambiguities without relying on deterministic heuristics. This is a significant improvement over prior methods, such as the attach-low heuristic, which are language-specific and prone to errors.\n \n2. Efficient A Search with Precomputed Probabilities: The authors demonstrate that their model retains the efficiency of A parsing by precomputing probabilities for both supertags and dependencies. This ensures tractability while enhancing the expressiveness of the model.\n3. State-of-the-Art Results on English and Japanese Parsing: The model achieves the best-reported F1 scores for English CCG parsing and significantly outperforms existing methods on Japanese CCG parsing. The results highlight the model's robustness across languages with different syntactic properties.\nStrengths\n1. Novelty and Generality: The integration of dependency modeling into A* CCG parsing is a novel approach that addresses a key limitation of prior methods. The model's ability to generalize across English and Japanese demonstrates its versatility.\n \n2. Empirical Performance: The proposed method achieves state-of-the-art results on both labeled and unlabeled F1 metrics for English CCG parsing and significantly improves Japanese parsing accuracy. The results are well-supported by experiments and ablation studies.\n3. Efficiency: Despite the added complexity of dependency modeling, the model maintains competitive parsing speeds due to the precomputation of probabilities. The detailed comparison with existing parsers highlights its efficiency in A* search.\n4. Thorough Evaluation: The paper provides extensive experiments, including comparisons with baseline models, ablation studies, and evaluations of different dependency conversion strategies. The analysis of normal form constraints and tri-training further strengthens the empirical findings.\nWeaknesses\n1. Implementation Details: While the paper mentions implementation differences (e.g., Python vs. C++), it does not provide sufficient details about the optimization of the supertagging component, which is slower than competing methods. This could hinder reproducibility and practical adoption.\n2. Limited Discussion on Linguistic Insights: Although the paper demonstrates the effectiveness of dependency modeling, it does not delve deeply into the linguistic implications of the proposed method, particularly for languages with freer word order like Japanese.\n3. Evaluation on Broader Datasets: The experiments are limited to English and Japanese CCGbanks. Evaluating the model on additional languages or datasets could further validate its generalizability.\nQuestions to Authors\n1. Can you provide more details on the implementation of the supertagging component and potential optimizations to improve its speed?\n2. How does the model handle cases where dependency predictions conflict with supertag predictions during parsing?\n3. Have you considered evaluating the model on other languages or datasets to further demonstrate its generalizability?\nAdditional Comments\nThe paper is well-written and provides a significant contribution to the field of CCG parsing. Addressing the weaknesses mentioned above could further enhance the impact and applicability of the proposed method."
+        }
+    ]
+}

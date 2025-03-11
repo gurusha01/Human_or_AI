@@ -1,0 +1,370 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "ed54a6c9-2b77-4437-9271-a1d0b3bc64c3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9937727451324463,
+                    "sentence": "This paper introduces a transition-based graph parser designed to handle the intricate representations of a semantico-cognitive annotation scheme, as exemplified by the UCCA corpora.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9892151951789856,
+                    "sentence": "The authors begin by outlining the key characteristics they believe a semantic-based annotation scheme should encompass: (i) being graph-based (allowing tokens/nodes to have multiple governors), (ii) incorporating non-terminal nodes (to represent complex structures such as coordinate phrases or multiword expressions), and (iii) supporting discontinuous elements (e.g., verbs with particles).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9891284108161926,
+                    "sentence": "Notably, these principles are not inherently tied to a semantic framework and could be applied to syntax or other representational layers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917417764663696,
+                    "sentence": "The authors situate their work within the broader context of semantic parsing, introduce UCCA as their annotation scheme of choice, and then present three sets of parsing experiments: (i) phrase-based parsing using the Stanford parser with a UCCA-to-constituency conversion, (ii) dependency parsing using a UCCA-to-dependency conversion, and (iii) their primary contribution\"\"experiments demonstrating the suitability of their transition-based graph parser for direct UCCA graph parsing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9178503155708313,
+                    "sentence": "While I found this work intriguing, I have several methodological and empirical concerns that need to be addressed before it can be considered for publication:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8287764191627502,
+                    "sentence": "The authors claim to be the first to propose a parser for a semantically-oriented scheme like UCCA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6614928245544434,
+                    "sentence": "While this is technically accurate, the structural and semantic characteristics of UCCA graphs (e.g., underspecified arguments and semantically-oriented labels like \"Process\" or \"State\") are not explicitly addressed in their transition sets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5794336199760437,
+                    "sentence": "Even the handling of remote edges could arguably be integrated into existing transitions by modifying the label set (e.g., using affixes).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9592071771621704,
+                    "sentence": "If the problem is framed as graph parsing, several works following the 2014\"\"2015 SemEval shared tasks (e.g., Almeida and Martins, 2014, 2015; Ribeyre et al., 2014, 2015) have proposed extensions to transition-based graph parsers or adaptations of higher-order models, which could potentially be applied to UCCA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9593398571014404,
+                    "sentence": "The authors' reliance on specific feature templates ties their model to UCCA, but these features appear less influential than simpler ones like unigram and count features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9544620513916016,
+                    "sentence": "Given the availability of these graph parsers [1, 2], I find it puzzling that they were not used as baselines or for comparative analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9273244142532349,
+                    "sentence": "Similarly, the phrase-based experiments using UParse could have been validated against another parser, such as the one proposed by Fernandez-Gonzalez and Martins (2015), which achieves LCFRS-like parsing performance comparable to UParse (note: the reference to UParse is missing in its first mention).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8780162334442139,
+                    "sentence": "Since UCCA offers a more abstract view of syntactico-semantic structures compared to most SDP treebanks, it would have been valuable to evaluate the parser using the same metrics as those employed in related shared tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.774398148059845,
+                    "sentence": "In the current landscape, where numerous systems, models, and datasets are competing, the lack of comparative baselines with other parsers and models undermines the overall contribution of this work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7256830930709839,
+                    "sentence": "Nevertheless, I find the paper interesting, and given the field's current transitional phase, I believe it warrants discussion at a conference like CoNLL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.73338782787323,
+                    "sentence": "Additional notes (unordered):",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8441037535667419,
+                    "sentence": "- Please introduce the term \"grounded semantic\" earlier in the paper (before page 2), as it is used prematurely without explanation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9153234362602234,
+                    "sentence": "- Why didn't you consider using a constituent-tree representation with rich node labels and propagated traces, followed by training/parsing with the Berkeley parser?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8821778297424316,
+                    "sentence": "This could have served as a strong baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991418719291687,
+                    "sentence": "- The conversion to surface dependency trees seems unnecessary, as it results in significant information loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991500973701477,
+                    "sentence": "A richer conversion, such as the one proposed by Schluter et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990313649177551,
+                    "sentence": "(2014, SemEval SDP), would have been more appropriate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986705183982849,
+                    "sentence": "- Could you elaborate on the statement \"UCCA graphs may contain implicit units that have no correspondent in the text\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992528557777405,
+                    "sentence": "Providing a reference or example would help clarify this point.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997931718826294,
+                    "sentence": "- You mention other representations like MRS and DRT, which raises the question of whether UCCA can model quantifier scope information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9292109608650208,
+                    "sentence": "This limitation makes UCCA comparable to other syntax-oriented schemes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7005723118782043,
+                    "sentence": "While UCCA is more abstract than DM and likely more underspecified than the semantic level of PCEDT, how informative is it in practice?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8616482019424438,
+                    "sentence": "How \"parsable\" is it, given the reported scores?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.909349262714386,
+                    "sentence": "An error analysis would have been helpful in addressing these questions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8615965247154236,
+                    "sentence": "- The three principles you propose could apply to a wide range of frameworks and seem somewhat ad hoc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.749683141708374,
+                    "sentence": "They would benefit from being placed within a broader and clearer introduction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6961215734481812,
+                    "sentence": "What is the primary argument of this paper?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5951697826385498,
+                    "sentence": "Is it advocating for a parser capable of handling UCCA, a model suitable for semantic analysis, or a semantic-oriented scheme that is parsable?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5025089979171753,
+                    "sentence": "The paper attempts to address all of these points in a dense manner, which risks being confusing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.14611195027828217,
+                    "sentence": "[1] http://www.corentinribeyre.fr/projects/view/DAGParser",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.04857443645596504,
+                    "sentence": "[2] https://github.com/andre-martins/TurboParser and https://github.com/andre-martins/TurboParser/tree/master/semeval2014_data",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.4355389046213882
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.6535213355143276
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.0022792978668507114
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a transition-based graph parser designed to handle the intricate representations of a semantico-cognitive annotation scheme, as exemplified by the UCCA corpora. The authors begin by outlining the key characteristics they believe a semantic-based annotation scheme should encompass: (i) being graph-based (allowing tokens/nodes to have multiple governors), (ii) incorporating non-terminal nodes (to represent complex structures such as coordinate phrases or multiword expressions), and (iii) supporting discontinuous elements (e.g., verbs with particles). Notably, these principles are not inherently tied to a semantic framework and could be applied to syntax or other representational layers. The authors situate their work within the broader context of semantic parsing, introduce UCCA as their annotation scheme of choice, and then present three sets of parsing experiments: (i) phrase-based parsing using the Stanford parser with a UCCA-to-constituency conversion, (ii) dependency parsing using a UCCA-to-dependency conversion, and (iii) their primary contribution\"\"experiments demonstrating the suitability of their transition-based graph parser for direct UCCA graph parsing.\nWhile I found this work intriguing, I have several methodological and empirical concerns that need to be addressed before it can be considered for publication:\nThe authors claim to be the first to propose a parser for a semantically-oriented scheme like UCCA. While this is technically accurate, the structural and semantic characteristics of UCCA graphs (e.g., underspecified arguments and semantically-oriented labels like \"Process\" or \"State\") are not explicitly addressed in their transition sets. Even the handling of remote edges could arguably be integrated into existing transitions by modifying the label set (e.g., using affixes). If the problem is framed as graph parsing, several works following the 2014\"\"2015 SemEval shared tasks (e.g., Almeida and Martins, 2014, 2015; Ribeyre et al., 2014, 2015) have proposed extensions to transition-based graph parsers or adaptations of higher-order models, which could potentially be applied to UCCA. The authors' reliance on specific feature templates ties their model to UCCA, but these features appear less influential than simpler ones like unigram and count features. Given the availability of these graph parsers [1, 2], I find it puzzling that they were not used as baselines or for comparative analysis. Similarly, the phrase-based experiments using UParse could have been validated against another parser, such as the one proposed by Fernandez-Gonzalez and Martins (2015), which achieves LCFRS-like parsing performance comparable to UParse (note: the reference to UParse is missing in its first mention).\nSince UCCA offers a more abstract view of syntactico-semantic structures compared to most SDP treebanks, it would have been valuable to evaluate the parser using the same metrics as those employed in related shared tasks. In the current landscape, where numerous systems, models, and datasets are competing, the lack of comparative baselines with other parsers and models undermines the overall contribution of this work. Nevertheless, I find the paper interesting, and given the field's current transitional phase, I believe it warrants discussion at a conference like CoNLL.\nAdditional notes (unordered):\n- Please introduce the term \"grounded semantic\" earlier in the paper (before page 2), as it is used prematurely without explanation.\n- Why didn't you consider using a constituent-tree representation with rich node labels and propagated traces, followed by training/parsing with the Berkeley parser? This could have served as a strong baseline.\n- The conversion to surface dependency trees seems unnecessary, as it results in significant information loss. A richer conversion, such as the one proposed by Schluter et al. (2014, SemEval SDP), would have been more appropriate.\n- Could you elaborate on the statement \"UCCA graphs may contain implicit units that have no correspondent in the text\"? Providing a reference or example would help clarify this point.\n- You mention other representations like MRS and DRT, which raises the question of whether UCCA can model quantifier scope information. This limitation makes UCCA comparable to other syntax-oriented schemes. While UCCA is more abstract than DM and likely more underspecified than the semantic level of PCEDT, how informative is it in practice? How \"parsable\" is it, given the reported scores? An error analysis would have been helpful in addressing these questions.\n- The three principles you propose could apply to a wide range of frameworks and seem somewhat ad hoc. They would benefit from being placed within a broader and clearer introduction. What is the primary argument of this paper? Is it advocating for a parser capable of handling UCCA, a model suitable for semantic analysis, or a semantic-oriented scheme that is parsable? The paper attempts to address all of these points in a dense manner, which risks being confusing.\n[1] http://www.corentinribeyre.fr/projects/view/DAGParser \n[2] https://github.com/andre-martins/TurboParser and https://github.com/andre-martins/TurboParser/tree/master/semeval2014_data"
+        }
+    ]
+}

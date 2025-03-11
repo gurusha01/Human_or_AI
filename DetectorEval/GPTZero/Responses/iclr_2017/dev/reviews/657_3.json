@@ -1,0 +1,289 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "7eb1975f-dcdd-486a-8ec0-3ea9d568f437",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.5159753561019897,
+                    "sentence": "This paper describes how to approximate the FastText approach such that its memory footprint is reduced by several orders of magnitude, while preserving its classification accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.447872132062912,
+                    "sentence": "The original FastText approach was based on a linear classifier on top of bag-of-words embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.478436678647995,
+                    "sentence": "This type of method is extremely fast to train and test, but the model size can be quite large.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4891396462917328,
+                    "sentence": "This paper focuses on approximating the original approach with lossy compression techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3660754859447479,
+                    "sentence": "Namely, the embeddings and classifier matrices A and B are compressed with Product Quantization, and an aggressive dictionary pruning is carried out.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.522144615650177,
+                    "sentence": "Experiments on various datasets (either with small or large number of classes) are conducted to tune the parameters and demonstrate the effectiveness of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5447566509246826,
+                    "sentence": "With a negligible loss in classification accuracy, an important reduction in term of model size (memory footprint) can be achieved, in the order of 100~1000 folds compared to the original size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6992881298065186,
+                    "sentence": "The paper is well written overall.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7416021823883057,
+                    "sentence": "The goal is clearly defined and well carried out, as well as the experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7589035034179688,
+                    "sentence": "Different options for compressing the model data are evaluated and compared (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7861079573631287,
+                    "sentence": "PQ vs LSH), which is also interesting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8430471420288086,
+                    "sentence": "Nevertheless the paper does not propose by itself any novel idea for text classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7921501398086548,
+                    "sentence": "It just focuses on adapting existing lossy compression techniques, which is not necessarily a problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8662841320037842,
+                    "sentence": "Specifically, it introduces:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7255056500434875,
+                    "sentence": "- a straightforward variant of PQ for unnormalized vectors,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011591277085244656,
+                    "sentence": "- dictionary pruning is cast as a set covering problem (which is NP-hard), but a greedy approach is shown to yield excellent results nonetheless,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010395432822406292,
+                    "sentence": "- hashing tricks and bloom filter are simply borrowed from previous papers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006391338538378477,
+                    "sentence": "These techniques are quite generic and could as well be used in other works.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007808619178831577,
+                    "sentence": "Here are some minor problems with the paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011869032867252827,
+                    "sentence": "- it is not made clear how the full model size is computed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0076935128308832645,
+                    "sentence": "What is exactly in the model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010900449939072132,
+                    "sentence": "Which proportion of the full size do the A and B matrices, the dictionary, and the rest, account for?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010810229927301407,
+                    "sentence": "It is hard to follow where is the size bottleneck, which also seems to depend on the target application (i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.024180283769965172,
+                    "sentence": "small or large number of test classes).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.017176197841763496,
+                    "sentence": "It would have been nice to provide a formula to calculate the total model size as a function of all parameters (k,b for PQ and K for dictionary, number of classes).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01042848825454712,
+                    "sentence": "- some parts lack clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027414996176958084,
+                    "sentence": "For instance, the greedy approach to prune the dictionary is exposed in less than 4 lines (top of page 5), though it is far from being straightforward.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027855409309267998,
+                    "sentence": "Likewise, it is not clear why the binary search used for the hashing trick would introduce an overhead of a few hundreds of KB.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03704139217734337,
+                    "sentence": "Overall this looks like a solid work, but with potentially limited impact research-wise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.0010573188656143365
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.22790697674418606,
+            "class_probabilities": {
+                "human": 0.772093023255814,
+                "ai": 0.22790697674418606,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.772093023255814,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.22790697674418606,
+                    "human": 0.772093023255814,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper describes how to approximate the FastText approach such that its memory footprint is reduced by several orders of magnitude, while preserving its classification accuracy. The original FastText approach was based on a linear classifier on top of bag-of-words embeddings. This type of method is extremely fast to train and test, but the model size can be quite large.\nThis paper focuses on approximating the original approach with lossy compression techniques. Namely, the embeddings and classifier matrices A and B are compressed with Product Quantization, and an aggressive dictionary pruning is carried out. Experiments on various datasets (either with small or large number of classes) are conducted to tune the parameters and demonstrate the effectiveness of the approach. With a negligible loss in classification accuracy, an important reduction in term of model size (memory footprint) can be achieved, in the order of 100~1000 folds compared to the original size.\nThe paper is well written overall. The goal is clearly defined and well carried out, as well as the experiments. Different options for compressing the model data are evaluated and compared (e.g. PQ vs LSH), which is also interesting. Nevertheless the paper does not propose by itself any novel idea for text classification. It just focuses on adapting existing lossy compression techniques, which is not necessarily a problem. Specifically, it introduces:\n - a straightforward variant of PQ for unnormalized vectors,\n - dictionary pruning is cast as a set covering problem (which is NP-hard), but a greedy approach is shown to yield excellent results nonetheless,\n - hashing tricks and bloom filter are simply borrowed from previous papers.\nThese techniques are quite generic and could as well be used in other works. \nHere are some minor problems with the paper:\n - it is not made clear how the full model size is computed. What is exactly in the model? Which proportion of the full size do the A and B matrices, the dictionary, and the rest, account for? It is hard to follow where is the size bottleneck, which also seems to depend on the target application (i.e. small or large number of test classes). It would have been nice to provide a formula to calculate the total model size as a function of all parameters (k,b for PQ and K for dictionary, number of classes).\n \n - some parts lack clarity. For instance, the greedy approach to prune the dictionary is exposed in less than 4 lines (top of page 5), though it is far from being straightforward. Likewise, it is not clear why the binary search used for the hashing trick would introduce an overhead of a few hundreds of KB.\n \nOverall this looks like a solid work, but with potentially limited impact research-wise."
+        }
+    ]
+}

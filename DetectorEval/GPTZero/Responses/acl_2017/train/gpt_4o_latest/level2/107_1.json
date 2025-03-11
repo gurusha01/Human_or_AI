@@ -1,0 +1,402 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "eb234ef7-dd76-48bd-b606-3e8d6a846739",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "This paper addresses the challenge of building Named Entity Recognition (NER) systems for new languages without requiring human-annotated data, a critical bottleneck in multilingual information extraction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "The authors propose two weakly supervised cross-lingual NER approaches: (1) Annotation Projection, which uses alignment models to project NER tags from a source language to a target language and introduces a heuristic data selection scheme to improve the quality of weakly labeled data; and (2) Representation Projection, which maps word embeddings from a target language into the source language's embedding space, enabling the direct application of a source-language NER system.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "Additionally, the authors design two co-decoding schemes to combine the outputs of these approaches, achieving higher accuracy than either method alone.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "The proposed methods are evaluated on in-house and CoNLL datasets, demonstrating significant improvements over state-of-the-art cross-lingual NER systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "The paper's main contributions are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "1. A heuristic data selection scheme for improving annotation projection accuracy in noisy, weakly labeled data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "2. A novel representation projection approach using cross-lingual word embedding mappings for direct NER model transfer.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "3. Two co-decoding schemes (confidence-based and rank-based) that effectively combine the outputs of the two approaches, outperforming existing cross-lingual NER methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "1. Practical Relevance: The paper tackles a critical problem in multilingual NLP, offering a solution that eliminates the need for expensive human annotation in target languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "This is particularly valuable for low-resource languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "2. Novelty: The proposed representation projection approach and co-decoding schemes are innovative and demonstrate clear improvements over prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The rank-based co-decoding scheme, in particular, effectively balances precision and recall.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "3. Empirical Rigor: The paper provides extensive evaluations on both in-house and CoNLL datasets, comparing the proposed methods against strong baselines and state-of-the-art approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "The results consistently show improvements, particularly for languages with low alignment accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "4. Scalability: The representation projection approach is flexible and scalable, as it does not require re-training for new languages, making it suitable for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996037483215332,
+                    "sentence": "1. Limited Analysis of Failure Cases: While the paper demonstrates strong results, it does not provide sufficient analysis of failure cases or the specific challenges faced by the proposed methods in certain languages (e.g., why representation projection underperforms for some datasets like CoNLL German).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998241066932678,
+                    "sentence": "2. Dependency on Alignment Quality: The annotation projection approach heavily relies on alignment accuracy, which varies significantly across languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996903538703918,
+                    "sentence": "Although the heuristic data selection scheme mitigates this issue, the paper could explore alternative strategies for low-alignment scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998430609703064,
+                    "sentence": "3. Evaluation Scope: The experiments focus primarily on newswire datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996780157089233,
+                    "sentence": "It would strengthen the paper to evaluate the methods on more diverse domains (e.g., social media or conversational text) to assess generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998874068260193,
+                    "sentence": "4. Clarity of Co-Decoding Schemes: While the co-decoding schemes are effective, their descriptions are somewhat dense and could benefit from clearer explanations or visual illustrations to aid understanding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990022778511047,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995352029800415,
+                    "sentence": "1. How does the performance of the proposed methods vary across different domains beyond newswire text?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992471933364868,
+                    "sentence": "2. Could the representation projection approach benefit from incorporating additional linguistic features (e.g., POS tags) to improve recall?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994614720344543,
+                    "sentence": "3. How sensitive are the co-decoding schemes to the confidence thresholds or ranking heuristics used?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977644681930542,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983071684837341,
+                    "sentence": "The paper presents a significant contribution to cross-lingual NER, addressing a critical challenge with innovative and empirically validated methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975444078445435,
+                    "sentence": "Despite minor weaknesses in analysis and scope, the strengths far outweigh the limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948873519897461,
+                    "sentence": "I recommend acceptance with minor revisions to address the clarity of co-decoding schemes and provide additional analysis of limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper addresses the challenge of building Named Entity Recognition (NER) systems for new languages without requiring human-annotated data, a critical bottleneck in multilingual information extraction. The authors propose two weakly supervised cross-lingual NER approaches: (1) Annotation Projection, which uses alignment models to project NER tags from a source language to a target language and introduces a heuristic data selection scheme to improve the quality of weakly labeled data; and (2) Representation Projection, which maps word embeddings from a target language into the source language's embedding space, enabling the direct application of a source-language NER system. Additionally, the authors design two co-decoding schemes to combine the outputs of these approaches, achieving higher accuracy than either method alone. The proposed methods are evaluated on in-house and CoNLL datasets, demonstrating significant improvements over state-of-the-art cross-lingual NER systems.\nThe paper's main contributions are:\n1. A heuristic data selection scheme for improving annotation projection accuracy in noisy, weakly labeled data.\n2. A novel representation projection approach using cross-lingual word embedding mappings for direct NER model transfer.\n3. Two co-decoding schemes (confidence-based and rank-based) that effectively combine the outputs of the two approaches, outperforming existing cross-lingual NER methods.\nStrengths\n1. Practical Relevance: The paper tackles a critical problem in multilingual NLP, offering a solution that eliminates the need for expensive human annotation in target languages. This is particularly valuable for low-resource languages.\n2. Novelty: The proposed representation projection approach and co-decoding schemes are innovative and demonstrate clear improvements over prior work. The rank-based co-decoding scheme, in particular, effectively balances precision and recall.\n3. Empirical Rigor: The paper provides extensive evaluations on both in-house and CoNLL datasets, comparing the proposed methods against strong baselines and state-of-the-art approaches. The results consistently show improvements, particularly for languages with low alignment accuracy.\n4. Scalability: The representation projection approach is flexible and scalable, as it does not require re-training for new languages, making it suitable for real-world applications.\nWeaknesses\n1. Limited Analysis of Failure Cases: While the paper demonstrates strong results, it does not provide sufficient analysis of failure cases or the specific challenges faced by the proposed methods in certain languages (e.g., why representation projection underperforms for some datasets like CoNLL German).\n2. Dependency on Alignment Quality: The annotation projection approach heavily relies on alignment accuracy, which varies significantly across languages. Although the heuristic data selection scheme mitigates this issue, the paper could explore alternative strategies for low-alignment scenarios.\n3. Evaluation Scope: The experiments focus primarily on newswire datasets. It would strengthen the paper to evaluate the methods on more diverse domains (e.g., social media or conversational text) to assess generalizability.\n4. Clarity of Co-Decoding Schemes: While the co-decoding schemes are effective, their descriptions are somewhat dense and could benefit from clearer explanations or visual illustrations to aid understanding.\nQuestions to Authors\n1. How does the performance of the proposed methods vary across different domains beyond newswire text?\n2. Could the representation projection approach benefit from incorporating additional linguistic features (e.g., POS tags) to improve recall?\n3. How sensitive are the co-decoding schemes to the confidence thresholds or ranking heuristics used?\nRecommendation\nThe paper presents a significant contribution to cross-lingual NER, addressing a critical challenge with innovative and empirically validated methods. Despite minor weaknesses in analysis and scope, the strengths far outweigh the limitations. I recommend acceptance with minor revisions to address the clarity of co-decoding schemes and provide additional analysis of limitations."
+        }
+    ]
+}

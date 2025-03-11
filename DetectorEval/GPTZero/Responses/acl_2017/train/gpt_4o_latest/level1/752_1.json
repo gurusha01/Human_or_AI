@@ -1,0 +1,402 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "20bee3ba-c68b-4b3d-bbdc-c8a01d1a419e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999880790710449,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "This paper presents a novel approach to Abstract Meaning Representation (AMR) parsing and realization using sequence-to-sequence (seq2seq) models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999947547912598,
+                    "sentence": "The authors tackle the challenges of data sparsity and graph-to-sequence linearization by introducing a carefully designed preprocessing pipeline and a paired training procedure that leverages millions of unlabeled sentences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "The key contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999921321868896,
+                    "sentence": "1. A novel paired training procedure that iteratively improves AMR parsing and realization by self-training on large external corpora, achieving competitive results in parsing (61.9 SMATCH) and state-of-the-art performance in realization (32.3 BLEU).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999921321868896,
+                    "sentence": "2. A robust preprocessing pipeline that includes anonymization, named entity clustering, and scope marking, which significantly reduces sparsity and improves model performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999909996986389,
+                    "sentence": "3. Extensive analysis demonstrating that seq2seq models are largely agnostic to graph linearization order, providing evidence of their robustness to artifacts introduced during graph-to-sequence conversion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "1. State-of-the-Art Realization Performance: The proposed method achieves a significant improvement of over 5 BLEU points in AMR realization compared to prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "This demonstrates the effectiveness of the paired training procedure and preprocessing pipeline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "2. Innovative Paired Training Procedure: The iterative self-training approach, which combines unlabeled data with fine-tuning on annotated data, is a notable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "It effectively addresses data sparsity and provides a scalable solution for low-resource tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "3. Comprehensive Ablation Studies: The authors conduct detailed ablation studies to quantify the impact of preprocessing steps (e.g., anonymization, scope markers) and demonstrate their necessity for both parsing and realization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "4. Robustness to Linearization Orders: The finding that seq2seq models are agnostic to linearization order is significant, as it simplifies the preprocessing pipeline and highlights the flexibility of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943971633911,
+                    "sentence": "5. Qualitative Analysis: The inclusion of error analysis and qualitative examples provides valuable insights into the strengths and limitations of the model, such as its ability to handle long-range dependencies and its challenges with coverage and disfluency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955892562866,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999893307685852,
+                    "sentence": "1. Limited Parsing Performance: While the parsing results are competitive (61.9 SMATCH), they still lag behind resource-heavy approaches like CAMR and SBMT.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "This suggests that the proposed method may not fully exploit the semantic richness of AMR graphs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999160885810852,
+                    "sentence": "2. Reliance on External Corpora: The method heavily depends on large external corpora (e.g., Gigaword) for self-training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995454549789429,
+                    "sentence": "This reliance may limit the applicability of the approach in truly low-resource settings where such corpora are unavailable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978792667388916,
+                    "sentence": "3. Coverage and Fluency Issues: The qualitative analysis reveals significant coverage gaps and disfluencies in the realized sentences, particularly for complex or deeply nested AMR graphs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989176392555237,
+                    "sentence": "These issues may limit the usability of the model in real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997570276260376,
+                    "sentence": "4. Human-Authored AMR Bias: The paper notes that human-authored AMR annotations leak information about realization order, which may inflate the reported performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967556595802307,
+                    "sentence": "A more rigorous evaluation using randomized or stochastic orders would strengthen the claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980481266975403,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991384744644165,
+                    "sentence": "1. Can the paired training procedure be adapted for truly low-resource languages or domains where external corpora like Gigaword are unavailable?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980311989784241,
+                    "sentence": "2. How does the model handle out-of-vocabulary named entities or unseen graph structures during inference?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99760901927948,
+                    "sentence": "3. Could the authors provide more details on the computational cost of the paired training procedure, particularly for scaling to larger datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993384480476379,
+                    "sentence": "Overall Assessment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987515807151794,
+                    "sentence": "This paper makes significant contributions to AMR parsing and realization by introducing a novel training procedure and demonstrating the robustness of seq2seq models to graph linearization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998974204063416,
+                    "sentence": "While the approach achieves state-of-the-art realization performance, its reliance on external corpora and limited parsing results are notable drawbacks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995982050895691,
+                    "sentence": "Nonetheless, the paper is a strong candidate for acceptance due to its methodological innovation and thorough analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9961636828644501,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9961636828644501,
+                "mixed": 0.003836317135549872
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9961636828644501,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9961636828644501,
+                    "human": 0,
+                    "mixed": 0.003836317135549872
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions \nThis paper presents a novel approach to Abstract Meaning Representation (AMR) parsing and realization using sequence-to-sequence (seq2seq) models. The authors tackle the challenges of data sparsity and graph-to-sequence linearization by introducing a carefully designed preprocessing pipeline and a paired training procedure that leverages millions of unlabeled sentences. The key contributions of the paper are: \n1. A novel paired training procedure that iteratively improves AMR parsing and realization by self-training on large external corpora, achieving competitive results in parsing (61.9 SMATCH) and state-of-the-art performance in realization (32.3 BLEU). \n2. A robust preprocessing pipeline that includes anonymization, named entity clustering, and scope marking, which significantly reduces sparsity and improves model performance. \n3. Extensive analysis demonstrating that seq2seq models are largely agnostic to graph linearization order, providing evidence of their robustness to artifacts introduced during graph-to-sequence conversion.\nStrengths \n1. State-of-the-Art Realization Performance: The proposed method achieves a significant improvement of over 5 BLEU points in AMR realization compared to prior work. This demonstrates the effectiveness of the paired training procedure and preprocessing pipeline. \n2. Innovative Paired Training Procedure: The iterative self-training approach, which combines unlabeled data with fine-tuning on annotated data, is a notable contribution. It effectively addresses data sparsity and provides a scalable solution for low-resource tasks. \n3. Comprehensive Ablation Studies: The authors conduct detailed ablation studies to quantify the impact of preprocessing steps (e.g., anonymization, scope markers) and demonstrate their necessity for both parsing and realization. \n4. Robustness to Linearization Orders: The finding that seq2seq models are agnostic to linearization order is significant, as it simplifies the preprocessing pipeline and highlights the flexibility of the proposed approach. \n5. Qualitative Analysis: The inclusion of error analysis and qualitative examples provides valuable insights into the strengths and limitations of the model, such as its ability to handle long-range dependencies and its challenges with coverage and disfluency.\nWeaknesses \n1. Limited Parsing Performance: While the parsing results are competitive (61.9 SMATCH), they still lag behind resource-heavy approaches like CAMR and SBMT. This suggests that the proposed method may not fully exploit the semantic richness of AMR graphs. \n2. Reliance on External Corpora: The method heavily depends on large external corpora (e.g., Gigaword) for self-training. This reliance may limit the applicability of the approach in truly low-resource settings where such corpora are unavailable. \n3. Coverage and Fluency Issues: The qualitative analysis reveals significant coverage gaps and disfluencies in the realized sentences, particularly for complex or deeply nested AMR graphs. These issues may limit the usability of the model in real-world applications. \n4. Human-Authored AMR Bias: The paper notes that human-authored AMR annotations leak information about realization order, which may inflate the reported performance. A more rigorous evaluation using randomized or stochastic orders would strengthen the claims. \nQuestions to Authors \n1. Can the paired training procedure be adapted for truly low-resource languages or domains where external corpora like Gigaword are unavailable? \n2. How does the model handle out-of-vocabulary named entities or unseen graph structures during inference? \n3. Could the authors provide more details on the computational cost of the paired training procedure, particularly for scaling to larger datasets? \nOverall Assessment \nThis paper makes significant contributions to AMR parsing and realization by introducing a novel training procedure and demonstrating the robustness of seq2seq models to graph linearization. While the approach achieves state-of-the-art realization performance, its reliance on external corpora and limited parsing results are notable drawbacks. Nonetheless, the paper is a strong candidate for acceptance due to its methodological innovation and thorough analysis."
+        }
+    ]
+}

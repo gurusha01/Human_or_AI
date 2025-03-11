@@ -1,0 +1,488 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2244e971-7d94-4047-806f-0d908d161906",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9935641288757324,
+                    "sentence": "The paper introduces a method for estimating the class prior using a combination of labeled samples and noisy positive samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9909849762916565,
+                    "sentence": "This extends an existing approach that estimates the prior when positive samples are clean.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928726553916931,
+                    "sentence": "Experimental results demonstrate strong performance compared to some existing methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972434043884277,
+                    "sentence": "UPDATE AFTER REBUTTAL: Regarding the main result emphasized in the rebuttal: while it is indeed interesting to relate the observed \\( P(y\"x) \\) to the true one, this connection was already established in [1] using similar ideas, albeit without noise in the positives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9964978694915771,
+                    "sentence": "Consequently, the result here did not strike me as particularly surprising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960492849349976,
+                    "sentence": "As noted in my initial review, it is certainly valuable to document these findings in the noisy positive setting, but in my view, the contribution falls below the threshold for novelty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992680549621582,
+                    "sentence": "Regarding the discussion on related work involving asymmetric noise: my primary point is that from Lemma 1 and Proposition 3 (part 2) of (Scott et al., 2013), one can derive a method to relate the output of a \"mixture proportion estimator\" (MPE) to the mixing weights under general asymmetric positive and negative label noise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926406741142273,
+                    "sentence": "Based on my understanding, this implies that the estimator proposed by Sanderson & Scott could be adapted for the noisy positive scenario.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9890674352645874,
+                    "sentence": "While the authors correctly point out that Sanderson & Scott focused on multiclass positive-unlabeled learning without noise in the positives, their estimator appears applicable to noisy positives as well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934371113777161,
+                    "sentence": "I believe the same holds true for the estimator proposed by Ramaswamy et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997226893901825,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9899613857269287,
+                    "sentence": "Learning from positive and unlabeled data is a well-studied problem, and the paper makes a reasonable case for addressing the scenario where positive samples are noisy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917457103729248,
+                    "sentence": "Existing methods in the PU literature for class prior estimation are not directly applicable in this setting, making the proposed approach relevant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9823317527770996,
+                    "sentence": "The paper is thus well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965364933013916,
+                    "sentence": "From a technical perspective, the paper provides a thorough theoretical analysis of the identifiability challenges inherent to this problem, which is commendable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997187614440918,
+                    "sentence": "This analysis is used to derive a canonical form for estimation, leading to a practical algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977052807807922,
+                    "sentence": "The core idea builds on the AlphaMax framework (Jain et al., 2016), formulating the estimation problem as determining the mixing weight of a specific mixture model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967049360275269,
+                    "sentence": "The estimation is performed on the outputs of any probabilistically consistent scorer, ensuring scalability without suffering from the curse of dimensionality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9957976341247559,
+                    "sentence": "Overall, the technical content appears sound.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972341060638428,
+                    "sentence": "However, I have two main concerns regarding the novelty of the work:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972334504127502,
+                    "sentence": "1. Similarity to prior work: The analysis in Section 3 closely parallels that of (Jain et al., 2016), with natural extensions to account for noisy positives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974827170372009,
+                    "sentence": "Unless I missed something, the proofs in this section do not seem to introduce fundamentally new insights or techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961612820625305,
+                    "sentence": "The two key messages from (Jain et al., 2016) are essentially translated: (i) working with all possible distributions leads to non-identifiability, and (ii) restricting to non-mixture distributions resolves this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995831310749054,
+                    "sentence": "The use of two AlphaMax calls for estimation and the mixture modeling approach appear to follow directly from the original paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9932926893234253,
+                    "sentence": "Furthermore, the use of univariate transformations in Section 4 seems particularly similar to (Jain et al., 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994805634021759,
+                    "sentence": "While the paper claims that the latter was limited to transformations resulting in calibrated probabilities, Theorem 9 of (Jain et al., 2016) appears to allow for arbitrary transformations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944173097610474,
+                    "sentence": "While it is valuable to extend these ideas to the noisy PU setting, this raises concerns about the level of novelty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950500130653381,
+                    "sentence": "2. Relation to asymmetric label noise: The distinction between the scenario considered here and the general asymmetric label noise setting warrants further discussion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965303540229797,
+                    "sentence": "Specifically, it is unclear why the analysis is not conducted in the general case, rather than assuming that one of the observed distributions corresponds to the underlying marginal (i.e., why the general mutually contaminated framework of Scott et al., 2013 is not used).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996086835861206,
+                    "sentence": "Are there reasons why analogues of Theorem 1 would not hold in the general case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958401322364807,
+                    "sentence": "Additionally, some results in the paper appear to have precedents in Scott et al., 2013, albeit framed differently.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9918193221092224,
+                    "sentence": "Moreover, there are existing methods for the general asymmetric noise setting that could potentially be applied to the scenario considered here.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970631003379822,
+                    "sentence": "For example, the estimators proposed by Sanderson & Scott (AISTATS 2014), Liu & Tao (PAMI 2016), and Ramaswamy et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942463636398315,
+                    "sentence": "(ICML 2016) seem relevant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9908179640769958,
+                    "sentence": "These methods should be compared against the proposed approach, particularly since some (e.g., Sanderson & Scott) do not require calibrated probabilities and instead rely on probabilistically consistent rankers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928554892539978,
+                    "sentence": "In summary, while the paper provides a reasonable extension of (Jain et al., 2016) to the noisy PU setting, the novelty appears to be a weak point.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988076090812683,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993946373462677,
+                    "sentence": "Additional Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951618313789368,
+                    "sentence": "- Section 3 mentions \"a few missing results needed for our approach\"\"\"it would be helpful to explicitly identify these.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996944069862366,
+                    "sentence": "- The notation \\( a^\\lambda_\\mu \\) is somewhat confusing; consider using \\( a(\\lambda, \\mu) \\) instead.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998226165771484,
+                    "sentence": "- The introduction of \\( \\Pi^{res} \\) could be deferred until after Lemma 1 for clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999280571937561,
+                    "sentence": "- Consider swapping statements 4 and 5 in Lemma 1, as the proof seems to follow this order.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999872624874115,
+                    "sentence": "- In the proof of Lemma 1, avoid presenting all equations inline to improve readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994953274726868,
+                    "sentence": "- Typo: \"Theorem 1 (identifiablity)\" should be corrected to \"identifiability.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991623163223267,
+                    "sentence": "- Section 4 could be more explicit about the proposed algorithm, clarifying that it involves mixture modeling on classifier outputs for positive and unlabeled samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8935422897338867,
+                    "sentence": "- Provide more detail on the probabilistic model in Figure 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8509597182273865,
+                    "sentence": "Is it an assumed generative model for the data, or a framework for processing the data?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8677933216094971,
+                    "sentence": "For instance, if one can sample from the unlabeled and noisy positive distributions, what role does Figure 1 play?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9207327365875244,
+                    "sentence": "- Is Equation (12) related to the label probability function result (Proposition 1) in Ward et al., \"Presence-only data and the EM algorithm\" (Biometrics, 2009)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a method for estimating the class prior using a combination of labeled samples and noisy positive samples. This extends an existing approach that estimates the prior when positive samples are clean. Experimental results demonstrate strong performance compared to some existing methods. \nUPDATE AFTER REBUTTAL: Regarding the main result emphasized in the rebuttal: while it is indeed interesting to relate the observed \\( P(y\"x) \\) to the true one, this connection was already established in [1] using similar ideas, albeit without noise in the positives. Consequently, the result here did not strike me as particularly surprising. As noted in my initial review, it is certainly valuable to document these findings in the noisy positive setting, but in my view, the contribution falls below the threshold for novelty. \nRegarding the discussion on related work involving asymmetric noise: my primary point is that from Lemma 1 and Proposition 3 (part 2) of (Scott et al., 2013), one can derive a method to relate the output of a \"mixture proportion estimator\" (MPE) to the mixing weights under general asymmetric positive and negative label noise. Based on my understanding, this implies that the estimator proposed by Sanderson & Scott could be adapted for the noisy positive scenario. While the authors correctly point out that Sanderson & Scott focused on multiclass positive-unlabeled learning without noise in the positives, their estimator appears applicable to noisy positives as well. I believe the same holds true for the estimator proposed by Ramaswamy et al.\n---\nLearning from positive and unlabeled data is a well-studied problem, and the paper makes a reasonable case for addressing the scenario where positive samples are noisy. Existing methods in the PU literature for class prior estimation are not directly applicable in this setting, making the proposed approach relevant. The paper is thus well-motivated. \nFrom a technical perspective, the paper provides a thorough theoretical analysis of the identifiability challenges inherent to this problem, which is commendable. This analysis is used to derive a canonical form for estimation, leading to a practical algorithm. The core idea builds on the AlphaMax framework (Jain et al., 2016), formulating the estimation problem as determining the mixing weight of a specific mixture model. The estimation is performed on the outputs of any probabilistically consistent scorer, ensuring scalability without suffering from the curse of dimensionality. Overall, the technical content appears sound.\nHowever, I have two main concerns regarding the novelty of the work:\n1. Similarity to prior work: The analysis in Section 3 closely parallels that of (Jain et al., 2016), with natural extensions to account for noisy positives. Unless I missed something, the proofs in this section do not seem to introduce fundamentally new insights or techniques. The two key messages from (Jain et al., 2016) are essentially translated: (i) working with all possible distributions leads to non-identifiability, and (ii) restricting to non-mixture distributions resolves this issue. The use of two AlphaMax calls for estimation and the mixture modeling approach appear to follow directly from the original paper. Furthermore, the use of univariate transformations in Section 4 seems particularly similar to (Jain et al., 2016). While the paper claims that the latter was limited to transformations resulting in calibrated probabilities, Theorem 9 of (Jain et al., 2016) appears to allow for arbitrary transformations. While it is valuable to extend these ideas to the noisy PU setting, this raises concerns about the level of novelty.\n2. Relation to asymmetric label noise: The distinction between the scenario considered here and the general asymmetric label noise setting warrants further discussion. Specifically, it is unclear why the analysis is not conducted in the general case, rather than assuming that one of the observed distributions corresponds to the underlying marginal (i.e., why the general mutually contaminated framework of Scott et al., 2013 is not used). Are there reasons why analogues of Theorem 1 would not hold in the general case? Additionally, some results in the paper appear to have precedents in Scott et al., 2013, albeit framed differently. Moreover, there are existing methods for the general asymmetric noise setting that could potentially be applied to the scenario considered here. For example, the estimators proposed by Sanderson & Scott (AISTATS 2014), Liu & Tao (PAMI 2016), and Ramaswamy et al. (ICML 2016) seem relevant. These methods should be compared against the proposed approach, particularly since some (e.g., Sanderson & Scott) do not require calibrated probabilities and instead rely on probabilistically consistent rankers.\nIn summary, while the paper provides a reasonable extension of (Jain et al., 2016) to the noisy PU setting, the novelty appears to be a weak point.\n---\nAdditional Comments:\n- Section 3 mentions \"a few missing results needed for our approach\"\"\"it would be helpful to explicitly identify these.\n- The notation \\( a^\\lambda_\\mu \\) is somewhat confusing; consider using \\( a(\\lambda, \\mu) \\) instead.\n- The introduction of \\( \\Pi^{res} \\) could be deferred until after Lemma 1 for clarity.\n- Consider swapping statements 4 and 5 in Lemma 1, as the proof seems to follow this order.\n- In the proof of Lemma 1, avoid presenting all equations inline to improve readability.\n- Typo: \"Theorem 1 (identifiablity)\" should be corrected to \"identifiability.\"\n- Section 4 could be more explicit about the proposed algorithm, clarifying that it involves mixture modeling on classifier outputs for positive and unlabeled samples.\n- Provide more detail on the probabilistic model in Figure 1. Is it an assumed generative model for the data, or a framework for processing the data? For instance, if one can sample from the unlabeled and noisy positive distributions, what role does Figure 1 play?\n- Is Equation (12) related to the label probability function result (Proposition 1) in Ward et al., \"Presence-only data and the EM algorithm\" (Biometrics, 2009)?"
+        }
+    ]
+}

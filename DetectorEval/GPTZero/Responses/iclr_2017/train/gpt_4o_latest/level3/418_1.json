@@ -1,0 +1,419 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2b296dea-efaf-4701-9593-56a8a9695e77",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999775886535645,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999847412109375,
+                    "sentence": "Summary of Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "The paper introduces a novel method for training Generative Adversarial Networks (GANs) by unrolling the inner optimization of the discriminator in the min-max game and treating it as a computational graph.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "This approach aims to stabilize GAN training and address common issues such as mode collapse and oscillatory dynamics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "The authors provide clear explanations and strong theoretical justifications for their method, demonstrating its potential to improve mode coverage and diversity in generated samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999931454658508,
+                    "sentence": "Experiments on synthetic and real datasets illustrate the method's effectiveness in stabilizing training and reducing mode collapse, particularly in challenging scenarios like recurrent generator architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "The paper also explores the trade-off between computational cost and stability by varying the number of unrolling steps.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999870657920837,
+                    "sentence": "Decision: Reject",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999796152114868,
+                    "sentence": "While the paper presents an interesting and well-motivated approach, it falls short in its experimental rigor and evaluation metrics, which are critical for assessing the practical impact of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999760389328003,
+                    "sentence": "The lack of convincing quantitative results and reliance on suboptimal metrics weaken the overall contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999558329582214,
+                    "sentence": "Supporting Arguments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999443888664246,
+                    "sentence": "1. Novelty and Motivation: The unrolling approach is novel in the context of GANs and is well-motivated, building on prior work in differentiable optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999173283576965,
+                    "sentence": "However, similar ideas have been explored in non-GAN contexts, which slightly diminishes the originality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999753832817078,
+                    "sentence": "2. Experimental Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999940037727356,
+                    "sentence": "- The first experiment (finding z for training examples) is criticized as tangential to the core problem of diversity or mode-dropping.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999598264694214,
+                    "sentence": "It primarily reflects smoother optimization rather than meaningful improvements in GAN performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999780654907227,
+                    "sentence": "- The second experiment (mean pairwise distance) uses pixel-space distances, which can favor models generating low-quality or \"garbage\" samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999739527702332,
+                    "sentence": "This metric is not a reliable indicator of diversity or sample quality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999815225601196,
+                    "sentence": "- The paper lacks standard quantitative metrics such as Inception Score or FrÃ©chet Inception Distance (FID), which are widely used to evaluate GANs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999569058418274,
+                    "sentence": "These metrics would provide a sanity check for the quality of generated samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999747276306152,
+                    "sentence": "- The authors do not test their method on the tri-MNIST dataset, which could serve as a better benchmark for mode coverage and diversity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999603629112244,
+                    "sentence": "3. Computational Cost: The method introduces significant computational overhead, which scales linearly with the number of unrolling steps.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999642968177795,
+                    "sentence": "While the authors acknowledge this trade-off, they do not provide sufficient analysis of the practical feasibility of their approach in large-scale settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999315738677979,
+                    "sentence": "Suggestions for Improvement",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998241066932678,
+                    "sentence": "1. Additional Quantitative Metrics: Incorporate standard metrics like Inception Score, FID, or semi-supervised learning (SSL) performance to provide a more comprehensive evaluation of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999916136264801,
+                    "sentence": "2. Tri-MNIST Experiment: Test the method on the tri-MNIST dataset to better demonstrate its ability to cover diverse modes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999222755432129,
+                    "sentence": "3. Ablation Studies: Perform ablation studies to isolate the impact of unrolling steps and the second gradient term on performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999569058418274,
+                    "sentence": "4. Computational Efficiency: Explore ways to reduce the computational cost of unrolling, such as approximations or partial unrolling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999111890792847,
+                    "sentence": "5. Broader Comparisons: Compare the proposed method against other state-of-the-art techniques for stabilizing GAN training, such as spectral normalization or Wasserstein GANs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996148943901062,
+                    "sentence": "Questions for Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994966387748718,
+                    "sentence": "1. How does the method perform on larger and more complex datasets, such as ImageNet or CelebA-HQ?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993826746940613,
+                    "sentence": "2. Can the authors provide a detailed analysis of the trade-off between computational cost and performance for different numbers of unrolling steps?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993495345115662,
+                    "sentence": "3. How does the method compare to other stabilization techniques in terms of both performance and computational efficiency?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984387159347534,
+                    "sentence": "In conclusion, while the paper introduces a promising approach, the lack of rigorous and convincing experimental validation prevents it from making a strong case for acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979225993156433,
+                    "sentence": "Addressing the outlined weaknesses could significantly strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9997862822885396,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997862822885396,
+                "mixed": 0.00021371771146045916
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997862822885396,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997862822885396,
+                    "human": 0,
+                    "mixed": 0.00021371771146045916
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary of Contributions\nThe paper introduces a novel method for training Generative Adversarial Networks (GANs) by unrolling the inner optimization of the discriminator in the min-max game and treating it as a computational graph. This approach aims to stabilize GAN training and address common issues such as mode collapse and oscillatory dynamics. The authors provide clear explanations and strong theoretical justifications for their method, demonstrating its potential to improve mode coverage and diversity in generated samples. Experiments on synthetic and real datasets illustrate the method's effectiveness in stabilizing training and reducing mode collapse, particularly in challenging scenarios like recurrent generator architectures. The paper also explores the trade-off between computational cost and stability by varying the number of unrolling steps.\nDecision: Reject\nWhile the paper presents an interesting and well-motivated approach, it falls short in its experimental rigor and evaluation metrics, which are critical for assessing the practical impact of the proposed method. The lack of convincing quantitative results and reliance on suboptimal metrics weaken the overall contribution.\nSupporting Arguments\n1. Novelty and Motivation: The unrolling approach is novel in the context of GANs and is well-motivated, building on prior work in differentiable optimization. However, similar ideas have been explored in non-GAN contexts, which slightly diminishes the originality.\n \n2. Experimental Weaknesses: \n - The first experiment (finding z for training examples) is criticized as tangential to the core problem of diversity or mode-dropping. It primarily reflects smoother optimization rather than meaningful improvements in GAN performance.\n - The second experiment (mean pairwise distance) uses pixel-space distances, which can favor models generating low-quality or \"garbage\" samples. This metric is not a reliable indicator of diversity or sample quality.\n - The paper lacks standard quantitative metrics such as Inception Score or FrÃ©chet Inception Distance (FID), which are widely used to evaluate GANs. These metrics would provide a sanity check for the quality of generated samples.\n - The authors do not test their method on the tri-MNIST dataset, which could serve as a better benchmark for mode coverage and diversity.\n3. Computational Cost: The method introduces significant computational overhead, which scales linearly with the number of unrolling steps. While the authors acknowledge this trade-off, they do not provide sufficient analysis of the practical feasibility of their approach in large-scale settings.\nSuggestions for Improvement\n1. Additional Quantitative Metrics: Incorporate standard metrics like Inception Score, FID, or semi-supervised learning (SSL) performance to provide a more comprehensive evaluation of the method.\n2. Tri-MNIST Experiment: Test the method on the tri-MNIST dataset to better demonstrate its ability to cover diverse modes.\n3. Ablation Studies: Perform ablation studies to isolate the impact of unrolling steps and the second gradient term on performance.\n4. Computational Efficiency: Explore ways to reduce the computational cost of unrolling, such as approximations or partial unrolling.\n5. Broader Comparisons: Compare the proposed method against other state-of-the-art techniques for stabilizing GAN training, such as spectral normalization or Wasserstein GANs.\nQuestions for Authors\n1. How does the method perform on larger and more complex datasets, such as ImageNet or CelebA-HQ? \n2. Can the authors provide a detailed analysis of the trade-off between computational cost and performance for different numbers of unrolling steps?\n3. How does the method compare to other stabilization techniques in terms of both performance and computational efficiency?\nIn conclusion, while the paper introduces a promising approach, the lack of rigorous and convincing experimental validation prevents it from making a strong case for acceptance. Addressing the outlined weaknesses could significantly strengthen the paper."
+        }
+    ]
+}

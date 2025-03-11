@@ -1,0 +1,324 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5ba7b809-0dd7-4a3b-9378-07523dffdaf1",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999984860420227,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966025352478,
+                    "sentence": "This paper introduces a quantitative evaluation method for decoder-based generative models by employing Annealed Importance Sampling (AIS) to estimate log-likelihoods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999936819076538,
+                    "sentence": "The need for quantitative evaluations is well-justified, as qualitative assessments of sample quality remain prevalent for models such as Generative Adversarial Networks (GANs) and Generative Moment Matching Networks (GMMNs).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932646751404,
+                    "sentence": "While existing quantitative methods like Kernel Density Estimation (KDE) are available, the authors demonstrate that AIS provides greater accuracy than KDE and enables fine-grained comparisons across generative models, including GANs, GMMNs, and Variational Autoencoders (VAEs).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999936819076538,
+                    "sentence": "The authors present empirical results comparing two decoder architectures trained on the continuous MNIST dataset using VAE, GAN, and GMMN objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994695186615,
+                    "sentence": "Additionally, they trained an Importance Weighted Autoencoder (IWAE) on binarized MNIST and found that the IWAE bound underestimates true log-likelihoods by at least 1 nat, a significant margin for this dataset, as evaluated using AIS on the same model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999866485595703,
+                    "sentence": "Pros",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999929070472717,
+                    "sentence": "The authors have made their evaluation framework publicly available, which is a valuable contribution to the research community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999866485595703,
+                    "sentence": "This paper provides insights into the behavior of GANs from a log-likelihood perspective, challenging the widely held assumption that GANs memorize training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999880194664001,
+                    "sentence": "Furthermore, the authors observe that GANs fail to capture important modes of the data distribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999515414237976,
+                    "sentence": "Cons/Questions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999908804893494,
+                    "sentence": "It is unclear why the experiments use varying numbers of examples (100, 1,000, 10,000) from different sources (train set, validation set, test set, or model-generated samples).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7991871237754822,
+                    "sentence": "For instance, in Table 2, why were results not reported using all 10,000 examples from the test set?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7642903327941895,
+                    "sentence": "In Figure 2c, why is AIS slower than AIS+encoder?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6999426484107971,
+                    "sentence": "Are the numbers of intermediate distributions the same for both methods?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.571218729019165,
+                    "sentence": "The use of 16 independent chains for AIS seems low compared to prior work (e.g., [Salakhutdinov & Murray, 2008] and [Desjardins et al., 2011], which use 100 chains).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3847173750400543,
+                    "sentence": "Could increasing the number of chains tighten the confidence intervals reported in Table 2?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6080334782600403,
+                    "sentence": "It would be helpful if the authors provided their intuition for why GAN50 exhibits a BDMC gap of 10 nats, which is an order of magnitude larger than the gaps observed for other models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.42561203241348267,
+                    "sentence": "Minor Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5292124152183533,
+                    "sentence": "- Table 1 is not referenced in the text and lacks an explanation of the columns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7217402458190918,
+                    "sentence": "- In Figure 2(a), do the reported values represent the average log-likelihoods of 100 training and validation examples of MNIST (as described in Section 5.3.2), or is this the total?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7487854957580566,
+                    "sentence": "- In Figure 2(c), is the dataset binarized MNIST?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8132187128067017,
+                    "sentence": "Why are there fewer data points for AIS compared to IWAE and AIS+encoder?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5791899561882019,
+                    "sentence": "- Are the BDMC gaps mentioned in Section 5.3.1 the same as those reported in Table 2?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6916143894195557,
+                    "sentence": "- Typo in the caption of Figure 3: \"(c) GMMN-10\" is labeled, but the graph title and subcaption indicate it is actually GMMN-50.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.8119739381064363,
+            "class_probabilities": {
+                "human": 0.18679001347792185,
+                "ai": 0.8119739381064363,
+                "mixed": 0.0012360484156418805
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8119739381064363,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8119739381064363,
+                    "human": 0.18679001347792185,
+                    "mixed": 0.0012360484156418805
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review \nThis paper introduces a quantitative evaluation method for decoder-based generative models by employing Annealed Importance Sampling (AIS) to estimate log-likelihoods. The need for quantitative evaluations is well-justified, as qualitative assessments of sample quality remain prevalent for models such as Generative Adversarial Networks (GANs) and Generative Moment Matching Networks (GMMNs). While existing quantitative methods like Kernel Density Estimation (KDE) are available, the authors demonstrate that AIS provides greater accuracy than KDE and enables fine-grained comparisons across generative models, including GANs, GMMNs, and Variational Autoencoders (VAEs).\nThe authors present empirical results comparing two decoder architectures trained on the continuous MNIST dataset using VAE, GAN, and GMMN objectives. Additionally, they trained an Importance Weighted Autoencoder (IWAE) on binarized MNIST and found that the IWAE bound underestimates true log-likelihoods by at least 1 nat, a significant margin for this dataset, as evaluated using AIS on the same model.\nPros \nThe authors have made their evaluation framework publicly available, which is a valuable contribution to the research community. \nThis paper provides insights into the behavior of GANs from a log-likelihood perspective, challenging the widely held assumption that GANs memorize training data. Furthermore, the authors observe that GANs fail to capture important modes of the data distribution.\nCons/Questions \nIt is unclear why the experiments use varying numbers of examples (100, 1,000, 10,000) from different sources (train set, validation set, test set, or model-generated samples). For instance, in Table 2, why were results not reported using all 10,000 examples from the test set? \nIn Figure 2c, why is AIS slower than AIS+encoder? Are the numbers of intermediate distributions the same for both methods? \nThe use of 16 independent chains for AIS seems low compared to prior work (e.g., [Salakhutdinov & Murray, 2008] and [Desjardins et al., 2011], which use 100 chains). Could increasing the number of chains tighten the confidence intervals reported in Table 2? \nIt would be helpful if the authors provided their intuition for why GAN50 exhibits a BDMC gap of 10 nats, which is an order of magnitude larger than the gaps observed for other models.\nMinor Comments \n- Table 1 is not referenced in the text and lacks an explanation of the columns. \n- In Figure 2(a), do the reported values represent the average log-likelihoods of 100 training and validation examples of MNIST (as described in Section 5.3.2), or is this the total? \n- In Figure 2(c), is the dataset binarized MNIST? Why are there fewer data points for AIS compared to IWAE and AIS+encoder? \n- Are the BDMC gaps mentioned in Section 5.3.1 the same as those reported in Table 2? \n- Typo in the caption of Figure 3: \"(c) GMMN-10\" is labeled, but the graph title and subcaption indicate it is actually GMMN-50."
+        }
+    ]
+}

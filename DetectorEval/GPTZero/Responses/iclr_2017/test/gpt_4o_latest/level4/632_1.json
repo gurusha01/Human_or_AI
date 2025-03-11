@@ -1,0 +1,311 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "d91e6eb3-f3be-4c20-82c9-a3f8c55b4507",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.982972264289856,
+                    "sentence": "The contributions of this paper can be summarized as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9703041911125183,
+                    "sentence": "1. A TransGaussian model, inspired by the concept of TransE, which represents subject/object embeddings as parameterized Gaussian distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9709948301315308,
+                    "sentence": "This model is naturally extendable to path queries, akin to the formulation proposed by Guu et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9747728109359741,
+                    "sentence": "(2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9713091850280762,
+                    "sentence": "2. A combination of the TransGaussian-trained entity/relation representations with an LSTM + attention mechanism applied to natural language questions, aiming to learn a (non-normalized) distribution over relations for question answering.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9614005088806152,
+                    "sentence": "3. Experimental evaluation on a generated WorldCup2014 dataset, focusing on path queries and conjunctive queries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9819480776786804,
+                    "sentence": "Overall, I find the Gaussian parameterization to have some appealing properties, potentially making it suitable for knowledge base (KB) completion and question answering.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9851951599121094,
+                    "sentence": "However, I am not fully convinced by certain details and the primary experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9899070858955383,
+                    "sentence": "Additionally, the paper's writing could benefit from improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958135485649109,
+                    "sentence": "Below are my detailed comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996658205986023,
+                    "sentence": "[Major Comments]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997319757938385,
+                    "sentence": "- My primary concern lies with the evaluation results, which I find unconvincing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934923052787781,
+                    "sentence": "For both knowledge base completion and KB-based question answering, there exist numerous established and competitive benchmarks (e.g., FB15k, WebQuestions).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919382333755493,
+                    "sentence": "Relying solely on the small-scale WorldCup2014 dataset is insufficient to demonstrate the model's effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9502031803131104,
+                    "sentence": "Furthermore, the questions in this dataset are generated using a limited set of templates, which do not adequately reflect the complexity of natural language questions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8671801090240479,
+                    "sentence": "In this context, I question the necessity of applying an LSTM model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7384541034698486,
+                    "sentence": "The paper would be significantly stronger if the proposed approach were evaluated on the aforementioned benchmarks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8710202574729919,
+                    "sentence": "- Regarding conjunctive queries, the current model assumes that all detected entities in a question can be aligned to one or more relations, with conjunctions applied subsequently.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9043468832969666,
+                    "sentence": "This assumption does not always hold, making it even more critical to validate the approach on real-world QA datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9450428485870361,
+                    "sentence": "- The model is referred to as \"Gaussian attention,\" but I feel this naming is somewhat misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8909720182418823,
+                    "sentence": "It appears to be more closely aligned with the KB embedding literature than with the widely recognized attention mechanisms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9657299518585205,
+                    "sentence": "[Minor Comments]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9764190912246704,
+                    "sentence": "- Figure 2 is somewhat unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9514118432998657,
+                    "sentence": "The first row of orange blocks represents KB relations, while the second row corresponds to individual words in the natural language question.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9265546798706055,
+                    "sentence": "Consider clarifying this further for better readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9238749742507935,
+                    "sentence": "- In addition to \"entity recognition,\" an \"entity linker\" component is typically required to map text mentions to KB entities.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9688433408737183,
+                    "sentence": "This aspect should be addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.7145451996534505
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984930238596827,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984930238596827,
+                "mixed": 0.001506976140317253
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984930238596827,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984930238596827,
+                    "human": 0,
+                    "mixed": 0.001506976140317253
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The contributions of this paper can be summarized as follows:\n1. A TransGaussian model, inspired by the concept of TransE, which represents subject/object embeddings as parameterized Gaussian distributions. This model is naturally extendable to path queries, akin to the formulation proposed by Guu et al. (2015). \n2. A combination of the TransGaussian-trained entity/relation representations with an LSTM + attention mechanism applied to natural language questions, aiming to learn a (non-normalized) distribution over relations for question answering. \n3. Experimental evaluation on a generated WorldCup2014 dataset, focusing on path queries and conjunctive queries. \nOverall, I find the Gaussian parameterization to have some appealing properties, potentially making it suitable for knowledge base (KB) completion and question answering. However, I am not fully convinced by certain details and the primary experimental results. Additionally, the paper's writing could benefit from improvement. Below are my detailed comments: \n[Major Comments] \n- My primary concern lies with the evaluation results, which I find unconvincing. For both knowledge base completion and KB-based question answering, there exist numerous established and competitive benchmarks (e.g., FB15k, WebQuestions). Relying solely on the small-scale WorldCup2014 dataset is insufficient to demonstrate the model's effectiveness. Furthermore, the questions in this dataset are generated using a limited set of templates, which do not adequately reflect the complexity of natural language questions. In this context, I question the necessity of applying an LSTM model. The paper would be significantly stronger if the proposed approach were evaluated on the aforementioned benchmarks. \n- Regarding conjunctive queries, the current model assumes that all detected entities in a question can be aligned to one or more relations, with conjunctions applied subsequently. This assumption does not always hold, making it even more critical to validate the approach on real-world QA datasets. \n- The model is referred to as \"Gaussian attention,\" but I feel this naming is somewhat misleading. It appears to be more closely aligned with the KB embedding literature than with the widely recognized attention mechanisms. \n[Minor Comments] \n- Figure 2 is somewhat unclear. The first row of orange blocks represents KB relations, while the second row corresponds to individual words in the natural language question. Consider clarifying this further for better readability. \n- In addition to \"entity recognition,\" an \"entity linker\" component is typically required to map text mentions to KB entities. This aspect should be addressed."
+        }
+    ]
+}

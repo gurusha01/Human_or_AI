@@ -1,0 +1,231 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6bab243d-c359-4618-b986-9860fd021ddd",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.0005698088207282126,
+                    "sentence": "The paper tackles the task of music generation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.000608557544182986,
+                    "sentence": "They use an orderless NADE model for the task of \"fill in the notes\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007978911744430661,
+                    "sentence": "Given a roll of T timesteps of pitches, they randomly mask out some pitches, and the model is trained to predict the missing notes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0004359075683169067,
+                    "sentence": "This follows how the orderless NADE model can be trained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00048145229811780155,
+                    "sentence": "During sampling, one normally follows an ancestral sampling procedure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00041120097739621997,
+                    "sentence": "For this, an ordering is defined over outputs, and one runs the model on the current input, samples one of the outputs according to the order, adds this output to the next input, and continues this procedure until all outputs have been sampled.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006469362997449934,
+                    "sentence": "The key point of the paper is that this is a bad sampling strategy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007960756192915142,
+                    "sentence": "Instead, they suggest the strategy of Yao et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003610695421230048,
+                    "sentence": "2014, which uses a blocked Gibbs sampling approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007392935222014785,
+                    "sentence": "The blocked Gibbs strategy instead masks N inputs randomly and independently, samples them, and repeats this procedure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007479321211576462,
+                    "sentence": "The point of this strategy is the make sure the sampling chain mixes well, which will happen for large N. However, since the samples are independent, having a large N gives incoherent samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0010018545435741544,
+                    "sentence": "Thus, the authors follow an annealed schedule for N, making it smaller over time, which will eventually reduce to ancestral sampling (giving global structure to the sample).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001206491026096046,
+                    "sentence": "They conduct a variety of experiments involving both normal metrics and human evaluations, and find that this blocked Gibbs sampling outperforms other sampling procedures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007181898690760136,
+                    "sentence": "This is a well written paper - great job.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00045217768638394773,
+                    "sentence": "My main problem with the paper is that having read Uria and Yao, I don't know how much I have learned from this work in the context of this being an ICLR submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0002847849973477423,
+                    "sentence": "If this was submitted to some computational music / art conference, this paper would be a clear accept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003144766378682107,
+                    "sentence": "However, for ICLR, I don't see enough novelty compared with previous works this builds upon.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00037637955392710865,
+                    "sentence": "Orderless NADE is an established model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0005381496739573777,
+                    "sentence": "The blocked Gibbs sampling and annealing scheme are basically the exact same one used in Yao.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00041547289583832026,
+                    "sentence": "Thus, the main novelty of this paper is its application to the music domain, and finding that Yao's method works better for sampling music.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0004352354153525084,
+                    "sentence": "This is a good contribution, but more tailored to those working in the music domain.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00047575312783010304,
+                    "sentence": "If the authors found that these results also hold for other domains like images (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00052689912263304,
+                    "sentence": "on CIFAR / tiny Imagenet) and text (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00043115479638800025,
+                    "sentence": "document generation), then I would change my mind and accept this paper for ICLR.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006322612753137946,
+                    "sentence": "Even just trying musical domains other than Bach chorales would be useful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006140595069155097,
+                    "sentence": "However, as it stands, the experiments are not convincing enough.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 13,
+                    "completely_generated_prob": 1.4476848035102901e-11
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 12,
+                    "completely_generated_prob": 1.0731758790825431e-10
+                }
+            ],
+            "completely_generated_prob": 0.008764888981516596,
+            "class_probabilities": {
+                "human": 0.9912351110184834,
+                "ai": 0.008764888981516596,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9912351110184834,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.008764888981516596,
+                    "human": 0.9912351110184834,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper tackles the task of music generation. They use an orderless NADE model for the task of \"fill in the notes\". Given a roll of T timesteps of pitches, they randomly mask out some pitches, and the model is trained to predict the missing notes. This follows how the orderless NADE model can be trained. During sampling, one normally follows an ancestral sampling procedure. For this, an ordering is defined over outputs, and one runs the model on the current input, samples one of the outputs according to the order, adds this output to the next input, and continues this procedure until all outputs have been sampled. The key point of the paper is that this is a bad sampling strategy. Instead, they suggest the strategy of Yao et al. 2014, which uses a blocked Gibbs sampling approach. The blocked Gibbs strategy instead masks N inputs randomly and independently, samples them, and repeats this procedure. The point of this strategy is the make sure the sampling chain mixes well, which will happen for large N. However, since the samples are independent, having a large N gives incoherent samples. Thus, the authors follow an annealed schedule for N, making it smaller over time, which will eventually reduce to ancestral sampling (giving global structure to the sample). They conduct a variety of experiments involving both normal metrics and human evaluations, and find that this blocked Gibbs sampling outperforms other sampling procedures.\nThis is a well written paper - great job.\nMy main problem with the paper is that having read Uria and Yao, I don't know how much I have learned from this work in the context of this being an ICLR submission. If this was submitted to some computational music / art conference, this paper would be a clear accept. However, for ICLR, I don't see enough novelty compared with previous works this builds upon. Orderless NADE is an established model. The blocked Gibbs sampling and annealing scheme are basically the exact same one used in Yao. Thus, the main novelty of this paper is its application to the music domain, and finding that Yao's method works better for sampling music. This is a good contribution, but more tailored to those working in the music domain. If the authors found that these results also hold for other domains like images (e.g. on CIFAR / tiny Imagenet) and text (e.g. document generation), then I would change my mind and accept this paper for ICLR. Even just trying musical domains other than Bach chorales would be useful. However, as it stands, the experiments are not convincing enough."
+        }
+    ]
+}

@@ -1,0 +1,289 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "cbb84945-34c6-4949-9e07-7d44e01a0228",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.04219961166381836,
+                    "sentence": "Summary: The authors propose an input switched affine network to do character-level language modeling, a kind of RNN without pointwise nonlinearity, but with switching the transition matrix & bias based on the input character.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027122164145112038,
+                    "sentence": "This is motivated by intelligibility, since it allows decomposition of output contribution into these kappa_s^t terms, and use of basic linear algebra to probe the network.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0343569815158844,
+                    "sentence": "Regarding myself as a reviewer, I am quite sure I understood the main ideas and arguments of this paper, but am not an expert on RNN language models or intelligibility/interpretability in ML.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06716904789209366,
+                    "sentence": "I did not read any papers with a similar premise - closest related work I'm familiar with would be deconvnet for insight into vision-CNNs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10326779633760452,
+                    "sentence": "PRO:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03971629962325096,
+                    "sentence": "I think this is original and novel work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04289670288562775,
+                    "sentence": "This work is high quality, well written, and clearly is the result of a lot of work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07792537659406662,
+                    "sentence": "I found section 4.5 about projecting into readout subspace vs \"computational\" subspace most interesting and meaningful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.19159427285194397,
+                    "sentence": "CON:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05566549673676491,
+                    "sentence": "+ The main hesitation I have is that the results on both parts (ISAN model, and analysis of it) are not entirely convincing:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07567539811134338,
+                    "sentence": "(1) ISAN is only trained on small task (text8), not clear whether it can be a strong char-LM on larger scale tasks,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10426828265190125,
+                    "sentence": "(2) nor do the analysis sections provide all that much real insight in the learned network.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.19796454906463623,
+                    "sentence": "(1b) Other caveat towards ISAN architecture: this model in its proposed form is really only fit for small-vocabulary (i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.16887864470481873,
+                    "sentence": "character-based) language modeling, not a general RNN with large-vocab discrete input nor continuous input.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.18410368263721466,
+                    "sentence": "(2a) For analysis: many cute plots and fun ideas of quantities to look at, but not much concrete insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.19412560760974884,
+                    "sentence": "(2b) Not very clear which analysis is specific to the ISAN model, and which ideas will generalize to general nonlinear RNNs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1549244374036789,
+                    "sentence": "(2c) Re sec 4.2 - 4.3: It seems that the quantity \\kappa_s^t on which analysis rests, isn't all that meaningful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17770233750343323,
+                    "sentence": "Elaborating a bit on what I wrote in the question:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13910642266273499,
+                    "sentence": "For example: Fig 2, for input letter \"u\" in revenue, there's a red spot where '' character massively positively impacts the logit of 'e'.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1829870194196701,
+                    "sentence": "This seems quite meaningless, what would be the meaning of influence of '' character?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13550108671188354,
+                    "sentence": "So it looks ot me that the switching matrix Wu (and prior Wn We etc) are using previous state in an interesting way to produce that following e. So that metric \\kappas^t just doesn't seem very meaningful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07162697613239288,
+                    "sentence": "This remark relates to the last paragraph of Sec4.2.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.15851616859436035,
+                    "sentence": "Even though the list of cons here is longer than pro's, I recommend accept; specifically because the originality of this work will in any case make it more vulnerable to critiques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.22444766759872437,
+                    "sentence": "This work is well-motivated, very well-executed, and can inspire many more interesting investigations along these lines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.04094257758090865,
+            "class_probabilities": {
+                "human": 0.9587663676756332,
+                "ai": 0.04094257758090865,
+                "mixed": 0.0002910547434582826
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9587663676756332,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.04094257758090865,
+                    "human": 0.9587663676756332,
+                    "mixed": 0.0002910547434582826
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Summary: The authors propose an input switched affine network to do character-level language modeling, a kind of RNN without pointwise nonlinearity, but with switching the transition matrix & bias based on the input character. This is motivated by intelligibility, since it allows decomposition of output contribution into these kappa_s^t terms, and use of basic linear algebra to probe the network.\nRegarding myself as a reviewer, I am quite sure I understood the main ideas and arguments of this paper, but am not an expert on RNN language models or intelligibility/interpretability in ML.\nI did not read any papers with a similar premise - closest related work I'm familiar with would be deconvnet for insight into vision-CNNs.\nPRO:\nI think this is original and novel work. This work is high quality, well written, and clearly is the result of a lot of work.\nI found section 4.5 about projecting into readout subspace vs \"computational\" subspace most interesting and meaningful.\nCON:\n+ The main hesitation I have is that the results on both parts (ISAN model, and analysis of it) are not entirely convincing:\n (1) ISAN is only trained on small task (text8), not clear whether it can be a strong char-LM on larger scale tasks,\n (2) nor do the analysis sections provide all that much real insight in the learned network.\n(1b) Other caveat towards ISAN architecture: this model in its proposed form is really only fit for small-vocabulary (i.e. character-based) language modeling, not a general RNN with large-vocab discrete input nor continuous input.\n(2a) For analysis: many cute plots and fun ideas of quantities to look at, but not much concrete insights.\n(2b) Not very clear which analysis is specific to the ISAN model, and which ideas will generalize to general nonlinear RNNs.\n(2c) Re sec 4.2 - 4.3: It seems that the quantity \\kappa_s^t on which analysis rests, isn't all that meaningful. Elaborating a bit on what I wrote in the question:\nFor example: Fig 2, for input letter \"u\" in revenue, there's a red spot where '' character massively positively impacts the logit of 'e'. This seems quite meaningless, what would be the meaning of influence of '' character? So it looks ot me that the switching matrix Wu (and prior Wn We etc) are using previous state in an interesting way to produce that following e. So that metric \\kappas^t just doesn't seem very meaningful.\nThis remark relates to the last paragraph of Sec4.2.\nEven though the list of cons here is longer than pro's, I recommend accept; specifically because the originality of this work will in any case make it more vulnerable to critiques. This work is well-motivated, very well-executed, and can inspire many more interesting investigations along these lines."
+        }
+    ]
+}

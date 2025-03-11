@@ -1,0 +1,397 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "7ba52176-40ea-4d72-a433-d8c82e0ca100",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "The paper presents a novel approach to training deep neural networks with compression in mind, introducing a low-rank regularizer that explicitly encourages compactness during training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "This is a significant departure from existing methods, which typically compress pre-trained networks, often leading to suboptimal compression rates and accuracy loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "By integrating compression-aware training, the authors claim to achieve higher compression rates with minimal or no drop in prediction accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "The paper also explores the combination of the low-rank regularizer with group sparsity to further enhance compression.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "1. Novelty: The idea of incorporating compression into the training process is innovative and addresses a key limitation of post-training compression methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "This approach is particularly relevant for deploying deep networks on resource-constrained devices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "2. Thorough Evaluation: The authors evaluate their method on multiple datasets (ImageNet and ICDAR) and architectures (DecomposeMe and ResNet-50).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "The experiments demonstrate significant compression rates (up to 90%) with little to no accuracy loss, which is impressive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "3. Practical Relevance: The method is shown to reduce both memory and computational requirements, making it highly applicable for real-world scenarios, such as embedded systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "4. Combination with Group Sparsity: The integration of group sparsity with the low-rank regularizer is a thoughtful addition, demonstrating the flexibility and extensibility of the proposed framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "5. Detailed Analysis: The paper provides a comprehensive analysis of hyperparameter sensitivity, computational cost (MACs), and inference time, offering valuable insights into the trade-offs involved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999984860420227,
+                    "sentence": "1. Limited Discussion of Limitations: While the paper acknowledges that modern hardware may not fully exploit the benefits of low-rank decompositions, it does not delve deeply into other potential limitations, such as the impact on training stability or scalability to extremely large-scale datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999706745147705,
+                    "sentence": "2. Reproducibility Concerns: Although the paper is detailed, some implementation specifics, such as the exact choice of hyperparameters for different datasets and architectures, are not fully transparent.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999174475669861,
+                    "sentence": "This could hinder reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999879002571106,
+                    "sentence": "3. Focus on SVD-Based Compression: The method is tightly coupled with SVD-based compression.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999588131904602,
+                    "sentence": "While effective, it would be interesting to see how the framework generalizes to other compression techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999076128005981,
+                    "sentence": "4. Inference Time Gains: The paper notes that the inference time improvements are modest due to hardware limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999875545501709,
+                    "sentence": "This could reduce the practical appeal of the method in certain scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995424151420593,
+                    "sentence": "Pro and Con Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999386727809906,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998450875282288,
+                    "sentence": "- The paper introduces a novel and practically useful idea with strong experimental validation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998117685317993,
+                    "sentence": "- It addresses a critical problem in deploying deep networks on constrained hardware.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998007416725159,
+                    "sentence": "- The combination of low-rank and group sparsity regularizers is a valuable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995134472846985,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997084736824036,
+                    "sentence": "- The paper could benefit from a more detailed discussion of limitations and broader applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999509334564209,
+                    "sentence": "- The modest inference time gains may limit its impact in real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994999170303345,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992803335189819,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993420839309692,
+                    "sentence": "Its contributions are both novel and significant, and the experimental results convincingly demonstrate the benefits of compression-aware training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998769998550415,
+                    "sentence": "While there are minor weaknesses, they do not undermine the overall quality and relevance of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999570369720459,
+                    "sentence": "The paper makes a meaningful contribution to the field and is likely to inspire further research on integrating compression strategies into the training process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.9997862822885396,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997862822885396,
+                "mixed": 0.00021371771146045916
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997862822885396,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997862822885396,
+                    "human": 0,
+                    "mixed": 0.00021371771146045916
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel approach to training deep neural networks with compression in mind, introducing a low-rank regularizer that explicitly encourages compactness during training. This is a significant departure from existing methods, which typically compress pre-trained networks, often leading to suboptimal compression rates and accuracy loss. By integrating compression-aware training, the authors claim to achieve higher compression rates with minimal or no drop in prediction accuracy. The paper also explores the combination of the low-rank regularizer with group sparsity to further enhance compression.\nStrengths:\n1. Novelty: The idea of incorporating compression into the training process is innovative and addresses a key limitation of post-training compression methods. This approach is particularly relevant for deploying deep networks on resource-constrained devices.\n2. Thorough Evaluation: The authors evaluate their method on multiple datasets (ImageNet and ICDAR) and architectures (DecomposeMe and ResNet-50). The experiments demonstrate significant compression rates (up to 90%) with little to no accuracy loss, which is impressive.\n3. Practical Relevance: The method is shown to reduce both memory and computational requirements, making it highly applicable for real-world scenarios, such as embedded systems.\n4. Combination with Group Sparsity: The integration of group sparsity with the low-rank regularizer is a thoughtful addition, demonstrating the flexibility and extensibility of the proposed framework.\n5. Detailed Analysis: The paper provides a comprehensive analysis of hyperparameter sensitivity, computational cost (MACs), and inference time, offering valuable insights into the trade-offs involved.\nWeaknesses:\n1. Limited Discussion of Limitations: While the paper acknowledges that modern hardware may not fully exploit the benefits of low-rank decompositions, it does not delve deeply into other potential limitations, such as the impact on training stability or scalability to extremely large-scale datasets.\n2. Reproducibility Concerns: Although the paper is detailed, some implementation specifics, such as the exact choice of hyperparameters for different datasets and architectures, are not fully transparent. This could hinder reproducibility.\n3. Focus on SVD-Based Compression: The method is tightly coupled with SVD-based compression. While effective, it would be interesting to see how the framework generalizes to other compression techniques.\n4. Inference Time Gains: The paper notes that the inference time improvements are modest due to hardware limitations. This could reduce the practical appeal of the method in certain scenarios.\nPro and Con Arguments for Acceptance:\nPros:\n- The paper introduces a novel and practically useful idea with strong experimental validation.\n- It addresses a critical problem in deploying deep networks on constrained hardware.\n- The combination of low-rank and group sparsity regularizers is a valuable contribution.\nCons:\n- The paper could benefit from a more detailed discussion of limitations and broader applicability.\n- The modest inference time gains may limit its impact in real-world applications.\nRecommendation:\nI recommend acceptance of this paper. Its contributions are both novel and significant, and the experimental results convincingly demonstrate the benefits of compression-aware training. While there are minor weaknesses, they do not undermine the overall quality and relevance of the work. The paper makes a meaningful contribution to the field and is likely to inspire further research on integrating compression strategies into the training process."
+        }
+    ]
+}

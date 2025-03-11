@@ -1,0 +1,380 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "d3efde3a-f87c-48ae-9bdf-ce36412aa6f2",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999724626541138,
+                    "sentence": "The paper presents NeuralFDR, a novel algorithm for multiple hypothesis testing that leverages hypothesis-specific features using neural networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999727010726929,
+                    "sentence": "Unlike traditional methods such as Benjamini-Hochberg (BH) or Independent Hypothesis Weighting (IHW), which either ignore features or assume simple feature structures, NeuralFDR models a flexible, feature-dependent discovery threshold using a multilayer perceptron (MLP).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999726414680481,
+                    "sentence": "This approach enables the algorithm to handle multi-dimensional, continuous, and discrete features while maintaining strong false discovery rate (FDR) control.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999783635139465,
+                    "sentence": "The authors provide theoretical guarantees for FDR control under both independence and weak dependence assumptions and demonstrate the algorithm's superior performance on synthetic and real-world datasets, including RNA-Seq and eQTL studies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999905824661255,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999696612358093,
+                    "sentence": "1. Technical Novelty: NeuralFDR introduces a significant advancement by parametrizing the discovery threshold as a neural network, enabling it to model complex, high-dimensional feature spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999754428863525,
+                    "sentence": "This is a clear improvement over existing methods like IHW, which rely on binning and are less effective for multi-dimensional features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999581575393677,
+                    "sentence": "2. Theoretical Guarantees: The paper rigorously proves FDR control under independence and provides asymptotic guarantees under weak dependence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999662041664124,
+                    "sentence": "The use of cross-validation to prevent overfitting is a thoughtful addition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999599456787109,
+                    "sentence": "3. Empirical Performance: NeuralFDR consistently outperforms state-of-the-art methods (e.g., IHW) in terms of the number of discoveries while maintaining FDR control.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999673962593079,
+                    "sentence": "The results are robust across diverse datasets, including synthetic examples with varying feature structures and real-world genomic datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999950110912323,
+                    "sentence": "4. Interpretability: The learned discovery thresholds are interpretable and align with domain knowledge, such as the dependency of eQTL discoveries on SNP-gene distance and gene expression levels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999493956565857,
+                    "sentence": "5. Scalability: The algorithm handles large-scale datasets (e.g., millions of hypotheses in the GTEx study) and demonstrates its utility in real-world scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999819993972778,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999576210975647,
+                    "sentence": "1. Dependence on Large Datasets: NeuralFDR performs best when the number of hypotheses and the alternative proportion are large.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999475479125977,
+                    "sentence": "Its performance on smaller datasets or datasets with low signal-to-noise ratios is less clear and warrants further investigation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999480247497559,
+                    "sentence": "2. Model Complexity: The use of a 10-layer MLP raises questions about the computational cost and the potential for overfitting, especially for smaller datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999068379402161,
+                    "sentence": "A more systematic exploration of the optimal network architecture would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8936944603919983,
+                    "sentence": "3. Limited Comparison: While NeuralFDR is compared against BH, Storey's BH, and IHW, it would be beneficial to include comparisons with other recent FDR control methods, such as AdaPT or SABHA, to provide a more comprehensive evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8125521540641785,
+                    "sentence": "4. Assumptions on Independence: Although the paper extends to weak dependence, the practical implications of this assumption in highly correlated datasets (e.g., linkage disequilibrium in genomics) are not fully explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998421847820282,
+                    "sentence": "Arguments for Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998147487640381,
+                    "sentence": "- The paper addresses a critical limitation in multiple hypothesis testing by incorporating hypothesis-specific features in a principled way.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998914003372192,
+                    "sentence": "- It provides both theoretical and empirical evidence of its superiority over existing methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998775124549866,
+                    "sentence": "- The proposed method has practical significance, particularly in genomics, where feature-rich datasets are common.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999277591705322,
+                    "sentence": "Arguments Against Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999932587146759,
+                    "sentence": "- The reliance on large datasets may limit its applicability in scenarios with fewer hypotheses or low alternative proportions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998791217803955,
+                    "sentence": "- The computational complexity and choice of neural network architecture could be better justified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995865821838379,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999681711196899,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999554753303528,
+                    "sentence": "NeuralFDR is a significant contribution to the field of multiple hypothesis testing, offering both theoretical rigor and practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999970555305481,
+                    "sentence": "Addressing the identified weaknesses in future work could further enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents NeuralFDR, a novel algorithm for multiple hypothesis testing that leverages hypothesis-specific features using neural networks. Unlike traditional methods such as Benjamini-Hochberg (BH) or Independent Hypothesis Weighting (IHW), which either ignore features or assume simple feature structures, NeuralFDR models a flexible, feature-dependent discovery threshold using a multilayer perceptron (MLP). This approach enables the algorithm to handle multi-dimensional, continuous, and discrete features while maintaining strong false discovery rate (FDR) control. The authors provide theoretical guarantees for FDR control under both independence and weak dependence assumptions and demonstrate the algorithm's superior performance on synthetic and real-world datasets, including RNA-Seq and eQTL studies.\nStrengths\n1. Technical Novelty: NeuralFDR introduces a significant advancement by parametrizing the discovery threshold as a neural network, enabling it to model complex, high-dimensional feature spaces. This is a clear improvement over existing methods like IHW, which rely on binning and are less effective for multi-dimensional features.\n2. Theoretical Guarantees: The paper rigorously proves FDR control under independence and provides asymptotic guarantees under weak dependence. The use of cross-validation to prevent overfitting is a thoughtful addition.\n3. Empirical Performance: NeuralFDR consistently outperforms state-of-the-art methods (e.g., IHW) in terms of the number of discoveries while maintaining FDR control. The results are robust across diverse datasets, including synthetic examples with varying feature structures and real-world genomic datasets.\n4. Interpretability: The learned discovery thresholds are interpretable and align with domain knowledge, such as the dependency of eQTL discoveries on SNP-gene distance and gene expression levels.\n5. Scalability: The algorithm handles large-scale datasets (e.g., millions of hypotheses in the GTEx study) and demonstrates its utility in real-world scenarios.\nWeaknesses\n1. Dependence on Large Datasets: NeuralFDR performs best when the number of hypotheses and the alternative proportion are large. Its performance on smaller datasets or datasets with low signal-to-noise ratios is less clear and warrants further investigation.\n2. Model Complexity: The use of a 10-layer MLP raises questions about the computational cost and the potential for overfitting, especially for smaller datasets. A more systematic exploration of the optimal network architecture would strengthen the paper.\n3. Limited Comparison: While NeuralFDR is compared against BH, Storey's BH, and IHW, it would be beneficial to include comparisons with other recent FDR control methods, such as AdaPT or SABHA, to provide a more comprehensive evaluation.\n4. Assumptions on Independence: Although the paper extends to weak dependence, the practical implications of this assumption in highly correlated datasets (e.g., linkage disequilibrium in genomics) are not fully explored.\nArguments for Acceptance\n- The paper addresses a critical limitation in multiple hypothesis testing by incorporating hypothesis-specific features in a principled way.\n- It provides both theoretical and empirical evidence of its superiority over existing methods.\n- The proposed method has practical significance, particularly in genomics, where feature-rich datasets are common.\nArguments Against Acceptance\n- The reliance on large datasets may limit its applicability in scenarios with fewer hypotheses or low alternative proportions.\n- The computational complexity and choice of neural network architecture could be better justified.\nRecommendation\nI recommend acceptance of this paper. NeuralFDR is a significant contribution to the field of multiple hypothesis testing, offering both theoretical rigor and practical utility. Addressing the identified weaknesses in future work could further enhance its impact."
+        }
+    ]
+}

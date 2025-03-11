@@ -1,0 +1,203 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "251dac9e-354e-4cd7-89f1-f13d4309edaa",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9159846305847168,
+                    "sentence": "In this paper, the authors propose Batch Renormalization technique to alleviate the problem of batchnorm when dealing with small or non-i.i.d minibatches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9222080707550049,
+                    "sentence": "To reduce the dependence of large minibatch size is very important in many applications especially when training large neural network models with limited GPU memory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9239392280578613,
+                    "sentence": "The proposed method is vey simple to understand and implement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9212198257446289,
+                    "sentence": "And experiments show that Batch Renormalization performs well with non-i.i.d minibatches, and improves the results of small minibatches compared with batchnorm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8335197567939758,
+                    "sentence": "Firstly, the authors give a clear review of batchnorm, and conclude that the key drawbacks of batchnorm are the inconsistency of mean and variance used in training and inference and the instability when dealing with small minibatches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4280531704425812,
+                    "sentence": "Using moving averages to perform normalization would be the first thought, however this would lead to the model blowing up.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6202139854431152,
+                    "sentence": "So the authors propose a simple batch renormalization method to combine minibatch mean and variance with moving averages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4312261641025543,
+                    "sentence": "In my opinion, what Batch Renormalization does is to gradually changing from origin batchnorm (normalizing with minibatch mean and variance) to batchnorm with (almost) only moving averages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7515345215797424,
+                    "sentence": "In this way, the model can adopt part of the advantage of moving averages, and converge successfully.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7260445952415466,
+                    "sentence": "And I have several questions about this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7341671586036682,
+                    "sentence": "(1) When using large minibatch size (such as 32), why Batch Renormalization has no advantage compared with batchnorm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.794826865196228,
+                    "sentence": "It seems that the consistency of mean and variance in training and inference does not help much in this case.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7209562659263611,
+                    "sentence": "(2) Experiments show that the result of small minibatch size (batchsize=4) is worse that the result of large minibatch size (batchsize=32).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6815601587295532,
+                    "sentence": "So I wonder if using two (multiple) moving averages (mean and variance) with different update rates (such as one with 0.1, one with 0.01) would help.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8354446887969971,
+                    "sentence": "Small update rate helps to solve the inconstancy problem, large update rate helps to solve the small minibatch size problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7992759943008423,
+                    "sentence": "(3) The results of how rmax and dmax will affect the performace are not provided.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7771889567375183,
+                    "sentence": "There seems to have plenty of parameter tuning work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8219767212867737,
+                    "sentence": "This work is good, and I am looking forward to seeing a more elegant solution to this problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.0022792978668507114
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.49279214804212246,
+            "class_probabilities": {
+                "human": 0.5033519797858822,
+                "ai": 0.49279214804212246,
+                "mixed": 0.0038558721719952668
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5033519797858822,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.49279214804212246,
+                    "human": 0.5033519797858822,
+                    "mixed": 0.0038558721719952668
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "In this paper, the authors propose Batch Renormalization technique to alleviate the problem of batchnorm when dealing with small or non-i.i.d minibatches. To reduce the dependence of large minibatch size is very important in many applications especially when training large neural network models with limited GPU memory. The proposed method is vey simple to understand and implement. And experiments show that Batch Renormalization performs well with non-i.i.d minibatches, and improves the results of small minibatches compared with batchnorm.\nFirstly, the authors give a clear review of batchnorm, and conclude that the key drawbacks of batchnorm are the inconsistency of mean and variance used in training and inference and the instability when dealing with small minibatches. Using moving averages to perform normalization would be the first thought, however this would lead to the model blowing up. So the authors propose a simple batch renormalization method to combine minibatch mean and variance with moving averages. In my opinion, what Batch Renormalization does is to gradually changing from origin batchnorm (normalizing with minibatch mean and variance) to batchnorm with (almost) only moving averages. In this way, the model can adopt part of the advantage of moving averages, and converge successfully.\nAnd I have several questions about this paper. \n(1) When using large minibatch size (such as 32), why Batch Renormalization has no advantage compared with batchnorm. It seems that the consistency of mean and variance in training and inference does not help much in this case.\n(2) Experiments show that the result of small minibatch size (batchsize=4) is worse that the result of large minibatch size (batchsize=32). So I wonder if using two (multiple) moving averages (mean and variance) with different update rates (such as one with 0.1, one with 0.01) would help. Small update rate helps to solve the inconstancy problem, large update rate helps to solve the small minibatch size problem.\n(3) The results of how rmax and dmax will affect the performace are not provided. There seems to have plenty of parameter tuning work.\nThis work is good, and I am looking forward to seeing a more elegant solution to this problem."
+        }
+    ]
+}

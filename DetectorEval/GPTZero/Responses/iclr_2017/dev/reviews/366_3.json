@@ -1,0 +1,140 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "778b3ce7-7396-4010-9d06-6b6e392da2d2",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.003442060202360153,
+                    "sentence": "This is an interesting paper on a VAE framework for topic models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003073369851335883,
+                    "sentence": "The main idea is to train a recognition model for the inference phase which, because of so called \"amortized inference\" can be much faster than normal inference where inference must be run iteratively for every document.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0017214604886248708,
+                    "sentence": "Some comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0024714237079024315,
+                    "sentence": "Eqn 5: I find the notation p(theta(h)\"alpha) awkward.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001855982351116836,
+                    "sentence": "Why not P(h\"alpha)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026233308017253876,
+                    "sentence": "The generative model seems agnostic to document length, meaning that the latent variables only generate probabilities over word space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0025849929079413414,
+                    "sentence": "However, the recognition model is happy to radically change the probabilities q(z\"x) if the document length changes because the input to q changes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0018874784000217915,
+                    "sentence": "This seems undesirable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002426655264571309,
+                    "sentence": "Maybe they should normalize the input to the recognition network?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004415839444845915,
+                    "sentence": "The ProdLDA model might well be equivalent to exponential family PCA or some variant thereof:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.00982192507144982,
+            "class_probabilities": {
+                "human": 0.9901780749285501,
+                "ai": 0.00982192507144982,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9901780749285501,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.00982192507144982,
+                    "human": 0.9901780749285501,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This is an interesting paper on a VAE framework for topic models. The main idea is to train a recognition model for the inference phase which, because of so called \"amortized inference\" can be much faster than normal inference where inference must be run iteratively for every document. Some comments:\nEqn 5: I find the notation p(theta(h)\"alpha) awkward. Why not P(h\"alpha) ?\nThe generative model seems agnostic to document length, meaning that the latent variables only generate probabilities over word space. However, the recognition model is happy to radically change the probabilities q(z\"x) if the document length changes because the input to q changes. This seems undesirable. Maybe they should normalize the input to the recognition network?\nThe ProdLDA model might well be equivalent to exponential family PCA or some variant thereof:"
+        }
+    ]
+}

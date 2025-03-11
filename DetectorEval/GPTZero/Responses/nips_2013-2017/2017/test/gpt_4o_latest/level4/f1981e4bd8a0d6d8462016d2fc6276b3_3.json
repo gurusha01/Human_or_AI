@@ -1,0 +1,328 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "1e12e125-f254-4bbb-a3b0-11f5f9614540",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999962329864502,
+                    "sentence": "This paper introduces a method for predicting a sequence of labels without requiring a labeled training set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999095797538757,
+                    "sentence": "The approach leverages a prior probability distribution over possible output sequences of labels, aiming to find a linear classifier such that the predicted sequence distribution closely aligns (in the KL divergence sense) with the given prior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999141097068787,
+                    "sentence": "The authors propose a cost function, an optimization algorithm, and demonstrate the method's effectiveness through experiments on real-world data for two tasks: OCR and spell correction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999251365661621,
+                    "sentence": "The paper is technically robust and generally well-written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999606013298035,
+                    "sentence": "The proposed idea is novel (with relevant prior work cited) and intriguing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999257922172546,
+                    "sentence": "My primary concern, however, lies in the challenge of obtaining a reliable prior model \\( p_{LM} \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999150037765503,
+                    "sentence": "Such models often face data sparsity issues, particularly when the vocabulary is large, leading to scenarios where some test samples have zero probability under the prior/LM derived from a training set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999422430992126,
+                    "sentence": "While this issue is well-documented in the literature and existing solutions are acknowledged, I would like the authors to explicitly address its impact on their method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999908983707428,
+                    "sentence": "A related concern is the scalability of the algorithm to larger vocabularies and/or longer sub-sequences (parameter \\( N \\) in the paper).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999593496322632,
+                    "sentence": "The experiments presented use a relatively small vocabulary (29 characters) and short sub-sequences (N-grams with \\( N=2,3 \\)).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999941885471344,
+                    "sentence": "However, in NLP tasks at the word level, vocabularies are orders of magnitude larger, raising questions about the method's scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999538064002991,
+                    "sentence": "Additional comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999961793422699,
+                    "sentence": "- I would encourage the authors to discuss the applicability of their method to non-NLP domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9923406839370728,
+                    "sentence": "- The inclusion of the supervised solution in the 2D cost function figures raises a question: the red dot (representing the supervised solution) consistently appears to be in a local minimum of the unsupervised cost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947950839996338,
+                    "sentence": "I am unclear why this should necessarily be the case.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9923874735832214,
+                    "sentence": "- Given the assumption of structure in the output space of sequences, why not incorporate this structure into the classifier?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9932398796081543,
+                    "sentence": "Specifically, why rely on a point prediction \\( p(yt\"xt) \\) for a single label independently of its neighbors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9893602132797241,
+                    "sentence": "Specific comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967582821846008,
+                    "sentence": "- (*) Lines 117-118: The term \"negative cross entropy\" seems incorrect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9923800230026245,
+                    "sentence": "The formula provided appears to represent the cross entropy itself, not its negative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9941047430038452,
+                    "sentence": "- () Line 119: This sentence is somewhat unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9943381547927856,
+                    "sentence": "If I understand correctly, \\( \\bar{p} \\) represents the expected frequency of a specific sequence \\( \\{i1, \\ldots, in\\} \\), rather than the frequency of all* sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996209979057312,
+                    "sentence": "- (*) Lines 163-166: Here as well, the sign of the cross entropy appears to be reversed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997061550617218,
+                    "sentence": "For instance, when \\( p_{LM} \\) approaches 0, \\(-\\log(0)\\) should yield \\( +\\infty \\), not \\( -\\infty \\) as stated in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959920048713684,
+                    "sentence": "This aligns with the sentence in line 167, where one would expect a penalizing term in a minimization problem to approach \\( +\\infty \\), not \\( -\\infty \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981118440628052,
+                    "sentence": "Typos:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977015852928162,
+                    "sentence": "- (*) Lines 173-174: The phrase \"that \\( p{LM} \\)\" seems incorrect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997016429901123,
+                    "sentence": "Did the authors intend to write \"for which \\( p{LM} \\)\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998529851436615,
+                    "sentence": "- (*) Line 283: The word \"rate\" is repeated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 1,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 1,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 1,
+                    "human": 0,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a method for predicting a sequence of labels without requiring a labeled training set. The approach leverages a prior probability distribution over possible output sequences of labels, aiming to find a linear classifier such that the predicted sequence distribution closely aligns (in the KL divergence sense) with the given prior. The authors propose a cost function, an optimization algorithm, and demonstrate the method's effectiveness through experiments on real-world data for two tasks: OCR and spell correction.\nThe paper is technically robust and generally well-written. The proposed idea is novel (with relevant prior work cited) and intriguing. My primary concern, however, lies in the challenge of obtaining a reliable prior model \\( p_{LM} \\). Such models often face data sparsity issues, particularly when the vocabulary is large, leading to scenarios where some test samples have zero probability under the prior/LM derived from a training set. While this issue is well-documented in the literature and existing solutions are acknowledged, I would like the authors to explicitly address its impact on their method. A related concern is the scalability of the algorithm to larger vocabularies and/or longer sub-sequences (parameter \\( N \\) in the paper). The experiments presented use a relatively small vocabulary (29 characters) and short sub-sequences (N-grams with \\( N=2,3 \\)). However, in NLP tasks at the word level, vocabularies are orders of magnitude larger, raising questions about the method's scalability.\nAdditional comments:\n- I would encourage the authors to discuss the applicability of their method to non-NLP domains.\n- The inclusion of the supervised solution in the 2D cost function figures raises a question: the red dot (representing the supervised solution) consistently appears to be in a local minimum of the unsupervised cost. I am unclear why this should necessarily be the case.\n- Given the assumption of structure in the output space of sequences, why not incorporate this structure into the classifier? Specifically, why rely on a point prediction \\( p(yt\"xt) \\) for a single label independently of its neighbors?\nSpecific comments:\n- (*) Lines 117-118: The term \"negative cross entropy\" seems incorrect. The formula provided appears to represent the cross entropy itself, not its negative.\n- () Line 119: This sentence is somewhat unclear. If I understand correctly, \\( \\bar{p} \\) represents the expected frequency of a specific sequence \\( \\{i1, \\ldots, in\\} \\), rather than the frequency of all* sequences.\n- (*) Lines 163-166: Here as well, the sign of the cross entropy appears to be reversed. For instance, when \\( p_{LM} \\) approaches 0, \\(-\\log(0)\\) should yield \\( +\\infty \\), not \\( -\\infty \\) as stated in the paper. This aligns with the sentence in line 167, where one would expect a penalizing term in a minimization problem to approach \\( +\\infty \\), not \\( -\\infty \\).\nTypos:\n- (*) Lines 173-174: The phrase \"that \\( p{LM} \\)\" seems incorrect. Did the authors intend to write \"for which \\( p{LM} \\)\"?\n- (*) Line 283: The word \"rate\" is repeated."
+        }
+    ]
+}

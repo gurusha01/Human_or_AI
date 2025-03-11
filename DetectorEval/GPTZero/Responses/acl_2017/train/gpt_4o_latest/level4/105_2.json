@@ -1,0 +1,775 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "921adbc2-1293-469c-84a5-09169818b8bc",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999924898147583,
+                    "sentence": "- Strengths: The paper introduces a novel encoder-decoder model that explicitly incorporates monotonicity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999269843101501,
+                    "sentence": "- Weaknesses: The proposed model might essentially be a standard BiRNN with decoupled alignments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998335838317871,
+                    "sentence": "Furthermore, the evaluation is limited to morphology without exploring other monotonic Seq2Seq tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998892545700073,
+                    "sentence": "- General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998659491539001,
+                    "sentence": "The authors present a new encoder-decoder neural network architecture with \"hard monotonic attention\" and evaluate it on three morphology datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990617036819458,
+                    "sentence": "This paper is challenging to assess.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992299675941467,
+                    "sentence": "On the one hand, it is well-written, mostly clear, and proposes a novel idea\"\"integrating monotonicity into morphology tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995987415313721,
+                    "sentence": "The motivation for incorporating monotonicity is evident: unlike machine translation, many Seq2Seq tasks exhibit monotonicity, making general encoder-decoder models less suitable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993822574615479,
+                    "sentence": "The fact that such models still perform reasonably well highlights the robustness of neural techniques overall.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996623396873474,
+                    "sentence": "The paper's core idea is to explicitly enforce monotonicity during output character generation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999365508556366,
+                    "sentence": "This is achieved by decoupling alignment and transduction, first aligning input-output sequences monotonically and then training the model to generate outputs consistent with these monotonic alignments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995688199996948,
+                    "sentence": "However, some aspects of this approach remain unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994582533836365,
+                    "sentence": "I have the following questions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995536804199219,
+                    "sentence": "1) Could you clarify the nature of your alignments?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990319013595581,
+                    "sentence": "The alignments appear to be 1-to-many, as shown in the example in Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991043210029602,
+                    "sentence": "1, where one input character aligns with zero, one, or multiple output characters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995676875114441,
+                    "sentence": "However, this seems inconsistent with the description in lines 311-312, which suggests several input characters aligning to a single output character.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991903901100159,
+                    "sentence": "Are your alignments 1-to-many, many-to-1, or many-to-many?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996629953384399,
+                    "sentence": "2) A straightforward approach to monotonic Seq2Seq tasks involves a two-step process: first, align input and output characters monotonically with a 1-to-many constraint (using any monotone aligner, such as Jiampojamarn and Kondrak's toolkit).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997992515563965,
+                    "sentence": "Then, train a standard sequence tagger (e.g., an LSTM) to predict these alignments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998233318328857,
+                    "sentence": "For instance, in the example \"flog â ' fliege\" (line 613), one could align as \"f-l-o-g / f-l-ie-ge\" and train the tagger to predict \"f-l-ie-ge\" (output sequence of length 4) from \"f-l-o-g\" (input sequence of length 4).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9799849390983582,
+                    "sentence": "This approach has been discussed in prior work, such as [*, Section 4.2].",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9832600355148315,
+                    "sentence": "2a) How does your method differ from this simpler approach?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9753685593605042,
+                    "sentence": "2b) Why was this approach not included as a baseline?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9694074392318726,
+                    "sentence": "Additional concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9692396521568298,
+                    "sentence": "3) It is unfortunate that the evaluation is restricted to morphology.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9759867191314697,
+                    "sentence": "There are numerous other monotonic Seq2Seq tasks where your method could demonstrate its advantages, given its explicit modeling of monotonicity (see also [*]).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9752417802810669,
+                    "sentence": "4) The claim of performing \"on par or better\" (line 791) seems overly optimistic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9694588780403137,
+                    "sentence": "There is a tendency in NLP to classify cases of underperformance as \"on par\" and all others as \"better.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9463512897491455,
+                    "sentence": "I suggest revising this phrasing, though the experimental results themselves are acceptable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9569997191429138,
+                    "sentence": "5) The linguistic features used in your model are not sufficiently detailed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9204646944999695,
+                    "sentence": "From Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9491990804672241,
+                    "sentence": "1, it appears that features such as POS are included.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9495164155960083,
+                    "sentence": "5a) Where were these features sourced from?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9472987055778503,
+                    "sentence": "5b) Could these features, rather than the monotonicity constraints, be responsible for the improved performance in some cases?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8902089595794678,
+                    "sentence": "Minor points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.981000542640686,
+                    "sentence": "6) Equation (3): Please rewrite \\( NN \\) as \\( \\text{NN} \\) or a similar format.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9422200322151184,
+                    "sentence": "7) Line 231: \"Where\" should begin with a lowercase \"w.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9763911366462708,
+                    "sentence": "8) Line 237 and elsewhere: \\( x1 \\ldots xn \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9839916825294495,
+                    "sentence": "The mathematical convention is to write \\( x1, \\ldots, xn \\) but \\( x1 \\cdots xn \\), with dots aligned to surrounding symbols.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9738091230392456,
+                    "sentence": "9) Figure 1: Is the use of Cyrillic font necessary?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.963797390460968,
+                    "sentence": "It may be inaccessible to readers without the required fonts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9769735932350159,
+                    "sentence": "10) Line 437: Replace \"these\" with \"those.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952652454376221,
+                    "sentence": "[*]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7925278544425964,
+                    "sentence": "@InProceedings{schnober-EtAl:2016:COLING,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.63206547498703,
+                    "sentence": "author = {Schnober, Carsten and Eger, Steffen and Do Dinh,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.65150386095047,
+                    "sentence": "Erik-L\\^{a}n and Gurevych, Iryna},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8682826161384583,
+                    "sentence": "title = {Still not there?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.44791465997695923,
+                    "sentence": "Comparing Traditional Sequence-to-Sequence",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4518851339817047,
+                    "sentence": "Models to Encoder-Decoder Neural Networks on Monotone String Translation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7724323868751526,
+                    "sentence": "Tasks},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5165249705314636,
+                    "sentence": "booktitle = {Proceedings of COLING 2016, the 26th International Conference on",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5014843344688416,
+                    "sentence": "Computational Linguistics: Technical Papers},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5310329794883728,
+                    "sentence": "month = {December},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9229649901390076,
+                    "sentence": "year = {2016},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8583325743675232,
+                    "sentence": "address = {Osaka, Japan},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8400272130966187,
+                    "sentence": "publisher = {The COLING 2016 Organizing Committee},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9261796474456787,
+                    "sentence": "pages = {1703--1714},",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.960031270980835,
+                    "sentence": "url =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984787702560425,
+                    "sentence": "{http://aclweb.org/anthology/C16-1160}",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972705841064453,
+                    "sentence": "}",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977837204933167,
+                    "sentence": "AFTER AUTHOR RESPONSE",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969713091850281,
+                    "sentence": "Thank you for the clarifications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9925642609596252,
+                    "sentence": "It seems there may have been some confusion in your response regarding alignments (possibly due to a coding issue).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967069625854492,
+                    "sentence": "However, I understand that you are aligning 1-0, 0-1, 1-1, and later constructing many-to-many alignments from these.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983196258544922,
+                    "sentence": "While you compare your approach to Nicolai, Cherry, and Kondrak (2015), my question was more specific: why not use 1-x (x â^^ {0,1,2}) alignments as in Schnober et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984215497970581,
+                    "sentence": "and train a neural tagger (e.g., BiLSTM) on these?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937101602554321,
+                    "sentence": "I am curious how much your results would differ from such a simpler baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971513748168945,
+                    "sentence": "A tagger is inherently monotonic, and given monotonic alignments, the entire process remains monotonic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975695610046387,
+                    "sentence": "In contrast, your method starts with a general model and then imposes hard monotonicity constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984119534492493,
+                    "sentence": "NOTES FROM AC",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971873164176941,
+                    "sentence": "Additionally, Cohn et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999172031879425,
+                    "sentence": "(2016) (http://www.aclweb.org/anthology/N16-1102) is highly relevant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999244749546051,
+                    "sentence": "Is your architecture related to methods like the Stack LSTM, which also predicts a sequence of actions to modify or annotate an input?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995365142822266,
+                    "sentence": "Finally, do you believe using a greedy alignment approach results in any loss compared to Rastogi et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999570906162262,
+                    "sentence": "(2016), which employs hard monotonic attention but sums over all alignments?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 50,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 57,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 59,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 60,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 61,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 62,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 65,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 70,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 71,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 73,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 74,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.8822456422763244,
+            "class_probabilities": {
+                "human": 0.11096435754212483,
+                "ai": 0.8822456422763244,
+                "mixed": 0.0067900001815508065
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8822456422763244,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8822456422763244,
+                    "human": 0.11096435754212483,
+                    "mixed": 0.0067900001815508065
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "- Strengths: The paper introduces a novel encoder-decoder model that explicitly incorporates monotonicity.\n- Weaknesses: The proposed model might essentially be a standard BiRNN with decoupled alignments. Furthermore, the evaluation is limited to morphology without exploring other monotonic Seq2Seq tasks.\n- General Discussion:\nThe authors present a new encoder-decoder neural network architecture with \"hard monotonic attention\" and evaluate it on three morphology datasets.\nThis paper is challenging to assess. On the one hand, it is well-written, mostly clear, and proposes a novel idea\"\"integrating monotonicity into morphology tasks. \nThe motivation for incorporating monotonicity is evident: unlike machine translation, many Seq2Seq tasks exhibit monotonicity, making general encoder-decoder models less suitable. The fact that such models still perform reasonably well highlights the robustness of neural techniques overall. The paper's core idea is to explicitly enforce monotonicity during output character generation. This is achieved by decoupling alignment and transduction, first aligning input-output sequences monotonically and then training the model to generate outputs consistent with these monotonic alignments. However, some aspects of this approach remain unclear. I have the following questions:\n1) Could you clarify the nature of your alignments? The alignments appear to be 1-to-many, as shown in the example in Fig. 1, where one input character aligns with zero, one, or multiple output characters. However, this seems inconsistent with the description in lines 311-312, which suggests several input characters aligning to a single output character. Are your alignments 1-to-many, many-to-1, or many-to-many?\n2) A straightforward approach to monotonic Seq2Seq tasks involves a two-step process: first, align input and output characters monotonically with a 1-to-many constraint (using any monotone aligner, such as Jiampojamarn and Kondrak's toolkit). Then, train a standard sequence tagger (e.g., an LSTM) to predict these alignments. For instance, in the example \"flog â ' fliege\" (line 613), one could align as \"f-l-o-g / f-l-ie-ge\" and train the tagger to predict \"f-l-ie-ge\" (output sequence of length 4) from \"f-l-o-g\" (input sequence of length 4). This approach has been discussed in prior work, such as [*, Section 4.2]. \n2a) How does your method differ from this simpler approach?\n2b) Why was this approach not included as a baseline?\nAdditional concerns:\n3) It is unfortunate that the evaluation is restricted to morphology. There are numerous other monotonic Seq2Seq tasks where your method could demonstrate its advantages, given its explicit modeling of monotonicity (see also [*]).\n4) The claim of performing \"on par or better\" (line 791) seems overly optimistic. There is a tendency in NLP to classify cases of underperformance as \"on par\" and all others as \"better.\" I suggest revising this phrasing, though the experimental results themselves are acceptable.\n5) The linguistic features used in your model are not sufficiently detailed. From Fig. 1, it appears that features such as POS are included.\n5a) Where were these features sourced from?\n5b) Could these features, rather than the monotonicity constraints, be responsible for the improved performance in some cases?\nMinor points:\n6) Equation (3): Please rewrite \\( NN \\) as \\( \\text{NN} \\) or a similar format.\n7) Line 231: \"Where\" should begin with a lowercase \"w.\"\n8) Line 237 and elsewhere: \\( x1 \\ldots xn \\). The mathematical convention is to write \\( x1, \\ldots, xn \\) but \\( x1 \\cdots xn \\), with dots aligned to surrounding symbols.\n9) Figure 1: Is the use of Cyrillic font necessary? It may be inaccessible to readers without the required fonts.\n10) Line 437: Replace \"these\" with \"those.\"\n[*] \n@InProceedings{schnober-EtAl:2016:COLING, \n author = {Schnober, Carsten and Eger, Steffen and Do Dinh,\nErik-L\\^{a}n and Gurevych, Iryna},\n title = {Still not there? Comparing Traditional Sequence-to-Sequence\nModels to Encoder-Decoder Neural Networks on Monotone String Translation\nTasks},\n booktitle = {Proceedings of COLING 2016, the 26th International Conference on\nComputational Linguistics: Technical Papers},\n month = {December},\n year = {2016},\n address = {Osaka, Japan},\n publisher = {The COLING 2016 Organizing Committee},\n pages = {1703--1714},\n url =\n{http://aclweb.org/anthology/C16-1160}\n}\nAFTER AUTHOR RESPONSE\nThank you for the clarifications. It seems there may have been some confusion in your response regarding alignments (possibly due to a coding issue). However, I understand that you are aligning 1-0, 0-1, 1-1, and later constructing many-to-many alignments from these. \nWhile you compare your approach to Nicolai, Cherry, and Kondrak (2015), my question was more specific: why not use 1-x (x âˆˆ {0,1,2}) alignments as in Schnober et al. and train a neural tagger (e.g., BiLSTM) on these? I am curious how much your results would differ from such a simpler baseline. A tagger is inherently monotonic, and given monotonic alignments, the entire process remains monotonic. In contrast, your method starts with a general model and then imposes hard monotonicity constraints.\nNOTES FROM AC\nAdditionally, Cohn et al. (2016) (http://www.aclweb.org/anthology/N16-1102) is highly relevant.\nIs your architecture related to methods like the Stack LSTM, which also predicts a sequence of actions to modify or annotate an input?\nFinally, do you believe using a greedy alignment approach results in any loss compared to Rastogi et al. (2016), which employs hard monotonic attention but sums over all alignments?"
+        }
+    ]
+}

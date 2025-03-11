@@ -1,0 +1,284 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "1c6b5707-5a4b-49d4-9087-68d018a164ec",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9911888241767883,
+                    "sentence": "Summary: The authors propose a simple RNN with linear dynamics for language modeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9769352674484253,
+                    "sentence": "The linear dynamics significantly improve the interpretability of the model and offer the potential to enhance performance by caching dynamics for frequently occurring sub-sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9775073528289795,
+                    "sentence": "However, the quantitative results on a benchmark task are not particularly strong.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9766949415206909,
+                    "sentence": "The choice of dataset is somewhat unconventional, and only a single dataset is evaluated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9339655637741089,
+                    "sentence": "That said, the authors introduce several well-executed techniques for analyzing the model's behavior, many of which would not be feasible for a non-linear RNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9447388052940369,
+                    "sentence": "Overall, I recommend accepting the paper despite its modest results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9681854844093323,
+                    "sentence": "It makes for an engaging read and represents a meaningful contribution to the ongoing research dialogue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8660768866539001,
+                    "sentence": "Feedback:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9692683815956116,
+                    "sentence": "The paper could be strengthened by reducing the number of analysis experiments and expanding the discussion of related sequence models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9208651185035706,
+                    "sentence": "While some experiments were highly insightful, others (e.g., Section 4.6) seemed to primarily demonstrate that the model fits the data well, rather than highlighting any particularly novel or important property.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8427907824516296,
+                    "sentence": "Given the reasonable perplexity results, it is already clear that the model fits the data adequately.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9184789061546326,
+                    "sentence": "LSTMs and GRUs are well-suited for language modeling tasks involving rigid combinatorial structures, such as nested parentheses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9226300716400146,
+                    "sentence": "It would have been valuable to compare your model against non-linear methods on such datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.90738445520401,
+                    "sentence": "Don't shy away from reporting negative results\"\"if non-linear methods outperform your model on these tasks, it would still be an interesting finding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9039031863212585,
+                    "sentence": "You should include a discussion of Belanger and Kakade (2015) in the related work section.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9173777103424072,
+                    "sentence": "While their motivations (developing fast, scalable learning algorithms) differ from yours (focusing on interpretable latent state dynamics and simple credit assignment for future predictions based on past observations), their work also employs linear dynamics and analyzes the model using the singular vectors of the transition matrix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.934593677520752,
+                    "sentence": "This connection is worth highlighting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9366592764854431,
+                    "sentence": "More generally, it would benefit readers if you engaged more directly with the literature on linear dynamical systems (LDS).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9558946490287781,
+                    "sentence": "This comparison was discussed in the openreview forum, and I recommend incorporating it into the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944475889205933,
+                    "sentence": "For instance, it would be helpful to emphasize that the bias vectors in your model correspond to the columns of the Kalman gain matrix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9964582920074463,
+                    "sentence": "On the topic of LDS, your model aligns with Kalman filtering, but in an LDS framework, one can also perform Kalman smoothing, where state vectors are inferred using both past and future observations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989283084869385,
+                    "sentence": "Could your model be extended to include a similar capability?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988111853599548,
+                    "sentence": "Finally, consider exploring whether each matrix in your model could be represented as a sparse or convex combination of a set of dictionary matrices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986274838447571,
+                    "sentence": "This type of parameter sharing could enhance interpretability, as characters would then be represented by the low-dimensional weights used to combine the dictionary elements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993689656257629,
+                    "sentence": "Additionally, this approach might improve scalability for word-level tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Summary: The authors propose a simple RNN with linear dynamics for language modeling. The linear dynamics significantly improve the interpretability of the model and offer the potential to enhance performance by caching dynamics for frequently occurring sub-sequences. However, the quantitative results on a benchmark task are not particularly strong. The choice of dataset is somewhat unconventional, and only a single dataset is evaluated. That said, the authors introduce several well-executed techniques for analyzing the model's behavior, many of which would not be feasible for a non-linear RNN.\nOverall, I recommend accepting the paper despite its modest results. It makes for an engaging read and represents a meaningful contribution to the ongoing research dialogue.\nFeedback:\nThe paper could be strengthened by reducing the number of analysis experiments and expanding the discussion of related sequence models. While some experiments were highly insightful, others (e.g., Section 4.6) seemed to primarily demonstrate that the model fits the data well, rather than highlighting any particularly novel or important property. Given the reasonable perplexity results, it is already clear that the model fits the data adequately.\nLSTMs and GRUs are well-suited for language modeling tasks involving rigid combinatorial structures, such as nested parentheses. It would have been valuable to compare your model against non-linear methods on such datasets. Don't shy away from reporting negative results\"\"if non-linear methods outperform your model on these tasks, it would still be an interesting finding.\nYou should include a discussion of Belanger and Kakade (2015) in the related work section. While their motivations (developing fast, scalable learning algorithms) differ from yours (focusing on interpretable latent state dynamics and simple credit assignment for future predictions based on past observations), their work also employs linear dynamics and analyzes the model using the singular vectors of the transition matrix. This connection is worth highlighting.\nMore generally, it would benefit readers if you engaged more directly with the literature on linear dynamical systems (LDS). This comparison was discussed in the openreview forum, and I recommend incorporating it into the paper. For instance, it would be helpful to emphasize that the bias vectors in your model correspond to the columns of the Kalman gain matrix.\nOn the topic of LDS, your model aligns with Kalman filtering, but in an LDS framework, one can also perform Kalman smoothing, where state vectors are inferred using both past and future observations. Could your model be extended to include a similar capability?\nFinally, consider exploring whether each matrix in your model could be represented as a sparse or convex combination of a set of dictionary matrices. This type of parameter sharing could enhance interpretability, as characters would then be represented by the low-dimensional weights used to combine the dictionary elements. Additionally, this approach might improve scalability for word-level tasks."
+        }
+    ]
+}

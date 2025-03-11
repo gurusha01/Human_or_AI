@@ -1,0 +1,415 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b41886b4-5377-4aac-aea8-7970be5b367e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "Summary of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "This paper proposes a novel sequence labeling framework that incorporates a secondary training objective: predicting surrounding words for each word in the dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "This auxiliary language modeling objective encourages the model to learn general-purpose semantic and syntactic patterns, which are then leveraged to improve performance on sequence labeling tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "The architecture is evaluated on eight datasets spanning tasks such as error detection, named entity recognition (NER), chunking, and part-of-speech (POS) tagging.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "The proposed approach demonstrates consistent performance improvements across all benchmarks, with particularly notable gains in error detection, where it achieves state-of-the-art results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "1. Language Modeling as a Secondary Objective: The paper introduces a multitask training framework where a bidirectional LSTM is optimized not only for sequence labeling but also for predicting the preceding and succeeding words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "This is a novel and generalizable addition to sequence labeling models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "2. Empirical Validation Across Multiple Tasks: The architecture is evaluated on a diverse set of datasets, demonstrating its applicability to a wide range of sequence labeling tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949932098389,
+                    "sentence": "The results show consistent improvements, with the largest gains observed in error detection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "3. State-of-the-Art Results in Error Detection: The proposed framework achieves a 3.9% absolute improvement in F0.5 score on the FCE dataset, setting a new state-of-the-art for error detection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973177909851,
+                    "sentence": "1. Generalizability: The proposed language modeling objective is task-agnostic and does not require additional annotated or unannotated data, making it broadly applicable across sequence labeling tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "2. Consistent Performance Gains: The framework delivers improvements across all evaluated tasks and datasets, showcasing its robustness and effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "3. Thorough Evaluation: The paper provides a comprehensive evaluation on eight datasets, with detailed comparisons to baselines and prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "The inclusion of multiple random seeds and averaged results further strengthens the reliability of the findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "4. State-of-the-Art in Error Detection: The significant improvement in error detection highlights the utility of the proposed approach for tasks with sparse and unbalanced label distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "1. Limited Analysis of Language Modeling Objective: While the paper demonstrates the effectiveness of the auxiliary objective, it does not provide a detailed analysis of why the language modeling component improves performance across tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "For example, the specific features or patterns learned through this objective are not explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981642961502075,
+                    "sentence": "2. Hyperparameter Sensitivity: The choice of the weighting parameter (Î³) for the language modeling objective is not extensively analyzed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996119141578674,
+                    "sentence": "It is unclear how sensitive the results are to this parameter or whether task-specific tuning is required.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994187355041504,
+                    "sentence": "3. Comparison to Pretraining Approaches: The paper does not compare the proposed framework to pretraining-based methods, such as those leveraging large-scale language models (e.g., BERT or GPT).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988418817520142,
+                    "sentence": "This omission limits the contextualization of the contributions within the broader landscape of modern sequence labeling approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9925262331962585,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987919330596924,
+                    "sentence": "1. Can you provide an analysis of the specific linguistic features or patterns learned by the language modeling objective?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951106309890747,
+                    "sentence": "For example, does it help the model better capture long-range dependencies or rare word patterns?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9962636232376099,
+                    "sentence": "2. How does the performance of the proposed framework compare to pretraining-based approaches, such as fine-tuning a transformer model on the same tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9913973212242126,
+                    "sentence": "3. Did you experiment with varying the Î³ parameter across tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9913462400436401,
+                    "sentence": "If so, how sensitive are the results to this parameter?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9853753447532654,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966055154800415,
+                    "sentence": "The paper is well-written and presents a clear and compelling case for the proposed framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965589046478271,
+                    "sentence": "The inclusion of dropout and its interaction with the language modeling objective is a thoughtful addition, and the evaluation methodology is rigorous.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968734383583069,
+                    "sentence": "However, a deeper exploration of the auxiliary objective's impact and comparisons to pretraining approaches would further strengthen the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977133274078369,
+                    "sentence": "Overall, this is a strong contribution to the field of sequence labeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary of the Paper\nThis paper proposes a novel sequence labeling framework that incorporates a secondary training objective: predicting surrounding words for each word in the dataset. This auxiliary language modeling objective encourages the model to learn general-purpose semantic and syntactic patterns, which are then leveraged to improve performance on sequence labeling tasks. The architecture is evaluated on eight datasets spanning tasks such as error detection, named entity recognition (NER), chunking, and part-of-speech (POS) tagging. The proposed approach demonstrates consistent performance improvements across all benchmarks, with particularly notable gains in error detection, where it achieves state-of-the-art results.\nContributions\n1. Language Modeling as a Secondary Objective: The paper introduces a multitask training framework where a bidirectional LSTM is optimized not only for sequence labeling but also for predicting the preceding and succeeding words. This is a novel and generalizable addition to sequence labeling models.\n2. Empirical Validation Across Multiple Tasks: The architecture is evaluated on a diverse set of datasets, demonstrating its applicability to a wide range of sequence labeling tasks. The results show consistent improvements, with the largest gains observed in error detection.\n3. State-of-the-Art Results in Error Detection: The proposed framework achieves a 3.9% absolute improvement in F0.5 score on the FCE dataset, setting a new state-of-the-art for error detection.\nStrengths\n1. Generalizability: The proposed language modeling objective is task-agnostic and does not require additional annotated or unannotated data, making it broadly applicable across sequence labeling tasks.\n2. Consistent Performance Gains: The framework delivers improvements across all evaluated tasks and datasets, showcasing its robustness and effectiveness.\n3. Thorough Evaluation: The paper provides a comprehensive evaluation on eight datasets, with detailed comparisons to baselines and prior work. The inclusion of multiple random seeds and averaged results further strengthens the reliability of the findings.\n4. State-of-the-Art in Error Detection: The significant improvement in error detection highlights the utility of the proposed approach for tasks with sparse and unbalanced label distributions.\nWeaknesses\n1. Limited Analysis of Language Modeling Objective: While the paper demonstrates the effectiveness of the auxiliary objective, it does not provide a detailed analysis of why the language modeling component improves performance across tasks. For example, the specific features or patterns learned through this objective are not explored.\n2. Hyperparameter Sensitivity: The choice of the weighting parameter (Î³) for the language modeling objective is not extensively analyzed. It is unclear how sensitive the results are to this parameter or whether task-specific tuning is required.\n3. Comparison to Pretraining Approaches: The paper does not compare the proposed framework to pretraining-based methods, such as those leveraging large-scale language models (e.g., BERT or GPT). This omission limits the contextualization of the contributions within the broader landscape of modern sequence labeling approaches.\nQuestions to Authors\n1. Can you provide an analysis of the specific linguistic features or patterns learned by the language modeling objective? For example, does it help the model better capture long-range dependencies or rare word patterns?\n2. How does the performance of the proposed framework compare to pretraining-based approaches, such as fine-tuning a transformer model on the same tasks?\n3. Did you experiment with varying the Î³ parameter across tasks? If so, how sensitive are the results to this parameter?\nAdditional Comments\nThe paper is well-written and presents a clear and compelling case for the proposed framework. The inclusion of dropout and its interaction with the language modeling objective is a thoughtful addition, and the evaluation methodology is rigorous. However, a deeper exploration of the auxiliary objective's impact and comparisons to pretraining approaches would further strengthen the work. Overall, this is a strong contribution to the field of sequence labeling."
+        }
+    ]
+}

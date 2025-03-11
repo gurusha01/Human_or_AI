@@ -1,0 +1,409 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6f07d330-4e8a-4aad-8ed9-736e85358661",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999868273735046,
+                    "sentence": "The paper introduces PROXASAGA, an asynchronous variant of the SAGA algorithm tailored for finite-sum convex optimization with nonsmooth regularizers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999946355819702,
+                    "sentence": "This work addresses key challenges in asynchrony and proximity, extending the applicability of variance-reduced methods to composite optimization problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966025352478,
+                    "sentence": "By leveraging sparse updates and block coordinate-wise gradients, the authors propose a novel algorithm that achieves linear convergence under strong convexity and Lipschitz gradient assumptions, albeit with a slightly smaller step size compared to SAGA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "The theoretical framework is complemented by strong empirical results, demonstrating significant speedups on large-scale datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995231628418,
+                    "sentence": "1. Novelty and Scope: The paper makes a meaningful contribution by extending asynchronous optimization techniques to nonsmooth objectives, a gap in existing literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "The integration of variance reduction, sparse updates, and asynchronization is innovative and well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "2. Theoretical Rigor: The convergence proof is clean and well-organized, addressing the complexities introduced by asynchrony and sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999881982803345,
+                    "sentence": "The bounded delay assumption (up to \\( \\sqrt{n}/10 \\)) is reasonable and aligns with practical hardware constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999948143959045,
+                    "sentence": "3. Practical Relevance: The empirical results are compelling, showcasing up to 12x speedups on multi-core architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "The method outperforms state-of-the-art alternatives like ASYSPCD and FISTA by a large margin, particularly on sparse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938011169434,
+                    "sentence": "4. Clarity of Contributions: The paper clearly delineates its contributions, including the development of Sparse Proximal SAGA, its asynchronous extension (PROXASAGA), and the analysis of convergence and speedup regimes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926090240479,
+                    "sentence": "5. Reproducibility: The inclusion of implementation details and a reference to the open-source code enhances reproducibility and practical adoption.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999882578849792,
+                    "sentence": "1. Clarity Issues: While the theoretical sections are rigorous, the paper occasionally suffers from inconsistent notation and undefined terms, which may hinder accessibility for non-expert readers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999873638153076,
+                    "sentence": "For example, the distinction between \"virtual iterates\" and \"inconsistent reads\" could be clarified earlier in the text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999990701675415,
+                    "sentence": "2. Limited Generalization: The method relies on sparsity assumptions for its speedup guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987781047821,
+                    "sentence": "While this is reasonable for many machine learning problems, it limits the algorithm's applicability to dense datasets or problems without inherent sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999845623970032,
+                    "sentence": "3. Experimental Scope: Although the experiments are thorough, they focus primarily on \\( \\ell1 + \\ell2 \\)-regularized logistic regression.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9833778142929077,
+                    "sentence": "Additional benchmarks on other composite objectives (e.g., group lasso or constrained optimization) would strengthen the paper's generalizability claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9803828597068787,
+                    "sentence": "4. Minor Textual Errors: There are small typographical and formatting issues, such as inconsistent use of symbols and references to undefined variables (e.g., \\( \\alpha \\) in some equations).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982742667198181,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959098696708679,
+                    "sentence": "The paper makes significant theoretical and experimental contributions to asynchronous optimization, addressing an important gap in the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986369609832764,
+                    "sentence": "Its combination of variance reduction, sparse updates, and asynchronization is both novel and impactful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987894296646118,
+                    "sentence": "Despite minor clarity and scope issues, the strengths of the work far outweigh its weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978659152984619,
+                    "sentence": "The results are robust, the proofs are rigorous, and the practical implications are substantial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996412396430969,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994570016860962,
+                    "sentence": "- Advances the state of the art in asynchronous optimization for nonsmooth objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994955062866211,
+                    "sentence": "- Provides a clean theoretical framework with strong empirical validation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996904134750366,
+                    "sentence": "- Offers practical utility for large-scale machine learning problems on multi-core architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999836802482605,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997636079788208,
+                    "sentence": "- Relies on sparsity assumptions, limiting general applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987469911575317,
+                    "sentence": "- Minor clarity and notation issues could be improved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987708926200867,
+                    "sentence": "Final Verdict: Accept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996111392974854,
+                    "sentence": "This paper is a high-quality contribution to the field and is well-suited for presentation at the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9954476479514417,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9954476479514417,
+                "mixed": 0.004552352048558421
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9954476479514417,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9954476479514417,
+                    "human": 0,
+                    "mixed": 0.004552352048558421
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces PROXASAGA, an asynchronous variant of the SAGA algorithm tailored for finite-sum convex optimization with nonsmooth regularizers. This work addresses key challenges in asynchrony and proximity, extending the applicability of variance-reduced methods to composite optimization problems. By leveraging sparse updates and block coordinate-wise gradients, the authors propose a novel algorithm that achieves linear convergence under strong convexity and Lipschitz gradient assumptions, albeit with a slightly smaller step size compared to SAGA. The theoretical framework is complemented by strong empirical results, demonstrating significant speedups on large-scale datasets.\nStrengths:\n1. Novelty and Scope: The paper makes a meaningful contribution by extending asynchronous optimization techniques to nonsmooth objectives, a gap in existing literature. The integration of variance reduction, sparse updates, and asynchronization is innovative and well-motivated.\n2. Theoretical Rigor: The convergence proof is clean and well-organized, addressing the complexities introduced by asynchrony and sparsity. The bounded delay assumption (up to \\( \\sqrt{n}/10 \\)) is reasonable and aligns with practical hardware constraints.\n3. Practical Relevance: The empirical results are compelling, showcasing up to 12x speedups on multi-core architectures. The method outperforms state-of-the-art alternatives like ASYSPCD and FISTA by a large margin, particularly on sparse datasets.\n4. Clarity of Contributions: The paper clearly delineates its contributions, including the development of Sparse Proximal SAGA, its asynchronous extension (PROXASAGA), and the analysis of convergence and speedup regimes.\n5. Reproducibility: The inclusion of implementation details and a reference to the open-source code enhances reproducibility and practical adoption.\nWeaknesses:\n1. Clarity Issues: While the theoretical sections are rigorous, the paper occasionally suffers from inconsistent notation and undefined terms, which may hinder accessibility for non-expert readers. For example, the distinction between \"virtual iterates\" and \"inconsistent reads\" could be clarified earlier in the text.\n2. Limited Generalization: The method relies on sparsity assumptions for its speedup guarantees. While this is reasonable for many machine learning problems, it limits the algorithm's applicability to dense datasets or problems without inherent sparsity.\n3. Experimental Scope: Although the experiments are thorough, they focus primarily on \\( \\ell1 + \\ell2 \\)-regularized logistic regression. Additional benchmarks on other composite objectives (e.g., group lasso or constrained optimization) would strengthen the paper's generalizability claims.\n4. Minor Textual Errors: There are small typographical and formatting issues, such as inconsistent use of symbols and references to undefined variables (e.g., \\( \\alpha \\) in some equations).\nRecommendation:\nThe paper makes significant theoretical and experimental contributions to asynchronous optimization, addressing an important gap in the literature. Its combination of variance reduction, sparse updates, and asynchronization is both novel and impactful. Despite minor clarity and scope issues, the strengths of the work far outweigh its weaknesses. The results are robust, the proofs are rigorous, and the practical implications are substantial.\nArguments for Acceptance:\n- Advances the state of the art in asynchronous optimization for nonsmooth objectives.\n- Provides a clean theoretical framework with strong empirical validation.\n- Offers practical utility for large-scale machine learning problems on multi-core architectures.\nArguments Against Acceptance:\n- Relies on sparsity assumptions, limiting general applicability.\n- Minor clarity and notation issues could be improved.\nFinal Verdict: Accept. This paper is a high-quality contribution to the field and is well-suited for presentation at the conference."
+        }
+    ]
+}

@@ -1,0 +1,275 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a5c7c3f0-fc5b-4ba1-aecf-5c1176081894",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9998791217803955,
+                    "sentence": "Summary: This paper introduces a gradient boosting method, CEGB, designed for prediction tasks under budget constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998339414596558,
+                    "sentence": "During training, CEGB minimizes a combination of empirical loss and a cost penalty term.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998292922973633,
+                    "sentence": "It incorporates three types of costs: feature cost per example, feature cost across all examples, and evaluation cost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998839497566223,
+                    "sentence": "The algorithm identifies the optimal split by greedily minimizing the second-order approximation of the loss objective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998711943626404,
+                    "sentence": "Experimental results demonstrate improved performance compared to state-of-the-art methods on two datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999809205532074,
+                    "sentence": "Significance: The proposed algorithm shares similarities with GreedyMiser (Xu et al., 2012), with the primary distinction being in the construction of weak regressors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998305439949036,
+                    "sentence": "CEGB's key innovation is its ability to introduce new splits at any current leaf, as opposed to a predefined structure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999788761138916,
+                    "sentence": "To reduce computational overhead in identifying the best leaf to split during each iteration, the method leverages a second-order approximation of the loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993993639945984,
+                    "sentence": "While concepts like best-first tree learning and second-order loss approximation are well-established in the gradient boosting literature, their application in cost-efficient settings is novel.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988383054733276,
+                    "sentence": "CEGB can be seen as a refinement of GreedyMiser.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983590245246887,
+                    "sentence": "Results: CEGB is evaluated against state-of-the-art methods, BudgetPrune and GreedyMiser, on two datasets: Yahoo and MiniBooNE.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981759190559387,
+                    "sentence": "However, the authors did not include the Forest dataset, which was used in BudgetPrune (Nan et al., 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.11269022524356842,
+                    "sentence": "Based on my experience, gradient boosting methods often underperform compared to random forest-based methods (e.g., BudgetPrune) on the Forest dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.25633686780929565,
+                    "sentence": "Including additional datasets would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.40893539786338806,
+                    "sentence": "Furthermore, the results in Figure 2(b) for CEGB without tree cost are unexpectedly strong.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.44073987007141113,
+                    "sentence": "It is surprising (and somewhat implausible) that precision exceeds 0.14 with an average feature cost of ~20.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6086497902870178,
+                    "sentence": "Could the authors clarify how many trees were used and the average number of nodes per tree to achieve such performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8552008867263794,
+                    "sentence": "Others: The authors repeatedly assert that BudgetPrune assumes feature computation costs are significantly higher than evaluation costs, rendering evaluation costs irrelevant in certain experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7461076974868774,
+                    "sentence": "This claim is inaccurate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7710286378860474,
+                    "sentence": "The BudgetPrune formulation by Nan et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.764980137348175,
+                    "sentence": "(2016) explicitly accounts for evaluation costs, which can be balanced against feature costs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8465452194213867,
+                    "sentence": "Overall: This paper offers a refinement of GreedyMiser, and the experimental results are promising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8214748501777649,
+                    "sentence": "Including additional datasets and comparisons would further enhance the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8389789462089539,
+                    "sentence": "After discussion with the reviewers: While the novelty of this work is somewhat limited given the prior contributions of XGBoost and GreedyMiser, the experimental results demonstrate improvements over state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7908416986465454,
+                    "sentence": "The authors have committed to including additional datasets in the final version, which strengthens the case for acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.710511326789856,
+                    "sentence": "I am still inclined to recommend accepting this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.0010573188656143365
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.013701276613118245
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                }
+            ],
+            "completely_generated_prob": 0.7995711047355243,
+            "class_probabilities": {
+                "human": 0.19427518060025914,
+                "ai": 0.7995711047355243,
+                "mixed": 0.006153714664216576
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7995711047355243,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7995711047355243,
+                    "human": 0.19427518060025914,
+                    "mixed": 0.006153714664216576
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Summary: This paper introduces a gradient boosting method, CEGB, designed for prediction tasks under budget constraints. During training, CEGB minimizes a combination of empirical loss and a cost penalty term. It incorporates three types of costs: feature cost per example, feature cost across all examples, and evaluation cost. The algorithm identifies the optimal split by greedily minimizing the second-order approximation of the loss objective. Experimental results demonstrate improved performance compared to state-of-the-art methods on two datasets.\nSignificance: The proposed algorithm shares similarities with GreedyMiser (Xu et al., 2012), with the primary distinction being in the construction of weak regressors. CEGB's key innovation is its ability to introduce new splits at any current leaf, as opposed to a predefined structure. To reduce computational overhead in identifying the best leaf to split during each iteration, the method leverages a second-order approximation of the loss. While concepts like best-first tree learning and second-order loss approximation are well-established in the gradient boosting literature, their application in cost-efficient settings is novel. CEGB can be seen as a refinement of GreedyMiser.\nResults: CEGB is evaluated against state-of-the-art methods, BudgetPrune and GreedyMiser, on two datasets: Yahoo and MiniBooNE. However, the authors did not include the Forest dataset, which was used in BudgetPrune (Nan et al., 2016). Based on my experience, gradient boosting methods often underperform compared to random forest-based methods (e.g., BudgetPrune) on the Forest dataset. Including additional datasets would strengthen the paper. Furthermore, the results in Figure 2(b) for CEGB without tree cost are unexpectedly strong. It is surprising (and somewhat implausible) that precision exceeds 0.14 with an average feature cost of ~20. Could the authors clarify how many trees were used and the average number of nodes per tree to achieve such performance?\nOthers: The authors repeatedly assert that BudgetPrune assumes feature computation costs are significantly higher than evaluation costs, rendering evaluation costs irrelevant in certain experiments. This claim is inaccurate. The BudgetPrune formulation by Nan et al. (2016) explicitly accounts for evaluation costs, which can be balanced against feature costs.\nOverall: This paper offers a refinement of GreedyMiser, and the experimental results are promising. Including additional datasets and comparisons would further enhance the work.\nAfter discussion with the reviewers: While the novelty of this work is somewhat limited given the prior contributions of XGBoost and GreedyMiser, the experimental results demonstrate improvements over state-of-the-art methods. The authors have committed to including additional datasets in the final version, which strengthens the case for acceptance. I am still inclined to recommend accepting this paper."
+        }
+    ]
+}

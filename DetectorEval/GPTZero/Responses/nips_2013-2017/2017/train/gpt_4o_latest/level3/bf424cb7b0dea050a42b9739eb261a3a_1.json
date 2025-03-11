@@ -1,0 +1,426 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "4e349e8e-3714-493a-86f9-5748b6d6301b",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999934434890747,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999985933303833,
+                    "sentence": "Summary",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "This paper investigates the limitations of gradient descent (GD) in approximating non-smooth functions when used with smooth (infinitely differentiable) kernels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "The authors identify that the fast eigenvalue decay of such kernels restricts the computational reach of GD, requiring a super-polynomial number of iterations to approximate less smooth functions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "To address this, the paper introduces EigenPro, a preconditioning scheme that uses approximate second-order information to accelerate convergence without introducing bias.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "EigenPro achieves this by modifying the spectrum of kernel matrices through randomization, offering a computationally efficient alternative to traditional second-order methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "The authors provide theoretical analysis and experimental results to demonstrate that EigenPro significantly accelerates convergence compared to standard GD and Pegasos, particularly for large datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "However, the paper notes that the speed-ups over PEGASOS are sometimes marginal, and the implications of the results remain unclear in certain scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "1. Novel Insight: The paper provides a clear and theoretically grounded explanation of why GD struggles with smooth kernels, linking inefficiency to the eigenvalue decay of kernel functions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "This insight is valuable for understanding the limitations of shallow methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "2. Practical Contribution: EigenPro is a computationally efficient and scalable method that addresses the identified limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "Its compatibility with stochastic gradient descent (SGD) and low overhead per iteration make it practical for large-scale problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "3. Theoretical Rigor: The analysis of EigenPro is thorough, including step size selection and convergence guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The authors also connect their work to related literature, situating EigenPro as a hybrid method that balances first- and second-order optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "4. Experimental Validation: The paper includes extensive experiments on large datasets, demonstrating that EigenPro achieves significant acceleration over standard GD and often matches or improves state-of-the-art kernel methods at a fraction of the computational cost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "1. Unclear Implications: While the theoretical and experimental results are promising, the broader implications of the findings remain unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "For example, the paper does not explore how EigenPro compares to deep learning methods in synthetic or real-world settings, which could provide valuable context for its practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "2. Marginal Speed-Ups in Some Cases: The experimental results show only marginal speed-ups over PEGASOS in some scenarios, and EigenPro is occasionally slower.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "This raises questions about the consistency of its advantages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "3. Readability: The submitted version of the paper is less readable compared to the longer version on arXiv.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997860193252563,
+                    "sentence": "The dense presentation of theoretical results and lack of intuitive explanations may hinder accessibility for a broader audience.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997959733009338,
+                    "sentence": "4. Limited Comparisons: The paper does not explicitly compare EigenPro to deep networks, which would help clarify its strengths and weaknesses in modern machine learning contexts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997923970222473,
+                    "sentence": "Additionally, the choice of datasets could be expanded to include more diverse benchmarks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999934732913971,
+                    "sentence": "Arguments for Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998708367347717,
+                    "sentence": "1. The paper provides a novel and theoretically sound contribution to the understanding of GD inefficiencies with smooth kernels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998936653137207,
+                    "sentence": "2. EigenPro is a practical and scalable method with demonstrated acceleration on large datasets, making it relevant to the machine learning community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999873161315918,
+                    "sentence": "3. The work addresses a challenging and important problem, bridging the gap between theoretical insights and practical improvements for shallow methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998015761375427,
+                    "sentence": "Arguments Against Acceptance",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998711347579956,
+                    "sentence": "1. The implications of the results are not fully explored, particularly in comparison to deep learning methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995800256729126,
+                    "sentence": "2. The experimental results show inconsistent speed-ups, and the practical significance of the improvements is not always clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996741414070129,
+                    "sentence": "3. The paper's readability and organization could be improved to make the contributions more accessible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990986585617065,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999382495880127,
+                    "sentence": "I recommend acceptance with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990440607070923,
+                    "sentence": "The paper makes a valuable contribution to the field, but the authors should improve the clarity of their experimental results, provide more intuitive explanations of their theoretical findings, and explore comparisons with deep networks to better contextualize their work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999026894569397,
+                    "sentence": "Additionally, improving the readability of the paper would enhance its impact and accessibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary\nThis paper investigates the limitations of gradient descent (GD) in approximating non-smooth functions when used with smooth (infinitely differentiable) kernels. The authors identify that the fast eigenvalue decay of such kernels restricts the computational reach of GD, requiring a super-polynomial number of iterations to approximate less smooth functions. To address this, the paper introduces EigenPro, a preconditioning scheme that uses approximate second-order information to accelerate convergence without introducing bias. EigenPro achieves this by modifying the spectrum of kernel matrices through randomization, offering a computationally efficient alternative to traditional second-order methods. The authors provide theoretical analysis and experimental results to demonstrate that EigenPro significantly accelerates convergence compared to standard GD and Pegasos, particularly for large datasets. However, the paper notes that the speed-ups over PEGASOS are sometimes marginal, and the implications of the results remain unclear in certain scenarios.\nStrengths\n1. Novel Insight: The paper provides a clear and theoretically grounded explanation of why GD struggles with smooth kernels, linking inefficiency to the eigenvalue decay of kernel functions. This insight is valuable for understanding the limitations of shallow methods.\n2. Practical Contribution: EigenPro is a computationally efficient and scalable method that addresses the identified limitations. Its compatibility with stochastic gradient descent (SGD) and low overhead per iteration make it practical for large-scale problems.\n3. Theoretical Rigor: The analysis of EigenPro is thorough, including step size selection and convergence guarantees. The authors also connect their work to related literature, situating EigenPro as a hybrid method that balances first- and second-order optimization.\n4. Experimental Validation: The paper includes extensive experiments on large datasets, demonstrating that EigenPro achieves significant acceleration over standard GD and often matches or improves state-of-the-art kernel methods at a fraction of the computational cost.\nWeaknesses\n1. Unclear Implications: While the theoretical and experimental results are promising, the broader implications of the findings remain unclear. For example, the paper does not explore how EigenPro compares to deep learning methods in synthetic or real-world settings, which could provide valuable context for its practical utility.\n2. Marginal Speed-Ups in Some Cases: The experimental results show only marginal speed-ups over PEGASOS in some scenarios, and EigenPro is occasionally slower. This raises questions about the consistency of its advantages.\n3. Readability: The submitted version of the paper is less readable compared to the longer version on arXiv. The dense presentation of theoretical results and lack of intuitive explanations may hinder accessibility for a broader audience.\n4. Limited Comparisons: The paper does not explicitly compare EigenPro to deep networks, which would help clarify its strengths and weaknesses in modern machine learning contexts. Additionally, the choice of datasets could be expanded to include more diverse benchmarks.\nArguments for Acceptance\n1. The paper provides a novel and theoretically sound contribution to the understanding of GD inefficiencies with smooth kernels.\n2. EigenPro is a practical and scalable method with demonstrated acceleration on large datasets, making it relevant to the machine learning community.\n3. The work addresses a challenging and important problem, bridging the gap between theoretical insights and practical improvements for shallow methods.\nArguments Against Acceptance\n1. The implications of the results are not fully explored, particularly in comparison to deep learning methods.\n2. The experimental results show inconsistent speed-ups, and the practical significance of the improvements is not always clear.\n3. The paper's readability and organization could be improved to make the contributions more accessible.\nRecommendation\nI recommend acceptance with minor revisions. The paper makes a valuable contribution to the field, but the authors should improve the clarity of their experimental results, provide more intuitive explanations of their theoretical findings, and explore comparisons with deep networks to better contextualize their work. Additionally, improving the readability of the paper would enhance its impact and accessibility."
+        }
+    ]
+}

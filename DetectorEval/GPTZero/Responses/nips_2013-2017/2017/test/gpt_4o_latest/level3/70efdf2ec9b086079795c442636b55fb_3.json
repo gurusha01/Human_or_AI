@@ -1,0 +1,415 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "bac5d52e-c873-402b-9646-0fbd9bc191c7",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999806880950928,
+                    "sentence": "The paper introduces Tensorized LSTMs (tLSTMs), a novel approach to enhancing the capacity of LSTMs by tensorizing hidden states and employing cross-layer memory cell convolution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999790191650391,
+                    "sentence": "This method allows for efficient widening and deepening of the network without significantly increasing parameters or runtime.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999852180480957,
+                    "sentence": "The authors validate their approach on five sequence learning tasks, demonstrating its potential over baseline and state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999988853931427,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999901652336121,
+                    "sentence": "1. Proposed Method: The introduction of tensorized hidden states and memory cell convolution is innovative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999944567680359,
+                    "sentence": "By leveraging tensors, the model achieves efficient parameter sharing and computational scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999875426292419,
+                    "sentence": "The merging of deep computations into temporal computations is particularly compelling, offering a practical solution to runtime challenges in deep LSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99998539686203,
+                    "sentence": "2. Clarity: The paper is well-structured and clearly written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884366989136,
+                    "sentence": "The mathematical formulation of the tLSTM is detailed and accessible, and the experimental results are presented systematically.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999767541885376,
+                    "sentence": "3. Experimental Validation: The authors conduct experiments across diverse tasks (e.g., language modeling, algorithmic tasks, MNIST classification), showcasing the model's versatility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999756217002869,
+                    "sentence": "The visualization of memory cell behavior provides valuable insights into the model's internal workings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999657273292542,
+                    "sentence": "4. Significance: The proposed method addresses key challenges in scaling LSTMs, such as parameter efficiency and runtime, making it a meaningful contribution to the field of sequence modeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999979555606842,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994037747383118,
+                    "sentence": "1. Widening vs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998442530632019,
+                    "sentence": "Deepening: The claim that increasing the tensor size (P) widens the network is conceptually misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992586374282837,
+                    "sentence": "As the paper acknowledges that P is akin to the number of stacked hidden layers, this operation effectively deepens the network rather than widening it.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993837475776672,
+                    "sentence": "This discrepancy should be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991907477378845,
+                    "sentence": "2. Network Depth Parameterization: The depth (L) is not an independent parameter but is derived from P and K. This contradicts the claim that both width and depth can be freely adjusted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993827939033508,
+                    "sentence": "The authors should explicitly address this limitation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994585514068604,
+                    "sentence": "3. Gradient Vanishing/Exploding: The assertion that memory cell convolution prevents gradient issues is unsubstantiated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994907975196838,
+                    "sentence": "The paper lacks both theoretical justification and empirical evidence to support this claim.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996507167816162,
+                    "sentence": "4. Experimental Design: While the experiments are comprehensive, the grouping of configurations (e.g., normalization, memory cell convolution, feedback connections) could be more systematic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998199343681335,
+                    "sentence": "Additionally, the limited exploration of parameter combinations (e.g., varying K) restricts the generalizability of the findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999170899391174,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999690651893616,
+                    "sentence": "The paper presents a novel and promising approach to improving LSTMs, with strong empirical results and clear exposition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999569058418274,
+                    "sentence": "However, the conceptual confusion around widening vs. deepening, the lack of theoretical validation for gradient claims, and the experimental limitations weaken its overall impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999350309371948,
+                    "sentence": "Addressing these issues would significantly strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999981701374054,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884963035583,
+                    "sentence": "- Innovative method with practical implications for scaling LSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999848008155823,
+                    "sentence": "- Strong empirical performance across diverse tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999650716781616,
+                    "sentence": "- Clear and well-organized presentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999776482582092,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999693036079407,
+                    "sentence": "- Conceptual ambiguity regarding network widening and deepening.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999672770500183,
+                    "sentence": "- Lack of theoretical and empirical support for gradient-related claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999700784683228,
+                    "sentence": "- Limited exploration of experimental configurations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999872088432312,
+                    "sentence": "Overall, this paper makes a meaningful contribution to the field, but revisions are needed to address the identified weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces Tensorized LSTMs (tLSTMs), a novel approach to enhancing the capacity of LSTMs by tensorizing hidden states and employing cross-layer memory cell convolution. This method allows for efficient widening and deepening of the network without significantly increasing parameters or runtime. The authors validate their approach on five sequence learning tasks, demonstrating its potential over baseline and state-of-the-art methods.\nStrengths:\n1. Proposed Method: The introduction of tensorized hidden states and memory cell convolution is innovative. By leveraging tensors, the model achieves efficient parameter sharing and computational scalability. The merging of deep computations into temporal computations is particularly compelling, offering a practical solution to runtime challenges in deep LSTMs.\n2. Clarity: The paper is well-structured and clearly written. The mathematical formulation of the tLSTM is detailed and accessible, and the experimental results are presented systematically.\n3. Experimental Validation: The authors conduct experiments across diverse tasks (e.g., language modeling, algorithmic tasks, MNIST classification), showcasing the model's versatility. The visualization of memory cell behavior provides valuable insights into the model's internal workings.\n4. Significance: The proposed method addresses key challenges in scaling LSTMs, such as parameter efficiency and runtime, making it a meaningful contribution to the field of sequence modeling.\nWeaknesses:\n1. Widening vs. Deepening: The claim that increasing the tensor size (P) widens the network is conceptually misleading. As the paper acknowledges that P is akin to the number of stacked hidden layers, this operation effectively deepens the network rather than widening it. This discrepancy should be clarified.\n2. Network Depth Parameterization: The depth (L) is not an independent parameter but is derived from P and K. This contradicts the claim that both width and depth can be freely adjusted. The authors should explicitly address this limitation.\n3. Gradient Vanishing/Exploding: The assertion that memory cell convolution prevents gradient issues is unsubstantiated. The paper lacks both theoretical justification and empirical evidence to support this claim.\n4. Experimental Design: While the experiments are comprehensive, the grouping of configurations (e.g., normalization, memory cell convolution, feedback connections) could be more systematic. Additionally, the limited exploration of parameter combinations (e.g., varying K) restricts the generalizability of the findings.\nRecommendation:\nThe paper presents a novel and promising approach to improving LSTMs, with strong empirical results and clear exposition. However, the conceptual confusion around widening vs. deepening, the lack of theoretical validation for gradient claims, and the experimental limitations weaken its overall impact. Addressing these issues would significantly strengthen the paper.\nArguments for Acceptance:\n- Innovative method with practical implications for scaling LSTMs.\n- Strong empirical performance across diverse tasks.\n- Clear and well-organized presentation.\nArguments Against Acceptance:\n- Conceptual ambiguity regarding network widening and deepening.\n- Lack of theoretical and empirical support for gradient-related claims.\n- Limited exploration of experimental configurations.\nOverall, this paper makes a meaningful contribution to the field, but revisions are needed to address the identified weaknesses."
+        }
+    ]
+}

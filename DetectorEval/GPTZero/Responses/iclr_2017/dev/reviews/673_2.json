@@ -1,0 +1,234 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "89861397-1922-4a59-9737-8beab0615a1b",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.004701229743659496,
+                    "sentence": "The paper proposes an algorithm for training memory networks which have very large memories.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0029731732793152332,
+                    "sentence": "Training such models in traditional ways, by using soft-attention mechanism over all the memory slots is not only slow, it is also harder to train due to dispersion of gradients.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003919942770153284,
+                    "sentence": "The paper proposes to use the k-mips algorithm over the memories to choose a subset of the memory slots over which the attention is applied.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003859220538288355,
+                    "sentence": "Since the cost of exact k-mips is the same as doing full attention, the authors propose to use approximate k-mips, which while faster to compute, results in inferior performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004266536794602871,
+                    "sentence": "An artifact of using k-mips is that one cannot learn the memory slots.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003943921998143196,
+                    "sentence": "Hence they are pre-trained and kept fixed during entire training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004595596343278885,
+                    "sentence": "The experimental section shows the efficacy of using k-mips using the SimpleQuestions dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0037706634029746056,
+                    "sentence": "The exact k-mips results in the same performance as the full attention.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030118655413389206,
+                    "sentence": "The approximate k-mips results in deterioration in performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0057998173870146275,
+                    "sentence": "The paper is quite clearly written and easy to understand.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004535990301519632,
+                    "sentence": "I think the ideas proposed in the paper are not super convincing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004184282850474119,
+                    "sentence": "I have a number of issues with this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004683297593146563,
+                    "sentence": "1. The k-mips algorithm forces the memories to be fixed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003995493520051241,
+                    "sentence": "This to me is a rather limiting constraint, especially on problems/dataset which will require multiple hops of training to do compounded reasoning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004320335574448109,
+                    "sentence": "As a results I'm not entirely sure about the usefulness of this technique.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003097962588071823,
+                    "sentence": "2. Furthermore, the exact k-mips is the sample complexity as the full attention.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00440384354442358,
+                    "sentence": "The only way to achieve speedup is to use approx k-mips.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0031433000694960356,
+                    "sentence": "That, as expected, results in a significant drop in performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003952473402023315,
+                    "sentence": "3. The paper motivates the ideas by proposing solutions to eliminate heuristics used to prune the memories.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003848524298518896,
+                    "sentence": "However in Section 3.1 the authors themselves end up using multiple heuristics to make the training work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004355997312813997,
+                    "sentence": "Agreed, that the used heuristics are not data dependent, but still, it feels like they are kicking the can down the road as far as heuristics are concerned.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002874662633985281,
+                    "sentence": "4. The experimental results are not very convincing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007243103347718716,
+                    "sentence": "First there is no speed comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.013366027735173702,
+                    "sentence": "Second, the authors do not compare with methods other than k-mips which do fast nearest neighbor search, such as, FLANN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 10,
+                    "completely_generated_prob": 5.7802509961791254e-09
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.024061755747311862,
+            "class_probabilities": {
+                "human": 0.975938244252688,
+                "ai": 0.024061755747311862,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.975938244252688,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.024061755747311862,
+                    "human": 0.975938244252688,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper proposes an algorithm for training memory networks which have very large memories. Training such models in traditional ways, by using soft-attention mechanism over all the memory slots is not only slow, it is also harder to train due to dispersion of gradients. The paper proposes to use the k-mips algorithm over the memories to choose a subset of the memory slots over which the attention is applied. Since the cost of exact k-mips is the same as doing full attention, the authors propose to use approximate k-mips, which while faster to compute, results in inferior performance. An artifact of using k-mips is that one cannot learn the memory slots. Hence they are pre-trained and kept fixed during entire training. The experimental section shows the efficacy of using k-mips using the SimpleQuestions dataset. The exact k-mips results in the same performance as the full attention. The approximate k-mips results in deterioration in performance. The paper is quite clearly written and easy to understand. \nI think the ideas proposed in the paper are not super convincing. I have a number of issues with this paper. \n1. The k-mips algorithm forces the memories to be fixed. This to me is a rather limiting constraint, especially on problems/dataset which will require multiple hops of training to do compounded reasoning. As a results I'm not entirely sure about the usefulness of this technique. \n2. Furthermore, the exact k-mips is the sample complexity as the full attention. The only way to achieve speedup is to use approx k-mips. That, as expected, results in a significant drop in performance. \n3. The paper motivates the ideas by proposing solutions to eliminate heuristics used to prune the memories. However in Section 3.1 the authors themselves end up using multiple heuristics to make the training work. Agreed, that the used heuristics are not data dependent, but still, it feels like they are kicking the can down the road as far as heuristics are concerned. \n4. The experimental results are not very convincing. First there is no speed comparison. Second, the authors do not compare with methods other than k-mips which do fast nearest neighbor search, such as, FLANN."
+        }
+    ]
+}

@@ -1,0 +1,390 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2ab9cec8-98fa-453a-802d-89991f9cbcc3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "This paper proposes a novel approach to learning a supervised document distance metric, called the Supervised Word Mover's Distance (S-WMD).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "The S-WMD builds upon the recently introduced Word Mover's Distance (WMD) by incorporating supervision into the distance computation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "The WMD is a document distance metric that leverages word embeddings to compute the distance between two documents as the optimal transport cost of moving all words from one document to another within the word embedding space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The authors argue that the WMD is limited by its unsupervised nature, which does not take into account the specific task or labels of the documents.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "To address this limitation, the S-WMD learns a linear transformation of the word representations and a word importance vector to re-weight the word frequencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "The S-WMD is trained to minimize the stochastic leave-one-out nearest neighbor classification error on a per-document level.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "The paper presents a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "The authors also provide an efficient approximation of the gradient computation using a relaxed version of the optimal transport problem, which reduces the computational complexity from O(q3 log q) to O(q2).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "The experimental results demonstrate the effectiveness of the S-WMD on eight real-world text classification tasks, outperforming 26 competitive baselines, including unsupervised WMD, WCD, and various document representation methods with supervised metric learning algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "The results show that the S-WMD achieves state-of-the-art performance on most datasets, with significant improvements over the unsupervised WMD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The paper is well-written, and the authors provide a clear and concise explanation of the proposed approach, including the mathematical derivations and algorithmic details.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The experimental results are thorough and well-presented, with a detailed comparison to various baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "* The paper proposes a novel approach to learning a supervised document distance metric, which addresses the limitation of the unsupervised WMD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "* The S-WMD is trained to minimize the stochastic leave-one-out nearest neighbor classification error, which is a well-established metric for evaluating document distance metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "* The paper provides a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "* The experimental results demonstrate the effectiveness of the S-WMD on various real-world text classification tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999800324440002,
+                    "sentence": "* The paper assumes that the word embeddings are pre-trained and fixed, which may not always be the case in practice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999521374702454,
+                    "sentence": "* The S-WMD requires a significant amount of computational resources, especially for large datasets, due to the complexity of the optimal transport problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999947190284729,
+                    "sentence": "* The paper does not provide a detailed analysis of the learned word importance weights and their impact on the document distance metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999212026596069,
+                    "sentence": "Arguments for acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999615550041199,
+                    "sentence": "* The paper proposes a novel and effective approach to learning a supervised document distance metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999532103538513,
+                    "sentence": "* The S-WMD achieves state-of-the-art performance on most datasets, with significant improvements over the unsupervised WMD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999697804450989,
+                    "sentence": "* The paper provides a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998384118080139,
+                    "sentence": "Arguments against acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999552369117737,
+                    "sentence": "* The paper assumes that the word embeddings are pre-trained and fixed, which may not always be the case in practice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999068379402161,
+                    "sentence": "* The S-WMD requires a significant amount of computational resources, especially for large datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997739791870117,
+                    "sentence": "* The paper does not provide a detailed analysis of the learned word importance weights and their impact on the document distance metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998250007629395,
+                    "sentence": "Overall, I recommend accepting this paper, as it proposes a novel and effective approach to learning a supervised document distance metric, with significant improvements over the state-of-the-art.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997914433479309,
+                    "sentence": "However, the authors should address the limitations and weaknesses of the approach, including the assumption of pre-trained word embeddings and the computational complexity of the optimal transport problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984984300152882,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984984300152882,
+                "mixed": 0.0015015699847118259
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984984300152882,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984984300152882,
+                    "human": 0,
+                    "mixed": 0.0015015699847118259
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a novel approach to learning a supervised document distance metric, called the Supervised Word Mover's Distance (S-WMD). The S-WMD builds upon the recently introduced Word Mover's Distance (WMD) by incorporating supervision into the distance computation. The WMD is a document distance metric that leverages word embeddings to compute the distance between two documents as the optimal transport cost of moving all words from one document to another within the word embedding space.\nThe authors argue that the WMD is limited by its unsupervised nature, which does not take into account the specific task or labels of the documents. To address this limitation, the S-WMD learns a linear transformation of the word representations and a word importance vector to re-weight the word frequencies. The S-WMD is trained to minimize the stochastic leave-one-out nearest neighbor classification error on a per-document level.\nThe paper presents a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm. The authors also provide an efficient approximation of the gradient computation using a relaxed version of the optimal transport problem, which reduces the computational complexity from O(q3 log q) to O(q2).\nThe experimental results demonstrate the effectiveness of the S-WMD on eight real-world text classification tasks, outperforming 26 competitive baselines, including unsupervised WMD, WCD, and various document representation methods with supervised metric learning algorithms. The results show that the S-WMD achieves state-of-the-art performance on most datasets, with significant improvements over the unsupervised WMD.\nThe paper is well-written, and the authors provide a clear and concise explanation of the proposed approach, including the mathematical derivations and algorithmic details. The experimental results are thorough and well-presented, with a detailed comparison to various baselines.\nStrengths:\n* The paper proposes a novel approach to learning a supervised document distance metric, which addresses the limitation of the unsupervised WMD.\n* The S-WMD is trained to minimize the stochastic leave-one-out nearest neighbor classification error, which is a well-established metric for evaluating document distance metrics.\n* The paper provides a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm.\n* The experimental results demonstrate the effectiveness of the S-WMD on various real-world text classification tasks.\nWeaknesses:\n* The paper assumes that the word embeddings are pre-trained and fixed, which may not always be the case in practice.\n* The S-WMD requires a significant amount of computational resources, especially for large datasets, due to the complexity of the optimal transport problem.\n* The paper does not provide a detailed analysis of the learned word importance weights and their impact on the document distance metric.\nArguments for acceptance:\n* The paper proposes a novel and effective approach to learning a supervised document distance metric.\n* The S-WMD achieves state-of-the-art performance on most datasets, with significant improvements over the unsupervised WMD.\n* The paper provides a detailed derivation of the S-WMD, including the loss function, gradient computation, and optimization algorithm.\nArguments against acceptance:\n* The paper assumes that the word embeddings are pre-trained and fixed, which may not always be the case in practice.\n* The S-WMD requires a significant amount of computational resources, especially for large datasets.\n* The paper does not provide a detailed analysis of the learned word importance weights and their impact on the document distance metric.\nOverall, I recommend accepting this paper, as it proposes a novel and effective approach to learning a supervised document distance metric, with significant improvements over the state-of-the-art. However, the authors should address the limitations and weaknesses of the approach, including the assumption of pre-trained word embeddings and the computational complexity of the optimal transport problem."
+        }
+    ]
+}

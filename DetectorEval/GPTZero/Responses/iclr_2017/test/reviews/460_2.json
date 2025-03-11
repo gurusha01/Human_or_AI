@@ -1,0 +1,356 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "1eeeb484-470d-47a6-94fa-a77fb99d454b",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.850594162940979,
+                    "sentence": "This paper introduces an actor-critic deep RL approach with experience replay, which combines truncated importance sampling and trust region policy optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8030555248260498,
+                    "sentence": "The paper also proposes a new method called stochastic duelling networks to estimate the critic for continuous action spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7267656922340393,
+                    "sentence": "The method is applied to Atari games and continuous control problems, where it yields performance comparable to state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.400005966424942,
+                    "sentence": "As mentioned in the beginning of the paper, the main contributions of this work lies in combining 1) truncated importance sampling with retrace, 2) trust region policy optimization, and 3) stochastic duelling networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4142603874206543,
+                    "sentence": "These improvements work well and may be beneficial to future work in RL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4696221649646759,
+                    "sentence": "However, each improvement appears to be quite incremental.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5921618938446045,
+                    "sentence": "Moreover, the ACER framework seems much more complex and fragile to implement compared to the standard deep q-learning with prioritized replay (which appears to perform just as well on Atari games).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5605275630950928,
+                    "sentence": "So for the Atari domain, I would still put my money on prioritized replay due to its simplicity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5945262908935547,
+                    "sentence": "Thirdly, improving sample efficiency for deep RL is a laudable goal, but really this goal should be pursued in a problem setting where sample efficiency is important.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4134916365146637,
+                    "sentence": "Unfortunately, the paper only evaluates sample efficiency in the Atari and continuous control tasks domain; two domains where sample efficiency is not important.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.43645140528678894,
+                    "sentence": "Thus, it is not clear that the proposed method ACER will generalize to problems where we really care about sample efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.18506543338298798,
+                    "sentence": "Some technical aspects which need clarifications:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1789131760597229,
+                    "sentence": "- For Retrace, I assume that you compute recursively $Q^{ret}$ starting from the end of each trajectory?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.16585592925548553,
+                    "sentence": "Please comment on this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4612463712692261,
+                    "sentence": "- It's not clear to me how to derive eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6617780923843384,
+                    "sentence": "(7).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005611168220639229,
+                    "sentence": "Is an approximation (double tilde) sign missing?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007479843683540821,
+                    "sentence": "- In section 3.1 the paper argued that $Q^{ret}$ gives a lower-variance estimate of the action-value function.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014114504680037498,
+                    "sentence": "Then why not use it in eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006663725711405277,
+                    "sentence": "(8) for the bias correction term?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009060484357178211,
+                    "sentence": "- The paper states that it uses a replay memory of 50000 frames, so that across threads it is comparable in size to previous work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01057465746998787,
+                    "sentence": "However, for each thread this is much smaller compared to earlier experiments on Atari games.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009172763675451279,
+                    "sentence": "For example, one million experience replay transitions were used in the paper \"Prioritized Experience Replay\" by Schaul et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007916970178484917,
+                    "sentence": "This may have a huge impact on performance of the models (both for ACER and for the competing models).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010505684651434422,
+                    "sentence": "In order to properly assess the improvements of ACER over previous work, the authors need to also experiment with larger experience replay memories.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006343522109091282,
+                    "sentence": "Other comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008395683020353317,
+                    "sentence": "- Please move Section 7 to the appendix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010843748226761818,
+                    "sentence": "- \"Moreover, when using small values of lambda to reduce variance, occasional large importance weights can still cause instability\": I think what is meant is using large values of lambda.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014828730374574661,
+                    "sentence": "- Above eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012833408080041409,
+                    "sentence": "(6) mention that the squared error is used.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010838886722922325,
+                    "sentence": "- Missing a \"t\" subscript at the beginning of eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009759120643138885,
+                    "sentence": "(9)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00881539098918438,
+                    "sentence": "- It was hard to understand the stochastic duelling networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003410863224416971,
+                    "sentence": "Please rephrase this part.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011289864778518677,
+                    "sentence": "- Please clarify this sentence \"To compare different agents, we adopt as our metric the median of the human normalized score over all 57 games.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01542847603559494,
+                    "sentence": "- Figure 2 (Bottom): Please add label to vertical axes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.22242202437000352,
+            "class_probabilities": {
+                "human": 0.7770585774865301,
+                "ai": 0.22242202437000352,
+                "mixed": 0.000519398143466424
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.7770585774865301,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.22242202437000352,
+                    "human": 0.7770585774865301,
+                    "mixed": 0.000519398143466424
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces an actor-critic deep RL approach with experience replay, which combines truncated importance sampling and trust region policy optimization. The paper also proposes a new method called stochastic duelling networks to estimate the critic for continuous action spaces. The method is applied to Atari games and continuous control problems, where it yields performance comparable to state-of-the-art methods.\nAs mentioned in the beginning of the paper, the main contributions of this work lies in combining 1) truncated importance sampling with retrace, 2) trust region policy optimization, and 3) stochastic duelling networks. These improvements work well and may be beneficial to future work in RL.\nHowever, each improvement appears to be quite incremental. Moreover, the ACER framework seems much more complex and fragile to implement compared to the standard deep q-learning with prioritized replay (which appears to perform just as well on Atari games). So for the Atari domain, I would still put my money on prioritized replay due to its simplicity. Thirdly, improving sample efficiency for deep RL is a laudable goal, but really this goal should be pursued in a problem setting where sample efficiency is important. Unfortunately, the paper only evaluates sample efficiency in the Atari and continuous control tasks domain; two domains where sample efficiency is not important. Thus, it is not clear that the proposed method ACER will generalize to problems where we really care about sample efficiency.\nSome technical aspects which need clarifications:\n- For Retrace, I assume that you compute recursively $Q^{ret}$ starting from the end of each trajectory? Please comment on this.\n- It's not clear to me how to derive eq. (7). Is an approximation (double tilde) sign missing?\n- In section 3.1 the paper argued that $Q^{ret}$ gives a lower-variance estimate of the action-value function. Then why not use it in eq. (8) for the bias correction term?\n- The paper states that it uses a replay memory of 50000 frames, so that across threads it is comparable in size to previous work. However, for each thread this is much smaller compared to earlier experiments on Atari games. For example, one million experience replay transitions were used in the paper \"Prioritized Experience Replay\" by Schaul et al. This may have a huge impact on performance of the models (both for ACER and for the competing models). In order to properly assess the improvements of ACER over previous work, the authors need to also experiment with larger experience replay memories.\nOther comments:\n- Please move Section 7 to the appendix.\n- \"Moreover, when using small values of lambda to reduce variance, occasional large importance weights can still cause instability\": I think what is meant is using large values of lambda.\n- Above eq. (6) mention that the squared error is used.\n- Missing a \"t\" subscript at the beginning of eq. (9)?\n- It was hard to understand the stochastic duelling networks. Please rephrase this part.\n- Please clarify this sentence \"To compare different agents, we adopt as our metric the median of the human normalized score over all 57 games.\"\n- Figure 2 (Bottom): Please add label to vertical axes."
+        }
+    ]
+}

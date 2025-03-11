@@ -1,0 +1,414 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "d2dfcf76-ce0d-48e3-9bc6-5851a81dce44",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "The paper presents a novel approach to statistical inference for cluster trees, which are hierarchical representations of high-density clusters in a dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "The authors focus on quantifying uncertainty in empirical cluster trees by constructing confidence sets for the true cluster tree and pruning statistically insignificant features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "They propose metrics to compare cluster trees, analyze their properties, and develop methods for visualizing simpler, interpretable trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "The paper demonstrates the utility of these methods on synthetic datasets and a real-world Graft-versus-Host Disease (GvHD) dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "1. Novelty and Contribution: The paper addresses a significant gap in clustering literature by introducing statistical inference methods for cluster trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "While prior work has focused on estimation, this paper is the first to propose confidence sets and pruning methods for cluster trees, making it a valuable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "2. Theoretical Rigor: The authors provide a detailed theoretical foundation for their methods, including the use of metrics like the `dâ^ž` metric for statistical inference and the introduction of a partial ordering to simplify trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "The proofs and guarantees (e.g., asymptotic validity of confidence sets) are well-grounded.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "3. Practical Relevance: The pruning methods enhance interpretability by removing noise-induced features, which is crucial for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "The experiments on synthetic datasets and the GvHD dataset effectively demonstrate the practical utility of the proposed methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "4. Clarity of Results: The visualizations of pruned trees and the comparison between control and positive samples in the GvHD dataset highlight the interpretability and applicability of the proposed techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "1. Metric Limitations: While the `dâ^ž` metric is computationally tractable and statistically robust, the authors acknowledge that it may not fully capture the nuances of tree structures compared to the modified merge distortion metric (`dMM`).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "The inability to construct confidence sets using `dMM` limits the scope of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "2. Bandwidth Selection: The reliance on the Silverman reference rule for bandwidth selection is a limitation, as this rule is not tailored for tree inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973177909851,
+                    "sentence": "A more targeted bandwidth selection method would enhance the robustness of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "3. Complexity of Confidence Sets: The confidence sets are infinite and contain highly complex trees, which may hinder interpretability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999953508377075,
+                    "sentence": "While pruning simplifies the trees, the authors do not provide a method to identify all minimal trees in the confidence set, leaving room for improvement in summarizing results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9568209648132324,
+                    "sentence": "4. Scalability: The computational feasibility of the proposed methods for large-scale, high-dimensional datasets is not thoroughly discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.936399519443512,
+                    "sentence": "This could be a concern for practical adoption.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.964026153087616,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9381603002548218,
+                    "sentence": "The paper is a strong contribution to the field of clustering and statistical inference, addressing a critical gap with innovative methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9444826245307922,
+                    "sentence": "However, the limitations in metric selection, bandwidth optimization, and scalability warrant further exploration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.870498776435852,
+                    "sentence": "I recommend acceptance, contingent on addressing these concerns in future work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935938715934753,
+                    "sentence": "Pro and Con Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997028112411499,
+                    "sentence": "Pro:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993384480476379,
+                    "sentence": "- Introduces a novel and impactful approach to statistical inference for cluster trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999440610408783,
+                    "sentence": "- Provides rigorous theoretical guarantees and practical pruning methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992886781692505,
+                    "sentence": "- Demonstrates utility on both synthetic and real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984837174415588,
+                    "sentence": "Con:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995964765548706,
+                    "sentence": "- Limited use of advanced metrics like `dMM` for inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997847676277161,
+                    "sentence": "- Bandwidth selection and scalability issues remain unresolved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999330461025238,
+                    "sentence": "- Confidence sets are complex and not fully summarized.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996728897094727,
+                    "sentence": "Overall, the paper advances the state of the art in density-based clustering and statistical inference, making it a valuable addition to the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.958904109589041,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.958904109589041,
+                "mixed": 0.041095890410958895
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.958904109589041,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.958904109589041,
+                    "human": 0,
+                    "mixed": 0.041095890410958895
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel approach to statistical inference for cluster trees, which are hierarchical representations of high-density clusters in a dataset. The authors focus on quantifying uncertainty in empirical cluster trees by constructing confidence sets for the true cluster tree and pruning statistically insignificant features. They propose metrics to compare cluster trees, analyze their properties, and develop methods for visualizing simpler, interpretable trees. The paper demonstrates the utility of these methods on synthetic datasets and a real-world Graft-versus-Host Disease (GvHD) dataset.\nStrengths:\n1. Novelty and Contribution: The paper addresses a significant gap in clustering literature by introducing statistical inference methods for cluster trees. While prior work has focused on estimation, this paper is the first to propose confidence sets and pruning methods for cluster trees, making it a valuable contribution.\n2. Theoretical Rigor: The authors provide a detailed theoretical foundation for their methods, including the use of metrics like the `dâˆž` metric for statistical inference and the introduction of a partial ordering to simplify trees. The proofs and guarantees (e.g., asymptotic validity of confidence sets) are well-grounded.\n3. Practical Relevance: The pruning methods enhance interpretability by removing noise-induced features, which is crucial for real-world applications. The experiments on synthetic datasets and the GvHD dataset effectively demonstrate the practical utility of the proposed methods.\n4. Clarity of Results: The visualizations of pruned trees and the comparison between control and positive samples in the GvHD dataset highlight the interpretability and applicability of the proposed techniques.\nWeaknesses:\n1. Metric Limitations: While the `dâˆž` metric is computationally tractable and statistically robust, the authors acknowledge that it may not fully capture the nuances of tree structures compared to the modified merge distortion metric (`dMM`). The inability to construct confidence sets using `dMM` limits the scope of the work.\n2. Bandwidth Selection: The reliance on the Silverman reference rule for bandwidth selection is a limitation, as this rule is not tailored for tree inference. A more targeted bandwidth selection method would enhance the robustness of the results.\n3. Complexity of Confidence Sets: The confidence sets are infinite and contain highly complex trees, which may hinder interpretability. While pruning simplifies the trees, the authors do not provide a method to identify all minimal trees in the confidence set, leaving room for improvement in summarizing results.\n4. Scalability: The computational feasibility of the proposed methods for large-scale, high-dimensional datasets is not thoroughly discussed. This could be a concern for practical adoption.\nRecommendation:\nThe paper is a strong contribution to the field of clustering and statistical inference, addressing a critical gap with innovative methods. However, the limitations in metric selection, bandwidth optimization, and scalability warrant further exploration. I recommend acceptance, contingent on addressing these concerns in future work.\nPro and Con Arguments for Acceptance:\nPro:\n- Introduces a novel and impactful approach to statistical inference for cluster trees.\n- Provides rigorous theoretical guarantees and practical pruning methods.\n- Demonstrates utility on both synthetic and real-world datasets.\nCon:\n- Limited use of advanced metrics like `dMM` for inference.\n- Bandwidth selection and scalability issues remain unresolved.\n- Confidence sets are complex and not fully summarized.\nOverall, the paper advances the state of the art in density-based clustering and statistical inference, making it a valuable addition to the conference."
+        }
+    ]
+}

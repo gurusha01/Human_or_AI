@@ -1,0 +1,358 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a8c2862e-6b9e-40ea-b73a-bcf7b7d6898d",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999762773513794,
+                    "sentence": "The paper presents an end-to-end system for recognizing handwritten text from paragraph images, leveraging attention-enhanced Bidirectional LSTMs (BLSTMs) and a modified Multi-Dimensional LSTM (MDLSTM) architecture.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999968409538269,
+                    "sentence": "The authors propose replacing the standard collapse layer with a weighted attention-based collapse mechanism, enabling implicit line segmentation and transcription without requiring explicit line-level annotations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999865293502808,
+                    "sentence": "This approach achieves state-of-the-art results on the Rimes dataset but underperforms on the IAM dataset, highlighting its potential and limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999990701675415,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998772740364075,
+                    "sentence": "1. Novelty and Contribution: The proposed method addresses a significant challenge in handwriting recognition by eliminating the need for explicit line segmentation, a step prone to errors in traditional pipelines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998671412467957,
+                    "sentence": "The integration of attention mechanisms into MDLSTMs is a meaningful extension of prior work by Graves et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998319745063782,
+                    "sentence": "and Xu et al., and the results on the Rimes dataset demonstrate its efficacy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998711347579956,
+                    "sentence": "2. State-of-the-Art Performance: The system achieves competitive results on Rimes, surpassing existing methods in character error rate (CER) and demonstrating the potential of end-to-end approaches for paragraph-level transcription.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998494982719421,
+                    "sentence": "3. Efficiency: The authors claim the model is 20-30x faster than prior methods, which, if substantiated, would make it a significant contribution in terms of computational efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997869729995728,
+                    "sentence": "4. Visualization and Analysis: The paper includes visualizations of the attention mechanism, providing insights into how the model implicitly segments and processes text lines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999306201934814,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997974634170532,
+                    "sentence": "1. Performance on IAM Dataset: The method underperforms on the IAM dataset, likely due to limited training data and challenges with punctuation recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999748945236206,
+                    "sentence": "The authors should explore cross-dataset training or data augmentation to improve generalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99979168176651,
+                    "sentence": "2. Lack of Self-Containment: The paper relies heavily on prior work (e.g., Graves et al.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998785257339478,
+                    "sentence": "for understanding the MDLSTM model, making it less accessible to readers unfamiliar with these foundational methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997131824493408,
+                    "sentence": "3. Runtime Validation: While the authors claim significant speed improvements over Bluche et al., no concrete runtime comparisons or benchmarks are provided, weakening this claim.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996569752693176,
+                    "sentence": "4. Punctuation Recognition: The attention mechanism struggles to capture punctuation marks, which are often crucial for accurate transcription.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991866946220398,
+                    "sentence": "This limitation is acknowledged but not adequately addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993671178817749,
+                    "sentence": "5. Implementation Details: The authors do not provide sufficient details on how they implemented Graves et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994389414787292,
+                    "sentence": "'s methods, making it difficult to assess the exact contributions of their modifications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9872983694076538,
+                    "sentence": "Suggestions for Improvement:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9224303960800171,
+                    "sentence": "- Provide a more detailed explanation of why the proposed method outperforms ground-truth line-labeled methods, particularly in terms of linguistic dependencies captured by the BLSTM decoder.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9286498427391052,
+                    "sentence": "- Include runtime benchmarks to substantiate the claim of computational efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9522854089736938,
+                    "sentence": "- Explore cross-dataset training or domain adaptation techniques to improve performance on IAM.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9126467108726501,
+                    "sentence": "- Investigate methods to enhance punctuation recognition, such as multi-scale attention or additional training objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9740633368492126,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7039576172828674,
+                    "sentence": "While the paper has notable strengths, including its novel approach and strong results on Rimes, the weaknesses\"\"particularly the lack of self-containment, underperformance on IAM, and unsubstantiated runtime claims\"\"limit its overall impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.44512704014778137,
+                    "sentence": "I recommend acceptance with minor revisions, provided the authors address the clarity and runtime validation issues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5810248851776123,
+                    "sentence": "This work represents a meaningful step toward end-to-end handwriting recognition and has the potential to inspire further research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents an end-to-end system for recognizing handwritten text from paragraph images, leveraging attention-enhanced Bidirectional LSTMs (BLSTMs) and a modified Multi-Dimensional LSTM (MDLSTM) architecture. The authors propose replacing the standard collapse layer with a weighted attention-based collapse mechanism, enabling implicit line segmentation and transcription without requiring explicit line-level annotations. This approach achieves state-of-the-art results on the Rimes dataset but underperforms on the IAM dataset, highlighting its potential and limitations.\nStrengths:\n1. Novelty and Contribution: The proposed method addresses a significant challenge in handwriting recognition by eliminating the need for explicit line segmentation, a step prone to errors in traditional pipelines. The integration of attention mechanisms into MDLSTMs is a meaningful extension of prior work by Graves et al. and Xu et al., and the results on the Rimes dataset demonstrate its efficacy.\n2. State-of-the-Art Performance: The system achieves competitive results on Rimes, surpassing existing methods in character error rate (CER) and demonstrating the potential of end-to-end approaches for paragraph-level transcription.\n3. Efficiency: The authors claim the model is 20-30x faster than prior methods, which, if substantiated, would make it a significant contribution in terms of computational efficiency.\n4. Visualization and Analysis: The paper includes visualizations of the attention mechanism, providing insights into how the model implicitly segments and processes text lines.\nWeaknesses:\n1. Performance on IAM Dataset: The method underperforms on the IAM dataset, likely due to limited training data and challenges with punctuation recognition. The authors should explore cross-dataset training or data augmentation to improve generalization.\n2. Lack of Self-Containment: The paper relies heavily on prior work (e.g., Graves et al.) for understanding the MDLSTM model, making it less accessible to readers unfamiliar with these foundational methods.\n3. Runtime Validation: While the authors claim significant speed improvements over Bluche et al., no concrete runtime comparisons or benchmarks are provided, weakening this claim.\n4. Punctuation Recognition: The attention mechanism struggles to capture punctuation marks, which are often crucial for accurate transcription. This limitation is acknowledged but not adequately addressed.\n5. Implementation Details: The authors do not provide sufficient details on how they implemented Graves et al.'s methods, making it difficult to assess the exact contributions of their modifications.\nSuggestions for Improvement:\n- Provide a more detailed explanation of why the proposed method outperforms ground-truth line-labeled methods, particularly in terms of linguistic dependencies captured by the BLSTM decoder.\n- Include runtime benchmarks to substantiate the claim of computational efficiency.\n- Explore cross-dataset training or domain adaptation techniques to improve performance on IAM.\n- Investigate methods to enhance punctuation recognition, such as multi-scale attention or additional training objectives.\nRecommendation:\nWhile the paper has notable strengths, including its novel approach and strong results on Rimes, the weaknesses\"\"particularly the lack of self-containment, underperformance on IAM, and unsubstantiated runtime claims\"\"limit its overall impact. I recommend acceptance with minor revisions, provided the authors address the clarity and runtime validation issues. This work represents a meaningful step toward end-to-end handwriting recognition and has the potential to inspire further research in this area."
+        }
+    ]
+}

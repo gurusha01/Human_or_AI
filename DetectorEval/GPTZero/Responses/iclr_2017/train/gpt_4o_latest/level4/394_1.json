@@ -1,0 +1,284 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "91069d8e-1474-458d-8a83-2d5ac6982cb4",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9941818714141846,
+                    "sentence": "The authors introduce a straightforward method for regularizing recurrent neural networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934896230697632,
+                    "sentence": "The approach is conceptually similar to dropout, but instead of zeroing out units, it substitutes them with their respective values from the preceding time step on an element-wise basis with a certain probability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947899580001831,
+                    "sentence": "Overall, the paper is well-written, and the method is clearly presented, aside from issues raised during the pre-review question phase.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9868481755256653,
+                    "sentence": "The related work section is comprehensive and likely represents the most thorough review of the literature on RNN regularization currently available.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994189441204071,
+                    "sentence": "The experimental section compares the proposed method against the current state-of-the-art on a set of NLP benchmarks and a synthetic task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9910362362861633,
+                    "sentence": "All experiments are conducted on sequences involving discrete values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992158055305481,
+                    "sentence": "Additionally, one experiment demonstrates that the sequential Jacobian is significantly higher for long-term dependencies compared to the dropout baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9949418306350708,
+                    "sentence": "While the paper shows significant promise, I have several concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980467557907104,
+                    "sentence": "1) As noted during the pre-review phase, the authors have not conducted a full hyperparameter search, which is a standard practice in the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975979924201965,
+                    "sentence": "A proper model selection process is missing, despite the fact that the author count suggests sufficient resources to perform such an analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983237981796265,
+                    "sentence": "This omission is particularly concerning given that Table 2 highlights that validation error is not a reliable predictor of test error for the dataset in question.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997692883014679,
+                    "sentence": "This raises serious concerns about overfitting during model selection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979550242424011,
+                    "sentence": "Furthermore, the performance improvement from Zoneout appears marginal in other tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998448371887207,
+                    "sentence": "2) The mathematical investigation of Zoneout is insufficient.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.985785722732544,
+                    "sentence": "For instance, an analysis of the gradients from unit K at time step T to unit K' at time step T-R would have been valuable, especially since these gradients are not necessarily zero in the case of dropout.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9824166297912598,
+                    "sentence": "Additionally, the question of whether Zoneout has a variational interpretation, akin to Yarin Gal's work, is left unexplored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9813928008079529,
+                    "sentence": "While one could speculate that Zoneout might fit within a ResNet framework with dropout applied to the incremental parts, the paper does little to address why Zoneout performs well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9656080603599548,
+                    "sentence": "The existing literature offers numerous starting points for such an analysis, but these opportunities are not pursued.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9611441493034363,
+                    "sentence": "3) The datasets used in the experiments are exclusively symbolic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9801676273345947,
+                    "sentence": "It would have been beneficial to evaluate the method on a broader range of tasks, such as those involving continuous data from dynamical systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.978073239326477,
+                    "sentence": "It is unclear whether the proposed method would generalize to such settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9068739414215088,
+                    "sentence": "There is currently a proliferation of \"tricks\" aimed at improving RNN training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9573284387588501,
+                    "sentence": "How does Zoneout distinguish itself?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9365092515945435,
+                    "sentence": "While the idea is elegant and easy to implement, the paper falls short in several areas: the experimental results are unconvincing (see points 1 and 3), and the theoretical contributions are limited (see point 2).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9528855085372925,
+                    "sentence": "In summary, the paper amounts to an \"epsilon improvement\" with strong writing, but it is undermined by mediocre experimental evaluation and a lack of theoretical depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The authors introduce a straightforward method for regularizing recurrent neural networks. The approach is conceptually similar to dropout, but instead of zeroing out units, it substitutes them with their respective values from the preceding time step on an element-wise basis with a certain probability.\nOverall, the paper is well-written, and the method is clearly presented, aside from issues raised during the pre-review question phase. The related work section is comprehensive and likely represents the most thorough review of the literature on RNN regularization currently available.\nThe experimental section compares the proposed method against the current state-of-the-art on a set of NLP benchmarks and a synthetic task. All experiments are conducted on sequences involving discrete values. Additionally, one experiment demonstrates that the sequential Jacobian is significantly higher for long-term dependencies compared to the dropout baseline.\nWhile the paper shows significant promise, I have several concerns:\n1) As noted during the pre-review phase, the authors have not conducted a full hyperparameter search, which is a standard practice in the field. A proper model selection process is missing, despite the fact that the author count suggests sufficient resources to perform such an analysis. This omission is particularly concerning given that Table 2 highlights that validation error is not a reliable predictor of test error for the dataset in question. This raises serious concerns about overfitting during model selection. Furthermore, the performance improvement from Zoneout appears marginal in other tasks.\n2) The mathematical investigation of Zoneout is insufficient. For instance, an analysis of the gradients from unit K at time step T to unit K' at time step T-R would have been valuable, especially since these gradients are not necessarily zero in the case of dropout. Additionally, the question of whether Zoneout has a variational interpretation, akin to Yarin Gal's work, is left unexplored. While one could speculate that Zoneout might fit within a ResNet framework with dropout applied to the incremental parts, the paper does little to address why Zoneout performs well. The existing literature offers numerous starting points for such an analysis, but these opportunities are not pursued.\n3) The datasets used in the experiments are exclusively symbolic. It would have been beneficial to evaluate the method on a broader range of tasks, such as those involving continuous data from dynamical systems. It is unclear whether the proposed method would generalize to such settings.\nThere is currently a proliferation of \"tricks\" aimed at improving RNN training. How does Zoneout distinguish itself? While the idea is elegant and easy to implement, the paper falls short in several areas: the experimental results are unconvincing (see points 1 and 3), and the theoretical contributions are limited (see point 2).\nIn summary, the paper amounts to an \"epsilon improvement\" with strong writing, but it is undermined by mediocre experimental evaluation and a lack of theoretical depth."
+        }
+    ]
+}

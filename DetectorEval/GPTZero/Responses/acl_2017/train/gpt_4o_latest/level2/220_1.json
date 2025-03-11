@@ -1,0 +1,426 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b8cb19f3-8a10-4f05-9320-1e7cd7e47726",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "This paper addresses the challenge of metonymy resolution (MR) in natural language processing (NLP) by proposing a minimalist neural approach combined with a novel feature extraction method called Predicate Window (PreWin).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "The authors claim that PreWin achieves state-of-the-art (SOTA) performance on the SemEval 2007 MR task while using significantly fewer resources compared to prior methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "Additionally, the paper introduces a new dataset, ReLocaR, which improves upon the limitations of the SemEval dataset by offering better annotation guidelines, balanced class distributions, and higher inter-annotator agreement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "The authors also provide an annotated subset of the CoNLL 2003 dataset for MR, contributing to the availability of training data for this task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "The three main contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "1. The introduction of the PreWin method, which leverages dependency parsing to extract a focused context window for classification, achieving SOTA results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "2. The creation of the ReLocaR dataset, which addresses annotation biases and improves data quality for MR tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "3. The demonstration of a minimalist neural approach that outperforms prior methods without relying on extensive handcrafted features or external resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "1. Novelty and Simplicity of PreWin: The Predicate Window method is a significant contribution, offering a minimalist yet effective approach to MR. By focusing on a small, linguistically informed context window, the method reduces noise and improves classification accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "This is a notable improvement over traditional \"greedy\" context selection methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "2. SOTA Performance: The paper convincingly demonstrates that PreWin achieves SOTA results on the SemEval 2007 dataset, surpassing prior methods that relied on extensive handcrafted features and external resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "The ensemble approach further enhances performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "3. ReLocaR Dataset: The introduction of ReLocaR is a valuable contribution to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "The dataset addresses key limitations of SemEval, such as class imbalance and annotation inconsistencies, and provides a more balanced and reliable benchmark for MR tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "4. Reproducibility: The authors provide annotated datasets, models, and tools, ensuring that their work is reproducible and accessible to the research community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "1. Limited Generalization Across Datasets: While PreWin performs well on individual datasets, its performance drops significantly when trained on one dataset (e.g., ReLocaR) and tested on another (e.g., SemEval).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996947646141052,
+                    "sentence": "This suggests that the method may be overly sensitive to annotation guidelines or dataset-specific characteristics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998956322669983,
+                    "sentence": "2. Lack of Error Analysis Depth: Although the paper discusses common errors, the analysis could be more detailed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999643087387085,
+                    "sentence": "For example, it would be helpful to explore whether certain linguistic phenomena (e.g., idiomatic expressions) consistently challenge the model and how these could be addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999840259552002,
+                    "sentence": "3. Limited Comparison to Recent Neural Methods: While the paper compares PreWin to traditional MR methods, it does not provide a thorough comparison to recent neural approaches beyond the SemEval baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998424053192139,
+                    "sentence": "This omission makes it harder to contextualize the contribution within the broader NLP landscape.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993974566459656,
+                    "sentence": "4. Dataset Size: The ReLocaR dataset, while an improvement over SemEval, is still relatively small (1,000 training and 1,000 test instances).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997543096542358,
+                    "sentence": "This limits the scalability of the proposed method to larger, more diverse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976537227630615,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99886155128479,
+                    "sentence": "1. How does PreWin perform on other NLP tasks, such as Named Entity Recognition or Word Sense Disambiguation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991310834884644,
+                    "sentence": "Can the method generalize beyond MR?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986897110939026,
+                    "sentence": "2. Could the authors elaborate on the specific linguistic features that PreWin captures compared to traditional context windows?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991878271102905,
+                    "sentence": "3. How does the choice of dependency parser (e.g., SpaCy) affect the performance of PreWin?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989364147186279,
+                    "sentence": "Would other parsers yield similar results?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993171691894531,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997988343238831,
+                    "sentence": "The paper presents a novel and effective approach to metonymy resolution, achieving SOTA results while introducing a valuable new dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999126195907593,
+                    "sentence": "However, its limited generalization across datasets and lack of comparison to recent neural methods are notable drawbacks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997814893722534,
+                    "sentence": "I recommend acceptance with minor revisions, focusing on addressing the generalization issue and providing a more comprehensive comparison to modern neural baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper addresses the challenge of metonymy resolution (MR) in natural language processing (NLP) by proposing a minimalist neural approach combined with a novel feature extraction method called Predicate Window (PreWin). The authors claim that PreWin achieves state-of-the-art (SOTA) performance on the SemEval 2007 MR task while using significantly fewer resources compared to prior methods. Additionally, the paper introduces a new dataset, ReLocaR, which improves upon the limitations of the SemEval dataset by offering better annotation guidelines, balanced class distributions, and higher inter-annotator agreement. The authors also provide an annotated subset of the CoNLL 2003 dataset for MR, contributing to the availability of training data for this task.\nThe three main contributions of the paper are: \n1. The introduction of the PreWin method, which leverages dependency parsing to extract a focused context window for classification, achieving SOTA results. \n2. The creation of the ReLocaR dataset, which addresses annotation biases and improves data quality for MR tasks. \n3. The demonstration of a minimalist neural approach that outperforms prior methods without relying on extensive handcrafted features or external resources.\nStrengths\n1. Novelty and Simplicity of PreWin: The Predicate Window method is a significant contribution, offering a minimalist yet effective approach to MR. By focusing on a small, linguistically informed context window, the method reduces noise and improves classification accuracy. This is a notable improvement over traditional \"greedy\" context selection methods.\n2. SOTA Performance: The paper convincingly demonstrates that PreWin achieves SOTA results on the SemEval 2007 dataset, surpassing prior methods that relied on extensive handcrafted features and external resources. The ensemble approach further enhances performance.\n3. ReLocaR Dataset: The introduction of ReLocaR is a valuable contribution to the field. The dataset addresses key limitations of SemEval, such as class imbalance and annotation inconsistencies, and provides a more balanced and reliable benchmark for MR tasks.\n4. Reproducibility: The authors provide annotated datasets, models, and tools, ensuring that their work is reproducible and accessible to the research community.\nWeaknesses\n1. Limited Generalization Across Datasets: While PreWin performs well on individual datasets, its performance drops significantly when trained on one dataset (e.g., ReLocaR) and tested on another (e.g., SemEval). This suggests that the method may be overly sensitive to annotation guidelines or dataset-specific characteristics.\n2. Lack of Error Analysis Depth: Although the paper discusses common errors, the analysis could be more detailed. For example, it would be helpful to explore whether certain linguistic phenomena (e.g., idiomatic expressions) consistently challenge the model and how these could be addressed.\n3. Limited Comparison to Recent Neural Methods: While the paper compares PreWin to traditional MR methods, it does not provide a thorough comparison to recent neural approaches beyond the SemEval baseline. This omission makes it harder to contextualize the contribution within the broader NLP landscape.\n4. Dataset Size: The ReLocaR dataset, while an improvement over SemEval, is still relatively small (1,000 training and 1,000 test instances). This limits the scalability of the proposed method to larger, more diverse datasets.\nQuestions to Authors\n1. How does PreWin perform on other NLP tasks, such as Named Entity Recognition or Word Sense Disambiguation? Can the method generalize beyond MR? \n2. Could the authors elaborate on the specific linguistic features that PreWin captures compared to traditional context windows? \n3. How does the choice of dependency parser (e.g., SpaCy) affect the performance of PreWin? Would other parsers yield similar results?\nRecommendation\nThe paper presents a novel and effective approach to metonymy resolution, achieving SOTA results while introducing a valuable new dataset. However, its limited generalization across datasets and lack of comparison to recent neural methods are notable drawbacks. I recommend acceptance with minor revisions, focusing on addressing the generalization issue and providing a more comprehensive comparison to modern neural baselines."
+        }
+    ]
+}

@@ -1,0 +1,370 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "48ad2790-d2e9-41ea-bcfe-4d9c008dd045",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999837875366211,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999910593032837,
+                    "sentence": "This paper addresses the problem of joint syntactic and semantic dependency parsing using a transition-based parser enhanced with stack LSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999929070472717,
+                    "sentence": "The authors propose a novel transition system that builds on the Henderson (2008) system, but with significant improvements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "Key contributions include: (1) a representation learning approach that captures the entire parser state, eliminating the need for hand-crafted features; (2) a fully greedy inference algorithm with linear runtime complexity; and (3) competitive performance on the CoNLL 2008\"\"2009 shared tasks, surpassing prior joint models and achieving comparable results to state-of-the-art pipeline systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999821186065674,
+                    "sentence": "The authors also demonstrate the parameter efficiency of neural networks in joint learning tasks and suggest that their transition system could be extended to other neural architectures, such as Andor's (2016) global beam-search model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999700784683228,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999826550483704,
+                    "sentence": "1. Novel Transition System: The proposed transition system improves upon Henderson (2008) by leveraging stack LSTMs to encode the entire parser state, which is a significant advancement over prior approaches that relied on limited local features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999676942825317,
+                    "sentence": "This innovation is central to the model's success and efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999752044677734,
+                    "sentence": "2. Joint Learning Efficiency: The paper convincingly demonstrates the parameter efficiency of neural networks in jointly learning syntax and semantics, outperforming prior joint models and showing competitive results with pipeline systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999773502349854,
+                    "sentence": "This is particularly notable given the greedy inference approach, which ensures linear runtime.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884963035583,
+                    "sentence": "3. Practical Utility: The parser's speed (177.6Â±18 seconds for CoNLL 2009 English test data on a single core) and open-source implementation make it highly practical for real-world applications, especially where computational efficiency is critical.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999815225601196,
+                    "sentence": "4. Generalizability: The authors suggest that the transition system can be adapted to other neural models and tasks, providing a foundation for future research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999968945980072,
+                    "sentence": "The multilingual results further demonstrate the model's adaptability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999783635139465,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999900460243225,
+                    "sentence": "1. Lack of Dynamic Oracle: While the transition system is well-designed, the absence of a dynamic oracle limits its robustness to errors during training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999769926071167,
+                    "sentence": "Incorporating a dynamic oracle, similar to the arc-eager oracle, could improve performance further.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999857544898987,
+                    "sentence": "2. Overfitting in Joint Parsing: The joint model shows signs of overfitting to the in-domain (WSJ) data, as evidenced by its lower performance on out-of-domain (Brown) data compared to the hybrid model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999882578849792,
+                    "sentence": "This suggests that the model may benefit from regularization or domain adaptation techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986172914505005,
+                    "sentence": "3. Limited Comparison to Neural SRL Models: While the paper compares its results to traditional pipeline systems, it does not provide a detailed comparison to recent neural SRL models, such as Zhou and Xu (2015), which could contextualize its contributions more comprehensively.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987384080886841,
+                    "sentence": "4. Handling of Morphological Features: The model does not incorporate morphological features, which could be particularly beneficial for languages like Czech.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9927166104316711,
+                    "sentence": "Exploring character-based embeddings or morphological features could enhance performance in morphologically rich languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9704328775405884,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9933740496635437,
+                    "sentence": "1. Have you considered implementing a dynamic oracle for your transition system?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961474537849426,
+                    "sentence": "If so, what challenges did you encounter?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9875887632369995,
+                    "sentence": "2. How does your model compare to recent neural SRL models, such as Zhou and Xu (2015), in terms of both performance and computational efficiency?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9773759245872498,
+                    "sentence": "3. Could you elaborate on the potential extensions of your transition system to other neural architectures, such as Andor's (2016) global beam-search model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.991519033908844,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9094898104667664,
+                    "sentence": "This paper makes significant contributions to the field of joint syntactic and semantic dependency parsing by introducing a novel, efficient transition system and demonstrating its effectiveness on benchmark datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9154319167137146,
+                    "sentence": "While there are areas for improvement, such as the inclusion of a dynamic oracle and better handling of morphological features, the work is a valuable step forward and has strong potential for practical applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8374011516571045,
+                    "sentence": "I recommend acceptance with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9804383446835454,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9804383446835454,
+                "mixed": 0.019561655316454624
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9804383446835454,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9804383446835454,
+                    "human": 0,
+                    "mixed": 0.019561655316454624
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions \nThis paper addresses the problem of joint syntactic and semantic dependency parsing using a transition-based parser enhanced with stack LSTMs. The authors propose a novel transition system that builds on the Henderson (2008) system, but with significant improvements. Key contributions include: (1) a representation learning approach that captures the entire parser state, eliminating the need for hand-crafted features; (2) a fully greedy inference algorithm with linear runtime complexity; and (3) competitive performance on the CoNLL 2008\"\"2009 shared tasks, surpassing prior joint models and achieving comparable results to state-of-the-art pipeline systems. The authors also demonstrate the parameter efficiency of neural networks in joint learning tasks and suggest that their transition system could be extended to other neural architectures, such as Andor's (2016) global beam-search model.\nStrengths \n1. Novel Transition System: The proposed transition system improves upon Henderson (2008) by leveraging stack LSTMs to encode the entire parser state, which is a significant advancement over prior approaches that relied on limited local features. This innovation is central to the model's success and efficiency. \n2. Joint Learning Efficiency: The paper convincingly demonstrates the parameter efficiency of neural networks in jointly learning syntax and semantics, outperforming prior joint models and showing competitive results with pipeline systems. This is particularly notable given the greedy inference approach, which ensures linear runtime. \n3. Practical Utility: The parser's speed (177.6Â±18 seconds for CoNLL 2009 English test data on a single core) and open-source implementation make it highly practical for real-world applications, especially where computational efficiency is critical. \n4. Generalizability: The authors suggest that the transition system can be adapted to other neural models and tasks, providing a foundation for future research. The multilingual results further demonstrate the model's adaptability. \nWeaknesses \n1. Lack of Dynamic Oracle: While the transition system is well-designed, the absence of a dynamic oracle limits its robustness to errors during training. Incorporating a dynamic oracle, similar to the arc-eager oracle, could improve performance further. \n2. Overfitting in Joint Parsing: The joint model shows signs of overfitting to the in-domain (WSJ) data, as evidenced by its lower performance on out-of-domain (Brown) data compared to the hybrid model. This suggests that the model may benefit from regularization or domain adaptation techniques. \n3. Limited Comparison to Neural SRL Models: While the paper compares its results to traditional pipeline systems, it does not provide a detailed comparison to recent neural SRL models, such as Zhou and Xu (2015), which could contextualize its contributions more comprehensively. \n4. Handling of Morphological Features: The model does not incorporate morphological features, which could be particularly beneficial for languages like Czech. Exploring character-based embeddings or morphological features could enhance performance in morphologically rich languages.\nQuestions to Authors \n1. Have you considered implementing a dynamic oracle for your transition system? If so, what challenges did you encounter? \n2. How does your model compare to recent neural SRL models, such as Zhou and Xu (2015), in terms of both performance and computational efficiency? \n3. Could you elaborate on the potential extensions of your transition system to other neural architectures, such as Andor's (2016) global beam-search model? \nConclusion \nThis paper makes significant contributions to the field of joint syntactic and semantic dependency parsing by introducing a novel, efficient transition system and demonstrating its effectiveness on benchmark datasets. While there are areas for improvement, such as the inclusion of a dynamic oracle and better handling of morphological features, the work is a valuable step forward and has strong potential for practical applications. I recommend acceptance with minor revisions."
+        }
+    ]
+}

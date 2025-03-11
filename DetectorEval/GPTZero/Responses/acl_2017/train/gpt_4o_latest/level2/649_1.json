@@ -1,0 +1,408 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "c9db6f5d-18a5-43ae-85e8-e508d0376c0c",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999886751174927,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "This paper presents ADEM (Automatic Dialogue Evaluation Model), a novel approach to automatically evaluate dialogue response quality by learning to predict human-like scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "Unlike traditional word-overlap metrics like BLEU, which correlate poorly with human judgments, ADEM leverages a hierarchical recurrent neural network (RNN) to encode dialogue context, model responses, and reference responses into vector representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994695186615,
+                    "sentence": "The model then computes a score based on the semantic similarity between these representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999920129776001,
+                    "sentence": "The primary contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961853027344,
+                    "sentence": "1. A new dataset of human-annotated dialogue response scores, collected via Amazon Mechanical Turk, which spans a variety of response qualities and conversational contexts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "2. A novel evaluation model (ADEM) that significantly outperforms word-overlap metrics like BLEU and ROUGE in correlating with human judgments at both the utterance and system levels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "3. Generalization to unseen dialogue models, demonstrating that ADEM can evaluate responses from models not included in its training data, a critical step for practical usability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "1. Significant Improvement Over Baselines: ADEM achieves much higher correlations with human judgments compared to BLEU, ROUGE, and METEOR, addressing a long-standing challenge in dialogue evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "The system-level Pearson correlation of 0.954 is particularly impressive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "2. Generalization Capability: The leave-one-out experiments show that ADEM can generalize to unseen dialogue models, making it a robust tool for evaluating new systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "3. Practical Utility: By reducing reliance on expensive and time-consuming human evaluations, ADEM facilitates rapid prototyping of dialogue systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "Its ability to evaluate responses conditioned on context is a notable advancement over existing metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "4. Thorough Experimental Validation: The authors provide extensive quantitative and qualitative analyses, including scatterplots, failure cases, and comparisons with alternative embeddings (e.g., tweet2vec), which enhance the credibility of their results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "5. Open-Source Commitment: The authors' intent to release the ADEM implementation and dataset promotes reproducibility and further research in the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960660934448,
+                    "sentence": "1. Conservatism in Predictions: ADEM tends to predict scores closer to the average human score, as highlighted in the qualitative analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "This conservatism may limit its ability to distinguish between very high-quality and mediocre responses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9897139668464661,
+                    "sentence": "2. Bias Toward Generic Responses: The model inherits a bias from human annotators, who often rate generic responses highly due to their broad appropriateness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9845288395881653,
+                    "sentence": "This could encourage dialogue models to prioritize safe, generic responses over creative or contextually rich ones.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9816299676895142,
+                    "sentence": "3. Limited Domain Testing: The experiments are conducted exclusively on the Twitter Corpus, which may not fully represent other dialogue domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9736727476119995,
+                    "sentence": "The paper lacks an exploration of ADEM's performance on task-oriented or domain-specific datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9679206013679504,
+                    "sentence": "4. Lack of Explicit Acknowledgment of Limitations: While the authors discuss some challenges (e.g., generic response bias), the paper could benefit from a more explicit acknowledgment of ADEM's limitations and potential failure cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9820222854614258,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952124357223511,
+                    "sentence": "1. How does ADEM perform on task-oriented dialogue systems or other domain-specific datasets, such as technical support or medical conversations?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9900531768798828,
+                    "sentence": "2. Could the model be extended to evaluate multi-turn dialogues rather than single responses?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9938026070594788,
+                    "sentence": "If so, what modifications would be required?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9850183725357056,
+                    "sentence": "3. How does ADEM handle adversarial responses that are semantically similar but contextually inappropriate?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9813944101333618,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935547709465027,
+                    "sentence": "This paper addresses a critical gap in dialogue evaluation and offers a well-validated, practical solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917836785316467,
+                    "sentence": "Despite some limitations, the contributions are significant, and the work has strong potential to impact both research and industry.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9855554103851318,
+                    "sentence": "I recommend acceptance with minor revisions to address the conservatism in predictions and explore domain generalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.7936028431808086,
+            "class_probabilities": {
+                "human": 0.1936532144943455,
+                "ai": 0.7936028431808086,
+                "mixed": 0.012743942324846002
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7936028431808086,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7936028431808086,
+                    "human": 0.1936532144943455,
+                    "mixed": 0.012743942324846002
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper presents ADEM (Automatic Dialogue Evaluation Model), a novel approach to automatically evaluate dialogue response quality by learning to predict human-like scores. Unlike traditional word-overlap metrics like BLEU, which correlate poorly with human judgments, ADEM leverages a hierarchical recurrent neural network (RNN) to encode dialogue context, model responses, and reference responses into vector representations. The model then computes a score based on the semantic similarity between these representations. The primary contributions of this work are:\n1. A new dataset of human-annotated dialogue response scores, collected via Amazon Mechanical Turk, which spans a variety of response qualities and conversational contexts.\n2. A novel evaluation model (ADEM) that significantly outperforms word-overlap metrics like BLEU and ROUGE in correlating with human judgments at both the utterance and system levels.\n3. Generalization to unseen dialogue models, demonstrating that ADEM can evaluate responses from models not included in its training data, a critical step for practical usability.\nStrengths\n1. Significant Improvement Over Baselines: ADEM achieves much higher correlations with human judgments compared to BLEU, ROUGE, and METEOR, addressing a long-standing challenge in dialogue evaluation. The system-level Pearson correlation of 0.954 is particularly impressive.\n2. Generalization Capability: The leave-one-out experiments show that ADEM can generalize to unseen dialogue models, making it a robust tool for evaluating new systems.\n3. Practical Utility: By reducing reliance on expensive and time-consuming human evaluations, ADEM facilitates rapid prototyping of dialogue systems. Its ability to evaluate responses conditioned on context is a notable advancement over existing metrics.\n4. Thorough Experimental Validation: The authors provide extensive quantitative and qualitative analyses, including scatterplots, failure cases, and comparisons with alternative embeddings (e.g., tweet2vec), which enhance the credibility of their results.\n5. Open-Source Commitment: The authors' intent to release the ADEM implementation and dataset promotes reproducibility and further research in the field.\nWeaknesses\n1. Conservatism in Predictions: ADEM tends to predict scores closer to the average human score, as highlighted in the qualitative analysis. This conservatism may limit its ability to distinguish between very high-quality and mediocre responses.\n2. Bias Toward Generic Responses: The model inherits a bias from human annotators, who often rate generic responses highly due to their broad appropriateness. This could encourage dialogue models to prioritize safe, generic responses over creative or contextually rich ones.\n3. Limited Domain Testing: The experiments are conducted exclusively on the Twitter Corpus, which may not fully represent other dialogue domains. The paper lacks an exploration of ADEM's performance on task-oriented or domain-specific datasets.\n4. Lack of Explicit Acknowledgment of Limitations: While the authors discuss some challenges (e.g., generic response bias), the paper could benefit from a more explicit acknowledgment of ADEM's limitations and potential failure cases.\nQuestions to Authors\n1. How does ADEM perform on task-oriented dialogue systems or other domain-specific datasets, such as technical support or medical conversations?\n2. Could the model be extended to evaluate multi-turn dialogues rather than single responses? If so, what modifications would be required?\n3. How does ADEM handle adversarial responses that are semantically similar but contextually inappropriate?\nRecommendation\nThis paper addresses a critical gap in dialogue evaluation and offers a well-validated, practical solution. Despite some limitations, the contributions are significant, and the work has strong potential to impact both research and industry. I recommend acceptance with minor revisions to address the conservatism in predictions and explore domain generalization."
+        }
+    ]
+}

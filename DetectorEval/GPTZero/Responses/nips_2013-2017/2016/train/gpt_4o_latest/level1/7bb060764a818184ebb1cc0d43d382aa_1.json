@@ -1,0 +1,403 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5c638951-32b4-410d-b1fb-fcb634a39443",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999896883964539,
+                    "sentence": "This paper introduces a novel approach to dropout, termed multinomial dropout, which assigns non-uniform sampling probabilities to features or neurons based on their second-order statistics, as opposed to the standard dropout's uniform Bernoulli sampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999891519546509,
+                    "sentence": "The authors extend this concept to deep learning with an adaptive \"evolutional dropout\" that dynamically computes sampling probabilities from mini-batches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99998939037323,
+                    "sentence": "Theoretical analysis demonstrates that this distribution-dependent dropout minimizes risk bounds, leading to faster convergence and smaller generalization error.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999904632568359,
+                    "sentence": "Empirical results on benchmark datasets validate these claims, showing significant improvements in convergence speed (e.g., 50% faster on CIFAR-100) and testing accuracy (e.g., 10% improvement).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999836683273315,
+                    "sentence": "The paper also draws connections between evolutional dropout and batch normalization, highlighting their shared goal of addressing internal covariate shift but with distinct methodologies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999901056289673,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999988853931427,
+                    "sentence": "1. Theoretical Rigor: The paper provides a solid theoretical foundation for multinomial dropout, including risk bound analysis and optimal sampling probabilities derived from second-order statistics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999873638153076,
+                    "sentence": "This adds depth to the work and distinguishes it from purely empirical studies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999866485595703,
+                    "sentence": "2. Practical Relevance: Evolutional dropout is computationally efficient, leveraging mini-batch statistics to adapt sampling probabilities dynamically.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884366989136,
+                    "sentence": "This makes it feasible for large-scale deep learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999793767929077,
+                    "sentence": "3. Empirical Validation: The experimental results are robust, spanning both shallow and deep learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999859929084778,
+                    "sentence": "The significant improvements in convergence speed and testing accuracy across multiple datasets (e.g., MNIST, CIFAR-100) are compelling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999821186065674,
+                    "sentence": "4. Novelty: The idea of multinomial dropout and its extension to evolutional dropout appears to be novel, with no prior work rigorously analyzing distribution-dependent dropout in this manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999784231185913,
+                    "sentence": "5. Comparison with Related Work: The paper positions its contributions well within the context of prior work on dropout and batch normalization, providing both theoretical and empirical comparisons.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999867081642151,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999815225601196,
+                    "sentence": "1. Clarity: While the theoretical sections are rigorous, they are dense and may be challenging for readers unfamiliar with risk bounds and stochastic optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999814033508301,
+                    "sentence": "Simplifying or summarizing key insights could improve accessibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999868869781494,
+                    "sentence": "2. Limited Scope of Deep Learning Experiments: The experiments on deep learning focus primarily on standard architectures and datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999845027923584,
+                    "sentence": "While this is sufficient for proof-of-concept, additional experiments on more complex or real-world tasks could strengthen the paper's claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999655544757843,
+                    "sentence": "3. Comparison with Batch Normalization: Although evolutional dropout is compared to batch normalization, the experiments are limited to a single dataset (CIFAR-10).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995046854019165,
+                    "sentence": "A broader comparison across datasets and architectures would provide a more comprehensive evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991980791091919,
+                    "sentence": "4. Scalability Concerns: While the use of mini-batch statistics makes evolutional dropout computationally feasible, the paper does not discuss the overhead introduced by calculating second-order statistics, particularly for very large networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998498260974884,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9949477314949036,
+                    "sentence": "Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997894167900085,
+                    "sentence": "The paper makes a significant contribution to the field by introducing a theoretically grounded and empirically validated improvement to dropout.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996515512466431,
+                    "sentence": "However, addressing the clarity of the theoretical sections and expanding the scope of experiments would further enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998411536216736,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998408555984497,
+                    "sentence": "- Strong theoretical contributions with practical implications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998052716255188,
+                    "sentence": "- Demonstrated empirical improvements in both shallow and deep learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998186230659485,
+                    "sentence": "- Novel approach that advances the state of the art in dropout techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998944401741028,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998441338539124,
+                    "sentence": "- Dense theoretical exposition may limit accessibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998267292976379,
+                    "sentence": "- Limited experimental scope in deep learning and comparisons with batch normalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998023509979248,
+                    "sentence": "In summary, this paper is a valuable addition to the literature on regularization techniques for deep learning and aligns well with the conference's focus on advancing the state of the art in machine learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a novel approach to dropout, termed multinomial dropout, which assigns non-uniform sampling probabilities to features or neurons based on their second-order statistics, as opposed to the standard dropout's uniform Bernoulli sampling. The authors extend this concept to deep learning with an adaptive \"evolutional dropout\" that dynamically computes sampling probabilities from mini-batches. Theoretical analysis demonstrates that this distribution-dependent dropout minimizes risk bounds, leading to faster convergence and smaller generalization error. Empirical results on benchmark datasets validate these claims, showing significant improvements in convergence speed (e.g., 50% faster on CIFAR-100) and testing accuracy (e.g., 10% improvement). The paper also draws connections between evolutional dropout and batch normalization, highlighting their shared goal of addressing internal covariate shift but with distinct methodologies.\nStrengths:\n1. Theoretical Rigor: The paper provides a solid theoretical foundation for multinomial dropout, including risk bound analysis and optimal sampling probabilities derived from second-order statistics. This adds depth to the work and distinguishes it from purely empirical studies.\n2. Practical Relevance: Evolutional dropout is computationally efficient, leveraging mini-batch statistics to adapt sampling probabilities dynamically. This makes it feasible for large-scale deep learning tasks.\n3. Empirical Validation: The experimental results are robust, spanning both shallow and deep learning tasks. The significant improvements in convergence speed and testing accuracy across multiple datasets (e.g., MNIST, CIFAR-100) are compelling.\n4. Novelty: The idea of multinomial dropout and its extension to evolutional dropout appears to be novel, with no prior work rigorously analyzing distribution-dependent dropout in this manner.\n5. Comparison with Related Work: The paper positions its contributions well within the context of prior work on dropout and batch normalization, providing both theoretical and empirical comparisons.\nWeaknesses:\n1. Clarity: While the theoretical sections are rigorous, they are dense and may be challenging for readers unfamiliar with risk bounds and stochastic optimization. Simplifying or summarizing key insights could improve accessibility.\n2. Limited Scope of Deep Learning Experiments: The experiments on deep learning focus primarily on standard architectures and datasets. While this is sufficient for proof-of-concept, additional experiments on more complex or real-world tasks could strengthen the paper's claims.\n3. Comparison with Batch Normalization: Although evolutional dropout is compared to batch normalization, the experiments are limited to a single dataset (CIFAR-10). A broader comparison across datasets and architectures would provide a more comprehensive evaluation.\n4. Scalability Concerns: While the use of mini-batch statistics makes evolutional dropout computationally feasible, the paper does not discuss the overhead introduced by calculating second-order statistics, particularly for very large networks.\nRecommendation:\nAccept with minor revisions. The paper makes a significant contribution to the field by introducing a theoretically grounded and empirically validated improvement to dropout. However, addressing the clarity of the theoretical sections and expanding the scope of experiments would further enhance its impact.\nArguments for Acceptance:\n- Strong theoretical contributions with practical implications.\n- Demonstrated empirical improvements in both shallow and deep learning tasks.\n- Novel approach that advances the state of the art in dropout techniques.\nArguments Against Acceptance:\n- Dense theoretical exposition may limit accessibility.\n- Limited experimental scope in deep learning and comparisons with batch normalization.\nIn summary, this paper is a valuable addition to the literature on regularization techniques for deep learning and aligns well with the conference's focus on advancing the state of the art in machine learning."
+        }
+    ]
+}

@@ -1,0 +1,1975 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "1209fe3e-2b24-4af2-a336-b59d7f883483",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.6669288277626038,
+                    "sentence": "The paper presents a novel approach for evaluating grammatical error",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5465214252471924,
+                    "sentence": "correction (GEC) systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6955470442771912,
+                    "sentence": "This approach makes it possible to assess",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5683316588401794,
+                    "sentence": "the performance of GEC systems by error type not only in terms of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5066452622413635,
+                    "sentence": "recall but also in terms of precision, which was previously not",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5144799947738647,
+                    "sentence": "possible in general since system output is usually not annotated with",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.496976763010025,
+                    "sentence": "error categories.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.30189910531044006,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5472464561462402,
+                    "sentence": "- The proposed evaluation is an important stepping stone for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36014121770858765,
+                    "sentence": "analyzing GEC system behavior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6631414294242859,
+                    "sentence": "- The paper includes evaluation for a variety of systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5923265218734741,
+                    "sentence": "- The approach has several advantages over previous work:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5554618835449219,
+                    "sentence": "- it computes precision by error type",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.47110629081726074,
+                    "sentence": "- it is independent of manual error annotation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4132629632949829,
+                    "sentence": "- it can assess the performance on multi token errors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.31415456533432007,
+                    "sentence": "- The automatically selected error tags for pre-computed error spans",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4440074563026428,
+                    "sentence": "are mostly approved of by human experts",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.38184767961502075,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4498133063316345,
+                    "sentence": "- A key part \"\" the rules to derive error types \"\" are not described.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7004232406616211,
+                    "sentence": "- The classifier evaluation lacks a thorough error analysis and based",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6144034266471863,
+                    "sentence": "upon that it lacks directions of future work on how to improve the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2154945433139801,
+                    "sentence": "classifier.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4927810728549957,
+                    "sentence": "- The evaluation was only performed for English and it is unclear how",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4930194020271301,
+                    "sentence": "difficult it would be to use the approach on another language.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.583191990852356,
+                    "sentence": "Classifier and Classifier Evaluation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5537052154541016,
+                    "sentence": "====================================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4915432929992676,
+                    "sentence": "It is unclear on what basis the error categories were devised.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6794461607933044,
+                    "sentence": "Are",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.534683108329773,
+                    "sentence": "they based on previous work?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6165612936019897,
+                    "sentence": "Although the approach in general is independent of the alignment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.43472838401794434,
+                    "sentence": "algorithm, the rules are probably not, but the authors don't provide",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.27218425273895264,
+                    "sentence": "details on that.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4254043400287628,
+                    "sentence": "The error categories are a major part of the paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49743586778640747,
+                    "sentence": "and the reader should at least get a glimpse of how a rule to assign",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6640846729278564,
+                    "sentence": "an error type looks like.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.45921581983566284,
+                    "sentence": "Unfortunately, the paper does not apply the proposed evaluation on",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.41962310671806335,
+                    "sentence": "languages other than English.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2805834710597992,
+                    "sentence": "It also does not elaborate on what",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3749290108680725,
+                    "sentence": "changes would be necessary to run the classifier on other languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3438778221607208,
+                    "sentence": "I",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.39744213223457336,
+                    "sentence": "assume that the rules used for determining edit boundaries as well as",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3946126103401184,
+                    "sentence": "for determining the error tags depend on the language/the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3159599304199219,
+                    "sentence": "pre-processing pipeline to a certain extent and therefore need to be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3238406777381897,
+                    "sentence": "adapted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.28428909182548523,
+                    "sentence": "Also, the error categories might need to be changed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.21642084419727325,
+                    "sentence": "The",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.20330117642879486,
+                    "sentence": "authors do not provide any detail on the rules for assigning error",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3710413873195648,
+                    "sentence": "categories (how many are there overall/per error type?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5154647827148438,
+                    "sentence": "how complex are",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2762787938117981,
+                    "sentence": "they?)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.38900142908096313,
+                    "sentence": "to estimate the effort necessary to use the approach on another",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6782015562057495,
+                    "sentence": "language.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03947816789150238,
+                    "sentence": "The error spans computed in the pre-processing step seem to be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04113641381263733,
+                    "sentence": "inherently continuous (which is also the case with the M2 scorer), which",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.031099136918783188,
+                    "sentence": "is problematic since there are errors which can only be tagged",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.037785712629556656,
+                    "sentence": "accurately when the error span is discontinuous.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04236928001046181,
+                    "sentence": "In German, for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07610894739627838,
+                    "sentence": "example, verbs with separable prefixes are separated from each other",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.058913704007864,
+                    "sentence": "in the main clause: [1st constituent] [verb] [other constituents]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08002541214227676,
+                    "sentence": "[verb prefix].",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.039054371416568756,
+                    "sentence": "Would the classifier be able to tag discontinuous edit",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07377766817808151,
+                    "sentence": "spans?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06918951123952866,
+                    "sentence": "The authors write that all human judges rated at least 95\\% of the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05078767612576485,
+                    "sentence": "automatically assigned error tags as appropriate \"despite the degree",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09454076737165451,
+                    "sentence": "of noise introduced by automatic edit extraction\" (295).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05239028111100197,
+                    "sentence": "I would be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06725221872329712,
+                    "sentence": "more cautious with this judgment since the raters might also have been",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07272819429636002,
+                    "sentence": "more forgiving when the boundaries were noisy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1267831027507782,
+                    "sentence": "In addition, they were",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13690897822380066,
+                    "sentence": "not asked to select a tag without knowing the system output but could",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0503384992480278,
+                    "sentence": "in case of noisy boundaries be more biased towards the system",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08155034482479095,
+                    "sentence": "output.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1339070051908493,
+                    "sentence": "Additionally, there was no rating option between \"Bad (Not",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09351802617311478,
+                    "sentence": "Appropriate)\" and \"Appropriate\", which might also have led raters to",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08762326836585999,
+                    "sentence": "select \"Appropriate\" over \"Bad\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10110263526439667,
+                    "sentence": "To make the evaluation more sound,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13903440535068512,
+                    "sentence": "the authors should also evaluate how the human judges rate the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10430096834897995,
+                    "sentence": "classifier output if the boundaries were manually created,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05348336324095726,
+                    "sentence": "i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1017322987318039,
+                    "sentence": "without the noise introduced by faulty boundaries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1882469356060028,
+                    "sentence": "The classifier evaluation lacks a thorough error analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09702087938785553,
+                    "sentence": "It is only",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14434118568897247,
+                    "sentence": "mentioned that \"Bad\" is usually traced back to a wrong POS",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11787231266498566,
+                    "sentence": "tag.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1528705507516861,
+                    "sentence": "Questions I'd like to see addressed: When did raters select",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0726439580321312,
+                    "sentence": "\"Bad\", when \"Appropriate\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14728328585624695,
+                    "sentence": "Does the rating by experts point at",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11331446468830109,
+                    "sentence": "possibilities to improve the classifier?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1226935014128685,
+                    "sentence": "Gold Reference vs. Auto Reference",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08796972781419754,
+                    "sentence": "=================================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09934414178133011,
+                    "sentence": "It is unclear on what data the significance test was performed",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09864722937345505,
+                    "sentence": "exactly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09483744204044342,
+                    "sentence": "Did you test on the F0.5 scores?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07064682245254517,
+                    "sentence": "If so, I don't think this is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07662343978881836,
+                    "sentence": "a good idea since it is a derived measure with weak discriminative",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0721096470952034,
+                    "sentence": "power (the performance in terms of recall an precision can be totally",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07158642262220383,
+                    "sentence": "different but have the same F0.5 score).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08838643878698349,
+                    "sentence": "Also, at the beginning of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11092247813940048,
+                    "sentence": "Section 4.1 the authors refer to the mismatch between automatic and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6076856255531311,
+                    "sentence": "reference in terms of alignment and classification but as far as I can",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6463370323181152,
+                    "sentence": "tell, the comparison between gold and reference is only in terms of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6828855872154236,
+                    "sentence": "boundaries and not in terms of classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.75986647605896,
+                    "sentence": "Error Type Evaluation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.46154722571372986,
+                    "sentence": "=====================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7304599285125732,
+                    "sentence": "I do not think it is surprising that 5 teams (~line 473) failed to correct",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4432540237903595,
+                    "sentence": "any unnecessary token error.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7420922517776489,
+                    "sentence": "For at least two of the systems there is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7162558436393738,
+                    "sentence": "a straightforward explanation why they cannot handle superfluous",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5979803204536438,
+                    "sentence": "words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7354479432106018,
+                    "sentence": "The most obvious is UFC: Their rule-base approach works on POS",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7336538434028625,
+                    "sentence": "tags (Ng et al., 2014) and it is just not possible to determine",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.565828263759613,
+                    "sentence": "superfluous words based on POS alone.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6523812413215637,
+                    "sentence": "Rozovskaya & Roth (2016) provide",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5410127639770508,
+                    "sentence": "an explanation why AMU performs poorly on superfluous words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6379278302192688,
+                    "sentence": "The authors do not analyze or comment the results in Table 6 with",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6074663996696472,
+                    "sentence": "respect to whether the systems were designed to handle the error",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7513036727905273,
+                    "sentence": "type.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6156758666038513,
+                    "sentence": "For some error types, there is a straight-forward mapping",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6809903979301453,
+                    "sentence": "between error type in the gold standard and in the auto reference, for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5364784002304077,
+                    "sentence": "example for word order error.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.43683379888534546,
+                    "sentence": "It remains unclear whether the systems",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6438056826591492,
+                    "sentence": "failed completely on specific error types or were just not designed to",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6096638441085815,
+                    "sentence": "correct them (CUUI for example is reported with precision+recall=0.0,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5676272511482239,
+                    "sentence": "although it does not target word order errors).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6368823051452637,
+                    "sentence": "In the CUUI case (and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6709052324295044,
+                    "sentence": "there are probably similar cases), this also points at an error in the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6824369430541992,
+                    "sentence": "classification which is neither analyzed nor discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6225650310516357,
+                    "sentence": "Please report also raw values for TP, FP, TN, FN in the appendix for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7976598739624023,
+                    "sentence": "Table 6.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8310658931732178,
+                    "sentence": "This makes it easier to compare the systems using other",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7416187524795532,
+                    "sentence": "measures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.795698881149292,
+                    "sentence": "Also, it seems that for some error types and systems the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7451875805854797,
+                    "sentence": "results in Table 6 are based only on a few instances.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6273751258850098,
+                    "sentence": "This would also",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.617595374584198,
+                    "sentence": "be made clear when reporting the raw values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6070864200592041,
+                    "sentence": "Your write \"All but 2 teams (IITB and IPN) achieved the best score in",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6491531729698181,
+                    "sentence": "at least 1 category, which suggests that different approaches to GEC",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6472148299217224,
+                    "sentence": "complement different error types.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6169477105140686,
+                    "sentence": "(606) It would be nice to mention",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7221322059631348,
+                    "sentence": "here that this is in line with previous research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6957551836967468,
+                    "sentence": "Multi-token error analysis is helpful for future work but the result",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.780263364315033,
+                    "sentence": "needs more interpretation: Some systems are probably inherently unable",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.22111479938030243,
+                    "sentence": "to correct such errors but none of the systems were trained on a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11173582822084427,
+                    "sentence": "parallel corpus of learner data and fluent (in the sense of Sakaguchi",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2222013920545578,
+                    "sentence": "et al, 2016) corrections.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7191712856292725,
+                    "sentence": "Other",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07940544933080673,
+                    "sentence": "=====",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.20898951590061188,
+                    "sentence": "- The authors should have mentioned that for some of the GEC",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3422878682613373,
+                    "sentence": "approaches, it was not impossible before to provide error",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08967874944210052,
+                    "sentence": "annotations, e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1767372488975525,
+                    "sentence": "systems with submodules for one error type each.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3111162483692169,
+                    "sentence": "Admittedly, the system would need to be adapted to include the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2803943455219269,
+                    "sentence": "submodule responsible for a change in the system output.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.43409472703933716,
+                    "sentence": "Still, the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2287062704563141,
+                    "sentence": "proposed approach enables to compare GEC systems for which producing",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.30524787306785583,
+                    "sentence": "an error tagged output is not straightforward to other systems in a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49836266040802,
+                    "sentence": "unified way.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1605895459651947,
+                    "sentence": "- References: Some titles lack capitalizations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13451620936393738,
+                    "sentence": "URL for Sakaguchi et",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2292531579732895,
+                    "sentence": "al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14790111780166626,
+                    "sentence": "(2016) needs to be wrapped.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1626233458518982,
+                    "sentence": "Page information is missing for",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13606618344783783,
+                    "sentence": "Efron and Tibshirani (1993).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17594575881958008,
+                    "sentence": "Author response",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02235672064125538,
+                    "sentence": "===============",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3529157340526581,
+                    "sentence": "I agree that your approach is not \"fatally flawed\" and I think this review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5350357890129089,
+                    "sentence": "actually points out quite some positive aspects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49353742599487305,
+                    "sentence": "The approach is good, but the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3826380670070648,
+                    "sentence": "paper is not ready.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3730008006095886,
+                    "sentence": "The basis for the paper are the rules for classifying errors and the lack of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.445159375667572,
+                    "sentence": "description is a major factor.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36159878969192505,
+                    "sentence": "This is not just a matter about additional",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.39256736636161804,
+                    "sentence": "examples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5668016672134399,
+                    "sentence": "If the rules are not seen as a one-off implementation, they need to",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5722928643226624,
+                    "sentence": "be described to be replicable or to adapt them.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.32543668150901794,
+                    "sentence": "Generalization to other languages should not be an afterthought.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3161189556121826,
+                    "sentence": "It would be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.35845884680747986,
+                    "sentence": "serious limitation if the approach only worked on one language by design.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07078670710325241,
+                    "sentence": "Even",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.42510417103767395,
+                    "sentence": "if you don't perform an adaption for other languages, your approach should be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.33451178669929504,
+                    "sentence": "transparent enough for others to estimate how much work such an adaptation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.263638973236084,
+                    "sentence": "would be and how well it could reasonably work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3680681586265564,
+                    "sentence": "Just stating that most",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.34765878319740295,
+                    "sentence": "research is targeted at ESL only reinforces the problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.44720950722694397,
+                    "sentence": "You write that the error types certain systems tackle would be \"usually obvious",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.23715749382972717,
+                    "sentence": "from the tables\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.367385596036911,
+                    "sentence": "I don't think it is as simple as that -- see the CUUI",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4322662353515625,
+                    "sentence": "example mentioned above as well as the unnecessary token errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5342744588851929,
+                    "sentence": "There are",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4384104609489441,
+                    "sentence": "five systems that don't correct them (Table 5) and it should therefore be",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5327643752098083,
+                    "sentence": "obvious that they did not try to tackle them.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49857598543167114,
+                    "sentence": "However, in the paper you write",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49361422657966614,
+                    "sentence": "that \"There",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.19455137848854065,
+                    "sentence": "is also no obvious explanation as to why these teams had difficulty with this",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2749407887458801,
+                    "sentence": "error type\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 57,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 59,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 61,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 62,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 63,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 64,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 66,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 67,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 69,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 70,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 71,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 73,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 74,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 76,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 77,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 78,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 80,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 82,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 83,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 85,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 87,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 88,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 89,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 90,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 91,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 94,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 95,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 96,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 98,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 99,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 100,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 101,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 102,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 103,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 104,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 105,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 107,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 108,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 110,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 111,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 113,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 114,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 115,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 116,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 118,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 119,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 121,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 122,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 123,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 125,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 126,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 127,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 128,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 130,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 132,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 134,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 135,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 136,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 137,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 139,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 140,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 141,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 142,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 143,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 144,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 145,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 146,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 147,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 148,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 149,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 151,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 152,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 154,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 155,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 156,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 157,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 159,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 162,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 163,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 164,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 165,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 166,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 168,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 169,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 170,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 172,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 174,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 175,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 177,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 179,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 180,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 181,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 183,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 184,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 185,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 187,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 189,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 190,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 192,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 193,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 194,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.42607951419314083,
+            "class_probabilities": {
+                "human": 0.5730034846045686,
+                "ai": 0.42607951419314083,
+                "mixed": 0.0009170012022904652
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5730034846045686,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.42607951419314083,
+                    "human": 0.5730034846045686,
+                    "mixed": 0.0009170012022904652
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel approach for evaluating grammatical error\ncorrection (GEC) systems. This approach makes it possible to assess\nthe performance of GEC systems by error type not only in terms of\nrecall but also in terms of precision, which was previously not\npossible in general since system output is usually not annotated with\nerror categories.\nStrengths:\n - The proposed evaluation is an important stepping stone for\n analyzing GEC system behavior.\n - The paper includes evaluation for a variety of systems.\n - The approach has several advantages over previous work:\n - it computes precision by error type\n - it is independent of manual error annotation\n - it can assess the performance on multi token errors\n - The automatically selected error tags for pre-computed error spans\n are mostly approved of by human experts\nWeaknesses:\n - A key part \"\" the rules to derive error types \"\" are not described.\n - The classifier evaluation lacks a thorough error analysis and based\n upon that it lacks directions of future work on how to improve the\n classifier.\n - The evaluation was only performed for English and it is unclear how\n difficult it would be to use the approach on another language.\nClassifier and Classifier Evaluation\n====================================\nIt is unclear on what basis the error categories were devised. Are\nthey based on previous work?\nAlthough the approach in general is independent of the alignment\nalgorithm, the rules are probably not, but the authors don't provide\ndetails on that. The error categories are a major part of the paper\nand the reader should at least get a glimpse of how a rule to assign\nan error type looks like.\nUnfortunately, the paper does not apply the proposed evaluation on\nlanguages other than English. It also does not elaborate on what\nchanges would be necessary to run the classifier on other languages. I\nassume that the rules used for determining edit boundaries as well as\nfor determining the error tags depend on the language/the\npre-processing pipeline to a certain extent and therefore need to be\nadapted. Also, the error categories might need to be changed. The\nauthors do not provide any detail on the rules for assigning error\ncategories (how many are there overall/per error type? how complex are\nthey?) to estimate the effort necessary to use the approach on another\nlanguage.\nThe error spans computed in the pre-processing step seem to be\ninherently continuous (which is also the case with the M2 scorer), which\nis problematic since there are errors which can only be tagged\naccurately when the error span is discontinuous. In German, for\nexample, verbs with separable prefixes are separated from each other\nin the main clause: [1st constituent] [verb] [other constituents]\n[verb prefix]. Would the classifier be able to tag discontinuous edit\nspans?\nThe authors write that all human judges rated at least 95\\% of the\nautomatically assigned error tags as appropriate \"despite the degree\nof noise introduced by automatic edit extraction\" (295). I would be\nmore cautious with this judgment since the raters might also have been\nmore forgiving when the boundaries were noisy. In addition, they were\nnot asked to select a tag without knowing the system output but could\nin case of noisy boundaries be more biased towards the system\noutput. Additionally, there was no rating option between \"Bad (Not\nAppropriate)\" and \"Appropriate\", which might also have led raters to\nselect \"Appropriate\" over \"Bad\". To make the evaluation more sound,\nthe authors should also evaluate how the human judges rate the\nclassifier output if the boundaries were manually created,\ni.e. without the noise introduced by faulty boundaries.\nThe classifier evaluation lacks a thorough error analysis. It is only\nmentioned that \"Bad\" is usually traced back to a wrong POS\ntag. Questions I'd like to see addressed: When did raters select\n\"Bad\", when \"Appropriate\"? Does the rating by experts point at\npossibilities to improve the classifier?\nGold Reference vs. Auto Reference\n=================================\nIt is unclear on what data the significance test was performed\nexactly. Did you test on the F0.5 scores? If so, I don't think this is\na good idea since it is a derived measure with weak discriminative\npower (the performance in terms of recall an precision can be totally\ndifferent but have the same F0.5 score). Also, at the beginning of\nSection 4.1 the authors refer to the mismatch between automatic and\nreference in terms of alignment and classification but as far as I can\ntell, the comparison between gold and reference is only in terms of\nboundaries and not in terms of classification.\nError Type Evaluation\n=====================\nI do not think it is surprising that 5 teams (~line 473) failed to correct\nany unnecessary token error. For at least two of the systems there is\na straightforward explanation why they cannot handle superfluous\nwords. The most obvious is UFC: Their rule-base approach works on POS\ntags (Ng et al., 2014) and it is just not possible to determine\nsuperfluous words based on POS alone. Rozovskaya & Roth (2016) provide\nan explanation why AMU performs poorly on superfluous words.\nThe authors do not analyze or comment the results in Table 6 with\nrespect to whether the systems were designed to handle the error\ntype. For some error types, there is a straight-forward mapping\nbetween error type in the gold standard and in the auto reference, for\nexample for word order error. It remains unclear whether the systems\nfailed completely on specific error types or were just not designed to\ncorrect them (CUUI for example is reported with precision+recall=0.0,\nalthough it does not target word order errors). In the CUUI case (and\nthere are probably similar cases), this also points at an error in the\nclassification which is neither analyzed nor discussed.\nPlease report also raw values for TP, FP, TN, FN in the appendix for\nTable 6. This makes it easier to compare the systems using other\nmeasures. Also, it seems that for some error types and systems the\nresults in Table 6 are based only on a few instances. This would also\nbe made clear when reporting the raw values.\nYour write \"All but 2 teams (IITB and IPN) achieved the best score in\nat least 1 category, which suggests that different approaches to GEC\ncomplement different error types.\" (606) It would be nice to mention\nhere that this is in line with previous research.\nMulti-token error analysis is helpful for future work but the result\nneeds more interpretation: Some systems are probably inherently unable\nto correct such errors but none of the systems were trained on a\nparallel corpus of learner data and fluent (in the sense of Sakaguchi\net al, 2016) corrections.\nOther\n=====\n- The authors should have mentioned that for some of the GEC\n approaches, it was not impossible before to provide error\n annotations, e.g. systems with submodules for one error type each.\n Admittedly, the system would need to be adapted to include the\n submodule responsible for a change in the system output. Still, the\n proposed approach enables to compare GEC systems for which producing\n an error tagged output is not straightforward to other systems in a\n unified way.\n- References: Some titles lack capitalizations. URL for Sakaguchi et\n al. (2016) needs to be wrapped. Page information is missing for\n Efron and Tibshirani (1993).\nAuthor response\n===============\nI agree that your approach is not \"fatally flawed\" and I think this review\nactually points out quite some positive aspects. The approach is good, but the\npaper is not ready.\nThe basis for the paper are the rules for classifying errors and the lack of\ndescription is a major factor. This is not just a matter about additional\nexamples. If the rules are not seen as a one-off implementation, they need to\nbe described to be replicable or to adapt them.\nGeneralization to other languages should not be an afterthought. It would be\nserious limitation if the approach only worked on one language by design. Even\nif you don't perform an adaption for other languages, your approach should be\ntransparent enough for others to estimate how much work such an adaptation\nwould be and how well it could reasonably work. Just stating that most\nresearch is targeted at ESL only reinforces the problem.\nYou write that the error types certain systems tackle would be \"usually obvious\nfrom the tables\". I don't think it is as simple as that -- see the CUUI\nexample mentioned above as well as the unnecessary token errors. There are\nfive systems that don't correct them (Table 5) and it should therefore be\nobvious that they did not try to tackle them. However, in the paper you write\nthat \"There\nis also no obvious explanation as to why these teams had difficulty with this\nerror type\"."
+        }
+    ]
+}

@@ -1,0 +1,302 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "fccb702d-74ec-4f92-a4a8-b3ccbfc3bb4c",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "This paper introduces the Homotopy Smoothing (HOPS) algorithm, a novel approach for solving structured non-smooth optimization problems, with applications in machine learning, image processing, and cone programming.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951124191284,
+                    "sentence": "The authors build on Nesterov's smoothing technique and accelerated proximal gradient descent, achieving improved iteration complexity of \\(O(\\tilde{1}/\\epsilon^{1-\\theta})\\), where \\(\\theta \\in (0,1]\\) captures the local sharpness of the objective function.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The work leverages the Local Error Bound (LEB) condition to dynamically adjust the smoothing parameter, significantly enhancing convergence rates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "A primal-dual variant (PD-HOPS) is also proposed, which eliminates the need for manual parameter tuning and demonstrates competitive wall-time efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "1. Theoretical Contributions: The paper provides rigorous theoretical guarantees, including the lowest known iteration complexity for the considered class of problems without assuming strong convexity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "The integration of the LEB condition is a key innovation, enabling exponential improvements in specific cases (e.g., \\(O(\\log(\\epsilon_0/\\epsilon))\\) for L1-regularized problems).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "2. Algorithmic Design: The homotopy strategy for gradually decreasing the smoothing parameter, combined with warm-starting, is well-motivated and effectively balances accuracy and computational cost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "3. Practical Efficiency: The primal-dual variant (PD-HOPS) is particularly noteworthy for its ability to adaptively determine the number of iterations per stage, avoiding manual tuning and achieving the best wall-time performance in experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "4. Experimental Validation: The experiments span diverse application domains, demonstrating consistent improvements in iteration complexity and runtime over baseline methods, particularly for small \\(\\epsilon\\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999660849571228,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999420642852783,
+                    "sentence": "1. Experimental Comparisons: While the results are promising, it is unclear if the baseline methods represent the state-of-the-art for all tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999944806098938,
+                    "sentence": "A more comprehensive comparison with recent advancements in non-smooth optimization would strengthen the claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999955952167511,
+                    "sentence": "2. Backtracking Clarification: The necessity and impact of the backtracking trick in experiments remain ambiguous and should be explicitly addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998735785484314,
+                    "sentence": "3. Practical Recommendations: The suggestion to combine HOPS with other methods for larger \\(\\epsilon\\) is insightful but not explored experimentally.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999961793422699,
+                    "sentence": "This limits the practical guidance provided to practitioners.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999317526817322,
+                    "sentence": "4. Wall-Time Accounting: The reported wall-time efficiency of PD-HOPS is impressive, but it is unclear if the dual update times were fully accounted for, which could affect the validity of the runtime comparisons.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997743368148804,
+                    "sentence": "Pro vs. Con Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999346137046814,
+                    "sentence": "- Pro: The paper offers significant theoretical advancements, a novel algorithmic framework, and strong empirical results, making it a valuable contribution to the field of non-smooth optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997068047523499,
+                    "sentence": "- Con: The experimental evaluation could be more comprehensive, and some practical aspects (e.g., backtracking and wall-time accounting) require clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998590350151062,
+                    "sentence": "Recommendation: Overall, this paper is a high-quality submission that advances the state of the art in non-smooth optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999671220779419,
+                    "sentence": "While there are minor gaps in experimental rigor and practical considerations, the strengths outweigh the weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959801435470581,
+                    "sentence": "I recommend acceptance, with the expectation that the authors address the raised concerns in the final version.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces the Homotopy Smoothing (HOPS) algorithm, a novel approach for solving structured non-smooth optimization problems, with applications in machine learning, image processing, and cone programming. The authors build on Nesterov's smoothing technique and accelerated proximal gradient descent, achieving improved iteration complexity of \\(O(\\tilde{1}/\\epsilon^{1-\\theta})\\), where \\(\\theta \\in (0,1]\\) captures the local sharpness of the objective function. The work leverages the Local Error Bound (LEB) condition to dynamically adjust the smoothing parameter, significantly enhancing convergence rates. A primal-dual variant (PD-HOPS) is also proposed, which eliminates the need for manual parameter tuning and demonstrates competitive wall-time efficiency.\nStrengths:\n1. Theoretical Contributions: The paper provides rigorous theoretical guarantees, including the lowest known iteration complexity for the considered class of problems without assuming strong convexity. The integration of the LEB condition is a key innovation, enabling exponential improvements in specific cases (e.g., \\(O(\\log(\\epsilon_0/\\epsilon))\\) for L1-regularized problems).\n2. Algorithmic Design: The homotopy strategy for gradually decreasing the smoothing parameter, combined with warm-starting, is well-motivated and effectively balances accuracy and computational cost.\n3. Practical Efficiency: The primal-dual variant (PD-HOPS) is particularly noteworthy for its ability to adaptively determine the number of iterations per stage, avoiding manual tuning and achieving the best wall-time performance in experiments.\n4. Experimental Validation: The experiments span diverse application domains, demonstrating consistent improvements in iteration complexity and runtime over baseline methods, particularly for small \\(\\epsilon\\).\nWeaknesses:\n1. Experimental Comparisons: While the results are promising, it is unclear if the baseline methods represent the state-of-the-art for all tasks. A more comprehensive comparison with recent advancements in non-smooth optimization would strengthen the claims.\n2. Backtracking Clarification: The necessity and impact of the backtracking trick in experiments remain ambiguous and should be explicitly addressed.\n3. Practical Recommendations: The suggestion to combine HOPS with other methods for larger \\(\\epsilon\\) is insightful but not explored experimentally. This limits the practical guidance provided to practitioners.\n4. Wall-Time Accounting: The reported wall-time efficiency of PD-HOPS is impressive, but it is unclear if the dual update times were fully accounted for, which could affect the validity of the runtime comparisons.\nPro vs. Con Arguments for Acceptance:\n- Pro: The paper offers significant theoretical advancements, a novel algorithmic framework, and strong empirical results, making it a valuable contribution to the field of non-smooth optimization.\n- Con: The experimental evaluation could be more comprehensive, and some practical aspects (e.g., backtracking and wall-time accounting) require clarification.\nRecommendation: Overall, this paper is a high-quality submission that advances the state of the art in non-smooth optimization. While there are minor gaps in experimental rigor and practical considerations, the strengths outweigh the weaknesses. I recommend acceptance, with the expectation that the authors address the raised concerns in the final version."
+        }
+    ]
+}

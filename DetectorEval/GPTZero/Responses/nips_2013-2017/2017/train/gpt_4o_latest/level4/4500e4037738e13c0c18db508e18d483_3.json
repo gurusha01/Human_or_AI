@@ -1,0 +1,347 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "88f70732-c5d2-4c26-a489-374631a997b2",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999270439147949,
+                    "sentence": "The paper addresses an important yet relatively underexplored topic in connectomics: error detection and targeted error correction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999064803123474,
+                    "sentence": "This is a critical area of research, as such methods are essential for optimizing the allocation of human proofreading efforts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999903678894043,
+                    "sentence": "The authors highlight the observation that humans find it significantly easier to detect segmentation errors than to correct them, and they propose automating this process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999442100524902,
+                    "sentence": "The authors specifically introduce an error detection module implemented as a multi-scale 3D CNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999228715896606,
+                    "sentence": "This network takes a binary object mask as input and predicts whether it corresponds to an object in the ground truth segmentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998932480812073,
+                    "sentence": "During inference, the network is applied to overlapping windows arranged on a grid to detect and localize segmentation errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999311566352844,
+                    "sentence": "Additionally, the paper presents an error correction module, which is also a 3D CNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999097585678101,
+                    "sentence": "This module reconstructs the object containing the central pixel, drawing inspiration from flood-filling networks (FFNs), which are cited as related work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998983144760132,
+                    "sentence": "Unlike FFNs, which predict binary masks, the authors propose predicting a k-dimensional vector for each voxel, where voxels belonging to the same object share similar vectors, while those from different objects do not.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999921441078186,
+                    "sentence": "This vector field is subsequently converted into a binary mask using an exponential transform.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999120831489563,
+                    "sentence": "The stated motivation for this approach is to reduce reliance on the precise location of the central object.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998260736465454,
+                    "sentence": "However, the authors should provide additional justification for their choice of the exponential transform, whether alternative forms were considered, the specific value of k used in their experiments, and experimental evidence demonstrating that this approach outperforms direct binary encoding of the output.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998772144317627,
+                    "sentence": "The paper lacks details regarding the loss functions used to train the network, which is particularly critical for the error correction module.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997703433036804,
+                    "sentence": "Since the k-dimensional vectors are arbitrary and cannot be fully defined by the training data, this omission is notable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999695897102356,
+                    "sentence": "In Section 5, the confidence threshold requires further clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997896552085876,
+                    "sentence": "How was this confidence computed, and what specific threshold was used?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998173713684082,
+                    "sentence": "The text also mentions a termination condition based on either achieving an error-free state as predicted by the error detector or performing two corrections per iteration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998552799224854,
+                    "sentence": "The rationale behind this condition should be elaborated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998996257781982,
+                    "sentence": "Would applying the network more than twice lead to improved segmentation results?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998747110366821,
+                    "sentence": "Furthermore, would such a process converge to a stable segmentation state?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999016523361206,
+                    "sentence": "It should also be explicitly stated whether the error correction module handles both split and merge errors, or only split errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999331831932068,
+                    "sentence": "If merge errors are addressed, the paper should clarify how these are managed both at the supervoxel graph level and within individual supervoxels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9870468974113464,
+                    "sentence": "In Section 6.3, the parameters of the Adam optimizer should be explicitly reported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9902602434158325,
+                    "sentence": "The paper provides a thorough performance analysis of the proposed systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9920685887336731,
+                    "sentence": "The authors deserve recognition for computing per-object VI scores, which enhance the interpretability of the metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.964753270149231,
+                    "sentence": "Technical comments on the text:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948434233665466,
+                    "sentence": "- Figure 1 is difficult to interpret, and the role of the nodes is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907522201538086,
+                    "sentence": "While the caption refers to horizontal layers, the data flow does not appear to follow a vertical direction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.980341374874115,
+                    "sentence": "- Line 48 states that \"the overhead of agglomeration prohibits the use of deep learning.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971946477890015,
+                    "sentence": "This claim seems inaccurate, as deep learning has been successfully applied to agglomeration tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9815386533737183,
+                    "sentence": "For example, see [https://papers.nips.cc/paper/6595-combinatorial-energy-learning-for-image-segmentation.pdf](https://papers.nips.cc/paper/6595-combinatorial-energy-learning-for-image-segmentation.pdf) for a relevant example.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9258365631103516,
+                    "sentence": "- Appendix A, Table 4: The layer IDs are non-consecutive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8392743468284607,
+                    "sentence": "If this is intentional, the meaning of these IDs should be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses an important yet relatively underexplored topic in connectomics: error detection and targeted error correction. This is a critical area of research, as such methods are essential for optimizing the allocation of human proofreading efforts. The authors highlight the observation that humans find it significantly easier to detect segmentation errors than to correct them, and they propose automating this process.\nThe authors specifically introduce an error detection module implemented as a multi-scale 3D CNN. This network takes a binary object mask as input and predicts whether it corresponds to an object in the ground truth segmentation. During inference, the network is applied to overlapping windows arranged on a grid to detect and localize segmentation errors.\nAdditionally, the paper presents an error correction module, which is also a 3D CNN. This module reconstructs the object containing the central pixel, drawing inspiration from flood-filling networks (FFNs), which are cited as related work. Unlike FFNs, which predict binary masks, the authors propose predicting a k-dimensional vector for each voxel, where voxels belonging to the same object share similar vectors, while those from different objects do not. This vector field is subsequently converted into a binary mask using an exponential transform. The stated motivation for this approach is to reduce reliance on the precise location of the central object. However, the authors should provide additional justification for their choice of the exponential transform, whether alternative forms were considered, the specific value of k used in their experiments, and experimental evidence demonstrating that this approach outperforms direct binary encoding of the output.\nThe paper lacks details regarding the loss functions used to train the network, which is particularly critical for the error correction module. Since the k-dimensional vectors are arbitrary and cannot be fully defined by the training data, this omission is notable.\nIn Section 5, the confidence threshold requires further clarification. How was this confidence computed, and what specific threshold was used? The text also mentions a termination condition based on either achieving an error-free state as predicted by the error detector or performing two corrections per iteration. The rationale behind this condition should be elaborated. Would applying the network more than twice lead to improved segmentation results? Furthermore, would such a process converge to a stable segmentation state?\nIt should also be explicitly stated whether the error correction module handles both split and merge errors, or only split errors. If merge errors are addressed, the paper should clarify how these are managed both at the supervoxel graph level and within individual supervoxels.\nIn Section 6.3, the parameters of the Adam optimizer should be explicitly reported.\nThe paper provides a thorough performance analysis of the proposed systems. The authors deserve recognition for computing per-object VI scores, which enhance the interpretability of the metrics.\nTechnical comments on the text:\n- Figure 1 is difficult to interpret, and the role of the nodes is unclear. While the caption refers to horizontal layers, the data flow does not appear to follow a vertical direction.\n- Line 48 states that \"the overhead of agglomeration prohibits the use of deep learning.\" This claim seems inaccurate, as deep learning has been successfully applied to agglomeration tasks. For example, see [https://papers.nips.cc/paper/6595-combinatorial-energy-learning-for-image-segmentation.pdf](https://papers.nips.cc/paper/6595-combinatorial-energy-learning-for-image-segmentation.pdf) for a relevant example.\n- Appendix A, Table 4: The layer IDs are non-consecutive. If this is intentional, the meaning of these IDs should be clarified."
+        }
+    ]
+}

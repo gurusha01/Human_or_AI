@@ -1,0 +1,282 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "47f05674-2566-4599-a8b3-b76851c664c3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999654293060303,
+                    "sentence": "This paper introduces a model-based approach for conducting conditional independence tests on iid data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999202489852905,
+                    "sentence": "The core concept involves utilizing a nearest neighbor bootstrap method to create samples that approximate the distribution \\( f^{CI} \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999293684959412,
+                    "sentence": "A classifier is then trained and evaluated to determine whether it can distinguish between the observed data distribution and the nearest neighbor bootstrapped distribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999056458473206,
+                    "sentence": "If the classifier's performance is close to random guessing, the null hypothesis\"\"that the data exhibits conditional independence\"\"is not rejected; otherwise, the null hypothesis is accepted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999391436576843,
+                    "sentence": "The authors derive bounds on the closeness of the nearest neighbor bootstrapped distribution to \\( f^{CI} \\) in terms of total variation distance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999880850315094,
+                    "sentence": "Additionally, they provide bounds on the empirical risks under ideal classification scenarios and for nearly independent samples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998635649681091,
+                    "sentence": "Overall, the paper addresses a significant problem and is presented in a clear and comprehensible manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9792319536209106,
+                    "sentence": "Detailed Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970595836639404,
+                    "sentence": "Major:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9619758725166321,
+                    "sentence": "1. The proposed method appears to consist of two primary components: generating samples that approximate \\( f^{CI} \\) and employing a classifier for decision-making.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9914143681526184,
+                    "sentence": "My question is whether either of these steps could be replaced by existing techniques from the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9802786111831665,
+                    "sentence": "For instance, could the permutation-based method from [7] be combined with the classification-based approach to solve the problem?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9696425199508667,
+                    "sentence": "Alternatively, could the nearest neighbor bootstrap be paired with a kernel two-sample test?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.969100296497345,
+                    "sentence": "I am curious about how these alternative combinations would perform.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958667755126953,
+                    "sentence": "2. The nearest neighbor bootstrap distribution is shown to approximate \\( f^{CI} \\) in finite sample settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974899291992188,
+                    "sentence": "However, if the ground truth indicates that \\( x \\) and \\( y \\) are weakly dependent given \\( z \\), how would the proposed method handle this scenario?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997188925743103,
+                    "sentence": "3. Is the method entirely symmetric with respect to \\( x \\) and \\( y \\)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977796077728271,
+                    "sentence": "From a causal perspective, \\( x \\) and \\( y \\) may be dependent given \\( z \\) due to two distinct causal models: \\( x \\) causes \\( y \\), or \\( y \\) causes \\( x \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970782995223999,
+                    "sentence": "In these two cases, would it be necessary to decide which variable to sample?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965268969535828,
+                    "sentence": "The authors have not addressed this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963902831077576,
+                    "sentence": "4. I have serious concerns about how the parameter \\( \\tau \\) is selected in Algorithms 2 and 3.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961549043655396,
+                    "sentence": "Minor:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9909863471984863,
+                    "sentence": "In Algorithms 2 and 3, it seems that the empirical risk should be divided by the sample size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9954476479514417,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9954476479514417,
+                "mixed": 0.004552352048558421
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9954476479514417,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9954476479514417,
+                    "human": 0,
+                    "mixed": 0.004552352048558421
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a model-based approach for conducting conditional independence tests on iid data. The core concept involves utilizing a nearest neighbor bootstrap method to create samples that approximate the distribution \\( f^{CI} \\). A classifier is then trained and evaluated to determine whether it can distinguish between the observed data distribution and the nearest neighbor bootstrapped distribution. If the classifier's performance is close to random guessing, the null hypothesis\"\"that the data exhibits conditional independence\"\"is not rejected; otherwise, the null hypothesis is accepted.\nThe authors derive bounds on the closeness of the nearest neighbor bootstrapped distribution to \\( f^{CI} \\) in terms of total variation distance. Additionally, they provide bounds on the empirical risks under ideal classification scenarios and for nearly independent samples.\nOverall, the paper addresses a significant problem and is presented in a clear and comprehensible manner.\nDetailed Comments:\nMajor:\n1. The proposed method appears to consist of two primary components: generating samples that approximate \\( f^{CI} \\) and employing a classifier for decision-making. My question is whether either of these steps could be replaced by existing techniques from the literature. For instance, could the permutation-based method from [7] be combined with the classification-based approach to solve the problem? Alternatively, could the nearest neighbor bootstrap be paired with a kernel two-sample test? I am curious about how these alternative combinations would perform.\n2. The nearest neighbor bootstrap distribution is shown to approximate \\( f^{CI} \\) in finite sample settings. However, if the ground truth indicates that \\( x \\) and \\( y \\) are weakly dependent given \\( z \\), how would the proposed method handle this scenario?\n3. Is the method entirely symmetric with respect to \\( x \\) and \\( y \\)? From a causal perspective, \\( x \\) and \\( y \\) may be dependent given \\( z \\) due to two distinct causal models: \\( x \\) causes \\( y \\), or \\( y \\) causes \\( x \\). In these two cases, would it be necessary to decide which variable to sample? The authors have not addressed this issue.\n4. I have serious concerns about how the parameter \\( \\tau \\) is selected in Algorithms 2 and 3.\nMinor:\nIn Algorithms 2 and 3, it seems that the empirical risk should be divided by the sample size."
+        }
+    ]
+}

@@ -1,0 +1,702 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "fc6cfd0f-456a-4fb7-a3c6-205c008577c9",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.027683358639478683,
+                    "sentence": "%%%% Summary",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026968277990818024,
+                    "sentence": "The authors consider constrained convex optimization problems where the constraints are conic and given by a bounded set of atoms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01631806790828705,
+                    "sentence": "The authors propose linear oracle based method to tackle such problems in the spirit of Frank-Wolfe algorithm and Matching Pursuit techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02189197763800621,
+                    "sentence": "The main algorithm is the Non-Negative Matching Pursuit and the authors propose several active set variants.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025019535794854164,
+                    "sentence": "The paper contains convergence analysis for all the algorithms under different scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08259698748588562,
+                    "sentence": "In a nutshel, the convergence rate is sublinear for general objectives and linear for strongly convex objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0653371661901474,
+                    "sentence": "The linear rates involve a new geometric quantity, the cone width.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10227454453706741,
+                    "sentence": "Finally the authors illustrate the relevance of their algorithm on several machine learning tasks and different datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014752821065485477,
+                    "sentence": "%%%% Main comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0952664390206337,
+                    "sentence": "I did not have time to check the affine invariant algorithms and analyses presented in the appendix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10162930935621262,
+                    "sentence": "The papers contains interesting novel ideas and extensions for linear oracle based optimization methods but the technical presentation suffer some weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0610591284930706,
+                    "sentence": "- Theorem 2 which presentation is problematic and does not really provide any convergence guaranty.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.12955932319164276,
+                    "sentence": "- All the linear convergence rates rely on Theorem 8 which is burried at the end of the appendix and which proof is not clear enough.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11801976710557938,
+                    "sentence": "- Lower bounds on the number of good steps of each algorithm which are not really proved since they rely on an argument of the type \"it works the same as in another close setting\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.104623943567276,
+                    "sentence": "The numerical experiments are numerous and convincing, but I think that the authors should provide empirical evidences showing that the computational cost are of the same order of magnitude compared competing methods for the experiments they carried out.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025081871077418327,
+                    "sentence": "%%%% Details on the main comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1990898996591568,
+                    "sentence": "%% Theorem 2",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06607060879468918,
+                    "sentence": "The presention and statement of Theorem 2 (and all the sublinear rates given in the paper) has the following form:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.16696320474147797,
+                    "sentence": "- Given a fixed horizon T",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.15164680778980255,
+                    "sentence": "- Consider rho, a bound on the iterates x0... xT",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1522769033908844,
+                    "sentence": "- Then for all t > 0 the suboptimality is of the order of c / t where c depends on rho.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14117003977298737,
+                    "sentence": "First, the proof cannot hold for all t > 0 but only for 0 < t <= T. Indeed, in the proof, equation (16) relies on the fact that the rho bound holds for x_t which is only ensured for t < = T.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.12125355005264282,
+                    "sentence": "Second the numerator actually contains rho^2.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.20151615142822266,
+                    "sentence": "When T increases, rho could increase as well and the given bound does not even need to approach 0.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.28215867280960083,
+                    "sentence": "This presentation is problematic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3113061189651489,
+                    "sentence": "One possible way to fix this would be to provide a priori conditions (such as coercivity) which ensure that the sequence of iterates remain in a compact set, allowing to define an upper bound independantly of the horizon T.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2036278396844864,
+                    "sentence": "In the proof I did not understand the sentence \"The reason being that f is convex, therefore, for t > 0 we have f (x t ) < = f (0).\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3228241205215454,
+                    "sentence": "%% Lemma 7 and Theorem 8",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.15910880267620087,
+                    "sentence": "I could not understand Lemma 7.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17711681127548218,
+                    "sentence": "The equation is given without any comment and I cannot understand its meaning without further explaination.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17527297139167786,
+                    "sentence": "Is this equation defining K'?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09610051661729813,
+                    "sentence": "Or is it the case that K' can be chosen to satisfy this equation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08378143608570099,
+                    "sentence": "Does it have any other meaning?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10458753257989883,
+                    "sentence": "Lemma 7 deals only with g-faces which are polytopes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10677236318588257,
+                    "sentence": "Is it always the case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07081972807645798,
+                    "sentence": "What happens if K is not a polytope?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07024657726287842,
+                    "sentence": "Can this be done without loss of generality?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09697742760181427,
+                    "sentence": "Is it just a typo?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.19697092473506927,
+                    "sentence": "Theorem 8:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06478065252304077,
+                    "sentence": "The presentation is problematic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0774707943201065,
+                    "sentence": "In Lemma 7, r is not a feasible direction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08823318779468536,
+                    "sentence": "In Theorem 8, it is the gradient of f at x_t.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09961611777544022,
+                    "sentence": "Theorem 8 says \"using the notation from Lemma 7\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10632940381765366,
+                    "sentence": "The proof of Theorem 8 says \"if r is a feasible direction\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09231045097112656,
+                    "sentence": "All this makes the work of the reader very hard.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07562452554702759,
+                    "sentence": "Notations of Lemma 7 are not properly used:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14499466121196747,
+                    "sentence": "- What is e?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1506100296974182,
+                    "sentence": "e is not fixed by Lemma 7, it is just a variable defining a maximum.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0020141308195888996,
+                    "sentence": "This is a recurent mistake in the proofs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00154592702165246,
+                    "sentence": "- What is K?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002215843414887786,
+                    "sentence": "K is supposed to be given in Lemma 7 but not in Theorem 8.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002343029947951436,
+                    "sentence": "- Polytope?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0019194259075447917,
+                    "sentence": "All this could be more explicit.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0025646788999438286,
+                    "sentence": "\"As x is not optimal by convexity we have that < r, e > > 0\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0022224057465791702,
+                    "sentence": "Where is it assumed that $x$ is not optimal?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012579775648191571,
+                    "sentence": "How does this translate in the proposed inequality?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006136479787528515,
+                    "sentence": "What does the following mean?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002071434399113059,
+                    "sentence": "\"We then project r on the faces of cone(A) containing x until it is a feasible direction\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0025256562512367964,
+                    "sentence": "Do the author project on an intersection of faces or alternatively on each face or something else?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002116379328072071,
+                    "sentence": "It would be more appropriate to say \"the projection is a feasible direction\" since r is fixed to be the gradient of f. It is very uncomfortable to have the value of r changing within the proof in an \"algorithmic fashion\" and makes it very hard to check accuracy of the arguments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002241356996819377,
+                    "sentence": "In any case, I suspect that the resulting r could be 0 in which case the next equation does not make sense.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026277354918420315,
+                    "sentence": "What prevents the resulting r from being null?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0033798692747950554,
+                    "sentence": "In the next sentences, the authors use Lemma 7 which assumes that r is not a feasible direction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0022469284012913704,
+                    "sentence": "This is contradictory with the preceeding paragraph.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0038044704124331474,
+                    "sentence": "At this point I was completely confused and lost hope to understand the details of this proof.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004661785904318094,
+                    "sentence": "What is r' on line 723 and in the preceeding equation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004224678967148066,
+                    "sentence": "I understand that there is a kind of recursive process in the proof.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00438873004168272,
+                    "sentence": "Why should the last sentence be true?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0040770359337329865,
+                    "sentence": "%% Further comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01357056200504303,
+                    "sentence": "Line 220, max should be argmax",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009006218053400517,
+                    "sentence": "I did not really understand the non-negative matrix facotrization experiment.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008948951959609985,
+                    "sentence": "Since the resulting approximation is of rank 10, does it mean that the authors ran their algorithm for 10 steps only?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 57,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 59,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 60,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 62,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 65,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 66,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 68,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 69,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 70,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.039828139852797,
+            "class_probabilities": {
+                "human": 0.9598887277771326,
+                "ai": 0.039828139852797,
+                "mixed": 0.0002831323700704621
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9598887277771326,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.039828139852797,
+                    "human": 0.9598887277771326,
+                    "mixed": 0.0002831323700704621
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "%%%% Summary\nThe authors consider constrained convex optimization problems where the constraints are conic and given by a bounded set of atoms. The authors propose linear oracle based method to tackle such problems in the spirit of Frank-Wolfe algorithm and Matching Pursuit techniques. The main algorithm is the Non-Negative Matching Pursuit and the authors propose several active set variants. The paper contains convergence analysis for all the algorithms under different scenarios. In a nutshel, the convergence rate is sublinear for general objectives and linear for strongly convex objectives. The linear rates involve a new geometric quantity, the cone width. Finally the authors illustrate the relevance of their algorithm on several machine learning tasks and different datasets.\n%%%% Main comments\nI did not have time to check the affine invariant algorithms and analyses presented in the appendix.\nThe papers contains interesting novel ideas and extensions for linear oracle based optimization methods but the technical presentation suffer some weaknesses:\n- Theorem 2 which presentation is problematic and does not really provide any convergence guaranty.\n- All the linear convergence rates rely on Theorem 8 which is burried at the end of the appendix and which proof is not clear enough.\n- Lower bounds on the number of good steps of each algorithm which are not really proved since they rely on an argument of the type \"it works the same as in another close setting\".\nThe numerical experiments are numerous and convincing, but I think that the authors should provide empirical evidences showing that the computational cost are of the same order of magnitude compared competing methods for the experiments they carried out.\n%%%% Details on the main comments\n%% Theorem 2\nThe presention and statement of Theorem 2 (and all the sublinear rates given in the paper) has the following form:\n- Given a fixed horizon T\n- Consider rho, a bound on the iterates x0 ... xT\n- Then for all t > 0 the suboptimality is of the order of c / t where c depends on rho.\nFirst, the proof cannot hold for all t > 0 but only for 0 < t <= T. Indeed, in the proof, equation (16) relies on the fact that the rho bound holds for x_t which is only ensured for t < = T.\nSecond the numerator actually contains rho^2. When T increases, rho could increase as well and the given bound does not even need to approach 0.\nThis presentation is problematic. One possible way to fix this would be to provide a priori conditions (such as coercivity) which ensure that the sequence of iterates remain in a compact set, allowing to define an upper bound independantly of the horizon T.\nIn the proof I did not understand the sentence \"The reason being that f is convex, therefore, for t > 0 we have f (x t ) < = f (0).\"\n%% Lemma 7 and Theorem 8\nI could not understand Lemma 7. \nThe equation is given without any comment and I cannot understand its meaning without further explaination. Is this equation defining K'? Or is it the case that K' can be chosen to satisfy this equation? Does it have any other meaning?\nLemma 7 deals only with g-faces which are polytopes. Is it always the case? What happens if K is not a polytope? Can this be done without loss of generality? Is it just a typo?\nTheorem 8:\nThe presentation is problematic. In Lemma 7, r is not a feasible direction. In Theorem 8, it is the gradient of f at x_t. Theorem 8 says \"using the notation from Lemma 7\". The proof of Theorem 8 says \"if r is a feasible direction\". All this makes the work of the reader very hard.\nNotations of Lemma 7 are not properly used:\n- What is e? e is not fixed by Lemma 7, it is just a variable defining a maximum. This is a recurent mistake in the proofs.\n- What is K? K is supposed to be given in Lemma 7 but not in Theorem 8.\n- Polytope?\nAll this could be more explicit.\n\"As x is not optimal by convexity we have that < r , e > > 0\". Where is it assumed that $x$ is not optimal? How does this translate in the proposed inequality?\nWhat does the following mean?\n\"We then project r on the faces of cone(A) containing x until it is a feasible direction\"\nDo the author project on an intersection of faces or alternatively on each face or something else?\nIt would be more appropriate to say \"the projection is a feasible direction\" since r is fixed to be the gradient of f. It is very uncomfortable to have the value of r changing within the proof in an \"algorithmic fashion\" and makes it very hard to check accuracy of the arguments.\nIn any case, I suspect that the resulting r could be 0 in which case the next equation does not make sense. What prevents the resulting r from being null? \nIn the next sentences, the authors use Lemma 7 which assumes that r is not a feasible direction. This is contradictory with the preceeding paragraph. At this point I was completely confused and lost hope to understand the details of this proof.\nWhat is r' on line 723 and in the preceeding equation?\nI understand that there is a kind of recursive process in the proof. Why should the last sentence be true?\n%% Further comments\nLine 220, max should be argmax\nI did not really understand the non-negative matrix facotrization experiment. Since the resulting approximation is of rank 10, does it mean that the authors ran their algorithm for 10 steps only?"
+        }
+    ]
+}

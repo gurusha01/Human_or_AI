@@ -1,0 +1,277 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "cc341048-73f7-4197-8719-e15bae4a14be",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.98325514793396,
+                    "sentence": "The paper introduces a recurrent neural network architecture capable of skipping irrelevant input units during processing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9811598062515259,
+                    "sentence": "This is implemented by defining three parameters: R (the number of words read at each \"skim\"), K (the maximum jump size), and N (the maximum number of jumps allowed).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9848963618278503,
+                    "sentence": "An LSTM processes R words, predicts a jump size k from the set {0, 1,..., K} (where 0 indicates stopping), skips the next k-1 words, and continues until either the jump limit N is reached or the end of the input is encountered.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917850494384766,
+                    "sentence": "Although the model is not differentiable, it can be trained using standard policy gradient methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9933253526687622,
+                    "sentence": "The approach appears to draw significant inspiration from Shen et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9872323274612427,
+                    "sentence": "(2016), who employed a similar reinforcement learning framework (including variance stabilization) for multi-pass machine reading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958202838897705,
+                    "sentence": "- Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9802014231681824,
+                    "sentence": "The proposed model effectively simulates an intuitive \"skimming\" behavior akin to how readers process text, paralleling the self-terminated repeated reading approach of Shen et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9844202399253845,
+                    "sentence": "A key strength of this work lies in its simplicity, which does not compromise its performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9835960865020752,
+                    "sentence": "Despite its straightforward design, the model achieves promising results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9865243434906006,
+                    "sentence": "Notably, the authors demonstrate through a well-crafted synthetic experiment that the model can successfully learn to skip when provided with oracle jump signals.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.989158034324646,
+                    "sentence": "In real-world text classification tasks, the model performs competitively with a non-skimming baseline while offering significant speed advantages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.38457557559013367,
+                    "sentence": "The model's practical implications are noteworthy: for tasks where skimming is sufficient (e.g., sentiment classification), it suggests that equivalent results can be obtained without processing all input data exhaustively.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.47391045093536377,
+                    "sentence": "To the best of my knowledge, this is a novel and valuable finding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9381337761878967,
+                    "sentence": "- Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7801156044006348,
+                    "sentence": "The mechanism by which the model determines its skipping behavior remains somewhat unclear, especially outside the controlled setting of the synthetic dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8160473704338074,
+                    "sentence": "For example, consider a scenario where the latter part of a sentence contains critical information, such as:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8503128886222839,
+                    "sentence": "\"The movie was so so and boring to the last minute but then its ending blew me away.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8505738973617554,
+                    "sentence": "In this case, the model might decide to skip the remainder of the sentence after reading \"so so and boring,\" thereby missing the pivotal phrase \"ending blew me away\" and incorrectly classifying the sentiment as negative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9601324200630188,
+                    "sentence": "While the authors propose running the skimming model in both directions as a potential future solution, such cases may necessitate a more sophisticated architecture to better manage skimming decisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9582813382148743,
+                    "sentence": "Additionally, combining skimming with multi-pass reading (potentially in reverse directions) could enhance performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9815448522567749,
+                    "sentence": "This approach mirrors how humans read complex text that cannot be fully understood in a single skim\"\"indeed, it reflects how I approached reading this draft.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9915180802345276,
+                    "sentence": "Overall, the paper addresses an intriguing problem and offers an effective yet intuitive solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.8857655008401093,
+            "class_probabilities": {
+                "human": 0.10764746250978917,
+                "ai": 0.8857655008401093,
+                "mixed": 0.006587036650101582
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8857655008401093,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8857655008401093,
+                    "human": 0.10764746250978917,
+                    "mixed": 0.006587036650101582
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a recurrent neural network architecture capable of skipping irrelevant input units during processing. This is implemented by defining three parameters: R (the number of words read at each \"skim\"), K (the maximum jump size), and N (the maximum number of jumps allowed). An LSTM processes R words, predicts a jump size k from the set {0, 1, ..., K} (where 0 indicates stopping), skips the next k-1 words, and continues until either the jump limit N is reached or the end of the input is encountered. Although the model is not differentiable, it can be trained using standard policy gradient methods. The approach appears to draw significant inspiration from Shen et al. (2016), who employed a similar reinforcement learning framework (including variance stabilization) for multi-pass machine reading.\n- Strengths:\nThe proposed model effectively simulates an intuitive \"skimming\" behavior akin to how readers process text, paralleling the self-terminated repeated reading approach of Shen et al. A key strength of this work lies in its simplicity, which does not compromise its performance. Despite its straightforward design, the model achieves promising results. Notably, the authors demonstrate through a well-crafted synthetic experiment that the model can successfully learn to skip when provided with oracle jump signals. In real-world text classification tasks, the model performs competitively with a non-skimming baseline while offering significant speed advantages.\nThe model's practical implications are noteworthy: for tasks where skimming is sufficient (e.g., sentiment classification), it suggests that equivalent results can be obtained without processing all input data exhaustively. To the best of my knowledge, this is a novel and valuable finding.\n- Weaknesses:\nThe mechanism by which the model determines its skipping behavior remains somewhat unclear, especially outside the controlled setting of the synthetic dataset. For example, consider a scenario where the latter part of a sentence contains critical information, such as:\n\"The movie was so so and boring to the last minute but then its ending blew me away.\"\nIn this case, the model might decide to skip the remainder of the sentence after reading \"so so and boring,\" thereby missing the pivotal phrase \"ending blew me away\" and incorrectly classifying the sentiment as negative. While the authors propose running the skimming model in both directions as a potential future solution, such cases may necessitate a more sophisticated architecture to better manage skimming decisions.\nAdditionally, combining skimming with multi-pass reading (potentially in reverse directions) could enhance performance. This approach mirrors how humans read complex text that cannot be fully understood in a single skim\"\"indeed, it reflects how I approached reading this draft.\nOverall, the paper addresses an intriguing problem and offers an effective yet intuitive solution."
+        }
+    ]
+}

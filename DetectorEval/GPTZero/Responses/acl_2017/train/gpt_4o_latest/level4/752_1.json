@@ -1,0 +1,629 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b3fad9e2-b601-482f-ae79-147493b2c1e6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9977888464927673,
+                    "sentence": "Paraphrased Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994345307350159,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9988585114479065,
+                    "sentence": "The paper illustrates that seq2seq models can be effectively adapted for AMR parsing and realization tasks by linearizing a tailored pre-processed version of the AMR graph and its corresponding sentence, alongside employing 'Paired Training' (iterative back-translation of monolingual data combined with fine-tuning).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9988440275192261,
+                    "sentence": "Although the parsing performance lags behind other studies (e.g., Pust et al., 2015), those approaches leveraged additional semantic information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9982491731643677,
+                    "sentence": "For the AMR realization task, the paper shows that incorporating additional monolingual data through back-translation improves performance compared to a seq2seq model that does not utilize such data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9983887076377869,
+                    "sentence": "(Refer to the note below regarding comparisons to prior non-seq2seq work for realization.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9991605281829834,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994167685508728,
+                    "sentence": "At a broader level, the primary weakness lies in the paper's focus on empirical comparisons, where multiple factors and dimensions vary simultaneously (in some cases, due to differing access to information), making direct comparisons challenging.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9993083477020264,
+                    "sentence": "For instance, in the realization results (Table 2), PBMT (Pourdamghani et al., 2016) is trained on LDC2014T12, which contains 13,051 sentences, whereas the model in this paper is trained on LDC2015E86, which comprises 19,572 sentences (as per http://amr.isi.edu/download.html).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994615316390991,
+                    "sentence": "This discrepancy underpins the claim of over 5 points improvement over the state-of-the-art (PBMT) in lines 28/29, 120/121, and line 595, but is only briefly mentioned in the caption of Table 2.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9997722506523132,
+                    "sentence": "A valid comparison would require re-evaluating either the proposed approach or PBMT using the same training dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9998864531517029,
+                    "sentence": "General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9995130300521851,
+                    "sentence": "Is there any overlap between the sentences in your Gigaword sample and the test sentences in LDC2015E86?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9420490264892578,
+                    "sentence": "LDC2015E86 reportedly includes data from the \"proxy report data in LDC's DEFT Narrative Text Source Data R1 corpus (LDC2013E19)\" (accessible with an LDC account: https://catalog.ldc.upenn.edu/LDC2015E86).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9271780252456665,
+                    "sentence": "LDC2013E19 appears to contain data from Gigaword (https://catalog.ldc.upenn.edu/LDC2013E19).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8620729446411133,
+                    "sentence": "Similarly, the AMR corpus LDC2014T12 also includes \"data from newswire articles selected from the English Gigaword Corpus, Fifth Edition\" (publicly accessible link: https://catalog.ldc.upenn.edu/docs/LDC2014T12/README.txt).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49646425247192383,
+                    "sentence": "Please verify that there is no contamination of the test set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7120941877365112,
+                    "sentence": "Lines 244-249: Did the two modifications to the encoder significantly impact performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6564557552337646,
+                    "sentence": "What motivated these changes?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5307521224021912,
+                    "sentence": "For replication purposes, please clarify (an appendix would suffice) whether the implementation is based on an existing seq2seq framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5905512571334839,
+                    "sentence": "Line 321: What was the final sequence length used?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4638993442058563,
+                    "sentence": "Consider including such details in an appendix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.476062536239624,
+                    "sentence": "Please label the columns in Table 1 (presumably dev and test).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.32451707124710083,
+                    "sentence": "Additionally, there is a discrepancy between Table 1 and the text: \"Table 1 summarizes our development results for different rounds of self-training.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2036914974451065,
+                    "sentence": "It seems that only the results from the second round of self-training are displayed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14287738502025604,
+                    "sentence": "Again, the columns in Table 1 are unlabeled, but should the results in column 1 for CAMR instead be 71.2, 63.9, 67.3ᅳthe last line of Table 2 in http://www.aclweb.org/anthology/S16-1181, which corresponds to the configuration +VERB+RNE+SRL+WIKI?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012443884275853634,
+                    "sentence": "It seems the second-to-last row of Table 2 in CAMR (Wang et al., 2016) is currently being referenced.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.022160092368721962,
+                    "sentence": "On this note, how does your approach handle the wikification information introduced in LDC2015E86?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02111007459461689,
+                    "sentence": "Section 7.1: The stochastic example is missing a reference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.020995905622839928,
+                    "sentence": "Lines 713-715: This reads more like a hypothesis to be tested empirically rather than a definitive conclusion, as currently implied.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03577055782079697,
+                    "sentence": "If an additional page is available, consider adding a concluding section.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.039076488465070724,
+                    "sentence": "How is decoding performed?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02915024384856224,
+                    "sentence": "Are you using beam search?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04215674102306366,
+                    "sentence": "Following up on lines 161-163, the actual vocabulary size used in the experiments does not appear to be mentioned.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.034847211092710495,
+                    "sentence": "After preprocessing, are there any unseen tokens in the dev/test sets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026823341846466064,
+                    "sentence": "In other words, is the unknown word replacement mechanism (using attention weights), as described in Section 3.2, ever utilized?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010864287614822388,
+                    "sentence": "For the realization case study, it would be interesting to evaluate performance on phenomena that are known limitations of AMR, such as quantification and tense (https://github.com/amrisi/amr-guidelines/blob/master/amr.md).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010640643537044525,
+                    "sentence": "The paper would benefit from a brief discussion (perhaps a couple of sentences) explaining the motivation for using AMR as opposed to other semantic formalisms, as well as why the human-annotated AMR signal might be advantageous compared to directly learning a model (e.g., seq2seq) for a task (e.g., machine translation).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01613484136760235,
+                    "sentence": "For future work (not factored into the scores for this review, as the relevant paper is not yet formally published in the EACL proceedings): Regarding parsing, what accounts for the differences compared to prior seq2seq approaches?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7653226852416992,
+                    "sentence": "Specifically, between Peng and Xue, 2017 and AMR-only (as in Table 1), is the difference in performance driven by the architecture, preprocessing, linearization, data, or a combination of these factors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6173939108848572,
+                    "sentence": "Consider isolating this difference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7370098829269409,
+                    "sentence": "(As an aside, the citation for Peng and Xue, 2017 [\"Addressing the Data Sparsity Issue in Neural AMR Parsing\"] should be Peng et al., 2017 (http://eacl2017.org/index.php/program/accepted-papers; https://arxiv.org/pdf/1702.05053.pdf).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.21705418825149536,
+                    "sentence": "The authors are reversed in the References section.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06278307735919952,
+                    "sentence": "Proofreading Suggestions (these did not influence the scoring of the paper):",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0412328727543354,
+                    "sentence": "- outperform state of the art outperform the state of the art",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04847470670938492,
+                    "sentence": "- Zhou et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04828391969203949,
+                    "sentence": "(2016), extend Zhou et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.031657107174396515,
+                    "sentence": "(2016) extend",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.061394691467285156,
+                    "sentence": "- (2016),Puzikov et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05263903737068176,
+                    "sentence": "(2016), Puzikov et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02633030340075493,
+                    "sentence": "- POS-based features, that POS-based features that",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025599440559744835,
+                    "sentence": "- language pairs, by creating language pairs by creating",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.019952740520238876,
+                    "sentence": "- using a back-translation MT system and mix it with the human translations using a back-translation MT system, and mix it with the human translations",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025323573499917984,
+                    "sentence": "- ProbBank-style (Palmer et al., 2005) PropBank-style (Palmer et al., 2005)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02676469087600708,
+                    "sentence": "- independent parameters, independent parameters,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.032729726284742355,
+                    "sentence": "- for the 9.6% of tokens for 9.6% of tokens",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.042912423610687256,
+                    "sentence": "- maintaining same embedding sizes maintaining the same embedding sizes",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.023148275911808014,
+                    "sentence": "- Table 4.Similar Table 4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01741020567715168,
+                    "sentence": "Similar",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02140798792243004,
+                    "sentence": "- realizer.The realizer.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0757836401462555,
+                    "sentence": "The",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03289708495140076,
+                    "sentence": "Notation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.044328510761260986,
+                    "sentence": "- Lines 215, 216: The sets C and W are defined but never subsequently referenced.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030344437807798386,
+                    "sentence": "(However, W could/should replace \"NL\" in line 346 if they refer to the same vocabulary.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.6535213355143276
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 50,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 57,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 59,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 61,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 62,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.42460510328068046,
+            "class_probabilities": {
+                "human": 0.5710206561360874,
+                "ai": 0.42460510328068046,
+                "mixed": 0.004374240583232077
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5710206561360874,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.42460510328068046,
+                    "human": 0.5710206561360874,
+                    "mixed": 0.004374240583232077
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Paraphrased Review\nStrengths:\nThe paper illustrates that seq2seq models can be effectively adapted for AMR parsing and realization tasks by linearizing a tailored pre-processed version of the AMR graph and its corresponding sentence, alongside employing 'Paired Training' (iterative back-translation of monolingual data combined with fine-tuning). Although the parsing performance lags behind other studies (e.g., Pust et al., 2015), those approaches leveraged additional semantic information.\nFor the AMR realization task, the paper shows that incorporating additional monolingual data through back-translation improves performance compared to a seq2seq model that does not utilize such data. (Refer to the note below regarding comparisons to prior non-seq2seq work for realization.)\nWeaknesses:\nAt a broader level, the primary weakness lies in the paper's focus on empirical comparisons, where multiple factors and dimensions vary simultaneously (in some cases, due to differing access to information), making direct comparisons challenging.\nFor instance, in the realization results (Table 2), PBMT (Pourdamghani et al., 2016) is trained on LDC2014T12, which contains 13,051 sentences, whereas the model in this paper is trained on LDC2015E86, which comprises 19,572 sentences (as per http://amr.isi.edu/download.html). This discrepancy underpins the claim of over 5 points improvement over the state-of-the-art (PBMT) in lines 28/29, 120/121, and line 595, but is only briefly mentioned in the caption of Table 2. A valid comparison would require re-evaluating either the proposed approach or PBMT using the same training dataset.\nGeneral Discussion:\nIs there any overlap between the sentences in your Gigaword sample and the test sentences in LDC2015E86? LDC2015E86 reportedly includes data from the \"proxy report data in LDC's DEFT Narrative Text Source Data R1 corpus (LDC2013E19)\" (accessible with an LDC account: https://catalog.ldc.upenn.edu/LDC2015E86). LDC2013E19 appears to contain data from Gigaword (https://catalog.ldc.upenn.edu/LDC2013E19). Similarly, the AMR corpus LDC2014T12 also includes \"data from newswire articles selected from the English Gigaword Corpus, Fifth Edition\" (publicly accessible link: https://catalog.ldc.upenn.edu/docs/LDC2014T12/README.txt). Please verify that there is no contamination of the test set.\nLines 244–249: Did the two modifications to the encoder significantly impact performance? What motivated these changes?\nFor replication purposes, please clarify (an appendix would suffice) whether the implementation is based on an existing seq2seq framework.\nLine 321: What was the final sequence length used? Consider including such details in an appendix.\nPlease label the columns in Table 1 (presumably dev and test). Additionally, there is a discrepancy between Table 1 and the text: \"Table 1 summarizes our development results for different rounds of self-training.\" It seems that only the results from the second round of self-training are displayed.\nAgain, the columns in Table 1 are unlabeled, but should the results in column 1 for CAMR instead be 71.2, 63.9, 67.3—the last line of Table 2 in http://www.aclweb.org/anthology/S16-1181, which corresponds to the configuration +VERB+RNE+SRL+WIKI? It seems the second-to-last row of Table 2 in CAMR (Wang et al., 2016) is currently being referenced. On this note, how does your approach handle the wikification information introduced in LDC2015E86?\nSection 7.1: The stochastic example is missing a reference.\nLines 713–715: This reads more like a hypothesis to be tested empirically rather than a definitive conclusion, as currently implied.\nIf an additional page is available, consider adding a concluding section.\nHow is decoding performed? Are you using beam search?\nFollowing up on lines 161–163, the actual vocabulary size used in the experiments does not appear to be mentioned. After preprocessing, are there any unseen tokens in the dev/test sets? In other words, is the unknown word replacement mechanism (using attention weights), as described in Section 3.2, ever utilized?\nFor the realization case study, it would be interesting to evaluate performance on phenomena that are known limitations of AMR, such as quantification and tense (https://github.com/amrisi/amr-guidelines/blob/master/amr.md).\nThe paper would benefit from a brief discussion (perhaps a couple of sentences) explaining the motivation for using AMR as opposed to other semantic formalisms, as well as why the human-annotated AMR signal might be advantageous compared to directly learning a model (e.g., seq2seq) for a task (e.g., machine translation).\nFor future work (not factored into the scores for this review, as the relevant paper is not yet formally published in the EACL proceedings): Regarding parsing, what accounts for the differences compared to prior seq2seq approaches? Specifically, between Peng and Xue, 2017 and AMR-only (as in Table 1), is the difference in performance driven by the architecture, preprocessing, linearization, data, or a combination of these factors? Consider isolating this difference. (As an aside, the citation for Peng and Xue, 2017 [\"Addressing the Data Sparsity Issue in Neural AMR Parsing\"] should be Peng et al., 2017 (http://eacl2017.org/index.php/program/accepted-papers; https://arxiv.org/pdf/1702.05053.pdf). The authors are reversed in the References section.)\nProofreading Suggestions (these did not influence the scoring of the paper):\n- outperform state of the art outperform the state of the art \n- Zhou et al. (2016), extend Zhou et al. (2016) extend \n- (2016),Puzikov et al. (2016), Puzikov et al. \n- POS-based features, that POS-based features that \n- language pairs, by creating language pairs by creating \n- using a back-translation MT system and mix it with the human translations using a back-translation MT system, and mix it with the human translations \n- ProbBank-style (Palmer et al., 2005) PropBank-style (Palmer et al., 2005) \n- independent parameters , independent parameters, \n- for the 9.6% of tokens for 9.6% of tokens \n- maintaining same embedding sizes maintaining the same embedding sizes \n- Table 4.Similar Table 4. Similar \n- realizer.The realizer. The \nNotation: \n- Lines 215, 216: The sets C and W are defined but never subsequently referenced. (However, W could/should replace \"NL\" in line 346 if they refer to the same vocabulary.)"
+        }
+    ]
+}

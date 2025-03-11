@@ -1,0 +1,415 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "36958166-c960-4794-8c95-e49c766f2a6a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999934434890747,
+                    "sentence": "Review of the Submission",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960660934448,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "This paper proposes a novel method for generating context-sensitive token embeddings by grounding word representations in WordNet synsets and leveraging hypernymy relations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951124191284,
+                    "sentence": "Unlike traditional type-level word embeddings, the proposed method estimates a probability distribution over relevant semantic concepts for each word token in context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "The embeddings are integrated into a bidirectional LSTM model for the task of prepositional phrase (PP) attachment disambiguation, achieving a 5.4% absolute improvement in accuracy over the baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932646751404,
+                    "sentence": "The primary contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999929666519165,
+                    "sentence": "1. A method for generating context-sensitive token embeddings based on WordNet, which incorporates lexical ambiguity and semantic generalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932050704956,
+                    "sentence": "2. A demonstration of the effectiveness of these embeddings in improving PP attachment predictions, with significant error reduction compared to baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951124191284,
+                    "sentence": "3. A detailed analysis of the model's performance, including its regularization benefits, robustness to rare words, and integration with dependency parsing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "1. Novelty and Innovation: The paper introduces a unique approach to token-level embeddings by combining distributional semantics with ontological knowledge from WordNet.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999937415122986,
+                    "sentence": "This hybrid approach is innovative and addresses the limitations of type-level embeddings in handling lexical ambiguity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926090240479,
+                    "sentence": "2. Empirical Results: The proposed model achieves a 34.4% relative error reduction in PP attachment accuracy compared to the baseline, demonstrating its effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999915361404419,
+                    "sentence": "The integration of the model with a dependency parser further highlights its practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951720237732,
+                    "sentence": "3. Thorough Analysis: The paper provides a detailed breakdown of the model's components (e.g., sense priors, attention mechanism) and their contributions to performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999948740005493,
+                    "sentence": "The qualitative analysis of rare word handling and context sensitivity is insightful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999944567680359,
+                    "sentence": "4. Reproducibility: The authors describe the dataset, hyperparameters, and implementation details comprehensively, and the availability of the method as a Keras layer facilitates reproducibility and adoption by other researchers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999900460243225,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938607215881,
+                    "sentence": "1. Limited Task Scope: While the results on PP attachment are impressive, the paper evaluates the proposed embeddings on a single task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999813437461853,
+                    "sentence": "Broader evaluation across diverse NLP tasks (e.g., semantic role labeling, question answering) would strengthen the claim of general applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999913573265076,
+                    "sentence": "2. Dependency on WordNet: The reliance on WordNet limits the method's applicability to languages or domains where such lexical resources are unavailable or incomplete.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999700784683228,
+                    "sentence": "This limitation is acknowledged but not sufficiently addressed in the experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907296299934387,
+                    "sentence": "3. Comparison with Baselines: The baselines used (e.g., LSTM-PP with GloVe and GloVe-retro) are relatively simple.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9783074855804443,
+                    "sentence": "A comparison with more advanced contextual embedding methods (e.g., BERT, ELMo) would provide a stronger benchmark and situate the work within the current state of the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9704068899154663,
+                    "sentence": "4. Computational Overhead: The proposed method introduces additional complexity by requiring synset embeddings and attention mechanisms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9879037737846375,
+                    "sentence": "While the authors claim comparable parameter space to the baseline, a more detailed analysis of computational efficiency (e.g., runtime, scalability) is missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9921845197677612,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978469610214233,
+                    "sentence": "1. How does the proposed method compare to modern contextual embeddings like BERT or ELMo in terms of performance on PP attachment or other tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995837926864624,
+                    "sentence": "2. Can the model handle cases where WordNet synsets are unavailable or incomplete?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9941793084144592,
+                    "sentence": "Have you considered augmenting WordNet with other resources (e.g., Freebase, ConceptNet)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9936891198158264,
+                    "sentence": "3. How does the model's performance scale with larger datasets or more complex tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9861891865730286,
+                    "sentence": "Are there diminishing returns for the WordNet grounding as training data increases?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9888656139373779,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.991594135761261,
+                    "sentence": "Overall, this paper presents a novel and well-executed approach to context-sensitive embeddings, with strong empirical results and detailed analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9954318404197693,
+                    "sentence": "However, the limited task scope and lack of comparison with state-of-the-art contextual embeddings slightly weaken its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9939108490943909,
+                    "sentence": "I recommend acceptance with minor revisions, encouraging the authors to address the broader applicability and computational considerations of their method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9954476479514417,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9954476479514417,
+                "mixed": 0.004552352048558421
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9954476479514417,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9954476479514417,
+                    "human": 0,
+                    "mixed": 0.004552352048558421
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Submission\nSummary and Contributions\nThis paper proposes a novel method for generating context-sensitive token embeddings by grounding word representations in WordNet synsets and leveraging hypernymy relations. Unlike traditional type-level word embeddings, the proposed method estimates a probability distribution over relevant semantic concepts for each word token in context. The embeddings are integrated into a bidirectional LSTM model for the task of prepositional phrase (PP) attachment disambiguation, achieving a 5.4% absolute improvement in accuracy over the baseline. The primary contributions of the paper are:\n1. A method for generating context-sensitive token embeddings based on WordNet, which incorporates lexical ambiguity and semantic generalization.\n2. A demonstration of the effectiveness of these embeddings in improving PP attachment predictions, with significant error reduction compared to baselines.\n3. A detailed analysis of the model's performance, including its regularization benefits, robustness to rare words, and integration with dependency parsing.\nStrengths\n1. Novelty and Innovation: The paper introduces a unique approach to token-level embeddings by combining distributional semantics with ontological knowledge from WordNet. This hybrid approach is innovative and addresses the limitations of type-level embeddings in handling lexical ambiguity.\n2. Empirical Results: The proposed model achieves a 34.4% relative error reduction in PP attachment accuracy compared to the baseline, demonstrating its effectiveness. The integration of the model with a dependency parser further highlights its practical utility.\n3. Thorough Analysis: The paper provides a detailed breakdown of the model's components (e.g., sense priors, attention mechanism) and their contributions to performance. The qualitative analysis of rare word handling and context sensitivity is insightful.\n4. Reproducibility: The authors describe the dataset, hyperparameters, and implementation details comprehensively, and the availability of the method as a Keras layer facilitates reproducibility and adoption by other researchers.\nWeaknesses\n1. Limited Task Scope: While the results on PP attachment are impressive, the paper evaluates the proposed embeddings on a single task. Broader evaluation across diverse NLP tasks (e.g., semantic role labeling, question answering) would strengthen the claim of general applicability.\n2. Dependency on WordNet: The reliance on WordNet limits the method's applicability to languages or domains where such lexical resources are unavailable or incomplete. This limitation is acknowledged but not sufficiently addressed in the experiments.\n3. Comparison with Baselines: The baselines used (e.g., LSTM-PP with GloVe and GloVe-retro) are relatively simple. A comparison with more advanced contextual embedding methods (e.g., BERT, ELMo) would provide a stronger benchmark and situate the work within the current state of the field.\n4. Computational Overhead: The proposed method introduces additional complexity by requiring synset embeddings and attention mechanisms. While the authors claim comparable parameter space to the baseline, a more detailed analysis of computational efficiency (e.g., runtime, scalability) is missing.\nQuestions to Authors\n1. How does the proposed method compare to modern contextual embeddings like BERT or ELMo in terms of performance on PP attachment or other tasks?\n2. Can the model handle cases where WordNet synsets are unavailable or incomplete? Have you considered augmenting WordNet with other resources (e.g., Freebase, ConceptNet)?\n3. How does the model's performance scale with larger datasets or more complex tasks? Are there diminishing returns for the WordNet grounding as training data increases?\nRecommendation\nOverall, this paper presents a novel and well-executed approach to context-sensitive embeddings, with strong empirical results and detailed analysis. However, the limited task scope and lack of comparison with state-of-the-art contextual embeddings slightly weaken its impact. I recommend acceptance with minor revisions, encouraging the authors to address the broader applicability and computational considerations of their method."
+        }
+    ]
+}

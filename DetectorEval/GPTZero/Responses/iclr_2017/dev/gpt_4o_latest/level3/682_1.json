@@ -1,0 +1,388 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "0fc8057b-c146-48ae-8a2d-76eb334c6938",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "Summary of Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "This paper introduces a novel approach to Restricted Boltzmann Machines (RBMs) by replacing binary units with leaky ReLU units, referred to as \"leaky RBM.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "The authors propose a new sampling method that anneals the leakiness during Gibbs sampling, which they claim improves mixing and efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "They also provide a theoretical analysis of the leaky RBM as a union of truncated Gaussian distributions, addressing constraints that ensure valid training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "The paper demonstrates the effectiveness of the proposed sampling algorithm in estimating the partition function and compares the performance of leaky RBM against Bernoulli-Gaussian RBM on CIFAR-10 and SVHN datasets, reporting higher log-likelihoods for the former.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "The authors also suggest that their method has better mixing properties compared to traditional contrastive divergence (CD) methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940395355225,
+                    "sentence": "Decision: Reject",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999909996986389,
+                    "sentence": "While the paper presents an interesting idea and makes a valuable attempt to improve RBMs, it falls short in several critical areas.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999839067459106,
+                    "sentence": "The primary reasons for rejection are the lack of clarity and rigor in explaining the proposed sampling algorithm (Algorithm 2) and the subpar empirical results, which suggest improper training of the Gaussian RBM baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999916553497314,
+                    "sentence": "Supporting Arguments for the Decision",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964833259583,
+                    "sentence": "1. Insufficient Explanation of Algorithm 2: The proposed sampling method, which anneals the leakiness during Gibbs sampling, is not adequately explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "The computational cost of the algorithm is also not rigorously analyzed, leaving readers uncertain about its practical feasibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999936819076538,
+                    "sentence": "For example, the paper mentions that the algorithm requires Cholesky decomposition of the covariance matrix, which can be computationally expensive, but does not provide a detailed discussion on how this impacts scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "2. Subpar Gaussian RBM Baseline Results: The reported results for Gaussian RBM on CIFAR-10 and SVHN are significantly lower than expected, raising concerns about whether the baseline was properly trained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "This undermines the validity of the comparison and the claims of superiority for leaky RBM.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "3. Limited Scope of Experiments: The experiments focus primarily on log-likelihood comparisons, but the utility of leaky RBM in other tasks, such as classification with fewer labels or texture synthesis, is not explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "This limits the paper's impact and leaves its broader applicability untested.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "Suggestions for Improvement",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "1. Clarify Algorithm 2: Provide a more detailed explanation of the proposed sampling method, including its computational complexity and practical implementation details.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "Discuss how the algorithm scales with larger datasets and higher-dimensional models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999870657920837,
+                    "sentence": "2. Improve Baseline Comparisons: Ensure that the Gaussian RBM baseline is properly trained and optimized.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999873638153076,
+                    "sentence": "Consider using advanced training techniques, such as persistent contrastive divergence (PCD), to provide a fairer comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999899864196777,
+                    "sentence": "3. Expand Experimental Scope: Conduct additional experiments to evaluate the utility of leaky RBM in tasks beyond log-likelihood estimation, such as semi-supervised classification or texture synthesis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999801516532898,
+                    "sentence": "This would strengthen the paper's claims about the versatility of the proposed model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999904036521912,
+                    "sentence": "4. Theoretical Rigor: Include a more thorough theoretical analysis of the proposed sampling algorithm, particularly its convergence properties and guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999893307685852,
+                    "sentence": "This would help address concerns about its correctness and reliability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987630248069763,
+                    "sentence": "Questions for the Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994955062866211,
+                    "sentence": "1. Can you provide a detailed explanation of the computational cost of Algorithm 2, particularly the Cholesky decomposition step, and how it scales with the number of visible and hidden units?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996986985206604,
+                    "sentence": "2. How was the Gaussian RBM baseline trained, and what steps were taken to ensure it was properly optimized?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994776844978333,
+                    "sentence": "Could the poor performance be due to insufficient tuning of hyperparameters or training instability?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990629553794861,
+                    "sentence": "3. Have you considered evaluating the proposed model on tasks like semi-supervised learning or texture synthesis?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993053674697876,
+                    "sentence": "If not, what are the potential challenges in applying leaky RBM to these tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970516562461853,
+                    "sentence": "In conclusion, while the paper introduces an interesting idea, it requires significant improvements in clarity, rigor, and experimental validation to meet the standards of the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984930238596827,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984930238596827,
+                "mixed": 0.001506976140317253
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984930238596827,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984930238596827,
+                    "human": 0,
+                    "mixed": 0.001506976140317253
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary of Contributions\nThis paper introduces a novel approach to Restricted Boltzmann Machines (RBMs) by replacing binary units with leaky ReLU units, referred to as \"leaky RBM.\" The authors propose a new sampling method that anneals the leakiness during Gibbs sampling, which they claim improves mixing and efficiency. They also provide a theoretical analysis of the leaky RBM as a union of truncated Gaussian distributions, addressing constraints that ensure valid training. The paper demonstrates the effectiveness of the proposed sampling algorithm in estimating the partition function and compares the performance of leaky RBM against Bernoulli-Gaussian RBM on CIFAR-10 and SVHN datasets, reporting higher log-likelihoods for the former. The authors also suggest that their method has better mixing properties compared to traditional contrastive divergence (CD) methods.\nDecision: Reject\nWhile the paper presents an interesting idea and makes a valuable attempt to improve RBMs, it falls short in several critical areas. The primary reasons for rejection are the lack of clarity and rigor in explaining the proposed sampling algorithm (Algorithm 2) and the subpar empirical results, which suggest improper training of the Gaussian RBM baseline.\nSupporting Arguments for the Decision\n1. Insufficient Explanation of Algorithm 2: The proposed sampling method, which anneals the leakiness during Gibbs sampling, is not adequately explained. The computational cost of the algorithm is also not rigorously analyzed, leaving readers uncertain about its practical feasibility. For example, the paper mentions that the algorithm requires Cholesky decomposition of the covariance matrix, which can be computationally expensive, but does not provide a detailed discussion on how this impacts scalability.\n2. Subpar Gaussian RBM Baseline Results: The reported results for Gaussian RBM on CIFAR-10 and SVHN are significantly lower than expected, raising concerns about whether the baseline was properly trained. This undermines the validity of the comparison and the claims of superiority for leaky RBM.\n3. Limited Scope of Experiments: The experiments focus primarily on log-likelihood comparisons, but the utility of leaky RBM in other tasks, such as classification with fewer labels or texture synthesis, is not explored. This limits the paper's impact and leaves its broader applicability untested.\nSuggestions for Improvement\n1. Clarify Algorithm 2: Provide a more detailed explanation of the proposed sampling method, including its computational complexity and practical implementation details. Discuss how the algorithm scales with larger datasets and higher-dimensional models.\n2. Improve Baseline Comparisons: Ensure that the Gaussian RBM baseline is properly trained and optimized. Consider using advanced training techniques, such as persistent contrastive divergence (PCD), to provide a fairer comparison.\n3. Expand Experimental Scope: Conduct additional experiments to evaluate the utility of leaky RBM in tasks beyond log-likelihood estimation, such as semi-supervised classification or texture synthesis. This would strengthen the paper's claims about the versatility of the proposed model.\n4. Theoretical Rigor: Include a more thorough theoretical analysis of the proposed sampling algorithm, particularly its convergence properties and guarantees. This would help address concerns about its correctness and reliability.\nQuestions for the Authors\n1. Can you provide a detailed explanation of the computational cost of Algorithm 2, particularly the Cholesky decomposition step, and how it scales with the number of visible and hidden units?\n2. How was the Gaussian RBM baseline trained, and what steps were taken to ensure it was properly optimized? Could the poor performance be due to insufficient tuning of hyperparameters or training instability?\n3. Have you considered evaluating the proposed model on tasks like semi-supervised learning or texture synthesis? If not, what are the potential challenges in applying leaky RBM to these tasks?\nIn conclusion, while the paper introduces an interesting idea, it requires significant improvements in clarity, rigor, and experimental validation to meet the standards of the conference."
+        }
+    ]
+}

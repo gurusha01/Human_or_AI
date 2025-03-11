@@ -1,0 +1,342 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "bdbb3e1f-135a-4e7e-bf39-76713a3ef01a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9934037327766418,
+                    "sentence": "The authors demonstrate that various methods in the literature for explaining individual model predictions can be categorized as \"additive feature attribution\" methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.987167239189148,
+                    "sentence": "They propose a novel additive feature attribution method based on the concept of Shapley values, resulting in explanations referred to as SHAP values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9853971004486084,
+                    "sentence": "Additionally, they introduce a new kernel, the Shapley kernel, which can be used to compute SHAP values via linear regression, a method they term kernel SHAP.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9899953603744507,
+                    "sentence": "The authors also discuss how other methods, such as DeepLIFT, can be improved by better approximating Shapley values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9869668483734131,
+                    "sentence": "Summary of review:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9804438352584839,
+                    "sentence": "Positives:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926369786262512,
+                    "sentence": "(1) The paper presents a novel and sound theoretical framework for approaching model explanations, addressing a significant gap in the field, as most existing methods were developed ad-hoc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9924529790878296,
+                    "sentence": "(2) Early versions of this paper have already been cited to justify improvements in other methods, specifically New DeepLIFT.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952815175056458,
+                    "sentence": "(3) Kernel SHAP is a significantly superior method for approximating Shapley values compared to classical Shapley sampling, exhibiting much lower variance versus the number of model evaluations, as illustrated in Figure 3.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966488480567932,
+                    "sentence": "Negatives:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969149827957153,
+                    "sentence": "(1) The algorithm for Max SHAP is incorrect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942383170127869,
+                    "sentence": "(2) The proof for Kernel SHAP included in the supplement is incomplete and hastily written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945048689842224,
+                    "sentence": "(3) The paper contains significant typos, including discrepancies in the runtime of Max SHAP and errors in equations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9896445274353027,
+                    "sentence": "(4) The argument that SHAP values are a superior form of model explanation is contentious, with case studies in Figure 4 potentially being cherry-picked to favor SHAP, and the paper lacks discussion on the runtime for kernel SHAP or the recommended number of function evaluations needed for good performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928309917449951,
+                    "sentence": "Detailed comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928123354911804,
+                    "sentence": "The adaptation of Shapley values to model explanations is an excellent insight, and the development of kernel SHAP is a significant contribution due to its lower variance compared to Shapley sampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9854972958564758,
+                    "sentence": "However, there are several issues with the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937252402305603,
+                    "sentence": "The algorithm for Max SHAP is flawed, assuming that including a new input contributes to the output based on its difference from the maximum reference value of previously included inputs, without considering the reference values of inputs not yet included.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960333108901978,
+                    "sentence": "This can lead to incorrect SHAP values, as demonstrated by a concrete example.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991582036018372,
+                    "sentence": "The proof for Kernel SHAP in the supplement is incomplete and poorly written, making it difficult to understand.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991816878318787,
+                    "sentence": "The computational proof provided appears to compare the final Shapely values produced by kernel SHAP to those produced by the classic Shapely value computation for a specific model, rather than comparing the coefficients used in the two methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980967044830322,
+                    "sentence": "The code for the computational proof is also incomplete, and several methods called in the code are not provided.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996249079704285,
+                    "sentence": "The claim that SHAP values are a superior form of model explanation is debatable, as they may not always align with human intuition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997149705886841,
+                    "sentence": "For instance, in a convolutional neural network with a ReLU activation and negative bias, SHAP values may assign nonzero importance to input pixels even when the input is white noise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998100399971008,
+                    "sentence": "The comparison with LIME in Figure 5 is also lacking, and the authors' argument for favoring kernel SHAP over LIME would be more compelling with a direct comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998999834060669,
+                    "sentence": "The section on Deep SHAP is problematic, as the authors only discuss two analytical solutions, Linear SHAP and Max SHAP, and the algorithm for Max SHAP is incorrect.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998199939727783,
+                    "sentence": "The mention of Low-order SHAP is also unclear, as it may not be suitable for many neural networks, and its implementation on a GPU may significantly slow down backpropagation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997546076774597,
+                    "sentence": "Despite these issues, the adaptation of Shapley values to model interpretation and the development of kernel SHAP are substantial contributions, and the paper has been revised to address the concerns and correct the issues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984930238596827,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984930238596827,
+                "mixed": 0.001506976140317253
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984930238596827,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984930238596827,
+                    "human": 0,
+                    "mixed": 0.001506976140317253
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The authors demonstrate that various methods in the literature for explaining individual model predictions can be categorized as \"additive feature attribution\" methods. They propose a novel additive feature attribution method based on the concept of Shapley values, resulting in explanations referred to as SHAP values. Additionally, they introduce a new kernel, the Shapley kernel, which can be used to compute SHAP values via linear regression, a method they term kernel SHAP. The authors also discuss how other methods, such as DeepLIFT, can be improved by better approximating Shapley values.\nSummary of review:\nPositives:\n(1) The paper presents a novel and sound theoretical framework for approaching model explanations, addressing a significant gap in the field, as most existing methods were developed ad-hoc.\n(2) Early versions of this paper have already been cited to justify improvements in other methods, specifically New DeepLIFT.\n(3) Kernel SHAP is a significantly superior method for approximating Shapley values compared to classical Shapley sampling, exhibiting much lower variance versus the number of model evaluations, as illustrated in Figure 3.\nNegatives:\n(1) The algorithm for Max SHAP is incorrect.\n(2) The proof for Kernel SHAP included in the supplement is incomplete and hastily written.\n(3) The paper contains significant typos, including discrepancies in the runtime of Max SHAP and errors in equations.\n(4) The argument that SHAP values are a superior form of model explanation is contentious, with case studies in Figure 4 potentially being cherry-picked to favor SHAP, and the paper lacks discussion on the runtime for kernel SHAP or the recommended number of function evaluations needed for good performance.\nDetailed comments:\nThe adaptation of Shapley values to model explanations is an excellent insight, and the development of kernel SHAP is a significant contribution due to its lower variance compared to Shapley sampling. However, there are several issues with the paper. The algorithm for Max SHAP is flawed, assuming that including a new input contributes to the output based on its difference from the maximum reference value of previously included inputs, without considering the reference values of inputs not yet included. This can lead to incorrect SHAP values, as demonstrated by a concrete example.\nThe proof for Kernel SHAP in the supplement is incomplete and poorly written, making it difficult to understand. The computational proof provided appears to compare the final Shapely values produced by kernel SHAP to those produced by the classic Shapely value computation for a specific model, rather than comparing the coefficients used in the two methods. The code for the computational proof is also incomplete, and several methods called in the code are not provided.\nThe claim that SHAP values are a superior form of model explanation is debatable, as they may not always align with human intuition. For instance, in a convolutional neural network with a ReLU activation and negative bias, SHAP values may assign nonzero importance to input pixels even when the input is white noise. The comparison with LIME in Figure 5 is also lacking, and the authors' argument for favoring kernel SHAP over LIME would be more compelling with a direct comparison.\nThe section on Deep SHAP is problematic, as the authors only discuss two analytical solutions, Linear SHAP and Max SHAP, and the algorithm for Max SHAP is incorrect. The mention of Low-order SHAP is also unclear, as it may not be suitable for many neural networks, and its implementation on a GPU may significantly slow down backpropagation.\nDespite these issues, the adaptation of Shapley values to model interpretation and the development of kernel SHAP are substantial contributions, and the paper has been revised to address the concerns and correct the issues."
+        }
+    ]
+}

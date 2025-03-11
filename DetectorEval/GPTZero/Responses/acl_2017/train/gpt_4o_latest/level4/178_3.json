@@ -1,0 +1,526 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "aea4b2d1-2002-44e4-95ff-3f123dedf66f",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.8833567500114441,
+                    "sentence": "The authors propose a method for jointly embedding words, phrases, and concepts using plain text corpora and a manually constructed ontology, where concepts are represented by one or more phrases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7457528114318848,
+                    "sentence": "Their approach is applied in the medical domain using the UMLS ontology and in the general domain using the YAGO ontology.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7855602502822876,
+                    "sentence": "To evaluate their method, the authors compare it against simpler baselines and prior work, primarily using intrinsic similarity and relatedness benchmarks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6886073350906372,
+                    "sentence": "They leverage existing benchmarks for the medical domain and create a new general-domain concept similarity and relatedness dataset using mechanical turkers, which they plan to release.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8727087378501892,
+                    "sentence": "Their results are reported to be comparable to prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9033172726631165,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8714948892593384,
+                    "sentence": "- The proposed joint embedding model is intuitive and conceptually reasonable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8296633958816528,
+                    "sentence": "Its primary value lies in achieving a configurable balance between treating phrases as atomic units and considering their compositionality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8711413145065308,
+                    "sentence": "Similarly, the approach extends to concepts, which are treated as being composed of multiple representative phrases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7471014261245728,
+                    "sentence": "- The paper encompasses a substantial amount of work, including model development, the creation of a new evaluation dataset, and multiple evaluations and analyses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8736526370048523,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8884835839271545,
+                    "sentence": "- The evaluation focuses solely on intrinsic tasks, primarily using similarity and relatedness datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8609632253646851,
+                    "sentence": "As the authors acknowledge, such evaluations are limited in their ability to predict the utility of embeddings in extrinsic tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7881431579589844,
+                    "sentence": "It is now standard practice to include at least one or two extrinsic tasks in embedding model evaluations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8449467420578003,
+                    "sentence": "- The similarity and relatedness datasets are described as capturing human judgments of concept similarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8274673819541931,
+                    "sentence": "However, it appears that the judgments were based on phrases presented to annotators, making these phrase similarity datasets rather than concept similarity datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9103911519050598,
+                    "sentence": "This distinction should be explicitly addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9849197864532471,
+                    "sentence": "- The medical concept evaluation dataset, \"mini MayoSRS,\" is very small (29 pairs), while its larger superset, \"MayoSRS,\" is only slightly larger (101 pairs) and has been reported to exhibit low inter-annotator agreement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.975208044052124,
+                    "sentence": "The other medical dataset, \"UMNSRS,\" is more reasonable in size but is limited to single-word concepts, which were presented as such to annotators.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9931644797325134,
+                    "sentence": "This limitation should be noted in the paper, as it raises questions about the dataset's relevance for evaluating representations of phrases and general concepts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967993497848511,
+                    "sentence": "- The authors extensively fine-tune their hyperparameters on the same datasets used for reporting results and comparisons with prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996685802936554,
+                    "sentence": "This practice undermines the credibility of the reported results and analyses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9908839464187622,
+                    "sentence": "- The claim that their method outperforms prior work by achieving comparable results with less manual annotation is unconvincing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.929874062538147,
+                    "sentence": "The authors rely on large manually constructed ontologies, and the manually annotated dataset used in prior work is derived from existing clinical records, which did not require dedicated annotations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9599847197532654,
+                    "sentence": "- The paper lacks deeper insights into the underlying mechanisms behind the reported results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.19459791481494904,
+                    "sentence": "The authors attempt to treat the relationship between a phrase and its component words and the relationship between a concept and its alternative phrases as analogous compositional relations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2756415903568268,
+                    "sentence": "However, these relationships differ fundamentally and warrant separate analyses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1693718582391739,
+                    "sentence": "For instance, around line 588, a more detailed NLP analysis of the relationship between phrases and their component words would be valuable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.16025006771087646,
+                    "sentence": "The observed behavior may be influenced by dominant headwords in phrases, among other factors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2463320940732956,
+                    "sentence": "Additionally, an investigation into the impact of hyperparameters controlling the balance between atomic and compositional views of phrases and concepts would strengthen the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3996967375278473,
+                    "sentence": "General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993187189102173,
+                    "sentence": "Given the aforementioned weaknesses, I recommend rejecting this submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999170184135437,
+                    "sentence": "I encourage the authors to enhance their evaluation datasets and methodology before resubmitting the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979168176651001,
+                    "sentence": "Minor Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988319873809814,
+                    "sentence": "- Line 069: Replace \"contexts\" with \"concepts.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978144764900208,
+                    "sentence": "- Line 202: Clarify how phrase overlaps are handled.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980258941650391,
+                    "sentence": "- Line 220: The dimensions should be \"W\" x d. Additionally, the term \"negative sampling matrix\" is misleading, as these embeddings are also used to represent contexts in positive instances.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979769587516785,
+                    "sentence": "- Line 250: The phrase \"the observed phrase just completed\" is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982389807701111,
+                    "sentence": "It is not evident how words are trained in the joint model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979226589202881,
+                    "sentence": "The text seems to suggest that only the last words of a phrase are considered as target words, which is illogical.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986577033996582,
+                    "sentence": "- Equation 1: The notation is confusing; consider using \"o\" instead of \"c.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984038472175598,
+                    "sentence": "- Line 361: The reference to Pedersen et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992762207984924,
+                    "sentence": "2007 is missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985074996948242,
+                    "sentence": "- Line 388: Using a fine-grained similarity scale (1-100) for human annotations seems unusual.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984802603721619,
+                    "sentence": "- Line 430: The term \"strings\" is introduced here but is confusing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996545135974884,
+                    "sentence": "It would be better to continue using \"phrases.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991077780723572,
+                    "sentence": "- Line 496: Specify which task was used for hyperparameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975370168685913,
+                    "sentence": "This information is critical and is not provided, even in the appendix.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979622960090637,
+                    "sentence": "- Table 3: The trends are difficult to discern.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978199005126953,
+                    "sentence": "For example, PM+CL behaves differently from PM or CL alone.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997544527053833,
+                    "sentence": "Including development set trends for these hyperparameters would be insightful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973560571670532,
+                    "sentence": "- Line 535: Add a reference to Table 5.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.03396563365573288
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.0003567719278557345
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The authors propose a method for jointly embedding words, phrases, and concepts using plain text corpora and a manually constructed ontology, where concepts are represented by one or more phrases. Their approach is applied in the medical domain using the UMLS ontology and in the general domain using the YAGO ontology. To evaluate their method, the authors compare it against simpler baselines and prior work, primarily using intrinsic similarity and relatedness benchmarks. They leverage existing benchmarks for the medical domain and create a new general-domain concept similarity and relatedness dataset using mechanical turkers, which they plan to release. Their results are reported to be comparable to prior work.\nStrengths:\n- The proposed joint embedding model is intuitive and conceptually reasonable. Its primary value lies in achieving a configurable balance between treating phrases as atomic units and considering their compositionality. Similarly, the approach extends to concepts, which are treated as being composed of multiple representative phrases.\n- The paper encompasses a substantial amount of work, including model development, the creation of a new evaluation dataset, and multiple evaluations and analyses.\nWeaknesses:\n- The evaluation focuses solely on intrinsic tasks, primarily using similarity and relatedness datasets. As the authors acknowledge, such evaluations are limited in their ability to predict the utility of embeddings in extrinsic tasks. It is now standard practice to include at least one or two extrinsic tasks in embedding model evaluations.\n- The similarity and relatedness datasets are described as capturing human judgments of concept similarity. However, it appears that the judgments were based on phrases presented to annotators, making these phrase similarity datasets rather than concept similarity datasets. This distinction should be explicitly addressed.\n- The medical concept evaluation dataset, \"mini MayoSRS,\" is very small (29 pairs), while its larger superset, \"MayoSRS,\" is only slightly larger (101 pairs) and has been reported to exhibit low inter-annotator agreement. The other medical dataset, \"UMNSRS,\" is more reasonable in size but is limited to single-word concepts, which were presented as such to annotators. This limitation should be noted in the paper, as it raises questions about the dataset's relevance for evaluating representations of phrases and general concepts.\n- The authors extensively fine-tune their hyperparameters on the same datasets used for reporting results and comparisons with prior work. This practice undermines the credibility of the reported results and analyses.\n- The claim that their method outperforms prior work by achieving comparable results with less manual annotation is unconvincing. The authors rely on large manually constructed ontologies, and the manually annotated dataset used in prior work is derived from existing clinical records, which did not require dedicated annotations.\n- The paper lacks deeper insights into the underlying mechanisms behind the reported results. The authors attempt to treat the relationship between a phrase and its component words and the relationship between a concept and its alternative phrases as analogous compositional relations. However, these relationships differ fundamentally and warrant separate analyses. For instance, around line 588, a more detailed NLP analysis of the relationship between phrases and their component words would be valuable. The observed behavior may be influenced by dominant headwords in phrases, among other factors. Additionally, an investigation into the impact of hyperparameters controlling the balance between atomic and compositional views of phrases and concepts would strengthen the work.\nGeneral Discussion:\nGiven the aforementioned weaknesses, I recommend rejecting this submission. I encourage the authors to enhance their evaluation datasets and methodology before resubmitting the paper.\nMinor Comments:\n- Line 069: Replace \"contexts\" with \"concepts.\"\n- Line 202: Clarify how phrase overlaps are handled.\n- Line 220: The dimensions should be \"W\" x d. Additionally, the term \"negative sampling matrix\" is misleading, as these embeddings are also used to represent contexts in positive instances.\n- Line 250: The phrase \"the observed phrase just completed\" is unclear. It is not evident how words are trained in the joint model. The text seems to suggest that only the last words of a phrase are considered as target words, which is illogical.\n- Equation 1: The notation is confusing; consider using \"o\" instead of \"c.\"\n- Line 361: The reference to Pedersen et al. 2007 is missing.\n- Line 388: Using a fine-grained similarity scale (1-100) for human annotations seems unusual.\n- Line 430: The term \"strings\" is introduced here but is confusing. It would be better to continue using \"phrases.\"\n- Line 496: Specify which task was used for hyperparameter tuning. This information is critical and is not provided, even in the appendix.\n- Table 3: The trends are difficult to discern. For example, PM+CL behaves differently from PM or CL alone. Including development set trends for these hyperparameters would be insightful.\n- Line 535: Add a reference to Table 5."
+        }
+    ]
+}

@@ -1,0 +1,347 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "403dc41f-1908-47d1-bfa3-dfec78a70e9a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9998024106025696,
+                    "sentence": "This paper addresses the problem of combinatorial partial monitoring (CPM) games, a challenging framework where the learner operates in an exponentially large action space and receives limited feedback, while the adversary samples moves from a continuous, bounded space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998123049736023,
+                    "sentence": "Building on prior work by [1], which introduced the CPM model and proposed the Global Confidence Bound (GCB) algorithm, this paper makes two key contributions: (1) the development of the Phased Exploration with Greedy Exploitation (PEGE) framework, which achieves improved regret bounds with reduced computational requirements, and (2) the introduction of the PEGE2 algorithm, which matches the regret guarantees of GCB while removing dependence on the size of the learner's action space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995183944702148,
+                    "sentence": "The paper also demonstrates the applicability of these algorithms to practical problems, such as online ranking with feedback restricted to top-ranked items.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999610781669617,
+                    "sentence": "The PEGE framework is a notable advancement over GCB, achieving an \\(O(T^{2/3} \\sqrt{\\log T})\\) distribution-independent regret bound and an \\(O(\\log^2 T)\\) distribution-dependent regret bound.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999579191207886,
+                    "sentence": "Unlike GCB, PEGE requires only an \"argmax\" oracle, avoiding the need for the computationally expensive \"arg-secondmax\" oracle.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999600648880005,
+                    "sentence": "Additionally, PEGE's distribution-dependent regret does not rely on the existence of a unique optimal action, addressing a limitation of GCB.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999830722808838,
+                    "sentence": "The PEGE2 algorithm further refines this approach by combining gap estimation with PEGE, achieving an \\(O(\\log T)\\) regret bound while remaining independent of the learner's action space size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999972581863403,
+                    "sentence": "1. Technical Contributions: The paper introduces novel algorithms that improve upon GCB in terms of computational efficiency and practical applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "The regret bounds are rigorously derived and well-supported by theoretical analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "2. Practical Relevance: The application to online ranking demonstrates the real-world utility of the proposed methods, particularly in scenarios with limited feedback and large or infinite action spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "3. Clarity and Organization: The paper is well-structured, with clear explanations of the CPM model, assumptions, and algorithmic details.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "The comparison with GCB is thorough and highlights the advantages of the proposed methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "1. Dependence on Time Horizon: PEGE2 requires knowledge of the time horizon \\(T\\), which limits its applicability in online settings where \\(T\\) is unknown.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945759773254,
+                    "sentence": "This is a disadvantage compared to the anytime nature of GCB.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998818576335907,
+                    "sentence": "2. Gap Estimation Complexity: While PEGE2 achieves strong regret bounds, the gap estimation process introduces additional complexity and may be sensitive to parameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990280866622925,
+                    "sentence": "3. Empirical Validation: The paper lacks experimental results to complement the theoretical analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992011785507202,
+                    "sentence": "Empirical comparisons with GCB and other baselines would strengthen the paper's claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999457001686096,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999665021896362,
+                    "sentence": "- The paper makes significant theoretical contributions to the CPM framework, addressing key limitations of prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999659657478333,
+                    "sentence": "- The proposed algorithms are computationally efficient and applicable to a broader range of problems, including those with infinite action spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999777674674988,
+                    "sentence": "- The work is well-positioned within the literature, building on and extending prior results in CPM and bandit theory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999965488910675,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999938428401947,
+                    "sentence": "- The lack of empirical validation leaves open questions about the practical performance of the proposed algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999980092048645,
+                    "sentence": "- The dependence on \\(T\\) in PEGE2 may limit its utility in certain applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999474287033081,
+                    "sentence": "Recommendation: Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999702572822571,
+                    "sentence": "The paper offers valuable contributions to the field of CPM games, but including experimental results and addressing the dependence on \\(T\\) would further enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984984300152882,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984984300152882,
+                "mixed": 0.0015015699847118259
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984984300152882,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984984300152882,
+                    "human": 0,
+                    "mixed": 0.0015015699847118259
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper addresses the problem of combinatorial partial monitoring (CPM) games, a challenging framework where the learner operates in an exponentially large action space and receives limited feedback, while the adversary samples moves from a continuous, bounded space. Building on prior work by [1], which introduced the CPM model and proposed the Global Confidence Bound (GCB) algorithm, this paper makes two key contributions: (1) the development of the Phased Exploration with Greedy Exploitation (PEGE) framework, which achieves improved regret bounds with reduced computational requirements, and (2) the introduction of the PEGE2 algorithm, which matches the regret guarantees of GCB while removing dependence on the size of the learner's action space. The paper also demonstrates the applicability of these algorithms to practical problems, such as online ranking with feedback restricted to top-ranked items.\nThe PEGE framework is a notable advancement over GCB, achieving an \\(O(T^{2/3} \\sqrt{\\log T})\\) distribution-independent regret bound and an \\(O(\\log^2 T)\\) distribution-dependent regret bound. Unlike GCB, PEGE requires only an \"argmax\" oracle, avoiding the need for the computationally expensive \"arg-secondmax\" oracle. Additionally, PEGE's distribution-dependent regret does not rely on the existence of a unique optimal action, addressing a limitation of GCB. The PEGE2 algorithm further refines this approach by combining gap estimation with PEGE, achieving an \\(O(\\log T)\\) regret bound while remaining independent of the learner's action space size.\nStrengths:\n1. Technical Contributions: The paper introduces novel algorithms that improve upon GCB in terms of computational efficiency and practical applicability. The regret bounds are rigorously derived and well-supported by theoretical analysis.\n2. Practical Relevance: The application to online ranking demonstrates the real-world utility of the proposed methods, particularly in scenarios with limited feedback and large or infinite action spaces.\n3. Clarity and Organization: The paper is well-structured, with clear explanations of the CPM model, assumptions, and algorithmic details. The comparison with GCB is thorough and highlights the advantages of the proposed methods.\nWeaknesses:\n1. Dependence on Time Horizon: PEGE2 requires knowledge of the time horizon \\(T\\), which limits its applicability in online settings where \\(T\\) is unknown. This is a disadvantage compared to the anytime nature of GCB.\n2. Gap Estimation Complexity: While PEGE2 achieves strong regret bounds, the gap estimation process introduces additional complexity and may be sensitive to parameter tuning.\n3. Empirical Validation: The paper lacks experimental results to complement the theoretical analysis. Empirical comparisons with GCB and other baselines would strengthen the paper's claims.\nArguments for Acceptance:\n- The paper makes significant theoretical contributions to the CPM framework, addressing key limitations of prior work.\n- The proposed algorithms are computationally efficient and applicable to a broader range of problems, including those with infinite action spaces.\n- The work is well-positioned within the literature, building on and extending prior results in CPM and bandit theory.\nArguments Against Acceptance:\n- The lack of empirical validation leaves open questions about the practical performance of the proposed algorithms.\n- The dependence on \\(T\\) in PEGE2 may limit its utility in certain applications.\nRecommendation: Accept with minor revisions. The paper offers valuable contributions to the field of CPM games, but including experimental results and addressing the dependence on \\(T\\) would further enhance its impact."
+        }
+    ]
+}

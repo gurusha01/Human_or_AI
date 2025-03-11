@@ -1,0 +1,338 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e688b3ec-5a6d-4ede-bfea-718124f05427",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9984073042869568,
+                    "sentence": "This paper tackles the challenge of disambiguating and linking textual entity mentions to a predefined background knowledge base, specifically English Wikipedia.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974274039268494,
+                    "sentence": "(While the title and introduction are somewhat exaggerated and potentially misleading\"\"since bridging text and knowledge encompasses much more than the EDL task\"\"EDL remains a fundamental component of the broader objective.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947925806045532,
+                    "sentence": "The proposed approach introduces an intermediate representation layer, referred to as mention senses, and follows a two-step process: (1) mapping mentions to mention senses, and (2) mapping mention senses to entities.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952400922775269,
+                    "sentence": "The method involves learning various embedding representations for words, mention senses, and entities, which are then jointly optimized using a single objective function that balances all three types of embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947950839996338,
+                    "sentence": "From a technical standpoint, the methodology is relatively clear and aligns with contemporary trends in deep learning and established best practices for embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9953733086585999,
+                    "sentence": "While alternative approaches could be suggested, it is unclear whether they would yield significant improvements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9952270984649658,
+                    "sentence": "My comments, therefore, focus on the core approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970635175704956,
+                    "sentence": "Specifically, the paper does not adequately explain why the two-step process involving mention senses is superior to a direct, one-step mapping from word mentions to entities (as employed by Yamada et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982823133468628,
+                    "sentence": "in the ALIGN algorithm).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971184730529785,
+                    "sentence": "Table 2 demonstrates that the two-step MPME (and even the simplified SPME) outperforms the direct approach, but the rationale for this improvement is not explicitly clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998533308506012,
+                    "sentence": "What additional information or distinctions do mention senses provide compared to entities?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981675148010254,
+                    "sentence": "To better understand this, I suggest verifying and potentially clarifying the following points in the paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9954543113708496,
+                    "sentence": "For entities: Their profiles are derived from neighboring entities in a relatedness graph, which (I assume) is constructed based on word-level relatedness within the entity definitions (i.e., Wikipedia pages).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959621429443359,
+                    "sentence": "These profiles are represented as (extended skip-gram-based) embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996918797492981,
+                    "sentence": "For words: Their profiles are generated using the standard distributional semantics approach without sense disambiguation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960753917694092,
+                    "sentence": "For mention senses: Their profiles also use the standard distributional semantics approach but incorporate sense disambiguation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9953786134719849,
+                    "sentence": "This disambiguation is achieved using a sense-based profile (or \"language model\") derived from local context words and neighboring mentions, as briefly mentioned before Section 4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9930658340454102,
+                    "sentence": "However, the details of this process are lacking, which is a critical issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912632703781128,
+                    "sentence": "How are the mention senses defined and differentiated?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928024411201477,
+                    "sentence": "Who determines the number of senses a mention string can have?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912976026535034,
+                    "sentence": "If this is based on the knowledge base, does this result in a one-to-one mapping between mention senses and entities (even if there are multiple entities)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.006175750866532326,
+                    "sentence": "If so, are the definitional profiles for mention senses constructed using entity text as \"seed words\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.005337468348443508,
+                    "sentence": "If this is the case, what additional information is captured at the mention sense level that is not already present at the entity level?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.004576269071549177,
+                    "sentence": "Are these additional words those that reliably associate with the mention sense but do not appear in the corresponding entity's Wikipedia page?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.0033923436421900988,
+                    "sentence": "On average, how many such words exist for a mention sense?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.0038087342400103807,
+                    "sentence": "In essence, how critical is it to maintain this separate mention sense space, as opposed to simply incorporating these additional words into the entity space by augmenting the Wikipedia entity pages?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.009229917079210281,
+                    "sentence": "If the above interpretation is correct, I recommend updating Section 5 to explicitly clarify these points, as they represent the primary novel contribution of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.011831672862172127,
+                    "sentence": "Contrary to the claim in Section 6 that \"\"¦this is the first work to deal with mention ambiguity in the integration of text and knowledge representations, so there is no exact baselines for comparison,\" this is not accurate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.04904552549123764,
+                    "sentence": "The TAC KBP evaluations over the past two years have included EDL tasks, with eight or nine systems addressing this exact problem, albeit using Freebase, which is larger and noisier than Wikipedia.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8523706793785095,
+                    "sentence": "I suggest the authors refer to http://nlp.cs.rpi.edu/kbp/2016/ for further context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9835079312324524,
+                    "sentence": "On a positive note, I found the smoothing parameter introduced in Section 6.4.2 to be an innovative and valuable addition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9920006394386292,
+                    "sentence": "Post-response: After reviewing the authors' responses, I remain unconvinced by their argument that the KBP evaluation is irrelevant because their focus is on the quality of the embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963813424110413,
+                    "sentence": "Ultimately, the only meaningful way to assess the \"quality\" of embeddings is through their performance in a specific application.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982162117958069,
+                    "sentence": "While conceptual elegance is appreciated, the primary question is whether the proposed approach delivers superior results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 11,
+                    "completely_generated_prob": 0.020267322080681036
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8958515890231218,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.8958515890231218,
+                "mixed": 0.10414841097687828
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8958515890231218,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8958515890231218,
+                    "human": 0,
+                    "mixed": 0.10414841097687828
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper tackles the challenge of disambiguating and linking textual entity mentions to a predefined background knowledge base, specifically English Wikipedia. (While the title and introduction are somewhat exaggerated and potentially misleading\"\"since bridging text and knowledge encompasses much more than the EDL task\"\"EDL remains a fundamental component of the broader objective.) The proposed approach introduces an intermediate representation layer, referred to as mention senses, and follows a two-step process: (1) mapping mentions to mention senses, and (2) mapping mention senses to entities. The method involves learning various embedding representations for words, mention senses, and entities, which are then jointly optimized using a single objective function that balances all three types of embeddings.\nFrom a technical standpoint, the methodology is relatively clear and aligns with contemporary trends in deep learning and established best practices for embeddings. While alternative approaches could be suggested, it is unclear whether they would yield significant improvements. My comments, therefore, focus on the core approach. Specifically, the paper does not adequately explain why the two-step process involving mention senses is superior to a direct, one-step mapping from word mentions to entities (as employed by Yamada et al. in the ALIGN algorithm). Table 2 demonstrates that the two-step MPME (and even the simplified SPME) outperforms the direct approach, but the rationale for this improvement is not explicitly clarified. What additional information or distinctions do mention senses provide compared to entities? To better understand this, I suggest verifying and potentially clarifying the following points in the paper:\nFor entities: Their profiles are derived from neighboring entities in a relatedness graph, which (I assume) is constructed based on word-level relatedness within the entity definitions (i.e., Wikipedia pages). These profiles are represented as (extended skip-gram-based) embeddings.\nFor words: Their profiles are generated using the standard distributional semantics approach without sense disambiguation.\nFor mention senses: Their profiles also use the standard distributional semantics approach but incorporate sense disambiguation. This disambiguation is achieved using a sense-based profile (or \"language model\") derived from local context words and neighboring mentions, as briefly mentioned before Section 4. However, the details of this process are lacking, which is a critical issue. How are the mention senses defined and differentiated? Who determines the number of senses a mention string can have? If this is based on the knowledge base, does this result in a one-to-one mapping between mention senses and entities (even if there are multiple entities)? If so, are the definitional profiles for mention senses constructed using entity text as \"seed words\"? If this is the case, what additional information is captured at the mention sense level that is not already present at the entity level? Are these additional words those that reliably associate with the mention sense but do not appear in the corresponding entity's Wikipedia page? On average, how many such words exist for a mention sense? In essence, how critical is it to maintain this separate mention sense space, as opposed to simply incorporating these additional words into the entity space by augmenting the Wikipedia entity pages?\nIf the above interpretation is correct, I recommend updating Section 5 to explicitly clarify these points, as they represent the primary novel contribution of the paper.\nContrary to the claim in Section 6 that \"\"¦this is the first work to deal with mention ambiguity in the integration of text and knowledge representations, so there is no exact baselines for comparison,\" this is not accurate. The TAC KBP evaluations over the past two years have included EDL tasks, with eight or nine systems addressing this exact problem, albeit using Freebase, which is larger and noisier than Wikipedia. I suggest the authors refer to http://nlp.cs.rpi.edu/kbp/2016/ for further context.\nOn a positive note, I found the smoothing parameter introduced in Section 6.4.2 to be an innovative and valuable addition.\nPost-response: After reviewing the authors' responses, I remain unconvinced by their argument that the KBP evaluation is irrelevant because their focus is on the quality of the embeddings. Ultimately, the only meaningful way to assess the \"quality\" of embeddings is through their performance in a specific application. While conceptual elegance is appreciated, the primary question is whether the proposed approach delivers superior results."
+        }
+    ]
+}

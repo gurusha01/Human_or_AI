@@ -1,0 +1,374 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "184568eb-da05-4dd8-a815-706503342c30",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999884366989136,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "This paper presents a semi-supervised approach for augmenting sequence tagging models with pre-trained bidirectional language model (LM) embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998152256012,
+                    "sentence": "The authors propose \"TagLM,\" which combines LM embeddings with hierarchical bidirectional RNNs to enhance token representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "The method is evaluated on two standard NLP tasks\"\"Named Entity Recognition (NER) and Chunking\"\"achieving state-of-the-art results on both datasets without requiring additional labeled data or task-specific resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "Key contributions include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "1. Demonstrating the utility of pre-trained bidirectional LM embeddings in supervised sequence tagging tasks, leading to significant performance improvements (e.g., +1.06 F1 on CoNLL 2003 NER and +1.37 F1 on CoNLL 2000 Chunking).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "2. Showing that bidirectional LM embeddings outperform forward-only LMs and that domain-specific pre-training is not necessary.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999956488609314,
+                    "sentence": "3. Providing a detailed analysis of where and how LM embeddings should be integrated into sequence tagging models for optimal performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "1. Significant Performance Gains: The proposed method achieves substantial improvements over prior state-of-the-art models, even outperforming systems that use additional labeled data or gazetteers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "The results are statistically significant and robust across multiple configurations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "2. Generalizability: The approach is simple, general, and effective across different domains, as evidenced by its success on the ScienceIE dataset despite domain mismatch.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999958276748657,
+                    "sentence": "This highlights the broad applicability of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999959468841553,
+                    "sentence": "3. Comprehensive Analysis: The authors provide thorough experiments and ablation studies, such as testing the impact of LM size, bidirectionality, and integration points.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999948740005493,
+                    "sentence": "These analyses offer valuable insights for the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "4. Low Resource Utility: The method is particularly beneficial for low-resource settings, as demonstrated by the significant performance boost (+3.35 F1) when training on only 1% of the CoNLL 2003 dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938607215881,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "1. Reproducibility Concerns: While the paper provides extensive experimental details, the reliance on pre-trained LMs (e.g., CNN-BIG-LSTM) trained with substantial computational resources (32 GPUs for weeks) may limit reproducibility for researchers with fewer resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "2. Limited Novelty in LM Usage: The use of pre-trained LMs for contextual embeddings is not entirely novel, as similar ideas have been explored in prior work (e.g., Li and McCallum, 2005).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.007152130827307701,
+                    "sentence": "The novelty lies more in the integration and empirical validation rather than the conceptual framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.02612067572772503,
+                    "sentence": "3. Task-Specific RNN Dependence: The results suggest that the task-specific RNN is crucial for performance, which may limit the applicability of the method to simpler models or tasks where such RNNs are infeasible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9467303156852722,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986398816108704,
+                    "sentence": "1. How does the performance of TagLM compare when using smaller, publicly available LMs (e.g., BERT-base) instead of CNN-BIG-LSTM?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999677300453186,
+                    "sentence": "2. Could the proposed method be extended to other sequence tagging tasks, such as POS tagging or dependency parsing?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996950030326843,
+                    "sentence": "3. What are the computational trade-offs of using larger LMs, and how do they impact real-world deployment?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980171918869019,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996550679206848,
+                    "sentence": "This paper provides a strong contribution to the field of NLP by demonstrating the effectiveness of pre-trained bidirectional LM embeddings in sequence tagging tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991081953048706,
+                    "sentence": "Despite some concerns about computational requirements and novelty, the method's simplicity, generalizability, and significant performance improvements make it a valuable addition to the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934459328651428,
+                    "sentence": "I recommend acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9417040358744394,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9417040358744394,
+                "mixed": 0.05829596412556053
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9417040358744394,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9417040358744394,
+                    "human": 0,
+                    "mixed": 0.05829596412556053
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions \nThis paper presents a semi-supervised approach for augmenting sequence tagging models with pre-trained bidirectional language model (LM) embeddings. The authors propose \"TagLM,\" which combines LM embeddings with hierarchical bidirectional RNNs to enhance token representations. The method is evaluated on two standard NLP tasks\"\"Named Entity Recognition (NER) and Chunking\"\"achieving state-of-the-art results on both datasets without requiring additional labeled data or task-specific resources. Key contributions include: \n1. Demonstrating the utility of pre-trained bidirectional LM embeddings in supervised sequence tagging tasks, leading to significant performance improvements (e.g., +1.06 F1 on CoNLL 2003 NER and +1.37 F1 on CoNLL 2000 Chunking). \n2. Showing that bidirectional LM embeddings outperform forward-only LMs and that domain-specific pre-training is not necessary. \n3. Providing a detailed analysis of where and how LM embeddings should be integrated into sequence tagging models for optimal performance. \nStrengths \n1. Significant Performance Gains: The proposed method achieves substantial improvements over prior state-of-the-art models, even outperforming systems that use additional labeled data or gazetteers. The results are statistically significant and robust across multiple configurations. \n2. Generalizability: The approach is simple, general, and effective across different domains, as evidenced by its success on the ScienceIE dataset despite domain mismatch. This highlights the broad applicability of the method. \n3. Comprehensive Analysis: The authors provide thorough experiments and ablation studies, such as testing the impact of LM size, bidirectionality, and integration points. These analyses offer valuable insights for the community. \n4. Low Resource Utility: The method is particularly beneficial for low-resource settings, as demonstrated by the significant performance boost (+3.35 F1) when training on only 1% of the CoNLL 2003 dataset. \nWeaknesses \n1. Reproducibility Concerns: While the paper provides extensive experimental details, the reliance on pre-trained LMs (e.g., CNN-BIG-LSTM) trained with substantial computational resources (32 GPUs for weeks) may limit reproducibility for researchers with fewer resources. \n2. Limited Novelty in LM Usage: The use of pre-trained LMs for contextual embeddings is not entirely novel, as similar ideas have been explored in prior work (e.g., Li and McCallum, 2005). The novelty lies more in the integration and empirical validation rather than the conceptual framework. \n3. Task-Specific RNN Dependence: The results suggest that the task-specific RNN is crucial for performance, which may limit the applicability of the method to simpler models or tasks where such RNNs are infeasible. \nQuestions to Authors \n1. How does the performance of TagLM compare when using smaller, publicly available LMs (e.g., BERT-base) instead of CNN-BIG-LSTM? \n2. Could the proposed method be extended to other sequence tagging tasks, such as POS tagging or dependency parsing? \n3. What are the computational trade-offs of using larger LMs, and how do they impact real-world deployment? \nConclusion \nThis paper provides a strong contribution to the field of NLP by demonstrating the effectiveness of pre-trained bidirectional LM embeddings in sequence tagging tasks. Despite some concerns about computational requirements and novelty, the method's simplicity, generalizability, and significant performance improvements make it a valuable addition to the literature. I recommend acceptance."
+        }
+    ]
+}

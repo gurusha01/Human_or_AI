@@ -1,0 +1,346 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "bc38ed07-9a31-492b-ae71-90558b1cf480",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999769330024719,
+                    "sentence": "SUMMARY",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999544024467468,
+                    "sentence": "This paper investigates the problem of multitask learning for Weighted Finite Automata (WFAs) by introducing a concept of task relatedness and proposing a novel algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999617338180542,
+                    "sentence": "The algorithm combines Hankel matrices from multiple tasks and applies an adapted spectral learning method to obtain a vector-valued WFA with a unified state representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999256134033203,
+                    "sentence": "A post-processing step is also introduced to reduce the dimensionality of the WFA for each task, thereby minimizing noise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999157786369324,
+                    "sentence": "The proposed algorithm is evaluated against a baseline that involves learning each task separately, using both synthetic and real-world datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999441504478455,
+                    "sentence": "COMMENTS",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999268651008606,
+                    "sentence": "Overall, the paper is well-written, but there are some concerns regarding the experimental section.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999361634254456,
+                    "sentence": "Specifically, it would be beneficial to compare the proposed algorithm to a baseline where data from all tasks are aggregated and treated as a single task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999328255653381,
+                    "sentence": "This approach should theoretically outperform other methods when all tasks are identical, as it leverages the entire dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999231696128845,
+                    "sentence": "However, when tasks are unrelated, this method may lead to asymptotic approximation errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999313354492188,
+                    "sentence": "It would be interesting to investigate the magnitude of this error in practice, particularly on the datasets used in the experiment.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999232888221741,
+                    "sentence": "If the error is negligible, it may indicate that the datasets are not sufficiently challenging, as any algorithm that aggregates data would likely show improvement over single-task learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999336004257202,
+                    "sentence": "Preliminary results on this comparison would be appreciated, if possible, during the rebuttal phase.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999255537986755,
+                    "sentence": "Additionally, comparing the proposed algorithm to its variant without the projection step would help quantify the improvement brought by this post-processing procedure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995923042297363,
+                    "sentence": "The paper's presentation could be enhanced by discussing the application scenarios of multitask learning for WFAs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996562004089355,
+                    "sentence": "For instance, in natural language modeling tasks, predictions need to be made in different contexts (e.g., online chat vs. newspaper articles), and datasets are available for each context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992276430130005,
+                    "sentence": "In such cases, it is natural to expect that basic grammar is shared across datasets and can be learned jointly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994056224822998,
+                    "sentence": "While aggregating all datasets into a single large dataset and building a unified model is possible, this approach neglects the context information available during prediction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983921051025391,
+                    "sentence": "Two further suggestions are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999372661113739,
+                    "sentence": "- The current algorithm implicitly assumes equal weights for all tasks, which may not be suitable when dataset sizes vary significantly across tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979628324508667,
+                    "sentence": "In such cases, a weighted approach, as described in Kulesza et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992845058441162,
+                    "sentence": "'s work on Low-Rank Spectral Learning with Weighted Loss Functions, might be more appropriate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984519481658936,
+                    "sentence": "- Another motivation for the projection step is to eliminate redundancy in the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987083077430725,
+                    "sentence": "When tasks are unrelated and each requires a separate set of states, single-task learning would result in a much larger model size compared to the proposed multitask learning approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987401962280273,
+                    "sentence": "The projection step helps mitigate this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958133697509766,
+                    "sentence": "MINOR ISSUE",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969127774238586,
+                    "sentence": "On line 93, it is mentioned that the empty string is included in prefixes or suffixes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9964081645011902,
+                    "sentence": "However, according to the PSR literature, this is not a requirement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997756838798523,
+                    "sentence": "The authors may want to verify this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980282187461853,
+                    "sentence": "==============================",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969936013221741,
+                    "sentence": "The rebuttal and additional results are appreciated, and there are no further complaints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947143197059631,
+                    "sentence": "The argument for acceptance will be maintained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9984984300152882,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984984300152882,
+                "mixed": 0.0015015699847118259
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984984300152882,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984984300152882,
+                    "human": 0,
+                    "mixed": 0.0015015699847118259
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "SUMMARY\nThis paper investigates the problem of multitask learning for Weighted Finite Automata (WFAs) by introducing a concept of task relatedness and proposing a novel algorithm. The algorithm combines Hankel matrices from multiple tasks and applies an adapted spectral learning method to obtain a vector-valued WFA with a unified state representation. A post-processing step is also introduced to reduce the dimensionality of the WFA for each task, thereby minimizing noise. The proposed algorithm is evaluated against a baseline that involves learning each task separately, using both synthetic and real-world datasets.\nCOMMENTS\nOverall, the paper is well-written, but there are some concerns regarding the experimental section. Specifically, it would be beneficial to compare the proposed algorithm to a baseline where data from all tasks are aggregated and treated as a single task. This approach should theoretically outperform other methods when all tasks are identical, as it leverages the entire dataset. However, when tasks are unrelated, this method may lead to asymptotic approximation errors. It would be interesting to investigate the magnitude of this error in practice, particularly on the datasets used in the experiment. If the error is negligible, it may indicate that the datasets are not sufficiently challenging, as any algorithm that aggregates data would likely show improvement over single-task learning. Preliminary results on this comparison would be appreciated, if possible, during the rebuttal phase.\nAdditionally, comparing the proposed algorithm to its variant without the projection step would help quantify the improvement brought by this post-processing procedure. \nThe paper's presentation could be enhanced by discussing the application scenarios of multitask learning for WFAs. For instance, in natural language modeling tasks, predictions need to be made in different contexts (e.g., online chat vs. newspaper articles), and datasets are available for each context. In such cases, it is natural to expect that basic grammar is shared across datasets and can be learned jointly. While aggregating all datasets into a single large dataset and building a unified model is possible, this approach neglects the context information available during prediction.\nTwo further suggestions are:\n- The current algorithm implicitly assumes equal weights for all tasks, which may not be suitable when dataset sizes vary significantly across tasks. In such cases, a weighted approach, as described in Kulesza et al.'s work on Low-Rank Spectral Learning with Weighted Loss Functions, might be more appropriate.\n- Another motivation for the projection step is to eliminate redundancy in the model. When tasks are unrelated and each requires a separate set of states, single-task learning would result in a much larger model size compared to the proposed multitask learning approach. The projection step helps mitigate this issue.\nMINOR ISSUE\nOn line 93, it is mentioned that the empty string is included in prefixes or suffixes. However, according to the PSR literature, this is not a requirement. The authors may want to verify this.\n==============================\nThe rebuttal and additional results are appreciated, and there are no further complaints. The argument for acceptance will be maintained."
+        }
+    ]
+}

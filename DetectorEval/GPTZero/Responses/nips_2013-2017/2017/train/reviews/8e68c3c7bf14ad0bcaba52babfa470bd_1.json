@@ -1,0 +1,181 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "06b02382-d778-42b9-b2e9-15f93264615d",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.003571669105440378,
+                    "sentence": "The paper presents a learning framework of incorporating human feedback in RL and applies the method to image captioning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005355603527277708,
+                    "sentence": "specifically, the authors collect human feedback on machine's caption output, including scoring (from perfect to major error) and correction (if not perfect or acceptable).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010323675349354744,
+                    "sentence": "Then authors train a feedback network to simulate human's feedback assignment on the correctness of a phrase.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01512491051107645,
+                    "sentence": "Later, the authors use reinforcement learning to train the captioning model, with rewards computed from both auto-metrics (like weighted BLEU) and simulated human feedback based on the feedback network.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027434956282377243,
+                    "sentence": "The authors conducted experiments on COCO to evaluate the effectiveness of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009400280192494392,
+                    "sentence": "Though a interesting task, the paper has room to improve, e.g.,",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009182562120258808,
+                    "sentence": "1. The novelty of the paper is not very clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005413054022938013,
+                    "sentence": "The setting of including human in the loop for RL training is interesting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004691045731306076,
+                    "sentence": "However, the actual implementation is not an online human-in-the-loop setting, instead it is a two-stage batch mode of human labeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004119136370718479,
+                    "sentence": "Therefore, the authors need to design a simulator (e.g., the feedback network) to estimate human feedback in RL training, which is quite common in many RL settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004618957173079252,
+                    "sentence": "BTW, as presented in the related work, using RL to optimize non-differentiable metric is not new.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005142905283719301,
+                    "sentence": "2. The authors report major results on COCO in table 6.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005142959300428629,
+                    "sentence": "However, the performance of the baselines are far from state-of-the-art (e.g., in BLEU-4 score, usually the state of the art results are around 30%, while in table 6 the baseline result is at 20%), and the improvement from using feedback over baseline is less than 0.5% in BLEU-4, which usually is not statistically significant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006092798430472612,
+                    "sentence": "3. There is lack of detailed analysis and examples showing how feedback helps in the RL framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005622090306133032,
+                    "sentence": "e.g., given RLB(RL baseline) and RLF (w/ feedback) give similar scores, are they making similar error?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006964994594454765,
+                    "sentence": "Or w/feedback, the model predict very differently?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.01024630426605243,
+            "class_probabilities": {
+                "human": 0.989714449001761,
+                "ai": 0.01024630426605243,
+                "mixed": 3.924673218661023e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.989714449001761,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.01024630426605243,
+                    "human": 0.989714449001761,
+                    "mixed": 3.924673218661023e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a learning framework of incorporating human feedback in RL and applies the method to image captioning. specifically, the authors collect human feedback on machine's caption output, including scoring (from perfect to major error) and correction (if not perfect or acceptable). Then authors train a feedback network to simulate human's feedback assignment on the correctness of a phrase. Later, the authors use reinforcement learning to train the captioning model, with rewards computed from both auto-metrics (like weighted BLEU) and simulated human feedback based on the feedback network. The authors conducted experiments on COCO to evaluate the effectiveness of the model. \nThough a interesting task, the paper has room to improve, e.g.,\n1. The novelty of the paper is not very clear. The setting of including human in the loop for RL training is interesting. However, the actual implementation is not an online human-in-the-loop setting, instead it is a two-stage batch mode of human labeling. Therefore, the authors need to design a simulator (e.g., the feedback network) to estimate human feedback in RL training, which is quite common in many RL settings. BTW, as presented in the related work, using RL to optimize non-differentiable metric is not new. \n2. The authors report major results on COCO in table 6. However, the performance of the baselines are far from state-of-the-art (e.g., in BLEU-4 score, usually the state of the art results are around 30%, while in table 6 the baseline result is at 20%), and the improvement from using feedback over baseline is less than 0.5% in BLEU-4, which usually is not statistically significant. \n3. There is lack of detailed analysis and examples showing how feedback helps in the RL framework. e.g., given RLB(RL baseline) and RLF (w/ feedback) give similar scores, are they making similar error? Or w/feedback, the model predict very differently?"
+        }
+    ]
+}

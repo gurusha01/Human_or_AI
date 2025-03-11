@@ -1,0 +1,447 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "9f777644-765c-4b90-bd0e-6e3a3f68d167",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999920129776001,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "Summary:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999958872795105,
+                    "sentence": "This paper introduces an end-to-end learning framework for solving two-stage stochastic programming problems by directly optimizing the task-based objective function \\( f(x, y, z) \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999929070472717,
+                    "sentence": "Unlike traditional approaches that decouple model learning and optimization, the proposed method integrates these steps, leveraging task-specific loss functions to guide the learning process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "The authors demonstrate the effectiveness of their approach through three applications: inventory stock optimization, electrical grid scheduling, and battery storage arbitrage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "Experimental results show that the method outperforms traditional maximum likelihood estimation (MLE) and black-box policy optimization approaches in most scenarios, particularly when the predictive model is misspecified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999921917915344,
+                    "sentence": "1. Novelty: The paper presents a novel approach to stochastic programming by directly optimizing task-based objectives, which bridges the gap between predictive modeling and decision-making.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999908804893494,
+                    "sentence": "This is a meaningful contribution to the growing literature on end-to-end learning and task-specific optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999895095825195,
+                    "sentence": "2. Experimental Validation: The authors evaluate their method on both synthetic and real-world tasks, demonstrating its practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999881386756897,
+                    "sentence": "The 38.6% improvement in grid scheduling is particularly compelling evidence of the method's potential impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999990701675415,
+                    "sentence": "3. Clarity of Motivation: The paper clearly articulates the limitations of traditional MLE and black-box policy optimization methods, providing a strong motivation for the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999898076057434,
+                    "sentence": "4. Technical Rigor: The authors provide detailed derivations for differentiating through the argmin operator and solving constrained stochastic programming problems, which are critical technical contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942183494568,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999993622303009,
+                    "sentence": "1. Convergence Guarantees: The paper lacks theoretical guarantees for the convergence of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945163726807,
+                    "sentence": "While the authors demonstrate empirical success, the absence of error bounds or convergence analysis limits the theoretical robustness of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "2. Applicability to Non-Convex Problems: The method assumes convexity in the optimization problem, which restricts its applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999993622303009,
+                    "sentence": "Extending the approach to non-convex settings would significantly enhance its generality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "3. Dependence on Predictive Model: The method's performance hinges on the quality of the predictive model \\( p(y\"x;\\theta) \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999947547912598,
+                    "sentence": "If the model fails to approximate the true conditional distribution \\( p(y\"x) \\), the solution may remain sub-optimal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999939203262329,
+                    "sentence": "4. Empirical Evidence for Non-Convex Settings: While the authors acknowledge the limitation to convex problems, they do not provide empirical evidence or discussion on how the method might perform in non-convex scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999981701374054,
+                    "sentence": "Questions for the Authors:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8857607245445251,
+                    "sentence": "1. Why does Algorithm 1 use mini-batch training when Line 7 checks constraints for a single sample?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9135729074478149,
+                    "sentence": "Would checking constraints over a mini-batch improve robustness?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9109550714492798,
+                    "sentence": "2. In the first experiment, why does the end-to-end policy optimization's performance depend on the model hypothesis if it does not rely on a predictive model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9761465191841125,
+                    "sentence": "Minor Suggestions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9721347093582153,
+                    "sentence": "1. The paper should explicitly acknowledge that model-based approaches, while prone to model bias, also require a rich hypothesis space, similar to the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9516026377677917,
+                    "sentence": "2. The last term in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9887522459030151,
+                    "sentence": "(4) should include an expectation over the density of \\( x \\) for completeness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.981212854385376,
+                    "sentence": "3. The authors should discuss potential extensions to non-convex or unknown objective functions to broaden the method's applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988227486610413,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960796236991882,
+                    "sentence": "I recommend accepting the paper, as it provides a novel and practically impactful contribution to end-to-end learning for stochastic programming.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973734021186829,
+                    "sentence": "However, the authors should address the theoretical limitations (e.g., convergence guarantees) and clarify the questions raised above.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996774792671204,
+                    "sentence": "The paper is well-written, technically sound, and demonstrates significant improvements in real-world applications, making it a valuable addition to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999260663986206,
+                    "sentence": "Pro/Con Arguments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998801946640015,
+                    "sentence": "- Pro: Novel approach, strong experimental results, practical relevance, and rigorous technical contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998320937156677,
+                    "sentence": "- Con: Lack of theoretical guarantees, limited applicability to convex problems, and dependence on predictive model quality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996741414070129,
+                    "sentence": "Final Rating: 7/10 (Good paper with minor limitations).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary: \nThis paper introduces an end-to-end learning framework for solving two-stage stochastic programming problems by directly optimizing the task-based objective function \\( f(x, y, z) \\). Unlike traditional approaches that decouple model learning and optimization, the proposed method integrates these steps, leveraging task-specific loss functions to guide the learning process. The authors demonstrate the effectiveness of their approach through three applications: inventory stock optimization, electrical grid scheduling, and battery storage arbitrage. Experimental results show that the method outperforms traditional maximum likelihood estimation (MLE) and black-box policy optimization approaches in most scenarios, particularly when the predictive model is misspecified.\nStrengths: \n1. Novelty: The paper presents a novel approach to stochastic programming by directly optimizing task-based objectives, which bridges the gap between predictive modeling and decision-making. This is a meaningful contribution to the growing literature on end-to-end learning and task-specific optimization. \n2. Experimental Validation: The authors evaluate their method on both synthetic and real-world tasks, demonstrating its practical utility. The 38.6% improvement in grid scheduling is particularly compelling evidence of the method's potential impact. \n3. Clarity of Motivation: The paper clearly articulates the limitations of traditional MLE and black-box policy optimization methods, providing a strong motivation for the proposed approach. \n4. Technical Rigor: The authors provide detailed derivations for differentiating through the argmin operator and solving constrained stochastic programming problems, which are critical technical contributions. \nWeaknesses: \n1. Convergence Guarantees: The paper lacks theoretical guarantees for the convergence of the proposed method. While the authors demonstrate empirical success, the absence of error bounds or convergence analysis limits the theoretical robustness of the approach. \n2. Applicability to Non-Convex Problems: The method assumes convexity in the optimization problem, which restricts its applicability. Extending the approach to non-convex settings would significantly enhance its generality. \n3. Dependence on Predictive Model: The method's performance hinges on the quality of the predictive model \\( p(y\"x;\\theta) \\). If the model fails to approximate the true conditional distribution \\( p(y\"x) \\), the solution may remain sub-optimal. \n4. Empirical Evidence for Non-Convex Settings: While the authors acknowledge the limitation to convex problems, they do not provide empirical evidence or discussion on how the method might perform in non-convex scenarios. \nQuestions for the Authors: \n1. Why does Algorithm 1 use mini-batch training when Line 7 checks constraints for a single sample? Would checking constraints over a mini-batch improve robustness? \n2. In the first experiment, why does the end-to-end policy optimization's performance depend on the model hypothesis if it does not rely on a predictive model? \nMinor Suggestions: \n1. The paper should explicitly acknowledge that model-based approaches, while prone to model bias, also require a rich hypothesis space, similar to the proposed method. \n2. The last term in Eq. (4) should include an expectation over the density of \\( x \\) for completeness. \n3. The authors should discuss potential extensions to non-convex or unknown objective functions to broaden the method's applicability. \nRecommendation: \nI recommend accepting the paper, as it provides a novel and practically impactful contribution to end-to-end learning for stochastic programming. However, the authors should address the theoretical limitations (e.g., convergence guarantees) and clarify the questions raised above. The paper is well-written, technically sound, and demonstrates significant improvements in real-world applications, making it a valuable addition to the field. \nPro/Con Arguments: \n- Pro: Novel approach, strong experimental results, practical relevance, and rigorous technical contributions. \n- Con: Lack of theoretical guarantees, limited applicability to convex problems, and dependence on predictive model quality. \nFinal Rating: 7/10 (Good paper with minor limitations)."
+        }
+    ]
+}

@@ -1,0 +1,408 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "daf1a377-11e1-47c0-9d68-176e0cdeaf8f",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999962449073792,
+                    "sentence": "The paper introduces a novel approach to solving constrained convex optimization problems with conic constraints using a linear oracle-based method inspired by the Frank-Wolfe (FW) and Matching Pursuit (MP) algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943375587463,
+                    "sentence": "The authors propose a Non-Negative Matching Pursuit (NNMP) algorithm, along with corrective variants such as Away-steps MP (AMP), Pairwise MP (PWMP), and Fully Corrective MP (FCMP).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999938011169434,
+                    "sentence": "They provide theoretical guarantees, including sublinear convergence for general convex objectives and linear convergence for strongly convex objectives, leveraging a new geometric quantity called the cone width.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "The work is positioned as a significant extension of MP and FW algorithms, targeting optimization over the conic hull of atom sets, which has applications in areas like non-negative matrix factorization and model selection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926090240479,
+                    "sentence": "1. Novelty and Scope: The paper addresses an important gap in the literature by extending MP and FW algorithms to conic optimization problems, which are widely applicable in machine learning and signal processing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "The introduction of the cone width as a geometric measure is a notable contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999992847442627,
+                    "sentence": "2. Theoretical Rigor: The authors provide detailed convergence analyses for their algorithms, demonstrating sublinear and linear rates under different conditions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999903440475464,
+                    "sentence": "The results generalize prior work on MP and FW, making the contributions theoretically robust.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999890923500061,
+                    "sentence": "3. Algorithmic Variants: The corrective variants (AMP, PWMP, FCMP) are well-motivated and address limitations of the baseline NNMP, such as zig-zagging behavior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999837875366211,
+                    "sentence": "The linear convergence guarantees for these variants are significant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999990701675415,
+                    "sentence": "4. Empirical Validation: The paper includes extensive numerical experiments, showcasing the competitiveness of the proposed methods across diverse tasks like synthetic data, non-negative matrix factorization, and non-negative garrote for logistic regression.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999956488609314,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999902248382568,
+                    "sentence": "1. Clarity of Proofs: The theoretical sections suffer from unclear notations and inconsistent use of variables, particularly in Lemma 7 and Theorem 8.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884366989136,
+                    "sentence": "This makes the proofs difficult to follow and undermines the rigor of the presentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999905228614807,
+                    "sentence": "2. Theorem 2 Issues: The reliance on a fixed horizon \\( T \\) in Theorem 2 is problematic, as the proof does not guarantee convergence for \\( t > T \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999922513961792,
+                    "sentence": "This limitation should be addressed or clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999946355819702,
+                    "sentence": "3. Computational Costs: While the experiments demonstrate the effectiveness of the algorithms, the paper lacks sufficient evidence that the computational costs are comparable to competing methods, particularly for large-scale problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9921611547470093,
+                    "sentence": "4. Experiment Details: The non-negative matrix factorization experiment is unclear regarding the rank-10 approximation and whether the algorithm was run for only 10 steps.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9825602769851685,
+                    "sentence": "This ambiguity reduces the reproducibility of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9477214813232422,
+                    "sentence": "5. Minor Errors: Typos, such as \"max\" instead of \"argmax\" on line 220, and other minor technical issues detract from the overall polish of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976572394371033,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972413778305054,
+                    "sentence": "While the paper presents a significant theoretical and algorithmic contribution to the field of optimization, the issues with clarity and computational cost analysis need to be addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987263083457947,
+                    "sentence": "The unclear proofs and experimental ambiguities are critical weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983373284339905,
+                    "sentence": "However, the novelty and potential impact of the work justify acceptance, provided the authors revise the manuscript to address these concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995666146278381,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996805787086487,
+                    "sentence": "- Novel and impactful extension of MP and FW algorithms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995007514953613,
+                    "sentence": "- Strong theoretical contributions with convergence guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994874000549316,
+                    "sentence": "- Promising empirical results across diverse applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997135996818542,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997932314872742,
+                    "sentence": "- Lack of clarity in proofs and notations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997552037239075,
+                    "sentence": "- Insufficient evidence of computational efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998208284378052,
+                    "sentence": "- Ambiguities in experimental setup and results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981029033660889,
+                    "sentence": "Final Rating: Weak Accept (with revisions).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9961636828644501,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9961636828644501,
+                "mixed": 0.003836317135549872
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9961636828644501,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9961636828644501,
+                    "human": 0,
+                    "mixed": 0.003836317135549872
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a novel approach to solving constrained convex optimization problems with conic constraints using a linear oracle-based method inspired by the Frank-Wolfe (FW) and Matching Pursuit (MP) algorithms. The authors propose a Non-Negative Matching Pursuit (NNMP) algorithm, along with corrective variants such as Away-steps MP (AMP), Pairwise MP (PWMP), and Fully Corrective MP (FCMP). They provide theoretical guarantees, including sublinear convergence for general convex objectives and linear convergence for strongly convex objectives, leveraging a new geometric quantity called the cone width. The work is positioned as a significant extension of MP and FW algorithms, targeting optimization over the conic hull of atom sets, which has applications in areas like non-negative matrix factorization and model selection.\nStrengths:\n1. Novelty and Scope: The paper addresses an important gap in the literature by extending MP and FW algorithms to conic optimization problems, which are widely applicable in machine learning and signal processing. The introduction of the cone width as a geometric measure is a notable contribution.\n2. Theoretical Rigor: The authors provide detailed convergence analyses for their algorithms, demonstrating sublinear and linear rates under different conditions. The results generalize prior work on MP and FW, making the contributions theoretically robust.\n3. Algorithmic Variants: The corrective variants (AMP, PWMP, FCMP) are well-motivated and address limitations of the baseline NNMP, such as zig-zagging behavior. The linear convergence guarantees for these variants are significant.\n4. Empirical Validation: The paper includes extensive numerical experiments, showcasing the competitiveness of the proposed methods across diverse tasks like synthetic data, non-negative matrix factorization, and non-negative garrote for logistic regression.\nWeaknesses:\n1. Clarity of Proofs: The theoretical sections suffer from unclear notations and inconsistent use of variables, particularly in Lemma 7 and Theorem 8. This makes the proofs difficult to follow and undermines the rigor of the presentation.\n2. Theorem 2 Issues: The reliance on a fixed horizon \\( T \\) in Theorem 2 is problematic, as the proof does not guarantee convergence for \\( t > T \\). This limitation should be addressed or clarified.\n3. Computational Costs: While the experiments demonstrate the effectiveness of the algorithms, the paper lacks sufficient evidence that the computational costs are comparable to competing methods, particularly for large-scale problems.\n4. Experiment Details: The non-negative matrix factorization experiment is unclear regarding the rank-10 approximation and whether the algorithm was run for only 10 steps. This ambiguity reduces the reproducibility of the results.\n5. Minor Errors: Typos, such as \"max\" instead of \"argmax\" on line 220, and other minor technical issues detract from the overall polish of the paper.\nRecommendation:\nWhile the paper presents a significant theoretical and algorithmic contribution to the field of optimization, the issues with clarity and computational cost analysis need to be addressed. The unclear proofs and experimental ambiguities are critical weaknesses. However, the novelty and potential impact of the work justify acceptance, provided the authors revise the manuscript to address these concerns.\nArguments for Acceptance:\n- Novel and impactful extension of MP and FW algorithms.\n- Strong theoretical contributions with convergence guarantees.\n- Promising empirical results across diverse applications.\nArguments Against Acceptance:\n- Lack of clarity in proofs and notations.\n- Insufficient evidence of computational efficiency.\n- Ambiguities in experimental setup and results.\nFinal Rating: Weak Accept (with revisions)."
+        }
+    ]
+}

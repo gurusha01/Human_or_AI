@@ -1,0 +1,398 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "3fbe9e49-7e50-4f24-9c84-d7715662539e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9997335076332092,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999740719795227,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999577403068542,
+                    "sentence": "This paper addresses the problem of generating source code in general-purpose programming languages (e.g., Python) from natural language (NL) descriptions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999739527702332,
+                    "sentence": "The authors propose a novel syntax-driven neural architecture that explicitly incorporates the grammar of the target programming language by generating Abstract Syntax Trees (ASTs) as an intermediate representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998995661735535,
+                    "sentence": "The key contributions of the paper, as I see them, are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999024868011475,
+                    "sentence": "1. Grammar-Aware Code Generation: The introduction of a probabilistic grammar model that factors code generation into sequential applications of grammar rules and terminal token generation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999043941497803,
+                    "sentence": "This ensures the syntactic correctness of the generated code.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998313784599304,
+                    "sentence": "2. Syntax-Driven Neural Decoder: A neural decoder that incorporates structural information through mechanisms like parent feeding and frontier node embeddings, enabling the model to better capture the recursive structure of ASTs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999026656150818,
+                    "sentence": "3. Empirical Validation: The proposed model achieves state-of-the-art results on two Python code generation datasets (HEARTHSTONE and DJANGO) and competitive performance on a semantic parsing benchmark (IFTTT).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998844861984253,
+                    "sentence": "The results demonstrate the importance of explicitly modeling grammar in code generation tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999719858169556,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999330043792725,
+                    "sentence": "1. Novelty and Innovation: The use of grammar as prior knowledge to constrain the hypothesis space is a significant improvement over existing sequence-to-sequence models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999776482582092,
+                    "sentence": "This approach ensures syntactic correctness and reduces the complexity of the generation process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999877214431763,
+                    "sentence": "2. Empirical Performance: The model achieves substantial improvements in accuracy (e.g., 11.7% on HEARTHSTONE and 9.3% on DJANGO) compared to state-of-the-art baselines, demonstrating its effectiveness in generating complex code structures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999734163284302,
+                    "sentence": "3. Robustness to Complexity: The model performs well even for large ASTs, as evidenced by its stable BLEU scores on HEARTHSTONE for ASTs with over 200 nodes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999822378158569,
+                    "sentence": "This suggests that the approach scales effectively to more complex code generation tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999774694442749,
+                    "sentence": "4. Comprehensive Evaluation: The paper provides a thorough evaluation, including comparisons with strong baselines, ablation studies to analyze the contributions of individual components, and performance analysis across different AST sizes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999476075172424,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999505281448364,
+                    "sentence": "1. Limited Generalization to Other Languages: While the authors claim the approach is programming language-agnostic, the experiments are limited to Python and a domain-specific language (IFTTT).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999533295631409,
+                    "sentence": "It would be valuable to see results on other general-purpose languages like Java or C++ to validate this claim.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997793436050415,
+                    "sentence": "2. Overhead of Grammar Modeling: The introduction of grammar constraints increases the complexity of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998958110809326,
+                    "sentence": "While the paper demonstrates the benefits of this approach, it does not provide a detailed analysis of the trade-offs in terms of computational efficiency or training time compared to simpler sequence-to-sequence models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999434232711792,
+                    "sentence": "3. Handling of Rare/Nested Constructs: The model struggles with generating complex nested structures (e.g., lambda functions in DJANGO), as noted in the case studies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997950792312622,
+                    "sentence": "This limitation should be explored further, as such constructs are common in real-world programming tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996271550655365,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975104331970215,
+                    "sentence": "1. How does the model perform on other general-purpose programming languages like Java or C++?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983630180358887,
+                    "sentence": "Are there any language-specific challenges that need to be addressed?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9938091039657593,
+                    "sentence": "2. Can the grammar model handle dynamic or user-defined constructs (e.g., custom classes or functions) that are not part of the predefined grammar?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9939504265785217,
+                    "sentence": "3. What is the computational overhead of incorporating grammar constraints compared to baseline models?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9941626191139221,
+                    "sentence": "Are there scenarios where the added complexity outweighs the benefits?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9620504379272461,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9849011301994324,
+                    "sentence": "This paper makes a significant contribution to the field of code generation by introducing a grammar-aware neural architecture that achieves state-of-the-art results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9546189308166504,
+                    "sentence": "While there are some limitations, the strengths of the paper outweigh the weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9514936804771423,
+                    "sentence": "I recommend acceptance for this conference, with minor revisions to address the generalizability and efficiency concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9984800378301695,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984800378301695,
+                "mixed": 0.0015199621698304396
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984800378301695,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984800378301695,
+                    "human": 0,
+                    "mixed": 0.0015199621698304396
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper addresses the problem of generating source code in general-purpose programming languages (e.g., Python) from natural language (NL) descriptions. The authors propose a novel syntax-driven neural architecture that explicitly incorporates the grammar of the target programming language by generating Abstract Syntax Trees (ASTs) as an intermediate representation. The key contributions of the paper, as I see them, are:\n1. Grammar-Aware Code Generation: The introduction of a probabilistic grammar model that factors code generation into sequential applications of grammar rules and terminal token generation. This ensures the syntactic correctness of the generated code.\n2. Syntax-Driven Neural Decoder: A neural decoder that incorporates structural information through mechanisms like parent feeding and frontier node embeddings, enabling the model to better capture the recursive structure of ASTs.\n3. Empirical Validation: The proposed model achieves state-of-the-art results on two Python code generation datasets (HEARTHSTONE and DJANGO) and competitive performance on a semantic parsing benchmark (IFTTT). The results demonstrate the importance of explicitly modeling grammar in code generation tasks.\nStrengths\n1. Novelty and Innovation: The use of grammar as prior knowledge to constrain the hypothesis space is a significant improvement over existing sequence-to-sequence models. This approach ensures syntactic correctness and reduces the complexity of the generation process.\n2. Empirical Performance: The model achieves substantial improvements in accuracy (e.g., 11.7% on HEARTHSTONE and 9.3% on DJANGO) compared to state-of-the-art baselines, demonstrating its effectiveness in generating complex code structures.\n3. Robustness to Complexity: The model performs well even for large ASTs, as evidenced by its stable BLEU scores on HEARTHSTONE for ASTs with over 200 nodes. This suggests that the approach scales effectively to more complex code generation tasks.\n4. Comprehensive Evaluation: The paper provides a thorough evaluation, including comparisons with strong baselines, ablation studies to analyze the contributions of individual components, and performance analysis across different AST sizes.\nWeaknesses\n1. Limited Generalization to Other Languages: While the authors claim the approach is programming language-agnostic, the experiments are limited to Python and a domain-specific language (IFTTT). It would be valuable to see results on other general-purpose languages like Java or C++ to validate this claim.\n2. Overhead of Grammar Modeling: The introduction of grammar constraints increases the complexity of the model. While the paper demonstrates the benefits of this approach, it does not provide a detailed analysis of the trade-offs in terms of computational efficiency or training time compared to simpler sequence-to-sequence models.\n3. Handling of Rare/Nested Constructs: The model struggles with generating complex nested structures (e.g., lambda functions in DJANGO), as noted in the case studies. This limitation should be explored further, as such constructs are common in real-world programming tasks.\nQuestions to Authors\n1. How does the model perform on other general-purpose programming languages like Java or C++? Are there any language-specific challenges that need to be addressed?\n2. Can the grammar model handle dynamic or user-defined constructs (e.g., custom classes or functions) that are not part of the predefined grammar?\n3. What is the computational overhead of incorporating grammar constraints compared to baseline models? Are there scenarios where the added complexity outweighs the benefits?\nRecommendation\nThis paper makes a significant contribution to the field of code generation by introducing a grammar-aware neural architecture that achieves state-of-the-art results. While there are some limitations, the strengths of the paper outweigh the weaknesses. I recommend acceptance for this conference, with minor revisions to address the generalizability and efficiency concerns."
+        }
+    ]
+}

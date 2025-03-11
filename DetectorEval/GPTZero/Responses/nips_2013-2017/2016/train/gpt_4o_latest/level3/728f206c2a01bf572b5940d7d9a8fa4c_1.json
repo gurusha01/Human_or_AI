@@ -1,0 +1,379 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "ef3bd70a-9a68-4664-ae8f-238cdfb8f969",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999768733978271,
+                    "sentence": "The paper proposes a novel approach to training Restricted Boltzmann Machines (RBMs) using the gamma-smoothed Wasserstein distance \\( W\\gamma(\\hat{p}, p\\theta) \\) as the objective function, instead of the traditional Kullback-Leibler (KL) divergence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999569654464722,
+                    "sentence": "This method incorporates a metric between observations into the training process, which is argued to be more aligned with practical tasks like data completion and denoising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999609589576721,
+                    "sentence": "The authors derive the gradient of the Wasserstein distance and demonstrate its application to RBMs, presenting experimental results on datasets such as MNIST-small, UCI PLANTS, and binary codes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999972403049469,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999758005142212,
+                    "sentence": "1. Novelty: The use of Wasserstein distance for RBM training is a fresh perspective, particularly in its explicit incorporation of data metrics into the learning objective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999875426292419,
+                    "sentence": "This approach could inspire further exploration of metric-based training in generative models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999794960021973,
+                    "sentence": "2. Practical Applications: The focus on tasks like data completion and denoising highlights the practical relevance of the proposed method, with experimental results showing competitive performance compared to standard RBMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999721646308899,
+                    "sentence": "3. Theoretical Contribution: The derivation of the Wasserstein gradient and its integration into RBM training is a significant technical contribution, supported by the use of the Sinkhorn algorithm for efficient computation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999339580535889,
+                    "sentence": "4. Experimental Insights: The experiments provide valuable insights into the behavior of Wasserstein-trained RBMs, particularly the observed \"shrinkage\" and clustering effects, which are framed as both strengths and weaknesses depending on the application.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999966025352478,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999557733535767,
+                    "sentence": "1. Key Concern - Shrinkage: The Gaussian shrinkage example in Section 4.3 raises serious doubts about the consistency of Wasserstein training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99996018409729,
+                    "sentence": "The observed bias toward compact clusters, even in simple cases like \\( N(0, I) \\), suggests potential flaws in the statistical consistency of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999562501907349,
+                    "sentence": "2. KL Regularization: The addition of KL divergence regularization undermines the \"purity\" of the Wasserstein objective, making it unclear whether the observed improvements stem from Wasserstein training or the regularization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999526739120483,
+                    "sentence": "3. Experimental Limitations: The experiments, while illustrative, are limited to small datasets and specific tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999626874923706,
+                    "sentence": "The lack of a direct comparison with a KL + entropic prior baseline leaves the source of observed effects ambiguous.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981889128684998,
+                    "sentence": "4. Clarity and Overclaiming: The technical explanations are often unclear, and the title overstates the scope of the work, as it focuses solely on RBMs rather than Boltzmann machines in general.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997560441493988,
+                    "sentence": "Supplemental material could improve clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988180994987488,
+                    "sentence": "5. Convergence Issues: The convergence rate of \\( O(n^{-1/(D+1)}) \\) in high dimensions is impractically slow, raising concerns about scalability to larger datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999533295631409,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998376965522766,
+                    "sentence": "- The paper introduces a novel and theoretically grounded approach to RBM training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999489188194275,
+                    "sentence": "- The focus on metric-based training is innovative and relevant for practical tasks like denoising and data completion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999261498451233,
+                    "sentence": "- The experimental results, while limited, demonstrate the potential of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998764991760254,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998214244842529,
+                    "sentence": "- The observed shrinkage bias raises fundamental questions about the consistency of the Wasserstein objective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996927976608276,
+                    "sentence": "- The reliance on KL regularization dilutes the contribution of the Wasserstein distance itself.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998471140861511,
+                    "sentence": "- The unclear technical presentation and limited experimental scope weaken the paper's overall impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997131824493408,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989766478538513,
+                    "sentence": "While the paper presents an interesting and novel idea, the concerns about statistical consistency, reliance on regularization, and unclear explanations significantly limit its contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987991452217102,
+                    "sentence": "A more thorough investigation of the shrinkage effect, clearer articulation of the method, and broader experiments are needed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950036406517029,
+                    "sentence": "I recommend rejection but encourage the authors to address these issues and resubmit.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper proposes a novel approach to training Restricted Boltzmann Machines (RBMs) using the gamma-smoothed Wasserstein distance \\( W\\gamma(\\hat{p}, p\\theta) \\) as the objective function, instead of the traditional Kullback-Leibler (KL) divergence. This method incorporates a metric between observations into the training process, which is argued to be more aligned with practical tasks like data completion and denoising. The authors derive the gradient of the Wasserstein distance and demonstrate its application to RBMs, presenting experimental results on datasets such as MNIST-small, UCI PLANTS, and binary codes.\nStrengths:\n1. Novelty: The use of Wasserstein distance for RBM training is a fresh perspective, particularly in its explicit incorporation of data metrics into the learning objective. This approach could inspire further exploration of metric-based training in generative models.\n2. Practical Applications: The focus on tasks like data completion and denoising highlights the practical relevance of the proposed method, with experimental results showing competitive performance compared to standard RBMs.\n3. Theoretical Contribution: The derivation of the Wasserstein gradient and its integration into RBM training is a significant technical contribution, supported by the use of the Sinkhorn algorithm for efficient computation.\n4. Experimental Insights: The experiments provide valuable insights into the behavior of Wasserstein-trained RBMs, particularly the observed \"shrinkage\" and clustering effects, which are framed as both strengths and weaknesses depending on the application.\nWeaknesses:\n1. Key Concern - Shrinkage: The Gaussian shrinkage example in Section 4.3 raises serious doubts about the consistency of Wasserstein training. The observed bias toward compact clusters, even in simple cases like \\( N(0, I) \\), suggests potential flaws in the statistical consistency of the proposed approach.\n2. KL Regularization: The addition of KL divergence regularization undermines the \"purity\" of the Wasserstein objective, making it unclear whether the observed improvements stem from Wasserstein training or the regularization.\n3. Experimental Limitations: The experiments, while illustrative, are limited to small datasets and specific tasks. The lack of a direct comparison with a KL + entropic prior baseline leaves the source of observed effects ambiguous.\n4. Clarity and Overclaiming: The technical explanations are often unclear, and the title overstates the scope of the work, as it focuses solely on RBMs rather than Boltzmann machines in general. Supplemental material could improve clarity.\n5. Convergence Issues: The convergence rate of \\( O(n^{-1/(D+1)}) \\) in high dimensions is impractically slow, raising concerns about scalability to larger datasets.\nArguments for Acceptance:\n- The paper introduces a novel and theoretically grounded approach to RBM training.\n- The focus on metric-based training is innovative and relevant for practical tasks like denoising and data completion.\n- The experimental results, while limited, demonstrate the potential of the approach.\nArguments Against Acceptance:\n- The observed shrinkage bias raises fundamental questions about the consistency of the Wasserstein objective.\n- The reliance on KL regularization dilutes the contribution of the Wasserstein distance itself.\n- The unclear technical presentation and limited experimental scope weaken the paper's overall impact.\nRecommendation:\nWhile the paper presents an interesting and novel idea, the concerns about statistical consistency, reliance on regularization, and unclear explanations significantly limit its contribution. A more thorough investigation of the shrinkage effect, clearer articulation of the method, and broader experiments are needed. I recommend rejection but encourage the authors to address these issues and resubmit."
+        }
+    ]
+}

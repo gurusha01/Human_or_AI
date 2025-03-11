@@ -1,0 +1,521 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "57ece8b6-e1fe-40af-bfed-6f7de02439f0",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9948312640190125,
+                    "sentence": "The paper introduces a novel method for training a generative model through an iterative denoising process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9820772409439087,
+                    "sentence": "This process begins with a random sample from a rough approximation of the data distribution and refines it into a high-quality sample via multiple denoising steps.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9363899230957031,
+                    "sentence": "The training involves constructing a Markov chain that gradually blends samples from the current denoising model with real data examples.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9686430096626282,
+                    "sentence": "The denoising model is then updated to reproduce the improved samples generated through this blending process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5666276812553406,
+                    "sentence": "This is a well-written paper that explores an intriguing approach to training generative models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6097326278686523,
+                    "sentence": "I found the simplicity of the proposed method appealing and enjoyed reading the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3790162205696106,
+                    "sentence": "The method is innovative, though it shares conceptual similarities with recent work on using denoising models for sampling, such as the work by Sohl-Dickstein and research on employing denoising autoencoders (DAEs) as generative models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3143693208694458,
+                    "sentence": "I believe this line of research is significant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5418873429298401,
+                    "sentence": "The proposed approach draws inspiration from generating samples by minimizing an energy function via transitions along a Markov chain.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.25608593225479126,
+                    "sentence": "If successful, it could potentially address several challenges faced by current methods for training directed generative models, including:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4363342523574829,
+                    "sentence": "- Convergence and mode collapse issues in generative adversarial networks (GANs)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.49937552213668823,
+                    "sentence": "- Difficulties in modeling multi-modal distributions when pairing a powerful generative model with a restrictive approximate inference model",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.331138551235199,
+                    "sentence": "That said, another promising method that bears some superficial resemblance to the proposed work is the combination of Hamiltonian Monte Carlo (HMC) inference with variational inference, as described in [1].",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4564875066280365,
+                    "sentence": "I am not entirely convinced that the proposed method will outperform the approach in [1], though it may be simpler to train.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5422602891921997,
+                    "sentence": "Similarly, while the authors argue that using a Markov chain Monte Carlo (MCMC) chain for sampling via a Monte Carlo Expectation-Maximization (MC-EM) procedure is computationally expensive, I am not convinced that such a procedure would fail to perform reasonably well on a simple dataset like MNIST.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5877552032470703,
+                    "sentence": "A more direct comparison of different inference methods using MCMC-based procedures would be valuable, though I understand this may fall outside the scope of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3689534366130829,
+                    "sentence": "However, I would have expected a direct comparison to Sohl-Dickstein's method in terms of sampling steps and generation quality, given the close relationship between the two approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6604614853858948,
+                    "sentence": "Major Points (Strengths and Weaknesses):",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5933269262313843,
+                    "sentence": "- While the method is generally well-explained, some training details are missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.790336012840271,
+                    "sentence": "For instance, the paper does not specify how the parameters alpha or omega are set (I assume omega is 0.01 based on the experimental setup).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8360458016395569,
+                    "sentence": "It is also unclear how alpha influences the generator's performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6110975742340088,
+                    "sentence": "While it seems reasonable to use a small alpha over many steps to ensure gradual blending of distributions, the paper does not clarify how critical this choice is or at what point the procedure might fail (e.g., if alpha = 1, would the generator be able to denoise a sample from the relatively uninformative p0?).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5999338626861572,
+                    "sentence": "The authors mention in a figure caption that the denoising model fails to produce good samples in 1-2 steps, but this might be an artifact of training the model with a small alpha.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.46652480959892273,
+                    "sentence": "Additional experiments on this would be helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.877949595451355,
+                    "sentence": "- The paper does not include infusion chains or generating chains for more complex data distributions, which would have been interesting to examine.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9814148545265198,
+                    "sentence": "- The evaluation of the model across multiple metrics is commendable, and the bound on the log-likelihood is a valuable addition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.982803463935852,
+                    "sentence": "- The proposed approach lacks theoretical guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.964605450630188,
+                    "sentence": "It remains unclear under what conditions (e.g., specific choices of alpha) the procedure will succeed or whether there is a deeper connection to MCMC sampling or energy-based models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.988985538482666,
+                    "sentence": "While this does not detract significantly from the paper's value, it might be worth briefly addressing in the conclusion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947036504745483,
+                    "sentence": "Minor Points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9871861338615417,
+                    "sentence": "- The second reference appears to be broken.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968887567520142,
+                    "sentence": "- Figure 3 begins at 100 epochs, which limits its informativeness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9948856234550476,
+                    "sentence": "It might be more useful to display the entire training process and use a log-scale for the x-axis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972723126411438,
+                    "sentence": "- The explanation of the convolutional networks is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9957675933837891,
+                    "sentence": "The authors state that they use the same architecture as the \"Improved GANs\" paper, which generates samples from a fixed-length random input.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963799118995667,
+                    "sentence": "However, the proposed model likely does not use a generator with one fully connected layer followed by up-convolutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9960352778434753,
+                    "sentence": "Instead, it seems to involve several convolutional stages, a fully connected layer, and then up-convolutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9953861236572266,
+                    "sentence": "This should be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9955236315727234,
+                    "sentence": "- The choice to parametrize the variance using a sigmoid output unit is unconventional.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9853036403656006,
+                    "sentence": "Was there a specific motivation for this decision?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9827126860618591,
+                    "sentence": "- Footnote 1 contains grammatical errors: \"This allow to\" â ' \"This allows to,\" \"few informations\" â ' \"little information,\" \"This force the network\" â ' \"This forces the network.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944757223129272,
+                    "sentence": "- Page 1: Typographical error (\"etc...\").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9892715811729431,
+                    "sentence": "- Page 4: Typographical error (\"operator should to learn\").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9889656901359558,
+                    "sentence": "[1] Markov Chain Monte Carlo and Variational Inference: Bridging the Gap, Tim Salimans and Diederik P. Kingma and Max Welling, ICML 2015.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978877902030945,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9881241321563721,
+                    "sentence": "Update:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9876771569252014,
+                    "sentence": "Based on the authors' response, I believe all open issues have been adequately addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942680597305298,
+                    "sentence": "I strongly support the acceptance of this paper to the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9933337569236755,
+                    "sentence": "The only remaining concern is that, as the authors acknowledge, the generator's architecture is likely suboptimal and may limit the method's performance during evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9920430183410645,
+                    "sentence": "However, this does not detract from the paper's main contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9883579611778259,
+                    "sentence": "I am maintaining my score as a clear accept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970240592956543,
+                    "sentence": "I would like to emphasize my belief that this paper should be published, even if the review process imposes a high cut-off threshold due to inflated review scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.0003567719278557345
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 50,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a novel method for training a generative model through an iterative denoising process. This process begins with a random sample from a rough approximation of the data distribution and refines it into a high-quality sample via multiple denoising steps. The training involves constructing a Markov chain that gradually blends samples from the current denoising model with real data examples. The denoising model is then updated to reproduce the improved samples generated through this blending process.\nThis is a well-written paper that explores an intriguing approach to training generative models. I found the simplicity of the proposed method appealing and enjoyed reading the paper. The method is innovative, though it shares conceptual similarities with recent work on using denoising models for sampling, such as the work by Sohl-Dickstein and research on employing denoising autoencoders (DAEs) as generative models.\nI believe this line of research is significant. The proposed approach draws inspiration from generating samples by minimizing an energy function via transitions along a Markov chain. If successful, it could potentially address several challenges faced by current methods for training directed generative models, including:\n- Convergence and mode collapse issues in generative adversarial networks (GANs)\n- Difficulties in modeling multi-modal distributions when pairing a powerful generative model with a restrictive approximate inference model\nThat said, another promising method that bears some superficial resemblance to the proposed work is the combination of Hamiltonian Monte Carlo (HMC) inference with variational inference, as described in [1]. I am not entirely convinced that the proposed method will outperform the approach in [1], though it may be simpler to train. Similarly, while the authors argue that using a Markov chain Monte Carlo (MCMC) chain for sampling via a Monte Carlo Expectation-Maximization (MC-EM) procedure is computationally expensive, I am not convinced that such a procedure would fail to perform reasonably well on a simple dataset like MNIST. A more direct comparison of different inference methods using MCMC-based procedures would be valuable, though I understand this may fall outside the scope of the paper. However, I would have expected a direct comparison to Sohl-Dickstein's method in terms of sampling steps and generation quality, given the close relationship between the two approaches.\nMajor Points (Strengths and Weaknesses):\n- While the method is generally well-explained, some training details are missing. For instance, the paper does not specify how the parameters alpha or omega are set (I assume omega is 0.01 based on the experimental setup). It is also unclear how alpha influences the generator's performance. While it seems reasonable to use a small alpha over many steps to ensure gradual blending of distributions, the paper does not clarify how critical this choice is or at what point the procedure might fail (e.g., if alpha = 1, would the generator be able to denoise a sample from the relatively uninformative p0?). The authors mention in a figure caption that the denoising model fails to produce good samples in 1-2 steps, but this might be an artifact of training the model with a small alpha. Additional experiments on this would be helpful.\n- The paper does not include infusion chains or generating chains for more complex data distributions, which would have been interesting to examine.\n- The evaluation of the model across multiple metrics is commendable, and the bound on the log-likelihood is a valuable addition.\n- The proposed approach lacks theoretical guarantees. It remains unclear under what conditions (e.g., specific choices of alpha) the procedure will succeed or whether there is a deeper connection to MCMC sampling or energy-based models. While this does not detract significantly from the paper's value, it might be worth briefly addressing in the conclusion.\nMinor Points:\n- The second reference appears to be broken.\n- Figure 3 begins at 100 epochs, which limits its informativeness. It might be more useful to display the entire training process and use a log-scale for the x-axis.\n- The explanation of the convolutional networks is unclear. The authors state that they use the same architecture as the \"Improved GANs\" paper, which generates samples from a fixed-length random input. However, the proposed model likely does not use a generator with one fully connected layer followed by up-convolutions. Instead, it seems to involve several convolutional stages, a fully connected layer, and then up-convolutions. This should be clarified.\n- The choice to parametrize the variance using a sigmoid output unit is unconventional. Was there a specific motivation for this decision?\n- Footnote 1 contains grammatical errors: \"This allow to\" â ' \"This allows to,\" \"few informations\" â ' \"little information,\" \"This force the network\" â ' \"This forces the network.\"\n- Page 1: Typographical error (\"etc...\").\n- Page 4: Typographical error (\"operator should to learn\").\n[1] Markov Chain Monte Carlo and Variational Inference: Bridging the Gap, Tim Salimans and Diederik P. Kingma and Max Welling, ICML 2015.\n---\nUpdate:\nBased on the authors' response, I believe all open issues have been adequately addressed. I strongly support the acceptance of this paper to the conference. The only remaining concern is that, as the authors acknowledge, the generator's architecture is likely suboptimal and may limit the method's performance during evaluation. However, this does not detract from the paper's main contributions.\nI am maintaining my score as a clear accept. I would like to emphasize my belief that this paper should be published, even if the review process imposes a high cut-off threshold due to inflated review scores."
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "cdda82b8-60be-4180-b930-c6bd49ac83b0",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.370375394821167,
+                    "sentence": "This paper introduces a new Monte Carlo-based planning algorithm called TrailBlazer.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36909133195877075,
+                    "sentence": "The algorithm assumes the access to the generative model of the MDP, and its goal is to find the optimal value function of the root node V(s0) with as few call to the generative model as possible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5110396146774292,
+                    "sentence": "The setting is discounted reward.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4739178717136383,
+                    "sentence": "The algorithm works for both finite and infinite state spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5330603122711182,
+                    "sentence": "The paper provides several theoretical guarantees: PAC consistency, a high-probability upper bound on the number of calls to the generative model for finite state spaces, and an upper bound on the expected number of calls for infinite state spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6721107363700867,
+                    "sentence": "Depending on the scenario, the paper either 1) improves the previous worst-case upper bounds (e.g., for finite state space and with stochastic dynamic) or 2) is the same as the previous results (deterministic dynamic; or without control ᅳ the same as Monte Carlo), or 3) provides new results (infinite state space).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.495705783367157,
+                    "sentence": "The TrailBlazer algorithm alternates between two types of nodes: Avg and Max.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.40330278873443604,
+                    "sentence": "An Avg node computes the average value of its children, which are generated according to the transition probability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.20595358312129974,
+                    "sentence": "So it is essentially a Monte Carlo estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.34762752056121826,
+                    "sentence": "The parameter m controls the variance of this estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.24117887020111084,
+                    "sentence": "The Max node tries to find the value of the maximizing node among its children.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2826470732688904,
+                    "sentence": "It does so by eliminating the children that cannot be a child with maximum value (with high probability).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3056374788284302,
+                    "sentence": "This is a good paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.37514370679855347,
+                    "sentence": "It introduces a new algorithm, which has a potential to be used in many applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5990145802497864,
+                    "sentence": "The algorithm not only has the basic theoretical justification (consistency), but also comes with certain guarantees that are stronger than what is already known (for finite state space with generative model and stochastic system).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5173771977424622,
+                    "sentence": "The paper is generally well-written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4433828294277191,
+                    "sentence": "But I think it can be revised to give more intuition as why the proposed algorithm works better than other approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.37435275316238403,
+                    "sentence": "The intuition is somehow missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5250644683837891,
+                    "sentence": "Also because of the induction on the tree, the proofs are not very straightforward.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7237653136253357,
+                    "sentence": "I don't know if much can be done about it though.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.650801420211792,
+                    "sentence": "I have some comments/questions: - What is the main reason that the guarantee in Theorem 3 is only in expectation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7303911447525024,
+                    "sentence": "- The algorithm does not exploit the possible regularities of the value function, e.g., its smoothness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.32809513807296753,
+                    "sentence": "Is it possible to benefit from them, for example, similar to the StoSO algorithm (Valko, Carpentier, Munos, \"Stochastic Simultaneous Optimistic Optimization,\" ICML 2013)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3957226276397705,
+                    "sentence": "- The paper mentions that for non-vanishing action-gaps, the dimension d can be set to zero.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36829203367233276,
+                    "sentence": "More realistically, the action-gaps can follow a distribution over states (as introduced and analyzed by Farahmand, \"Action-Gap Phenomenon in Reinforcement Learning,\" NIPS 2011).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2633485496044159,
+                    "sentence": "What can be said about such a case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2948763370513916,
+                    "sentence": "- Section 3.1 (Separate bias and variance) is not very clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3133869469165802,
+                    "sentence": "In particular, please expand on \"In doing so, their algorithms compute ….",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2440759539604187,
+                    "sentence": "However in our planning …\".",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.34946370124816895,
+                    "sentence": "- Typos (The line numbers refer to the Supplementary material): L81: worst ᅳ> worse L84: an near-optimal ᅳ> a near-optimal L220: \"and an a term\" L229: \"an problem-dependent\" L472: \"i.d.d.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3141902983188629,
+                    "sentence": "Appendix D: At several places, \\Delta is written as Delta L504: \"one need\" ᅳ> \"one needs\" * Thank you for your response.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 31,
+                    "completely_generated_prob": 1.863374990750522e-27
+                }
+            ],
+            "completely_generated_prob": 0.24226556879047087,
+            "class_probabilities": {
+                "human": 0.7564153809257333,
+                "ai": 0.24226556879047087,
+                "mixed": 0.0013190502837956669
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.7564153809257333,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.24226556879047087,
+                    "human": 0.7564153809257333,
+                    "mixed": 0.0013190502837956669
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a new Monte Carlo-based planning algorithm called TrailBlazer. The algorithm assumes the access to the generative model of the MDP, and its goal is to find the optimal value function of the root node V(s0) with as few call to the generative model as possible. The setting is discounted reward. The algorithm works for both finite and infinite state spaces. The paper provides several theoretical guarantees: PAC consistency, a high-probability upper bound on the number of calls to the generative model for finite state spaces, and an upper bound on the expected number of calls for infinite state spaces. Depending on the scenario, the paper either 1) improves the previous worst-case upper bounds (e.g., for finite state space and with stochastic dynamic) or 2) is the same as the previous results (deterministic dynamic; or without control — the same as Monte Carlo), or 3) provides new results (infinite state space). The TrailBlazer algorithm alternates between two types of nodes: Avg and Max. An Avg node computes the average value of its children, which are generated according to the transition probability. So it is essentially a Monte Carlo estimator. The parameter m controls the variance of this estimator. The Max node tries to find the value of the maximizing node among its children. It does so by eliminating the children that cannot be a child with maximum value (with high probability). This is a good paper. It introduces a new algorithm, which has a potential to be used in many applications. The algorithm not only has the basic theoretical justification (consistency), but also comes with certain guarantees that are stronger than what is already known (for finite state space with generative model and stochastic system). The paper is generally well-written. But I think it can be revised to give more intuition as why the proposed algorithm works better than other approaches. The intuition is somehow missing. Also because of the induction on the tree, the proofs are not very straightforward. I don't know if much can be done about it though. I have some comments/questions: - What is the main reason that the guarantee in Theorem 3 is only in expectation? - The algorithm does not exploit the possible regularities of the value function, e.g., its smoothness. Is it possible to benefit from them, for example, similar to the StoSO algorithm (Valko, Carpentier, Munos, \"Stochastic Simultaneous Optimistic Optimization,\" ICML 2013)? - The paper mentions that for non-vanishing action-gaps, the dimension d can be set to zero. More realistically, the action-gaps can follow a distribution over states (as introduced and analyzed by Farahmand, \"Action-Gap Phenomenon in Reinforcement Learning,\" NIPS 2011). What can be said about such a case? - Section 3.1 (Separate bias and variance) is not very clear. In particular, please expand on \"In doing so, their algorithms compute … . However in our planning …\". - Typos (The line numbers refer to the Supplementary material): L81: worst —> worse L84: an near-optimal —> a near-optimal L220: \"and an a term\" L229: \"an problem-dependent\" L472: \"i.d.d.\" Appendix D: At several places, \\Delta is written as Delta L504: \"one need\" —> \"one needs\" * Thank you for your response."
+        }
+    ]
+}

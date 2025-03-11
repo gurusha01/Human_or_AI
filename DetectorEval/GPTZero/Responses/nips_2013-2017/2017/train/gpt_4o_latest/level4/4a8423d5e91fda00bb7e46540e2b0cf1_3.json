@@ -1,0 +1,293 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "67ae8fc2-580d-44ce-8906-082b142753fc",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9995599985122681,
+                    "sentence": "The paper tackles the challenge of designing a classifier with a reject option that simultaneously achieves a specified classification risk while minimizing the probability of rejection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995381236076355,
+                    "sentence": "The authors focus on the scenario where both the classifier and an associated confidence function are pre-defined, and the objective is to determine a confidence threshold that dictates whether the classifier's prediction is accepted or rejected.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992835521697998,
+                    "sentence": "They introduce an algorithm to compute this threshold and provide statistical guarantees for the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996433854103088,
+                    "sentence": "Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998684525489807,
+                    "sentence": "- The authors should explicitly define the task their algorithm aims to solve.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999485015869141,
+                    "sentence": "The description on lines 86-88 appears to outline the ultimate objective, whereas the algorithm in the paper addresses a more specific problem: given $(f,\\kappa)$, identify a threshold $\\theta$ that defines $g$ in equation (3) such that condition (2) is satisfied while maximizing coverage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999548196792603,
+                    "sentence": "- It appears that for certain values of the input parameters (\\delta, r^, S_m,...), Algorithm 1 may consistently yield a trivial solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999950647354126,
+                    "sentence": "By trivial solution, I mean that the condition on line 10 of Algorithm 1 is never met, resulting in all examples being assigned to the \"reject region.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999395608901978,
+                    "sentence": "Specifically, for $\\hat{r}=0$ (zero training error), the bound $B^$ solving equation (4) can be derived analytically as",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999557733535767,
+                    "sentence": "$B^* = 1-(\\delta/\\log_2(m))^{1/m}$.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999545216560364,
+                    "sentence": "Consequently, if the desired risk $r^$ is set below this bound, $B^ = 1-(\\delta/\\log_2(m))^{1/m}$, Algorithm 1 will always return a trivial solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989558458328247,
+                    "sentence": "For instance, with $\\delta=0.001$ (as used in the experiments) and $m=500$ training examples, the minimal bound becomes $B^=0.0180$ (1.8%).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985184073448181,
+                    "sentence": "Therefore, setting $r^ < 0.018$ will invariably lead to a trivial solution, regardless of the dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987763166427612,
+                    "sentence": "The authors should clarify this limitation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991967678070068,
+                    "sentence": "- The experimental section should include a comparison to a straightforward baseline approach that would likely be the first method attempted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991621971130371,
+                    "sentence": "Specifically, one could determine the threshold directly using the empirical risk $\\hat{r}_i$ instead of relying on the more complex bound $B^*$.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977558255195618,
+                    "sentence": "Given the simplicity of the hypothesis space (i.e., \"threshold rules\") and the relatively large dataset size (e.g., 5000 examples in the experiments), the risk of overfitting seems minimal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973253011703491,
+                    "sentence": "Without such a baseline comparison, it is difficult to assess the practical advantages of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990653991699219,
+                    "sentence": "- A discussion on the challenges associated with solving the numerical problem in equation (4) is missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991845488548279,
+                    "sentence": "For example, the authors should address which numerical methods are appropriate and whether evaluating the combinatorial coefficient for large $m$ and $j$ introduces numerical difficulties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994641542434692,
+                    "sentence": "Typos:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998445510864258,
+                    "sentence": "- Line 80: (f,g)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998761773109436,
+                    "sentence": "- Line 116: $B^*(\\hat{r},\\delta,S_m)$",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995466470718384,
+                    "sentence": "- Line 221: \"mageNet\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9984984300152882,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9984984300152882,
+                "mixed": 0.0015015699847118259
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9984984300152882,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9984984300152882,
+                    "human": 0,
+                    "mixed": 0.0015015699847118259
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper tackles the challenge of designing a classifier with a reject option that simultaneously achieves a specified classification risk while minimizing the probability of rejection. The authors focus on the scenario where both the classifier and an associated confidence function are pre-defined, and the objective is to determine a confidence threshold that dictates whether the classifier's prediction is accepted or rejected. They introduce an algorithm to compute this threshold and provide statistical guarantees for the proposed method.\nComments:\n- The authors should explicitly define the task their algorithm aims to solve. The description on lines 86-88 appears to outline the ultimate objective, whereas the algorithm in the paper addresses a more specific problem: given $(f,\\kappa)$, identify a threshold $\\theta$ that defines $g$ in equation (3) such that condition (2) is satisfied while maximizing coverage.\n- It appears that for certain values of the input parameters (\\delta, r^, S_m, ...), Algorithm 1 may consistently yield a trivial solution. By trivial solution, I mean that the condition on line 10 of Algorithm 1 is never met, resulting in all examples being assigned to the \"reject region.\" Specifically, for $\\hat{r}=0$ (zero training error), the bound $B^$ solving equation (4) can be derived analytically as \n $B^* = 1-(\\delta/\\log_2(m))^{1/m}$. \n Consequently, if the desired risk $r^$ is set below this bound, $B^ = 1-(\\delta/\\log_2(m))^{1/m}$, Algorithm 1 will always return a trivial solution. For instance, with $\\delta=0.001$ (as used in the experiments) and $m=500$ training examples, the minimal bound becomes $B^=0.0180$ (1.8%). Therefore, setting $r^ < 0.018$ will invariably lead to a trivial solution, regardless of the dataset. The authors should clarify this limitation.\n- The experimental section should include a comparison to a straightforward baseline approach that would likely be the first method attempted. Specifically, one could determine the threshold directly using the empirical risk $\\hat{r}_i$ instead of relying on the more complex bound $B^*$. Given the simplicity of the hypothesis space (i.e., \"threshold rules\") and the relatively large dataset size (e.g., 5000 examples in the experiments), the risk of overfitting seems minimal. Without such a baseline comparison, it is difficult to assess the practical advantages of the proposed method.\n- A discussion on the challenges associated with solving the numerical problem in equation (4) is missing. For example, the authors should address which numerical methods are appropriate and whether evaluating the combinatorial coefficient for large $m$ and $j$ introduces numerical difficulties.\nTypos:\n- Line 80: (f,g)\n- Line 116: $B^*(\\hat{r},\\delta,S_m)$ \n- Line 221: \"mageNet\""
+        }
+    ]
+}

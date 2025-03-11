@@ -1,0 +1,318 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "d9cb82b1-e69a-47e3-93d2-21614cf9c7b6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.998517632484436,
+                    "sentence": "The paper has several strengths, including:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974309206008911,
+                    "sentence": "a) The introduction of a Bayesian learning approach for recurrent neural network language models, which demonstrates superior performance to standard SGD with dropout on three tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9914574027061462,
+                    "sentence": "b) The novelty of applying Bayesian learning to RNNs, a concept that has not been extensively explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945154190063477,
+                    "sentence": "c) The development of a computationally efficient Bayesian algorithm for RNNs, which has the potential to be of significant interest to the NLP community for various applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9801572561264038,
+                    "sentence": "However, there are several weaknesses that need to be addressed:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9102374315261841,
+                    "sentence": "A primary concern lies in the evaluation methodology, specifically:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7250011563301086,
+                    "sentence": "In Section 5.1, the paper presents the performance of different architectures (LSTM/GRU/vanilla RNN) on the character language model task, while comparing learning algorithms on the Penn Treebank task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5119924545288086,
+                    "sentence": "Furthermore, RMSprop and pSGLD are compared for the character language model, whereas SGD with/without dropout is compared with SGLD with/without dropout on the word language model task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7734717130661011,
+                    "sentence": "This inconsistency should be rectified by reporting both dimensions (architectures and learning algorithms) on both character and word language model tasks to assess the portability of the proposed Bayesian learning approaches across tasks and datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5311687588691711,
+                    "sentence": "On line 529, the paper claims that the performance gain primarily stems from adding gradient noise and model averaging, but this statement lacks empirical justification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.34675467014312744,
+                    "sentence": "To substantiate this claim, an A/B experiment with/without adding gradient noise and/or model averaging should be conducted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6218523383140564,
+                    "sentence": "On line 724, Gal's dropout is only applied to the sentence classification task, whereas its performance on language model and captions tasks is not reported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8025304675102234,
+                    "sentence": "Since Gal's dropout is not specific to sentence classification, its performance should be evaluated on all three tasks to allow readers to fully assess the utility of the proposed algorithms relative to existing dropout approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.858577311038971,
+                    "sentence": "On line 544, it is unclear whether there is a specific sort order for the samples (\\theta1,..., \\thetaK).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8640292286872864,
+                    "sentence": "For instance, are samples with higher posterior probabilities more likely to be assigned higher indices?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8557371497154236,
+                    "sentence": "Additionally, the result of randomly selecting K out of S samples could be reported as an alternative approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9428319931030273,
+                    "sentence": "Given that regular RNN language models are known to be computationally expensive to train and evaluate, a comparison of the training and evaluation times for the proposed Bayesian learning algorithms with SGD and dropout would be beneficial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.961322546005249,
+                    "sentence": "This would enable readers to weigh the improvements against the potential increase in training and run times.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9896157383918762,
+                    "sentence": "Several clarifications are needed:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9897118806838989,
+                    "sentence": "On line 346, the meaning of \\theta_s should be specified, particularly whether it refers to the MAP estimate of parameters based on only sample s.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9916332960128784,
+                    "sentence": "On lines 453-454, the context of \\theta in relation to dropout and dropconnect should be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9946910738945007,
+                    "sentence": "Finally, there are a few typos that need to be corrected:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992786705493927,
+                    "sentence": "On line 211, \"output\" should be corrected.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9927112460136414,
+                    "sentence": "On line 738, \"RMSProp\" should be corrected.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.6862023954934098,
+            "class_probabilities": {
+                "human": 0.30277833482216104,
+                "ai": 0.6862023954934098,
+                "mixed": 0.011019269684429294
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.6862023954934098,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.6862023954934098,
+                    "human": 0.30277833482216104,
+                    "mixed": 0.011019269684429294
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper has several strengths, including:\na) The introduction of a Bayesian learning approach for recurrent neural network language models, which demonstrates superior performance to standard SGD with dropout on three tasks.\nb) The novelty of applying Bayesian learning to RNNs, a concept that has not been extensively explored.\nc) The development of a computationally efficient Bayesian algorithm for RNNs, which has the potential to be of significant interest to the NLP community for various applications.\nHowever, there are several weaknesses that need to be addressed:\nA primary concern lies in the evaluation methodology, specifically:\nIn Section 5.1, the paper presents the performance of different architectures (LSTM/GRU/vanilla RNN) on the character language model task, while comparing learning algorithms on the Penn Treebank task. Furthermore, RMSprop and pSGLD are compared for the character language model, whereas SGD with/without dropout is compared with SGLD with/without dropout on the word language model task. This inconsistency should be rectified by reporting both dimensions (architectures and learning algorithms) on both character and word language model tasks to assess the portability of the proposed Bayesian learning approaches across tasks and datasets.\nOn line 529, the paper claims that the performance gain primarily stems from adding gradient noise and model averaging, but this statement lacks empirical justification. To substantiate this claim, an A/B experiment with/without adding gradient noise and/or model averaging should be conducted.\nOn line 724, Gal's dropout is only applied to the sentence classification task, whereas its performance on language model and captions tasks is not reported. Since Gal's dropout is not specific to sentence classification, its performance should be evaluated on all three tasks to allow readers to fully assess the utility of the proposed algorithms relative to existing dropout approaches.\nOn line 544, it is unclear whether there is a specific sort order for the samples (\\theta1, ..., \\thetaK). For instance, are samples with higher posterior probabilities more likely to be assigned higher indices? Additionally, the result of randomly selecting K out of S samples could be reported as an alternative approach.\nGiven that regular RNN language models are known to be computationally expensive to train and evaluate, a comparison of the training and evaluation times for the proposed Bayesian learning algorithms with SGD and dropout would be beneficial. This would enable readers to weigh the improvements against the potential increase in training and run times.\nSeveral clarifications are needed:\nOn line 346, the meaning of \\theta_s should be specified, particularly whether it refers to the MAP estimate of parameters based on only sample s.\nOn lines 453-454, the context of \\theta in relation to dropout and dropconnect should be clarified.\nFinally, there are a few typos that need to be corrected:\nOn line 211, \"output\" should be corrected.\nOn line 738, \"RMSProp\" should be corrected."
+        }
+    ]
+}

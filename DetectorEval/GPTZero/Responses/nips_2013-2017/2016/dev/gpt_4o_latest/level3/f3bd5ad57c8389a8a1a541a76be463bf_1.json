@@ -1,0 +1,373 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "83c510f5-9eb9-4e6c-a281-1b12c4e09790",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999889731407166,
+                    "sentence": "This paper presents a novel approach to monocular depth estimation by leveraging derivative filters and a probabilistic model predicted by a neural network.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999850988388062,
+                    "sentence": "The method introduces a mid-level representation that predicts depth derivatives of varying orders, orientations, and scales, encapsulated as probability distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999884366989136,
+                    "sentence": "These distributions express uncertainty and ambiguity, which are resolved through a consensus step using Half Quadratic Optimization to produce a coherent depth map.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855160713196,
+                    "sentence": "The approach is evaluated on the NYU v2 dataset, where it demonstrates state-of-the-art performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999822974205017,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999881982803345,
+                    "sentence": "The paper makes several noteworthy contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999735355377197,
+                    "sentence": "First, the probabilistic modeling of depth derivatives is a significant innovation, allowing the network to express uncertainty in its predictions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855756759644,
+                    "sentence": "This is particularly valuable in regions where depth cues are ambiguous.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999787211418152,
+                    "sentence": "The use of an overcomplete representation of depth derivatives is well-motivated and supported by experimental results, which show that combining multiple derivative orders and scales improves accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999732971191406,
+                    "sentence": "The globalization step, which harmonizes local predictions into a coherent depth map, is elegantly implemented using Half Quadratic Optimization, and the Fourier-domain computations for efficiency are commendable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999728202819824,
+                    "sentence": "The results on the NYU v2 dataset are impressive, with the method outperforming prior approaches on most metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999661445617676,
+                    "sentence": "The ablation study further strengthens the paper by quantifying the contribution of different components, such as derivative orders and scales.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999537467956543,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999951183795929,
+                    "sentence": "Despite its strengths, the paper has some limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999128520488739,
+                    "sentence": "One concern is the use of fixed derivative filters, which may limit the adaptability of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984919428825378,
+                    "sentence": "It would be interesting to explore whether these filters could be learned within the framework, potentially using an iterative algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976460337638855,
+                    "sentence": "Another issue is the reliance on K-means for parameter learning in the Gaussian mixture model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986759424209595,
+                    "sentence": "While effective, Expectation-Maximization (EM) might yield better results and should be considered as an alternative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975509643554688,
+                    "sentence": "Additionally, the test-time inference speed is a concern; the reported 24 seconds per image may limit the method's applicability in real-time scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9931017756462097,
+                    "sentence": "Finally, the observation from Table 2 that order filters contribute most to performance raises questions about the necessity of the full model, as the differences are minimal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.953891396522522,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8108354210853577,
+                    "sentence": "The paper is technically sound, clearly written, and addresses an important problem in computer vision.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9398172497749329,
+                    "sentence": "Its probabilistic approach and elegant depth harmonization are significant contributions to the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9226052165031433,
+                    "sentence": "However, the concerns about filter learning, parameter optimization, and inference speed should be addressed in future work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8809072375297546,
+                    "sentence": "Overall, this is a strong submission, and I recommend acceptance with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9411718845367432,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9602147936820984,
+                    "sentence": "- Innovative probabilistic modeling of depth derivatives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9651615023612976,
+                    "sentence": "- Effective globalization procedure using Half Quadratic Optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9671133160591125,
+                    "sentence": "- Strong experimental results on a benchmark dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9483613967895508,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.989145815372467,
+                    "sentence": "- Fixed derivative filters limit adaptability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9878673553466797,
+                    "sentence": "- K-means for parameter learning may not be optimal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9804784059524536,
+                    "sentence": "- Slow inference speed limits real-world applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9771794080734253,
+                    "sentence": "Rating: 8/10",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper presents a novel approach to monocular depth estimation by leveraging derivative filters and a probabilistic model predicted by a neural network. The method introduces a mid-level representation that predicts depth derivatives of varying orders, orientations, and scales, encapsulated as probability distributions. These distributions express uncertainty and ambiguity, which are resolved through a consensus step using Half Quadratic Optimization to produce a coherent depth map. The approach is evaluated on the NYU v2 dataset, where it demonstrates state-of-the-art performance.\nStrengths:\nThe paper makes several noteworthy contributions. First, the probabilistic modeling of depth derivatives is a significant innovation, allowing the network to express uncertainty in its predictions. This is particularly valuable in regions where depth cues are ambiguous. The use of an overcomplete representation of depth derivatives is well-motivated and supported by experimental results, which show that combining multiple derivative orders and scales improves accuracy. The globalization step, which harmonizes local predictions into a coherent depth map, is elegantly implemented using Half Quadratic Optimization, and the Fourier-domain computations for efficiency are commendable. The results on the NYU v2 dataset are impressive, with the method outperforming prior approaches on most metrics. The ablation study further strengthens the paper by quantifying the contribution of different components, such as derivative orders and scales.\nWeaknesses:\nDespite its strengths, the paper has some limitations. One concern is the use of fixed derivative filters, which may limit the adaptability of the method. It would be interesting to explore whether these filters could be learned within the framework, potentially using an iterative algorithm. Another issue is the reliance on K-means for parameter learning in the Gaussian mixture model. While effective, Expectation-Maximization (EM) might yield better results and should be considered as an alternative. Additionally, the test-time inference speed is a concern; the reported 24 seconds per image may limit the method's applicability in real-time scenarios. Finally, the observation from Table 2 that order filters contribute most to performance raises questions about the necessity of the full model, as the differences are minimal.\nRecommendation:\nThe paper is technically sound, clearly written, and addresses an important problem in computer vision. Its probabilistic approach and elegant depth harmonization are significant contributions to the field. However, the concerns about filter learning, parameter optimization, and inference speed should be addressed in future work. Overall, this is a strong submission, and I recommend acceptance with minor revisions. \nPros: \n- Innovative probabilistic modeling of depth derivatives. \n- Effective globalization procedure using Half Quadratic Optimization. \n- Strong experimental results on a benchmark dataset. \nCons: \n- Fixed derivative filters limit adaptability. \n- K-means for parameter learning may not be optimal. \n- Slow inference speed limits real-world applicability. \nRating: 8/10"
+        }
+    ]
+}

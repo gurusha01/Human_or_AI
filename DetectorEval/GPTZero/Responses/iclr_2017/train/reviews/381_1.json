@@ -1,0 +1,352 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "ed21e18d-5eec-46b0-9ab0-ae8e94145dc4",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.0017289273673668504,
+                    "sentence": "Authors propose a strategy for pruning weights with the eventual goal of reducing GFLOP computations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001969295786693692,
+                    "sentence": "The pruning strategy is well motivated using the taylor expansion of the neural network function with respect to the feature activations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014275594148784876,
+                    "sentence": "The obtained strategy removes feature maps that have both a small activation and a small gradient (eqn 7).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007017088937573135,
+                    "sentence": "(A) Ideally the gradient of the output with respect to the activation functions should be 0 at the optimal, but as a result of stochastic gradient evaluations this would practically never be zero.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0005763373919762671,
+                    "sentence": "Small variance in the gradient across mini-batches indicates that irrespective of input data the specific network parameter is unlikely to change - intuitively these are parameters that are closer to convergence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0004465995589271188,
+                    "sentence": "Parameters/weights that are close to convergence and also result in a small activation are intuitively good candidates for pruning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003434048849157989,
+                    "sentence": "This is essentially what eqn 7 conveys and is likely to be reason why just removing weights that result in small activations is not as good of a pruning strategy (as shown by results in the paper).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003934965643566102,
+                    "sentence": "There are two kind of differences in weights that are removed by activation v/s taylor expansion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003944382187910378,
+                    "sentence": "1. Weights with high-activations but very low gradients will be removed by taylor expansion, but not by activation alone.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00038039981154724956,
+                    "sentence": "2. Weights with low-activation but high gradients will be removed by activation criterion, but not by taylor expansion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003356669330969453,
+                    "sentence": "It will be interesting to analyze which of (1) or (2) contribute more to the differences in weights that are removed by the taylor expansion v/s activation criterion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0002954376977868378,
+                    "sentence": "Intuitively it seems that weight that satisfy (1) are important because they are converged and contribute significantly to network's activation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0003033755929209292,
+                    "sentence": "It is possible that a modified criterion - eqn (7) + \\lambda feature activation, (where \\lambda needs to be found by cross-validation) may lead to even better results at the cost of more parameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0002887688169721514,
+                    "sentence": "(B) Another interesting comparison is with the with the optimal damage framework - where the first order gradients are assumed to be zero and pruning is performed using the second-order information (also discussed by authors in the appendix).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0002780449576675892,
+                    "sentence": "Critically, only the diagonal of the Hessian is computed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00027696494362317026,
+                    "sentence": "There is no comparison with optimal damage as authors claim it is memory and computation inefficient.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.000399722543079406,
+                    "sentence": "Back of envelope calculations suggest that this would result only in 50% increase in memory and computation during pruning, but no loss in efficiency during testing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.000549532996956259,
+                    "sentence": "Therefore from a standpoint of deployment, I don't think this missing comparison is justified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01048173476010561,
+                    "sentence": "(C) The eventual goal of the authors is to reduce GFLOPs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010834071785211563,
+                    "sentence": "Some recent papers have proposed using lower precision computation for this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011966836638748646,
+                    "sentence": "A comparison in GFLOPs with lower precision v/s pruning would be a great.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011109709739685059,
+                    "sentence": "While both these approaches are complementary and it is expected that combining both of them can lead to superior performance than either of the two - it is unclear when we are operating in the low-precision regime how much pruning can be performed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011312595568597317,
+                    "sentence": "Any analysis on this tradeoff would be great (but not necessary).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011600106954574585,
+                    "sentence": "(D) On finetuning, authors report results of AlexNet and VGG on two different datasets - Flowers and Birds respectively.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.015264786779880524,
+                    "sentence": "Why is this the case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014327991753816605,
+                    "sentence": "It would be great to see the results of both the networks on both the datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01237550936639309,
+                    "sentence": "(E) Authors report there is only a small drop in performance after pruning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.013089929707348347,
+                    "sentence": "Suppose the network was originally trained with N iterations, and then M finetuning iterations were performed during pruning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00843791477382183,
+                    "sentence": "This means that pruned networks were trained for N + M iterations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010084692388772964,
+                    "sentence": "The correct comparison in accuracies would be if we the original network was also trained for N + M iterations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.015231545083224773,
+                    "sentence": "In figure 4, does the performance at 100% parameters reports accuracy after N+M iterations or after N iterations?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.020889192819595337,
+                    "sentence": "Overall I think the paper is technically and empirically sound, it proposes a new strategy for pruning:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014719663187861443,
+                    "sentence": "(1) Based on taylor expansion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.017983660101890564,
+                    "sentence": "(2) Feature normalization to reduce parameter tuning efforts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.019476117566227913,
+                    "sentence": "(3) Iterative finetuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02075112611055374,
+                    "sentence": "However, I would like to see some comparisons mentioned in my comments above.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0447128564119339,
+                    "sentence": "If those comparisons are made I would change my ratings to an accept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.024461651786716186,
+            "class_probabilities": {
+                "human": 0.9754981327244504,
+                "ai": 0.024461651786716186,
+                "mixed": 4.0215488833363626e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9754981327244504,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.024461651786716186,
+                    "human": 0.9754981327244504,
+                    "mixed": 4.0215488833363626e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Authors propose a strategy for pruning weights with the eventual goal of reducing GFLOP computations. The pruning strategy is well motivated using the taylor expansion of the neural network function with respect to the feature activations. The obtained strategy removes feature maps that have both a small activation and a small gradient (eqn 7). \n(A) Ideally the gradient of the output with respect to the activation functions should be 0 at the optimal, but as a result of stochastic gradient evaluations this would practically never be zero. Small variance in the gradient across mini-batches indicates that irrespective of input data the specific network parameter is unlikely to change - intuitively these are parameters that are closer to convergence. Parameters/weights that are close to convergence and also result in a small activation are intuitively good candidates for pruning. This is essentially what eqn 7 conveys and is likely to be reason why just removing weights that result in small activations is not as good of a pruning strategy (as shown by results in the paper). There are two kind of differences in weights that are removed by activation v/s taylor expansion:\n1. Weights with high-activations but very low gradients will be removed by taylor expansion, but not by activation alone. \n2. Weights with low-activation but high gradients will be removed by activation criterion, but not by taylor expansion. \nIt will be interesting to analyze which of (1) or (2) contribute more to the differences in weights that are removed by the taylor expansion v/s activation criterion. Intuitively it seems that weight that satisfy (1) are important because they are converged and contribute significantly to network's activation. It is possible that a modified criterion - eqn (7) + \\lambda feature activation, (where \\lambda needs to be found by cross-validation) may lead to even better results at the cost of more parameter tuning. \n \n(B) Another interesting comparison is with the with the optimal damage framework - where the first order gradients are assumed to be zero and pruning is performed using the second-order information (also discussed by authors in the appendix). Critically, only the diagonal of the Hessian is computed. There is no comparison with optimal damage as authors claim it is memory and computation inefficient. Back of envelope calculations suggest that this would result only in 50% increase in memory and computation during pruning, but no loss in efficiency during testing. Therefore from a standpoint of deployment, I don't think this missing comparison is justified. \n(C) The eventual goal of the authors is to reduce GFLOPs. Some recent papers have proposed using lower precision computation for this. A comparison in GFLOPs with lower precision v/s pruning would be a great. While both these approaches are complementary and it is expected that combining both of them can lead to superior performance than either of the two - it is unclear when we are operating in the low-precision regime how much pruning can be performed. Any analysis on this tradeoff would be great (but not necessary).\n(D) On finetuning, authors report results of AlexNet and VGG on two different datasets - Flowers and Birds respectively. Why is this the case? It would be great to see the results of both the networks on both the datasets. \n(E) Authors report there is only a small drop in performance after pruning. Suppose the network was originally trained with N iterations, and then M finetuning iterations were performed during pruning. This means that pruned networks were trained for N + M iterations. The correct comparison in accuracies would be if we the original network was also trained for N + M iterations. In figure 4, does the performance at 100% parameters reports accuracy after N+M iterations or after N iterations? \nOverall I think the paper is technically and empirically sound, it proposes a new strategy for pruning:\n(1) Based on taylor expansion\n(2) Feature normalization to reduce parameter tuning efforts. \n(3) Iterative finetuning. \nHowever, I would like to see some comparisons mentioned in my comments above. If those comparisons are made I would change my ratings to an accept."
+        }
+    ]
+}

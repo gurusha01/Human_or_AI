@@ -1,0 +1,381 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5594c531-c981-4912-b529-6800c150a061",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.03127635642886162,
+                    "sentence": "overview:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011345155537128448,
+                    "sentence": "This work proposes to link trajectory log-probabilities and rewards by defining under-appreciated rewards.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008512310683727264,
+                    "sentence": "This suggests that there is a linear relationship between trajectory rewards and their log-probability which can be exploited by measuring the resulting mismatch.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011962728574872017,
+                    "sentence": "That is, when an action sequence under-appreciates its reward, its log-probability is increased.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01693267561495304,
+                    "sentence": "This method is a simple modification to the well-known REINFORCE method, requiring only one extra hyperparameter \\tau, and intuitively provides us with a better exploration mechanism than \\epsilon-greedy or random exploration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.020978564396500587,
+                    "sentence": "The method is tested on algorithmic environments, and compared to entropy-regularized REINFORCE and double Q-learning, and performs equally or better than those two baselines, especially in more complex environments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0674959197640419,
+                    "sentence": "remarks:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.018684763461351395,
+                    "sentence": "- the focus in the introduction on algorithmic tasks may be a double-edged sword.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030050072818994522,
+                    "sentence": "It is an interesting domain to test your hypothesis and benchmark your method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026440545916557312,
+                    "sentence": "At the same time, it distracts the reader from the (IMO) generality of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027286244556307793,
+                    "sentence": "- in the introduction you say the reward is sparse, in section 6, on tasks 1-5, you then say there is a reward at each correct emission, i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03439021483063698,
+                    "sentence": "each time step.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03406553715467453,
+                    "sentence": "This is only 'corrected' to end-of-episode-reward in section 7.4, after having discussed results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04373404383659363,
+                    "sentence": "I'd move or mention this in section 6.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03607087954878807,
+                    "sentence": "- approach seems quite sensible to tau being in the same range as logpi(a\"h), but you only try tau=0.1 for UREX.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0479770302772522,
+                    "sentence": "I'm not sure I understand nor agree with this experimentation choice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0724867656826973,
+                    "sentence": "- an alternative to grid search is random search (Bergstra&Bengio, 2012).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03060094639658928,
+                    "sentence": "It may illustrate better hyperparameter robustness, and allow you to explore more in the same number of experiment.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10357948392629623,
+                    "sentence": "opinion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.054965171962976456,
+                    "sentence": "- An interesting approach to policy-gradient, to be sure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026526158675551414,
+                    "sentence": "It tackles the very important question of \"how should agents explore?\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.031097542494535446,
+                    "sentence": "- I'm ambivalent to claiming that an algorithm is robust to hyperparmeters simply because it performs better on the selected hyperparameter range.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04001107066869736,
+                    "sentence": "All you really show is that it performs well some amount of time when the hyperparams lay in that range.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.052909545600414276,
+                    "sentence": "Couldn't it be that MENT needs different hyperparameters?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06559440493583679,
+                    "sentence": "(Just being devil's advocate here)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09722654521465302,
+                    "sentence": "- I see why matching 1/tau with logpi is the obvious choice, but it implies a very strong prior: that the reward (to a factor of 1/tau) lies in the same space as the log policy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07607311010360718,
+                    "sentence": "One point of failure I see (but correct me if I'm wrong) is that as the length of the trajectory grows the reward is expected to grow linearly, so short ways to get some reward will be less explored than long ways of getting the same reward, creating an imbalance unless the reward is shaped such that shorter trajectories get more reward (which is only the case in task 6).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06847862899303436,
+                    "sentence": "- It might have been good to also compare with methods explicitly trying to explore better with value-functions (e.g.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.14563032984733582,
+                    "sentence": "prioritized experience replay, Schaul et al 2015)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030816851183772087,
+                    "sentence": "- At the risk of repeating myself, tau plays a major role in this method, but there is little analysis on its effect on experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05534655600786209,
+                    "sentence": "The methodology and reasoning is clearly explained and I think this paper communicates its message very well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08791010081768036,
+                    "sentence": "That message is novel, albeit a minor modification to a well-known algorithm, it is well motivated and, I think, a welcome addition to literature concerning exploration in RL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1205776110291481,
+                    "sentence": "The experiments are chosen accordingly, and results seem to reflect the hypothesis of the authors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.104464590549469,
+                    "sentence": "I realize the tyranny of extensive experimentation and the scarcity of time, but I do think that this paper would benefit from more (or cleverer) experimentation, as well as demonstrating more explicitly the impact of the method on exploration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08561920374631882,
+                    "sentence": "Reading this paper convinced me that measuring mismatch between a trajectory's observed reward and its probability given the current policy is a clever (and well motivated) thing to do.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10380736738443375,
+                    "sentence": "Yet, I think that the paper could have a more convincing empirical argument, even if it is for toy tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.039828139852797,
+            "class_probabilities": {
+                "human": 0.9598887277771326,
+                "ai": 0.039828139852797,
+                "mixed": 0.0002831323700704621
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9598887277771326,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.039828139852797,
+                    "human": 0.9598887277771326,
+                    "mixed": 0.0002831323700704621
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "overview:\nThis work proposes to link trajectory log-probabilities and rewards by defining under-appreciated rewards. This suggests that there is a linear relationship between trajectory rewards and their log-probability which can be exploited by measuring the resulting mismatch.\nThat is, when an action sequence under-appreciates its reward, its log-probability is increased.\nThis method is a simple modification to the well-known REINFORCE method, requiring only one extra hyperparameter \\tau, and intuitively provides us with a better exploration mechanism than \\epsilon-greedy or random exploration.\nThe method is tested on algorithmic environments, and compared to entropy-regularized REINFORCE and double Q-learning, and performs equally or better than those two baselines, especially in more complex environments.\nremarks:\n- the focus in the introduction on algorithmic tasks may be a double-edged sword. It is an interesting domain to test your hypothesis and benchmark your method. At the same time, it distracts the reader from the (IMO) generality of the proposed method.\n- in the introduction you say the reward is sparse, in section 6, on tasks 1-5, you then say there is a reward at each correct emission, i.e. each time step. This is only 'corrected' to end-of-episode-reward in section 7.4, after having discussed results. I'd move or mention this in section 6.\n- approach seems quite sensible to tau being in the same range as logpi(a\"h), but you only try tau=0.1 for UREX. I'm not sure I understand nor agree with this experimentation choice.\n- an alternative to grid search is random search (Bergstra&Bengio, 2012). It may illustrate better hyperparameter robustness, and allow you to explore more in the same number of experiment.\nopinion:\n- An interesting approach to policy-gradient, to be sure. It tackles the very important question of \"how should agents explore?\"\n- I'm ambivalent to claiming that an algorithm is robust to hyperparmeters simply because it performs better on the selected hyperparameter range. All you really show is that it performs well some amount of time when the hyperparams lay in that range. Couldn't it be that MENT needs different hyperparameters? (Just being devil's advocate here)\n- I see why matching 1/tau with logpi is the obvious choice, but it implies a very strong prior: that the reward (to a factor of 1/tau) lies in the same space as the log policy. One point of failure I see (but correct me if I'm wrong) is that as the length of the trajectory grows the reward is expected to grow linearly, so short ways to get some reward will be less explored than long ways of getting the same reward, creating an imbalance unless the reward is shaped such that shorter trajectories get more reward (which is only the case in task 6).\n- It might have been good to also compare with methods explicitly trying to explore better with value-functions (e.g. prioritized experience replay, Schaul et al 2015)\n- At the risk of repeating myself, tau plays a major role in this method, but there is little analysis on its effect on experiments.\nThe methodology and reasoning is clearly explained and I think this paper communicates its message very well.\nThat message is novel, albeit a minor modification to a well-known algorithm, it is well motivated and, I think, a welcome addition to literature concerning exploration in RL.\nThe experiments are chosen accordingly, and results seem to reflect the hypothesis of the authors.\nI realize the tyranny of extensive experimentation and the scarcity of time, but I do think that this paper would benefit from more (or cleverer) experimentation, as well as demonstrating more explicitly the impact of the method on exploration.\nReading this paper convinced me that measuring mismatch between a trajectory's observed reward and its probability given the current policy is a clever (and well motivated) thing to do. Yet, I think that the paper could have a more convincing empirical argument, even if it is for toy tasks."
+        }
+    ]
+}

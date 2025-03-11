@@ -1,0 +1,342 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "311bcc32-e17b-4c36-ad48-bbe6bbff73b8",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9990317225456238,
+                    "sentence": "This paper explores three straightforward weight-pruning techniques for neural machine translation (NMT) and demonstrates that magnitude-based pruning outperforms the others.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965923428535461,
+                    "sentence": "It also shows that retraining after pruning can restore the original performance, even under significant pruning levels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977583289146423,
+                    "sentence": "The primary strength of this paper lies in the simplicity of the technique and the strong results achieved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965412020683289,
+                    "sentence": "The writing is clear, and the paper does a commendable job of situating the work within the context of prior research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9954636096954346,
+                    "sentence": "However, a notable weakness is the limited novelty of the work, as it primarily applies an established technique to a new type of neural network and task (NMT), yielding results that are not particularly unexpected.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9898179769515991,
+                    "sentence": "Additionally, the practical implications of the findings are unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9824981093406677,
+                    "sentence": "Leveraging these results would require sparse matrix representations, which are challenging to optimize for GPU performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919511675834656,
+                    "sentence": "Since speed, rather than memory, is the primary bottleneck in NMT, the relevance of pruning is questionable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912989735603333,
+                    "sentence": "If there is recent work addressing this issue, it should be discussed, and the paper should better articulate why pruning is important in this context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9885843396186829,
+                    "sentence": "One way to address this limitation could be to use the pruning results to guide architectural modifications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992094874382019,
+                    "sentence": "For example, Figure 3 suggests the possibility of reducing the number of hidden layers to two and potentially decreasing the dimensionality of source and target embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9878080487251282,
+                    "sentence": "Another suggestion is to explore connections between pruning with retraining and dropout.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9921950697898865,
+                    "sentence": "For instance, the paper \"A Theoretically Grounded Application of Dropout in Recurrent Neural Networks\" (Gal, arXiv 2016) might provide a useful theoretical link.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997021555900574,
+                    "sentence": "Detailed Comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998420476913452,
+                    "sentence": "- Line 111: Consider replacing \"softmax weights\" with \"output embeddings,\" which may be a more precise term.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997314810752869,
+                    "sentence": "- Section 3.2: Referring to n as the \"dimension\" of the network is misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998555183410645,
+                    "sentence": "Presenting parameter sizes as integer multiples of n implies a logical constraint that may not exist.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997665882110596,
+                    "sentence": "- Line 319: Cite Bahdanau et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996524453163147,
+                    "sentence": "for the attention mechanism rather than Luong, as the former introduced the concept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996994137763977,
+                    "sentence": "- Section 3.3: The distinction between class-uniform and class-distribution pruning is minimal, as evidenced by their similar results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997223615646362,
+                    "sentence": "Consider removing one of these approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996231198310852,
+                    "sentence": "- Figure 3: Suggest exploring hybrid pruning strategies, such as applying class-blind pruning for most classes and class-uniform pruning for embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996130466461182,
+                    "sentence": "- Figure 4: Include perplexity as an additional metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997719526290894,
+                    "sentence": "- Section 4.2 & Figure 6: Clarify which pruning method is being used.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998645782470703,
+                    "sentence": "- Figure 7: Specify whether the loss pertains to the training or test datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998713731765747,
+                    "sentence": "- Figure 8: The diagram appears to omit softmax weights and is somewhat difficult to interpret.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999847412109375,
+                    "sentence": "Consider providing relevant statistics, such as the proportion of each class removed by class-blind pruning at different levels.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997205138206482,
+                    "sentence": "- Line 762: Cite Le et al., \"A Simple Way to Initialize Recurrent Networks of Rectified Linear Units\" (arXiv 2015), as a relevant reference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper explores three straightforward weight-pruning techniques for neural machine translation (NMT) and demonstrates that magnitude-based pruning outperforms the others. It also shows that retraining after pruning can restore the original performance, even under significant pruning levels.\nThe primary strength of this paper lies in the simplicity of the technique and the strong results achieved. The writing is clear, and the paper does a commendable job of situating the work within the context of prior research.\nHowever, a notable weakness is the limited novelty of the work, as it primarily applies an established technique to a new type of neural network and task (NMT), yielding results that are not particularly unexpected. \nAdditionally, the practical implications of the findings are unclear. Leveraging these results would require sparse matrix representations, which are challenging to optimize for GPU performance. Since speed, rather than memory, is the primary bottleneck in NMT, the relevance of pruning is questionable. If there is recent work addressing this issue, it should be discussed, and the paper should better articulate why pruning is important in this context.\nOne way to address this limitation could be to use the pruning results to guide architectural modifications. For example, Figure 3 suggests the possibility of reducing the number of hidden layers to two and potentially decreasing the dimensionality of source and target embeddings.\nAnother suggestion is to explore connections between pruning with retraining and dropout. For instance, the paper \"A Theoretically Grounded Application of Dropout in Recurrent Neural Networks\" (Gal, arXiv 2016) might provide a useful theoretical link.\nDetailed Comments:\n- Line 111: Consider replacing \"softmax weights\" with \"output embeddings,\" which may be a more precise term.\n \n- Section 3.2: Referring to n as the \"dimension\" of the network is misleading. Presenting parameter sizes as integer multiples of n implies a logical constraint that may not exist.\n- Line 319: Cite Bahdanau et al. for the attention mechanism rather than Luong, as the former introduced the concept.\n- Section 3.3: The distinction between class-uniform and class-distribution pruning is minimal, as evidenced by their similar results. Consider removing one of these approaches.\n- Figure 3: Suggest exploring hybrid pruning strategies, such as applying class-blind pruning for most classes and class-uniform pruning for embeddings.\n- Figure 4: Include perplexity as an additional metric.\n- Section 4.2 & Figure 6: Clarify which pruning method is being used.\n- Figure 7: Specify whether the loss pertains to the training or test datasets.\n- Figure 8: The diagram appears to omit softmax weights and is somewhat difficult to interpret. Consider providing relevant statistics, such as the proportion of each class removed by class-blind pruning at different levels.\n- Line 762: Cite Le et al., \"A Simple Way to Initialize Recurrent Networks of Rectified Linear Units\" (arXiv 2015), as a relevant reference."
+        }
+    ]
+}

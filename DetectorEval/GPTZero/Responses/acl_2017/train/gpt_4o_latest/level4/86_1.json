@@ -1,0 +1,339 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "20fb0925-4f96-4202-9201-affb6dd751a7",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999117851257324,
+                    "sentence": "Summary: The paper introduces a neural model designed to predict Python syntax trees from textual descriptions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999100565910339,
+                    "sentence": "The model operates by generating tree nodes sequentially in a depth-first manner, guided by Python's grammar.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998009204864502,
+                    "sentence": "Key contributions include incorporating parent node information into the LSTM input, employing a pointer network for copying terminal symbols, and applying unary closure to collapse chains of unary productions, thereby simplifying the tree structure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997735023498535,
+                    "sentence": "The model is evaluated across three datasets from different domains and demonstrates superior performance compared to nearly all prior approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999535322189331,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998308002948761,
+                    "sentence": "The paper is well-written, with clear explanations of the system and thorough analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9911594986915588,
+                    "sentence": "The proposed system builds naturally on existing ideas.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994629979133606,
+                    "sentence": "Closely related works include tree-based generation with parent feeding (Dong and Lapata, 2016) and RNN-based semantic parsing with copy mechanisms (Jia and Liang, 2016; Ling et al., 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969063997268677,
+                    "sentence": "[Grammar-guided parsing has also been explored in Chen Liang et al., 2016 (https://arxiv.org/abs/1611.00020), where a code-assist system ensures code validity.]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958975911140442,
+                    "sentence": "However, this paper's model distinguishes itself by generating significantly longer and more complex programs than most of the aforementioned works.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997692883014679,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961326718330383,
+                    "sentence": "The evaluation relies on code accuracy (exact match) and BLEU score, which may not be ideal for assessing program correctness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944896697998047,
+                    "sentence": "For example, as shown in the first example in Table 5, while the first two lines in boxes A and B differ, their semantics are identical.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995293915271759,
+                    "sentence": "Similarly, variable names may differ without affecting functionality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937406182289124,
+                    "sentence": "Evaluation based on program behavior (e.g., using test cases or static code analysis) would provide stronger evidence of correctness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9922587275505066,
+                    "sentence": "Another evaluation concern is that baseline systems (e.g., NMT) may produce syntactically invalid code.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959436058998108,
+                    "sentence": "Could the authors include results for the highest-scoring syntactically valid code (e.g., using beam search) generated by these baselines?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979110360145569,
+                    "sentence": "This would enable a fairer comparison, as these systems could choose to discard malformed outputs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9157488346099854,
+                    "sentence": "General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9234031438827515,
+                    "sentence": "* Lines 120-121: Some prior approaches using domain-specific languages also incorporated grammar guidance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.863983690738678,
+                    "sentence": "For instance, Berant and Liang, 2014, employed a limited grammar for logical forms (Table 1).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.879219651222229,
+                    "sentence": "Comparing to such works while emphasizing that this paper's grammar is significantly larger would strengthen the contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7204235792160034,
+                    "sentence": "* Lines 389-397: Regarding the parent feeding mechanism, does the model account for the child index?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6100366115570068,
+                    "sentence": "Specifically, is p_t different when generating a first child versus a second child?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6300992965698242,
+                    "sentence": "In Seq2Tree (Dong and Lapata, 2016), different hidden states are used for the two non-terminals.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7798681855201721,
+                    "sentence": "* Line 373: Are the possible tokens embedded?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.713619589805603,
+                    "sentence": "Does the model assume that the set of possible tokens is predefined?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.544367790222168,
+                    "sentence": "* The examples in the appendix are well-presented and helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9546195268630981,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.21956133842468262,
+                    "sentence": "I have reviewed the authors' response.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Summary: The paper introduces a neural model designed to predict Python syntax trees from textual descriptions. The model operates by generating tree nodes sequentially in a depth-first manner, guided by Python's grammar. Key contributions include incorporating parent node information into the LSTM input, employing a pointer network for copying terminal symbols, and applying unary closure to collapse chains of unary productions, thereby simplifying the tree structure. The model is evaluated across three datasets from different domains and demonstrates superior performance compared to nearly all prior approaches.\nStrengths:\nThe paper is well-written, with clear explanations of the system and thorough analysis.\nThe proposed system builds naturally on existing ideas. Closely related works include tree-based generation with parent feeding (Dong and Lapata, 2016) and RNN-based semantic parsing with copy mechanisms (Jia and Liang, 2016; Ling et al., 2016). [Grammar-guided parsing has also been explored in Chen Liang et al., 2016 (https://arxiv.org/abs/1611.00020), where a code-assist system ensures code validity.] However, this paper's model distinguishes itself by generating significantly longer and more complex programs than most of the aforementioned works.\nWeaknesses:\nThe evaluation relies on code accuracy (exact match) and BLEU score, which may not be ideal for assessing program correctness. For example, as shown in the first example in Table 5, while the first two lines in boxes A and B differ, their semantics are identical. Similarly, variable names may differ without affecting functionality. Evaluation based on program behavior (e.g., using test cases or static code analysis) would provide stronger evidence of correctness.\nAnother evaluation concern is that baseline systems (e.g., NMT) may produce syntactically invalid code. Could the authors include results for the highest-scoring syntactically valid code (e.g., using beam search) generated by these baselines? This would enable a fairer comparison, as these systems could choose to discard malformed outputs.\nGeneral Discussion:\n* Lines 120-121: Some prior approaches using domain-specific languages also incorporated grammar guidance. For instance, Berant and Liang, 2014, employed a limited grammar for logical forms (Table 1). Comparing to such works while emphasizing that this paper's grammar is significantly larger would strengthen the contribution.\n* Lines 389-397: Regarding the parent feeding mechanism, does the model account for the child index? Specifically, is p_t different when generating a first child versus a second child? In Seq2Tree (Dong and Lapata, 2016), different hidden states are used for the two non-terminals.\n* Line 373: Are the possible tokens embedded? Does the model assume that the set of possible tokens is predefined?\n* The examples in the appendix are well-presented and helpful.\n---\nI have reviewed the authors' response."
+        }
+    ]
+}

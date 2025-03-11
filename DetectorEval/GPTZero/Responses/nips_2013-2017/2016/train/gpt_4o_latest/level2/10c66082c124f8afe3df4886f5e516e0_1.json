@@ -1,0 +1,397 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "06dd69a8-5c5d-43f2-9558-9088634bf6a8",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999903440475464,
+                    "sentence": "The paper presents a novel supervised metric learning approach, Supervised Word Mover's Distance (S-WMD), which extends the unsupervised Word Mover's Distance (WMD) by incorporating supervision to improve document classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999872446060181,
+                    "sentence": "The authors propose an efficient training method that minimizes leave-one-out classification error by learning an affine transformation of the word embedding space and a word-importance weight vector.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999887943267822,
+                    "sentence": "They address the computational challenge of WMD by leveraging the Sinkhorn distance, a relaxed version of the optimal transport problem, to achieve efficient gradient updates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "The method is evaluated on eight real-world text classification datasets, where it consistently outperforms 26 competitive baselines, including both unsupervised and supervised methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966025352478,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999861717224121,
+                    "sentence": "1. Novelty and Contribution: The paper makes a significant contribution by introducing a supervised extension to WMD, which was previously unsupervised.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999904632568359,
+                    "sentence": "The combination of learning a linear transformation and word-importance weights is innovative and adds flexibility to the metric.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999880790710449,
+                    "sentence": "2. Technical Soundness: The proposed method is well-grounded in theory, and the authors provide detailed derivations for the gradient computation and optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926686286926,
+                    "sentence": "The use of the Sinkhorn distance to approximate the WMD gradient is a clever and practical solution to the computational bottleneck.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999926090240479,
+                    "sentence": "3. Empirical Results: The experimental evaluation is thorough, with comparisons against a wide range of baselines across diverse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999921321868896,
+                    "sentence": "The consistent improvement in kNN classification error demonstrates the effectiveness of S-WMD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999868273735046,
+                    "sentence": "4. Efficiency: The authors address computational challenges effectively, showing that S-WMD can be trained efficiently with batch gradient descent and fast approximations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999744296073914,
+                    "sentence": "5. Visualization: The t-SNE visualizations and word importance analysis provide intuitive insights into the learned metric and its impact on classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999570846557617,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998905062675476,
+                    "sentence": "1. Initialization Sensitivity: The method relies heavily on a good initialization of the metric (via S-WCD), which may not always generalize well across datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996271133422852,
+                    "sentence": "Poor initialization could explain suboptimal performance on certain datasets like CLASSIC.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998409152030945,
+                    "sentence": "2. Dataset-Specific Performance: While S-WMD performs well overall, it does not consistently outperform all baselines on every dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997697472572327,
+                    "sentence": "For example, it achieves only the fourth-lowest error on BBCSPORT and CLASSIC, suggesting potential limitations in handling long documents or specific data distributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998470544815063,
+                    "sentence": "3. Scalability: Although the authors improve computational efficiency, the quadratic complexity with respect to document size may still pose challenges for very large datasets or corpora with high vocabulary sizes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992112517356873,
+                    "sentence": "4. Clarity of Presentation: The paper is dense with technical details, which may make it less accessible to readers unfamiliar with optimal transport or metric learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985540509223938,
+                    "sentence": "Simplifying some explanations or including more intuitive examples could improve clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987344741821289,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978933334350586,
+                    "sentence": "I recommend accepting this paper for its strong contributions to supervised metric learning and its demonstrated empirical success.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999737560749054,
+                    "sentence": "While there are minor concerns regarding initialization sensitivity and scalability, the proposed method is a significant advancement over existing approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999611496925354,
+                    "sentence": "The authors could further strengthen the paper by discussing potential extensions to address these limitations, such as exploring alternative initialization strategies or adapting the method for larger datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999351501464844,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997830986976624,
+                    "sentence": "- Novel and impactful contribution to supervised document distance metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999470055103302,
+                    "sentence": "- Strong empirical results across diverse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995502233505249,
+                    "sentence": "- Efficient and practical solution to computational challenges.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997759461402893,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994673132896423,
+                    "sentence": "- Sensitivity to initialization and dataset-specific performance variations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996348023414612,
+                    "sentence": "- Potential scalability issues for very large datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994887709617615,
+                    "sentence": "Overall, the strengths of this work outweigh its weaknesses, and it represents a valuable addition to the field of text classification and metric learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9961636828644501,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9961636828644501,
+                "mixed": 0.003836317135549872
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9961636828644501,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9961636828644501,
+                    "human": 0,
+                    "mixed": 0.003836317135549872
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel supervised metric learning approach, Supervised Word Mover's Distance (S-WMD), which extends the unsupervised Word Mover's Distance (WMD) by incorporating supervision to improve document classification. The authors propose an efficient training method that minimizes leave-one-out classification error by learning an affine transformation of the word embedding space and a word-importance weight vector. They address the computational challenge of WMD by leveraging the Sinkhorn distance, a relaxed version of the optimal transport problem, to achieve efficient gradient updates. The method is evaluated on eight real-world text classification datasets, where it consistently outperforms 26 competitive baselines, including both unsupervised and supervised methods.\nStrengths:\n1. Novelty and Contribution: The paper makes a significant contribution by introducing a supervised extension to WMD, which was previously unsupervised. The combination of learning a linear transformation and word-importance weights is innovative and adds flexibility to the metric.\n2. Technical Soundness: The proposed method is well-grounded in theory, and the authors provide detailed derivations for the gradient computation and optimization. The use of the Sinkhorn distance to approximate the WMD gradient is a clever and practical solution to the computational bottleneck.\n3. Empirical Results: The experimental evaluation is thorough, with comparisons against a wide range of baselines across diverse datasets. The consistent improvement in kNN classification error demonstrates the effectiveness of S-WMD.\n4. Efficiency: The authors address computational challenges effectively, showing that S-WMD can be trained efficiently with batch gradient descent and fast approximations.\n5. Visualization: The t-SNE visualizations and word importance analysis provide intuitive insights into the learned metric and its impact on classification.\nWeaknesses:\n1. Initialization Sensitivity: The method relies heavily on a good initialization of the metric (via S-WCD), which may not always generalize well across datasets. Poor initialization could explain suboptimal performance on certain datasets like CLASSIC.\n2. Dataset-Specific Performance: While S-WMD performs well overall, it does not consistently outperform all baselines on every dataset. For example, it achieves only the fourth-lowest error on BBCSPORT and CLASSIC, suggesting potential limitations in handling long documents or specific data distributions.\n3. Scalability: Although the authors improve computational efficiency, the quadratic complexity with respect to document size may still pose challenges for very large datasets or corpora with high vocabulary sizes.\n4. Clarity of Presentation: The paper is dense with technical details, which may make it less accessible to readers unfamiliar with optimal transport or metric learning. Simplifying some explanations or including more intuitive examples could improve clarity.\nRecommendation:\nI recommend accepting this paper for its strong contributions to supervised metric learning and its demonstrated empirical success. While there are minor concerns regarding initialization sensitivity and scalability, the proposed method is a significant advancement over existing approaches. The authors could further strengthen the paper by discussing potential extensions to address these limitations, such as exploring alternative initialization strategies or adapting the method for larger datasets.\nArguments for Acceptance:\n- Novel and impactful contribution to supervised document distance metrics.\n- Strong empirical results across diverse datasets.\n- Efficient and practical solution to computational challenges.\nArguments Against Acceptance:\n- Sensitivity to initialization and dataset-specific performance variations.\n- Potential scalability issues for very large datasets.\nOverall, the strengths of this work outweigh its weaknesses, and it represents a valuable addition to the field of text classification and metric learning."
+        }
+    ]
+}

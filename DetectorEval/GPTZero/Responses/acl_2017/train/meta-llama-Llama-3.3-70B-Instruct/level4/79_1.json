@@ -1,0 +1,272 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "35fa1b5a-7102-4468-8c70-b3524a7abdb8",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9997583031654358,
+                    "sentence": "This manuscript addresses the issue of knowledge base completion, proposing the ITransF model, which introduces a novel approach to parameter sharing across different relations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996134042739868,
+                    "sentence": "Unlike the STransE model, which assigns a unique matrix to each relation, ITransF constructs a tensor D comprising various relational matrices as its slices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995988011360168,
+                    "sentence": "A selectional vector, denoted as \\alpha, is utilized to select a subset of relevant relational matrices for composing a particular semantic relation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990388751029968,
+                    "sentence": "The authors also discuss a method to induce sparsity in \\alpha.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999170184135437,
+                    "sentence": "The experimental results on two benchmark datasets demonstrate the superiority of ITransF over previous proposals.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.988664448261261,
+                    "sentence": "The paper is well-structured, and the experimental results are compelling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928497672080994,
+                    "sentence": "However, several concerns need to be addressed by the authors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9854793548583984,
+                    "sentence": "1. Simply arranging relational matrices in a tensor and selecting (or taking a linearly weighted sum of) the relational matrices does not guarantee information sharing between them.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9941338300704956,
+                    "sentence": "A more effective approach would involve tensor decomposition, projecting the different slices into a common lower-dimensional core tensor, thereby facilitating information sharing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997676432132721,
+                    "sentence": "It is unclear why this approach was not adopted, given the motivation to share information across relational matrices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9910767078399658,
+                    "sentence": "2. The two objectives of sharing information across different relational matrices and inducing sparsity in the attention vectors seem contradictory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9903324842453003,
+                    "sentence": "If the attention vector is truly sparse, with many zeros, information will not be propagated to the corresponding slices during optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9817290902137756,
+                    "sentence": "3. The authors devote considerable space to discussing techniques for computing sparse attention vectors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3373583257198334,
+                    "sentence": "Although they mention that \\ell1 regularization was ineffective in preliminary experiments, no experimental results are provided to support this claim, and the reasons for its unsuitability are not explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.30879098176956177,
+                    "sentence": "To this reviewer, \\ell1 regularization appears to be an obvious baseline, particularly given its ease of optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.27002060413360596,
+                    "sentence": "The use of \\ell0 regularization leads to NP-hard optimizations, which could have been avoided by using \\ell1 regularization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9461819529533386,
+                    "sentence": "4. The vector \\alpha performs selection or weighting over the slices of D. Referring to this as \"attention\" may be misleading, as this term is typically used in NLP to describe a different type of model, such as those used in machine translation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9333558082580566,
+                    "sentence": "5. It is unclear why the optimization process is initialized with pre-trained embeddings from TransE.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9584129452705383,
+                    "sentence": "Why not randomly initialize the embeddings, as done in TransE, and then update them?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.951068639755249,
+                    "sentence": "Using TransE as the initial point may not provide a fair comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917562007904053,
+                    "sentence": "The concept of learning associations between semantic relations has been explored in related NLP problems, such as relational similarity measurement and relation adaptation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9898372888565063,
+                    "sentence": "It would be beneficial to contextualize the current work within the framework of these prior proposals, which model inter-relational correlation and similarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9913995862007141,
+                    "sentence": "Overall, the paper presents an interesting approach to knowledge base completion, but addressing these concerns will strengthen the manuscript and provide a more comprehensive understanding of the proposed model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.013701276613118245
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This manuscript addresses the issue of knowledge base completion, proposing the ITransF model, which introduces a novel approach to parameter sharing across different relations. Unlike the STransE model, which assigns a unique matrix to each relation, ITransF constructs a tensor D comprising various relational matrices as its slices. A selectional vector, denoted as \\alpha, is utilized to select a subset of relevant relational matrices for composing a particular semantic relation. The authors also discuss a method to induce sparsity in \\alpha. The experimental results on two benchmark datasets demonstrate the superiority of ITransF over previous proposals.\nThe paper is well-structured, and the experimental results are compelling. However, several concerns need to be addressed by the authors. \n1. Simply arranging relational matrices in a tensor and selecting (or taking a linearly weighted sum of) the relational matrices does not guarantee information sharing between them. A more effective approach would involve tensor decomposition, projecting the different slices into a common lower-dimensional core tensor, thereby facilitating information sharing. It is unclear why this approach was not adopted, given the motivation to share information across relational matrices.\n2. The two objectives of sharing information across different relational matrices and inducing sparsity in the attention vectors seem contradictory. If the attention vector is truly sparse, with many zeros, information will not be propagated to the corresponding slices during optimization.\n3. The authors devote considerable space to discussing techniques for computing sparse attention vectors. Although they mention that \\ell1 regularization was ineffective in preliminary experiments, no experimental results are provided to support this claim, and the reasons for its unsuitability are not explained. To this reviewer, \\ell1 regularization appears to be an obvious baseline, particularly given its ease of optimization. The use of \\ell0 regularization leads to NP-hard optimizations, which could have been avoided by using \\ell1 regularization.\n4. The vector \\alpha performs selection or weighting over the slices of D. Referring to this as \"attention\" may be misleading, as this term is typically used in NLP to describe a different type of model, such as those used in machine translation.\n5. It is unclear why the optimization process is initialized with pre-trained embeddings from TransE. Why not randomly initialize the embeddings, as done in TransE, and then update them? Using TransE as the initial point may not provide a fair comparison.\nThe concept of learning associations between semantic relations has been explored in related NLP problems, such as relational similarity measurement and relation adaptation. It would be beneficial to contextualize the current work within the framework of these prior proposals, which model inter-relational correlation and similarity.\nOverall, the paper presents an interesting approach to knowledge base completion, but addressing these concerns will strengthen the manuscript and provide a more comprehensive understanding of the proposed model."
+        }
+    ]
+}

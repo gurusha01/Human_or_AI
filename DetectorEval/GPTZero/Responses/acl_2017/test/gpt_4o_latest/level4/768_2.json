@@ -1,0 +1,496 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b2a8244f-e40f-4821-bb45-b5a2075cdbef",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9710733890533447,
+                    "sentence": "This paper introduces a method for recognizing lexical entailment (specifically, hypernymy) within context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9501012563705444,
+                    "sentence": "The approach involves representing each context by averaging, min-pooling, and max-pooling its word embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9525238871574402,
+                    "sentence": "These representations are then combined with the target word's embedding using element-wise multiplication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9571118950843811,
+                    "sentence": "The in-context representation of the left-hand-side argument is concatenated with that of the right-hand-side argument, forming a single vectorial representation of the input.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9625564813613892,
+                    "sentence": "This vector is subsequently fed into a logistic regression classifier.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9734888076782227,
+                    "sentence": "In my assessment, the paper has two significant shortcomings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9662057757377625,
+                    "sentence": "First, the classification model employed (concatenation + linear classifier) has been shown to be fundamentally incapable of learning relations, as demonstrated in \"Do Supervised Distributional Methods Really Learn Lexical Inference Relations?\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9480375051498413,
+                    "sentence": "(Levy et al., 2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9473247528076172,
+                    "sentence": "Second, the paper makes claims of superiority that are not convincingly supported by the quantitative results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9488796591758728,
+                    "sentence": "Additionally, there are issues with clarity and the experimental setup, which collectively give the impression that the paper is not fully polished.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966113567352295,
+                    "sentence": "= Classification Model =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.981867253780365,
+                    "sentence": "Using concatenated word vectors as input for a linear classifier has been mathematically proven to be insufficient for learning word relations (Levy et al., 2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9796530604362488,
+                    "sentence": "What motivates the use of this model in a contextual setting?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9754011034965515,
+                    "sentence": "Although the addition of similarity features might partially address this limitation, these features are all symmetric (e.g., Euclidean distance, since \"L-R\" = \"R-L\").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9867520332336426,
+                    "sentence": "Why should we expect such features to effectively detect entailment?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.973949134349823,
+                    "sentence": "I remain unconvinced that this classification model is suitable for the task at hand.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9741067290306091,
+                    "sentence": "= Superiority Claims =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9522140622138977,
+                    "sentence": "The authors assert that their contextual representation outperforms context2vec.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.976599931716919,
+                    "sentence": "However, this claim is not substantiated in the paper for the following reasons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9813410043716431,
+                    "sentence": "1) The highest F1 scores in both Table 3 and Table 4 (excluding PPDB features) are found in the 7th row.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9725953936576843,
+                    "sentence": "Based on my understanding, this variant does not utilize the proposed contextual representation; rather, it employs the context2vec representation for the word type.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9503771066665649,
+                    "sentence": "2) The experiment relies on pre-trained embeddings (GloVe) and parameters (context2vec) that were optimized on entirely different datasets of varying sizes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9363282322883606,
+                    "sentence": "Comparing these methods is empirically flawed and likely biased in favor of the method using GloVe, which was trained on a much larger corpus.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.88572096824646,
+                    "sentence": "Moreover, it seems that the primary performance improvement stems from the inclusion of similarity features rather than the proposed contextual representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9870429039001465,
+                    "sentence": "This observation is not adequately discussed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947150945663452,
+                    "sentence": "= Miscellaneous Comments =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9932281374931335,
+                    "sentence": "- I appreciated the use of the WordNet dataset; leveraging example sentences is a clever approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9872685670852661,
+                    "sentence": "- The motivation for the cross-lingual lexical entailment task is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9860239028930664,
+                    "sentence": "Why is this task interesting or reasonable?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9893847703933716,
+                    "sentence": "- Some basic baselines are missing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9805290699005127,
+                    "sentence": "Instead of the \"random\" baseline, how does the \"all true\" baseline perform?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.975844144821167,
+                    "sentence": "Additionally, what about the context-agnostic symmetric cosine similarity between the two target words?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9889559745788574,
+                    "sentence": "- The tables are difficult to interpret.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994481086730957,
+                    "sentence": "Captions should make the tables self-explanatory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9854699969291687,
+                    "sentence": "Furthermore, the meaning of each variant is unclear; providing a more detailed description in the text could help readers better understand.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.970332145690918,
+                    "sentence": "- The PPDB-specific features are not clearly explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9715755581855774,
+                    "sentence": "- Section 8.1 was difficult to comprehend.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9808879494667053,
+                    "sentence": "- Table 4 is overfull.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9693978428840637,
+                    "sentence": "- In Table 4, the F1 score for \"random\" should be 0.25.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9749752879142761,
+                    "sentence": "- There is a typo in line 462: it should reference \"Table 3.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9946693181991577,
+                    "sentence": "= Author Response =",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9856870174407959,
+                    "sentence": "Thank you for addressing my comments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9669730067253113,
+                    "sentence": "However, there are still unresolved issues that prevent me from recommending acceptance of this paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9761143922805786,
+                    "sentence": "- My concern with the base model is not that it learns prototypical hypernyms, but that it is mathematically incapable of learning a relation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9695219397544861,
+                    "sentence": "- It seems we have differing interpretations of Tables 3 and 4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9764546751976013,
+                    "sentence": "This may be a clarity issue, but it hinders my ability to understand how the claim that contextual representations significantly improve performance is supported.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9828943610191345,
+                    "sentence": "Additionally, it appears that other factors, such as similarity features, have a larger impact on performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.7012240715000121,
+            "class_probabilities": {
+                "human": 0.2976865220809293,
+                "ai": 0.7012240715000121,
+                "mixed": 0.0010894064190585953
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7012240715000121,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7012240715000121,
+                    "human": 0.2976865220809293,
+                    "mixed": 0.0010894064190585953
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a method for recognizing lexical entailment (specifically, hypernymy) within context. The approach involves representing each context by averaging, min-pooling, and max-pooling its word embeddings. These representations are then combined with the target word's embedding using element-wise multiplication. The in-context representation of the left-hand-side argument is concatenated with that of the right-hand-side argument, forming a single vectorial representation of the input. This vector is subsequently fed into a logistic regression classifier.\nIn my assessment, the paper has two significant shortcomings. First, the classification model employed (concatenation + linear classifier) has been shown to be fundamentally incapable of learning relations, as demonstrated in \"Do Supervised Distributional Methods Really Learn Lexical Inference Relations?\" (Levy et al., 2015). Second, the paper makes claims of superiority that are not convincingly supported by the quantitative results. Additionally, there are issues with clarity and the experimental setup, which collectively give the impression that the paper is not fully polished.\n= Classification Model =\nUsing concatenated word vectors as input for a linear classifier has been mathematically proven to be insufficient for learning word relations (Levy et al., 2015). What motivates the use of this model in a contextual setting?\nAlthough the addition of similarity features might partially address this limitation, these features are all symmetric (e.g., Euclidean distance, since \"L-R\" = \"R-L\"). Why should we expect such features to effectively detect entailment?\nI remain unconvinced that this classification model is suitable for the task at hand.\n= Superiority Claims =\nThe authors assert that their contextual representation outperforms context2vec. However, this claim is not substantiated in the paper for the following reasons:\n1) The highest F1 scores in both Table 3 and Table 4 (excluding PPDB features) are found in the 7th row. Based on my understanding, this variant does not utilize the proposed contextual representation; rather, it employs the context2vec representation for the word type.\n2) The experiment relies on pre-trained embeddings (GloVe) and parameters (context2vec) that were optimized on entirely different datasets of varying sizes. Comparing these methods is empirically flawed and likely biased in favor of the method using GloVe, which was trained on a much larger corpus.\nMoreover, it seems that the primary performance improvement stems from the inclusion of similarity features rather than the proposed contextual representation. This observation is not adequately discussed.\n= Miscellaneous Comments =\n- I appreciated the use of the WordNet dataset; leveraging example sentences is a clever approach.\n- The motivation for the cross-lingual lexical entailment task is unclear. Why is this task interesting or reasonable?\n- Some basic baselines are missing. Instead of the \"random\" baseline, how does the \"all true\" baseline perform? Additionally, what about the context-agnostic symmetric cosine similarity between the two target words?\n- The tables are difficult to interpret. Captions should make the tables self-explanatory. Furthermore, the meaning of each variant is unclear; providing a more detailed description in the text could help readers better understand.\n- The PPDB-specific features are not clearly explained.\n- Section 8.1 was difficult to comprehend.\n- Table 4 is overfull.\n- In Table 4, the F1 score for \"random\" should be 0.25.\n- There is a typo in line 462: it should reference \"Table 3.\"\n= Author Response =\nThank you for addressing my comments. However, there are still unresolved issues that prevent me from recommending acceptance of this paper:\n- My concern with the base model is not that it learns prototypical hypernyms, but that it is mathematically incapable of learning a relation.\n- It seems we have differing interpretations of Tables 3 and 4. This may be a clarity issue, but it hinders my ability to understand how the claim that contextual representations significantly improve performance is supported. Additionally, it appears that other factors, such as similarity features, have a larger impact on performance."
+        }
+    ]
+}

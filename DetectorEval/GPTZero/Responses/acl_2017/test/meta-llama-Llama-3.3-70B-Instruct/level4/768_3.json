@@ -1,0 +1,338 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e88e543c-39ed-4ad7-9284-0b581d2d35a6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999433755874634,
+                    "sentence": "This manuscript explores the task of detecting lexical entailment in context, which is crucial for question answering.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999861717224121,
+                    "sentence": "The key contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999462962150574,
+                    "sentence": "(1) the development of a novel dataset derived from WordNet, utilizing synset exemplar sentences, and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99995356798172,
+                    "sentence": "(2) the introduction of a \"context relevance mask\" for word vectors, achieved through element-wise multiplication with feature vectors extracted from the context sentence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999573826789856,
+                    "sentence": "When fed into a logistic regression classifier, the masked word vectors achieve state-of-the-art performance on entailment prediction in a PPDB-derived dataset from previous literature, albeit by a small margin.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999478459358215,
+                    "sentence": "Furthermore, when combined with existing features, they surpass the state-of-the-art by a few points.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999571442604065,
+                    "sentence": "The masked representations also outperform the baseline on the new WN-derived dataset, although the top-performing method on this dataset does not utilize the masked representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999729990959167,
+                    "sentence": "The paper also presents simple word similarity features, including cosine and Euclidean distance, which complement other cross-context similarity features from prior literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999728202819824,
+                    "sentence": "While the collective similarity features significantly enhance classification results, the contribution of the features introduced in this paper is relatively modest.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999734163284302,
+                    "sentence": "The research task is intriguing, and the methodology appears to be sound, albeit incremental.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999715685844421,
+                    "sentence": "The approach to generating mask vectors is adapted from existing work on encoding variable-length sequences into min/max/mean vectors, but its application as a mask is novel.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999655485153198,
+                    "sentence": "However, excluding PPDB features, it seems that the best result is achieved without using the representation introduced in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999731779098511,
+                    "sentence": "Several specific points warrant further clarification:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999701976776123,
+                    "sentence": "In constructing the new Context-WN dataset, it is unclear whether the \"permuted\" examples lead to a significant number of false negatives due to similar synsets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5692841410636902,
+                    "sentence": "Specifically, if a word has synsets i and j, is it guaranteed that the exemplar context for a hypernym synset of j is a poor entailment context for i, especially when i and j are semantically close?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5184414982795715,
+                    "sentence": "The performance degradation caused by the masked representation when used with context-agnostic word vectors (as seen in rows 3 and 5 of Table 3) is puzzling, given the strong performance in row 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.619070291519165,
+                    "sentence": "It is expected that the classifier would learn to disregard the context-agnostic features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6829368472099304,
+                    "sentence": "The paper should clearly distinguish between the new similarity measures and those drawn from previous literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7143641114234924,
+                    "sentence": "The current statement that prior work used the \"most salient\" similarity features lacks clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.640432596206665,
+                    "sentence": "The contribution of the masked vectors versus the similarity features should be more explicitly stated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7536221742630005,
+                    "sentence": "It appears that the similarity features are driving the majority of the improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8103587031364441,
+                    "sentence": "The intuition behind the Macro-F1 measure and its relation to the sensitivity of models to context changes is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8004894852638245,
+                    "sentence": "What specific changes are being referred to, and how does Macro-F1 compare to F1?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7246350049972534,
+                    "sentence": "The cross-language task lacks clear motivation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8686349987983704,
+                    "sentence": "A relevant citation is missing: \"Learning to Distinguish Hypernyms and Co-Hyponyms\" by Julie Weeds et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9076966047286987,
+                    "sentence": "(COLING 2014).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9205346703529358,
+                    "sentence": "Upon reviewing the author's response, it is noted that the similarity features indeed contribute the most to the improvement in F-score on the two datasets, aside from PPDB features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9297520518302917,
+                    "sentence": "The response acknowledges that the similarity features include both contextualized and non-contextualized representations, which requires further distinction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9467563629150391,
+                    "sentence": "Neither Table 3 nor 4 provides results using only the masked representations without the similarity features, making it challenging to isolate the contribution of the masked representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.8068147427851343,
+            "class_probabilities": {
+                "human": 0.18941968516047092,
+                "ai": 0.8068147427851343,
+                "mixed": 0.0037655720543949035
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8068147427851343,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8068147427851343,
+                    "human": 0.18941968516047092,
+                    "mixed": 0.0037655720543949035
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This manuscript explores the task of detecting lexical entailment in context, which is crucial for question answering. The key contributions of this work are:\n(1) the development of a novel dataset derived from WordNet, utilizing synset exemplar sentences, and \n(2) the introduction of a \"context relevance mask\" for word vectors, achieved through element-wise multiplication with feature vectors extracted from the context sentence. When fed into a logistic regression classifier, the masked word vectors achieve state-of-the-art performance on entailment prediction in a PPDB-derived dataset from previous literature, albeit by a small margin. Furthermore, when combined with existing features, they surpass the state-of-the-art by a few points. The masked representations also outperform the baseline on the new WN-derived dataset, although the top-performing method on this dataset does not utilize the masked representations.\nThe paper also presents simple word similarity features, including cosine and Euclidean distance, which complement other cross-context similarity features from prior literature. While the collective similarity features significantly enhance classification results, the contribution of the features introduced in this paper is relatively modest.\nThe research task is intriguing, and the methodology appears to be sound, albeit incremental. The approach to generating mask vectors is adapted from existing work on encoding variable-length sequences into min/max/mean vectors, but its application as a mask is novel. However, excluding PPDB features, it seems that the best result is achieved without using the representation introduced in the paper.\nSeveral specific points warrant further clarification:\nIn constructing the new Context-WN dataset, it is unclear whether the \"permuted\" examples lead to a significant number of false negatives due to similar synsets. Specifically, if a word has synsets i and j, is it guaranteed that the exemplar context for a hypernym synset of j is a poor entailment context for i, especially when i and j are semantically close?\nThe performance degradation caused by the masked representation when used with context-agnostic word vectors (as seen in rows 3 and 5 of Table 3) is puzzling, given the strong performance in row 1. It is expected that the classifier would learn to disregard the context-agnostic features.\nThe paper should clearly distinguish between the new similarity measures and those drawn from previous literature. The current statement that prior work used the \"most salient\" similarity features lacks clarity.\nThe contribution of the masked vectors versus the similarity features should be more explicitly stated. It appears that the similarity features are driving the majority of the improvement.\nThe intuition behind the Macro-F1 measure and its relation to the sensitivity of models to context changes is unclear. What specific changes are being referred to, and how does Macro-F1 compare to F1?\nThe cross-language task lacks clear motivation.\nA relevant citation is missing: \"Learning to Distinguish Hypernyms and Co-Hyponyms\" by Julie Weeds et al. (COLING 2014).\nUpon reviewing the author's response, it is noted that the similarity features indeed contribute the most to the improvement in F-score on the two datasets, aside from PPDB features. The response acknowledges that the similarity features include both contextualized and non-contextualized representations, which requires further distinction.\nNeither Table 3 nor 4 provides results using only the masked representations without the similarity features, making it challenging to isolate the contribution of the masked representations."
+        }
+    ]
+}

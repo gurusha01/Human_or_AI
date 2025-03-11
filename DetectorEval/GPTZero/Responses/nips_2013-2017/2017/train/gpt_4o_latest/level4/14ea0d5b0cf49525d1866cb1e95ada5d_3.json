@@ -1,0 +1,267 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "56a3413b-1a84-4f81-b9c2-b66a102ec648",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9985163807868958,
+                    "sentence": "This paper introduces a learning reduction for extreme classification, a multiclass classification problem where the output space can include up to 100,000 distinct classes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980088472366333,
+                    "sentence": "Many existing methods for extreme classification rely on constructing a tree structure over the output labels, such as in hierarchical softmax, to reduce the number of binary predictions required to logarithmic levels, or on label embedding techniques that can be efficiently learned using least-squares or sampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971466064453125,
+                    "sentence": "The authors highlight the limitations of these approaches: the inferred latent tree may be suboptimal and prone to cascading errors, while the label embedding approach may suffer from prediction inaccuracies when the true label matrix does not exhibit low-rank properties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9971648454666138,
+                    "sentence": "An alternative strategy is to reformulate extreme classification as a pairwise binary classification problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998029351234436,
+                    "sentence": "The authors adopt this framework and propose a scalable sampling-based method with theoretical guarantees of consistency with the original multiclass ERM formulation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998701810836792,
+                    "sentence": "The authors evaluate their method on five text datasets, comparing it against several competing approaches (including one-vs-all classification where feasible).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989083409309387,
+                    "sentence": "Results demonstrate that the proposed method generally outperforms others in terms of accuracy and F1 score when the number of classes exceeds 30,000.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982830286026001,
+                    "sentence": "Additionally, it trains faster and uses significantly less memory, though it exhibits slightly slower prediction speeds.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991297125816345,
+                    "sentence": "The Aggressive Double Sampling reduction is governed by two key parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983819723129272,
+                    "sentence": "The first parameter adjusts the sampling frequency for each class, inversely proportional to the empirical class frequency, to ensure that rare classes in the long tail are not overlooked.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985049962997437,
+                    "sentence": "The second parameter specifies the number of adversarial examples to sample uniformly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990464448928833,
+                    "sentence": "This process is repeated to train the final dyadic classifier.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4683816134929657,
+                    "sentence": "At inference time, generating pairwise features for all possible classes is computationally infeasible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5329035520553589,
+                    "sentence": "To address this, the authors propose a heuristic that identifies candidate classes by constructing an input space centroid representation for each class, computed as the average of vectors in that class.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7176209092140198,
+                    "sentence": "Predictions are then made using pairwise classifications restricted to these candidate classes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5063880681991577,
+                    "sentence": "Theoretical analysis of the reduction is challenging due to two factors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.578463613986969,
+                    "sentence": "First, the transformation from multiclass to dyadic binary classification introduces a dependence structure among the dyadic examples, replacing a sum of independent random variables with a sum of partially dependent ones.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5550205707550049,
+                    "sentence": "Second, oversampling rare classes alters the empirical distribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6806739568710327,
+                    "sentence": "The authors address these challenges by partitioning the sum of dependent examples into several sums of independent variables based on the graph structure induced by the example construction and applying concentration inequalities for partially dependent variables, as developed by Janson.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.898242712020874,
+                    "sentence": "While the finite-sample risk bound is biased due to the mismatch between true class probabilities and oversampled ones, these biases diminish linearly with the size of the sampled and re-sampled training sets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8142397403717041,
+                    "sentence": "The analysis appears rigorous, though I have not independently verified the proof in detail.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9427603483200073,
+                    "sentence": "In summary, this paper presents a robust method for extreme classification that achieves strong performance on large datasets while maintaining low memory and computational requirements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8955195546150208,
+                    "sentence": "The binary reduction algorithm is theoretically well-founded, innovative, and practical for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.006283931621181856
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.77979948013368,
+            "class_probabilities": {
+                "human": 0.19262903824730782,
+                "ai": 0.77979948013368,
+                "mixed": 0.02757148161901225
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.77979948013368,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.77979948013368,
+                    "human": 0.19262903824730782,
+                    "mixed": 0.02757148161901225
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a learning reduction for extreme classification, a multiclass classification problem where the output space can include up to 100,000 distinct classes.\nMany existing methods for extreme classification rely on constructing a tree structure over the output labels, such as in hierarchical softmax, to reduce the number of binary predictions required to logarithmic levels, or on label embedding techniques that can be efficiently learned using least-squares or sampling. The authors highlight the limitations of these approaches: the inferred latent tree may be suboptimal and prone to cascading errors, while the label embedding approach may suffer from prediction inaccuracies when the true label matrix does not exhibit low-rank properties.\nAn alternative strategy is to reformulate extreme classification as a pairwise binary classification problem. The authors adopt this framework and propose a scalable sampling-based method with theoretical guarantees of consistency with the original multiclass ERM formulation.\nThe authors evaluate their method on five text datasets, comparing it against several competing approaches (including one-vs-all classification where feasible). Results demonstrate that the proposed method generally outperforms others in terms of accuracy and F1 score when the number of classes exceeds 30,000. Additionally, it trains faster and uses significantly less memory, though it exhibits slightly slower prediction speeds.\nThe Aggressive Double Sampling reduction is governed by two key parameters. The first parameter adjusts the sampling frequency for each class, inversely proportional to the empirical class frequency, to ensure that rare classes in the long tail are not overlooked. The second parameter specifies the number of adversarial examples to sample uniformly. This process is repeated to train the final dyadic classifier.\nAt inference time, generating pairwise features for all possible classes is computationally infeasible. To address this, the authors propose a heuristic that identifies candidate classes by constructing an input space centroid representation for each class, computed as the average of vectors in that class. Predictions are then made using pairwise classifications restricted to these candidate classes.\nTheoretical analysis of the reduction is challenging due to two factors. First, the transformation from multiclass to dyadic binary classification introduces a dependence structure among the dyadic examples, replacing a sum of independent random variables with a sum of partially dependent ones. Second, oversampling rare classes alters the empirical distribution. The authors address these challenges by partitioning the sum of dependent examples into several sums of independent variables based on the graph structure induced by the example construction and applying concentration inequalities for partially dependent variables, as developed by Janson. While the finite-sample risk bound is biased due to the mismatch between true class probabilities and oversampled ones, these biases diminish linearly with the size of the sampled and re-sampled training sets. The analysis appears rigorous, though I have not independently verified the proof in detail.\nIn summary, this paper presents a robust method for extreme classification that achieves strong performance on large datasets while maintaining low memory and computational requirements. The binary reduction algorithm is theoretically well-founded, innovative, and practical for real-world applications."
+        }
+    ]
+}

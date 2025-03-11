@@ -1,0 +1,436 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "52a7772d-0fd1-4595-841b-ee5dd41c59f9",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999956488609314,
+                    "sentence": "The paper addresses the problem of maximizing a monotone submodular function under a cardinality constraint in a streaming setting, with the added challenge of robustness against the removal of up to \\( m \\) elements from the selected set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999939799308777,
+                    "sentence": "The authors propose a novel two-stage algorithm, STAR-T, which constructs a robust summary in the streaming stage and uses a greedy algorithm (STAR-T-GREEDY) in the query stage to produce a constant-factor approximation solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "The key contributions include a novel partitioning structure and an exponentially decreasing thresholding rule, which allow STAR-T to achieve a robust solution with a memory-efficient design.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951124191284,
+                    "sentence": "The algorithm is theoretically analyzed, and its performance is validated on real-world data summarization tasks, including dominating set problems and personalized movie recommendations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999992311000824,
+                    "sentence": "1. Novelty and Theoretical Contributions: The paper introduces a robust streaming algorithm that extends the ideas of SIEVE-STREAMING to a more challenging setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999935030937195,
+                    "sentence": "The use of exponentially decreasing thresholds and partitioned memory is innovative and well-justified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999906420707703,
+                    "sentence": "The theoretical results, including constant-factor approximation guarantees, are rigorously derived and supported by detailed proofs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "2. Practical Relevance: The problem of robust submodular maximization is highly relevant to applications like data summarization, influence maximization, and recommendation systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943375587463,
+                    "sentence": "The experiments demonstrate the practical utility of STAR-T in these domains, showing competitive or superior performance compared to baseline methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "3. Efficiency: The algorithm achieves a memory-efficient summary size of \\( O((k + m \\log k) \\log^2 k) \\), which is a significant improvement over existing methods in terms of scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "4. Robustness: The ability of STAR-T to handle arbitrary removals of up to \\( m \\) elements without prior knowledge is a major strength, as demonstrated in both theoretical bounds and experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "1. Clarity of Presentation: While the theoretical contributions are significant, the paper is dense and could benefit from clearer explanations of key concepts, such as the partitioning structure and thresholding rule.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974966049194,
+                    "sentence": "The notation is sometimes overwhelming, which may hinder accessibility for readers unfamiliar with the topic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999968409538269,
+                    "sentence": "2. Experimental Scope: Although the experiments are compelling, they are limited to two specific applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "Additional experiments on other submodular maximization tasks (e.g., facility location or clustering) could strengthen the generalizability of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9753752946853638,
+                    "sentence": "3. Comparison with Baselines: While STAR-T is compared against SIEVE-STREAMING and random baselines, it would be valuable to include comparisons with other robust submodular algorithms, such as PRO or other recent methods cited in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9498739242553711,
+                    "sentence": "4. Practical Parameter Tuning: The paper assumes knowledge of certain parameters (e.g., \\( f(OPT(k, V \\setminus E)) \\)) for theoretical analysis, which is approximated in practice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9570959210395813,
+                    "sentence": "More discussion on the sensitivity of the algorithm to these approximations and practical parameter tuning would be helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9835307598114014,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945410490036011,
+                    "sentence": "Overall, the paper makes a strong contribution to the field of robust submodular maximization in streaming settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998917818069458,
+                    "sentence": "The theoretical guarantees, combined with practical performance, make it a valuable addition to the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9956738352775574,
+                    "sentence": "However, improvements in clarity and broader experimental validation would enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973168969154358,
+                    "sentence": "I recommend acceptance with minor revisions to address the clarity and experimental scope.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999538779258728,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995349645614624,
+                    "sentence": "- Novel and theoretically sound algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995956420898438,
+                    "sentence": "- Practical relevance and strong experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996654987335205,
+                    "sentence": "- Memory efficiency and robustness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991600513458252,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997730851173401,
+                    "sentence": "- Dense presentation and notation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998300075531006,
+                    "sentence": "- Limited experimental diversity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997193813323975,
+                    "sentence": "- Lack of comparison with other robust methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998112916946411,
+                    "sentence": "Suggested Improvements:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997699856758118,
+                    "sentence": "1. Simplify the explanation of the partitioning structure and thresholding rule.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997379183769226,
+                    "sentence": "2. Expand the experimental section to include more diverse tasks and baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996150732040405,
+                    "sentence": "3. Provide more practical insights into parameter tuning and sensitivity analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper addresses the problem of maximizing a monotone submodular function under a cardinality constraint in a streaming setting, with the added challenge of robustness against the removal of up to \\( m \\) elements from the selected set. The authors propose a novel two-stage algorithm, STAR-T, which constructs a robust summary in the streaming stage and uses a greedy algorithm (STAR-T-GREEDY) in the query stage to produce a constant-factor approximation solution. The key contributions include a novel partitioning structure and an exponentially decreasing thresholding rule, which allow STAR-T to achieve a robust solution with a memory-efficient design. The algorithm is theoretically analyzed, and its performance is validated on real-world data summarization tasks, including dominating set problems and personalized movie recommendations.\nStrengths:\n1. Novelty and Theoretical Contributions: The paper introduces a robust streaming algorithm that extends the ideas of SIEVE-STREAMING to a more challenging setting. The use of exponentially decreasing thresholds and partitioned memory is innovative and well-justified. The theoretical results, including constant-factor approximation guarantees, are rigorously derived and supported by detailed proofs.\n \n2. Practical Relevance: The problem of robust submodular maximization is highly relevant to applications like data summarization, influence maximization, and recommendation systems. The experiments demonstrate the practical utility of STAR-T in these domains, showing competitive or superior performance compared to baseline methods.\n3. Efficiency: The algorithm achieves a memory-efficient summary size of \\( O((k + m \\log k) \\log^2 k) \\), which is a significant improvement over existing methods in terms of scalability.\n4. Robustness: The ability of STAR-T to handle arbitrary removals of up to \\( m \\) elements without prior knowledge is a major strength, as demonstrated in both theoretical bounds and experimental results.\nWeaknesses:\n1. Clarity of Presentation: While the theoretical contributions are significant, the paper is dense and could benefit from clearer explanations of key concepts, such as the partitioning structure and thresholding rule. The notation is sometimes overwhelming, which may hinder accessibility for readers unfamiliar with the topic.\n2. Experimental Scope: Although the experiments are compelling, they are limited to two specific applications. Additional experiments on other submodular maximization tasks (e.g., facility location or clustering) could strengthen the generalizability of the results.\n3. Comparison with Baselines: While STAR-T is compared against SIEVE-STREAMING and random baselines, it would be valuable to include comparisons with other robust submodular algorithms, such as PRO or other recent methods cited in the paper.\n4. Practical Parameter Tuning: The paper assumes knowledge of certain parameters (e.g., \\( f(OPT(k, V \\setminus E)) \\)) for theoretical analysis, which is approximated in practice. More discussion on the sensitivity of the algorithm to these approximations and practical parameter tuning would be helpful.\nRecommendation:\nOverall, the paper makes a strong contribution to the field of robust submodular maximization in streaming settings. The theoretical guarantees, combined with practical performance, make it a valuable addition to the literature. However, improvements in clarity and broader experimental validation would enhance its impact. I recommend acceptance with minor revisions to address the clarity and experimental scope. \nPros:\n- Novel and theoretically sound algorithm.\n- Practical relevance and strong experimental results.\n- Memory efficiency and robustness.\nCons:\n- Dense presentation and notation.\n- Limited experimental diversity.\n- Lack of comparison with other robust methods.\nSuggested Improvements:\n1. Simplify the explanation of the partitioning structure and thresholding rule.\n2. Expand the experimental section to include more diverse tasks and baselines.\n3. Provide more practical insights into parameter tuning and sensitivity analysis."
+        }
+    ]
+}

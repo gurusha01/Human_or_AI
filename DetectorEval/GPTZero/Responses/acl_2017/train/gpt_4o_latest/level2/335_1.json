@@ -1,0 +1,403 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e21b1d9f-8d29-404b-ba22-2fce2355950c",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999986886978149,
+                    "sentence": "Review of \"Gated Self-Matching Networks for Reading Comprehension Style Question Answering\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "This paper introduces the Gated Self-Matching Networks (GSMN) for reading comprehension-style question answering, specifically evaluated on the SQuAD dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "The authors propose a novel architecture combining gated attention-based recurrent networks and self-matching attention mechanisms to refine passage representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "The model uses pointer networks to predict answer spans from passages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "The primary contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999948740005493,
+                    "sentence": "1. Gated Attention-Based Recurrent Networks: A gating mechanism is added to attention-based recurrent networks to emphasize question-relevant parts of the passage while masking irrelevant ones.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "2. Self-Matching Attention Mechanism: This mechanism aggregates evidence from the entire passage, addressing the limitations of recurrent networks in capturing long-range dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "3. State-of-the-Art Results: The proposed model achieves 71.3% exact match (EM) and 79.7% F1 on the SQuAD test set, outperforming several strong baselines and ranking first on the SQuAD leaderboard at the time of submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "1. Innovative Architecture: The introduction of self-matching attention is a significant contribution, enabling the model to dynamically refine passage representations by aggregating global context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "This addresses a key challenge in reading comprehension tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955892562866,
+                    "sentence": "2. Strong Empirical Results: The model achieves state-of-the-art performance on the SQuAD dataset, demonstrating its effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963045120239,
+                    "sentence": "Ablation studies further validate the contributions of the gating mechanism and self-matching attention.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "3. Comprehensive Evaluation: The paper provides detailed analyses, including performance across question types, answer lengths, and passage lengths.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "These insights highlight the model's strengths and limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "4. Reproducibility: The authors provide sufficient implementation details, including hyperparameters, architecture choices, and preprocessing steps, which facilitate reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "1. Limited Novelty in Gating Mechanism: While the gated attention-based recurrent network is effective, it is an incremental improvement over existing attention-based recurrent networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "The novelty here is relatively modest.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966025352478,
+                    "sentence": "2. Scalability to Longer Passages: The model's performance drops for longer passages, as noted in the analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999958872795105,
+                    "sentence": "This limitation is not thoroughly addressed, and the paper lacks a discussion on how the model could be adapted for datasets with longer contexts (e.g., MS MARCO).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.990186870098114,
+                    "sentence": "3. Comparison to Human Performance: While the model achieves strong results, it still lags behind human performance, particularly in F1 score.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9812952280044556,
+                    "sentence": "The paper could benefit from a deeper discussion of the remaining performance gap and potential avenues for improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9608836770057678,
+                    "sentence": "4. Generalization Beyond SQuAD: The evaluation is limited to SQuAD, a dataset with relatively constrained answer types (spans within passages).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9708533883094788,
+                    "sentence": "The paper does not explore the model's applicability to other datasets with more diverse question-answering formats.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9902260899543762,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9963423609733582,
+                    "sentence": "1. How does the model perform on other datasets like MS MARCO or Natural Questions, which involve longer passages or more open-ended answers?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950422048568726,
+                    "sentence": "2. Could the self-matching attention mechanism be extended to handle multi-passage reasoning tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9956441521644592,
+                    "sentence": "3. How does the model handle questions requiring multi-hop reasoning across non-adjacent sentences in the passage?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982559680938721,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947789311408997,
+                    "sentence": "This paper presents a well-executed study with a novel architecture that achieves state-of-the-art results on the SQuAD dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9819828867912292,
+                    "sentence": "While the gated self-matching networks demonstrate strong empirical performance, the paper could benefit from broader evaluations and discussions on generalization and scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9833922982215881,
+                    "sentence": "Nonetheless, the proposed methods are a valuable contribution to the field of reading comprehension and question answering.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8753704990852369,
+            "class_probabilities": {
+                "human": 0.11057250597192597,
+                "ai": 0.8753704990852369,
+                "mixed": 0.014056994942837287
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8753704990852369,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8753704990852369,
+                    "human": 0.11057250597192597,
+                    "mixed": 0.014056994942837287
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of \"Gated Self-Matching Networks for Reading Comprehension Style Question Answering\"\nSummary and Contributions \nThis paper introduces the Gated Self-Matching Networks (GSMN) for reading comprehension-style question answering, specifically evaluated on the SQuAD dataset. The authors propose a novel architecture combining gated attention-based recurrent networks and self-matching attention mechanisms to refine passage representations. The model uses pointer networks to predict answer spans from passages. The primary contributions of this work are: \n1. Gated Attention-Based Recurrent Networks: A gating mechanism is added to attention-based recurrent networks to emphasize question-relevant parts of the passage while masking irrelevant ones. \n2. Self-Matching Attention Mechanism: This mechanism aggregates evidence from the entire passage, addressing the limitations of recurrent networks in capturing long-range dependencies. \n3. State-of-the-Art Results: The proposed model achieves 71.3% exact match (EM) and 79.7% F1 on the SQuAD test set, outperforming several strong baselines and ranking first on the SQuAD leaderboard at the time of submission. \nStrengths \n1. Innovative Architecture: The introduction of self-matching attention is a significant contribution, enabling the model to dynamically refine passage representations by aggregating global context. This addresses a key challenge in reading comprehension tasks. \n2. Strong Empirical Results: The model achieves state-of-the-art performance on the SQuAD dataset, demonstrating its effectiveness. Ablation studies further validate the contributions of the gating mechanism and self-matching attention. \n3. Comprehensive Evaluation: The paper provides detailed analyses, including performance across question types, answer lengths, and passage lengths. These insights highlight the model's strengths and limitations. \n4. Reproducibility: The authors provide sufficient implementation details, including hyperparameters, architecture choices, and preprocessing steps, which facilitate reproducibility. \nWeaknesses \n1. Limited Novelty in Gating Mechanism: While the gated attention-based recurrent network is effective, it is an incremental improvement over existing attention-based recurrent networks. The novelty here is relatively modest. \n2. Scalability to Longer Passages: The model's performance drops for longer passages, as noted in the analysis. This limitation is not thoroughly addressed, and the paper lacks a discussion on how the model could be adapted for datasets with longer contexts (e.g., MS MARCO). \n3. Comparison to Human Performance: While the model achieves strong results, it still lags behind human performance, particularly in F1 score. The paper could benefit from a deeper discussion of the remaining performance gap and potential avenues for improvement. \n4. Generalization Beyond SQuAD: The evaluation is limited to SQuAD, a dataset with relatively constrained answer types (spans within passages). The paper does not explore the model's applicability to other datasets with more diverse question-answering formats. \nQuestions to Authors \n1. How does the model perform on other datasets like MS MARCO or Natural Questions, which involve longer passages or more open-ended answers? \n2. Could the self-matching attention mechanism be extended to handle multi-passage reasoning tasks? \n3. How does the model handle questions requiring multi-hop reasoning across non-adjacent sentences in the passage? \nConclusion \nThis paper presents a well-executed study with a novel architecture that achieves state-of-the-art results on the SQuAD dataset. While the gated self-matching networks demonstrate strong empirical performance, the paper could benefit from broader evaluations and discussions on generalization and scalability. Nonetheless, the proposed methods are a valuable contribution to the field of reading comprehension and question answering."
+        }
+    ]
+}

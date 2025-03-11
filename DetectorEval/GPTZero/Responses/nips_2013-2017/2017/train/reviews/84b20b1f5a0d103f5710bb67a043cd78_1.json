@@ -1,0 +1,480 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "ed1a059a-f500-4d69-b40e-1032a4ba0c21",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.06220027804374695,
+                    "sentence": "Paper Summary:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13359113037586212,
+                    "sentence": "The main idea is that Nesterov's acceleration method's and Stochastic Gradient Descent's (SGD) advantages are used to solve sparse and dense optimization problems with high-dimensions by using an improved GCD (Greedy Coordinate Descent) algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07713423669338226,
+                    "sentence": "First, by using a greedy rule, an $l_1$-square-regularized approximate optimization problem (find a solution close to $x^*$ within a neighborhood $\\epsilon$) can be reformulated as a convex but non-trivial to solve problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09475691616535187,
+                    "sentence": "Then, the same problem is solved as an exact problem by using the SOTOPO algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07475735992193222,
+                    "sentence": "Finally, the solution is improved by using both the convergence rate advantage of Nesterov's method and the \"reduced-by-one-sample\" complexity of SGD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.033584389835596085,
+                    "sentence": "The resulted algorithm is an improved GCD (ASGCD=Accelerated Stochastic Greedy Coordinate Descent) with a convergence rate of $O(\\sqrt{1/\\epsilon})$ and complexity reduced-by-one-sample compared to the vanilla GCD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05630350112915039,
+                    "sentence": "Originality of the paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05039437115192413,
+                    "sentence": "The SOTOPO algorithm proposed, takes advantage of the l1 regularization term to investigate the potential values of the sub-gradient directions and sorts them to find the optimal direction without having to calculate the full gradient beforehand.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08292734622955322,
+                    "sentence": "The combination of Nesterov's advantage with SGC advantage and the GCD advantage is less impressive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.12775279581546783,
+                    "sentence": "Bonus for making an efficient and rigorous algorithm despite the many pieces that had to be put together",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08431209623813629,
+                    "sentence": "Contribution:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07935723662376404,
+                    "sentence": "-Reduces complexity and increases convergence rate for large-scale, dense, convex optimization problems with sparse solutions (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11745782196521759,
+                    "sentence": "-Uses existing results known to improve performance and combines them to generate a more efficient algorithm (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13752774894237518,
+                    "sentence": "-Proposes a criterion to reduce the complexity by identifying the non-zero directions of descent and sorting them to find the optimal direction faster (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010089811868965626,
+                    "sentence": "-Full computation of the gradient beforehand is not necessary in the proposed algorithm (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01019983272999525,
+                    "sentence": "-There is no theoretical way proposed for the choice of the regularization parameter $\\lambda$ as a function of the batch size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008547721430659294,
+                    "sentence": "The choice of $\\lambda$ seems to affect the performance of the ASGCD in both batch choice cases (-).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014645109884440899,
+                    "sentence": "Technical Soundness:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00805222149938345,
+                    "sentence": "-All proofs to Lemmas, Corollaries, Theorems and Propositions used are provided in the supplementary material (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008086160756647587,
+                    "sentence": "-Derivations are rigorous enough and solid.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010207682847976685,
+                    "sentence": "In some derivations further reference to basic optimization theorems or Lemmas could be more en-lighting to non-optimization related researchers (-).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.015759574249386787,
+                    "sentence": "Implementation of Idea:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010217112489044666,
+                    "sentence": "The algorithm is complicated to implement (especially the SOTOPO part).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.013395924121141434,
+                    "sentence": "Clarity of presentation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011022650636732578,
+                    "sentence": "-Overall presentation of the paper is detailed but the reader is not helped to keep in mind the bigger picture (might be lost in the details).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008327672258019447,
+                    "sentence": "Perhaps reminders of the goal/purpose of each step throughout the paper would help the reader understand why each step is necessary(-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01015028078109026,
+                    "sentence": "-Regarding the order of application of different known algorithms or parts of them to the problem: it is explained but could be more clear with a diagram or pseudo-code (-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008442368358373642,
+                    "sentence": "-Notation: in equation 3, $g$ is not clearly explained and in Algorithm 1 there are two typos in referencing equations (-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005414656363427639,
+                    "sentence": "-For the difficulty of writing such a mathematically incremental paper, the clarity is at descent (+).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01444926206022501,
+                    "sentence": "Theoretical basis:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009641030803322792,
+                    "sentence": "-All Lemmas and transformations are proved thoroughly in the supplementary material (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009701713919639587,
+                    "sentence": "-Some literature results related to convergence rate or complexity of known algorithms are not referenced (lines 24,25,60,143 and 73 was not explained until equation 16 which brings some confusion initially).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012138554826378822,
+                    "sentence": "Remark 1 could have been referenced/justified so that it does not look completely arbitrary (-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49887558817863464,
+                    "sentence": "-A comparison of the theoretical solution accuracy with the other pre-existing methods would be interesting to the readers (-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6164572238922119,
+                    "sentence": "-In the supplementary material in line 344, a $d \\theta_t$ is missing from one of the integrals (-).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.555859386920929,
+                    "sentence": "Empirical/Experimental basis:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4388476014137268,
+                    "sentence": "-The experimental results verify the performance of the proposed algorithm with respect to the ones chosen for comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5502147674560547,
+                    "sentence": "Consistency in the data sets used between the different algorithms, supports a valid experimental analysis (+),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.44310250878334045,
+                    "sentence": "-A choice of better smoothing constant $T_1$ is provided in line 208 (+) but please make it more clear to the reader why this is a better option in the case of $b=n$ batch size (-),",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4665878415107727,
+                    "sentence": "-The proposed method is under-performing (when the batch size is 1) compared to Katyusha for small regularization $10^{-6}$ and for the test case Mnist while for Gisette it is comparable to Katyusha.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5238258838653564,
+                    "sentence": "There might be room for improvement in these cases or if not it would be interesting to show which regularization value is the threshold and why.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6095311045646667,
+                    "sentence": "The latter means that the algorithm proposed is more efficient for large-scale problems with potentially a threshold in sparsity (minimum regularization parameter) that the authors have not theoretically explored.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.579401969909668,
+                    "sentence": "Moreover, there seems to be a connection between the batch size (1 or n, in other words stochastic or deterministic case) and the choice of regularization value that makes the ASGCD outperform other methods which is not discussed (-).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5072845816612244,
+                    "sentence": "Interest to NIPS audience [YES]: This paper compares the proposed algorithm with well-established algorithms or performance improvement schemes and therefore would be interesting to the NIPS audience.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.46367913484573364,
+                    "sentence": "Interesting discussion might arise related to whether or not the algorithm can be simplified without compromising it's performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.11117960964635752,
+            "class_probabilities": {
+                "human": 0.888453242841436,
+                "ai": 0.11117960964635752,
+                "mixed": 0.00036714751220645104
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.888453242841436,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.11117960964635752,
+                    "human": 0.888453242841436,
+                    "mixed": 0.00036714751220645104
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Paper Summary:\nThe main idea is that Nesterov's acceleration method's and Stochastic Gradient Descent's (SGD) advantages are used to solve sparse and dense optimization problems with high-dimensions by using an improved GCD (Greedy Coordinate Descent) algorithm. First, by using a greedy rule, an $l_1$-square-regularized approximate optimization problem (find a solution close to $x^*$ within a neighborhood $\\epsilon$) can be reformulated as a convex but non-trivial to solve problem. Then, the same problem is solved as an exact problem by using the SOTOPO algorithm. Finally, the solution is improved by using both the convergence rate advantage of Nesterov's method and the \"reduced-by-one-sample\" complexity of SGD. The resulted algorithm is an improved GCD (ASGCD=Accelerated Stochastic Greedy Coordinate Descent) with a convergence rate of $O(\\sqrt{1/\\epsilon})$ and complexity reduced-by-one-sample compared to the vanilla GCD.\nOriginality of the paper:\nThe SOTOPO algorithm proposed, takes advantage of the l1 regularization term to investigate the potential values of the sub-gradient directions and sorts them to find the optimal direction without having to calculate the full gradient beforehand. The combination of Nesterov's advantage with SGC advantage and the GCD advantage is less impressive. Bonus for making an efficient and rigorous algorithm despite the many pieces that had to be put together\nContribution:\n-Reduces complexity and increases convergence rate for large-scale, dense, convex optimization problems with sparse solutions (+),\n-Uses existing results known to improve performance and combines them to generate a more efficient algorithm (+),\n-Proposes a criterion to reduce the complexity by identifying the non-zero directions of descent and sorting them to find the optimal direction faster (+),\n-Full computation of the gradient beforehand is not necessary in the proposed algorithm (+),\n-There is no theoretical way proposed for the choice of the regularization parameter $\\lambda$ as a function of the batch size. The choice of $\\lambda$ seems to affect the performance of the ASGCD in both batch choice cases (-).\nTechnical Soundness: \n-All proofs to Lemmas, Corollaries, Theorems and Propositions used are provided in the supplementary material (+),\n-Derivations are rigorous enough and solid. In some derivations further reference to basic optimization theorems or Lemmas could be more en-lighting to non-optimization related researchers (-).\nImplementation of Idea: \nThe algorithm is complicated to implement (especially the SOTOPO part).\nClarity of presentation: \n-Overall presentation of the paper is detailed but the reader is not helped to keep in mind the bigger picture (might be lost in the details). Perhaps reminders of the goal/purpose of each step throughout the paper would help the reader understand why each step is necessary(-),\n-Regarding the order of application of different known algorithms or parts of them to the problem: it is explained but could be more clear with a diagram or pseudo-code (-),\n-Notation: in equation 3, $g$ is not clearly explained and in Algorithm 1 there are two typos in referencing equations (-),\n-For the difficulty of writing such a mathematically incremental paper, the clarity is at descent (+).\nTheoretical basis: \n-All Lemmas and transformations are proved thoroughly in the supplementary material (+),\n-Some literature results related to convergence rate or complexity of known algorithms are not referenced (lines 24,25,60,143 and 73 was not explained until equation 16 which brings some confusion initially). Remark 1 could have been referenced/justified so that it does not look completely arbitrary (-),\n-A comparison of the theoretical solution accuracy with the other pre-existing methods would be interesting to the readers (-),\n-In the supplementary material in line 344, a $d \\theta_t$ is missing from one of the integrals (-).\nEmpirical/Experimental basis: \n-The experimental results verify the performance of the proposed algorithm with respect to the ones chosen for comparison. Consistency in the data sets used between the different algorithms, supports a valid experimental analysis (+),\n-A choice of better smoothing constant $T_1$ is provided in line 208 (+) but please make it more clear to the reader why this is a better option in the case of $b=n$ batch size (-),\n-The proposed method is under-performing (when the batch size is 1) compared to Katyusha for small regularization $10^{-6}$ and for the test case Mnist while for Gisette it is comparable to Katyusha. There might be room for improvement in these cases or if not it would be interesting to show which regularization value is the threshold and why. The latter means that the algorithm proposed is more efficient for large-scale problems with potentially a threshold in sparsity (minimum regularization parameter) that the authors have not theoretically explored. Moreover, there seems to be a connection between the batch size (1 or n, in other words stochastic or deterministic case) and the choice of regularization value that makes the ASGCD outperform other methods which is not discussed (-).\nInterest to NIPS audience [YES]: This paper compares the proposed algorithm with well-established algorithms or performance improvement schemes and therefore would be interesting to the NIPS audience. Interesting discussion might arise related to whether or not the algorithm can be simplified without compromising it's performance."
+        }
+    ]
+}

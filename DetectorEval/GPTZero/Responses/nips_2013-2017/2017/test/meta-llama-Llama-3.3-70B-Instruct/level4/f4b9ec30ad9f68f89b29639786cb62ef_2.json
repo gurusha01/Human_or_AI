@@ -1,0 +1,249 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "694bb9ae-0007-4ee8-b829-649cc9a4c728",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9958974719047546,
+                    "sentence": "This paper introduces a rigorous condition for achieving Byzantine fault-tolerant stochastic gradient aggregation and proposes an algorithm, Krum, that fulfills this condition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9903541803359985,
+                    "sentence": "It is evident from the definition that aggregation methods based on linear combinations, including averaging, are not Byzantine tolerant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9875448346138,
+                    "sentence": "The paper also provides empirical evidence demonstrating that Krum is not only theoretically sound but also practically viable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9912508130073547,
+                    "sentence": "The paper is well-structured, clear, and self-contained, offering a thorough exploration of the topic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9816976189613342,
+                    "sentence": "The primary motivation is well-articulated, addressing the gap in the literature on distributed learning, which has traditionally focused on statistical assumptions and cooperative actors, by investigating the scenario under very pessimistic conditions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9708772897720337,
+                    "sentence": "To the best of my knowledge, this is the first paper to explore fault-tolerance from this perspective, a concept already established in other contexts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9832070469856262,
+                    "sentence": "However, I did not verify the analysis presented.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9906805753707886,
+                    "sentence": "Regarding the presentation, the paper provides an extensive background on stochastic gradient descent (SGD), including an illustration of unbiased stochastic gradients via a cartoon figure (Figure 1).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935979247093201,
+                    "sentence": "While this background is nice, it might be unnecessary for an audience familiar with stochastic optimization at NIPS, and the authors may consider reallocating this space to more central technical content.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992825984954834,
+                    "sentence": "My additional comments pertain to the experimental section:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9894653558731079,
+                    "sentence": "1. The experiments could be improved by utilizing more contemporary datasets and models, as the current setup, focusing on small-scale, single-machine datasets, does not fully align with the paper's primary setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9859658479690552,
+                    "sentence": "Distributed learning is not typically applied to such datasets, making the experiments more of a simulation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9930759072303772,
+                    "sentence": "Although they do reveal interesting phenomena, it is unclear whether these findings generalize to scenarios where distributed learning is more applicable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973567128181458,
+                    "sentence": "A potential next step could involve using a deep convolutional network for data-augmented CIFAR-10, which would likely benefit from a distributed setup due to its longer training time on a single machine.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5275465250015259,
+                    "sentence": "2. The choice of a mini-batch size of 3 for correct workers appears arbitrary and lacks explanation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1471705287694931,
+                    "sentence": "3. In the \"cost of resilience\" experiment (Figure 5), reporting the error at round 500 seems to capture an early phase of training, given that the accuracies are not yet optimal for the task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1941375881433487,
+                    "sentence": "With a batch size of 100, 500 rounds correspond to 50,000 examples, which do not constitute a full pass through the training set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.21936920285224915,
+                    "sentence": "The experiment would benefit from an additional plot or a remark describing the behavior closer to convergence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.13995958864688873,
+                    "sentence": "4. In the \"multi-Krum\" experiment (Figure 6), setting the parameter m to be n - f, where n is the total number of machines and f is the number of Byzantine machines, seems like an overly informed choice, as it assumes knowledge of the number of adversaries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.10173587501049042,
+                    "sentence": "The experiment would be more comprehensive if it included results for other values of m (for the same f), as this would illustrate the trade-off curve suggested by the writing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.6901468531159954,
+            "class_probabilities": {
+                "human": 0.3045187780479302,
+                "ai": 0.6901468531159954,
+                "mixed": 0.005334368836074327
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.6901468531159954,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.6901468531159954,
+                    "human": 0.3045187780479302,
+                    "mixed": 0.005334368836074327
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a rigorous condition for achieving Byzantine fault-tolerant stochastic gradient aggregation and proposes an algorithm, Krum, that fulfills this condition. It is evident from the definition that aggregation methods based on linear combinations, including averaging, are not Byzantine tolerant. The paper also provides empirical evidence demonstrating that Krum is not only theoretically sound but also practically viable.\nThe paper is well-structured, clear, and self-contained, offering a thorough exploration of the topic. The primary motivation is well-articulated, addressing the gap in the literature on distributed learning, which has traditionally focused on statistical assumptions and cooperative actors, by investigating the scenario under very pessimistic conditions. To the best of my knowledge, this is the first paper to explore fault-tolerance from this perspective, a concept already established in other contexts. However, I did not verify the analysis presented.\nRegarding the presentation, the paper provides an extensive background on stochastic gradient descent (SGD), including an illustration of unbiased stochastic gradients via a cartoon figure (Figure 1). While this background is nice, it might be unnecessary for an audience familiar with stochastic optimization at NIPS, and the authors may consider reallocating this space to more central technical content.\nMy additional comments pertain to the experimental section:\n1. The experiments could be improved by utilizing more contemporary datasets and models, as the current setup, focusing on small-scale, single-machine datasets, does not fully align with the paper's primary setting. Distributed learning is not typically applied to such datasets, making the experiments more of a simulation. Although they do reveal interesting phenomena, it is unclear whether these findings generalize to scenarios where distributed learning is more applicable. A potential next step could involve using a deep convolutional network for data-augmented CIFAR-10, which would likely benefit from a distributed setup due to its longer training time on a single machine.\n2. The choice of a mini-batch size of 3 for correct workers appears arbitrary and lacks explanation.\n3. In the \"cost of resilience\" experiment (Figure 5), reporting the error at round 500 seems to capture an early phase of training, given that the accuracies are not yet optimal for the task. With a batch size of 100, 500 rounds correspond to 50,000 examples, which do not constitute a full pass through the training set. The experiment would benefit from an additional plot or a remark describing the behavior closer to convergence.\n4. In the \"multi-Krum\" experiment (Figure 6), setting the parameter m to be n - f, where n is the total number of machines and f is the number of Byzantine machines, seems like an overly informed choice, as it assumes knowledge of the number of adversaries. The experiment would be more comprehensive if it included results for other values of m (for the same f), as this would illustrate the trade-off curve suggested by the writing."
+        }
+    ]
+}

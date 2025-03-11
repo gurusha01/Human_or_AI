@@ -1,0 +1,214 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e476473e-a65b-405f-a62a-30b972f5b27e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9984270334243774,
+                    "sentence": "This paper introduces the Batch Renormalization technique as a solution to the issues associated with batch normalization when dealing with small or non-i.i.d minibatches, a crucial consideration in applications where large neural network models are trained with limited GPU memory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986135363578796,
+                    "sentence": "The proposed method is straightforward and easy to implement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937061071395874,
+                    "sentence": "Experimental results demonstrate its effectiveness with non-i.i.d minibatches and its ability to improve outcomes for small minibatches compared to traditional batch normalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993980526924133,
+                    "sentence": "The authors commence by providing a comprehensive overview of batch normalization, highlighting its key limitations: the inconsistency between the mean and variance used during training and inference, and the instability encountered with small minibatches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991514086723328,
+                    "sentence": "A potential initial approach might involve using moving averages for normalization, but this could lead to model instability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992499351501465,
+                    "sentence": "Therefore, the authors suggest a simple yet effective batch renormalization method that combines minibatch mean and variance with moving averages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998735785484314,
+                    "sentence": "In essence, Batch Renormalization gradually transitions from using the original batch normalization (with minibatch mean and variance) to a version that relies almost exclusively on moving averages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993588924407959,
+                    "sentence": "This approach allows the model to leverage the advantages of moving averages, facilitating successful convergence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987778663635254,
+                    "sentence": "Several questions arise from this paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7184728384017944,
+                    "sentence": "(1) It is unclear why Batch Renormalization does not offer an advantage over batch normalization when using large minibatch sizes (e.g., 32).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7024822235107422,
+                    "sentence": "The consistency of mean and variance between training and inference seems to provide minimal benefit in such cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7391610145568848,
+                    "sentence": "(2) Given that experiments show worse results for small minibatch sizes (e.g., batch size = 4) compared to larger ones (e.g., batch size = 32), it would be interesting to explore the use of multiple moving averages (for mean and variance) with different update rates (e.g., 0.1 and 0.01).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8133581280708313,
+                    "sentence": "A smaller update rate could help address the inconsistency issue, while a larger rate might mitigate the problems associated with small minibatch sizes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8957814574241638,
+                    "sentence": "(3) The paper lacks an analysis of how the parameters rmax and dmax influence performance, suggesting a need for extensive parameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.963411808013916,
+                    "sentence": "Overall, this work is commendable, and it will be interesting to see if future research can provide a more refined solution to the challenges posed by batch normalization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.7988834054439069,
+            "class_probabilities": {
+                "human": 0.19494176564480242,
+                "ai": 0.7988834054439069,
+                "mixed": 0.006174828911290647
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7988834054439069,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7988834054439069,
+                    "human": 0.19494176564480242,
+                    "mixed": 0.006174828911290647
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces the Batch Renormalization technique as a solution to the issues associated with batch normalization when dealing with small or non-i.i.d minibatches, a crucial consideration in applications where large neural network models are trained with limited GPU memory. The proposed method is straightforward and easy to implement. Experimental results demonstrate its effectiveness with non-i.i.d minibatches and its ability to improve outcomes for small minibatches compared to traditional batch normalization.\nThe authors commence by providing a comprehensive overview of batch normalization, highlighting its key limitations: the inconsistency between the mean and variance used during training and inference, and the instability encountered with small minibatches. A potential initial approach might involve using moving averages for normalization, but this could lead to model instability. Therefore, the authors suggest a simple yet effective batch renormalization method that combines minibatch mean and variance with moving averages. In essence, Batch Renormalization gradually transitions from using the original batch normalization (with minibatch mean and variance) to a version that relies almost exclusively on moving averages. This approach allows the model to leverage the advantages of moving averages, facilitating successful convergence.\nSeveral questions arise from this paper:\n(1) It is unclear why Batch Renormalization does not offer an advantage over batch normalization when using large minibatch sizes (e.g., 32). The consistency of mean and variance between training and inference seems to provide minimal benefit in such cases.\n(2) Given that experiments show worse results for small minibatch sizes (e.g., batch size = 4) compared to larger ones (e.g., batch size = 32), it would be interesting to explore the use of multiple moving averages (for mean and variance) with different update rates (e.g., 0.1 and 0.01). A smaller update rate could help address the inconsistency issue, while a larger rate might mitigate the problems associated with small minibatch sizes.\n(3) The paper lacks an analysis of how the parameters rmax and dmax influence performance, suggesting a need for extensive parameter tuning.\nOverall, this work is commendable, and it will be interesting to see if future research can provide a more refined solution to the challenges posed by batch normalization."
+        }
+    ]
+}

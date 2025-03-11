@@ -1,0 +1,225 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "da2f990d-9f4d-474e-ba9e-f19d3b3bafbe",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.23905420303344727,
+                    "sentence": "Apologies for the delayed submission of this review, and thank you to the authors for addressing the earlier questions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.39133718609809875,
+                    "sentence": "This paper introduces an enhanced implementation of the PixelCNN generative model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.34068790078163147,
+                    "sentence": "While most of the proposed improvements are relatively minor technical adjustments, such as the incorporation of dropout and skip connections, there are a few more notable changes, including the adoption of a different likelihood model and the use of multiscale analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.367427259683609,
+                    "sentence": "The paper reports state-of-the-art likelihood results on CIFAR-10.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.49103590846061707,
+                    "sentence": "Summary of the main contribution:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.35217058658599854,
+                    "sentence": "Autoregressive models, such as PixelCNN, are an appealing class of generative models due to their ability to compute likelihoods in closed form.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4860883951187134,
+                    "sentence": "A key distinguishing factor for these models lies in how they represent the conditional likelihood of a pixel given its causal neighborhood:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4493694007396698,
+                    "sentence": "- Earlier approaches, such as (Theis et al., 2012 MCGSM; Theis et al., 2015 Spatial LSTM), model the conditional distribution as a continuous density over real numbers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5511749386787415,
+                    "sentence": "However, this has limitations: real-world pixel intensities are quantized into discrete integer values, so a discrete distribution could yield better likelihoods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6731369495391846,
+                    "sentence": "Moreover, continuous distributions often assign probability mass outside the valid range of pixel intensities, which can negatively impact the likelihood.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3567389249801636,
+                    "sentence": "- More recent work by van den Oord and colleagues models the conditional likelihood as an arbitrary discrete distribution over the 256 possible pixel intensity values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.30654671788215637,
+                    "sentence": "While this avoids the limitations of continuous likelihoods, it can be inefficient and less data-efficient.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.45259344577789307,
+                    "sentence": "The authors propose a middle-ground approach: they retain the discrete nature of the conditional likelihood but constrain the discrete distribution to those whose CDFs can be expressed as a linear combination of sigmoids.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.40821605920791626,
+                    "sentence": "This method seems reasonable and somewhat novel, but it does not strike me as particularly groundbreaking or transformative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9641239643096924,
+                    "sentence": "The second moderately significant modification involves the use of downsampling and multiscale modeling (as opposed to dilated convolutions).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9568456411361694,
+                    "sentence": "The authors justify this choice as a way to reduce computational costs while preserving the multiscale flexibility of the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9275224208831787,
+                    "sentence": "They also introduce shortcut connections to mitigate potential information loss during downsampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8786240220069885,
+                    "sentence": "However, I find this modification to be relatively incremental as well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9318298697471619,
+                    "sentence": "Multiscale image analysis with autoregressive generative models has been explored in prior work, such as (Theis et al., 2012), among others.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9263068437576294,
+                    "sentence": "In conclusion, I feel that this paper lacks substantially novel contributions and reads more like a detailed account of a specific implementation of existing ideas.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.40479904019196156,
+            "class_probabilities": {
+                "human": 0.5906761504841889,
+                "ai": 0.40479904019196156,
+                "mixed": 0.004524809323849515
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5906761504841889,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.40479904019196156,
+                    "human": 0.5906761504841889,
+                    "mixed": 0.004524809323849515
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Apologies for the delayed submission of this review, and thank you to the authors for addressing the earlier questions.\nThis paper introduces an enhanced implementation of the PixelCNN generative model. While most of the proposed improvements are relatively minor technical adjustments, such as the incorporation of dropout and skip connections, there are a few more notable changes, including the adoption of a different likelihood model and the use of multiscale analysis. The paper reports state-of-the-art likelihood results on CIFAR-10.\nSummary of the main contribution:\nAutoregressive models, such as PixelCNN, are an appealing class of generative models due to their ability to compute likelihoods in closed form. A key distinguishing factor for these models lies in how they represent the conditional likelihood of a pixel given its causal neighborhood:\n- Earlier approaches, such as (Theis et al., 2012 MCGSM; Theis et al., 2015 Spatial LSTM), model the conditional distribution as a continuous density over real numbers. However, this has limitations: real-world pixel intensities are quantized into discrete integer values, so a discrete distribution could yield better likelihoods. Moreover, continuous distributions often assign probability mass outside the valid range of pixel intensities, which can negatively impact the likelihood.\n- More recent work by van den Oord and colleagues models the conditional likelihood as an arbitrary discrete distribution over the 256 possible pixel intensity values. While this avoids the limitations of continuous likelihoods, it can be inefficient and less data-efficient.\nThe authors propose a middle-ground approach: they retain the discrete nature of the conditional likelihood but constrain the discrete distribution to those whose CDFs can be expressed as a linear combination of sigmoids. This method seems reasonable and somewhat novel, but it does not strike me as particularly groundbreaking or transformative.\nThe second moderately significant modification involves the use of downsampling and multiscale modeling (as opposed to dilated convolutions). The authors justify this choice as a way to reduce computational costs while preserving the multiscale flexibility of the model. They also introduce shortcut connections to mitigate potential information loss during downsampling. However, I find this modification to be relatively incremental as well. Multiscale image analysis with autoregressive generative models has been explored in prior work, such as (Theis et al., 2012), among others.\nIn conclusion, I feel that this paper lacks substantially novel contributions and reads more like a detailed account of a specific implementation of existing ideas."
+        }
+    ]
+}

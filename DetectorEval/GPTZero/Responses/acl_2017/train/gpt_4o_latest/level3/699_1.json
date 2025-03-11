@@ -1,0 +1,379 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "fa51196e-5300-451a-b247-d5621a45c03e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "This paper introduces a generative approach to keyphrase prediction using an RNN-based encoder-decoder framework with an integrated copy mechanism.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "The authors address two key limitations of traditional keyphrase extraction methods: the inability to generate absent keyphrases and the lack of semantic understanding in ranking-based approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "The primary contributions of the paper are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "1. Novel Application of Copy Mechanism: The incorporation of a copy mechanism enables the model to generate keyphrases containing out-of-vocabulary words, addressing a critical limitation of standard RNN-based models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "2. Absent Keyphrase Prediction: This work is the first to explicitly tackle the problem of predicting absent keyphrases for scientific publications, achieving up to 20% recall for absent keyphrases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "3. Comprehensive Evaluation: The authors conduct extensive experiments on five datasets, demonstrating that their model outperforms both supervised and unsupervised baselines in predicting present keyphrases and generates semantically relevant absent keyphrases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "1. Clarity and Reproducibility: The paper is well-structured and provides sufficient methodological details, including training settings, dataset descriptions, and evaluation metrics, making the work easy to follow and reproducible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999931454658508,
+                    "sentence": "2. Empirical Validation: The experimental results strongly support the claims, showing significant performance improvements over baselines for both present and absent keyphrase prediction tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999953508377075,
+                    "sentence": "3. Generative Capability: The ability to generate absent keyphrases is a notable advancement over traditional extraction methods, which are limited to phrases present in the source text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "4. Scalability: The use of a large-scale training corpus (527,830 articles) demonstrates the model's scalability and robustness in handling real-world data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "1. Lack of Novelty: While the integration of the copy mechanism is effective, the overall approach relies heavily on existing encoder-decoder architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "The methodological novelty is limited, as the core components (RNN, attention, and copy mechanisms) are well-established in the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977946281433,
+                    "sentence": "2. Domain Generalization: The model performs poorly when transferred to new domains (e.g., news articles) compared to unsupervised baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999958276748657,
+                    "sentence": "This indicates a reliance on domain-specific features and training data, limiting its applicability to diverse text types.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "3. Training Data Quality: The paper does not explicitly address the importance of maintaining high-quality training data, which could significantly impact the model's performance, especially for absent keyphrase prediction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995947480201721,
+                    "sentence": "4. Limited Insight into Model Behavior: While the results are promising, the paper lacks a deeper analysis of the CopyRNN model's behavior, such as how it balances the generation and copying processes or how it handles rare and unseen words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9902178049087524,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950900673866272,
+                    "sentence": "1. How does the model handle noisy or low-quality training data, and what measures were taken to ensure the quality of the training corpus?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9943633079528809,
+                    "sentence": "2. Can the authors provide more insights into the trade-off between generating and copying keyphrases?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9897135496139526,
+                    "sentence": "For instance, how often does the model rely on the copy mechanism versus generating from the vocabulary?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992799699306488,
+                    "sentence": "3. Have the authors considered fine-tuning the model on new domains (e.g., news articles) to improve transferability?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9702356457710266,
+                    "sentence": "If so, what were the results?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9790328145027161,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9807295203208923,
+                    "sentence": "While the paper makes a meaningful contribution to keyphrase prediction, the lack of methodological novelty and poor performance in new domains are significant drawbacks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9702951312065125,
+                    "sentence": "The paper would benefit from additional analysis of the model's behavior and a discussion on the impact of training data quality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9445472955703735,
+                    "sentence": "I recommend acceptance with minor revisions, as the empirical results and practical implications outweigh the limitations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.8923758534658037,
+            "class_probabilities": {
+                "human": 0.10626570421472266,
+                "ai": 0.8923758534658037,
+                "mixed": 0.00135844231947367
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8923758534658037,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8923758534658037,
+                    "human": 0.10626570421472266,
+                    "mixed": 0.00135844231947367
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces a generative approach to keyphrase prediction using an RNN-based encoder-decoder framework with an integrated copy mechanism. The authors address two key limitations of traditional keyphrase extraction methods: the inability to generate absent keyphrases and the lack of semantic understanding in ranking-based approaches. The primary contributions of the paper are as follows:\n1. Novel Application of Copy Mechanism: The incorporation of a copy mechanism enables the model to generate keyphrases containing out-of-vocabulary words, addressing a critical limitation of standard RNN-based models.\n2. Absent Keyphrase Prediction: This work is the first to explicitly tackle the problem of predicting absent keyphrases for scientific publications, achieving up to 20% recall for absent keyphrases.\n3. Comprehensive Evaluation: The authors conduct extensive experiments on five datasets, demonstrating that their model outperforms both supervised and unsupervised baselines in predicting present keyphrases and generates semantically relevant absent keyphrases.\nStrengths\n1. Clarity and Reproducibility: The paper is well-structured and provides sufficient methodological details, including training settings, dataset descriptions, and evaluation metrics, making the work easy to follow and reproducible.\n2. Empirical Validation: The experimental results strongly support the claims, showing significant performance improvements over baselines for both present and absent keyphrase prediction tasks.\n3. Generative Capability: The ability to generate absent keyphrases is a notable advancement over traditional extraction methods, which are limited to phrases present in the source text.\n4. Scalability: The use of a large-scale training corpus (527,830 articles) demonstrates the model's scalability and robustness in handling real-world data.\nWeaknesses\n1. Lack of Novelty: While the integration of the copy mechanism is effective, the overall approach relies heavily on existing encoder-decoder architectures. The methodological novelty is limited, as the core components (RNN, attention, and copy mechanisms) are well-established in the literature.\n2. Domain Generalization: The model performs poorly when transferred to new domains (e.g., news articles) compared to unsupervised baselines. This indicates a reliance on domain-specific features and training data, limiting its applicability to diverse text types.\n3. Training Data Quality: The paper does not explicitly address the importance of maintaining high-quality training data, which could significantly impact the model's performance, especially for absent keyphrase prediction.\n4. Limited Insight into Model Behavior: While the results are promising, the paper lacks a deeper analysis of the CopyRNN model's behavior, such as how it balances the generation and copying processes or how it handles rare and unseen words.\nQuestions to Authors\n1. How does the model handle noisy or low-quality training data, and what measures were taken to ensure the quality of the training corpus?\n2. Can the authors provide more insights into the trade-off between generating and copying keyphrases? For instance, how often does the model rely on the copy mechanism versus generating from the vocabulary?\n3. Have the authors considered fine-tuning the model on new domains (e.g., news articles) to improve transferability? If so, what were the results?\nRecommendation\nWhile the paper makes a meaningful contribution to keyphrase prediction, the lack of methodological novelty and poor performance in new domains are significant drawbacks. The paper would benefit from additional analysis of the model's behavior and a discussion on the impact of training data quality. I recommend acceptance with minor revisions, as the empirical results and practical implications outweigh the limitations."
+        }
+    ]
+}

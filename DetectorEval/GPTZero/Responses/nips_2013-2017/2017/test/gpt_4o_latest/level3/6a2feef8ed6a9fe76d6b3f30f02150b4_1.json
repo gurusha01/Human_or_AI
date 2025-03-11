@@ -1,0 +1,387 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "af4461f1-d512-4322-a28b-fa58b37e0412",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The paper introduces a Block Coordinate Descent (BCD) algorithm with Tikhonov regularization for training dense and sparse deep neural networks (DNNs) with ReLU activation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "The authors claim that their method addresses key challenges in DNN optimization, such as vanishing gradients, by decomposing the training objective into three convex sub-problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "They provide theoretical guarantees of global convergence to a stationary point with an R-linear convergence rate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "Empirical results on MNIST demonstrate that the proposed BCD algorithm outperforms traditional stochastic gradient descent (SGD) variants in terms of test-set error rates and computational efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997019767761,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "1. Theoretical Contributions: The paper provides a rigorous theoretical analysis of the BCD algorithm, including proofs of global convergence and R-linear convergence rates.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "This is a significant contribution, as convergence guarantees for non-convex optimization in DNNs are rare.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "2. Novel Formulation: The use of Tikhonov regularization to reformulate the ReLU activation as a smooth optimization problem is innovative.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "The decomposition into three sub-problems is well-motivated from a convex optimization perspective.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "3. Empirical Validation: The experiments on MNIST show that the BCD algorithm achieves better test-set error rates and faster convergence compared to SGD variants.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "The inclusion of sparse network training (BCD-S) is a useful extension, particularly for resource-constrained applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995827674866,
+                    "sentence": "4. Efficiency: The reported computational speedup over SGD-based solvers is promising and highlights the practical utility of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999996423721313,
+                    "sentence": "1. Unclear Motivation: The rationale for choosing Tikhonov regularization over other regularization techniques is not sufficiently explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999997615814209,
+                    "sentence": "While the authors mention its connection to ReLU, they fail to provide a compelling argument for its advantages over alternatives like dropout or weight decay.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "2. Technical Clarity: The mathematical exposition is difficult to follow, with several undefined terms (e.g., \\(\\mathcal{P}\\), \\(Q(\\tilde{\\mathcal{A}})\\)) and missing explanations for key concepts like the Tikhonov regularized inverse problem.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "This lack of clarity hinders reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "3. Limited Applicability: The experiments are restricted to a shallow DNN architecture on MNIST, which does not reflect the complexity of modern deep learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "The results are far from state-of-the-art, raising concerns about the method's scalability and relevance to real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8503600358963013,
+                    "sentence": "4. Vanishing Gradient Claim: The claim that the inverse sub-problem resolves the vanishing gradient issue lacks theoretical or empirical justification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8772129416465759,
+                    "sentence": "This is a critical gap, as addressing vanishing gradients is a major motivation for the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8232265710830688,
+                    "sentence": "5. Sparse Network Results: While the paper highlights the ability to learn sparse networks, the observation that the 4th layer remains dense (Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9643286466598511,
+                    "sentence": "5) is unexplained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8862677216529846,
+                    "sentence": "This undermines the claim of effective sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974840879440308,
+                    "sentence": "Suggestions for Improvement:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998602569103241,
+                    "sentence": "1. Provide a clearer and more detailed explanation of Tikhonov regularization, including its advantages over other regularization methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989808797836304,
+                    "sentence": "2. Define all mathematical terms and symbols explicitly, and include a glossary for reference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980302453041077,
+                    "sentence": "3. Justify the decomposition into three sub-problems, particularly with respect to its handling of vanishing gradients.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990701675415039,
+                    "sentence": "4. Extend experiments to deeper networks and more challenging datasets to demonstrate scalability and relevance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.997901201248169,
+                    "sentence": "5. Address the issue of dense layers in sparse networks and provide insights into the observed behavior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998131275177002,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986854195594788,
+                    "sentence": "While the paper makes valuable theoretical contributions and proposes an innovative approach, its unclear motivation, technical ambiguities, and limited empirical validation weaken its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987403154373169,
+                    "sentence": "I recommend major revisions to address these issues before the paper can be considered for acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a Block Coordinate Descent (BCD) algorithm with Tikhonov regularization for training dense and sparse deep neural networks (DNNs) with ReLU activation. The authors claim that their method addresses key challenges in DNN optimization, such as vanishing gradients, by decomposing the training objective into three convex sub-problems. They provide theoretical guarantees of global convergence to a stationary point with an R-linear convergence rate. Empirical results on MNIST demonstrate that the proposed BCD algorithm outperforms traditional stochastic gradient descent (SGD) variants in terms of test-set error rates and computational efficiency.\nStrengths:\n1. Theoretical Contributions: The paper provides a rigorous theoretical analysis of the BCD algorithm, including proofs of global convergence and R-linear convergence rates. This is a significant contribution, as convergence guarantees for non-convex optimization in DNNs are rare.\n2. Novel Formulation: The use of Tikhonov regularization to reformulate the ReLU activation as a smooth optimization problem is innovative. The decomposition into three sub-problems is well-motivated from a convex optimization perspective.\n3. Empirical Validation: The experiments on MNIST show that the BCD algorithm achieves better test-set error rates and faster convergence compared to SGD variants. The inclusion of sparse network training (BCD-S) is a useful extension, particularly for resource-constrained applications.\n4. Efficiency: The reported computational speedup over SGD-based solvers is promising and highlights the practical utility of the proposed method.\nWeaknesses:\n1. Unclear Motivation: The rationale for choosing Tikhonov regularization over other regularization techniques is not sufficiently explained. While the authors mention its connection to ReLU, they fail to provide a compelling argument for its advantages over alternatives like dropout or weight decay.\n2. Technical Clarity: The mathematical exposition is difficult to follow, with several undefined terms (e.g., \\(\\mathcal{P}\\), \\(Q(\\tilde{\\mathcal{A}})\\)) and missing explanations for key concepts like the Tikhonov regularized inverse problem. This lack of clarity hinders reproducibility.\n3. Limited Applicability: The experiments are restricted to a shallow DNN architecture on MNIST, which does not reflect the complexity of modern deep learning tasks. The results are far from state-of-the-art, raising concerns about the method's scalability and relevance to real-world applications.\n4. Vanishing Gradient Claim: The claim that the inverse sub-problem resolves the vanishing gradient issue lacks theoretical or empirical justification. This is a critical gap, as addressing vanishing gradients is a major motivation for the proposed approach.\n5. Sparse Network Results: While the paper highlights the ability to learn sparse networks, the observation that the 4th layer remains dense (Fig. 5) is unexplained. This undermines the claim of effective sparsity.\nSuggestions for Improvement:\n1. Provide a clearer and more detailed explanation of Tikhonov regularization, including its advantages over other regularization methods.\n2. Define all mathematical terms and symbols explicitly, and include a glossary for reference.\n3. Justify the decomposition into three sub-problems, particularly with respect to its handling of vanishing gradients.\n4. Extend experiments to deeper networks and more challenging datasets to demonstrate scalability and relevance.\n5. Address the issue of dense layers in sparse networks and provide insights into the observed behavior.\nRecommendation:\nWhile the paper makes valuable theoretical contributions and proposes an innovative approach, its unclear motivation, technical ambiguities, and limited empirical validation weaken its impact. I recommend major revisions to address these issues before the paper can be considered for acceptance."
+        }
+    ]
+}

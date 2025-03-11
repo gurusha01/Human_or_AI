@@ -1,0 +1,392 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5df8ea0d-7fc0-41dd-bf92-5fea5eda6ad4",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "This paper proposes a novel approach to offline handwriting recognition by modifying the Multi-Dimensional Long Short-Term Memory Recurrent Neural Networks (MDLSTM-RNNs) to enable end-to-end processing of handwritten paragraphs without requiring explicit line segmentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "The authors replace the traditional collapse layer with an attention-based iterative weighted collapse mechanism, allowing the network to focus on one line at a time.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955892562866,
+                    "sentence": "This implicit line segmentation is jointly trained with the transcription task using Connectionist Temporal Classification (CTC).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The proposed system is evaluated on the Rimes and IAM handwriting datasets, achieving competitive results compared to state-of-the-art methods that rely on explicit line segmentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999961256980896,
+                    "sentence": "The paper builds on prior work in handwriting recognition, particularly MDLSTM-RNNs, and incorporates attention mechanisms inspired by applications in machine translation, image captioning, and speech recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "By eliminating the need for explicit line segmentation, the authors address a critical bottleneck in handwriting recognition pipelines, as segmentation errors often propagate and degrade overall performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The proposed model also integrates a Bidirectional LSTM (BLSTM) decoder, which captures linguistic dependencies across lines, further enhancing recognition accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "1. Technical Novelty: The introduction of an attention-based weighted collapse mechanism is a significant innovation that advances the state of the art in handwriting recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "The approach is well-motivated and addresses a long-standing challenge in the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999976754188538,
+                    "sentence": "2. End-to-End Design: The model eliminates the need for explicit line segmentation, simplifying the preprocessing pipeline and reducing error propagation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "3. Strong Experimental Results: The system achieves competitive performance on two benchmark datasets, even outperforming methods that rely on ground-truth line segmentation in some cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999986290931702,
+                    "sentence": "The results are well-documented and include comparisons with automatic segmentation methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "4. Scalability: The proposed method is computationally efficient, enabling the transcription of full paragraphs without significant memory or time overhead.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "1. Limited Scope: While the model handles paragraphs effectively, it cannot process full documents with complex layouts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "The authors acknowledge this limitation but do not provide a concrete roadmap for extending the approach to full-page recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999993443489075,
+                    "sentence": "2. Punctuation Recognition: The model struggles with small punctuation marks, which are often missed by the attention mechanism.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "This limitation could impact applications requiring high accuracy in text transcription.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "3. Fixed Iterations: The iterative collapse mechanism runs for a fixed number of steps, which may not generalize well to paragraphs with highly variable line counts.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3392746150493622,
+                    "sentence": "A more adaptive stopping criterion would improve robustness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5234920382499695,
+                    "sentence": "4. Dependency on Paragraph Detection: The model assumes that paragraph-level images are provided, requiring a separate document layout analysis step.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994673132896423,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999633252620697,
+                    "sentence": "- The paper introduces a novel and impactful method that addresses a key challenge in handwriting recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998338222503662,
+                    "sentence": "- The experimental results are robust and demonstrate the practical utility of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994953274726868,
+                    "sentence": "- The work is well-situated within the existing literature and builds meaningfully on prior advances.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993663430213928,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992911219596863,
+                    "sentence": "- The model's applicability is limited to paragraph-level recognition, and its extension to full documents remains an open challenge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981787800788879,
+                    "sentence": "- Issues with punctuation recognition and fixed iteration steps may limit its effectiveness in certain scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.98839271068573,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9859427213668823,
+                    "sentence": "Overall, this paper makes a strong contribution to the field of handwriting recognition by proposing a novel, end-to-end approach that eliminates the need for explicit line segmentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9898228049278259,
+                    "sentence": "While there are some limitations, the strengths of the work outweigh the weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6415224671363831,
+                    "sentence": "I recommend acceptance, with minor revisions to address the concerns about punctuation recognition and adaptability to varying paragraph structures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a novel approach to offline handwriting recognition by modifying the Multi-Dimensional Long Short-Term Memory Recurrent Neural Networks (MDLSTM-RNNs) to enable end-to-end processing of handwritten paragraphs without requiring explicit line segmentation. The authors replace the traditional collapse layer with an attention-based iterative weighted collapse mechanism, allowing the network to focus on one line at a time. This implicit line segmentation is jointly trained with the transcription task using Connectionist Temporal Classification (CTC). The proposed system is evaluated on the Rimes and IAM handwriting datasets, achieving competitive results compared to state-of-the-art methods that rely on explicit line segmentation.\nThe paper builds on prior work in handwriting recognition, particularly MDLSTM-RNNs, and incorporates attention mechanisms inspired by applications in machine translation, image captioning, and speech recognition. By eliminating the need for explicit line segmentation, the authors address a critical bottleneck in handwriting recognition pipelines, as segmentation errors often propagate and degrade overall performance. The proposed model also integrates a Bidirectional LSTM (BLSTM) decoder, which captures linguistic dependencies across lines, further enhancing recognition accuracy.\nStrengths:\n1. Technical Novelty: The introduction of an attention-based weighted collapse mechanism is a significant innovation that advances the state of the art in handwriting recognition. The approach is well-motivated and addresses a long-standing challenge in the field.\n2. End-to-End Design: The model eliminates the need for explicit line segmentation, simplifying the preprocessing pipeline and reducing error propagation.\n3. Strong Experimental Results: The system achieves competitive performance on two benchmark datasets, even outperforming methods that rely on ground-truth line segmentation in some cases. The results are well-documented and include comparisons with automatic segmentation methods.\n4. Scalability: The proposed method is computationally efficient, enabling the transcription of full paragraphs without significant memory or time overhead.\nWeaknesses:\n1. Limited Scope: While the model handles paragraphs effectively, it cannot process full documents with complex layouts. The authors acknowledge this limitation but do not provide a concrete roadmap for extending the approach to full-page recognition.\n2. Punctuation Recognition: The model struggles with small punctuation marks, which are often missed by the attention mechanism. This limitation could impact applications requiring high accuracy in text transcription.\n3. Fixed Iterations: The iterative collapse mechanism runs for a fixed number of steps, which may not generalize well to paragraphs with highly variable line counts. A more adaptive stopping criterion would improve robustness.\n4. Dependency on Paragraph Detection: The model assumes that paragraph-level images are provided, requiring a separate document layout analysis step.\nArguments for Acceptance:\n- The paper introduces a novel and impactful method that addresses a key challenge in handwriting recognition.\n- The experimental results are robust and demonstrate the practical utility of the approach.\n- The work is well-situated within the existing literature and builds meaningfully on prior advances.\nArguments Against Acceptance:\n- The model's applicability is limited to paragraph-level recognition, and its extension to full documents remains an open challenge.\n- Issues with punctuation recognition and fixed iteration steps may limit its effectiveness in certain scenarios.\nRecommendation:\nOverall, this paper makes a strong contribution to the field of handwriting recognition by proposing a novel, end-to-end approach that eliminates the need for explicit line segmentation. While there are some limitations, the strengths of the work outweigh the weaknesses. I recommend acceptance, with minor revisions to address the concerns about punctuation recognition and adaptability to varying paragraph structures."
+        }
+    ]
+}

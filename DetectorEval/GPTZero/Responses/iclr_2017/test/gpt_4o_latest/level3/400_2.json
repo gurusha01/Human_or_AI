@@ -1,0 +1,352 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "9a3df11c-5a96-453e-8a9b-0b102acd2f4f",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9990147352218628,
+                    "sentence": "The paper introduces Doubly Recurrent Neural Networks (DRNNs), a novel architecture for decoding tree structures, with two key innovations: bidirectional information flow (parent-to-children and sibling-to-sibling) and a probability-based tree boundary model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989378452301025,
+                    "sentence": "The latter eliminates the need for special ending symbols, reducing parameter complexity and improving efficiency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999212384223938,
+                    "sentence": "DRNNs outperform traditional sequence-to-sequence (seq2seq) models in recovering synthetic trees and mapping natural language to functional programs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985700249671936,
+                    "sentence": "However, the synthetic tree recovery task is criticized for being overly simplistic due to inherent topological information in surface forms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985518455505371,
+                    "sentence": "Additionally, DRNN performance degrades significantly for trees with a large number of nodes, limiting its scalability for tasks requiring long-range dependencies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9906075596809387,
+                    "sentence": "Decision: Reject",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.988936722278595,
+                    "sentence": "Key Reasons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9737586379051208,
+                    "sentence": "1. Limited Task Complexity: While the DRNN demonstrates strong performance on synthetic tree recovery and functional program mapping, the synthetic task is too simple to convincingly showcase the model's advantages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9176318049430847,
+                    "sentence": "The inherent topological cues in the data reduce the challenge, making the results less generalizable to real-world scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9456418752670288,
+                    "sentence": "2. Scalability Concerns: The significant drop in performance as the number of nodes increases raises concerns about the model's applicability to tasks with longer information flows, such as large-scale parsing or machine translation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.861958384513855,
+                    "sentence": "Supporting Arguments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6292024850845337,
+                    "sentence": "- The probability-based boundary model is an elegant solution to avoid padding tokens, simplifying tree generation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5038553476333618,
+                    "sentence": "However, the paper does not sufficiently explore how this innovation performs in more challenging, real-world tasks like seq2seq parsing or large-scale machine translation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4686395227909088,
+                    "sentence": "- The experimental results on the IFTTT dataset and synthetic trees are promising but limited in scope.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999557733535767,
+                    "sentence": "The lack of exploration into more complex datasets or tasks undermines the broader applicability of the proposed architecture.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999417662620544,
+                    "sentence": "- The scalability issue is a critical limitation, as many real-world applications involve large and complex tree structures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999642968177795,
+                    "sentence": "Without addressing this, the utility of DRNNs remains constrained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999004006385803,
+                    "sentence": "Additional Feedback:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999207854270935,
+                    "sentence": "1. The authors should explore more challenging tasks, such as seq2seq parsing or dependency tree generation for natural language, to better demonstrate the advantages of DRNNs over traditional models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995973706245422,
+                    "sentence": "2. Investigate methods to improve scalability, such as hierarchical or coarse-to-fine decoding strategies, to address the performance drop for larger trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995198249816895,
+                    "sentence": "3. Provide a deeper analysis of the failure cases, particularly for large trees, to identify specific bottlenecks in the architecture.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999657392501831,
+                    "sentence": "4. Clarify the computational efficiency of DRNNs compared to other tree decoders, especially in terms of training and inference time.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996795058250427,
+                    "sentence": "Questions for the Authors:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996775984764099,
+                    "sentence": "1. How does the DRNN perform on tasks with more complex tree structures, such as dependency parsing or abstract syntax tree generation for programming languages?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997498989105225,
+                    "sentence": "2. Can the scalability issue be mitigated by architectural modifications or training strategies, such as curriculum learning or attention mechanisms?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997634291648865,
+                    "sentence": "3. How does the probability-based boundary model compare to padding-based approaches in terms of computational efficiency and accuracy on larger datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998716711997986,
+                    "sentence": "While the paper introduces a novel and promising architecture, its limitations in task complexity and scalability prevent it from making a strong case for acceptance at this stage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998818635940552,
+                    "sentence": "Addressing these issues in future work could significantly enhance its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces Doubly Recurrent Neural Networks (DRNNs), a novel architecture for decoding tree structures, with two key innovations: bidirectional information flow (parent-to-children and sibling-to-sibling) and a probability-based tree boundary model. The latter eliminates the need for special ending symbols, reducing parameter complexity and improving efficiency. DRNNs outperform traditional sequence-to-sequence (seq2seq) models in recovering synthetic trees and mapping natural language to functional programs. However, the synthetic tree recovery task is criticized for being overly simplistic due to inherent topological information in surface forms. Additionally, DRNN performance degrades significantly for trees with a large number of nodes, limiting its scalability for tasks requiring long-range dependencies.\nDecision: Reject\nKey Reasons:\n1. Limited Task Complexity: While the DRNN demonstrates strong performance on synthetic tree recovery and functional program mapping, the synthetic task is too simple to convincingly showcase the model's advantages. The inherent topological cues in the data reduce the challenge, making the results less generalizable to real-world scenarios.\n2. Scalability Concerns: The significant drop in performance as the number of nodes increases raises concerns about the model's applicability to tasks with longer information flows, such as large-scale parsing or machine translation.\nSupporting Arguments:\n- The probability-based boundary model is an elegant solution to avoid padding tokens, simplifying tree generation. However, the paper does not sufficiently explore how this innovation performs in more challenging, real-world tasks like seq2seq parsing or large-scale machine translation.\n- The experimental results on the IFTTT dataset and synthetic trees are promising but limited in scope. The lack of exploration into more complex datasets or tasks undermines the broader applicability of the proposed architecture.\n- The scalability issue is a critical limitation, as many real-world applications involve large and complex tree structures. Without addressing this, the utility of DRNNs remains constrained.\nAdditional Feedback:\n1. The authors should explore more challenging tasks, such as seq2seq parsing or dependency tree generation for natural language, to better demonstrate the advantages of DRNNs over traditional models.\n2. Investigate methods to improve scalability, such as hierarchical or coarse-to-fine decoding strategies, to address the performance drop for larger trees.\n3. Provide a deeper analysis of the failure cases, particularly for large trees, to identify specific bottlenecks in the architecture.\n4. Clarify the computational efficiency of DRNNs compared to other tree decoders, especially in terms of training and inference time.\nQuestions for the Authors:\n1. How does the DRNN perform on tasks with more complex tree structures, such as dependency parsing or abstract syntax tree generation for programming languages?\n2. Can the scalability issue be mitigated by architectural modifications or training strategies, such as curriculum learning or attention mechanisms?\n3. How does the probability-based boundary model compare to padding-based approaches in terms of computational efficiency and accuracy on larger datasets?\nWhile the paper introduces a novel and promising architecture, its limitations in task complexity and scalability prevent it from making a strong case for acceptance at this stage. Addressing these issues in future work could significantly enhance its impact."
+        }
+    ]
+}

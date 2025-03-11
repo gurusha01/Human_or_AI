@@ -1,0 +1,537 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "52e2e93b-a173-4d29-af67-f4aa5a722dfa",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.08959256112575531,
+                    "sentence": "NOTE: I am reviewing two papers that appear to be by the same authors and on the same general topic.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08053454011678696,
+                    "sentence": "The other one is on noisy queries without any side information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030915433540940285,
+                    "sentence": "This paper gives upper and lower bounds on the query complexity of clustering based on noiseless pairwise comparisons, along with random side-information associated with every pair.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02067512646317482,
+                    "sentence": "While I am familiar with some of the related literature, my knowledge of it is far from complete, so it's a little hard to fully judge the value of the contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025361785665154457,
+                    "sentence": "The paper is also so dense that I couldn't spend as much time as ideal checking the correctness -- especially in the long upper bound proof.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04123611003160477,
+                    "sentence": "My overall impression of both papers is that the contributions seem to be valuable (if correct), but the writing could do with a lot of work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.045280568301677704,
+                    "sentence": "I acknowledge that the contributions are more important than the writing, but there are so many issues that my recommendation is still borderline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03971675783395767,
+                    "sentence": "It would have been very useful to have another round of reviews where the suggestions are checked, but I understand this is not allowed for NIPS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06254956871271133,
+                    "sentence": "Regarding this paper, there are a few very relevant works that were not cited:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.057594481855630875,
+                    "sentence": "- The idea of replacing Bernoulli(p) and Bernoulli(q) by a general distribution in the stochastic block model is not new.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06928762048482895,
+                    "sentence": "A Google (or Google Scholar) search for \"labeled [sometimes spelt labelled] stochastic block model\" or the less common \"weighted stochastic block model\" reveals quite a few papers that have looked at similar generalizations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06768964976072311,
+                    "sentence": "- There is also at least one work studying the SBM with an extra querying (active learning) element: \"Active Learning for Community Detection in Stochastic Block Models\" (Gadde et al, ISIT 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.13901904225349426,
+                    "sentence": "It is with a different querying model, where one only queries a single node and gets its label.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36632800102233887,
+                    "sentence": "But for fixed k (e.g., k=2 or k=100) and linear-size communities, this is basically the same as your pairwise querying model -- just quickly find a node from each community via random sampling, and then you can get the label of any new node by performing a pairwise query to each of those.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3050277531147003,
+                    "sentence": "At first glance it looks like your lower bound contradicts their (sublinear-sample) upper bound, but this might be because your lower bound only holds as k -> Infinity (see below)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4750443696975708,
+                    "sentence": "In any case, in light of these above works, I would ask the authors to remove/re-word all statements along the lines of \"we initiate a rigorous theoretical study\", \"significantly generalizes them\", \"This is the first work that...\", \"generalize them in a significant way\", \"There is no systematic theoretical study\", etc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9203299283981323,
+                    "sentence": "Here are some further comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9532890319824219,
+                    "sentence": "- I think the model/problem should be presented more clearly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9511887431144714,
+                    "sentence": "It looks like you are looking at minimax bounds, but this doesn't seem to be stated explicitly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.93792724609375,
+                    "sentence": "Moreover, is the minimax model without any restriction on the cluster sizes?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9380342960357666,
+                    "sentence": "For instance, do you allow the case where there are k-1 clusters of size 1 and the other of size n-k+1?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9474136233329773,
+                    "sentence": "- It looks like Theorem 2 can't be correct as stated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9110196232795715,
+                    "sentence": "For the SBM with k=2 (or probably any k=O(1)) we know that no queries are required even in certain cases where the Hellinger distance scales as log(n)/n.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9197614789009094,
+                    "sentence": "It looks like part if the problem is that the proof assumes k -> Infinity, which is not stated in the theorem (it absolutely needs to be).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9731083512306213,
+                    "sentence": "I'm not sure if that's the only part of the problem -- please check very carefully whether Theorem 2 more generally contradicts cases where clustering is possible even with Q=0.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0029438664205372334,
+                    "sentence": "- The numerical section does not seem to be too valuable, mainly because it does not compare against any existing works, and only against very trivial baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0032822296489030123,
+                    "sentence": "Are your methods really the only ones that can be considered/implemented?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005437190644443035,
+                    "sentence": "- There are many confusing/unclear sentences, like \"assume, otherwise the clustering is done\" (is there text missing after \"assume\"?)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007638007402420044,
+                    "sentence": "and \"the theorem is already proved from the nk lower bound\" (doesn't that lower bound only apply when there's no side information?)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005191815085709095,
+                    "sentence": "- The paper is FULL of grammar mistakes, typos, and strange wording.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003482135944068432,
+                    "sentence": "Things like capitalization, plurals, spacing, and articles (a/an/the) are often wrong.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.002731220331043005,
+                    "sentence": "Commas are consistently mis-used (e.g., they usually should not appear after statements like \"let\" / \"we have\" / \"this means\" / \"assume that\" / \"since\" / \"while\" / \"note that\", and very rarely need to be used just before an equation).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006880030035972595,
+                    "sentence": "Sentences shouldn't start with And/Or/Plus.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004721136298030615,
+                    "sentence": "The word \"else\" is used strangely (often \"otherwise\" would be better).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012626426294445992,
+                    "sentence": "Footnotes should start with a capital letter and end with a full stop.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011668486520648003,
+                    "sentence": "This list of issues is far from complete -- regardless of the decision, I strongly urge the authors to proof-read the paper with as much care as possible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01610306277871132,
+                    "sentence": "Some less significant comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012963647022843361,
+                    "sentence": "- The abstract seems too long, and more generally, I don't think it's ideal to spend 3 pages before getting to the contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01113610714673996,
+                    "sentence": "- Is your use of terminology \"Monte Carlo\" and \"Las Vegas\" standard?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011257613077759743,
+                    "sentence": "Also, when you first mention Las Vegas on p4, it should be mentioned alongside AVERAGE query complexity (the word 'average' is missing)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01533602923154831,
+                    "sentence": "- Footnote 1: Should the 1- really be there after p=?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011034323833882809,
+                    "sentence": "- In the formal problem statement \"find Q subset of V x V\" makes it sound like the algorithm is non-adaptive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00754943722859025,
+                    "sentence": "- I disagree with the statement \"clearly exhibiting\" in the last sentence of the Simulations section.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00618703430518508,
+                    "sentence": "- Many brackets are too small throughout the appendix",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0072267744690179825,
+                    "sentence": "[POST-AUTHOR FEEDBACK COMMENTS]",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005275917239487171,
+                    "sentence": "The authors clarified a few things in the responses, and I have updated the recommendation to acceptance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00737170223146677,
+                    "sentence": "I still hope that a very careful revision is done for the final version considering the above comments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008361449465155602,
+                    "sentence": "I can see that I was the only one of the 3 reviewers to have significant comments about the writing, but I am sure that some of these issues would make a difference to a lot more NIPS readers, particularly those coming from different academic backgrounds to the authors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0061986614018678665,
+                    "sentence": "Some specific comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00365295703522861,
+                    "sentence": "- The authors have the wrong idea if they feel that \"issues like capitalization and misplaced commas\" were deciding factors in the review.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0053260535933077335,
+                    "sentence": "These were mentioned at the end as something that should be revised, not as a reason for the borderline recommendation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0033598262816667557,
+                    "sentence": "- Thank you for clarifying the (lack of) contradiction with Gadde's paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030268575064837933,
+                    "sentence": "- It is very important that theorems and lemmas are stated precisely.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003971535712480545,
+                    "sentence": "e.g., If a result only holds for sufficiently large k, this MUST be stated in the theorem, and not just in the proof.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004036549478769302,
+                    "sentence": "- Regarding the specific grammar issues addressed in the responses, I still suggest revising the use of Else/And/Or/Plus, the sentence \"assume, otherwise...\", and so on.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007854138500988483,
+                    "sentence": "I am convinced that most of these are grammatically incorrect as used in the paper, or at least unsuitable language for an academic paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011639807373285294,
+                    "sentence": "(The authors may disagree)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.08972770908447433,
+            "class_probabilities": {
+                "human": 0.9093216555834618,
+                "ai": 0.08972770908447433,
+                "mixed": 0.0009506353320638087
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9093216555834618,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.08972770908447433,
+                    "human": 0.9093216555834618,
+                    "mixed": 0.0009506353320638087
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "NOTE: I am reviewing two papers that appear to be by the same authors and on the same general topic. The other one is on noisy queries without any side information.\nThis paper gives upper and lower bounds on the query complexity of clustering based on noiseless pairwise comparisons, along with random side-information associated with every pair. While I am familiar with some of the related literature, my knowledge of it is far from complete, so it's a little hard to fully judge the value of the contributions. The paper is also so dense that I couldn't spend as much time as ideal checking the correctness -- especially in the long upper bound proof.\nMy overall impression of both papers is that the contributions seem to be valuable (if correct), but the writing could do with a lot of work. I acknowledge that the contributions are more important than the writing, but there are so many issues that my recommendation is still borderline. It would have been very useful to have another round of reviews where the suggestions are checked, but I understand this is not allowed for NIPS. \nRegarding this paper, there are a few very relevant works that were not cited:\n- The idea of replacing Bernoulli(p) and Bernoulli(q) by a general distribution in the stochastic block model is not new. A Google (or Google Scholar) search for \"labeled [sometimes spelt labelled] stochastic block model\" or the less common \"weighted stochastic block model\" reveals quite a few papers that have looked at similar generalizations.\n- There is also at least one work studying the SBM with an extra querying (active learning) element: \"Active Learning for Community Detection in Stochastic Block Models\" (Gadde et al, ISIT 2016). It is with a different querying model, where one only queries a single node and gets its label. But for fixed k (e.g., k=2 or k=100) and linear-size communities, this is basically the same as your pairwise querying model -- just quickly find a node from each community via random sampling, and then you can get the label of any new node by performing a pairwise query to each of those. At first glance it looks like your lower bound contradicts their (sublinear-sample) upper bound, but this might be because your lower bound only holds as k -> Infinity (see below)\nIn any case, in light of these above works, I would ask the authors to remove/re-word all statements along the lines of \"we initiate a rigorous theoretical study\", \"significantly generalizes them\", \"This is the first work that...\", \"generalize them in a significant way\", \"There is no systematic theoretical study\", etc.\nHere are some further comments:\n- I think the model/problem should be presented more clearly. It looks like you are looking at minimax bounds, but this doesn't seem to be stated explicitly. Moreover, is the minimax model without any restriction on the cluster sizes? For instance, do you allow the case where there are k-1 clusters of size 1 and the other of size n-k+1?\n- It looks like Theorem 2 can't be correct as stated. For the SBM with k=2 (or probably any k=O(1)) we know that no queries are required even in certain cases where the Hellinger distance scales as log(n)/n. It looks like part if the problem is that the proof assumes k -> Infinity, which is not stated in the theorem (it absolutely needs to be). I'm not sure if that's the only part of the problem -- please check very carefully whether Theorem 2 more generally contradicts cases where clustering is possible even with Q=0.\n- The numerical section does not seem to be too valuable, mainly because it does not compare against any existing works, and only against very trivial baselines. Are your methods really the only ones that can be considered/implemented?\n- There are many confusing/unclear sentences, like \"assume, otherwise the clustering is done\" (is there text missing after \"assume\"?) and \"the theorem is already proved from the nk lower bound\" (doesn't that lower bound only apply when there's no side information?)\n- The paper is FULL of grammar mistakes, typos, and strange wording. Things like capitalization, plurals, spacing, and articles (a/an/the) are often wrong. Commas are consistently mis-used (e.g., they usually should not appear after statements like \"let\" / \"we have\" / \"this means\" / \"assume that\" / \"since\" / \"while\" / \"note that\", and very rarely need to be used just before an equation). Sentences shouldn't start with And/Or/Plus. The word \"else\" is used strangely (often \"otherwise\" would be better). Footnotes should start with a capital letter and end with a full stop. This list of issues is far from complete -- regardless of the decision, I strongly urge the authors to proof-read the paper with as much care as possible.\nSome less significant comments:\n- The abstract seems too long, and more generally, I don't think it's ideal to spend 3 pages before getting to the contributions\n- Is your use of terminology \"Monte Carlo\" and \"Las Vegas\" standard? Also, when you first mention Las Vegas on p4, it should be mentioned alongside AVERAGE query complexity (the word 'average' is missing)\n- Footnote 1: Should the 1- really be there after p= ?\n- In the formal problem statement \"find Q subset of V x V\" makes it sound like the algorithm is non-adaptive.\n- I disagree with the statement \"clearly exhibiting\" in the last sentence of the Simulations section.\n- Many brackets are too small throughout the appendix\n[POST-AUTHOR FEEDBACK COMMENTS]\nThe authors clarified a few things in the responses, and I have updated the recommendation to acceptance. I still hope that a very careful revision is done for the final version considering the above comments. I can see that I was the only one of the 3 reviewers to have significant comments about the writing, but I am sure that some of these issues would make a difference to a lot more NIPS readers, particularly those coming from different academic backgrounds to the authors.\nSome specific comments:\n- The authors have the wrong idea if they feel that \"issues like capitalization and misplaced commas\" were deciding factors in the review. These were mentioned at the end as something that should be revised, not as a reason for the borderline recommendation.\n- Thank you for clarifying the (lack of) contradiction with Gadde's paper.\n- It is very important that theorems and lemmas are stated precisely. e.g., If a result only holds for sufficiently large k, this MUST be stated in the theorem, and not just in the proof.\n- Regarding the specific grammar issues addressed in the responses, I still suggest revising the use of Else/And/Or/Plus, the sentence \"assume, otherwise...\", and so on. I am convinced that most of these are grammatically incorrect as used in the paper, or at least unsuitable language for an academic paper. (The authors may disagree)"
+        }
+    ]
+}

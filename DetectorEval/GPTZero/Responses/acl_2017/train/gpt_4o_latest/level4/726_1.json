@@ -1,0 +1,631 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "3c231322-9129-41ed-98ab-5012eeccd48a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999370574951172,
+                    "sentence": "The paper introduces a neural model capable of predicting SQL queries directly from natural language inputs, bypassing the need for an intermediate formal representation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999475479125977,
+                    "sentence": "Additionally, it proposes and evaluates an interactive online feedback loop on a limited scale.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999842047691345,
+                    "sentence": "- Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999540448188782,
+                    "sentence": "1. The paper is well-written, clearly structured, and appropriately contextualized, making it an enjoyable read.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999411702156067,
+                    "sentence": "2. The proposed model demonstrates strong performance across three distinct domains: academic, geographic queries, and flight booking.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999573230743408,
+                    "sentence": "3. The online feedback loop is an intriguing and promising concept, despite the limited scale of the experiments conducted.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998605251312256,
+                    "sentence": "4. The authors contribute a new semantic corpus and convert two existing corpora into SQL format, which will likely support further research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998754858970642,
+                    "sentence": "- Weaknesses / clarifications:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996171593666077,
+                    "sentence": "1. Section 4.2 (Entity anonymization): The rationale behind progressively reducing the span length for querying the search engine is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995459914207458,
+                    "sentence": "Could the authors elaborate on the reasoning and methodology behind this choice (line 333)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993816614151001,
+                    "sentence": "2. Section 5 (Benchmark experiments): It appears that the feedback loop (Algorithm 1) is not utilized in these experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983667731285095,
+                    "sentence": "If this interpretation is correct, it is unclear when data augmentation occurs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985783100128174,
+                    "sentence": "Is the annotated training data augmented with paraphrases in its entirety?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981920123100281,
+                    "sentence": "When is the \"initial data\" derived from templates incorporated?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985374212265015,
+                    "sentence": "Is this data also added to the gold training set?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979041218757629,
+                    "sentence": "If so, it is unsurprising that it provides limited benefit, as the gold queries may already exhibit greater diversity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975836277008057,
+                    "sentence": "Clarifying this process would be helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981743097305298,
+                    "sentence": "Additionally, it would be valuable to report the performance of the \"vanilla\" model without any augmentation, as this seems to be missing from the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982077479362488,
+                    "sentence": "3. Tables 2 and 3: The evaluation metric used is somewhat ambiguous.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99856036901474,
+                    "sentence": "Does the accuracy metric reflect the correctness of the query's execution (i.e., the retrieved answer), as suggested by line 471?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9922264218330383,
+                    "sentence": "Or does it compare the queries themselves, as appears to be the case for Dong and Lapata in Table 2?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9851943254470825,
+                    "sentence": "If the evaluation methods differ across systems (e.g., Dong and Lapata), how are the results comparable?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9890679717063904,
+                    "sentence": "Furthermore, the text mentions that the SQL model has \"slightly lower accuracy than the best non-SQL results\" (line 515), but Table 2 shows a nearly 9-point accuracy gap.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.986235499382019,
+                    "sentence": "Was a significance test conducted to support this observation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9889699220657349,
+                    "sentence": "If not, while the results remain impressive for direct SQL parsing, the wording should be revised, as the performance difference appears significant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9851517677307129,
+                    "sentence": "4. Line 519 (Data recombination technique): The data recombination technique from Jia and Liang (2016) seems applicable in this context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9863491058349609,
+                    "sentence": "Why was it not explored?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9881399869918823,
+                    "sentence": "Is this left for future work, or are there specific constraints preventing its use?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9909345507621765,
+                    "sentence": "5. Section 6.2 (Three-stage online experiment): Several details are missing or unclear:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9819996356964111,
+                    "sentence": "- What was the technical background of the recruited users?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9836327433586121,
+                    "sentence": "- Who were the crowd workers, and how were they recruited and trained?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99040687084198,
+                    "sentence": "- The text states, \"we recruited 10 new users and asked them to issue at least 10 utterances.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.985139012336731,
+                    "sentence": "Does this mean 10 queries per user (i.e., 100 total) or 10 queries overall?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9738996028900146,
+                    "sentence": "- What was the size of the initial synthesized training set?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9842801690101624,
+                    "sentence": "- Could the authors provide statistics on the queries, such as lexical variability, length, or SQL complexity?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9772531390190125,
+                    "sentence": "This is particularly important for the first phase, which performs surprisingly well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9547805786132812,
+                    "sentence": "Additionally, since SCHOLAR uses both SQL and NL, including it in the submission would have facilitated a more thorough review.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9652512669563293,
+                    "sentence": "6. Section 6.3 (SCHOLAR dataset):",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9880351424217224,
+                    "sentence": "- The dataset appears small by modern standards (816 utterances in total), especially considering the scalability advantage of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9706257581710815,
+                    "sentence": "What prevented the creation of a larger dataset?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982270002365112,
+                    "sentence": "- Is it possible to evaluate another baseline on this newly created dataset to compare against the reported 67% accuracy (line 730)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984399080276489,
+                    "sentence": "7. Evaluation of interactive learning experiments (Section 6): The experiments are somewhat difficult to replicate due to their reliance on manual queries from specific annotators.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974978566169739,
+                    "sentence": "For instance, how can one ensure that annotators in the final phase did not simply ask simpler questions?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9968649744987488,
+                    "sentence": "While this is a common challenge in online learning scenarios, steps could be taken to enable more objective comparisons.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966742396354675,
+                    "sentence": "For example:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951901435852051,
+                    "sentence": "- Providing query statistics (as mentioned earlier) could help assess whether simpler queries were issued.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995913565158844,
+                    "sentence": "- Introducing a held-out test set might offer a more objective evaluation, though this could be challenging given the model's reliance on seen queries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9825752973556519,
+                    "sentence": "Scaling up the experiment, as suggested earlier, might mitigate this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9972100257873535,
+                    "sentence": "- Exploring whether a different baseline could be assessed using the online learning technique might also be worthwhile, though it is unclear if this is feasible given that prior methods were not designed for online learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996363639831543,
+                    "sentence": "- Minor comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973127245903015,
+                    "sentence": "1. Line 48: Replace \"requires\" with \"require.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996457576751709,
+                    "sentence": "2. Footnote 1 is overly lengthy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986182451248169,
+                    "sentence": "Consider moving some of its content into the main text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986920952796936,
+                    "sentence": "3. Algorithm 1: The term \"new utterances\" is unclear (presumably referring to new user queries).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993336200714111,
+                    "sentence": "Adding a caption to the algorithm could improve clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986483454704285,
+                    "sentence": "4. Line 218: Replace \"Is is\" with \"It is.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990655779838562,
+                    "sentence": "5. Line 278: The term \"anonymized utterance\" caused initial confusion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982629418373108,
+                    "sentence": "If it refers to the anonymization process described in Section 4.2, consider adding a forward reference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993600845336914,
+                    "sentence": "- General Discussion:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986211061477661,
+                    "sentence": "Overall, I found the paper compelling and would like to see it accepted at the conference, provided the authors address the questions and concerns raised above.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993181228637695,
+                    "sentence": "- Author Response:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991391897201538,
+                    "sentence": "I appreciate the authors' detailed responses and encourage them to incorporate these clarifications into the final version of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 50,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 56,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 58,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 59,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 60,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 61,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a neural model capable of predicting SQL queries directly from natural language inputs, bypassing the need for an intermediate formal representation. Additionally, it proposes and evaluates an interactive online feedback loop on a limited scale.\n- Strengths:\n1. The paper is well-written, clearly structured, and appropriately contextualized, making it an enjoyable read.\n2. The proposed model demonstrates strong performance across three distinct domains: academic, geographic queries, and flight booking.\n3. The online feedback loop is an intriguing and promising concept, despite the limited scale of the experiments conducted.\n4. The authors contribute a new semantic corpus and convert two existing corpora into SQL format, which will likely support further research in this area.\n- Weaknesses / clarifications:\n1. Section 4.2 (Entity anonymization): The rationale behind progressively reducing the span length for querying the search engine is unclear. Could the authors elaborate on the reasoning and methodology behind this choice (line 333)?\n2. Section 5 (Benchmark experiments): It appears that the feedback loop (Algorithm 1) is not utilized in these experiments. If this interpretation is correct, it is unclear when data augmentation occurs. Is the annotated training data augmented with paraphrases in its entirety? When is the \"initial data\" derived from templates incorporated? Is this data also added to the gold training set? If so, it is unsurprising that it provides limited benefit, as the gold queries may already exhibit greater diversity. Clarifying this process would be helpful. Additionally, it would be valuable to report the performance of the \"vanilla\" model without any augmentation, as this seems to be missing from the paper.\n3. Tables 2 and 3: The evaluation metric used is somewhat ambiguous. Does the accuracy metric reflect the correctness of the query's execution (i.e., the retrieved answer), as suggested by line 471? Or does it compare the queries themselves, as appears to be the case for Dong and Lapata in Table 2? If the evaluation methods differ across systems (e.g., Dong and Lapata), how are the results comparable? Furthermore, the text mentions that the SQL model has \"slightly lower accuracy than the best non-SQL results\" (line 515), but Table 2 shows a nearly 9-point accuracy gap. Was a significance test conducted to support this observation? If not, while the results remain impressive for direct SQL parsing, the wording should be revised, as the performance difference appears significant.\n4. Line 519 (Data recombination technique): The data recombination technique from Jia and Liang (2016) seems applicable in this context. Why was it not explored? Is this left for future work, or are there specific constraints preventing its use?\n5. Section 6.2 (Three-stage online experiment): Several details are missing or unclear:\n - What was the technical background of the recruited users?\n - Who were the crowd workers, and how were they recruited and trained?\n - The text states, \"we recruited 10 new users and asked them to issue at least 10 utterances.\" Does this mean 10 queries per user (i.e., 100 total) or 10 queries overall?\n - What was the size of the initial synthesized training set?\n - Could the authors provide statistics on the queries, such as lexical variability, length, or SQL complexity? This is particularly important for the first phase, which performs surprisingly well. Additionally, since SCHOLAR uses both SQL and NL, including it in the submission would have facilitated a more thorough review.\n6. Section 6.3 (SCHOLAR dataset):\n - The dataset appears small by modern standards (816 utterances in total), especially considering the scalability advantage of the proposed approach. What prevented the creation of a larger dataset?\n - Is it possible to evaluate another baseline on this newly created dataset to compare against the reported 67% accuracy (line 730)?\n7. Evaluation of interactive learning experiments (Section 6): The experiments are somewhat difficult to replicate due to their reliance on manual queries from specific annotators. For instance, how can one ensure that annotators in the final phase did not simply ask simpler questions? While this is a common challenge in online learning scenarios, steps could be taken to enable more objective comparisons. For example:\n - Providing query statistics (as mentioned earlier) could help assess whether simpler queries were issued.\n - Introducing a held-out test set might offer a more objective evaluation, though this could be challenging given the model's reliance on seen queries. Scaling up the experiment, as suggested earlier, might mitigate this issue.\n - Exploring whether a different baseline could be assessed using the online learning technique might also be worthwhile, though it is unclear if this is feasible given that prior methods were not designed for online learning.\n- Minor comments:\n1. Line 48: Replace \"requires\" with \"require.\"\n2. Footnote 1 is overly lengthy. Consider moving some of its content into the main text.\n3. Algorithm 1: The term \"new utterances\" is unclear (presumably referring to new user queries). Adding a caption to the algorithm could improve clarity.\n4. Line 218: Replace \"Is is\" with \"It is.\"\n5. Line 278: The term \"anonymized utterance\" caused initial confusion. If it refers to the anonymization process described in Section 4.2, consider adding a forward reference.\n- General Discussion:\nOverall, I found the paper compelling and would like to see it accepted at the conference, provided the authors address the questions and concerns raised above.\n- Author Response:\nI appreciate the authors' detailed responses and encourage them to incorporate these clarifications into the final version of the paper."
+        }
+    ]
+}

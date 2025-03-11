@@ -1,0 +1,301 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "94c350d1-3490-4b58-ba1e-26bac9131a1e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9989182949066162,
+                    "sentence": "The paper introduces a \"neural transducer\" model for sequence-to-sequence tasks that operates in an online, left-to-right manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978461265563965,
+                    "sentence": "Unlike traditional sequence-to-sequence models that wait for the entire input sequence before producing output, this model generates output incrementally as input is received.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9743103384971619,
+                    "sentence": "The key innovations enabling the model include a recurrent attention mechanism, the introduction of an end-of-block symbol in the output alphabet to signal transitions between input blocks, and approximate algorithms based on dynamic programming and beam search for training and inference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9707019925117493,
+                    "sentence": "Experiments conducted on the TIMIT speech recognition task demonstrate the model's effectiveness and investigate various design parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2870706617832184,
+                    "sentence": "This is a well-executed paper that addresses an important problem: designing and training a sequence-to-sequence model capable of operating online rather than requiring complete input sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.27474766969680786,
+                    "sentence": "The paper provides a clear description of the proposed architecture and systematically explains the design considerations for its components, including next-step prediction, the attention mechanism, and end-of-block modeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4505217671394348,
+                    "sentence": "It also effectively outlines the challenges associated with training and inference for the model and proposes practical approximate solutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5084161758422852,
+                    "sentence": "The experimental results on TIMIT are appropriate for showcasing the model's utility and exploring design choices, such as recurrent state handling across block boundaries, block size, attention mechanism design, and model depth.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.44641798734664917,
+                    "sentence": "However, there are several areas where the paper could be improved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.29928088188171387,
+                    "sentence": "- Page 3, line 93: The phrase \"We first compute the probability of l compute the probability of seeing output sequence\" contains an editing error that needs correction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5240892767906189,
+                    "sentence": "- Section 3.4: The paper does not discuss the comparative performance of the three different approaches to end-of-block modeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5472508072853088,
+                    "sentence": "While it is implied that the use of the `<e>` symbol was the most effective, the performance differences between the methods are not quantified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6021628379821777,
+                    "sentence": "Including such an analysis would strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.674203097820282,
+                    "sentence": "- Section 3.5: The approach of computing alignments less frequently than model updates is reminiscent of lattice-based techniques in sequence-discriminative training for acoustic models in speech recognition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5658923387527466,
+                    "sentence": "Relevant references include D. Povey and P. C. Woodland's work on large-scale discriminative training (ASR Workshop, 2000) and B. Kingsbury's lattice-based optimization for neural network acoustic modeling (ICASSP, 2009).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.544744074344635,
+                    "sentence": "Future work on the transducer model could explore the use of lattices to represent alignment information.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6080856323242188,
+                    "sentence": "Additionally, methods for rescoring lattices with recurrent neural network language models, such as those described by X. Liu et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9453017115592957,
+                    "sentence": "(ICASSP, 2014), might be applicable to address the challenge of conditioning the transducer on all input and output history up to the current moment.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9617787599563599,
+                    "sentence": "- Page 7, lines 202-203: Replace \"Log Mel filterbanks\" with \"Log Mel spectra\" for accuracy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.95476233959198,
+                    "sentence": "- Section 4.2: The TIMIT experiments deviate from standard practices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9423747062683105,
+                    "sentence": "Typically, TIMIT phones are collapsed more than was done in this paper, and specific subsets of the data are excluded from training, with results reported only on the core test set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9567691683769226,
+                    "sentence": "For example, see T. N. Sainath et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9661531448364258,
+                    "sentence": "(IEEE Transactions on Speech and Audio Processing, 2011) or K. F. Lee and H. W. Hon (IEEE Transactions on Acoustics, Speech, and Signal Processing, 1989).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9091508984565735,
+                    "sentence": "Adhering to the standard experimental framework would make the results more comparable to prior work and should be explicitly stated in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8975404500961304,
+                    "sentence": "- Section 4.2: The authors could have explored initializing the transducer by training on HMM-GMM alignments before transitioning to alignments inferred by the transducer itself.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8561760783195496,
+                    "sentence": "This approach might have yielded improved performance on TIMIT.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7684141993522644,
+                    "sentence": "Overall, the paper is a strong contribution to the field, but addressing the above issues would enhance its clarity, rigor, and impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.0022792978668507114
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.7995711047355243,
+            "class_probabilities": {
+                "human": 0.19427518060025914,
+                "ai": 0.7995711047355243,
+                "mixed": 0.006153714664216576
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7995711047355243,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7995711047355243,
+                    "human": 0.19427518060025914,
+                    "mixed": 0.006153714664216576
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a \"neural transducer\" model for sequence-to-sequence tasks that operates in an online, left-to-right manner. Unlike traditional sequence-to-sequence models that wait for the entire input sequence before producing output, this model generates output incrementally as input is received. The key innovations enabling the model include a recurrent attention mechanism, the introduction of an end-of-block symbol in the output alphabet to signal transitions between input blocks, and approximate algorithms based on dynamic programming and beam search for training and inference. Experiments conducted on the TIMIT speech recognition task demonstrate the model's effectiveness and investigate various design parameters. \nThis is a well-executed paper that addresses an important problem: designing and training a sequence-to-sequence model capable of operating online rather than requiring complete input sequences. The paper provides a clear description of the proposed architecture and systematically explains the design considerations for its components, including next-step prediction, the attention mechanism, and end-of-block modeling. It also effectively outlines the challenges associated with training and inference for the model and proposes practical approximate solutions. The experimental results on TIMIT are appropriate for showcasing the model's utility and exploring design choices, such as recurrent state handling across block boundaries, block size, attention mechanism design, and model depth.\nHowever, there are several areas where the paper could be improved. \n- Page 3, line 93: The phrase \"We first compute the probability of l compute the probability of seeing output sequence\" contains an editing error that needs correction. \n- Section 3.4: The paper does not discuss the comparative performance of the three different approaches to end-of-block modeling. While it is implied that the use of the `<e>` symbol was the most effective, the performance differences between the methods are not quantified. Including such an analysis would strengthen the paper. \n- Section 3.5: The approach of computing alignments less frequently than model updates is reminiscent of lattice-based techniques in sequence-discriminative training for acoustic models in speech recognition. Relevant references include D. Povey and P. C. Woodland's work on large-scale discriminative training (ASR Workshop, 2000) and B. Kingsbury's lattice-based optimization for neural network acoustic modeling (ICASSP, 2009). Future work on the transducer model could explore the use of lattices to represent alignment information. Additionally, methods for rescoring lattices with recurrent neural network language models, such as those described by X. Liu et al. (ICASSP, 2014), might be applicable to address the challenge of conditioning the transducer on all input and output history up to the current moment. \n- Page 7, lines 202-203: Replace \"Log Mel filterbanks\" with \"Log Mel spectra\" for accuracy. \n- Section 4.2: The TIMIT experiments deviate from standard practices. Typically, TIMIT phones are collapsed more than was done in this paper, and specific subsets of the data are excluded from training, with results reported only on the core test set. For example, see T. N. Sainath et al. (IEEE Transactions on Speech and Audio Processing, 2011) or K. F. Lee and H. W. Hon (IEEE Transactions on Acoustics, Speech, and Signal Processing, 1989). Adhering to the standard experimental framework would make the results more comparable to prior work and should be explicitly stated in the paper. \n- Section 4.2: The authors could have explored initializing the transducer by training on HMM-GMM alignments before transitioning to alignments inferred by the transducer itself. This approach might have yielded improved performance on TIMIT.\nOverall, the paper is a strong contribution to the field, but addressing the above issues would enhance its clarity, rigor, and impact."
+        }
+    ]
+}

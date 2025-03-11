@@ -1,0 +1,606 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a374bd80-78cd-40b8-9890-8a4711261d37",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.18562866747379303,
+                    "sentence": "This paper proposes a new approach to model based reinforcement learning and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.29747048020362854,
+                    "sentence": "evaluates it on 3 ATARI games.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2553098201751709,
+                    "sentence": "The approach involves training a model that",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2051393985748291,
+                    "sentence": "predicts a sequence of rewards and probabilities of losing a life given a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.12515412271022797,
+                    "sentence": "context of frames and a sequence of actions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2599048912525177,
+                    "sentence": "The controller samples random",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.33237823843955994,
+                    "sentence": "sequences of actions and executes the one that balances the probabilities of",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3997446298599243,
+                    "sentence": "earning a point and losing a life given some thresholds.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6837066411972046,
+                    "sentence": "The proposed system",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.31549322605133057,
+                    "sentence": "learns to play 3 Atari games both individually and when trained on all 3 in a",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3059968054294586,
+                    "sentence": "multi-task setup at super-human level.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4507918655872345,
+                    "sentence": "The results presented in the paper are very encouraging but there are many",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36601701378822327,
+                    "sentence": "ad-hoc design choices in the design of the system.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6819640398025513,
+                    "sentence": "The paper also provides",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4612356722354889,
+                    "sentence": "little insight into the importance of the different components of the system.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5875281691551208,
+                    "sentence": "Main concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5441209673881531,
+                    "sentence": "- The way predicted rewards and life loss probabilities are combined is very ad-hoc.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.43621155619621277,
+                    "sentence": "The natural way to do this would be by learning a Q-value, instead different",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5604286789894104,
+                    "sentence": "rules are devised for different games.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.584028422832489,
+                    "sentence": "- Is a model actually being learned and improved?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5716660618782043,
+                    "sentence": "It would be good to see",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5414938926696777,
+                    "sentence": "predictions for several actions sequences from some carefully chosen start",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.3111361861228943,
+                    "sentence": "states.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5764666199684143,
+                    "sentence": "This would be good to see both on a game where the approach works and",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5360853672027588,
+                    "sentence": "on a game where it fails.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6760573983192444,
+                    "sentence": "The learning progress could also be measured by",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.4601399600505829,
+                    "sentence": "plotting the training loss on a fixed holdout set of sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5861595869064331,
+                    "sentence": "- How important is the proposed RRNN architecture?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.5778778791427612,
+                    "sentence": "Would it still work without",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.552272379398346,
+                    "sentence": "the residual connections?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.6027815341949463,
+                    "sentence": "Would a standard LSTM also work?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003804887877777219,
+                    "sentence": "Minor points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013732428196817636,
+                    "sentence": "- Intro, paragraph 2 - There is a lot of much earlier work on using models in",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008853872306644917,
+                    "sentence": "RL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026058191433548927,
+                    "sentence": "For example, see Dyna and \"Memory approaches to reinforcement learning in",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005138646345585585,
+                    "sentence": "non-Markovian domains\" by Lin and Mitchell to name just two.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014417045749723911,
+                    "sentence": "- Section 3.1 - Minor point, but using a_i to represent the observation is",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0006118443561717868,
+                    "sentence": "unusual.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0016699486877769232,
+                    "sentence": "Why not use oi for observations and ai for actions?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014310426777228713,
+                    "sentence": "- Section 3.2.2 - Notation again, r_i was used earlier to represent the",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014596175169572234,
+                    "sentence": "reward at time i but it is being used again for something else.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0014546415768563747,
+                    "sentence": "- Observation 1 seems somewhat out of place.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.001168869435787201,
+                    "sentence": "Citing the layer normalization",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0011141836876049638,
+                    "sentence": "paper for the motivation is enough.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009900002041831613,
+                    "sentence": "- Section 3.2.2, second last paragraph - How is memory decoupled from",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0013892153510823846,
+                    "sentence": "computation here?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008110133348964155,
+                    "sentence": "Models like neural turning machines accomplish this by using",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012210003333166242,
+                    "sentence": "an external memory, but this looks like an RNN with skip connections.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0007802482577972114,
+                    "sentence": "- Section 3.3, second paragraph - Whether the model overfits or not depends on",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012782984413206577,
+                    "sentence": "the data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0008629746735095978,
+                    "sentence": "The approach doesn't work with demonstrations precisely because it",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0005015857750549912,
+                    "sentence": "would overfit.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0010551793966442347,
+                    "sentence": "- Figure 4 - The reference for Batch Normalization should be Ioffe and Szegedy",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0009838694240897894,
+                    "sentence": "instead of Morimoto et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0012980526080355048,
+                    "sentence": "Overall I think the paper has some really promising ideas and encouraging",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0017219812143594027,
+                    "sentence": "results but is missing a few exploratory/ablation experiments and some polish.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 49,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 51,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 52,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 53,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 54,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 55,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.06633669730667867,
+            "class_probabilities": {
+                "human": 0.9336633026933213,
+                "ai": 0.06633669730667867,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9336633026933213,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.06633669730667867,
+                    "human": 0.9336633026933213,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a new approach to model based reinforcement learning and\nevaluates it on 3 ATARI games. The approach involves training a model that\npredicts a sequence of rewards and probabilities of losing a life given a\ncontext of frames and a sequence of actions. The controller samples random\nsequences of actions and executes the one that balances the probabilities of\nearning a point and losing a life given some thresholds. The proposed system\nlearns to play 3 Atari games both individually and when trained on all 3 in a\nmulti-task setup at super-human level.\nThe results presented in the paper are very encouraging but there are many\nad-hoc design choices in the design of the system. The paper also provides\nlittle insight into the importance of the different components of the system.\nMain concerns:\n- The way predicted rewards and life loss probabilities are combined is very ad-hoc.\n The natural way to do this would be by learning a Q-value, instead different\n rules are devised for different games.\n- Is a model actually being learned and improved? It would be good to see\n predictions for several actions sequences from some carefully chosen start\n states. This would be good to see both on a game where the approach works and\n on a game where it fails. The learning progress could also be measured by\n plotting the training loss on a fixed holdout set of sequences.\n- How important is the proposed RRNN architecture? Would it still work without\n the residual connections? Would a standard LSTM also work?\nMinor points:\n- Intro, paragraph 2 - There is a lot of much earlier work on using models in\n RL. For example, see Dyna and \"Memory approaches to reinforcement learning in\n non-Markovian domains\" by Lin and Mitchell to name just two.\n- Section 3.1 - Minor point, but using a_i to represent the observation is\n unusual. Why not use oi for observations and ai for actions?\n- Section 3.2.2 - Notation again, r_i was used earlier to represent the\n reward at time i but it is being used again for something else.\n- Observation 1 seems somewhat out of place. Citing the layer normalization\n paper for the motivation is enough.\n- Section 3.2.2, second last paragraph - How is memory decoupled from\n computation here? Models like neural turning machines accomplish this by using\n an external memory, but this looks like an RNN with skip connections.\n- Section 3.3, second paragraph - Whether the model overfits or not depends on\n the data. The approach doesn't work with demonstrations precisely because it\n would overfit.\n- Figure 4 - The reference for Batch Normalization should be Ioffe and Szegedy\n instead of Morimoto et al.\nOverall I think the paper has some really promising ideas and encouraging\nresults but is missing a few exploratory/ablation experiments and some polish."
+        }
+    ]
+}

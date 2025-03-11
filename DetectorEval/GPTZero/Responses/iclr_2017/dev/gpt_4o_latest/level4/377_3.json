@@ -1,0 +1,266 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "90fd1f30-9e68-466d-b38a-079f1565a3d6",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9996189475059509,
+                    "sentence": "This paper aims to explore the capability of reinforcement learning (RL) agents to conduct \"physics experiments\" within an environment to infer the physical properties of objects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9996106028556824,
+                    "sentence": "The problem is well-motivated; understanding the physical properties of objects is a fundamental skill for intelligent agents, and there has been relatively limited research in this area, particularly within the realm of deep RL.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994997978210449,
+                    "sentence": "Additionally, the paper is well-written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9997011423110962,
+                    "sentence": "While the paper does not claim any architectural or theoretical contributions, the primary novelty lies in its task application\"\"utilizing a recurrent A3C model for two tasks that simulate an agent interacting with an environment to infer object properties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9995929002761841,
+                    "sentence": "Specifically, the two tasks involve moving blocks to estimate their mass and poking towers to determine the number of rigid bodies they comprise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9992774128913879,
+                    "sentence": "These tasks, while relevant, represent a narrow subset of the broader abilities required for an agent to understand physics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994472861289978,
+                    "sentence": "This limitation is not inherently problematic, but the lack of comparisons with alternative (simpler) RL agents makes it challenging to assess the difficulty of the proposed tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9995553493499756,
+                    "sentence": "As noted in the pre-review question, the \"Which is Heavier\" task appears relatively straightforward due to the actuator setup and the fact that the model primarily learns to compute the difference between successive block positions, which are directly encoded as features in most experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9991977214813232,
+                    "sentence": "Consequently, it is unsurprising that the RL agent can solve the proposed tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9993267059326172,
+                    "sentence": "The paper's main claim, beyond solving these two physics-related tasks, is that \"the agents learn different strategies for these tasks that balance the cost of gathering information against the cost of making mistakes.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9994403123855591,
+                    "sentence": "The \"cost of gathering information\" is modeled by scaling the reward with a gamma value less than 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9993975758552551,
+                    "sentence": "While this behavior is somewhat interesting, it is not particularly surprising given the problem's design.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9993837475776672,
+                    "sentence": "The authors emphasize that their approach\"\"learning about physical object properties through interaction\"\"differs from many prior approaches that rely on visual cues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9987108707427979,
+                    "sentence": "However, they also acknowledge that this idea is not novel and has been explored in previous work (e.g., Agrawal et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9985823035240173,
+                    "sentence": "(2016)).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9986262917518616,
+                    "sentence": "It is essential for the authors to provide a more detailed discussion of these prior approaches (potentially removing less relevant content from the related work section) and explicitly articulate why the proposed tasks are compelling compared to, for instance, learning to manipulate objects toward specific goals by poking them.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9968697428703308,
+                    "sentence": "To assess the paper's contribution, two key questions arise:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9950776696205139,
+                    "sentence": "1) To what extent do these two tasks advance the goal of enabling agents to learn object properties through interaction, beyond prior work?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.074158675968647,
+                    "sentence": "2) To what extent do the results of the RL agent on these tasks enhance our understanding of agents that interact with their environment to learn physical properties of objects?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02613440342247486,
+                    "sentence": "Based on the concerns outlined above, it is unclear whether the answers to (1) or (2) are \"to a significant extent.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027294501662254333,
+                    "sentence": "For (1), since the proposed agent effectively solves both tasks, it is unclear whether these tasks can serve as benchmarks for more advanced agents (e.g., they may not function as a set of bAbI-like tasks).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.15521307289600372,
+                    "sentence": "Another issue, as noted by Reviewer 3, is that the model description is overly concise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10190677642822266,
+                    "sentence": "Including a diagram to illustrate the inputs and outputs of the model at each time step would greatly facilitate replication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10603401064872742,
+                    "sentence": "In summary, while advancing agents' ability to learn physical properties through interaction is an important goal, the technical contributions of this paper are somewhat limited.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05963020771741867,
+                    "sentence": "As a result, it is unclear how much this work advances research in this area beyond the prior studies cited.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.047526679933071136,
+                    "sentence": "It would be beneficial for the authors to include a discussion about the future of agents learning physics through interaction, speculate on more challenging extensions of the current tasks, and clarify how their approach fits into this broader vision.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.4935007710949548,
+            "class_probabilities": {
+                "human": 0.5040757876184181,
+                "ai": 0.4935007710949548,
+                "mixed": 0.0024234412866270096
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.5040757876184181,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.4935007710949548,
+                    "human": 0.5040757876184181,
+                    "mixed": 0.0024234412866270096
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper aims to explore the capability of reinforcement learning (RL) agents to conduct \"physics experiments\" within an environment to infer the physical properties of objects. The problem is well-motivated; understanding the physical properties of objects is a fundamental skill for intelligent agents, and there has been relatively limited research in this area, particularly within the realm of deep RL. Additionally, the paper is well-written.\nWhile the paper does not claim any architectural or theoretical contributions, the primary novelty lies in its task application\"\"utilizing a recurrent A3C model for two tasks that simulate an agent interacting with an environment to infer object properties. Specifically, the two tasks involve moving blocks to estimate their mass and poking towers to determine the number of rigid bodies they comprise. These tasks, while relevant, represent a narrow subset of the broader abilities required for an agent to understand physics. This limitation is not inherently problematic, but the lack of comparisons with alternative (simpler) RL agents makes it challenging to assess the difficulty of the proposed tasks. As noted in the pre-review question, the \"Which is Heavier\" task appears relatively straightforward due to the actuator setup and the fact that the model primarily learns to compute the difference between successive block positions, which are directly encoded as features in most experiments. Consequently, it is unsurprising that the RL agent can solve the proposed tasks.\nThe paper's main claim, beyond solving these two physics-related tasks, is that \"the agents learn different strategies for these tasks that balance the cost of gathering information against the cost of making mistakes.\" The \"cost of gathering information\" is modeled by scaling the reward with a gamma value less than 1. While this behavior is somewhat interesting, it is not particularly surprising given the problem's design.\nThe authors emphasize that their approach\"\"learning about physical object properties through interaction\"\"differs from many prior approaches that rely on visual cues. However, they also acknowledge that this idea is not novel and has been explored in previous work (e.g., Agrawal et al. (2016)). It is essential for the authors to provide a more detailed discussion of these prior approaches (potentially removing less relevant content from the related work section) and explicitly articulate why the proposed tasks are compelling compared to, for instance, learning to manipulate objects toward specific goals by poking them.\nTo assess the paper's contribution, two key questions arise:\n1) To what extent do these two tasks advance the goal of enabling agents to learn object properties through interaction, beyond prior work? \n2) To what extent do the results of the RL agent on these tasks enhance our understanding of agents that interact with their environment to learn physical properties of objects?\nBased on the concerns outlined above, it is unclear whether the answers to (1) or (2) are \"to a significant extent.\" For (1), since the proposed agent effectively solves both tasks, it is unclear whether these tasks can serve as benchmarks for more advanced agents (e.g., they may not function as a set of bAbI-like tasks).\nAnother issue, as noted by Reviewer 3, is that the model description is overly concise. Including a diagram to illustrate the inputs and outputs of the model at each time step would greatly facilitate replication.\nIn summary, while advancing agents' ability to learn physical properties through interaction is an important goal, the technical contributions of this paper are somewhat limited. As a result, it is unclear how much this work advances research in this area beyond the prior studies cited. It would be beneficial for the authors to include a discussion about the future of agents learning physics through interaction, speculate on more challenging extensions of the current tasks, and clarify how their approach fits into this broader vision."
+        }
+    ]
+}

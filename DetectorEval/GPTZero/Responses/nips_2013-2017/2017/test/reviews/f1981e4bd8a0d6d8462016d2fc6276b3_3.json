@@ -1,0 +1,257 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "a9b85b54-3511-4bb8-98d6-fcc9aff7e7a2",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9244089722633362,
+                    "sentence": "This paper presents a method for predicting a sequence of labels without a labeled training set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8741500377655029,
+                    "sentence": "This is done by incorporating a prior probability on the possible output sequnces of labels, that is a linear classifier is sought such that the distribution of sequnces it predicts is close (in the KL sense) to a given prior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9264425039291382,
+                    "sentence": "The authors present a cost function, an algorithm to optimize it, and experimental results on real data of predicting characters in two tasks: OCR and spell correction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9807694554328918,
+                    "sentence": "The paper is technically sound and generally clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8995530605316162,
+                    "sentence": "The idea is novel (some prior work is cited by the authors) and interesting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9224237203598022,
+                    "sentence": "The main reason for my score is a concern regarding the difficulty of obtaining a useful prior model p_LM.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8468157649040222,
+                    "sentence": "Such models usually suffer from sparseness of data, that is unless the vocabulary is quite small, it is common for some test samples to have zero probability under the prior/LM learned from a training set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8772963285446167,
+                    "sentence": "It is true that this isuue is well known and solutions exist in the literature, however I would like the authors to adress the influence of it on their method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8488328456878662,
+                    "sentence": "Another aspect of the same issue is the scaling of the algorithm to large vocabularies and/or long sub-sequences (parameter N in the paper).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.7991309762001038,
+                    "sentence": "Indeed, the experiments use quite a small vocabulary (29 characters) and short sub-sequences (Ngrams with N=2,3).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9202197790145874,
+                    "sentence": "In NLP data at word level, the vocabulary is orderes of magnitude larger.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.8755267858505249,
+                    "sentence": "Some more comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.9411712288856506,
+                    "sentence": "- I would also like the authors to adress the application of their method to non-NLP domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00815661158412695,
+                    "sentence": "- The inclusion of the supervised solution in the figures of the 2D cost raises a question - it seems the red dot (the supervised solution) is always in a local minimum of the unsupervised cost - I don't understand why this should be the case.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.012894637882709503,
+                    "sentence": "- If it is assumed that there is a structure in the output space of sequences, why not incorporate this structure into the classifier, that is why use a point prediction p(yt\"xt) of a single label independently of its neighbors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01471940241754055,
+                    "sentence": "Specific comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0055708815343678,
+                    "sentence": "(*) lines 117-118, 'negative cross entropy', isn't the following formula the cross entropy (and not the negative of it)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00529924500733614,
+                    "sentence": "() line 119, this sentence is somewhat confusing, if I understand correctly \\bar p is the expected frequency of a given sequence {i1,...in}, and not of all* sequences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0030792709439992905,
+                    "sentence": "(*) lines 163-166, here too the sign of the cross entropy seems to be reversed, also when referred to in the text, e.g in line 163, if p_LM goes to 0, then -log(0) is +inf and not -inf as written in the paper, and it indeed suits the sentence in line 167, since you expect that to penalize a minimization problem, some term goes to +inf and not to -inf.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010109618306159973,
+                    "sentence": "Typos:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007389378733932972,
+                    "sentence": "(*) lines 173 and 174, \"that pLM\" seems wrong, did the authors mean \"for which pLM\"?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009852888062596321,
+                    "sentence": "(*) line 283, word 'rate' appears twice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.7955140744878513
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.24256741654484168,
+            "class_probabilities": {
+                "human": 0.7573578272058379,
+                "ai": 0.24256741654484168,
+                "mixed": 7.475624932039773e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.7573578272058379,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.24256741654484168,
+                    "human": 0.7573578272058379,
+                    "mixed": 7.475624932039773e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper presents a method for predicting a sequence of labels without a labeled training set. This is done by incorporating a prior probability on the possible output sequnces of labels, that is a linear classifier is sought such that the distribution of sequnces it predicts is close (in the KL sense) to a given prior. The authors present a cost function, an algorithm to optimize it, and experimental results on real data of predicting characters in two tasks: OCR and spell correction.\n The paper is technically sound and generally clear. The idea is novel (some prior work is cited by the authors) and interesting. The main reason for my score is a concern regarding the difficulty of obtaining a useful prior model p_LM. Such models usually suffer from sparseness of data, that is unless the vocabulary is quite small, it is common for some test samples to have zero probability under the prior/LM learned from a training set. It is true that this isuue is well known and solutions exist in the literature, however I would like the authors to adress the influence of it on their method. Another aspect of the same issue is the scaling of the algorithm to large vocabularies and/or long sub-sequences (parameter N in the paper). Indeed, the experiments use quite a small vocabulary (29 characters) and short sub-sequences (Ngrams with N=2,3). In NLP data at word level, the vocabulary is orderes of magnitude larger.\n Some more comments:\n - I would also like the authors to adress the application of their method to non-NLP domains.\n - The inclusion of the supervised solution in the figures of the 2D cost raises a question - it seems the red dot (the supervised solution) is always in a local minimum of the unsupervised cost - I don't understand why this should be the case.\n - If it is assumed that there is a structure in the output space of sequences, why not incorporate this structure into the classifier, that is why use a point prediction p(yt\"xt) of a single label independently of its neighbors?\n Specific comments: \n (*) lines 117-118, 'negative cross entropy', isn't the following formula the cross entropy (and not the negative of it)?\n () line 119, this sentence is somewhat confusing, if I understand correctly \\bar p is the expected frequency of a given sequence {i1,...in}, and not of all* sequences.\n (*) lines 163-166, here too the sign of the cross entropy seems to be reversed, also when referred to in the text, e.g in line 163, if p_LM goes to 0, then -log(0) is +inf and not -inf as written in the paper, and it indeed suits the sentence in line 167, since you expect that to penalize a minimization problem, some term goes to +inf and not to -inf. \n Typos:\n (*) lines 173 and 174, \"that pLM\" seems wrong, did the authors mean \"for which pLM\" ?\n (*) line 283, word 'rate' appears twice."
+        }
+    ]
+}

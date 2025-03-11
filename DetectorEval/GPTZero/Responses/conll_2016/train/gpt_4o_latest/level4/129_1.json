@@ -1,0 +1,286 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "5973719f-815c-4bed-bb1a-54361c2cb88d",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9997977614402771,
+                    "sentence": "The paper presents an approach for MT training data selection that employs a CNN classifier to score and rank general-domain sentences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996289014816284,
+                    "sentence": "The comparison to prior work, which utilizes continuous or n-gram-based language models, is thorough.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996561408042908,
+                    "sentence": "However, it is unclear whether the paper also evaluates its method against bilingual data selection techniques, such as the sum of differences in cross-entropies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992918968200684,
+                    "sentence": "Initially, the motivation for using a CNN instead of an RNN/LSTM was unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991887211799622,
+                    "sentence": "However, the paper convincingly argues that CNNs are better suited for identifying the importance of specific sections of a text or sentence, which is a notable strength.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990570545196533,
+                    "sentence": "That said, the paper does not experimentally demonstrate whether a BOW, SEQ, or a combination of both representations is more critical and why.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994583129882812,
+                    "sentence": "The textual explanation of the CNN architecture, including details on one-hot or semi-supervised embeddings using pre-trained vectors, is clear and highlights key aspects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991397261619568,
+                    "sentence": "However, a visual representation of the CNN layers, illustrating how inputs are combined, would significantly enhance clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994558691978455,
+                    "sentence": "Overall, the paper is well-written, though some citation styles (e.g., \\citet vs. \\citep) are inconsistently applied and could be revised (e.g., line 385).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996978044509888,
+                    "sentence": "The experiments and evaluation generally support the paper's claims, but there are concerns regarding the method used to determine the number of selected in-domain sentences (line 443) based on a separate validation set:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997695088386536,
+                    "sentence": "- What validation data is used for this purpose?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7174323201179504,
+                    "sentence": "Additionally, it is unclear how the hyperparameters of the CNN models are chosen and how sensitive the models are to these choices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5253756046295166,
+                    "sentence": "- Table 2 should ideally compare the performance of different approaches with the same number of selected sentences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.388248473405838,
+                    "sentence": "While Figure 1 suggests that the proposed method still outperforms the baselines in such cases, this comparison would strengthen the evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6032889485359192,
+                    "sentence": "Additional comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5354767441749573,
+                    "sentence": "- It would be interesting to see an experiment comparing the proposed technique to baselines when more in-domain data is available, beyond just the development set.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5673825740814209,
+                    "sentence": "- The results or discussion section could include example sentences selected by the different methods to provide further support for the claims made in section 5.4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5554475784301758,
+                    "sentence": "- Regarding the argument in section 5.4 about abstracting away from surface forms: A useful baseline for comparison could be Axelrod (2015), which replaces certain words with POS tags to reduce LM data sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.43992799520492554,
+                    "sentence": "This would help evaluate whether word2vec embeddings offer additional advantages over this approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5005201101303101,
+                    "sentence": "- The use of the sum of source and target classification scores is conceptually similar to the Lewis-Moore LM data selection method (sum of differences in cross-entropies).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5908068418502808,
+                    "sentence": "Adding a reference to this work around line 435 would be appropriate.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.425734281539917,
+                    "sentence": "Lastly, it would be interesting to explore whether the CNN model could be extended to a bilingual or parallel setting to learn weights for combining the source and target classification scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.6910625819072902,
+            "class_probabilities": {
+                "human": 0.30361881425749376,
+                "ai": 0.6910625819072902,
+                "mixed": 0.005318603835216009
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.6910625819072902,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.6910625819072902,
+                    "human": 0.30361881425749376,
+                    "mixed": 0.005318603835216009
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents an approach for MT training data selection that employs a CNN classifier to score and rank general-domain sentences. The comparison to prior work, which utilizes continuous or n-gram-based language models, is thorough. However, it is unclear whether the paper also evaluates its method against bilingual data selection techniques, such as the sum of differences in cross-entropies.\nInitially, the motivation for using a CNN instead of an RNN/LSTM was unclear. However, the paper convincingly argues that CNNs are better suited for identifying the importance of specific sections of a text or sentence, which is a notable strength. That said, the paper does not experimentally demonstrate whether a BOW, SEQ, or a combination of both representations is more critical and why.\nThe textual explanation of the CNN architecture, including details on one-hot or semi-supervised embeddings using pre-trained vectors, is clear and highlights key aspects. However, a visual representation of the CNN layers, illustrating how inputs are combined, would significantly enhance clarity.\nOverall, the paper is well-written, though some citation styles (e.g., \\citet vs. \\citep) are inconsistently applied and could be revised (e.g., line 385).\nThe experiments and evaluation generally support the paper's claims, but there are concerns regarding the method used to determine the number of selected in-domain sentences (line 443) based on a separate validation set:\n- What validation data is used for this purpose? Additionally, it is unclear how the hyperparameters of the CNN models are chosen and how sensitive the models are to these choices.\n- Table 2 should ideally compare the performance of different approaches with the same number of selected sentences. While Figure 1 suggests that the proposed method still outperforms the baselines in such cases, this comparison would strengthen the evaluation.\nAdditional comments:\n- It would be interesting to see an experiment comparing the proposed technique to baselines when more in-domain data is available, beyond just the development set.\n- The results or discussion section could include example sentences selected by the different methods to provide further support for the claims made in section 5.4.\n- Regarding the argument in section 5.4 about abstracting away from surface forms: A useful baseline for comparison could be Axelrod (2015), which replaces certain words with POS tags to reduce LM data sparsity. This would help evaluate whether word2vec embeddings offer additional advantages over this approach.\n- The use of the sum of source and target classification scores is conceptually similar to the Lewis-Moore LM data selection method (sum of differences in cross-entropies). Adding a reference to this work around line 435 would be appropriate.\nLastly, it would be interesting to explore whether the CNN model could be extended to a bilingual or parallel setting to learn weights for combining the source and target classification scores."
+        }
+    ]
+}

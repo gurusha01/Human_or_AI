@@ -1,0 +1,427 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "cf4a8051-af6c-4c0e-a5ee-98a67739de77",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999938011169434,
+                    "sentence": "The paper presents a novel approach, Stochastic Multiple Choice Learning (sMCL), for training diverse ensembles of deep networks to minimize oracle loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999865293502808,
+                    "sentence": "The authors argue that many perception systems benefit from generating multiple plausible hypotheses rather than a single prediction, particularly in ambiguous scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994695186615,
+                    "sentence": "The proposed sMCL method is parameter-free, architecture-agnostic, and integrates seamlessly with stochastic gradient descent (SGD).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999935030937195,
+                    "sentence": "The paper demonstrates the efficacy of sMCL across diverse tasks, including image classification, semantic segmentation, and image captioning, achieving significant improvements in oracle performance over baseline methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924302101135,
+                    "sentence": "1. Novelty and Significance: The paper introduces a practical and efficient solution to the Multiple Choice Learning (MCL) problem for deep networks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999985933303833,
+                    "sentence": "Unlike prior methods, sMCL avoids costly retraining and achieves a 5x speedup over traditional MCL while maintaining or exceeding performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999875426292419,
+                    "sentence": "This is a significant contribution to ensemble learning and deep learning optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999881982803345,
+                    "sentence": "2. Broad Applicability: The authors convincingly demonstrate the versatility of sMCL across multiple domains and architectures, including CNNs, FCNs, and CNN+RNN models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994695186615,
+                    "sentence": "The method's generalizability is a strong point.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999842047691345,
+                    "sentence": "3. Experimental Rigor: The paper provides extensive empirical evidence, showing consistent improvements in oracle metrics across tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999673366546631,
+                    "sentence": "The qualitative results, such as interpretable specialization among ensemble members, are compelling and align with the paper's claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999789595603943,
+                    "sentence": "4. Clarity: The paper is well-organized and clearly written.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999768733978271,
+                    "sentence": "The authors provide sufficient background on MCL, explain their method in detail, and include comprehensive comparisons with baseline methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999583959579468,
+                    "sentence": "The figures and qualitative examples effectively illustrate the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999883770942688,
+                    "sentence": "5. Practicality: The method's simplicity and compatibility with existing architectures make it highly practical for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999982476234436,
+                    "sentence": "The absence of additional hyperparameters is particularly appealing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999883770942688,
+                    "sentence": "1. Limited Theoretical Analysis: While the empirical results are strong, the paper lacks a deeper theoretical exploration of why sMCL outperforms traditional MCL and other baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999803304672241,
+                    "sentence": "A more formal analysis of convergence properties or generalization guarantees would strengthen the contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999878406524658,
+                    "sentence": "2. Scalability: Although the method is faster than MCL, the experiments are limited to relatively small ensemble sizes (up to six members).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999842047691345,
+                    "sentence": "It would be valuable to evaluate the scalability of sMCL for larger ensembles or more complex tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992979168891907,
+                    "sentence": "3. Ablation Studies: While the paper demonstrates the effectiveness of sMCL, it could benefit from additional ablation studies to isolate the contributions of specific design choices, such as the \"winner-take-gradient\" strategy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992215037345886,
+                    "sentence": "4. Downstream Utility: The paper focuses on oracle metrics, which assume a perfect downstream oracle.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992285370826721,
+                    "sentence": "However, it does not address how the generated hypotheses perform in real-world downstream tasks, such as human-in-the-loop systems or automated re-ranking.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9892835021018982,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983680844306946,
+                    "sentence": "The paper makes a strong case for the utility of sMCL and provides substantial empirical evidence to support its claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979155659675598,
+                    "sentence": "It is a significant step forward in training diverse ensembles for deep learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985415935516357,
+                    "sentence": "However, the lack of theoretical analysis and limited exploration of downstream utility leave room for improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9969091415405273,
+                    "sentence": "I recommend acceptance with minor revisions to address these gaps.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99959796667099,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994559288024902,
+                    "sentence": "- Novel and practical method with broad applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985676407814026,
+                    "sentence": "- Strong empirical results across diverse tasks and architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979342222213745,
+                    "sentence": "- Clear and well-written presentation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993797540664673,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982458353042603,
+                    "sentence": "- Limited theoretical insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990183115005493,
+                    "sentence": "- Lack of evaluation on larger ensembles or downstream tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974737763404846,
+                    "sentence": "Overall, the paper is a valuable contribution to the field and aligns well with the goals of NIPS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9658502932045533,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9658502932045533,
+                "mixed": 0.034149706795446697
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9658502932045533,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9658502932045533,
+                    "human": 0,
+                    "mixed": 0.034149706795446697
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel approach, Stochastic Multiple Choice Learning (sMCL), for training diverse ensembles of deep networks to minimize oracle loss. The authors argue that many perception systems benefit from generating multiple plausible hypotheses rather than a single prediction, particularly in ambiguous scenarios. The proposed sMCL method is parameter-free, architecture-agnostic, and integrates seamlessly with stochastic gradient descent (SGD). The paper demonstrates the efficacy of sMCL across diverse tasks, including image classification, semantic segmentation, and image captioning, achieving significant improvements in oracle performance over baseline methods.\nStrengths:\n1. Novelty and Significance: The paper introduces a practical and efficient solution to the Multiple Choice Learning (MCL) problem for deep networks. Unlike prior methods, sMCL avoids costly retraining and achieves a 5x speedup over traditional MCL while maintaining or exceeding performance. This is a significant contribution to ensemble learning and deep learning optimization.\n2. Broad Applicability: The authors convincingly demonstrate the versatility of sMCL across multiple domains and architectures, including CNNs, FCNs, and CNN+RNN models. The method's generalizability is a strong point.\n3. Experimental Rigor: The paper provides extensive empirical evidence, showing consistent improvements in oracle metrics across tasks. The qualitative results, such as interpretable specialization among ensemble members, are compelling and align with the paper's claims.\n4. Clarity: The paper is well-organized and clearly written. The authors provide sufficient background on MCL, explain their method in detail, and include comprehensive comparisons with baseline methods. The figures and qualitative examples effectively illustrate the results.\n5. Practicality: The method's simplicity and compatibility with existing architectures make it highly practical for real-world applications. The absence of additional hyperparameters is particularly appealing.\nWeaknesses:\n1. Limited Theoretical Analysis: While the empirical results are strong, the paper lacks a deeper theoretical exploration of why sMCL outperforms traditional MCL and other baselines. A more formal analysis of convergence properties or generalization guarantees would strengthen the contribution.\n2. Scalability: Although the method is faster than MCL, the experiments are limited to relatively small ensemble sizes (up to six members). It would be valuable to evaluate the scalability of sMCL for larger ensembles or more complex tasks.\n3. Ablation Studies: While the paper demonstrates the effectiveness of sMCL, it could benefit from additional ablation studies to isolate the contributions of specific design choices, such as the \"winner-take-gradient\" strategy.\n4. Downstream Utility: The paper focuses on oracle metrics, which assume a perfect downstream oracle. However, it does not address how the generated hypotheses perform in real-world downstream tasks, such as human-in-the-loop systems or automated re-ranking.\nRecommendation:\nThe paper makes a strong case for the utility of sMCL and provides substantial empirical evidence to support its claims. It is a significant step forward in training diverse ensembles for deep learning tasks. However, the lack of theoretical analysis and limited exploration of downstream utility leave room for improvement. I recommend acceptance with minor revisions to address these gaps.\nArguments for Acceptance:\n- Novel and practical method with broad applicability.\n- Strong empirical results across diverse tasks and architectures.\n- Clear and well-written presentation.\nArguments Against Acceptance:\n- Limited theoretical insights.\n- Lack of evaluation on larger ensembles or downstream tasks.\nOverall, the paper is a valuable contribution to the field and aligns well with the goals of NIPS."
+        }
+    ]
+}

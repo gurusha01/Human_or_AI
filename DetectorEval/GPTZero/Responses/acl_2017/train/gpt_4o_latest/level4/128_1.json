@@ -1,0 +1,431 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "f604600c-437a-487c-a5d8-a9abb82d68bf",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.7460358738899231,
+                    "sentence": "This paper introduces a neural network architecture that encodes structural linguistic knowledge into a memory network for sequence tagging tasks, specifically slot-filling in the natural language understanding component of conversational systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6163609027862549,
+                    "sentence": "Substructures, such as nodes in a parse tree, are represented as vectors (memory slots), and a weighted sum of these substructure embeddings is provided as additional context to an RNN at each time step for labeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7643405795097351,
+                    "sentence": "-----Strengths-----",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4692373275756836,
+                    "sentence": "The primary contribution of this work lies in its straightforward method of \"flattening\" structured information into an array of vectors (the memory), which is then integrated into the tagger as supplementary knowledge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5996605753898621,
+                    "sentence": "The approach is conceptually similar to structured or syntax-based attention mechanisms, such as attention over nodes in treeLSTM.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2510043680667877,
+                    "sentence": "Related works include Zhao et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3979882001876831,
+                    "sentence": "on textual entailment, Liu et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.17359767854213715,
+                    "sentence": "on natural language inference, and Eriguchi et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3691168427467346,
+                    "sentence": "on machine translation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.46884310245513916,
+                    "sentence": "The proposed substructure encoder bears resemblance to DCNN (Ma et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.44684046506881714,
+                    "sentence": "), where each node is embedded based on a sequence of ancestor words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4174557328224182,
+                    "sentence": "While the architecture is not entirely novel, the simplicity and practicality of the approach make it appealing compared to prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5716358423233032,
+                    "sentence": "-----Weaknesses-----",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5898377895355225,
+                    "sentence": "The empirical results are not particularly convincing, primarily due to insufficient details about the baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6418037414550781,
+                    "sentence": "Below are comments ranked by decreasing importance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5925984978675842,
+                    "sentence": "- The proposed model consists of two main components: sentence embedding and substructure embedding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4400935769081116,
+                    "sentence": "In Table 1, the baseline models (TreeRNN and DCNN) are originally designed for sentence embedding, but they can also be adapted to generate node/substructure embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5978230834007263,
+                    "sentence": "However, it is unclear how these baselines are utilized to compute the two components.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3564338684082031,
+                    "sentence": "- The model employs two RNNs: a chain-based RNN and a knowledge-guided RNN.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5235494375228882,
+                    "sentence": "The only distinction between the two is the inclusion of a \"knowledge\" vector from the memory in the input of the knowledge-guided RNN (as shown in Eqns 5 and 8).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5001453757286072,
+                    "sentence": "Having separate weights for the two RNNs seems unnecessary, as the primary benefit of this design is an increase in model capacity (i.e., more parameters).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6547732949256897,
+                    "sentence": "Additionally, the hyperparameters and sizes of the baseline neural networks are not specified, making it difficult to ensure comparable parameter counts across models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6186230182647705,
+                    "sentence": "- A baseline that incorporates additional knowledge as features into the RNN (e.g., word heads, NER results) would be a reasonable addition to the experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9940326809883118,
+                    "sentence": "- There is no discussion or analysis of the model's sensitivity to parser errors, which could significantly impact performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9874525666236877,
+                    "sentence": "Comments on the model:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9897371530532837,
+                    "sentence": "- After computing the substructure embeddings, it seems intuitive to apply attention over them at each word.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9922698736190796,
+                    "sentence": "Why was a static attention mechanism used for all words?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9898238182067871,
+                    "sentence": "As it stands, the \"knowledge\" appears to function more as a filter to highlight important words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9861637353897095,
+                    "sentence": "This further supports the inclusion of the aforementioned baseline that directly inputs additional features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9844930171966553,
+                    "sentence": "- Since the weight assigned to a word is determined by the inner product of the sentence embedding and the substructure embedding, and both embeddings are computed using the same RNN/CNN, doesn't this imply that nodes or phrases similar to the entire sentence will receive higher weights (e.g., all leaf nodes)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9882507920265198,
+                    "sentence": "- While the paper claims the model generalizes to different forms of knowledge, it seems that the substructure must be represented as a sequence of words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.986427366733551,
+                    "sentence": "For instance, it is unclear how constituent parses could be effectively utilized as knowledge in this framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9916478395462036,
+                    "sentence": "Lastly, referring to the substructure embeddings as \"knowledge\" may be misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937169551849365,
+                    "sentence": "The term typically refers to external or world knowledge, such as knowledge bases of entities, whereas in this context, it primarily represents syntax or, at best, semantics (e.g., AMR parsing).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966203570365906,
+                    "sentence": "-----General Discussion-----",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9939184784889221,
+                    "sentence": "This paper presents a practical model that performs well on a single dataset, but the core ideas lack novelty (see Strengths).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9936104416847229,
+                    "sentence": "For a paper at ACL, there should be more substantial takeaways.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926048517227173,
+                    "sentence": "Additionally, the experimental results, as currently presented, are unconvincing and require further clarification to properly evaluate the contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993889331817627,
+                    "sentence": "-----Post-rebuttal-----",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979114532470703,
+                    "sentence": "The authors did not adequately address my primary concern, which is whether the baselines (e.g., TreeRNN) are used to compute substructure embeddings independently of the sentence embedding and the joint tagger.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980800151824951,
+                    "sentence": "Another significant issue is the use of two separate RNNs, which increases the parameter count of the proposed model compared to the baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.994278609752655,
+                    "sentence": "As a result, I am not revising my scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 9,
+                    "completely_generated_prob": 4.1887248735431006e-08
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.706120647383059,
+            "class_probabilities": {
+                "human": 0.29372542799595996,
+                "ai": 0.706120647383059,
+                "mixed": 0.0001539246209811207
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.706120647383059,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.706120647383059,
+                    "human": 0.29372542799595996,
+                    "mixed": 0.0001539246209811207
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a neural network architecture that encodes structural linguistic knowledge into a memory network for sequence tagging tasks, specifically slot-filling in the natural language understanding component of conversational systems. Substructures, such as nodes in a parse tree, are represented as vectors (memory slots), and a weighted sum of these substructure embeddings is provided as additional context to an RNN at each time step for labeling.\n-----Strengths-----\nThe primary contribution of this work lies in its straightforward method of \"flattening\" structured information into an array of vectors (the memory), which is then integrated into the tagger as supplementary knowledge. The approach is conceptually similar to structured or syntax-based attention mechanisms, such as attention over nodes in treeLSTM. Related works include Zhao et al. on textual entailment, Liu et al. on natural language inference, and Eriguchi et al. on machine translation. The proposed substructure encoder bears resemblance to DCNN (Ma et al.), where each node is embedded based on a sequence of ancestor words. While the architecture is not entirely novel, the simplicity and practicality of the approach make it appealing compared to prior work.\n-----Weaknesses-----\nThe empirical results are not particularly convincing, primarily due to insufficient details about the baselines. Below are comments ranked by decreasing importance:\n- The proposed model consists of two main components: sentence embedding and substructure embedding. In Table 1, the baseline models (TreeRNN and DCNN) are originally designed for sentence embedding, but they can also be adapted to generate node/substructure embeddings. However, it is unclear how these baselines are utilized to compute the two components.\n- The model employs two RNNs: a chain-based RNN and a knowledge-guided RNN. The only distinction between the two is the inclusion of a \"knowledge\" vector from the memory in the input of the knowledge-guided RNN (as shown in Eqns 5 and 8). Having separate weights for the two RNNs seems unnecessary, as the primary benefit of this design is an increase in model capacity (i.e., more parameters). Additionally, the hyperparameters and sizes of the baseline neural networks are not specified, making it difficult to ensure comparable parameter counts across models.\n- A baseline that incorporates additional knowledge as features into the RNN (e.g., word heads, NER results) would be a reasonable addition to the experiments.\n- There is no discussion or analysis of the model's sensitivity to parser errors, which could significantly impact performance.\nComments on the model:\n- After computing the substructure embeddings, it seems intuitive to apply attention over them at each word. Why was a static attention mechanism used for all words? As it stands, the \"knowledge\" appears to function more as a filter to highlight important words. This further supports the inclusion of the aforementioned baseline that directly inputs additional features.\n- Since the weight assigned to a word is determined by the inner product of the sentence embedding and the substructure embedding, and both embeddings are computed using the same RNN/CNN, doesn't this imply that nodes or phrases similar to the entire sentence will receive higher weights (e.g., all leaf nodes)?\n- While the paper claims the model generalizes to different forms of knowledge, it seems that the substructure must be represented as a sequence of words. For instance, it is unclear how constituent parses could be effectively utilized as knowledge in this framework.\nLastly, referring to the substructure embeddings as \"knowledge\" may be misleading. The term typically refers to external or world knowledge, such as knowledge bases of entities, whereas in this context, it primarily represents syntax or, at best, semantics (e.g., AMR parsing).\n-----General Discussion-----\nThis paper presents a practical model that performs well on a single dataset, but the core ideas lack novelty (see Strengths). For a paper at ACL, there should be more substantial takeaways. Additionally, the experimental results, as currently presented, are unconvincing and require further clarification to properly evaluate the contributions.\n-----Post-rebuttal-----\nThe authors did not adequately address my primary concern, which is whether the baselines (e.g., TreeRNN) are used to compute substructure embeddings independently of the sentence embedding and the joint tagger. Another significant issue is the use of two separate RNNs, which increases the parameter count of the proposed model compared to the baselines. As a result, I am not revising my scores."
+        }
+    ]
+}

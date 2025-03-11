@@ -1,0 +1,426 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "fcbf1faf-c966-4520-bbc7-b4ce0c547948",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999986290931702,
+                    "sentence": "The paper introduces Adept, an adaptive stimulus selection algorithm designed to optimize population-level neural responses in neuroscience experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "Unlike prior methods that focus on single-neuron optimization, Adept leverages population objective functions to maximize both the mean response and diversity of neural responses across multiple neurons.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "The authors utilize pretrained convolutional neural networks (CNNs) for feature embeddings and kernel methods (Nadaraya-Watson regression) to predict neural responses to candidate stimuli.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945759773254,
+                    "sentence": "The algorithm was validated through two experiments: simulations using CNNs as a surrogate for the brain and closed-loop electrophysiological recordings in macaque V4.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The results demonstrated that Adept elicited a 20% higher mean neural response and greater response diversity compared to random stimulus selection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999952912330627,
+                    "sentence": "However, the method does not explicitly account for response variability, and further exploration under different noise models would be beneficial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "1. Novelty and Significance: The paper addresses a critical gap in adaptive stimulus selection by shifting the focus from single-neuron optimization to population-level objectives.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999956488609314,
+                    "sentence": "This is a meaningful contribution to neuroscience, where multi-neuronal recordings are increasingly common.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "2. Technical Rigor: The use of pretrained CNNs for feature embeddings is well-motivated, given their success in modeling neural responses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999977350234985,
+                    "sentence": "The kernel regression approach is computationally efficient and outperforms alternative methods in both accuracy and speed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "3. Experimental Validation: The dual validation approach\"\"using CNN simulations and in vivo macaque V4 recordings\"\"strengthens the paper's claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982714653015,
+                    "sentence": "The 20% improvement in mean neural response is a compelling result that demonstrates the practical utility of Adept.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "4. Clarity and Organization: The paper is well-structured, with clear explanations of the algorithm, objective functions, and experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973773956299,
+                    "sentence": "The inclusion of quantitative metrics (e.g., PCA eigenvalue ratios) provides robust support for the findings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "1. Response Variability: The paper does not account for trial-to-trial variability in neural responses, which could affect the robustness of the results in noisy experimental settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954104423523,
+                    "sentence": "While the authors test Adept under simulated noise models, real-world variability (e.g., attentional shifts) may introduce additional challenges.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "2. Generality of Feature Embeddings: The reliance on pretrained CNNs for feature embeddings is a limitation, as these models may not fully capture the complexity of neural responses in higher cortical areas.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "Exploring alternative embeddings or task-specific models could improve performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.819038450717926,
+                    "sentence": "3. Generative Stimulus Selection: Adept selects stimuli from a pre-existing pool, which limits its applicability to experiments requiring novel stimulus generation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9043242931365967,
+                    "sentence": "Incorporating generative models, such as GANs, could broaden its utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.580653965473175,
+                    "sentence": "4. Comparative Analysis: While Adept is compared to random selection and single-neuron optimization, additional comparisons to other population-level methods (if available) would strengthen the evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.92622971534729,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8913439512252808,
+                    "sentence": "I recommend acceptance of this paper, as it presents a significant advancement in adaptive stimulus selection for neuroscience.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9609200954437256,
+                    "sentence": "While there are areas for improvement, the strengths of the work\"\"its novelty, technical rigor, and experimental validation\"\"outweigh the weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9443004727363586,
+                    "sentence": "The proposed method is likely to inspire further research and applications in both neuroscience and machine learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9547849893569946,
+                    "sentence": "Pros and Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965074062347412,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9868481159210205,
+                    "sentence": "- Novel population-level optimization framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9754868745803833,
+                    "sentence": "- Strong experimental validation with real and synthetic data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.976396381855011,
+                    "sentence": "- Computational efficiency of the kernel regression approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9653544425964355,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9703762531280518,
+                    "sentence": "- Limited handling of response variability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9852589964866638,
+                    "sentence": "- Dependence on pretrained CNNs for feature embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.971347451210022,
+                    "sentence": "- Lack of stimulus generation capability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9685646891593933,
+                    "sentence": "Overall, the paper makes a valuable contribution to the field and aligns well with the scope of the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 0.9000234362273952
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9708618754841204,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9708618754841204,
+                "mixed": 0.029138124515879642
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9708618754841204,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9708618754841204,
+                    "human": 0,
+                    "mixed": 0.029138124515879642
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces Adept, an adaptive stimulus selection algorithm designed to optimize population-level neural responses in neuroscience experiments. Unlike prior methods that focus on single-neuron optimization, Adept leverages population objective functions to maximize both the mean response and diversity of neural responses across multiple neurons. The authors utilize pretrained convolutional neural networks (CNNs) for feature embeddings and kernel methods (Nadaraya-Watson regression) to predict neural responses to candidate stimuli. The algorithm was validated through two experiments: simulations using CNNs as a surrogate for the brain and closed-loop electrophysiological recordings in macaque V4. The results demonstrated that Adept elicited a 20% higher mean neural response and greater response diversity compared to random stimulus selection. However, the method does not explicitly account for response variability, and further exploration under different noise models would be beneficial.\nStrengths:\n1. Novelty and Significance: The paper addresses a critical gap in adaptive stimulus selection by shifting the focus from single-neuron optimization to population-level objectives. This is a meaningful contribution to neuroscience, where multi-neuronal recordings are increasingly common.\n2. Technical Rigor: The use of pretrained CNNs for feature embeddings is well-motivated, given their success in modeling neural responses. The kernel regression approach is computationally efficient and outperforms alternative methods in both accuracy and speed.\n3. Experimental Validation: The dual validation approach\"\"using CNN simulations and in vivo macaque V4 recordings\"\"strengthens the paper's claims. The 20% improvement in mean neural response is a compelling result that demonstrates the practical utility of Adept.\n4. Clarity and Organization: The paper is well-structured, with clear explanations of the algorithm, objective functions, and experimental results. The inclusion of quantitative metrics (e.g., PCA eigenvalue ratios) provides robust support for the findings.\nWeaknesses:\n1. Response Variability: The paper does not account for trial-to-trial variability in neural responses, which could affect the robustness of the results in noisy experimental settings. While the authors test Adept under simulated noise models, real-world variability (e.g., attentional shifts) may introduce additional challenges.\n2. Generality of Feature Embeddings: The reliance on pretrained CNNs for feature embeddings is a limitation, as these models may not fully capture the complexity of neural responses in higher cortical areas. Exploring alternative embeddings or task-specific models could improve performance.\n3. Generative Stimulus Selection: Adept selects stimuli from a pre-existing pool, which limits its applicability to experiments requiring novel stimulus generation. Incorporating generative models, such as GANs, could broaden its utility.\n4. Comparative Analysis: While Adept is compared to random selection and single-neuron optimization, additional comparisons to other population-level methods (if available) would strengthen the evaluation.\nRecommendation:\nI recommend acceptance of this paper, as it presents a significant advancement in adaptive stimulus selection for neuroscience. While there are areas for improvement, the strengths of the work\"\"its novelty, technical rigor, and experimental validation\"\"outweigh the weaknesses. The proposed method is likely to inspire further research and applications in both neuroscience and machine learning. \nPros and Cons:\nPros:\n- Novel population-level optimization framework.\n- Strong experimental validation with real and synthetic data.\n- Computational efficiency of the kernel regression approach.\nCons:\n- Limited handling of response variability.\n- Dependence on pretrained CNNs for feature embeddings.\n- Lack of stimulus generation capability. \nOverall, the paper makes a valuable contribution to the field and aligns well with the scope of the conference."
+        }
+    ]
+}

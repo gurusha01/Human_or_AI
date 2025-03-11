@@ -1,0 +1,243 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "9b368c66-0355-4c44-8db8-12c2c1d150d8",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9996656179428101,
+                    "sentence": "This paper introduces a parallel mechanism for the stochastic gradient descent (SGD) method, specifically for cases where gradients can be computed via linear operations (e.g., least squares linear regression and polynomial regression problems).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997425675392151,
+                    "sentence": "The primary goal is to replicate the performance of sequential SGD by employing a proposed sound combiner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996353387832642,
+                    "sentence": "To enhance the efficiency of this combiner, the authors also incorporate a randomized projection matrix for dimensionality reduction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999161422252655,
+                    "sentence": "Experimental results demonstrate that the proposed method achieves better speedup compared to existing approaches such as Hogwild!",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983963966369629,
+                    "sentence": "and Allreduce.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973785877227783,
+                    "sentence": "However, I believe there may be a fundamental misunderstanding regarding the computational complexity of SGD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9679784178733826,
+                    "sentence": "\"The combiner matrix M generated in the proposed method can be quite large and computationally expensive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7601411938667297,
+                    "sentence": "Sequential SGD updates the weight vector w and requires O(f) space and time, where f is the number of features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6984783411026001,
+                    "sentence": "In contrast, M is an f Ãᅳ f matrix, leading to a space and time complexity of O(fÂ²) for parallel SGD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5933186411857605,
+                    "sentence": "Practically, this would necessitate O(f) processors to achieve constant speedups, which is infeasible for datasets with thousands or millions of features.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.583046555519104,
+                    "sentence": "I disagree with the claim that O(fÂ²) space and time complexity is required for updating Mi * v, where v is an f-dimensional vector.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9143481850624084,
+                    "sentence": "Since Mi is a low-rank matrix of the form (I - ai ai'), the complexity and space requirements can be reduced to O(f) by computing it as O(v - ai (ai' v)).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8607431650161743,
+                    "sentence": "If M_i is expressed as the product of n rank-1 matrices, the complexity and space requirements become O(fn).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9662256836891174,
+                    "sentence": "In the context of this paper, n should be significantly smaller than f. This raises serious concerns about the validity of the authors' assumptions, experiments, and strategies, as they appear to be based on an incorrect understanding of the space and time complexity of SGD.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9894916415214539,
+                    "sentence": "Additionally, it is unclear why the proposed method achieves speedup.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.967064380645752,
+                    "sentence": "The paper does not clearly explain which computations are performed in parallel or why the sequential algorithm would yield speedup if M_i * v is computed in the most efficient manner.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9687592387199402,
+                    "sentence": "To improve the clarity and theoretical rigor of this paper, I recommend the following changes:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9828582406044006,
+                    "sentence": "- Provide a detailed computational complexity analysis for each step of the proposed algorithm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9711623191833496,
+                    "sentence": "- Include a convergence rate analysis (not just convergence analysis) to evaluate how dimensionality reduction impacts computational complexity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.013701276613118245
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.5710657228372709
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.870757180156658,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.870757180156658,
+                "mixed": 0.12924281984334202
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.870757180156658,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.870757180156658,
+                    "human": 0,
+                    "mixed": 0.12924281984334202
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a parallel mechanism for the stochastic gradient descent (SGD) method, specifically for cases where gradients can be computed via linear operations (e.g., least squares linear regression and polynomial regression problems). The primary goal is to replicate the performance of sequential SGD by employing a proposed sound combiner. To enhance the efficiency of this combiner, the authors also incorporate a randomized projection matrix for dimensionality reduction. Experimental results demonstrate that the proposed method achieves better speedup compared to existing approaches such as Hogwild! and Allreduce.\nHowever, I believe there may be a fundamental misunderstanding regarding the computational complexity of SGD.\n\"The combiner matrix M generated in the proposed method can be quite large and computationally expensive. Sequential SGD updates the weight vector w and requires O(f) space and time, where f is the number of features. In contrast, M is an f Ã— f matrix, leading to a space and time complexity of O(fÂ²) for parallel SGD. Practically, this would necessitate O(f) processors to achieve constant speedups, which is infeasible for datasets with thousands or millions of features.\"\nI disagree with the claim that O(fÂ²) space and time complexity is required for updating Mi * v, where v is an f-dimensional vector. Since Mi is a low-rank matrix of the form (I - ai ai'), the complexity and space requirements can be reduced to O(f) by computing it as O(v - ai (ai' v)). If M_i is expressed as the product of n rank-1 matrices, the complexity and space requirements become O(fn). In the context of this paper, n should be significantly smaller than f. This raises serious concerns about the validity of the authors' assumptions, experiments, and strategies, as they appear to be based on an incorrect understanding of the space and time complexity of SGD.\nAdditionally, it is unclear why the proposed method achieves speedup. The paper does not clearly explain which computations are performed in parallel or why the sequential algorithm would yield speedup if M_i * v is computed in the most efficient manner.\nTo improve the clarity and theoretical rigor of this paper, I recommend the following changes:\n- Provide a detailed computational complexity analysis for each step of the proposed algorithm.\n- Include a convergence rate analysis (not just convergence analysis) to evaluate how dimensionality reduction impacts computational complexity."
+        }
+    ]
+}

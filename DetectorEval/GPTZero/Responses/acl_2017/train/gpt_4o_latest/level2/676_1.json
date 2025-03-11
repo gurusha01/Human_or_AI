@@ -1,0 +1,401 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6c7839d1-0350-41fa-a2b0-bccec90dc044",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "This paper introduces a novel approach to reduce the computational and memory overhead of the output layer in neural machine translation (NMT) systems by leveraging binary code representations for words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "The key contributions of the paper are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "1. Binary Code Prediction Model: The authors propose a method to encode each word in the vocabulary as a binary vector, reducing the computational complexity of the output layer from \\(O(V)\\) to \\(O(\\log V)\\), where \\(V\\) is the vocabulary size.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "2. Hybrid Softmax-Binary Model: To improve robustness and accuracy, the authors introduce a hybrid model that combines softmax for frequent words and binary codes for rare words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "3. Error-Correcting Codes: The paper applies convolutional error-correcting codes to the binary representations, enabling the model to recover from bit-level errors and improve translation quality.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "4. Empirical Validation: Experiments on two translation tasks (ASPEC and BTEC) demonstrate that the proposed methods achieve competitive BLEU scores while significantly reducing memory usage (by up to 1/1000) and improving decoding speed on CPUs (by up to 20x).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "1. Significant Reduction in Computational Overhead: The proposed binary code prediction model achieves substantial memory and computational savings, making it highly relevant for resource-constrained environments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999943375587463,
+                    "sentence": "2. Practical Improvements: The hybrid model and error-correcting codes address the robustness issues inherent in binary code predictions, achieving BLEU scores comparable to or better than softmax-based models, especially on smaller datasets like BTEC.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969601631165,
+                    "sentence": "3. Comprehensive Experiments: The paper provides detailed experimental results, including BLEU scores, memory usage, and processing times, which convincingly demonstrate the practical benefits of the proposed methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "4. Scalability: The approach is well-suited for large vocabularies, as demonstrated by experiments with vocabularies up to 65,536 words.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "5. Potential for Real-World Applications: The reduction in CPU decoding time (5x to 20x) is particularly valuable for deploying NMT systems in production environments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "1. Limited Novelty in Binary Representations: While the use of binary codes is computationally efficient, the idea itself is not entirely novel and has similarities to hierarchical softmax and other prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "The paper could better differentiate its approach from these methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998307824134827,
+                    "sentence": "2. Error-Correcting Code Design: The convolutional codes used for error correction are heuristically designed, and there is no exploration of whether alternative error-correcting schemes might yield better results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999943196773529,
+                    "sentence": "This limits the generalizability of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998818039894104,
+                    "sentence": "3. Dependency on Corpus Characteristics: The performance of the hybrid model heavily depends on the dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997050762176514,
+                    "sentence": "For example, the optimal size of the softmax layer varies between ASPEC and BTEC, which may complicate practical deployment.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995901584625244,
+                    "sentence": "4. Reproducibility: While the paper provides sufficient detail on the algorithms, it lacks a public implementation or clear instructions for replicating the results, which may hinder adoption by the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7392776608467102,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6360974907875061,
+                    "sentence": "1. How does the choice of convolutional weights in the error-correcting codes affect the performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.598345935344696,
+                    "sentence": "Could learned weights improve robustness further?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6072514653205872,
+                    "sentence": "2. Have you considered applying the binary code representation to the input layer to reduce memory usage for embeddings as well?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7201619744300842,
+                    "sentence": "3. How does the hybrid model perform when the softmax size \\(N\\) is dynamically adjusted during training?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7704950571060181,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6343362331390381,
+                    "sentence": "Overall, this paper presents a well-motivated and practically useful contribution to NMT.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6890912652015686,
+                    "sentence": "While the novelty of the binary code representation is somewhat limited, the hybrid model and error-correcting codes are effective innovations that address its shortcomings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5858145952224731,
+                    "sentence": "The experimental results are compelling, and the approach has clear potential for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5541020035743713,
+                    "sentence": "I recommend acceptance with minor revisions to address the reproducibility and design of error-correcting codes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                }
+            ],
+            "completely_generated_prob": 0.8596764774936939,
+            "class_probabilities": {
+                "human": 0.1099278184806362,
+                "ai": 0.8596764774936939,
+                "mixed": 0.030395704025669885
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8596764774936939,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8596764774936939,
+                    "human": 0.1099278184806362,
+                    "mixed": 0.030395704025669885
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces a novel approach to reduce the computational and memory overhead of the output layer in neural machine translation (NMT) systems by leveraging binary code representations for words. The key contributions of the paper are as follows:\n1. Binary Code Prediction Model: The authors propose a method to encode each word in the vocabulary as a binary vector, reducing the computational complexity of the output layer from \\(O(V)\\) to \\(O(\\log V)\\), where \\(V\\) is the vocabulary size.\n2. Hybrid Softmax-Binary Model: To improve robustness and accuracy, the authors introduce a hybrid model that combines softmax for frequent words and binary codes for rare words.\n3. Error-Correcting Codes: The paper applies convolutional error-correcting codes to the binary representations, enabling the model to recover from bit-level errors and improve translation quality.\n4. Empirical Validation: Experiments on two translation tasks (ASPEC and BTEC) demonstrate that the proposed methods achieve competitive BLEU scores while significantly reducing memory usage (by up to 1/1000) and improving decoding speed on CPUs (by up to 20x).\nStrengths\n1. Significant Reduction in Computational Overhead: The proposed binary code prediction model achieves substantial memory and computational savings, making it highly relevant for resource-constrained environments.\n2. Practical Improvements: The hybrid model and error-correcting codes address the robustness issues inherent in binary code predictions, achieving BLEU scores comparable to or better than softmax-based models, especially on smaller datasets like BTEC.\n3. Comprehensive Experiments: The paper provides detailed experimental results, including BLEU scores, memory usage, and processing times, which convincingly demonstrate the practical benefits of the proposed methods.\n4. Scalability: The approach is well-suited for large vocabularies, as demonstrated by experiments with vocabularies up to 65,536 words.\n5. Potential for Real-World Applications: The reduction in CPU decoding time (5x to 20x) is particularly valuable for deploying NMT systems in production environments.\nWeaknesses\n1. Limited Novelty in Binary Representations: While the use of binary codes is computationally efficient, the idea itself is not entirely novel and has similarities to hierarchical softmax and other prior work. The paper could better differentiate its approach from these methods.\n2. Error-Correcting Code Design: The convolutional codes used for error correction are heuristically designed, and there is no exploration of whether alternative error-correcting schemes might yield better results. This limits the generalizability of the approach.\n3. Dependency on Corpus Characteristics: The performance of the hybrid model heavily depends on the dataset. For example, the optimal size of the softmax layer varies between ASPEC and BTEC, which may complicate practical deployment.\n4. Reproducibility: While the paper provides sufficient detail on the algorithms, it lacks a public implementation or clear instructions for replicating the results, which may hinder adoption by the community.\nQuestions to Authors\n1. How does the choice of convolutional weights in the error-correcting codes affect the performance? Could learned weights improve robustness further?\n2. Have you considered applying the binary code representation to the input layer to reduce memory usage for embeddings as well?\n3. How does the hybrid model perform when the softmax size \\(N\\) is dynamically adjusted during training?\nRecommendation\nOverall, this paper presents a well-motivated and practically useful contribution to NMT. While the novelty of the binary code representation is somewhat limited, the hybrid model and error-correcting codes are effective innovations that address its shortcomings. The experimental results are compelling, and the approach has clear potential for real-world applications. I recommend acceptance with minor revisions to address the reproducibility and design of error-correcting codes."
+        }
+    ]
+}

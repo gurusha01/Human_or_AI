@@ -1,0 +1,458 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e10890b3-e882-45be-85fc-97e90bdc5cdb",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999288320541382,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997079372406,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924302101135,
+                    "sentence": "This paper introduces TBuckets, a novel method for evaluating topic quality using word embeddings, which groups topic words into thematic \"buckets\" to measure coherence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949932098389,
+                    "sentence": "The paper proposes three techniques under the TBuckets framework: Clustering-based, SVD-based, and SVD with Reorganization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999942779541016,
+                    "sentence": "The authors demonstrate that TBuckets achieves state-of-the-art performance on two out of three standard datasets (20NG and NYT) and performs competitively on the Genomics dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973177909851,
+                    "sentence": "The method is parameter-free (for SVD-based approaches), which is a significant advantage over existing techniques that require extensive parameter tuning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999918937683105,
+                    "sentence": "Additionally, the authors explore the utility of TBuckets for weakly supervised text classification, showing that selecting high-quality topics based on coherence scores improves classification performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999991238117218,
+                    "sentence": "The primary contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999921321868896,
+                    "sentence": "1. A novel, interpretable framework (TBuckets) for topic evaluation that outperforms state-of-the-art methods on standard datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999918937683105,
+                    "sentence": "2. A parameter-free SVD-based technique (TBuckets-SVD and TBuckets-SVD-Reorg) that simplifies implementation and reduces tuning overhead.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999920725822449,
+                    "sentence": "3. An application of TBuckets to weakly supervised text classification, demonstrating its practical utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999902248382568,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "1. State-of-the-Art Performance: The TBuckets-SVD-Reorg method achieves superior results on two datasets (20NG and NYT) and competitive results on the Genomics dataset, validating the effectiveness of the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "2. Parameter-Free Design: The SVD-based methods require no parameter tuning, which is a significant advantage over existing methods that rely on extensive hyperparameter optimization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999969005584717,
+                    "sentence": "3. Practical Utility: The application of TBuckets to weakly supervised text classification is a strong demonstration of its real-world relevance, particularly in improving classification accuracy by selecting high-quality topics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "4. Interpretability: The bucket-based approach is intuitive and aligns well with human judgment of topic coherence, enhancing the interpretability of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999936819076538,
+                    "sentence": "5. Comprehensive Evaluation: The authors evaluate their methods on multiple datasets and provide detailed comparisons with prior work, ensuring robustness and reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999966621398926,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999960064888,
+                    "sentence": "1. Inconsistent Performance Across Datasets: The SVD-based methods perform poorly on the Genomics dataset, likely due to out-of-vocabulary (OOV) terms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999916553497314,
+                    "sentence": "This raises concerns about the generalizability of the approach to domain-specific datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998919367790222,
+                    "sentence": "2. Lack of Discussion on Vocabulary Match: The paper does not address how the quality of word embeddings (e.g., GloVe) affects performance or provide guidance on predicting which method works best for a given dataset.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998492002487183,
+                    "sentence": "3. Implicit Parameters in Word Embeddings: While the authors claim the method is parameter-free, the implicit parameters in pre-trained word embeddings (e.g., dimensionality, training corpus) are not acknowledged, which could mislead readers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999262690544128,
+                    "sentence": "4. Handling of OOV Terms: The treatment of OOV terms is unclear, and their impact on performance is not thoroughly analyzed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997975826263428,
+                    "sentence": "This is particularly relevant for datasets like Genomics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998379349708557,
+                    "sentence": "5. Cosine Similarity Assumption: The assumption that word2vec vectors are unit-length for cosine similarity is problematic, as this is not inherently guaranteed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996989369392395,
+                    "sentence": "This could introduce inaccuracies in similarity calculations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997994303703308,
+                    "sentence": "6. Visualization Issues: The graphs in Figure 1 are too small and difficult to interpret, which detracts from the clarity of the experimental results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9889621734619141,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980791807174683,
+                    "sentence": "1. How does the quality of word embeddings (e.g., pre-trained on different corpora) influence the performance of TBuckets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985054135322571,
+                    "sentence": "Could domain-specific embeddings improve results on datasets like Genomics?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977805018424988,
+                    "sentence": "2. How are OOV terms handled in the TBuckets framework?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984070062637329,
+                    "sentence": "Could ignoring these terms be a reason for the poor performance on the Genomics dataset?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976416826248169,
+                    "sentence": "3. Have you considered normalizing word vectors before computing cosine similarity to address the issue of non-unit-length vectors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970324635505676,
+                    "sentence": "4. Could you elaborate on the similarities between TBuckets and lexical chaining literature?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9929855465888977,
+                    "sentence": "How does your method build upon or differ from this prior work?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9887782335281372,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995551109313965,
+                    "sentence": "The paper presents a promising and interpretable approach to topic evaluation, but the inconsistencies in performance and lack of discussion on key limitations (e.g., OOV terms, vocabulary match) need to be addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998271465301514,
+                    "sentence": "Improving generalizability and providing more guidance on method selection would strengthen the contribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999074339866638,
+                    "sentence": "Additionally, better visualizations and acknowledgment of implicit parameters in word embeddings would enhance clarity and transparency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper introduces TBuckets, a novel method for evaluating topic quality using word embeddings, which groups topic words into thematic \"buckets\" to measure coherence. The paper proposes three techniques under the TBuckets framework: Clustering-based, SVD-based, and SVD with Reorganization. The authors demonstrate that TBuckets achieves state-of-the-art performance on two out of three standard datasets (20NG and NYT) and performs competitively on the Genomics dataset. The method is parameter-free (for SVD-based approaches), which is a significant advantage over existing techniques that require extensive parameter tuning. Additionally, the authors explore the utility of TBuckets for weakly supervised text classification, showing that selecting high-quality topics based on coherence scores improves classification performance.\nThe primary contributions of the paper are:\n1. A novel, interpretable framework (TBuckets) for topic evaluation that outperforms state-of-the-art methods on standard datasets.\n2. A parameter-free SVD-based technique (TBuckets-SVD and TBuckets-SVD-Reorg) that simplifies implementation and reduces tuning overhead.\n3. An application of TBuckets to weakly supervised text classification, demonstrating its practical utility.\nStrengths\n1. State-of-the-Art Performance: The TBuckets-SVD-Reorg method achieves superior results on two datasets (20NG and NYT) and competitive results on the Genomics dataset, validating the effectiveness of the approach.\n2. Parameter-Free Design: The SVD-based methods require no parameter tuning, which is a significant advantage over existing methods that rely on extensive hyperparameter optimization.\n3. Practical Utility: The application of TBuckets to weakly supervised text classification is a strong demonstration of its real-world relevance, particularly in improving classification accuracy by selecting high-quality topics.\n4. Interpretability: The bucket-based approach is intuitive and aligns well with human judgment of topic coherence, enhancing the interpretability of the results.\n5. Comprehensive Evaluation: The authors evaluate their methods on multiple datasets and provide detailed comparisons with prior work, ensuring robustness and reproducibility.\nWeaknesses\n1. Inconsistent Performance Across Datasets: The SVD-based methods perform poorly on the Genomics dataset, likely due to out-of-vocabulary (OOV) terms. This raises concerns about the generalizability of the approach to domain-specific datasets.\n2. Lack of Discussion on Vocabulary Match: The paper does not address how the quality of word embeddings (e.g., GloVe) affects performance or provide guidance on predicting which method works best for a given dataset.\n3. Implicit Parameters in Word Embeddings: While the authors claim the method is parameter-free, the implicit parameters in pre-trained word embeddings (e.g., dimensionality, training corpus) are not acknowledged, which could mislead readers.\n4. Handling of OOV Terms: The treatment of OOV terms is unclear, and their impact on performance is not thoroughly analyzed. This is particularly relevant for datasets like Genomics.\n5. Cosine Similarity Assumption: The assumption that word2vec vectors are unit-length for cosine similarity is problematic, as this is not inherently guaranteed. This could introduce inaccuracies in similarity calculations.\n6. Visualization Issues: The graphs in Figure 1 are too small and difficult to interpret, which detracts from the clarity of the experimental results.\nQuestions to Authors\n1. How does the quality of word embeddings (e.g., pre-trained on different corpora) influence the performance of TBuckets? Could domain-specific embeddings improve results on datasets like Genomics?\n2. How are OOV terms handled in the TBuckets framework? Could ignoring these terms be a reason for the poor performance on the Genomics dataset?\n3. Have you considered normalizing word vectors before computing cosine similarity to address the issue of non-unit-length vectors?\n4. Could you elaborate on the similarities between TBuckets and lexical chaining literature? How does your method build upon or differ from this prior work?\nAdditional Comments\nThe paper presents a promising and interpretable approach to topic evaluation, but the inconsistencies in performance and lack of discussion on key limitations (e.g., OOV terms, vocabulary match) need to be addressed. Improving generalizability and providing more guidance on method selection would strengthen the contribution. Additionally, better visualizations and acknowledgment of implicit parameters in word embeddings would enhance clarity and transparency."
+        }
+    ]
+}

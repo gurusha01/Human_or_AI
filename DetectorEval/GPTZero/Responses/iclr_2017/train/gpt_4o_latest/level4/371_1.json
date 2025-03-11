@@ -1,0 +1,300 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "02d2f53a-c4d4-4e8d-840e-4f16054dd5c3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "Review - Summary",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999991774559021,
+                    "sentence": "This paper introduces the Neural Physics Engine (NPE), a neural network architecture designed to simulate interactions between objects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999862909317017,
+                    "sentence": "Unlike approaches that rely on video frames, NPE explicitly represents objects but incorporates knowledge of physics primarily through training data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999855756759644,
+                    "sentence": "The method is evaluated in a simplified domain involving 2D bouncing balls.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999908208847046,
+                    "sentence": "The proposed architecture processes each object in the scene individually.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999834299087524,
+                    "sentence": "Object pairs are embedded into a shared space to capture their mutual effects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999843835830688,
+                    "sentence": "These pairwise embeddings are summed and combined with the state of the focus object to predict changes in its velocity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "The paper also presents alternative baselines, which either replace the pairwise embedding with a single-object embedding or encode the focus object's neighbors sequentially using LSTM states.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999845027923584,
+                    "sentence": "NPE significantly outperforms these baselines, highlighting the importance of the architectural design in learning object-based simulations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999934434890747,
+                    "sentence": "The model is rigorously evaluated in several ways: its ability to predict object trajectories over extended time horizons, its generalization to scenes with varying numbers of objects, its adaptability to slightly modified environments (e.g., walls of different shapes), and its performance in predicting object mass solely from interactions with other objects.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999994158744812,
+                    "sentence": "In all cases, NPE demonstrates superior performance compared to the baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999908804893494,
+                    "sentence": "Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995231628418,
+                    "sentence": "- I have one clarification question regarding Figure 3 (b)/(c).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "Are the inputs to the blue box the concatenation of the summed embeddings and the state vector of object 3?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945759773254,
+                    "sentence": "Or is the input to the blue module constructed differently from these two vectors?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1049756184220314,
+                    "sentence": "- Section 2.1 begins with the statement: \"First, because physics does not change across inertial frames, it suffices to separately predict the future state of each object conditioned on the past states of itself and the other objects in its neighborhood, similar to Fragkiadaki et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1376667618751526,
+                    "sentence": "(2015).\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.18909022212028503,
+                    "sentence": "I interpret this as an argument for using an object-centric representation instead of the visual representation employed in prior work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.24977704882621765,
+                    "sentence": "This distinction would be clearer if the authors explicitly contrasted their approach with visual representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.905971884727478,
+                    "sentence": "- While the paper acknowledges its novelty, it is worth noting that the concurrent work by Battaglia et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8856900334358215,
+                    "sentence": "(NIPS 2016), titled \"Interaction Networks for Learning about Objects, Relations and Physics,\" shares the concept of using object-based representations to predict physical interactions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8153951168060303,
+                    "sentence": "Although the architectures and experiments differ, and the presentation in Battaglia et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.841684103012085,
+                    "sentence": "is particularly strong, the overlap in the core idea should be acknowledged.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9076850414276123,
+                    "sentence": "Overall Evaluation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8460038900375366,
+                    "sentence": "This paper was a pleasure to read, offering a wealth of experiments that lead to clear and compelling conclusions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8821978569030762,
+                    "sentence": "It presents a novel approach (albeit less so in light of the concurrent work by Battaglia et al., 2016) that marks a significant advancement in the study of intuitive physics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                }
+            ],
+            "completely_generated_prob": 0.7995711047355243,
+            "class_probabilities": {
+                "human": 0.19427518060025914,
+                "ai": 0.7995711047355243,
+                "mixed": 0.006153714664216576
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7995711047355243,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7995711047355243,
+                    "human": 0.19427518060025914,
+                    "mixed": 0.006153714664216576
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review - Summary \nThis paper introduces the Neural Physics Engine (NPE), a neural network architecture designed to simulate interactions between objects. Unlike approaches that rely on video frames, NPE explicitly represents objects but incorporates knowledge of physics primarily through training data. The method is evaluated in a simplified domain involving 2D bouncing balls. \nThe proposed architecture processes each object in the scene individually. Object pairs are embedded into a shared space to capture their mutual effects. These pairwise embeddings are summed and combined with the state of the focus object to predict changes in its velocity. The paper also presents alternative baselines, which either replace the pairwise embedding with a single-object embedding or encode the focus object's neighbors sequentially using LSTM states. \nNPE significantly outperforms these baselines, highlighting the importance of the architectural design in learning object-based simulations. The model is rigorously evaluated in several ways: its ability to predict object trajectories over extended time horizons, its generalization to scenes with varying numbers of objects, its adaptability to slightly modified environments (e.g., walls of different shapes), and its performance in predicting object mass solely from interactions with other objects. In all cases, NPE demonstrates superior performance compared to the baselines. \nComments \n- I have one clarification question regarding Figure 3 (b)/(c). Are the inputs to the blue box the concatenation of the summed embeddings and the state vector of object 3? Or is the input to the blue module constructed differently from these two vectors? \n- Section 2.1 begins with the statement: \"First, because physics does not change across inertial frames, it suffices to separately predict the future state of each object conditioned on the past states of itself and the other objects in its neighborhood, similar to Fragkiadaki et al. (2015).\" \n I interpret this as an argument for using an object-centric representation instead of the visual representation employed in prior work. This distinction would be clearer if the authors explicitly contrasted their approach with visual representations. \n- While the paper acknowledges its novelty, it is worth noting that the concurrent work by Battaglia et al. (NIPS 2016), titled \"Interaction Networks for Learning about Objects, Relations and Physics,\" shares the concept of using object-based representations to predict physical interactions. Although the architectures and experiments differ, and the presentation in Battaglia et al. is particularly strong, the overlap in the core idea should be acknowledged. \nOverall Evaluation \nThis paper was a pleasure to read, offering a wealth of experiments that lead to clear and compelling conclusions. It presents a novel approach (albeit less so in light of the concurrent work by Battaglia et al., 2016) that marks a significant advancement in the study of intuitive physics."
+        }
+    ]
+}

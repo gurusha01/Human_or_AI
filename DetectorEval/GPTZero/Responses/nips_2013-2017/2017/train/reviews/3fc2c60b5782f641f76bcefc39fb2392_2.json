@@ -1,0 +1,317 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "692b51af-bebf-4f15-9296-a885e088bb66",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.1491738110780716,
+                    "sentence": "--Brief summary of the paper:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2272929549217224,
+                    "sentence": "The paper proposes a learning method for solving two-stage stochastic programming problems which involve minimizing f(x,y,z) w.r.t.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2813235819339752,
+                    "sentence": "z.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.30569881200790405,
+                    "sentence": "The main idea of the paper is to learn a predictive model p(y\"x;theta) such that the task's objective function f is directly optimized.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36974576115608215,
+                    "sentence": "In contrast, traditional approaches learn p(y\"x;theta) to minimize a prediction error without considering f. The main technical challenge in the paper is to solve a sub-optimization problem involving argmin w.r.t.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.36354219913482666,
+                    "sentence": "z, and the proposed method can do so in an efficient manner by assuming that the optimization problem is convex in z.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.2833312451839447,
+                    "sentence": "The method is experimentally evaluated on two problems and it is shown to outperform traditional methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09887422621250153,
+                    "sentence": "--Major comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.273525595664978,
+                    "sentence": "The idea of adopting end-to-end learning to solve two-stage stochastic programming is interesting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17904067039489746,
+                    "sentence": "However, I have a major concern for the proposed method which is the lack of convergence guarantees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.23481044173240662,
+                    "sentence": "Since the optimization problem is assumed to be convex in z, the obtained solution z*(x;theta) is supposed to be the \"true\" optimal if data is drawn from the true distribution p(x,y).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.21481654047966003,
+                    "sentence": "However, a solution obtained using the predictive model p(y\"x;theta) is unlikely to be true optimal unless p(y\"x;theta) is the true conditional distribution p(y\"x).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.11976591497659683,
+                    "sentence": "(This issue is commonly known as model bias in the context of model-based reinforcement learning which usually involves non-convex objectives.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.37070122361183167,
+                    "sentence": "Since the proposed method does not theoretically guarantee that p(y\"x;theta) converges to p(y\"x) even when the model hypothesis is correct, it seems likely that even for a convex optimization problem the method may only find a sub-optimal solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.28960075974464417,
+                    "sentence": "For this reason, I think having convergence guarantees or error bounds either for the predictive model or for the obtained solution itself are very important to theoretically justify the method and would be a significant contribution to the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.18184353411197662,
+                    "sentence": "--Questions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.17976410686969757,
+                    "sentence": "1) It is not clear why Algorithm 1 requires mini-batches training since Line 7 of the algorithm only checks the constraint for a single sample.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1717398315668106,
+                    "sentence": "2) In the first experiment, why does the performance of the end-to-end policy optimization method depend on the model hypothesis when it does not rely on a predictive model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04022347554564476,
+                    "sentence": "--Minor suggestions:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.021427882835268974,
+                    "sentence": "1) In line 154 the paper argue that the model-free approach requires a rich policy class and is data inefficient.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02140599489212036,
+                    "sentence": "However, the model-based approach also requires a rich model class as well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.025571519508957863,
+                    "sentence": "Moreover, the model-based approach can suffer from model bias while the model-free approach cannot.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.014592666178941727,
+                    "sentence": "2) The applicability of the proposed method is quite limited.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02435947209596634,
+                    "sentence": "As mentioned in the paper, solving a sub-optimization problem with argmin is not trivial and convexity assumption can help in this regard.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027321619912981987,
+                    "sentence": "However, practical decision making problems may involve non-convex or unknown objective functions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.036885857582092285,
+                    "sentence": "A variant of the proposed method that is applicable to these tasks would make the method more appealing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02505509741604328,
+                    "sentence": "3) The last term of Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.039882563054561615,
+                    "sentence": "(4) should have an expectation over the density of x.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.019390679895877838,
+                    "sentence": "--Comments after author's response:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.030298762023448944,
+                    "sentence": "I feel more positive about the paper after reading the author's response.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02814359776675701,
+                    "sentence": "Now I think that the proposed method is an important contribution to the field and I will increase my score.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.034610748291015625,
+                    "sentence": "However, I am still not convince that the proposed method will be useful outside domains with convex objectives without empirical evidences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 2.1228438805416278e-06
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                }
+            ],
+            "completely_generated_prob": 0.19729206963249518,
+            "class_probabilities": {
+                "human": 0.8027079303675048,
+                "ai": 0.19729206963249518,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.8027079303675048,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.19729206963249518,
+                    "human": 0.8027079303675048,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "--Brief summary of the paper:\nThe paper proposes a learning method for solving two-stage stochastic programming problems which involve minimizing f(x,y,z) w.r.t. z. The main idea of the paper is to learn a predictive model p(y\"x;theta) such that the task's objective function f is directly optimized. In contrast, traditional approaches learn p(y\"x;theta) to minimize a prediction error without considering f. The main technical challenge in the paper is to solve a sub-optimization problem involving argmin w.r.t. z, and the proposed method can do so in an efficient manner by assuming that the optimization problem is convex in z. The method is experimentally evaluated on two problems and it is shown to outperform traditional methods.\n--Major comments:\nThe idea of adopting end-to-end learning to solve two-stage stochastic programming is interesting. However, I have a major concern for the proposed method which is the lack of convergence guarantees. Since the optimization problem is assumed to be convex in z, the obtained solution z*(x;theta) is supposed to be the \"true\" optimal if data is drawn from the true distribution p(x,y). However, a solution obtained using the predictive model p(y\"x;theta) is unlikely to be true optimal unless p(y\"x;theta) is the true conditional distribution p(y\"x). (This issue is commonly known as model bias in the context of model-based reinforcement learning which usually involves non-convex objectives.) Since the proposed method does not theoretically guarantee that p(y\"x;theta) converges to p(y\"x) even when the model hypothesis is correct, it seems likely that even for a convex optimization problem the method may only find a sub-optimal solution. For this reason, I think having convergence guarantees or error bounds either for the predictive model or for the obtained solution itself are very important to theoretically justify the method and would be a significant contribution to the paper.\n--Questions: \n1) It is not clear why Algorithm 1 requires mini-batches training since Line 7 of the algorithm only checks the constraint for a single sample.\n2) In the first experiment, why does the performance of the end-to-end policy optimization method depend on the model hypothesis when it does not rely on a predictive model?\n--Minor suggestions:\n1) In line 154 the paper argue that the model-free approach requires a rich policy class and is data inefficient. However, the model-based approach also requires a rich model class as well. Moreover, the model-based approach can suffer from model bias while the model-free approach cannot.\n2) The applicability of the proposed method is quite limited. As mentioned in the paper, solving a sub-optimization problem with argmin is not trivial and convexity assumption can help in this regard. However, practical decision making problems may involve non-convex or unknown objective functions. A variant of the proposed method that is applicable to these tasks would make the method more appealing.\n3) The last term of Eq.(4) should have an expectation over the density of x.\n--Comments after author's response:\nI feel more positive about the paper after reading the author's response. Now I think that the proposed method is an important contribution to the field and I will increase my score. However, I am still not convince that the proposed method will be useful outside domains with convex objectives without empirical evidences."
+        }
+    ]
+}

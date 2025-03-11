@@ -1,0 +1,271 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "f2b89672-54d0-48d7-8645-6d19c0fca67c",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9254783391952515,
+                    "sentence": "This paper introduces an innovative approach to zero-resource translation in scenarios where (source, pivot) and (pivot, target) parallel corpora are available.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.832518458366394,
+                    "sentence": "The method involves first training a teacher model for p(target\"pivot) using the (pivot, target) corpus, followed by training a student model for p(target\"source) to minimize relative entropy with respect to the teacher on the (source, pivot) corpus.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8799060583114624,
+                    "sentence": "By employing word-level relative entropy over samples from the teacher, the proposed method demonstrates superior performance compared to prior pivoting techniques and other zero-resource strategies.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8237693309783936,
+                    "sentence": "This work represents a valuable contribution: the proposed idea is novel, well-articulated, and supported by compelling empirical evidence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.83837890625,
+                    "sentence": "Unlike some previous approaches, it operates under relatively minimal assumptions about the underlying NMT systems, making it broadly applicable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.32954099774360657,
+                    "sentence": "I have a few recommendations for additional experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.41077089309692383,
+                    "sentence": "First, it would be insightful to evaluate the robustness of this method when applied to more divergent source and pivot languages, where the true p(target\"source) and p(target\"pivot) distributions are likely to differ more significantly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.479804664850235,
+                    "sentence": "Second, given the demonstrated success of incorporating word-based diversity, it was unexpected not to see experiments involving sentence n-best lists or sentence sampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5509791970252991,
+                    "sentence": "While such experiments may be computationally more demanding, the additional cost should be manageable since beam search is already employed with the teacher.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4596976935863495,
+                    "sentence": "Lastly, building on the previous point, it could be worthwhile to investigate transitioning from word-based diversity to sentence-based diversity as the student model converges and becomes less reliant on low-probability word signals.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.17493343353271484,
+                    "sentence": "Additional comments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999388575553894,
+                    "sentence": "- Line 241: Replace \"Despite its simplicity\" with \"Due to its simplicity.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991140961647034,
+                    "sentence": "- Line 277: Clarify \"target sentence y\" as \"target word y.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980264902114868,
+                    "sentence": "- Line 442: Clarify whether K=1 and K=5 refer to comparing probabilities of the most probable word and the top 5 most probable words in the current context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980053305625916,
+                    "sentence": "Additionally, specify whether the current context is determined greedily or via beam search.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980213046073914,
+                    "sentence": "Section 4.2: The comparison to an essentially uniform distribution seems uninformative, as it is almost certain that p(y\"z) will be significantly closer to p(y\"x) than to a uniform distribution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987777471542358,
+                    "sentence": "A more meaningful analysis would involve assessing how useful the signal from p(y\"z) remains as p(y\"x) improves.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991593360900879,
+                    "sentence": "This could be achieved by comparing p(y\"z) to models for p(y\"x) trained on varying amounts of data or for different numbers of iterations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9955268502235413,
+                    "sentence": "Additionally, it would be interesting to examine the impact of the mode approximation compared to n-best lists for sentence-level scores.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944295287132263,
+                    "sentence": "- Line 555: It is surprising that word beam search performs worse than word greedy search, given that word beam search should theoretically be closer to word sampling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9926838874816895,
+                    "sentence": "Can you provide an explanation for this observation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907609224319458,
+                    "sentence": "- Line 582: The purported advantage of sent-beam appears questionable, as it may simply reflect noise, considering the high variance in the corresponding curves.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.6275998212593757,
+            "class_probabilities": {
+                "human": 0.36754925619720263,
+                "ai": 0.6275998212593757,
+                "mixed": 0.004850922543421562
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.6275998212593757,
+            "confidence_category": "low",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.6275998212593757,
+                    "human": 0.36754925619720263,
+                    "mixed": 0.004850922543421562
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly uncertain about this document. The writing style and content are not particularly AI-like.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces an innovative approach to zero-resource translation in scenarios where (source, pivot) and (pivot, target) parallel corpora are available. The method involves first training a teacher model for p(target\"pivot) using the (pivot, target) corpus, followed by training a student model for p(target\"source) to minimize relative entropy with respect to the teacher on the (source, pivot) corpus. By employing word-level relative entropy over samples from the teacher, the proposed method demonstrates superior performance compared to prior pivoting techniques and other zero-resource strategies.\nThis work represents a valuable contribution: the proposed idea is novel, well-articulated, and supported by compelling empirical evidence. Unlike some previous approaches, it operates under relatively minimal assumptions about the underlying NMT systems, making it broadly applicable.\nI have a few recommendations for additional experiments. First, it would be insightful to evaluate the robustness of this method when applied to more divergent source and pivot languages, where the true p(target\"source) and p(target\"pivot) distributions are likely to differ more significantly. Second, given the demonstrated success of incorporating word-based diversity, it was unexpected not to see experiments involving sentence n-best lists or sentence sampling. While such experiments may be computationally more demanding, the additional cost should be manageable since beam search is already employed with the teacher. Lastly, building on the previous point, it could be worthwhile to investigate transitioning from word-based diversity to sentence-based diversity as the student model converges and becomes less reliant on low-probability word signals.\nAdditional comments:\n- Line 241: Replace \"Despite its simplicity\" with \"Due to its simplicity.\"\n- Line 277: Clarify \"target sentence y\" as \"target word y.\"\n- Line 442: Clarify whether K=1 and K=5 refer to comparing probabilities of the most probable word and the top 5 most probable words in the current context. Additionally, specify whether the current context is determined greedily or via beam search.\nSection 4.2: The comparison to an essentially uniform distribution seems uninformative, as it is almost certain that p(y\"z) will be significantly closer to p(y\"x) than to a uniform distribution. A more meaningful analysis would involve assessing how useful the signal from p(y\"z) remains as p(y\"x) improves. This could be achieved by comparing p(y\"z) to models for p(y\"x) trained on varying amounts of data or for different numbers of iterations. Additionally, it would be interesting to examine the impact of the mode approximation compared to n-best lists for sentence-level scores.\n- Line 555: It is surprising that word beam search performs worse than word greedy search, given that word beam search should theoretically be closer to word sampling. Can you provide an explanation for this observation?\n- Line 582: The purported advantage of sent-beam appears questionable, as it may simply reflect noise, considering the high variance in the corresponding curves."
+        }
+    ]
+}

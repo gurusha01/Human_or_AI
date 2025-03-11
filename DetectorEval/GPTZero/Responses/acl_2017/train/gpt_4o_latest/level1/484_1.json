@@ -1,0 +1,414 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "aa8c8779-0159-4dd1-b9db-fbab68d97ae7",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999945759773254,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979734420776,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999957084655762,
+                    "sentence": "This paper proposes a novel joint CTC-attention end-to-end automatic speech recognition (ASR) framework that combines the strengths of connectionist temporal classification (CTC) and attention-based models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999900460243225,
+                    "sentence": "The method addresses key limitations of traditional hybrid HMM/DNN ASR systems, such as reliance on linguistic resources, complex decoding, and conditional independence assumptions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999690651893616,
+                    "sentence": "The authors demonstrate the proposed method's effectiveness on two ASR benchmarks\"\"Japanese and Mandarin Chinese\"\"achieving performance comparable to state-of-the-art hybrid systems without requiring linguistic resources like pronunciation dictionaries or morphological analyzers.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999406337738037,
+                    "sentence": "The main contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999512434005737,
+                    "sentence": "1. Joint CTC-Attention Framework: The integration of CTC-based alignment as a regularization mechanism during training and decoding to address irregular alignment issues in attention-based ASR.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999642372131348,
+                    "sentence": "This is the paper's strongest contribution, as it effectively combines the benefits of both architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999975860118866,
+                    "sentence": "2. Simplified ASR Pipeline: The proposed method eliminates the need for linguistic resources and traditional hybrid ASR components, significantly simplifying the model-building process.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999662637710571,
+                    "sentence": "3. Empirical Validation: The method achieves competitive performance on Japanese and Mandarin benchmarks, demonstrating its practical applicability and robustness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999954104423523,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999510049819946,
+                    "sentence": "1. Innovative Combination of CTC and Attention: The joint CTC-attention approach is novel and well-motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999957263469696,
+                    "sentence": "By leveraging the monotonic alignment of CTC and the flexibility of attention mechanisms, the proposed method addresses key challenges in end-to-end ASR, such as alignment irregularities and data sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999794960021973,
+                    "sentence": "2. Simplification of ASR Development: The elimination of linguistic resources, such as pronunciation dictionaries and language models, is a significant step toward democratizing ASR development, especially for low-resource languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99997878074646,
+                    "sentence": "3. Strong Experimental Results: The method achieves competitive or superior performance compared to state-of-the-art hybrid systems on the CSJ and MTS benchmarks, despite using fewer resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999760389328003,
+                    "sentence": "The results are well-documented, and the ablation studies (e.g., the effect of Î») provide valuable insights.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999735355377197,
+                    "sentence": "4. Practical Decoding Strategy: The two-pass decoding strategy, which combines attention-based beam search with CTC-based rescoring, is effective and avoids the need for additional heuristics like length penalties or coverage terms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999687671661377,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999849796295166,
+                    "sentence": "1. Limited Scope of Evaluation: The experiments are restricted to Japanese and Mandarin Chinese.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9040574431419373,
+                    "sentence": "While the authors justify this choice due to shorter letter sequences in these languages, the generalizability of the method to languages with longer sequences (e.g., English) remains untested.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9521228671073914,
+                    "sentence": "2. Computational Cost: Although the method simplifies the ASR pipeline, training still requires significant computational resources (7\"\"9 days on a single GPU for CSJ).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9766956567764282,
+                    "sentence": "This could be a barrier for researchers with limited access to hardware.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9845868349075317,
+                    "sentence": "3. Comparison with State-of-the-Art: While the results are competitive, the paper does not compare directly with lattice-free sequence discriminative training methods (e.g., TDNN with MMI), which are known to achieve superior performance in some cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9875342845916748,
+                    "sentence": "4. Limited Analysis of Failure Cases: The paper briefly mentions irregular alignments in attention-based ASR but does not provide a detailed error analysis for the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9910247325897217,
+                    "sentence": "This would help clarify its limitations and potential areas for improvement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9748669862747192,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9923639893531799,
+                    "sentence": "1. How does the proposed method perform on languages with longer sequences, such as English?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942687749862671,
+                    "sentence": "Have you considered using subword units to address this challenge?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950109124183655,
+                    "sentence": "2. Can the computational cost of training be reduced without sacrificing performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907134175300598,
+                    "sentence": "For example, would smaller models or fewer training epochs still yield competitive results?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9917508959770203,
+                    "sentence": "3. How does the joint CTC-attention method compare to lattice-free MMI approaches in terms of performance and computational efficiency?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9734703898429871,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9891379475593567,
+                    "sentence": "The paper is well-written and provides a clear explanation of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9929671287536621,
+                    "sentence": "The joint CTC-attention framework is a valuable contribution to the ASR community, particularly for its potential to simplify ASR development for low-resource languages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9668574333190918,
+                    "sentence": "However, broader evaluation and a deeper analysis of limitations would strengthen the paper further.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary and Contributions\nThis paper proposes a novel joint CTC-attention end-to-end automatic speech recognition (ASR) framework that combines the strengths of connectionist temporal classification (CTC) and attention-based models. The method addresses key limitations of traditional hybrid HMM/DNN ASR systems, such as reliance on linguistic resources, complex decoding, and conditional independence assumptions. The authors demonstrate the proposed method's effectiveness on two ASR benchmarks\"\"Japanese and Mandarin Chinese\"\"achieving performance comparable to state-of-the-art hybrid systems without requiring linguistic resources like pronunciation dictionaries or morphological analyzers.\nThe main contributions of the paper are:\n1. Joint CTC-Attention Framework: The integration of CTC-based alignment as a regularization mechanism during training and decoding to address irregular alignment issues in attention-based ASR. This is the paper's strongest contribution, as it effectively combines the benefits of both architectures.\n2. Simplified ASR Pipeline: The proposed method eliminates the need for linguistic resources and traditional hybrid ASR components, significantly simplifying the model-building process.\n3. Empirical Validation: The method achieves competitive performance on Japanese and Mandarin benchmarks, demonstrating its practical applicability and robustness.\nStrengths\n1. Innovative Combination of CTC and Attention: The joint CTC-attention approach is novel and well-motivated. By leveraging the monotonic alignment of CTC and the flexibility of attention mechanisms, the proposed method addresses key challenges in end-to-end ASR, such as alignment irregularities and data sparsity.\n2. Simplification of ASR Development: The elimination of linguistic resources, such as pronunciation dictionaries and language models, is a significant step toward democratizing ASR development, especially for low-resource languages.\n3. Strong Experimental Results: The method achieves competitive or superior performance compared to state-of-the-art hybrid systems on the CSJ and MTS benchmarks, despite using fewer resources. The results are well-documented, and the ablation studies (e.g., the effect of Î») provide valuable insights.\n4. Practical Decoding Strategy: The two-pass decoding strategy, which combines attention-based beam search with CTC-based rescoring, is effective and avoids the need for additional heuristics like length penalties or coverage terms.\nWeaknesses\n1. Limited Scope of Evaluation: The experiments are restricted to Japanese and Mandarin Chinese. While the authors justify this choice due to shorter letter sequences in these languages, the generalizability of the method to languages with longer sequences (e.g., English) remains untested.\n2. Computational Cost: Although the method simplifies the ASR pipeline, training still requires significant computational resources (7\"\"9 days on a single GPU for CSJ). This could be a barrier for researchers with limited access to hardware.\n3. Comparison with State-of-the-Art: While the results are competitive, the paper does not compare directly with lattice-free sequence discriminative training methods (e.g., TDNN with MMI), which are known to achieve superior performance in some cases.\n4. Limited Analysis of Failure Cases: The paper briefly mentions irregular alignments in attention-based ASR but does not provide a detailed error analysis for the proposed method. This would help clarify its limitations and potential areas for improvement.\nQuestions to Authors\n1. How does the proposed method perform on languages with longer sequences, such as English? Have you considered using subword units to address this challenge?\n2. Can the computational cost of training be reduced without sacrificing performance? For example, would smaller models or fewer training epochs still yield competitive results?\n3. How does the joint CTC-attention method compare to lattice-free MMI approaches in terms of performance and computational efficiency?\nAdditional Comments\nThe paper is well-written and provides a clear explanation of the proposed method. The joint CTC-attention framework is a valuable contribution to the ASR community, particularly for its potential to simplify ASR development for low-resource languages. However, broader evaluation and a deeper analysis of limitations would strengthen the paper further."
+        }
+    ]
+}

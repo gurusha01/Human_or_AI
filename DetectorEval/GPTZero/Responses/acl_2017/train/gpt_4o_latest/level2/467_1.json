@@ -1,0 +1,370 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2d1e22c6-c70d-4043-b141-365ab7d7e1a3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999876618385315,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964833259583,
+                    "sentence": "This paper presents a novel self-learning framework for learning bilingual word embeddings with minimal bilingual resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999951720237732,
+                    "sentence": "The primary contribution is the ability to achieve competitive results using only a 25-word seed dictionary or even an automatically generated list of numerals.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "The proposed method iteratively refines the embedding mapping and dictionary through a self-learning process, leveraging the structural similarity of monolingual embedding spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "The authors demonstrate that their approach achieves results comparable to state-of-the-art methods that rely on richer bilingual resources, such as large dictionaries or parallel corpora.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999978542327881,
+                    "sentence": "Additionally, the paper provides a theoretical analysis of the implicit optimization objective of the self-learning framework, offering insights into its robustness and convergence properties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999973177909851,
+                    "sentence": "1. Practical Impact: The method significantly reduces the reliance on bilingual resources, which is crucial for low-resource language pairs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "The ability to use as little as 25 word pairs or numerals makes the approach highly practical and accessible.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "2. Strong Empirical Results: The experiments on bilingual lexicon induction and cross-lingual word similarity demonstrate that the proposed method achieves competitive performance with minimal resources, outperforming baseline methods under low-resource settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971985816956,
+                    "sentence": "3. Theoretical Insight: The analysis of the implicit optimization objective is a valuable addition, providing a deeper understanding of why the self-learning framework works effectively and how it avoids degenerate solutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999954700469971,
+                    "sentence": "4. Reproducibility: The authors provide detailed experimental settings and promise to release code and resources, ensuring that the work can be reproduced and extended by the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999715685844421,
+                    "sentence": "1. Limited Evaluation on Diverse Language Pairs: While the method is tested on English-Italian, English-German, and English-Finnish, the evaluation could be extended to more diverse and typologically distant language pairs (e.g., languages with different scripts or morphologies) to better assess its generalizability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999619126319885,
+                    "sentence": "2. Dependence on Initialization: The paper acknowledges that random initialization performs poorly, and the method relies on a small seed dictionary to avoid poor local optima.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999622702598572,
+                    "sentence": "This limits the claim of being \"unsupervised\" and suggests that the method is not yet fully robust to initialization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999783039093018,
+                    "sentence": "3. Scalability Concerns: Although the authors address efficiency by vectorizing computations, the iterative nature of the framework may still pose scalability challenges for very large vocabularies or embedding spaces.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9344112873077393,
+                    "sentence": "4. Comparison with Parallel Corpus Methods: While the paper compares favorably with dictionary-based methods, the comparison with parallel corpus-based methods (e.g., Luong et al., 2015) is less comprehensive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8964663147926331,
+                    "sentence": "The authors attribute the poor performance of these methods to smaller training corpora but do not explore hybrid approaches that combine monolingual and parallel data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.929983377456665,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9592209458351135,
+                    "sentence": "1. Have you tested the method on language pairs with non-Latin scripts (e.g., Chinese-English) or highly divergent morphologies (e.g., Turkish-English)?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9757574200630188,
+                    "sentence": "If not, how do you anticipate the method would perform in such cases?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9700590968132019,
+                    "sentence": "2. Could you elaborate on why random initialization fails and whether alternative initialization strategies (e.g., adversarial training) might improve performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9696160554885864,
+                    "sentence": "3. Is the proposed method sensitive to the quality of the monolingual embeddings?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9501236081123352,
+                    "sentence": "How would it perform with embeddings trained on smaller or noisier corpora?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.928367018699646,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9668397307395935,
+                    "sentence": "The paper is well-written and addresses an important problem in cross-lingual NLP.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9539895057678223,
+                    "sentence": "The proposed method is simple yet effective, and the theoretical analysis strengthens its contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9807859063148499,
+                    "sentence": "However, further exploration of its limitations, such as initialization dependence and scalability, would make the work more robust.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9881008863449097,
+                    "sentence": "Overall, this is a strong submission with significant potential for impact in low-resource language processing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.8822456422763244,
+            "class_probabilities": {
+                "human": 0.11096435754212483,
+                "ai": 0.8822456422763244,
+                "mixed": 0.0067900001815508065
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.8822456422763244,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.8822456422763244,
+                    "human": 0.11096435754212483,
+                    "mixed": 0.0067900001815508065
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions\nThis paper presents a novel self-learning framework for learning bilingual word embeddings with minimal bilingual resources. The primary contribution is the ability to achieve competitive results using only a 25-word seed dictionary or even an automatically generated list of numerals. The proposed method iteratively refines the embedding mapping and dictionary through a self-learning process, leveraging the structural similarity of monolingual embedding spaces. The authors demonstrate that their approach achieves results comparable to state-of-the-art methods that rely on richer bilingual resources, such as large dictionaries or parallel corpora. Additionally, the paper provides a theoretical analysis of the implicit optimization objective of the self-learning framework, offering insights into its robustness and convergence properties.\nStrengths\n1. Practical Impact: The method significantly reduces the reliance on bilingual resources, which is crucial for low-resource language pairs. The ability to use as little as 25 word pairs or numerals makes the approach highly practical and accessible.\n2. Strong Empirical Results: The experiments on bilingual lexicon induction and cross-lingual word similarity demonstrate that the proposed method achieves competitive performance with minimal resources, outperforming baseline methods under low-resource settings.\n3. Theoretical Insight: The analysis of the implicit optimization objective is a valuable addition, providing a deeper understanding of why the self-learning framework works effectively and how it avoids degenerate solutions.\n4. Reproducibility: The authors provide detailed experimental settings and promise to release code and resources, ensuring that the work can be reproduced and extended by the community.\nWeaknesses\n1. Limited Evaluation on Diverse Language Pairs: While the method is tested on English-Italian, English-German, and English-Finnish, the evaluation could be extended to more diverse and typologically distant language pairs (e.g., languages with different scripts or morphologies) to better assess its generalizability.\n2. Dependence on Initialization: The paper acknowledges that random initialization performs poorly, and the method relies on a small seed dictionary to avoid poor local optima. This limits the claim of being \"unsupervised\" and suggests that the method is not yet fully robust to initialization.\n3. Scalability Concerns: Although the authors address efficiency by vectorizing computations, the iterative nature of the framework may still pose scalability challenges for very large vocabularies or embedding spaces.\n4. Comparison with Parallel Corpus Methods: While the paper compares favorably with dictionary-based methods, the comparison with parallel corpus-based methods (e.g., Luong et al., 2015) is less comprehensive. The authors attribute the poor performance of these methods to smaller training corpora but do not explore hybrid approaches that combine monolingual and parallel data.\nQuestions to Authors\n1. Have you tested the method on language pairs with non-Latin scripts (e.g., Chinese-English) or highly divergent morphologies (e.g., Turkish-English)? If not, how do you anticipate the method would perform in such cases?\n2. Could you elaborate on why random initialization fails and whether alternative initialization strategies (e.g., adversarial training) might improve performance?\n3. Is the proposed method sensitive to the quality of the monolingual embeddings? How would it perform with embeddings trained on smaller or noisier corpora?\nAdditional Comments\nThe paper is well-written and addresses an important problem in cross-lingual NLP. The proposed method is simple yet effective, and the theoretical analysis strengthens its contributions. However, further exploration of its limitations, such as initialization dependence and scalability, would make the work more robust. Overall, this is a strong submission with significant potential for impact in low-resource language processing."
+        }
+    ]
+}

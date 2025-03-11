@@ -1,0 +1,359 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "deb9b28d-1415-438f-9f2f-97ed845a31a9",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999042749404907,
+                    "sentence": "The paper introduces a novel method for compiling arithmetic circuits (ACs) for probabilistic graphical models by leveraging the multiplication of Probabilistic Sentential Decision Diagrams (PSDDs) to represent model factors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999367594718933,
+                    "sentence": "This approach is shown to be both theoretically sound and practically effective, offering significant improvements in compilation size and time compared to existing methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999302625656128,
+                    "sentence": "The authors demonstrate that PSDDs support a polytime multiplication operator, making them suitable for applications requiring efficient factor multiplication, though they do not support a polytime summing-out operation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998393654823303,
+                    "sentence": "The paper also proposes a straightforward compilation algorithm for graphical models using PSDDs, which bypasses the need for intermediate logical representations, such as Sentential Decision Diagrams (SDDs) or deterministic DNNFs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999112486839294,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996755123138428,
+                    "sentence": "1. Technical Contribution: The paper makes a strong technical contribution by identifying and exploiting the tractability of PSDD multiplication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994699358940125,
+                    "sentence": "This enables a simpler and more efficient compilation algorithm for graphical models compared to prior approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994844198226929,
+                    "sentence": "2. Empirical Results: The experimental results convincingly demonstrate the advantages of the PSDD-based approach in terms of both size and time, particularly when compared to state-of-the-art compilers like ACE and SDD-based methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976434707641602,
+                    "sentence": "3. Clarity: The paper is exceptionally well-written and organized, with clear explanations of the theoretical foundations, algorithms, and empirical evaluations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9947828650474548,
+                    "sentence": "The inclusion of proofs and detailed algorithmic descriptions enhances reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984334111213684,
+                    "sentence": "4. Novelty: The work is original in its focus on PSDD multiplication as a core operation for graphical model compilation, distinguishing it from prior methods that rely on intermediate representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993337392807007,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996353983879089,
+                    "sentence": "1. Terminology and Scope: The distinction between PSDDs and related representations, such as Algebraic Sentential Decision Diagrams (ASDDs) and AND/OR Multi-Valued Decision Diagrams (AOMDDs), is insufficiently clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996071457862854,
+                    "sentence": "This could leave readers uncertain about the broader applicability and generality of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996727705001831,
+                    "sentence": "2. Algorithmic Details: The implementation of the cache in Algorithm 1 (line 19) is not fully explained, particularly whether it employs recursive caching with unique IDs, as is common in ADDs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997005462646484,
+                    "sentence": "This omission could hinder understanding and replication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997310042381287,
+                    "sentence": "3. Title and Terminology: The title could be more descriptive to reflect the paper's contributions, such as \"Efficient AC Compilation of Graphical Models via PSDD Multiplication.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9791994094848633,
+                    "sentence": "Additionally, the suggestion to use \"ASDD\" as a more general terminology for PSDDs raises questions about the conceptual framing of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9915804266929626,
+                    "sentence": "4. Theoretical Query: The necessity of decomposability and determinism for efficient inference in ACs is not fully addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9929377436637878,
+                    "sentence": "It remains unclear whether a simpler PSDD multiplication algorithm could achieve similar efficiency without these properties.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996833205223083,
+                    "sentence": "Suggestions for Improvement:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996764063835144,
+                    "sentence": "1. Revise the title to better reflect the paper's contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996999502182007,
+                    "sentence": "2. Expand Section 6 to clarify the distinctions between PSDDs, ASDDs, and AOMDDs, and discuss their relative advantages.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996774196624756,
+                    "sentence": "3. Provide additional details on the caching mechanism in Algorithm 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997654557228088,
+                    "sentence": "4. Address the theoretical question of whether decomposability and determinism are essential for efficient inference or if alternative properties might suffice.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995438456535339,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993000030517578,
+                    "sentence": "This paper is a high-quality contribution to the field of probabilistic reasoning and graphical model compilation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992758631706238,
+                    "sentence": "Its novel use of PSDD multiplication offers both theoretical and practical advancements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986576437950134,
+                    "sentence": "While minor clarifications and improvements are needed, the strengths of the work far outweigh its weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9979996085166931,
+                    "sentence": "I recommend acceptance, with revisions to address the noted concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a novel method for compiling arithmetic circuits (ACs) for probabilistic graphical models by leveraging the multiplication of Probabilistic Sentential Decision Diagrams (PSDDs) to represent model factors. This approach is shown to be both theoretically sound and practically effective, offering significant improvements in compilation size and time compared to existing methods. The authors demonstrate that PSDDs support a polytime multiplication operator, making them suitable for applications requiring efficient factor multiplication, though they do not support a polytime summing-out operation. The paper also proposes a straightforward compilation algorithm for graphical models using PSDDs, which bypasses the need for intermediate logical representations, such as Sentential Decision Diagrams (SDDs) or deterministic DNNFs.\nStrengths:\n1. Technical Contribution: The paper makes a strong technical contribution by identifying and exploiting the tractability of PSDD multiplication. This enables a simpler and more efficient compilation algorithm for graphical models compared to prior approaches.\n2. Empirical Results: The experimental results convincingly demonstrate the advantages of the PSDD-based approach in terms of both size and time, particularly when compared to state-of-the-art compilers like ACE and SDD-based methods.\n3. Clarity: The paper is exceptionally well-written and organized, with clear explanations of the theoretical foundations, algorithms, and empirical evaluations. The inclusion of proofs and detailed algorithmic descriptions enhances reproducibility.\n4. Novelty: The work is original in its focus on PSDD multiplication as a core operation for graphical model compilation, distinguishing it from prior methods that rely on intermediate representations.\nWeaknesses:\n1. Terminology and Scope: The distinction between PSDDs and related representations, such as Algebraic Sentential Decision Diagrams (ASDDs) and AND/OR Multi-Valued Decision Diagrams (AOMDDs), is insufficiently clarified. This could leave readers uncertain about the broader applicability and generality of the proposed approach.\n2. Algorithmic Details: The implementation of the cache in Algorithm 1 (line 19) is not fully explained, particularly whether it employs recursive caching with unique IDs, as is common in ADDs. This omission could hinder understanding and replication.\n3. Title and Terminology: The title could be more descriptive to reflect the paper's contributions, such as \"Efficient AC Compilation of Graphical Models via PSDD Multiplication.\" Additionally, the suggestion to use \"ASDD\" as a more general terminology for PSDDs raises questions about the conceptual framing of the work.\n4. Theoretical Query: The necessity of decomposability and determinism for efficient inference in ACs is not fully addressed. It remains unclear whether a simpler PSDD multiplication algorithm could achieve similar efficiency without these properties.\nSuggestions for Improvement:\n1. Revise the title to better reflect the paper's contributions.\n2. Expand Section 6 to clarify the distinctions between PSDDs, ASDDs, and AOMDDs, and discuss their relative advantages.\n3. Provide additional details on the caching mechanism in Algorithm 1.\n4. Address the theoretical question of whether decomposability and determinism are essential for efficient inference or if alternative properties might suffice.\nRecommendation:\nThis paper is a high-quality contribution to the field of probabilistic reasoning and graphical model compilation. Its novel use of PSDD multiplication offers both theoretical and practical advancements. While minor clarifications and improvements are needed, the strengths of the work far outweigh its weaknesses. I recommend acceptance, with revisions to address the noted concerns."
+        }
+    ]
+}

@@ -1,0 +1,575 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "88399461-0918-4fbe-a335-f0013a09496f",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "Review of the Submission",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999946355819702,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999874830245972,
+                    "sentence": "This paper introduces a novel architecture, Phrasal Recurrent Neural Networks (pRNN), designed for sequence-to-sequence tasks such as language modeling and machine translation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999868869781494,
+                    "sentence": "The key contribution of the pRNN framework is its ability to represent sentential history as a set of candidate phrases of varying lengths, which are processed using a parallel RNN pyramid.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999882578849792,
+                    "sentence": "The model employs a soft attention mechanism to selectively combine phrase representations for predicting the next word.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999867677688599,
+                    "sentence": "The authors claim significant improvements in perplexity for language modeling tasks over state-of-the-art LSTM baselines on the Penn Treebank (PTB) and FBIS datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999698996543884,
+                    "sentence": "Additionally, the pRNN model demonstrates competitive performance in Chinese-English machine translation tasks, outperforming both phrase-based statistical machine translation (PBSMT) and RNNsearch baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999629259109497,
+                    "sentence": "The primary contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999595880508423,
+                    "sentence": "1. A novel parallel RNN pyramid architecture that explicitly models phrases of varying lengths without requiring human-labeled data or external models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999610185623169,
+                    "sentence": "2. The integration of a phrasal-level attention mechanism to enhance sequence generation tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999692440032959,
+                    "sentence": "3. Empirical results showing improvements in perplexity and BLEU scores over strong baselines in language modeling and machine translation tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999766945838928,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999637603759766,
+                    "sentence": "1. Novel Architecture: The introduction of the pRNN framework is innovative, particularly the use of parallel RNNs to represent phrases of varying lengths.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999727010726929,
+                    "sentence": "This approach provides an alternative to deeper RNN stacks by exploring parallelism.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999746680259705,
+                    "sentence": "2. Unsupervised Structure Learning: The model does not rely on external resources like human-labeled data or word alignment models, which is a significant advantage in terms of scalability and applicability to diverse datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999972939491272,
+                    "sentence": "3. Empirical Improvements: The reported improvements in perplexity (over 10 points) and BLEU scores demonstrate the effectiveness of the proposed approach over strong baselines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999865889549255,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999751448631287,
+                    "sentence": "1. Technical Clarity:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999764561653137,
+                    "sentence": "- The paper does not clearly specify whether there is a limit on phrase length in the pRNN, which directly impacts model complexity and tractability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "- The scalability of the phrasal-level attention mechanism during inference on larger datasets is not adequately addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999798536300659,
+                    "sentence": "2. Empirical Concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999825358390808,
+                    "sentence": "- The choice of datasets for training and evaluation is suboptimal.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999816417694092,
+                    "sentence": "While PTB is a standard benchmark, the use of FBIS for training introduces an unfair advantage in perplexity evaluation on PTB.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999765157699585,
+                    "sentence": "More appropriate datasets, such as Common Crawl or enwiki8, should have been considered.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999575018882751,
+                    "sentence": "- The GRU version of pRNN is not evaluated on the FBIS dataset, leaving a gap in the empirical comparison.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999456405639648,
+                    "sentence": "- The results section lacks sufficient explanation of perplexity and BLEU scores, and Table 4 results are inconsistent with Section 4.3.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999635815620422,
+                    "sentence": "The method for averaging test scores should be clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999982476234436,
+                    "sentence": "- The significance of BLEU improvements over baselines is not reported, making it difficult to assess the robustness of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999080300331116,
+                    "sentence": "3. Baseline Comparisons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999378323554993,
+                    "sentence": "- The comparison with baselines is unclear, particularly regarding the use of attention mechanisms.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999051094055176,
+                    "sentence": "The inclusion of multiple phrasal attention layers in pRNN creates an unfair comparison with a simple encoder-decoder baseline without attention.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999465942382812,
+                    "sentence": "4. Evaluation Metrics:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997274279594421,
+                    "sentence": "- BLEU evaluation alone is insufficient for assessing the quality of phrase coherence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997797012329102,
+                    "sentence": "Additional intrinsic evaluations, such as phrase-level coherence or structural accuracy, are necessary.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.991012692451477,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967882633209229,
+                    "sentence": "1. Is there a limit on the phrase length in the pRNN model?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9965921640396118,
+                    "sentence": "If so, how does it affect model complexity and performance?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9907084703445435,
+                    "sentence": "2. How does the phrasal-level attention mechanism scale during inference on larger datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993959069252014,
+                    "sentence": "Are there any computational bottlenecks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996745765209198,
+                    "sentence": "3. Why was the GRU version of pRNN not evaluated on the FBIS dataset?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9826717376708984,
+                    "sentence": "Can you provide these results for a fair comparison?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992870569229126,
+                    "sentence": "4. How were the test scores in Table 4 averaged, and why do they appear inconsistent with Section 4.3?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934936761856079,
+                    "sentence": "5. Can you provide significance testing for the BLEU improvements over baselines?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9821107387542725,
+                    "sentence": "Additional Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9934045076370239,
+                    "sentence": "- Figures 2 and 3 are redundant and could be combined or removed to allocate space for a more detailed explanation of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9946222901344299,
+                    "sentence": "- The captions for figures and tables are overly verbose and should be integrated into the main text for better readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951944947242737,
+                    "sentence": "- Spacing in equations can be reduced to improve formatting and conserve space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9943221211433411,
+                    "sentence": "Recommendation",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967783689498901,
+                    "sentence": "While the paper introduces a novel and promising architecture, the technical and empirical weaknesses, particularly the lack of clarity in evaluation and baseline comparisons, limit its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942837953567505,
+                    "sentence": "Addressing these issues during the author response period could significantly strengthen the submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9932770133018494,
+                    "sentence": "Currently, I recommend weak reject, contingent on the authors' ability to clarify and address the identified concerns.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 44,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 47,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 48,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Submission\nSummary and Contributions\nThis paper introduces a novel architecture, Phrasal Recurrent Neural Networks (pRNN), designed for sequence-to-sequence tasks such as language modeling and machine translation. The key contribution of the pRNN framework is its ability to represent sentential history as a set of candidate phrases of varying lengths, which are processed using a parallel RNN pyramid. The model employs a soft attention mechanism to selectively combine phrase representations for predicting the next word. The authors claim significant improvements in perplexity for language modeling tasks over state-of-the-art LSTM baselines on the Penn Treebank (PTB) and FBIS datasets. Additionally, the pRNN model demonstrates competitive performance in Chinese-English machine translation tasks, outperforming both phrase-based statistical machine translation (PBSMT) and RNNsearch baselines.\nThe primary contributions of this work are:\n1. A novel parallel RNN pyramid architecture that explicitly models phrases of varying lengths without requiring human-labeled data or external models.\n2. The integration of a phrasal-level attention mechanism to enhance sequence generation tasks.\n3. Empirical results showing improvements in perplexity and BLEU scores over strong baselines in language modeling and machine translation tasks.\nStrengths\n1. Novel Architecture: The introduction of the pRNN framework is innovative, particularly the use of parallel RNNs to represent phrases of varying lengths. This approach provides an alternative to deeper RNN stacks by exploring parallelism.\n2. Unsupervised Structure Learning: The model does not rely on external resources like human-labeled data or word alignment models, which is a significant advantage in terms of scalability and applicability to diverse datasets.\n3. Empirical Improvements: The reported improvements in perplexity (over 10 points) and BLEU scores demonstrate the effectiveness of the proposed approach over strong baselines.\nWeaknesses\n1. Technical Clarity: \n - The paper does not clearly specify whether there is a limit on phrase length in the pRNN, which directly impacts model complexity and tractability.\n - The scalability of the phrasal-level attention mechanism during inference on larger datasets is not adequately addressed.\n2. Empirical Concerns:\n - The choice of datasets for training and evaluation is suboptimal. While PTB is a standard benchmark, the use of FBIS for training introduces an unfair advantage in perplexity evaluation on PTB. More appropriate datasets, such as Common Crawl or enwiki8, should have been considered.\n - The GRU version of pRNN is not evaluated on the FBIS dataset, leaving a gap in the empirical comparison.\n - The results section lacks sufficient explanation of perplexity and BLEU scores, and Table 4 results are inconsistent with Section 4.3. The method for averaging test scores should be clarified.\n - The significance of BLEU improvements over baselines is not reported, making it difficult to assess the robustness of the results.\n3. Baseline Comparisons:\n - The comparison with baselines is unclear, particularly regarding the use of attention mechanisms. The inclusion of multiple phrasal attention layers in pRNN creates an unfair comparison with a simple encoder-decoder baseline without attention.\n4. Evaluation Metrics:\n - BLEU evaluation alone is insufficient for assessing the quality of phrase coherence. Additional intrinsic evaluations, such as phrase-level coherence or structural accuracy, are necessary.\nQuestions to Authors\n1. Is there a limit on the phrase length in the pRNN model? If so, how does it affect model complexity and performance?\n2. How does the phrasal-level attention mechanism scale during inference on larger datasets? Are there any computational bottlenecks?\n3. Why was the GRU version of pRNN not evaluated on the FBIS dataset? Can you provide these results for a fair comparison?\n4. How were the test scores in Table 4 averaged, and why do they appear inconsistent with Section 4.3?\n5. Can you provide significance testing for the BLEU improvements over baselines?\nAdditional Comments\n- Figures 2 and 3 are redundant and could be combined or removed to allocate space for a more detailed explanation of the results.\n- The captions for figures and tables are overly verbose and should be integrated into the main text for better readability.\n- Spacing in equations can be reduced to improve formatting and conserve space.\nRecommendation\nWhile the paper introduces a novel and promising architecture, the technical and empirical weaknesses, particularly the lack of clarity in evaluation and baseline comparisons, limit its impact. Addressing these issues during the author response period could significantly strengthen the submission. Currently, I recommend weak reject, contingent on the authors' ability to clarify and address the identified concerns."
+        }
+    ]
+}

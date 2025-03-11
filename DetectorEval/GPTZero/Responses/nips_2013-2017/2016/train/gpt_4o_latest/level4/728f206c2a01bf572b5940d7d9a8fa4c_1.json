@@ -1,0 +1,430 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "3f4ed00b-011c-4485-bd63-08c535ce03e3",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9995212554931641,
+                    "sentence": "The paper introduces a method for training RBMs using the gamma-smoothed Wasserstein distance \\( W{\\gamma}(\\hat{p}, p{\\theta}) \\) (eqs 3 and 4), where \\( \\hat{p} \\) represents the data distribution and \\( p{\\theta} \\) denotes the model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992361068725586,
+                    "sentence": "The authors derive the gradients of \\( W{\\gamma}(\\hat{p}, p{\\theta}) \\) and optimize the model via gradient descent.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989535808563232,
+                    "sentence": "However, the Gaussian shrinkage example in section 4.3 (alongside the results in section 4.2) raises significant concerns about the consistency of Wasserstein-based training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989926815032959,
+                    "sentence": "This issue MUST be thoroughly investigated before the paper can be deemed suitable for publication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993536472320557,
+                    "sentence": "The authors reference [2], which claims statistical consistency, but section 4.3 surprisingly reports non-zero shrinkage (even for \\( \\gamma = 0 \\)) when modeling a simple \\( N(0, I) \\) distribution with \\( N(0, \\sigma^2 I) \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992538690567017,
+                    "sentence": "Why does this occur?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997353553771973,
+                    "sentence": "A lack of consistency would represent a critical flaw in the formulation of a statistical learning criterion.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996670484542847,
+                    "sentence": "Additionally, in section 3 (Stability and KL regularization), the authors argue that regularization with respect to the KL divergence is necessary when learning from samples (\\( \\hat{p}{\\theta} \\)), which undermines the \"purity\" of the smoothed Wasserstein objective function.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996127486228943,
+                    "sentence": "The experiments (section 4) are conducted on MNIST-small (the 0s from MNIST), a subset of the UCI PLANTS dataset, and 28-dimensional binary codes (MNIST code).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994097948074341,
+                    "sentence": "The reported results (lines 168-172 and Figs 3 and 4) suggest the generation of \"compact and contiguous regions that are prototypical of real spread, but are less diverse than the data.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996344447135925,
+                    "sentence": "This observation reinforces my earlier concern (from the Gaussian example in section 4.3) that minimizing the (smoothed) Wasserstein distance does not yield a consistent density estimator.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9202796220779419,
+                    "sentence": "In section 4.4, the authors attempt to frame these weaknesses as strengths in the context of data completion or denoising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8950328230857849,
+                    "sentence": "Overall: The authors should be commended for exploring an intriguing alternative to traditional KL-based training of RBMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8465245962142944,
+                    "sentence": "However, the Gaussian shrinkage example in section 4.3 raises serious concerns about the consistency of Wasserstein-based training.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.85988450050354,
+                    "sentence": "This issue MUST be carefully addressed before the paper can be considered for publication.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8222705125808716,
+                    "sentence": "Additional points:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8758481740951538,
+                    "sentence": "- Title: The title is overly broad.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8815233707427979,
+                    "sentence": "The paper specifically focuses on training restricted Boltzmann Machines.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9185342192649841,
+                    "sentence": "- Introduction, line 7: RBMs are not restricted to binary \\( x \\)'s.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7315653562545776,
+                    "sentence": "See, for example, Exponential Family Harmoniums (https://papers.nips.cc/paper/2672-exponential-family-harmoniums-with-an-application-to-information-retrieval.pdf).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.906417727470398,
+                    "sentence": "- Figure 5: The figure would be more readable if different colors were used for the various \\( \\gamma \\) values.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8004422187805176,
+                    "sentence": "Additionally, the last entry should be labeled \\( \\gamma = 0 \\) (not OpenCV).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8698049187660217,
+                    "sentence": "The use of OpenCV can be clarified in the text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935882091522217,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8783575892448425,
+                    "sentence": "COMMENTS POST REBUTTAL",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8065181970596313,
+                    "sentence": "After reviewing the authors' rebuttal and the feedback from other reviewers, I am willing to withdraw my claim of a \"fatal flaw,\" as the small sample size in the experiments in section 4.3 partially explains the observed issues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.318149209022522,
+                    "sentence": "However, I remain concerned.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.522141695022583,
+                    "sentence": "For the KL-based version of the Gaussian experiment (fitting a Gaussian with covariance matrix \\( \\theta^2 I \\) to \\( n = 100 \\) samples drawn from a 10-dimensional Gaussian), the maximum likelihood estimates of \\( \\theta \\) consistently fall within the range 0.95-1.05 (over approximately 10 repetitions).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6449930667877197,
+                    "sentence": "In contrast, for the Wasserstein (\\( \\gamma = 0 \\)) estimator, \\( \\theta \\) appears to converge to around 0.65 (as estimated visually from Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.894484281539917,
+                    "sentence": "5, left).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9893019795417786,
+                    "sentence": "The convergence rate provided by the authors, \\( O(n^{-1/(10+1)}) \\), for this simple problem is alarmingly slow and, in general, scales as \\( O(n^{-1/(D+1)}) \\) for \\( D \\)-dimensional data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9849008917808533,
+                    "sentence": "This raises serious concerns about the practical applicability of the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8858011364936829,
+                    "sentence": "A detailed study of this simple Gaussian case, showing how \\( \\theta \\) minimizing \\( W_0 \\) varies with \\( n \\), would be valuable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4774158298969269,
+                    "sentence": "The convergence rate suggests that the process will be painfully slow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.2786308825016022,
+                    "sentence": "Can the authors explain the source of the shrinkage bias in such a case?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3023677170276642,
+                    "sentence": "Regarding the authors' response to Reviewer 5 (lines 177-178): \"the entropy regularizer contributes to the clustering effect [...].",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3664245307445526,
+                    "sentence": "It also appears for the true W distance in Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.48237892985343933,
+                    "sentence": "5.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.25225830078125,
+                    "sentence": "This suggests that using a KL matching criterion \\( KL(\\hat{p} \"\" p_{\\theta}) \\) with an entropy penalty (without Wasserstein) would also lead to clustering.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.22490829229354858,
+                    "sentence": "Section 4.4 extols the virtues of this clustering effect for data completion and denoising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.17135100066661835,
+                    "sentence": "However, since KL regularization is already applied in section 3, this clustering effect is likely present in many of the experiments regardless.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.10398145020008087,
+                    "sentence": "I also agree with other reviewers who noted poor clarity in the technical explanations and suggested the use of supplementary materials to address this.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.11004532128572464,
+                    "sentence": "In conclusion, I am not strongly in favor of accepting this paper (though I could tolerate its acceptance).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.1856246143579483,
+                    "sentence": "While the work contains interesting ideas, the source of the clustering effect (whether from the Wasserstein distance or the entropic prior) must be more clearly articulated and disentangled.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.43004316091537476,
+                    "sentence": "I suspect that some claims attributed to Wasserstein training are actually due to the entropic prior.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7460490465164185,
+                    "sentence": "This distinction should be clarified by comparing the proposed method against a KL + entropic prior baseline.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 8,
+                    "completely_generated_prob": 0.9187750751329665
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 10,
+                    "completely_generated_prob": 0.01138266587420528
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                }
+            ],
+            "completely_generated_prob": 0.7988834054439069,
+            "class_probabilities": {
+                "human": 0.19494176564480242,
+                "ai": 0.7988834054439069,
+                "mixed": 0.006174828911290647
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7988834054439069,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7988834054439069,
+                    "human": 0.19494176564480242,
+                    "mixed": 0.006174828911290647
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces a method for training RBMs using the gamma-smoothed Wasserstein distance \\( W{\\gamma}(\\hat{p}, p{\\theta}) \\) (eqs 3 and 4), where \\( \\hat{p} \\) represents the data distribution and \\( p{\\theta} \\) denotes the model. The authors derive the gradients of \\( W{\\gamma}(\\hat{p}, p{\\theta}) \\) and optimize the model via gradient descent. However, the Gaussian shrinkage example in section 4.3 (alongside the results in section 4.2) raises significant concerns about the consistency of Wasserstein-based training. This issue MUST be thoroughly investigated before the paper can be deemed suitable for publication. The authors reference [2], which claims statistical consistency, but section 4.3 surprisingly reports non-zero shrinkage (even for \\( \\gamma = 0 \\)) when modeling a simple \\( N(0, I) \\) distribution with \\( N(0, \\sigma^2 I) \\). Why does this occur? A lack of consistency would represent a critical flaw in the formulation of a statistical learning criterion. Additionally, in section 3 (Stability and KL regularization), the authors argue that regularization with respect to the KL divergence is necessary when learning from samples (\\( \\hat{p}{\\theta} \\)), which undermines the \"purity\" of the smoothed Wasserstein objective function. \nThe experiments (section 4) are conducted on MNIST-small (the 0s from MNIST), a subset of the UCI PLANTS dataset, and 28-dimensional binary codes (MNIST code). The reported results (lines 168-172 and Figs 3 and 4) suggest the generation of \"compact and contiguous regions that are prototypical of real spread, but are less diverse than the data.\" This observation reinforces my earlier concern (from the Gaussian example in section 4.3) that minimizing the (smoothed) Wasserstein distance does not yield a consistent density estimator. In section 4.4, the authors attempt to frame these weaknesses as strengths in the context of data completion or denoising. \nOverall: The authors should be commended for exploring an intriguing alternative to traditional KL-based training of RBMs. However, the Gaussian shrinkage example in section 4.3 raises serious concerns about the consistency of Wasserstein-based training. This issue MUST be carefully addressed before the paper can be considered for publication.\nAdditional points: \n- Title: The title is overly broad. The paper specifically focuses on training restricted Boltzmann Machines. \n- Introduction, line 7: RBMs are not restricted to binary \\( x \\)'s. See, for example, Exponential Family Harmoniums (https://papers.nips.cc/paper/2672-exponential-family-harmoniums-with-an-application-to-information-retrieval.pdf). \n- Figure 5: The figure would be more readable if different colors were used for the various \\( \\gamma \\) values. Additionally, the last entry should be labeled \\( \\gamma = 0 \\) (not OpenCV). The use of OpenCV can be clarified in the text. \n---\nCOMMENTS POST REBUTTAL \nAfter reviewing the authors' rebuttal and the feedback from other reviewers, I am willing to withdraw my claim of a \"fatal flaw,\" as the small sample size in the experiments in section 4.3 partially explains the observed issues. However, I remain concerned. For the KL-based version of the Gaussian experiment (fitting a Gaussian with covariance matrix \\( \\theta^2 I \\) to \\( n = 100 \\) samples drawn from a 10-dimensional Gaussian), the maximum likelihood estimates of \\( \\theta \\) consistently fall within the range 0.95-1.05 (over approximately 10 repetitions). In contrast, for the Wasserstein (\\( \\gamma = 0 \\)) estimator, \\( \\theta \\) appears to converge to around 0.65 (as estimated visually from Fig. 5, left). The convergence rate provided by the authors, \\( O(n^{-1/(10+1)}) \\), for this simple problem is alarmingly slow and, in general, scales as \\( O(n^{-1/(D+1)}) \\) for \\( D \\)-dimensional data. This raises serious concerns about the practical applicability of the proposed method. A detailed study of this simple Gaussian case, showing how \\( \\theta \\) minimizing \\( W_0 \\) varies with \\( n \\), would be valuable. The convergence rate suggests that the process will be painfully slow. Can the authors explain the source of the shrinkage bias in such a case? \nRegarding the authors' response to Reviewer 5 (lines 177-178): \"the entropy regularizer contributes to the clustering effect [...]. It also appears for the true W distance in Fig. 5.\" This suggests that using a KL matching criterion \\( KL(\\hat{p} \"\" p_{\\theta}) \\) with an entropy penalty (without Wasserstein) would also lead to clustering. Section 4.4 extols the virtues of this clustering effect for data completion and denoising. However, since KL regularization is already applied in section 3, this clustering effect is likely present in many of the experiments regardless. \nI also agree with other reviewers who noted poor clarity in the technical explanations and suggested the use of supplementary materials to address this. \nIn conclusion, I am not strongly in favor of accepting this paper (though I could tolerate its acceptance). While the work contains interesting ideas, the source of the clustering effect (whether from the Wasserstein distance or the entropic prior) must be more clearly articulated and disentangled. I suspect that some claims attributed to Wasserstein training are actually due to the entropic prior. This distinction should be clarified by comparing the proposed method against a KL + entropic prior baseline."
+        }
+    ]
+}

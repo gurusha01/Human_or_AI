@@ -1,0 +1,468 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "37ada441-4ab7-45e1-b501-a4e68ae65a95",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9957849979400635,
+                    "sentence": "1. Summary of Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959366321563721,
+                    "sentence": "This paper presents a method for training a gradient-boosted regression tree ensemble that accounts for both feature costs and the costs associated with evaluating splits within the tree.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9962716102600098,
+                    "sentence": "As such, the work is related to that of Xu et al., 2012.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9910121560096741,
+                    "sentence": "The key distinctions lie in the input-specific nature of feature and evaluation costs, the dependency of evaluation cost on the number of tree splits, the use of a different optimization approach (leveraging the Taylor expansion around \\( T_{k-1} \\), as outlined in the XGBoost paper), and the adoption of best-first tree growth constrained by a maximum number of splits (instead of a maximum depth).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9798607230186462,
+                    "sentence": "The authors demonstrate that their approach is effective in scenarios where either feature costs or evaluation costs dominate and provide experimental results to support these claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9860358834266663,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9608911871910095,
+                    "sentence": "2. High-Level Subjective",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9874996542930603,
+                    "sentence": "The paper is well-written and, despite introducing a substantial amount of notation, is generally easy to follow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9780553579330444,
+                    "sentence": "However, the contribution of the paper feels somewhat incremental in light of prior work, particularly XGBoost and GreedyMiser.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.987022876739502,
+                    "sentence": "The experimental evaluation appears adequate, with comparisons to prior methods and analyses of how model parameters influence performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.972570538520813,
+                    "sentence": "Nonetheless, I have one point of confusion that may necessitate an additional experiment, as detailed below.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9856724739074707,
+                    "sentence": "This work could be of interest to practitioners working on classification problems in time-sensitive settings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9806258082389832,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9505804181098938,
+                    "sentence": "3. High-Level Technical",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9807931184768677,
+                    "sentence": "A key point of ambiguity lies in Figures 2a and 2b: how was the cost computed for each method to generate the Precision vs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9706004858016968,
+                    "sentence": "Cost curves?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9676943421363831,
+                    "sentence": "It seems that for CEGB, cost is calculated per-input and per-split, whereas for the other methods, cost is calculated per-tree.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9521428346633911,
+                    "sentence": "If this is indeed the case, the comparison appears unfair.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.948324978351593,
+                    "sentence": "To ensure a fair evaluation, the cost for all methods should be measured in the same way, even if the original papers used different definitions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9605101346969604,
+                    "sentence": "Without this clarification, it remains unclear how much better CEGB truly is compared to the other methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.969632089138031,
+                    "sentence": "If the costs are indeed measured differently, I strongly recommend revising Figure 2 to reflect a consistent cost metric across all methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9569171071052551,
+                    "sentence": "I also believe the paper would benefit from removing Figure 1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.955938458442688,
+                    "sentence": "The concepts of breadth-first, depth-first, and best-first tree growth are fairly intuitive and do not require a dedicated figure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9788642525672913,
+                    "sentence": "Instead, I suggest replacing it with a figure that illustrates the trees produced by CEGB, GreedyMiser, and BudgetPrune on the Yahoo!",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9935392737388611,
+                    "sentence": "Learning to Rank dataset, highlighting the features and associated costs at each split.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937187433242798,
+                    "sentence": "This would provide readers with deeper insights into why CEGB outperforms the other methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9856767654418945,
+                    "sentence": "Additionally, it would be helpful to more explicitly outline the improvements over GreedyMiser that lead to CEGB.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9808149337768555,
+                    "sentence": "For instance, rewriting GreedyMiser in the same notation as CEGB and systematically showing the innovations (e.g., best-first growth, removal of depth constraints, alternative optimization procedure) would clarify the contributions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9791933298110962,
+                    "sentence": "A figure illustrating how each innovation impacts the Precision vs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9803192615509033,
+                    "sentence": "Cost curve would further strengthen the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9193850159645081,
+                    "sentence": "Finally, in Section 5.2, it is not entirely clear why GreedyMiser or BudgetPrune cannot be applied in the described setting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7649441957473755,
+                    "sentence": "Why is the cost of feature responses treated as an evaluation cost rather than a feature cost?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9711637496948242,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9220644235610962,
+                    "sentence": "4. Low-Level Technical",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8507688641548157,
+                    "sentence": "- In Equation 7, why does \\( \\lambda \\) only appear in the first cost term and not the second?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7957704067230225,
+                    "sentence": "- In Equation 12, should the denominators of the first three terms include a term with \\( \\lambda \\), similar to the XGBoost formulation?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8273558616638184,
+                    "sentence": "- What do \"levels\" refer to in Figure 4b?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7466154098510742,
+                    "sentence": "- Line 205: Consider redefining \\( \\beta_m \\) here, as readers may have forgotten its earlier definition.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5389084815979004,
+                    "sentence": "Similarly, redefine \\( \\alpha \\) on Line 213 for clarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7252675294876099,
+                    "sentence": "---",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5654336214065552,
+                    "sentence": "5. Summary of Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7058929204940796,
+                    "sentence": "This paper proposes a novel approach for cost-efficient learning that (a) outperforms state-of-the-art methods and (b) operates effectively in scenarios where prior methods are unsuitable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7213985323905945,
+                    "sentence": "However, it is unclear whether these results are due to (a) differences in how costs are measured and (b) the classification of certain costs as evaluation costs rather than feature costs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8327977061271667,
+                    "sentence": "Until these ambiguities are addressed, I believe the paper falls slightly below the acceptance threshold for NIPS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.9103421900070616
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 34,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 35,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.07332528267997859
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "1. Summary of Paper\nThis paper presents a method for training a gradient-boosted regression tree ensemble that accounts for both feature costs and the costs associated with evaluating splits within the tree. As such, the work is related to that of Xu et al., 2012. The key distinctions lie in the input-specific nature of feature and evaluation costs, the dependency of evaluation cost on the number of tree splits, the use of a different optimization approach (leveraging the Taylor expansion around \\( T_{k-1} \\), as outlined in the XGBoost paper), and the adoption of best-first tree growth constrained by a maximum number of splits (instead of a maximum depth). The authors demonstrate that their approach is effective in scenarios where either feature costs or evaluation costs dominate and provide experimental results to support these claims.\n---\n2. High-Level Subjective\nThe paper is well-written and, despite introducing a substantial amount of notation, is generally easy to follow.\nHowever, the contribution of the paper feels somewhat incremental in light of prior work, particularly XGBoost and GreedyMiser.\nThe experimental evaluation appears adequate, with comparisons to prior methods and analyses of how model parameters influence performance. Nonetheless, I have one point of confusion that may necessitate an additional experiment, as detailed below.\nThis work could be of interest to practitioners working on classification problems in time-sensitive settings.\n---\n3. High-Level Technical\nA key point of ambiguity lies in Figures 2a and 2b: how was the cost computed for each method to generate the Precision vs. Cost curves? It seems that for CEGB, cost is calculated per-input and per-split, whereas for the other methods, cost is calculated per-tree. If this is indeed the case, the comparison appears unfair. To ensure a fair evaluation, the cost for all methods should be measured in the same way, even if the original papers used different definitions. Without this clarification, it remains unclear how much better CEGB truly is compared to the other methods. If the costs are indeed measured differently, I strongly recommend revising Figure 2 to reflect a consistent cost metric across all methods.\nI also believe the paper would benefit from removing Figure 1. The concepts of breadth-first, depth-first, and best-first tree growth are fairly intuitive and do not require a dedicated figure. Instead, I suggest replacing it with a figure that illustrates the trees produced by CEGB, GreedyMiser, and BudgetPrune on the Yahoo! Learning to Rank dataset, highlighting the features and associated costs at each split. This would provide readers with deeper insights into why CEGB outperforms the other methods.\nAdditionally, it would be helpful to more explicitly outline the improvements over GreedyMiser that lead to CEGB. For instance, rewriting GreedyMiser in the same notation as CEGB and systematically showing the innovations (e.g., best-first growth, removal of depth constraints, alternative optimization procedure) would clarify the contributions. A figure illustrating how each innovation impacts the Precision vs. Cost curve would further strengthen the paper.\nFinally, in Section 5.2, it is not entirely clear why GreedyMiser or BudgetPrune cannot be applied in the described setting. Why is the cost of feature responses treated as an evaluation cost rather than a feature cost?\n---\n4. Low-Level Technical\n- In Equation 7, why does \\( \\lambda \\) only appear in the first cost term and not the second?\n- In Equation 12, should the denominators of the first three terms include a term with \\( \\lambda \\), similar to the XGBoost formulation?\n- What do \"levels\" refer to in Figure 4b?\n- Line 205: Consider redefining \\( \\beta_m \\) here, as readers may have forgotten its earlier definition. Similarly, redefine \\( \\alpha \\) on Line 213 for clarity.\n---\n5. Summary of Review\nThis paper proposes a novel approach for cost-efficient learning that (a) outperforms state-of-the-art methods and (b) operates effectively in scenarios where prior methods are unsuitable. However, it is unclear whether these results are due to (a) differences in how costs are measured and (b) the classification of certain costs as evaluation costs rather than feature costs. Until these ambiguities are addressed, I believe the paper falls slightly below the acceptance threshold for NIPS."
+        }
+    ]
+}

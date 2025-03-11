@@ -1,0 +1,391 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "816eef8f-0a9d-42ac-b214-a91bdf3e6752",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999961853027344,
+                    "sentence": "The paper introduces the Tensorized LSTM (tLSTM), a novel approach to improving the capacity of Long Short-Term Memory (LSTM) networks by leveraging tensorized hidden states and cross-layer convolutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "The main claims are that tLSTM can widen and deepen LSTMs efficiently without significantly increasing the number of parameters or runtime, and that it achieves state-of-the-art or competitive performance on a variety of sequence learning tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999932050704956,
+                    "sentence": "The authors also propose a memory cell convolution mechanism to capture long-range dependencies and introduce channel normalization (CN) to improve training stability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999996542930603,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "1. Novelty and Innovation: The paper presents a unique approach to scaling LSTMs using tensorized hidden states and cross-layer convolutions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "The idea of merging deep computations with temporal computations is particularly innovative and addresses runtime bottlenecks in deep LSTMs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999990463256836,
+                    "sentence": "2. Comprehensive Experiments: The authors evaluate tLSTM on diverse tasks, including language modeling, algorithmic tasks, and sequential image classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "The results consistently demonstrate the model's effectiveness, particularly in handling long-range dependencies and achieving competitive performance with fewer parameters and faster runtime.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "3. Practical Significance: The proposed method is highly practical, as it reduces computational overhead while improving model capacity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "The ability to scale LSTMs without significant parameter growth is a valuable contribution for real-world applications.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "4. Clarity of Results: The experimental results are well-organized, with clear comparisons to baseline and state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "The inclusion of runtime analysis and visualizations of memory cell behavior provides additional insights into the model's workings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967217445374,
+                    "sentence": "5. Theoretical Contributions: The introduction of memory cell convolution and channel normalization adds depth to the theoretical framework, and the paper provides detailed derivations and explanations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999940991401672,
+                    "sentence": "1. Limited Discussion of Limitations: While the paper acknowledges that tLSTM cannot parallelize deep computations during autoregressive sequence generation, other potential limitations, such as scalability to extremely large datasets or tasks with highly irregular temporal patterns, are not discussed in detail.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999790787696838,
+                    "sentence": "2. Complexity of Implementation: The proposed model introduces several new components (e.g., memory cell convolution, dynamic kernel generation), which may make implementation challenging for practitioners.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999403357505798,
+                    "sentence": "A more detailed discussion of implementation trade-offs would be helpful.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998790621757507,
+                    "sentence": "3. Comparison to Broader Methods: While the paper compares tLSTM to state-of-the-art LSTM variants, it does not extensively discuss how it performs relative to non-LSTM-based architectures like Transformers, which dominate many sequence modeling tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998776912689209,
+                    "sentence": "4. Reproducibility: Although the paper provides detailed equations, the lack of publicly available code or explicit reproducibility guidelines may hinder adoption by the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997922778129578,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995421767234802,
+                    "sentence": "The paper is a strong contribution to the field of sequence modeling and is well-suited for presentation at NIPS.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999446272850037,
+                    "sentence": "Its novel approach to scaling LSTMs, combined with rigorous experimental validation, makes it a valuable addition to the literature.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999129772186279,
+                    "sentence": "However, the authors should consider addressing the reproducibility and implementation challenges in a future revision.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999243021011353,
+                    "sentence": "Additionally, a more thorough discussion of limitations and comparisons to non-LSTM architectures would strengthen the paper further.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999197125434875,
+                    "sentence": "Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999951958656311,
+                    "sentence": "- Novel and practical contributions to LSTM scalability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999012351036072,
+                    "sentence": "- Strong experimental results across diverse tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998779892921448,
+                    "sentence": "- Clear theoretical framework and detailed analysis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999324083328247,
+                    "sentence": "Arguments Against Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999933123588562,
+                    "sentence": "- Limited discussion of broader limitations and comparisons.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999865710735321,
+                    "sentence": "- Potential implementation complexity for practitioners.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997581243515015,
+                    "sentence": "Final Decision: Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9926183471516448,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9926183471516448,
+                "mixed": 0.007381652848355174
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9926183471516448,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9926183471516448,
+                    "human": 0,
+                    "mixed": 0.007381652848355174
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces the Tensorized LSTM (tLSTM), a novel approach to improving the capacity of Long Short-Term Memory (LSTM) networks by leveraging tensorized hidden states and cross-layer convolutions. The main claims are that tLSTM can widen and deepen LSTMs efficiently without significantly increasing the number of parameters or runtime, and that it achieves state-of-the-art or competitive performance on a variety of sequence learning tasks. The authors also propose a memory cell convolution mechanism to capture long-range dependencies and introduce channel normalization (CN) to improve training stability.\nStrengths:\n1. Novelty and Innovation: The paper presents a unique approach to scaling LSTMs using tensorized hidden states and cross-layer convolutions. The idea of merging deep computations with temporal computations is particularly innovative and addresses runtime bottlenecks in deep LSTMs.\n2. Comprehensive Experiments: The authors evaluate tLSTM on diverse tasks, including language modeling, algorithmic tasks, and sequential image classification. The results consistently demonstrate the model's effectiveness, particularly in handling long-range dependencies and achieving competitive performance with fewer parameters and faster runtime.\n3. Practical Significance: The proposed method is highly practical, as it reduces computational overhead while improving model capacity. The ability to scale LSTMs without significant parameter growth is a valuable contribution for real-world applications.\n4. Clarity of Results: The experimental results are well-organized, with clear comparisons to baseline and state-of-the-art methods. The inclusion of runtime analysis and visualizations of memory cell behavior provides additional insights into the model's workings.\n5. Theoretical Contributions: The introduction of memory cell convolution and channel normalization adds depth to the theoretical framework, and the paper provides detailed derivations and explanations.\nWeaknesses:\n1. Limited Discussion of Limitations: While the paper acknowledges that tLSTM cannot parallelize deep computations during autoregressive sequence generation, other potential limitations, such as scalability to extremely large datasets or tasks with highly irregular temporal patterns, are not discussed in detail.\n2. Complexity of Implementation: The proposed model introduces several new components (e.g., memory cell convolution, dynamic kernel generation), which may make implementation challenging for practitioners. A more detailed discussion of implementation trade-offs would be helpful.\n3. Comparison to Broader Methods: While the paper compares tLSTM to state-of-the-art LSTM variants, it does not extensively discuss how it performs relative to non-LSTM-based architectures like Transformers, which dominate many sequence modeling tasks.\n4. Reproducibility: Although the paper provides detailed equations, the lack of publicly available code or explicit reproducibility guidelines may hinder adoption by the community.\nRecommendation:\nThe paper is a strong contribution to the field of sequence modeling and is well-suited for presentation at NIPS. Its novel approach to scaling LSTMs, combined with rigorous experimental validation, makes it a valuable addition to the literature. However, the authors should consider addressing the reproducibility and implementation challenges in a future revision. Additionally, a more thorough discussion of limitations and comparisons to non-LSTM architectures would strengthen the paper further.\nArguments for Acceptance:\n- Novel and practical contributions to LSTM scalability.\n- Strong experimental results across diverse tasks.\n- Clear theoretical framework and detailed analysis.\nArguments Against Acceptance:\n- Limited discussion of broader limitations and comparisons.\n- Potential implementation complexity for practitioners.\nFinal Decision: Accept with minor revisions."
+        }
+    ]
+}

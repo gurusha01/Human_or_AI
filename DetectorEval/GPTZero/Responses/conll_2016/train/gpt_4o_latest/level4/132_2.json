@@ -1,0 +1,449 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "bc24e713-011e-4ebf-85e9-4f5d9b2638d1",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999119758605957,
+                    "sentence": "This paper introduces a neural-inspired topic model that extends the word2vec objective to simultaneously learn document embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985702633857727,
+                    "sentence": "These embeddings are then constrained via sparsification to emulate the output of a traditional topic model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984709024429321,
+                    "sentence": "I found the proposed model to be innovative, and the examples provided by the authors were compelling and showed promise.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990437626838684,
+                    "sentence": "However, the paper lacks any form of empirical evaluation, relying solely on illustrative examples without evidence of their representativeness or any direct comparison with standard or neural topic models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986193776130676,
+                    "sentence": "The absence of empirical evaluation makes it difficult to assess the actual value of the model, which significantly hinders the paper's acceptability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998293936252594,
+                    "sentence": "To address this, the authors could consider: (1) using the topic representation of each document in a supervised document classification task to benchmark against a topic model with the same number of topics (as an indirect measure of representation quality); or (2) performing direct evaluation on a dataset with document similarity annotations (e.g., pairwise comparisons of topic vectors).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.998813807964325,
+                    "sentence": "While it is commendable that the authors plan to release their code, including the GitHub link in the submitted version compromises anonymity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981091618537903,
+                    "sentence": "This could be grounds for outright rejection, though I leave this decision to the program chairs.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9973793625831604,
+                    "sentence": "Additional concerns:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984716773033142,
+                    "sentence": "- How were the examples in Figures 3-6 selected?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980955123901367,
+                    "sentence": "Presenting only a subset of the topics raises concerns about potential cherry-picking.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9978445768356323,
+                    "sentence": "- In Section 2.2.1, you discuss calculating word representations for topics based on pairwise comparisons with each word in the vocabulary.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984651207923889,
+                    "sentence": "For a reasonably large vocabulary and number of topics, this approach seems computationally prohibitive.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9986713528633118,
+                    "sentence": "Is it truly feasible?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9984292984008789,
+                    "sentence": "- In Section 3.1, you mention identifying \"tokens\" using SpaCy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9983094334602356,
+                    "sentence": "Could you clarify how this was done?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9982598423957825,
+                    "sentence": "Did you extract only noun chunks (as in Section 3.2), or were other chunk types included?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976616501808167,
+                    "sentence": "Additionally, since you use pre-trained word2vec embeddings (which include limited multiword terms), this process was not entirely clear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9981635212898254,
+                    "sentence": "- How does your model handle out-of-vocabulary (OOV) terms?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976499080657959,
+                    "sentence": "While this may not be an issue in the experiments reported (since the model is trained on the entire document collection), applying the trained model to new documents could pose challenges.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970076084136963,
+                    "sentence": "Specifically, the word2vec embeddings for OOV terms would not be aligned with the tuned embeddings, potentially affecting performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9974502921104431,
+                    "sentence": "- The finding that 20 topics performed best on the 20 Newsgroups dataset is unsurprising given the dataset's structure.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.42837321758270264,
+                    "sentence": "A simple evaluation could have been conducted using an information-theoretic comparison with the true document labels, allowing for direct comparison with models like LDA.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5027024745941162,
+                    "sentence": "- You should compare your model with other neural topic models, such as:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6208468079566956,
+                    "sentence": "- Cao, Ziqiang, Sujian Li, Yang Liu, Wenjie Li, and Heng Ji.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8030334711074829,
+                    "sentence": "\"A Novel Neural Topic Model and Its Supervised Extension.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6628484129905701,
+                    "sentence": "In AAAI, pp.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6756974458694458,
+                    "sentence": "2210-2216.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5086696147918701,
+                    "sentence": "2015.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7921654582023621,
+                    "sentence": "- Nguyen, Dat Quoc, Richard Billingsley, Lan Du, and Mark Johnson.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.812415361404419,
+                    "sentence": "\"Improving Topic Models with Latent Feature Word Representations.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8356659412384033,
+                    "sentence": "Transactions of the Association for Computational Linguistics 3 (2015): 299-313.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9355716705322266,
+                    "sentence": "- Shamanta, Debakar, Sheikh Motahar Naim, Parang Saraf, Naren Ramakrishnan, and M. Shahriar Hossain.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9083806872367859,
+                    "sentence": "\"Concurrent Inference of Topic Models and Distributed Vector Representations.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8665593862533569,
+                    "sentence": "In Machine Learning and Knowledge Discovery in Databases, pp.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8938555121421814,
+                    "sentence": "441-457.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8245822191238403,
+                    "sentence": "Springer International Publishing, 2015.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.987537682056427,
+                    "sentence": "Minor issues:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9945278167724609,
+                    "sentence": "- Line 315: \"it's similarity\" should be corrected to \"its similarity.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9875268340110779,
+                    "sentence": "- Line 361: The phrase \"topic basis\" being \"affected\" is unclear, and the use of \"are\" here is awkward.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9842049479484558,
+                    "sentence": "- Figure 5 caption: The term \"words\" might be better replaced with \"terms.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.983833909034729,
+                    "sentence": "- Reference formatting is inconsistent.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9863183498382568,
+                    "sentence": "For example, \"Advances in...\", \"Advances in Neural...\", and Roder et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9860946536064148,
+                    "sentence": "lack the conference name.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9902997612953186,
+                    "sentence": "Ensure uniformity in formatting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.0022792978668507114
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 38,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 40,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a neural-inspired topic model that extends the word2vec objective to simultaneously learn document embeddings. These embeddings are then constrained via sparsification to emulate the output of a traditional topic model.\nI found the proposed model to be innovative, and the examples provided by the authors were compelling and showed promise. However, the paper lacks any form of empirical evaluation, relying solely on illustrative examples without evidence of their representativeness or any direct comparison with standard or neural topic models. The absence of empirical evaluation makes it difficult to assess the actual value of the model, which significantly hinders the paper's acceptability. To address this, the authors could consider: (1) using the topic representation of each document in a supervised document classification task to benchmark against a topic model with the same number of topics (as an indirect measure of representation quality); or (2) performing direct evaluation on a dataset with document similarity annotations (e.g., pairwise comparisons of topic vectors).\nWhile it is commendable that the authors plan to release their code, including the GitHub link in the submitted version compromises anonymity. This could be grounds for outright rejection, though I leave this decision to the program chairs.\nAdditional concerns:\n- How were the examples in Figures 3-6 selected? Presenting only a subset of the topics raises concerns about potential cherry-picking.\n- In Section 2.2.1, you discuss calculating word representations for topics based on pairwise comparisons with each word in the vocabulary. For a reasonably large vocabulary and number of topics, this approach seems computationally prohibitive. Is it truly feasible?\n- In Section 3.1, you mention identifying \"tokens\" using SpaCy. Could you clarify how this was done? Did you extract only noun chunks (as in Section 3.2), or were other chunk types included? Additionally, since you use pre-trained word2vec embeddings (which include limited multiword terms), this process was not entirely clear.\n- How does your model handle out-of-vocabulary (OOV) terms? While this may not be an issue in the experiments reported (since the model is trained on the entire document collection), applying the trained model to new documents could pose challenges. Specifically, the word2vec embeddings for OOV terms would not be aligned with the tuned embeddings, potentially affecting performance.\n- The finding that 20 topics performed best on the 20 Newsgroups dataset is unsurprising given the dataset's structure. A simple evaluation could have been conducted using an information-theoretic comparison with the true document labels, allowing for direct comparison with models like LDA.\n- You should compare your model with other neural topic models, such as:\n - Cao, Ziqiang, Sujian Li, Yang Liu, Wenjie Li, and Heng Ji. \"A Novel Neural Topic Model and Its Supervised Extension.\" In AAAI, pp. 2210-2216. 2015.\n - Nguyen, Dat Quoc, Richard Billingsley, Lan Du, and Mark Johnson. \"Improving Topic Models with Latent Feature Word Representations.\" Transactions of the Association for Computational Linguistics 3 (2015): 299-313.\n - Shamanta, Debakar, Sheikh Motahar Naim, Parang Saraf, Naren Ramakrishnan, and M. Shahriar Hossain. \"Concurrent Inference of Topic Models and Distributed Vector Representations.\" In Machine Learning and Knowledge Discovery in Databases, pp. 441-457. Springer International Publishing, 2015.\nMinor issues:\n- Line 315: \"it's similarity\" should be corrected to \"its similarity.\"\n- Line 361: The phrase \"topic basis\" being \"affected\" is unclear, and the use of \"are\" here is awkward.\n- Figure 5 caption: The term \"words\" might be better replaced with \"terms.\"\n- Reference formatting is inconsistent. For example, \"Advances in ...\", \"Advances in Neural ...\", and Roder et al. lack the conference name. Ensure uniformity in formatting."
+        }
+    ]
+}

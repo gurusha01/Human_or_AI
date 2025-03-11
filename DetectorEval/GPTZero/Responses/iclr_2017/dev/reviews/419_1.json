@@ -1,0 +1,176 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "9708a307-cd33-42af-ac52-dd539f31c17e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.012202748097479343,
+                    "sentence": "This paper introduces a model that blends ideas from generative topic models with those from recurrent neural network language models.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01155263464897871,
+                    "sentence": "The authors evaluate the proposed approach on a document level classification benchmark as well as a language modeling benchmark and it seems to work well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010202874429523945,
+                    "sentence": "There is also some analysis as to topics learned by the model and its ability to generate text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.010932251811027527,
+                    "sentence": "Overall the paper is clearly written and with the code promised by the authors others should be able to re-implement the approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0058155725710093975,
+                    "sentence": "I have 2 potentially major questions I would ask the authors to address:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.007911000400781631,
+                    "sentence": "1 - LDA topic models make an exchangability (bag of words) assumption.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005647511221468449,
+                    "sentence": "The discussion of the generative story for TopicRNN should explicitly discuss whether this assumption is also made.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.003923471085727215,
+                    "sentence": "On the surface it appears it is since yt is sampled using only the document topic vector and ht but we know that in practice ht comes from a recurrent model that observes yt-1.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0026762078050523996,
+                    "sentence": "Not clear how this clean exposition of the generative model relates to what is actually done.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0031667326111346483,
+                    "sentence": "In the Generating sequential text section it's clear the topic model can't generate words without using y_1 - t-1 but this seems inconsistent with the generative model specification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.00278477999381721,
+                    "sentence": "This needs to be shown in the paper and made clear to have a complete paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0031864033080637455,
+                    "sentence": "2 - The topic model only allows for linear interactions of the topic vector theta.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004544864874333143,
+                    "sentence": "It seems like this might be required to keep the generative model tractable but seems like a very poor assumption.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005811873823404312,
+                    "sentence": "We would expect the topic representation to have rich interactions with a language model to create nonlinear adjustments to word probabilities for a document.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009397958405315876,
+                    "sentence": "Please add discussion as to why this modeling choice exists and if possible how future work could modify that assumption (or explain why it's not such a bad assumption as one might imagine)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.018146930262446404,
+                    "sentence": "Figure 2 colors very difficult to distinguish.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 6,
+                    "completely_generated_prob": 1.474742012248794e-05
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.024461651786716186,
+            "class_probabilities": {
+                "human": 0.9754981327244504,
+                "ai": 0.024461651786716186,
+                "mixed": 4.0215488833363626e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9754981327244504,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.024461651786716186,
+                    "human": 0.9754981327244504,
+                    "mixed": 4.0215488833363626e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper introduces a model that blends ideas from generative topic models with those from recurrent neural network language models. The authors evaluate the proposed approach on a document level classification benchmark as well as a language modeling benchmark and it seems to work well. There is also some analysis as to topics learned by the model and its ability to generate text. Overall the paper is clearly written and with the code promised by the authors others should be able to re-implement the approach. I have 2 potentially major questions I would ask the authors to address:\n1 - LDA topic models make an exchangability (bag of words) assumption. The discussion of the generative story for TopicRNN should explicitly discuss whether this assumption is also made. On the surface it appears it is since yt is sampled using only the document topic vector and ht but we know that in practice ht comes from a recurrent model that observes yt-1. Not clear how this clean exposition of the generative model relates to what is actually done. In the Generating sequential text section it's clear the topic model can't generate words without using y_1 - t-1 but this seems inconsistent with the generative model specification. This needs to be shown in the paper and made clear to have a complete paper.\n2 - The topic model only allows for linear interactions of the topic vector theta. It seems like this might be required to keep the generative model tractable but seems like a very poor assumption. We would expect the topic representation to have rich interactions with a language model to create nonlinear adjustments to word probabilities for a document. Please add discussion as to why this modeling choice exists and if possible how future work could modify that assumption (or explain why it's not such a bad assumption as one might imagine)\nFigure 2 colors very difficult to distinguish."
+        }
+    ]
+}

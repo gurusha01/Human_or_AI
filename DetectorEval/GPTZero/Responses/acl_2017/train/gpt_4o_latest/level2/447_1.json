@@ -1,0 +1,402 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2f9b1d41-6e9e-4c8a-9f37-d32654777641",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "This paper investigates the utility of discourse structure, as defined by Rhetorical Structure Theory (RST), for text categorization tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "The authors propose a recursive neural network model that incorporates a novel attention mechanism to compute representations of text based on discourse dependency trees.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "The primary contributions of this work are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "1. Novel Attention Mechanism: The paper introduces an unnormalized attention mechanism tailored to the hierarchical nature of RST, which differs from traditional normalized attention mechanisms used in NLP tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "2. Empirical Validation: The proposed models outperform state-of-the-art baselines on four out of five datasets, demonstrating the utility of discourse structure for tasks like sentiment analysis and framing detection.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "3. Analysis of Discourse Parsing Quality: The authors explore the relationship between discourse parsing accuracy and text categorization performance, showing that improvements in parsing quality can lead to better results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999994039535522,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991655349731,
+                    "sentence": "1. Innovative Use of Discourse Structure: The paper effectively leverages RST discourse trees, demonstrating that even imperfect discourse parsers can provide useful inductive biases for text categorization.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999998927116394,
+                    "sentence": "This is a significant advancement over prior works that either ignored discourse or relied on manually crafted weighting schemes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "2. Comprehensive Experiments: The authors evaluate their models on five diverse datasets, including sentiment analysis, framing detection, and legislative bill survival prediction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "The results are robust, with the proposed UNLABELED model outperforming baselines in most cases.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "3. Theoretical and Empirical Rigor: The unnormalized attention mechanism is well-motivated by the properties of RST, and its effectiveness is empirically validated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "The authors also provide qualitative examples and ablation studies to support their claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "4. Open Implementation: The availability of the implementation fosters reproducibility and encourages further research in this area.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992251396179,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999991059303284,
+                    "sentence": "1. Limited Generalization to Specialized Genres: The proposed models underperform on legislative bill classification, a task where discourse conventions differ significantly from the training data of the discourse parser.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "This limitation is acknowledged but not sufficiently addressed, leaving room for improvement in adapting the model to diverse genres.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988675117493,
+                    "sentence": "2. Overparameterization in Smaller Datasets: The FULL model struggles with smaller datasets like MFC and Movies due to its high parameter count.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "While the UNLABELED model mitigates this issue, the paper could have explored additional strategies to address overfitting.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966879487037659,
+                    "sentence": "3. Dependence on Discourse Parser Quality: The reliance on the DPLP parser, which is trained on a limited dataset, constrains the model's performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9925490021705627,
+                    "sentence": "While the authors analyze this dependency, they do not propose concrete solutions to improve discourse parsing for underrepresented genres.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9951087236404419,
+                    "sentence": "4. Limited Comparison to Non-Discourse Models: While the paper compares against state-of-the-art baselines, it does not include recent transformer-based models (e.g., BERT), which could provide stronger baselines for text categorization tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988815784454346,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991455674171448,
+                    "sentence": "1. How does the proposed attention mechanism compare to transformer-based architectures, which also use attention but without explicit discourse structure?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989753365516663,
+                    "sentence": "2. Could pretraining the discourse parser on a more diverse corpus improve performance on specialized genres like legislative bills?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9985200762748718,
+                    "sentence": "3. Have you considered combining your model with pre-trained language models to enhance performance on smaller datasets?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967092871665955,
+                    "sentence": "Overall Assessment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9992929697036743,
+                    "sentence": "This paper makes a strong case for the integration of discourse structure in text categorization tasks, presenting a novel attention mechanism and achieving state-of-the-art results on multiple datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999447226524353,
+                    "sentence": "However, its reliance on a single discourse parser and its limited adaptability to specialized genres are notable weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997355341911316,
+                    "sentence": "Despite these limitations, the paper offers valuable insights and provides a solid foundation for future research in discourse-aware NLP.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9964123964309692,
+                    "sentence": "Recommendation: Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.9841954571483108,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9841954571483108,
+                "mixed": 0.015804542851689255
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9841954571483108,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9841954571483108,
+                    "human": 0,
+                    "mixed": 0.015804542851689255
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary and Contributions\nThis paper investigates the utility of discourse structure, as defined by Rhetorical Structure Theory (RST), for text categorization tasks. The authors propose a recursive neural network model that incorporates a novel attention mechanism to compute representations of text based on discourse dependency trees. The primary contributions of this work are: \n1. Novel Attention Mechanism: The paper introduces an unnormalized attention mechanism tailored to the hierarchical nature of RST, which differs from traditional normalized attention mechanisms used in NLP tasks. \n2. Empirical Validation: The proposed models outperform state-of-the-art baselines on four out of five datasets, demonstrating the utility of discourse structure for tasks like sentiment analysis and framing detection. \n3. Analysis of Discourse Parsing Quality: The authors explore the relationship between discourse parsing accuracy and text categorization performance, showing that improvements in parsing quality can lead to better results. \nStrengths\n1. Innovative Use of Discourse Structure: The paper effectively leverages RST discourse trees, demonstrating that even imperfect discourse parsers can provide useful inductive biases for text categorization. This is a significant advancement over prior works that either ignored discourse or relied on manually crafted weighting schemes. \n2. Comprehensive Experiments: The authors evaluate their models on five diverse datasets, including sentiment analysis, framing detection, and legislative bill survival prediction. The results are robust, with the proposed UNLABELED model outperforming baselines in most cases. \n3. Theoretical and Empirical Rigor: The unnormalized attention mechanism is well-motivated by the properties of RST, and its effectiveness is empirically validated. The authors also provide qualitative examples and ablation studies to support their claims. \n4. Open Implementation: The availability of the implementation fosters reproducibility and encourages further research in this area. \nWeaknesses\n1. Limited Generalization to Specialized Genres: The proposed models underperform on legislative bill classification, a task where discourse conventions differ significantly from the training data of the discourse parser. This limitation is acknowledged but not sufficiently addressed, leaving room for improvement in adapting the model to diverse genres. \n2. Overparameterization in Smaller Datasets: The FULL model struggles with smaller datasets like MFC and Movies due to its high parameter count. While the UNLABELED model mitigates this issue, the paper could have explored additional strategies to address overfitting. \n3. Dependence on Discourse Parser Quality: The reliance on the DPLP parser, which is trained on a limited dataset, constrains the model's performance. While the authors analyze this dependency, they do not propose concrete solutions to improve discourse parsing for underrepresented genres. \n4. Limited Comparison to Non-Discourse Models: While the paper compares against state-of-the-art baselines, it does not include recent transformer-based models (e.g., BERT), which could provide stronger baselines for text categorization tasks. \nQuestions to Authors\n1. How does the proposed attention mechanism compare to transformer-based architectures, which also use attention but without explicit discourse structure? \n2. Could pretraining the discourse parser on a more diverse corpus improve performance on specialized genres like legislative bills? \n3. Have you considered combining your model with pre-trained language models to enhance performance on smaller datasets? \nOverall Assessment\nThis paper makes a strong case for the integration of discourse structure in text categorization tasks, presenting a novel attention mechanism and achieving state-of-the-art results on multiple datasets. However, its reliance on a single discourse parser and its limited adaptability to specialized genres are notable weaknesses. Despite these limitations, the paper offers valuable insights and provides a solid foundation for future research in discourse-aware NLP. \nRecommendation: Accept with minor revisions."
+        }
+    ]
+}

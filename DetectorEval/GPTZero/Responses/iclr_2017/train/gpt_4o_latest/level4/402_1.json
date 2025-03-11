@@ -1,0 +1,290 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "b8238434-9294-4707-ad04-7622bfb0216e",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.5816993713378906,
+                    "sentence": "Given the authors' discussion of CVST, I anticipated Hyperband would perform significantly better; however, their experimental results do not support this expectation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6286185383796692,
+                    "sentence": "- Although Hyperband is designed as an anytime algorithm, the authors ran it for a much shorter duration than CVST, yielding consistently inferior mean results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.56752610206604,
+                    "sentence": "While the difference may not be substantial, the lack of task-specific characteristics presented in the paper raises the question of whether one could achieve comparable results to CVST's error bars simply by selecting a random configuration at no cost.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.48981773853302,
+                    "sentence": "Why not extend Hyperband's runtime to match CVST's and provide a fair, direct comparison?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.46224990487098694,
+                    "sentence": "- Furthermore, in this experiment, the authors used a different \\(\\eta\\) for Hyperband than in all other experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4917023479938507,
+                    "sentence": "This raises an important question: How much tuning is required to make Hyperband effective?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.544090211391449,
+                    "sentence": "What would the results look like if the authors had used the same \\(\\eta = 4\\) as in the other experiments?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6230314373970032,
+                    "sentence": "This paper focuses on Hyperband, an extension of successive halving introduced by Jamieson & Talwalkar (AISTATS 2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6899837255477905,
+                    "sentence": "Successive halving is an elegant algorithm that begins by evaluating numerous configurations and iteratively eliminates the worst-performing half, enabling exploration of many configurations within a constrained budget.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6296963691711426,
+                    "sentence": "After reading the paper during the question period and revisiting it now, I am unclear about the intended contribution of this work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5596538782119751,
+                    "sentence": "The only improvement Hyperband offers over successive halving appears to be in its theoretical worst-case bounds (no more than 5x worse than random search).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.444026380777359,
+                    "sentence": "However, (a) this bound can be trivially achieved by allocating one-fifth of the time to running random configurations to completion, and (b) the theoretical analysis establishing this bound is stated to be beyond the scope of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.54668128490448,
+                    "sentence": "This leaves me wondering whether the theoretical results are the primary contribution of this work or if they are detailed in a separate paper, with the current submission serving primarily as an empirical study of the method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.554601788520813,
+                    "sentence": "I hope the authors can clarify this in a revised version of the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5543566942214966,
+                    "sentence": "Regarding the experiments, the paper does not demonstrate a scenario where Hyperband outperforms the authors' previous algorithm, successive halving, with its most aggressive setting of bracket \\(b = 4\\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.427472859621048,
+                    "sentence": "In every figure, bracket \\(b = 4\\) performs at least as well as, and sometimes significantly better than, Hyperband.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5457343459129333,
+                    "sentence": "This suggests that, in practice, I would favor successive halving with \\(b = 4\\) over Hyperband.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.19563031196594238,
+                    "sentence": "(And if I require Hyperband's guarantee of being no more than 5x worse than random search, I could simply allocate one-fifth of my resources to random search.)",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6405438780784607,
+                    "sentence": "The experiments also include comparisons to some Bayesian optimization methods but omit comparisons to the most relevant, closely related Multi-Task Bayesian Optimization methods, which have been highly effective for deep learning over the past three years.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8258386254310608,
+                    "sentence": "For instance, \"Multi-Task Bayesian Optimization\" by Swersky, Snoek, and Adams (2013) demonstrated 5x speedups for deep learning by leveraging smaller datasets, and subsequent papers have reported even greater speedups.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7972893714904785,
+                    "sentence": "Given the existence of this prominent work on multitask Bayesian optimization, I find the introduction's portrayal of Hyperband as a groundbreaking approach to hyperparameter optimization somewhat misleading.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6931437253952026,
+                    "sentence": "I would prefer a more balanced framing that acknowledges the growing importance of \"configuration evaluation\" in hyperparameter optimization, including within Bayesian optimization, where it has already shown substantial speedups (as evidenced by prior work).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6669247150421143,
+                    "sentence": "The paper could then position its contribution as providing valuable theoretical insights into configuration evaluation and illustrating its significance, even in the simplest case of random search.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.708622932434082,
+                    "sentence": "This adjustment could be made by adding a paragraph to the introduction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7341451048851013,
+                    "sentence": "Finally, regarding novelty, the authors should acknowledge that adaptive resource allocation for evaluations has been studied in the machine learning community for at least 23 years.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9171171188354492,
+                    "sentence": "For example, Maron & Moore's NIPS 1993 paper, \"Hoeffding Races: Accelerating Model Selection Search for Classification and Function Approximation,\" explored similar ideas.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.00010005932717626924
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.0006564766595293492
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.3063829682933457
+                }
+            ],
+            "completely_generated_prob": 0.7936028431808086,
+            "class_probabilities": {
+                "human": 0.1936532144943455,
+                "ai": 0.7936028431808086,
+                "mixed": 0.012743942324846002
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7936028431808086,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7936028431808086,
+                    "human": 0.1936532144943455,
+                    "mixed": 0.012743942324846002
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Given the authors' discussion of CVST, I anticipated Hyperband would perform significantly better; however, their experimental results do not support this expectation: \n- Although Hyperband is designed as an anytime algorithm, the authors ran it for a much shorter duration than CVST, yielding consistently inferior mean results. While the difference may not be substantial, the lack of task-specific characteristics presented in the paper raises the question of whether one could achieve comparable results to CVST's error bars simply by selecting a random configuration at no cost. Why not extend Hyperband's runtime to match CVST's and provide a fair, direct comparison? \n- Furthermore, in this experiment, the authors used a different \\(\\eta\\) for Hyperband than in all other experiments. This raises an important question: How much tuning is required to make Hyperband effective? What would the results look like if the authors had used the same \\(\\eta = 4\\) as in the other experiments? \nThis paper focuses on Hyperband, an extension of successive halving introduced by Jamieson & Talwalkar (AISTATS 2016). Successive halving is an elegant algorithm that begins by evaluating numerous configurations and iteratively eliminates the worst-performing half, enabling exploration of many configurations within a constrained budget. \nAfter reading the paper during the question period and revisiting it now, I am unclear about the intended contribution of this work. The only improvement Hyperband offers over successive halving appears to be in its theoretical worst-case bounds (no more than 5x worse than random search). However, (a) this bound can be trivially achieved by allocating one-fifth of the time to running random configurations to completion, and (b) the theoretical analysis establishing this bound is stated to be beyond the scope of the paper. This leaves me wondering whether the theoretical results are the primary contribution of this work or if they are detailed in a separate paper, with the current submission serving primarily as an empirical study of the method. I hope the authors can clarify this in a revised version of the paper. \nRegarding the experiments, the paper does not demonstrate a scenario where Hyperband outperforms the authors' previous algorithm, successive halving, with its most aggressive setting of bracket \\(b = 4\\). In every figure, bracket \\(b = 4\\) performs at least as well as, and sometimes significantly better than, Hyperband. This suggests that, in practice, I would favor successive halving with \\(b = 4\\) over Hyperband. (And if I require Hyperband's guarantee of being no more than 5x worse than random search, I could simply allocate one-fifth of my resources to random search.) \nThe experiments also include comparisons to some Bayesian optimization methods but omit comparisons to the most relevant, closely related Multi-Task Bayesian Optimization methods, which have been highly effective for deep learning over the past three years. For instance, \"Multi-Task Bayesian Optimization\" by Swersky, Snoek, and Adams (2013) demonstrated 5x speedups for deep learning by leveraging smaller datasets, and subsequent papers have reported even greater speedups. \nGiven the existence of this prominent work on multitask Bayesian optimization, I find the introduction's portrayal of Hyperband as a groundbreaking approach to hyperparameter optimization somewhat misleading. I would prefer a more balanced framing that acknowledges the growing importance of \"configuration evaluation\" in hyperparameter optimization, including within Bayesian optimization, where it has already shown substantial speedups (as evidenced by prior work). The paper could then position its contribution as providing valuable theoretical insights into configuration evaluation and illustrating its significance, even in the simplest case of random search. This adjustment could be made by adding a paragraph to the introduction. \nFinally, regarding novelty, the authors should acknowledge that adaptive resource allocation for evaluations has been studied in the machine learning community for at least 23 years. For example, Maron & Moore's NIPS 1993 paper, \"Hoeffding Races: Accelerating Model Selection Search for Classification and Function Approximation,\" explored similar ideas."
+        }
+    ]
+}

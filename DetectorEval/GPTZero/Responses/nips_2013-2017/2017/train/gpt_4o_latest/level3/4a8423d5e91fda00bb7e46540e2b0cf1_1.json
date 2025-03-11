@@ -1,0 +1,297 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "90b8338b-fe55-4205-aab8-db0b70695519",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999834299087524,
+                    "sentence": "The paper presents a novel method for adding selective classification capabilities to pre-trained deep neural networks (DNNs), enabling risk-controlled predictions by rejecting uncertain instances.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999845027923584,
+                    "sentence": "The approach leverages confidence score thresholds, specifically analyzing two score functions: MC-dropout scores and maximum softmax scores (SR).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999970555305481,
+                    "sentence": "Empirical results demonstrate the superiority of SR in most cases, particularly on large-scale datasets like ImageNet.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999912977218628,
+                    "sentence": "The proposed method employs a binomial search algorithm (SGR) to identify thresholds that guarantee a desired error rate with high confidence, using a theoretical bound on true error rates (Lemma 3.1) and Bonferroni correction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999856352806091,
+                    "sentence": "Experiments on CIFAR-10, CIFAR-100, and ImageNet validate the method's effectiveness, achieving tight alignment between desired and observed error rates while maintaining significant coverage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999918341636658,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987006187439,
+                    "sentence": "1. Practical Applicability: The method is designed to work with pre-trained networks, making it highly practical for real-world applications without requiring retraining of the base model.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999949336051941,
+                    "sentence": "2. Theoretical Guarantees: The use of Lemma 3.1 and Bonferroni correction ensures robust error rate guarantees, which is critical for mission-critical applications like autonomous driving and medical diagnosis.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999945163726807,
+                    "sentence": "3. Empirical Validation: Comprehensive experiments on diverse datasets (CIFAR-10, CIFAR-100, ImageNet) demonstrate the method's effectiveness, with SR achieving superior performance in most scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999958276748657,
+                    "sentence": "4. Ease of Use: The ability to specify a desired error rate and confidence level provides users with intuitive control over the trade-off between accuracy and coverage.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995781183242798,
+                    "sentence": "5. Significance: The work addresses an important gap in selective classification for DNNs, with potential applications in high-stakes domains requiring controlled risk.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999242424964905,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998827576637268,
+                    "sentence": "1. Baseline Comparisons: The paper lacks comparisons with simpler baselines beyond a rudimentary thresholding method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999101161956787,
+                    "sentence": "Including additional baselines, such as cost-sensitive rejection models or ensemble-based approaches, would strengthen the justification for the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999854326248169,
+                    "sentence": "2. Algorithmic Clarity: Algorithm 1 references an uninitialized variable (r*), which could confuse readers and should be corrected for clarity and reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998795390129089,
+                    "sentence": "3. Limited Exploration of MC-Dropout: While SR outperforms MC-dropout empirically, the paper does not deeply analyze why MC-dropout underperforms, particularly on ImageNet.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998552203178406,
+                    "sentence": "A more detailed discussion could provide insights for future improvements.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998270869255066,
+                    "sentence": "4. Broader Applicability: The method is limited to classification tasks with 0/1 loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996939897537231,
+                    "sentence": "Extending the approach to other loss functions, regression tasks, or specific error metrics (e.g., false positives/negatives) would enhance its utility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997373819351196,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995013475418091,
+                    "sentence": "This paper makes a significant contribution to the field of selective classification for DNNs, offering a theoretically sound and empirically validated method with practical relevance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9990278482437134,
+                    "sentence": "However, the lack of baseline comparisons and minor clarity issues slightly detract from its overall impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987316131591797,
+                    "sentence": "I recommend acceptance with minor revisions, particularly addressing the uninitialized variable in Algorithm 1 and adding baseline comparisons to contextualize the method's performance.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 0.9997847017652333,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9997847017652333,
+                "mixed": 0.00021529823476680056
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9997847017652333,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9997847017652333,
+                    "human": 0,
+                    "mixed": 0.00021529823476680056
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper presents a novel method for adding selective classification capabilities to pre-trained deep neural networks (DNNs), enabling risk-controlled predictions by rejecting uncertain instances. The approach leverages confidence score thresholds, specifically analyzing two score functions: MC-dropout scores and maximum softmax scores (SR). Empirical results demonstrate the superiority of SR in most cases, particularly on large-scale datasets like ImageNet. The proposed method employs a binomial search algorithm (SGR) to identify thresholds that guarantee a desired error rate with high confidence, using a theoretical bound on true error rates (Lemma 3.1) and Bonferroni correction. Experiments on CIFAR-10, CIFAR-100, and ImageNet validate the method's effectiveness, achieving tight alignment between desired and observed error rates while maintaining significant coverage.\nStrengths:\n1. Practical Applicability: The method is designed to work with pre-trained networks, making it highly practical for real-world applications without requiring retraining of the base model.\n2. Theoretical Guarantees: The use of Lemma 3.1 and Bonferroni correction ensures robust error rate guarantees, which is critical for mission-critical applications like autonomous driving and medical diagnosis.\n3. Empirical Validation: Comprehensive experiments on diverse datasets (CIFAR-10, CIFAR-100, ImageNet) demonstrate the method's effectiveness, with SR achieving superior performance in most scenarios.\n4. Ease of Use: The ability to specify a desired error rate and confidence level provides users with intuitive control over the trade-off between accuracy and coverage.\n5. Significance: The work addresses an important gap in selective classification for DNNs, with potential applications in high-stakes domains requiring controlled risk.\nWeaknesses:\n1. Baseline Comparisons: The paper lacks comparisons with simpler baselines beyond a rudimentary thresholding method. Including additional baselines, such as cost-sensitive rejection models or ensemble-based approaches, would strengthen the justification for the proposed method.\n2. Algorithmic Clarity: Algorithm 1 references an uninitialized variable (r*), which could confuse readers and should be corrected for clarity and reproducibility.\n3. Limited Exploration of MC-Dropout: While SR outperforms MC-dropout empirically, the paper does not deeply analyze why MC-dropout underperforms, particularly on ImageNet. A more detailed discussion could provide insights for future improvements.\n4. Broader Applicability: The method is limited to classification tasks with 0/1 loss. Extending the approach to other loss functions, regression tasks, or specific error metrics (e.g., false positives/negatives) would enhance its utility.\nRecommendation:\nThis paper makes a significant contribution to the field of selective classification for DNNs, offering a theoretically sound and empirically validated method with practical relevance. However, the lack of baseline comparisons and minor clarity issues slightly detract from its overall impact. I recommend acceptance with minor revisions, particularly addressing the uninitialized variable in Algorithm 1 and adding baseline comparisons to contextualize the method's performance."
+        }
+    ]
+}

@@ -1,0 +1,357 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "2788bfc4-6fb4-4ca9-ba38-8429f7534f7a",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999833703041077,
+                    "sentence": "The paper proposes a novel method for reducing the computational cost of convolutional neural networks (CNNs) by pruning filters with low importance, as measured by their `1-norm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999588131904602,
+                    "sentence": "Unlike weight pruning, which often leads to irregular sparsity and requires specialized sparse libraries, the proposed filter pruning approach maintains dense connectivity and is compatible with existing efficient BLAS libraries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999575614929199,
+                    "sentence": "The authors demonstrate that their method achieves significant reductions in FLOPs (up to 34% for VGG-16 and 38% for ResNet-110 on CIFAR-10) while maintaining accuracy through retraining.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999662041664124,
+                    "sentence": "They also provide a sensitivity analysis of layers to pruning and propose strategies for pruning across multiple layers, including for complex architectures like ResNets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999668002128601,
+                    "sentence": "Decision: Accept",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999819993972778,
+                    "sentence": "Key Reasons for Decision:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999987781047821,
+                    "sentence": "1. Practical Utility and Novelty: The paper addresses a critical challenge in deploying CNNs on resource-constrained devices by proposing a structured pruning method that avoids the pitfalls of irregular sparsity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999702572822571,
+                    "sentence": "The approach is novel in its simplicity and compatibility with existing dense computation libraries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999731183052063,
+                    "sentence": "2. Strong Empirical Support: The authors provide extensive experimental results on multiple architectures (VGG-16, ResNet-56/110/34) and datasets (CIFAR-10, ImageNet), demonstrating the effectiveness of their method in reducing computational costs without significant accuracy loss.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999538660049438,
+                    "sentence": "Supporting Arguments:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999718070030212,
+                    "sentence": "- The paper is well-motivated, highlighting the limitations of existing pruning methods, such as sparse weight pruning and the need for specialized hardware or libraries.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999818205833435,
+                    "sentence": "The proposed filter pruning method effectively addresses these issues.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999611973762512,
+                    "sentence": "- The use of `1-norm as a criterion for filter importance is justified with empirical evidence, and the results are benchmarked against alternative pruning strategies (e.g., random pruning, activation-based pruning).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999758005142212,
+                    "sentence": "- The authors provide a detailed analysis of layer sensitivity to pruning and propose practical strategies for pruning across multiple layers, including holistic and greedy approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999970555305481,
+                    "sentence": "This adds depth to the work and makes it applicable to a wide range of architectures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999468326568604,
+                    "sentence": "- The experiments are rigorous, with comparisons to baseline models and alternative pruning methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998996257781982,
+                    "sentence": "The results are reproducible, as the methodology and hyperparameters are clearly described.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999095797538757,
+                    "sentence": "Suggestions for Improvement:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999307990074158,
+                    "sentence": "1. Clarify Sensitivity Analysis: While the sensitivity analysis is insightful, it would be helpful to provide more details on how the pruning ratios for sensitive layers are determined and whether these ratios generalize across datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987088441848755,
+                    "sentence": "2. Comparison with State-of-the-Art: The paper could benefit from a direct comparison with more recent state-of-the-art pruning techniques, particularly those that also focus on structured pruning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9944234490394592,
+                    "sentence": "3. Real-World Applications: Including results on real-world deployment scenarios (e.g., mobile devices or embedded systems) would strengthen the practical relevance of the work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.993642270565033,
+                    "sentence": "4. Limitations: The paper does not explicitly discuss potential limitations, such as the impact of pruning on transfer learning tasks or the scalability of the method to extremely large-scale datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.4862455725669861,
+                    "sentence": "Questions for Authors:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5394056439399719,
+                    "sentence": "1. How does the method perform on larger datasets like ImageNet when applied to architectures with higher capacity, such as ResNet-50 or EfficientNet?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.49140799045562744,
+                    "sentence": "2. Can the proposed method be combined with other compression techniques, such as quantization or knowledge distillation, to achieve further reductions in computational cost?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.34120261669158936,
+                    "sentence": "3. How sensitive is the method to the choice of the pruning ratio, and what guidelines can be provided for selecting this ratio in practice?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5604022145271301,
+                    "sentence": "Overall, the paper presents a significant contribution to the field of model compression and is well-suited for acceptance at the conference.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3337728679180145,
+                    "sentence": "The proposed method is practical, effective, and supported by strong empirical evidence.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.9377106932154047,
+            "class_probabilities": {
+                "human": 0.055041436745693346,
+                "ai": 0.9377106932154047,
+                "mixed": 0.007247870038901979
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9377106932154047,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9377106932154047,
+                    "human": 0.055041436745693346,
+                    "mixed": 0.007247870038901979
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper proposes a novel method for reducing the computational cost of convolutional neural networks (CNNs) by pruning filters with low importance, as measured by their `1-norm. Unlike weight pruning, which often leads to irregular sparsity and requires specialized sparse libraries, the proposed filter pruning approach maintains dense connectivity and is compatible with existing efficient BLAS libraries. The authors demonstrate that their method achieves significant reductions in FLOPs (up to 34% for VGG-16 and 38% for ResNet-110 on CIFAR-10) while maintaining accuracy through retraining. They also provide a sensitivity analysis of layers to pruning and propose strategies for pruning across multiple layers, including for complex architectures like ResNets.\nDecision: Accept\nKey Reasons for Decision:\n1. Practical Utility and Novelty: The paper addresses a critical challenge in deploying CNNs on resource-constrained devices by proposing a structured pruning method that avoids the pitfalls of irregular sparsity. The approach is novel in its simplicity and compatibility with existing dense computation libraries.\n2. Strong Empirical Support: The authors provide extensive experimental results on multiple architectures (VGG-16, ResNet-56/110/34) and datasets (CIFAR-10, ImageNet), demonstrating the effectiveness of their method in reducing computational costs without significant accuracy loss.\nSupporting Arguments:\n- The paper is well-motivated, highlighting the limitations of existing pruning methods, such as sparse weight pruning and the need for specialized hardware or libraries. The proposed filter pruning method effectively addresses these issues.\n- The use of `1-norm as a criterion for filter importance is justified with empirical evidence, and the results are benchmarked against alternative pruning strategies (e.g., random pruning, activation-based pruning).\n- The authors provide a detailed analysis of layer sensitivity to pruning and propose practical strategies for pruning across multiple layers, including holistic and greedy approaches. This adds depth to the work and makes it applicable to a wide range of architectures.\n- The experiments are rigorous, with comparisons to baseline models and alternative pruning methods. The results are reproducible, as the methodology and hyperparameters are clearly described.\nSuggestions for Improvement:\n1. Clarify Sensitivity Analysis: While the sensitivity analysis is insightful, it would be helpful to provide more details on how the pruning ratios for sensitive layers are determined and whether these ratios generalize across datasets.\n2. Comparison with State-of-the-Art: The paper could benefit from a direct comparison with more recent state-of-the-art pruning techniques, particularly those that also focus on structured pruning.\n3. Real-World Applications: Including results on real-world deployment scenarios (e.g., mobile devices or embedded systems) would strengthen the practical relevance of the work.\n4. Limitations: The paper does not explicitly discuss potential limitations, such as the impact of pruning on transfer learning tasks or the scalability of the method to extremely large-scale datasets.\nQuestions for Authors:\n1. How does the method perform on larger datasets like ImageNet when applied to architectures with higher capacity, such as ResNet-50 or EfficientNet?\n2. Can the proposed method be combined with other compression techniques, such as quantization or knowledge distillation, to achieve further reductions in computational cost?\n3. How sensitive is the method to the choice of the pruning ratio, and what guidelines can be provided for selecting this ratio in practice?\nOverall, the paper presents a significant contribution to the field of model compression and is well-suited for acceptance at the conference. The proposed method is practical, effective, and supported by strong empirical evidence."
+        }
+    ]
+}

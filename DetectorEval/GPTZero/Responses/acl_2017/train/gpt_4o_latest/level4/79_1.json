@@ -1,0 +1,296 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "84d5d020-3817-4942-b6ef-a99208c05208",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9998887777328491,
+                    "sentence": "This paper addresses the problem of knowledge base (KB) completion and introduces ITransF as a solution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998376369476318,
+                    "sentence": "Unlike STransE, which assigns an independent matrix to each relation, this work proposes parameter sharing across relations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996955990791321,
+                    "sentence": "Specifically, the authors construct a tensor \\( D \\), where each slice represents a relational matrix, and use a selection vector \\( \\alpha \\) to identify a subset of relevant relational matrices for composing a specific semantic relation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994239807128906,
+                    "sentence": "Additionally, the paper describes a method to enforce sparsity in \\( \\alpha \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9991656541824341,
+                    "sentence": "Experimental results on two standard benchmark datasets demonstrate the superiority of ITransF over previous approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9939739108085632,
+                    "sentence": "The paper is generally well-written, and the experimental results are promising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99079829454422,
+                    "sentence": "However, I have several concerns that I hope the authors will address in their response.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9676072001457214,
+                    "sentence": "1. Simply arranging relational matrices into a tensor and applying a selection mechanism (or, more accurately, computing a linearly weighted sum of the relational matrices) does not inherently enable information sharing between the relational matrices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9866898059844971,
+                    "sentence": "Information sharing would require techniques such as tensor decomposition, where the slices (relational matrices) are projected into a shared lower-dimensional core tensor.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.991767406463623,
+                    "sentence": "It is unclear why this approach was not considered, given the stated motivation to share information across relational matrices.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.939719557762146,
+                    "sentence": "2. The two objectives\"\"(a) sharing information across relational matrices and (b) enforcing sparsity in the attention vectors\"\"appear somewhat contradictory.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9685183763504028,
+                    "sentence": "If the attention vector is truly sparse and contains many zeros, the corresponding slices will not receive updates during optimization, thereby limiting information flow.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9421856999397278,
+                    "sentence": "3. The authors devote significant space to discussing methods for computing sparse attention vectors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9222997426986694,
+                    "sentence": "On page 3, they mention that \\( \\ell1 \\)-regularization did not work in preliminary experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9319978356361389,
+                    "sentence": "However, no experimental results are provided to support this claim, nor is there an explanation for why \\( \\ell1 \\)-regularization is unsuitable for this task.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9003642797470093,
+                    "sentence": "As \\( \\ell1 \\)-regularization is a standard baseline and is computationally efficient, it seems like an obvious choice to try.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.85752272605896,
+                    "sentence": "Instead, the authors use \\( \\ell0 \\)-regularization, which leads to NP-hard optimization problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7692348957061768,
+                    "sentence": "They then propose a technique and a rather crude approximation to address this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8934701681137085,
+                    "sentence": "Much of this complexity could have been avoided if \\( \\ell_1 \\)-regularization had been used.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8630331754684448,
+                    "sentence": "4. The vector \\( \\alpha \\) performs a selection or weighting over the slices of \\( D \\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.848605215549469,
+                    "sentence": "Referring to this as \"attention\" is somewhat misleading, as the term \"attention\" in NLP typically refers to a different class of models (e.g., attention mechanisms in machine translation).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9164382815361023,
+                    "sentence": "5. The authors initialize optimization using pre-trained embeddings from TransE.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8684422969818115,
+                    "sentence": "It is unclear why random initialization, as used in TransE, cannot be employed here.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8390424847602844,
+                    "sentence": "Using TransE embeddings as the starting point raises concerns about the fairness of comparisons with TransE, as the proposed method benefits from pre-trained embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6704424023628235,
+                    "sentence": "The idea of learning associations between semantic relations has been explored in related NLP problems, such as relational similarity measurement [Turney, JAIR 2012] and relation adaptation [Bollegala et al., IJCAI 2011].",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.5299651622772217,
+                    "sentence": "It would be beneficial to contextualize the current work in relation to these prior studies, which also model inter-relational correlation and similarity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6019153594970703,
+                    "sentence": "Thank you for the opportunity to review this work.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 7,
+                    "completely_generated_prob": 0.7604022122935274
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.7995711047355243,
+            "class_probabilities": {
+                "human": 0.19427518060025914,
+                "ai": 0.7995711047355243,
+                "mixed": 0.006153714664216576
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.7995711047355243,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.7995711047355243,
+                    "human": 0.19427518060025914,
+                    "mixed": 0.006153714664216576
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper addresses the problem of knowledge base (KB) completion and introduces ITransF as a solution. Unlike STransE, which assigns an independent matrix to each relation, this work proposes parameter sharing across relations. Specifically, the authors construct a tensor \\( D \\), where each slice represents a relational matrix, and use a selection vector \\( \\alpha \\) to identify a subset of relevant relational matrices for composing a specific semantic relation. Additionally, the paper describes a method to enforce sparsity in \\( \\alpha \\). Experimental results on two standard benchmark datasets demonstrate the superiority of ITransF over previous approaches.\nThe paper is generally well-written, and the experimental results are promising. However, I have several concerns that I hope the authors will address in their response.\n1. Simply arranging relational matrices into a tensor and applying a selection mechanism (or, more accurately, computing a linearly weighted sum of the relational matrices) does not inherently enable information sharing between the relational matrices. Information sharing would require techniques such as tensor decomposition, where the slices (relational matrices) are projected into a shared lower-dimensional core tensor. It is unclear why this approach was not considered, given the stated motivation to share information across relational matrices.\n2. The two objectives\"\"(a) sharing information across relational matrices and (b) enforcing sparsity in the attention vectors\"\"appear somewhat contradictory. If the attention vector is truly sparse and contains many zeros, the corresponding slices will not receive updates during optimization, thereby limiting information flow.\n3. The authors devote significant space to discussing methods for computing sparse attention vectors. On page 3, they mention that \\( \\ell1 \\)-regularization did not work in preliminary experiments. However, no experimental results are provided to support this claim, nor is there an explanation for why \\( \\ell1 \\)-regularization is unsuitable for this task. As \\( \\ell1 \\)-regularization is a standard baseline and is computationally efficient, it seems like an obvious choice to try. Instead, the authors use \\( \\ell0 \\)-regularization, which leads to NP-hard optimization problems. They then propose a technique and a rather crude approximation to address this issue. Much of this complexity could have been avoided if \\( \\ell_1 \\)-regularization had been used.\n4. The vector \\( \\alpha \\) performs a selection or weighting over the slices of \\( D \\). Referring to this as \"attention\" is somewhat misleading, as the term \"attention\" in NLP typically refers to a different class of models (e.g., attention mechanisms in machine translation).\n5. The authors initialize optimization using pre-trained embeddings from TransE. It is unclear why random initialization, as used in TransE, cannot be employed here. Using TransE embeddings as the starting point raises concerns about the fairness of comparisons with TransE, as the proposed method benefits from pre-trained embeddings.\nThe idea of learning associations between semantic relations has been explored in related NLP problems, such as relational similarity measurement [Turney, JAIR 2012] and relation adaptation [Bollegala et al., IJCAI 2011]. It would be beneficial to contextualize the current work in relation to these prior studies, which also model inter-relational correlation and similarity.\nThank you for the opportunity to review this work."
+        }
+    ]
+}

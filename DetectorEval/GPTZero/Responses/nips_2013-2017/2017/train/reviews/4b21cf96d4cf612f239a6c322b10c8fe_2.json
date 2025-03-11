@@ -1,0 +1,196 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "65e4ac95-245c-4736-9d62-28c70653b9da",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.007000906392931938,
+                    "sentence": "In general, I find the paper to be fairly well-written and the idea to be both quite intuitive and well motivated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004452287219464779,
+                    "sentence": "However I do have a couple of questions regarding several technical decisions made in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005677549168467522,
+                    "sentence": "* For the encoder (Fig.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.005079678725451231,
+                    "sentence": "4), is it really necessary to explicitly generate K posterior mean/variances separately before taking the weighted average to combine them into one?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006094054318964481,
+                    "sentence": "Or, compared with having the encoder network directly generate the posterior mean/variances, how much gain would the current architecture have?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.004816802684217691,
+                    "sentence": "* Given the fact that ultimately we only need the decoder to do conditional caption generation (i.e.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008248981088399887,
+                    "sentence": "there is no actual need for doing posterior inference at all), it seems to me that VAE might be an overkill here.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009357361122965813,
+                    "sentence": "Why not directly learn the decoder via maximum-likelihood?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008593542501330376,
+                    "sentence": "You can actually still sample z from p(z\"c) and then marginalize it to approximately maximize p(x\"c) = \\sum{zi} p(zi\"c)p(x\"zi, c).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011753624305129051,
+                    "sentence": "This should be an even stronger LSTM baseline with z still present.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008699693717062473,
+                    "sentence": "* For GMM-CVAE, how did you compute the KL-divergence?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.006861125584691763,
+                    "sentence": "* During training, the standard deviations \\sigmak in the prior essentially controls the balance between KL-divergence (as the regularization) and reconstruction error (as the loss).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.009636498056352139,
+                    "sentence": "I'm therefore interested to know whether the authors have tried different values as they did during test time.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.008632463403046131,
+                    "sentence": "I raise this issue also because to me it is more reasonable to stick with the same \\sigmak both for training and testing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.018253860995173454,
+                    "sentence": "Typo",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.011144326999783516,
+                    "sentence": "* L.36: \"maximize (an upper bound on) the likelihood\" should have been \"lower bound\" I think.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.009998674697021016,
+            "class_probabilities": {
+                "human": 0.990001325302979,
+                "ai": 0.009998674697021016,
+                "mixed": 0
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.990001325302979,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.009998674697021016,
+                    "human": 0.990001325302979,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "In general, I find the paper to be fairly well-written and the idea to be both quite intuitive and well motivated. However I do have a couple of questions regarding several technical decisions made in the paper.\n* For the encoder (Fig. 4), is it really necessary to explicitly generate K posterior mean/variances separately before taking the weighted average to combine them into one? Or, compared with having the encoder network directly generate the posterior mean/variances, how much gain would the current architecture have?\n* Given the fact that ultimately we only need the decoder to do conditional caption generation (i.e. there is no actual need for doing posterior inference at all), it seems to me that VAE might be an overkill here.\nWhy not directly learn the decoder via maximum-likelihood? You can actually still sample z from p(z\"c) and then marginalize it to approximately maximize p(x\"c) = \\sum{zi} p(zi\"c)p(x\"zi, c). This should be an even stronger LSTM baseline with z still present.\n* For GMM-CVAE, how did you compute the KL-divergence?\n* During training, the standard deviations \\sigmak in the prior essentially controls the balance between KL-divergence (as the regularization) and reconstruction error (as the loss). I'm therefore interested to know whether the authors have tried different values as they did during test time. I raise this issue also because to me it is more reasonable to stick with the same \\sigmak both for training and testing.\nTypo\n* L.36: \"maximize (an upper bound on) the likelihood\" should have been \"lower bound\" I think."
+        }
+    ]
+}

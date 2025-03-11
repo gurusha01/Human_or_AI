@@ -1,0 +1,498 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "73d4a444-0fd8-4956-9e5c-a41577cb3dc4",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999621510505676,
+                    "sentence": "This paper proposes a model for event linking using convolutional neural networks (CNNs).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999542832374573,
+                    "sentence": "The authors generate vector representations for event mentions by passing word embeddings through a CNN, followed by max-pooling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99989914894104,
+                    "sentence": "These representations are concatenated with word embeddings from the surrounding context.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999335408210754,
+                    "sentence": "Combined with pairwise features, the model uses a single-layer neural network to compute a similarity vector and derive a coreference score.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998888969421387,
+                    "sentence": "The approach is evaluated on the ACE dataset and an expanded version, achieving performance comparable to prior feature-rich systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998716115951538,
+                    "sentence": "The primary contribution of this work lies in introducing a neural method for event linking that integrates word embeddings with linguistic features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999152421951294,
+                    "sentence": "Notably, the study highlights that word embeddings alone are insufficient for strong performance, but the linguistic features employed are minimal and do not rely on manually-crafted external resources.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998065829277039,
+                    "sentence": "Experimental Setting",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999452829360962,
+                    "sentence": "- The authors rely on gold trigger words rather than predicted ones, which they justify as reasonable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999228715896606,
+                    "sentence": "However, I would have preferred to see results using predicted triggers, especially since one of the baseline systems uses predicted triggers, making the comparison less equitable.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999611377716064,
+                    "sentence": "- The use of different train/test splits across papers is concerning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999557733535767,
+                    "sentence": "I encourage the authors to adhere to established splits wherever possible for consistency.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999942421913147,
+                    "sentence": "Unclear Points",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999379515647888,
+                    "sentence": "- The claim that cross-sentential information is necessary is supported by the numbers, but the final statement in the second paragraph (lines 65-70) is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998626112937927,
+                    "sentence": "- The embeddings for positions are described as being generated \"in a way similar to word embeddings,\" but the exact method is not specified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998583197593689,
+                    "sentence": "Are they randomly initialized or lexicalized?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998926520347595,
+                    "sentence": "It is unclear why the same relative position next to different words should share an embedding.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998487830162048,
+                    "sentence": "- The process for incorporating left and right neighbors into the representation (lines 307-311) is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999135136604309,
+                    "sentence": "Does this only influence the max-pooling step?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999083876609802,
+                    "sentence": "- The decision to append word embeddings for one word before and one word after the trigger seems somewhat arbitrary.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999849796295166,
+                    "sentence": "Why this specific choice and not others?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998615384101868,
+                    "sentence": "- The role of the event-mention representation \\(ve\\) (line 330) is unclear.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999213814735413,
+                    "sentence": "Subsequent sections seem to focus on \\(v{sent+lex}\\), with no mention of \\(v_e\\).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999896764755249,
+                    "sentence": "- The use of pairwise features in Section 3.2 requires clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997676014900208,
+                    "sentence": "Are binary features encoded as a binary vector?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998679757118225,
+                    "sentence": "How is the distance feature handled?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998740553855896,
+                    "sentence": "Are these features fixed during training?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999381899833679,
+                    "sentence": "Other Issues and Suggestions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999048709869385,
+                    "sentence": "- Could the proposed approach be extended to entity coreference resolution?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999120831489563,
+                    "sentence": "This would enable comparisons with additional prior work and datasets like OntoNotes.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9959858059883118,
+                    "sentence": "- The use of a square function as a nonlinearity is intriguing.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9955659508705139,
+                    "sentence": "Is this a novel contribution?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.995616614818573,
+                    "sentence": "Do you see potential applications for this function in other tasks?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967923164367676,
+                    "sentence": "- Regarding datasets, while one dataset is publicly available, the ACE++ dataset is not.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966985583305359,
+                    "sentence": "Are there plans to release ACE++?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961143732070923,
+                    "sentence": "Making it available would facilitate comparisons with future methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9928039908409119,
+                    "sentence": "Additionally, it would have been helpful to compare feature-rich systems on this dataset as well.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9967321157455444,
+                    "sentence": "- Some reported results are very close.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9950883388519287,
+                    "sentence": "Statistical significance testing would strengthen the claims made in the paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9966081976890564,
+                    "sentence": "- In the related work section, it might be worth mentioning the neural coreference resolution approach by Wiseman et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961092472076416,
+                    "sentence": "(2015).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9922774434089661,
+                    "sentence": "Minor Issues",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9937184453010559,
+                    "sentence": "- Line 143: The word \"that\" is redundant.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9961643815040588,
+                    "sentence": "- In Table 6, one baseline is labeled \"same type,\" but in the text (line 670), it is referred to as \"same event.\"",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9955073595046997,
+                    "sentence": "This inconsistency should be addressed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9962447881698608,
+                    "sentence": "References",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980567097663879,
+                    "sentence": "- Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987256526947021,
+                    "sentence": "Sam Wiseman, Alexander M. Rush, Jason Weston, and Stuart M. Shieber.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9977307915687561,
+                    "sentence": "ACL 2015.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 37,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 39,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 41,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 42,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 43,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 45,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 46,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                }
+            ],
+            "completely_generated_prob": 1,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 1,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 1,
+                    "human": 0,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This paper proposes a model for event linking using convolutional neural networks (CNNs). The authors generate vector representations for event mentions by passing word embeddings through a CNN, followed by max-pooling. These representations are concatenated with word embeddings from the surrounding context. Combined with pairwise features, the model uses a single-layer neural network to compute a similarity vector and derive a coreference score. \nThe approach is evaluated on the ACE dataset and an expanded version, achieving performance comparable to prior feature-rich systems. The primary contribution of this work lies in introducing a neural method for event linking that integrates word embeddings with linguistic features. Notably, the study highlights that word embeddings alone are insufficient for strong performance, but the linguistic features employed are minimal and do not rely on manually-crafted external resources.\nExperimental Setting\n- The authors rely on gold trigger words rather than predicted ones, which they justify as reasonable. However, I would have preferred to see results using predicted triggers, especially since one of the baseline systems uses predicted triggers, making the comparison less equitable.\n- The use of different train/test splits across papers is concerning. I encourage the authors to adhere to established splits wherever possible for consistency.\nUnclear Points\n- The claim that cross-sentential information is necessary is supported by the numbers, but the final statement in the second paragraph (lines 65-70) is unclear.\n- The embeddings for positions are described as being generated \"in a way similar to word embeddings,\" but the exact method is not specified. Are they randomly initialized or lexicalized? It is unclear why the same relative position next to different words should share an embedding.\n- The process for incorporating left and right neighbors into the representation (lines 307-311) is unclear. Does this only influence the max-pooling step?\n- The decision to append word embeddings for one word before and one word after the trigger seems somewhat arbitrary. Why this specific choice and not others?\n- The role of the event-mention representation \\(ve\\) (line 330) is unclear. Subsequent sections seem to focus on \\(v{sent+lex}\\), with no mention of \\(v_e\\).\n- The use of pairwise features in Section 3.2 requires clarification. Are binary features encoded as a binary vector? How is the distance feature handled? Are these features fixed during training?\nOther Issues and Suggestions\n- Could the proposed approach be extended to entity coreference resolution? This would enable comparisons with additional prior work and datasets like OntoNotes.\n- The use of a square function as a nonlinearity is intriguing. Is this a novel contribution? Do you see potential applications for this function in other tasks?\n- Regarding datasets, while one dataset is publicly available, the ACE++ dataset is not. Are there plans to release ACE++? Making it available would facilitate comparisons with future methods. Additionally, it would have been helpful to compare feature-rich systems on this dataset as well.\n- Some reported results are very close. Statistical significance testing would strengthen the claims made in the paper.\n- In the related work section, it might be worth mentioning the neural coreference resolution approach by Wiseman et al. (2015).\nMinor Issues\n- Line 143: The word \"that\" is redundant.\n- In Table 6, one baseline is labeled \"same type,\" but in the text (line 670), it is referred to as \"same event.\" This inconsistency should be addressed.\nReferences\n- Learning Anaphoricity and Antecedent Ranking Features for Coreference Resolution. Sam Wiseman, Alexander M. Rush, Jason Weston, and Stuart M. Shieber. ACL 2015."
+        }
+    ]
+}

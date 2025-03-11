@@ -1,0 +1,446 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "e32c24cf-3bf6-4495-a5ee-27c03339b41f",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999975562095642,
+                    "sentence": "Review",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999992847442627,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999988079071045,
+                    "sentence": "This paper presents a globally optimized neural model for end-to-end relation extraction, leveraging novel LSTM-based features and parser representations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983310699463,
+                    "sentence": "The authors propose a table-filling framework that integrates syntactic information without relying on explicit parser outputs, addressing limitations of prior models like Miwa and Bansal (2016).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "The model achieves state-of-the-art results on two benchmark datasets, ACE05 and CONLL04, with improvements attributed to global optimization and the use of segmental features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "Key contributions include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "1. A globally optimized neural model for relation extraction, which outperforms previous state-of-the-art methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "2. A novel integration of syntactic features via bi-affine attention parser representations, avoiding parsing errors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "3. The use of LSTM-Minus for efficient segment representation, enhancing entity and relation extraction.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985098838806,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "1. Clarity and Structure: The paper is well-written and logically structured, making it easy to follow the methodology and experiments.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999970197677612,
+                    "sentence": "2. Performance: The model achieves state-of-the-art results on both ACE05 and CONLL04 datasets, demonstrating its effectiveness.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999964237213135,
+                    "sentence": "3. Novel Use of Syntactic Features: The integration of parser representations as input embeddings is innovative, avoiding dependency on explicit syntactic structures.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955892562866,
+                    "sentence": "4. Thorough Analysis: The authors provide detailed ablation studies and analyses, such as the impact of global optimization and syntactic features, which strengthen the validity of their claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999924898147583,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998347163200378,
+                    "sentence": "1. Incremental Novelty: The approach primarily combines existing techniques (e.g., LSTM-Minus, global optimization) rather than introducing fundamentally new methods.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997932314872742,
+                    "sentence": "While effective, the novelty is incremental.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996891021728516,
+                    "sentence": "2. Marginal Performance Gains: The improvements over prior work are relatively small (e.g., 1.2% on the development set), and statistical significance tests are not provided to validate these gains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995298981666565,
+                    "sentence": "3. Ambiguity in Key Components: The influence of parser embeddings and GloVe embeddings on performance is not thoroughly clarified.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995040893554688,
+                    "sentence": "Similarly, the handling of illegal predictions during inference is not well-explained.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994471669197083,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994169473648071,
+                    "sentence": "1. How do parser embeddings specifically contribute to the observed performance improvements?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998028874397278,
+                    "sentence": "Are there cases where they introduce noise?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996567368507385,
+                    "sentence": "2. Could you elaborate on the method used to handle illegal predictions during inference?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996777772903442,
+                    "sentence": "3. Did you conduct statistical significance tests to confirm the performance improvements?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995637536048889,
+                    "sentence": "Minor Comments",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998852610588074,
+                    "sentence": "1. The term \"local optimization\" is misleading, as it incorporates structural correspondences.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999048113822937,
+                    "sentence": "Consider revising this terminology.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997568130493164,
+                    "sentence": "2. Figures 6 and 7 should use straight lines instead of curves for better readability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997697472572327,
+                    "sentence": "3. Clarify how entities are represented in the \"-segment\" approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999462902545929,
+                    "sentence": "4. Some citations are incomplete or incorrect (e.g., Kingma et al., Li et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9993544816970825,
+                    "sentence": ").",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999643087387085,
+                    "sentence": "Conclusion",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998805522918701,
+                    "sentence": "Overall, the paper presents a strong contribution to the field of relation extraction, with a well-executed model and comprehensive evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999085664749146,
+                    "sentence": "However, the incremental nature of the approach and the lack of significance testing for performance gains limit its impact.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997990727424622,
+                    "sentence": "Addressing the ambiguities and weaknesses could further strengthen the submission.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997553825378418,
+                    "sentence": "Recommendation: Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 10,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 33,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 36,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 1,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 1,
+                "mixed": 0
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 1,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 1,
+                    "human": 0,
+                    "mixed": 0
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review\nSummary and Contributions \nThis paper presents a globally optimized neural model for end-to-end relation extraction, leveraging novel LSTM-based features and parser representations. The authors propose a table-filling framework that integrates syntactic information without relying on explicit parser outputs, addressing limitations of prior models like Miwa and Bansal (2016). The model achieves state-of-the-art results on two benchmark datasets, ACE05 and CONLL04, with improvements attributed to global optimization and the use of segmental features. Key contributions include: \n1. A globally optimized neural model for relation extraction, which outperforms previous state-of-the-art methods. \n2. A novel integration of syntactic features via bi-affine attention parser representations, avoiding parsing errors. \n3. The use of LSTM-Minus for efficient segment representation, enhancing entity and relation extraction. \nStrengths \n1. Clarity and Structure: The paper is well-written and logically structured, making it easy to follow the methodology and experiments. \n2. Performance: The model achieves state-of-the-art results on both ACE05 and CONLL04 datasets, demonstrating its effectiveness. \n3. Novel Use of Syntactic Features: The integration of parser representations as input embeddings is innovative, avoiding dependency on explicit syntactic structures. \n4. Thorough Analysis: The authors provide detailed ablation studies and analyses, such as the impact of global optimization and syntactic features, which strengthen the validity of their claims. \nWeaknesses \n1. Incremental Novelty: The approach primarily combines existing techniques (e.g., LSTM-Minus, global optimization) rather than introducing fundamentally new methods. While effective, the novelty is incremental. \n2. Marginal Performance Gains: The improvements over prior work are relatively small (e.g., 1.2% on the development set), and statistical significance tests are not provided to validate these gains. \n3. Ambiguity in Key Components: The influence of parser embeddings and GloVe embeddings on performance is not thoroughly clarified. Similarly, the handling of illegal predictions during inference is not well-explained. \nQuestions to Authors \n1. How do parser embeddings specifically contribute to the observed performance improvements? Are there cases where they introduce noise? \n2. Could you elaborate on the method used to handle illegal predictions during inference? \n3. Did you conduct statistical significance tests to confirm the performance improvements? \nMinor Comments \n1. The term \"local optimization\" is misleading, as it incorporates structural correspondences. Consider revising this terminology. \n2. Figures 6 and 7 should use straight lines instead of curves for better readability. \n3. Clarify how entities are represented in the \"-segment\" approach. \n4. Some citations are incomplete or incorrect (e.g., Kingma et al., Li et al.). \nConclusion \nOverall, the paper presents a strong contribution to the field of relation extraction, with a well-executed model and comprehensive evaluation. However, the incremental nature of the approach and the lack of significance testing for performance gains limit its impact. Addressing the ambiguities and weaknesses could further strengthen the submission. \nRecommendation: Accept with minor revisions."
+        }
+    ]
+}

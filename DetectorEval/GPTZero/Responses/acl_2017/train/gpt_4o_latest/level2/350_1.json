@@ -1,0 +1,402 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "6e902524-0b83-414d-983a-cc5c2a7c602b",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.9999982118606567,
+                    "sentence": "Review of the Paper",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999995231628418,
+                    "sentence": "Summary and Contributions",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999989867210388,
+                    "sentence": "This paper proposes a novel approach to automatically label training data for large-scale Event Extraction (EE) by leveraging world knowledge (Freebase) and linguistic knowledge (FrameNet).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999984502792358,
+                    "sentence": "The authors address the limitations of supervised EE methods, such as the high cost of human annotation and low event type coverage, by introducing a Soft Distant Supervision (SDS) framework.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999979138374329,
+                    "sentence": "Key contributions of the paper include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999983906745911,
+                    "sentence": "1. Automatic Data Labeling Framework: The paper introduces a method to detect key arguments and trigger words using Freebase and FrameNet, which are then used to automatically label events in text.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999974370002747,
+                    "sentence": "2. Integration of World and Linguistic Knowledge: The authors employ Freebase to identify key arguments and FrameNet to filter and expand trigger words, improving the quality of the labeled data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999997615814209,
+                    "sentence": "3. Experimental Validation: The authors demonstrate that the automatically labeled data achieves comparable quality to human-annotated data and significantly improves the performance of event extraction models when combined with existing datasets.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999985694885254,
+                    "sentence": "Strengths",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "1. Novelty: The paper is the first to propose a systematic method for automatically labeling large-scale EE data using a combination of world and linguistic knowledge.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999995768070221,
+                    "sentence": "This is a significant step forward in addressing the scalability issues of supervised EE.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980926513672,
+                    "sentence": "2. Practical Impact: The proposed method generates a large-scale labeled dataset (72,611 sentences) that is freely available for further research, making it a valuable resource for the community.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999963641166687,
+                    "sentence": "3. Experimental Rigor: The paper provides comprehensive evaluations, including manual and automatic assessments, to validate the quality of the labeled data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999971389770508,
+                    "sentence": "The use of multiple baselines and ablation studies (e.g., impact of Key Rate and FrameNet) strengthens the reliability of the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "4. Performance Gains: The integration of automatically labeled data with ACE datasets leads to noticeable improvements in event extraction performance, particularly in argument identification and role classification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999999463558197,
+                    "sentence": "Weaknesses",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999987483024597,
+                    "sentence": "1. Limited Scope of Event Types: While the method is demonstrated on 21 event types, the paper does not explore how well the approach generalizes to a broader range of event types or domains.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999980330467224,
+                    "sentence": "2. Trigger Word Detection Challenges: The reliance on verbs as primary triggers may miss certain event types where nominal or adjectival triggers play a significant role.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999967813491821,
+                    "sentence": "Although FrameNet is used to expand triggers, its coverage is limited.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9888360500335693,
+                    "sentence": "3. Noise in Automatically Labeled Data: Despite achieving high precision (88.9% for triggers and 85.4% for arguments), the method inherently introduces noise due to the distant supervision paradigm.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9719719886779785,
+                    "sentence": "The paper could benefit from a more detailed analysis of the types of errors introduced.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9793468117713928,
+                    "sentence": "4. Reproducibility: While the labeled dataset is made available, the paper does not provide sufficient implementation details (e.g., hyperparameters for DMCNN-MIL) to fully reproduce the results.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9919332265853882,
+                    "sentence": "Questions to Authors",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9988220930099487,
+                    "sentence": "1. How does the proposed method handle event types that rely heavily on contextual or implicit triggers, which may not be explicitly present in the text?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987215399742126,
+                    "sentence": "2. Have you considered extending the approach to non-English datasets or multilingual scenarios?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989734888076782,
+                    "sentence": "If not, what challenges do you foresee?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975273013114929,
+                    "sentence": "3. Can the proposed method be adapted to low-resource domains where knowledge bases like Freebase may have limited coverage?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9987013936042786,
+                    "sentence": "Overall Assessment",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9942582249641418,
+                    "sentence": "This paper makes a significant contribution to the field of Event Extraction by addressing the scalability challenges of supervised methods through automatic data labeling.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.996042788028717,
+                    "sentence": "The integration of Freebase and FrameNet is innovative and well-motivated, and the experimental results convincingly demonstrate the utility of the proposed approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9970157146453857,
+                    "sentence": "However, the paper could be strengthened by addressing the generalizability of the method to other event types and languages, as well as providing more implementation details for reproducibility.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9976120591163635,
+                    "sentence": "Overall, this is a strong submission with practical implications for the field.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9884551763534546,
+                    "sentence": "Recommendation: Accept with minor revisions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 1,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 19,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 4,
+                    "completely_generated_prob": 0.8708627247549962
+                },
+                {
+                    "start_sentence_index": 32,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                }
+            ],
+            "completely_generated_prob": 0.992329959936083,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.992329959936083,
+                "mixed": 0.007670040063917
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.992329959936083,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.992329959936083,
+                    "human": 0,
+                    "mixed": 0.007670040063917
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "Review of the Paper\nSummary and Contributions\nThis paper proposes a novel approach to automatically label training data for large-scale Event Extraction (EE) by leveraging world knowledge (Freebase) and linguistic knowledge (FrameNet). The authors address the limitations of supervised EE methods, such as the high cost of human annotation and low event type coverage, by introducing a Soft Distant Supervision (SDS) framework. Key contributions of the paper include: \n1. Automatic Data Labeling Framework: The paper introduces a method to detect key arguments and trigger words using Freebase and FrameNet, which are then used to automatically label events in text. \n2. Integration of World and Linguistic Knowledge: The authors employ Freebase to identify key arguments and FrameNet to filter and expand trigger words, improving the quality of the labeled data. \n3. Experimental Validation: The authors demonstrate that the automatically labeled data achieves comparable quality to human-annotated data and significantly improves the performance of event extraction models when combined with existing datasets.\nStrengths\n1. Novelty: The paper is the first to propose a systematic method for automatically labeling large-scale EE data using a combination of world and linguistic knowledge. This is a significant step forward in addressing the scalability issues of supervised EE. \n2. Practical Impact: The proposed method generates a large-scale labeled dataset (72,611 sentences) that is freely available for further research, making it a valuable resource for the community. \n3. Experimental Rigor: The paper provides comprehensive evaluations, including manual and automatic assessments, to validate the quality of the labeled data. The use of multiple baselines and ablation studies (e.g., impact of Key Rate and FrameNet) strengthens the reliability of the results. \n4. Performance Gains: The integration of automatically labeled data with ACE datasets leads to noticeable improvements in event extraction performance, particularly in argument identification and role classification.\nWeaknesses\n1. Limited Scope of Event Types: While the method is demonstrated on 21 event types, the paper does not explore how well the approach generalizes to a broader range of event types or domains. \n2. Trigger Word Detection Challenges: The reliance on verbs as primary triggers may miss certain event types where nominal or adjectival triggers play a significant role. Although FrameNet is used to expand triggers, its coverage is limited. \n3. Noise in Automatically Labeled Data: Despite achieving high precision (88.9% for triggers and 85.4% for arguments), the method inherently introduces noise due to the distant supervision paradigm. The paper could benefit from a more detailed analysis of the types of errors introduced. \n4. Reproducibility: While the labeled dataset is made available, the paper does not provide sufficient implementation details (e.g., hyperparameters for DMCNN-MIL) to fully reproduce the results.\nQuestions to Authors\n1. How does the proposed method handle event types that rely heavily on contextual or implicit triggers, which may not be explicitly present in the text? \n2. Have you considered extending the approach to non-English datasets or multilingual scenarios? If not, what challenges do you foresee? \n3. Can the proposed method be adapted to low-resource domains where knowledge bases like Freebase may have limited coverage?\nOverall Assessment\nThis paper makes a significant contribution to the field of Event Extraction by addressing the scalability challenges of supervised methods through automatic data labeling. The integration of Freebase and FrameNet is innovative and well-motivated, and the experimental results convincingly demonstrate the utility of the proposed approach. However, the paper could be strengthened by addressing the generalizability of the method to other event types and languages, as well as providing more implementation details for reproducibility. Overall, this is a strong submission with practical implications for the field. \nRecommendation: Accept with minor revisions."
+        }
+    ]
+}

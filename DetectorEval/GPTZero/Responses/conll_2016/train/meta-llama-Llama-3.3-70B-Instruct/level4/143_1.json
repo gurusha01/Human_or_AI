@@ -1,0 +1,337 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "0c736b4e-1ad5-4295-806d-950d47ddafb0",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999955415725708,
+                    "sentence": "This manuscript presents a comprehensive overview of four distinct methods for acquiring multilingual word embeddings, alongside a modified QVEC metric designed to assess the effectiveness of these embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999659657478333,
+                    "sentence": "The embedding techniques outlined are as follows:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999195337295532,
+                    "sentence": "(1) multiCluster: This approach utilizes a dictionary to assign words to multilingual clusters, from which cluster embeddings are derived to serve as representations for words within each cluster.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999099373817444,
+                    "sentence": "(2) multiCCA: Building upon the work of Faruqui and Dyer (2014), this method extends bilingual word embedding to the multilingual domain by leveraging English embeddings as an anchor space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998427033424377,
+                    "sentence": "Bilingual dictionaries are then employed to project monolingual embeddings from other languages onto this anchor space.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998758435249329,
+                    "sentence": "(3) multiSkip: This technique expands upon the method presented by Luong et al.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998730421066284,
+                    "sentence": "(2015b) for embedding words using source and target context via alignment, adapting it to the multilingual case by incorporating components from all available parallel corpora into the objective function.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9998688101768494,
+                    "sentence": "(4) Translation invariance: This approach involves a low-rank decomposition of the word PMI matrix, incorporating an objective that includes bilingual alignment frequency components.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997969269752502,
+                    "sentence": "However, its applicability might be limited to bilingual embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997913241386414,
+                    "sentence": "The evaluation methodology utilizes Canonical Correlation Analysis (CCA) to maximize the correlation between word embeddings and potentially hand-crafted linguistic data.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997965097427368,
+                    "sentence": "Basis vectors are obtained for the aligned dimensions, yielding a score that remains invariant under rotation and linear transformations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9997246265411377,
+                    "sentence": "This method is also extended to facilitate multilingual evaluations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9996676445007324,
+                    "sentence": "Overall, the paper is well-structured and clearly conveys the research.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995580315589905,
+                    "sentence": "However, several key concerns arise:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9995694756507874,
+                    "sentence": "(1) The novelty of the translation invariance embedding approach, particularly in relation to the work of Gardner et al., needs clarification.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9975311756134033,
+                    "sentence": "If the contribution lies in its extension to multilingual embeddings, a brief explanation of its originality would be beneficial.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9955906867980957,
+                    "sentence": "(2) The use of super-sense annotations across multiple languages poses a challenge due to the potentially small intersection of features.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9936011433601379,
+                    "sentence": "Beyond the mention in footnote 9, the authors should elaborate on how they intend to address this issue.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.992388129234314,
+                    "sentence": "(3) The impact of coverage on the scores presented in table 2 warrants further investigation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9857237935066223,
+                    "sentence": "For instance, the significant difference in coverage between multi-cluster and multiCCA for dependency parsing, despite similar scores, raises questions.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9914467334747314,
+                    "sentence": "(4) The results in table 3 lack consistency, with multilingual embedding techniques often not performing optimally according to intrinsic metrics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8619505763053894,
+                    "sentence": "Given the primary goal of creating embeddings that excel in word translation metrics, the superior performance of the invariance approach is noteworthy.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8376629948616028,
+                    "sentence": "Additionally, the multi-cluster approach's success in extrinsic metrics, despite discarding inter-cluster semantic information, is surprising.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.6062545776367188,
+                    "sentence": "Further inquiries for the authors include:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.30620625615119934,
+                    "sentence": "(1) What performance loss occurs when fixing word embeddings in the dependency parsing task, and what gain is achieved by using these embeddings as alternatives to random embeddings in the LSTM stack parser?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.3859241306781769,
+                    "sentence": "(2) Does table 1 represent an average across the 17 embeddings described in section 5.1?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.21868930757045746,
+                    "sentence": "(3) What advantages does the multi-Skip approach offer over learning bilingual embeddings and then applying multi-CCA to learn projections across distinct spaces?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.23842504620552063,
+                    "sentence": "(4) Given the potential limitations of dictionary extraction from parallel corpora or Google Translate, was the use of real multilingual dictionaries explored, and if so, what were the findings?",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 7,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.850090677245877
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                }
+            ],
+            "completely_generated_prob": 0.9923625107281651,
+            "class_probabilities": {
+                "human": 0,
+                "ai": 0.9923625107281651,
+                "mixed": 0.007637489271834829
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9923625107281651,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9923625107281651,
+                    "human": 0,
+                    "mixed": 0.007637489271834829
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "This manuscript presents a comprehensive overview of four distinct methods for acquiring multilingual word embeddings, alongside a modified QVEC metric designed to assess the effectiveness of these embeddings. The embedding techniques outlined are as follows:\n(1) multiCluster: This approach utilizes a dictionary to assign words to multilingual clusters, from which cluster embeddings are derived to serve as representations for words within each cluster.\n(2) multiCCA: Building upon the work of Faruqui and Dyer (2014), this method extends bilingual word embedding to the multilingual domain by leveraging English embeddings as an anchor space. Bilingual dictionaries are then employed to project monolingual embeddings from other languages onto this anchor space.\n(3) multiSkip: This technique expands upon the method presented by Luong et al. (2015b) for embedding words using source and target context via alignment, adapting it to the multilingual case by incorporating components from all available parallel corpora into the objective function.\n(4) Translation invariance: This approach involves a low-rank decomposition of the word PMI matrix, incorporating an objective that includes bilingual alignment frequency components. However, its applicability might be limited to bilingual embeddings.\nThe evaluation methodology utilizes Canonical Correlation Analysis (CCA) to maximize the correlation between word embeddings and potentially hand-crafted linguistic data. Basis vectors are obtained for the aligned dimensions, yielding a score that remains invariant under rotation and linear transformations. This method is also extended to facilitate multilingual evaluations.\nOverall, the paper is well-structured and clearly conveys the research. However, several key concerns arise:\n(1) The novelty of the translation invariance embedding approach, particularly in relation to the work of Gardner et al., needs clarification. If the contribution lies in its extension to multilingual embeddings, a brief explanation of its originality would be beneficial.\n(2) The use of super-sense annotations across multiple languages poses a challenge due to the potentially small intersection of features. Beyond the mention in footnote 9, the authors should elaborate on how they intend to address this issue.\n(3) The impact of coverage on the scores presented in table 2 warrants further investigation. For instance, the significant difference in coverage between multi-cluster and multiCCA for dependency parsing, despite similar scores, raises questions.\n(4) The results in table 3 lack consistency, with multilingual embedding techniques often not performing optimally according to intrinsic metrics. Given the primary goal of creating embeddings that excel in word translation metrics, the superior performance of the invariance approach is noteworthy. Additionally, the multi-cluster approach's success in extrinsic metrics, despite discarding inter-cluster semantic information, is surprising.\nFurther inquiries for the authors include:\n(1) What performance loss occurs when fixing word embeddings in the dependency parsing task, and what gain is achieved by using these embeddings as alternatives to random embeddings in the LSTM stack parser?\n(2) Does table 1 represent an average across the 17 embeddings described in section 5.1?\n(3) What advantages does the multi-Skip approach offer over learning bilingual embeddings and then applying multi-CCA to learn projections across distinct spaces?\n(4) Given the potential limitations of dictionary extraction from parallel corpora or Google Translate, was the use of real multilingual dictionaries explored, and if so, what were the findings?"
+        }
+    ]
+}

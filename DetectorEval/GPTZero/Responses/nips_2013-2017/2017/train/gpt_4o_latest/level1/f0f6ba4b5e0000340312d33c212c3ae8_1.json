@@ -1,0 +1,403 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "11b192c6-6bb2-42ed-92b6-14e3cb30d641",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.999962329864502,
+                    "sentence": "The paper introduces hash embeddings, a novel and efficient method for representing words as continuous vectors, which combines the strengths of standard word embeddings and embeddings derived via the hashing trick.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999185800552368,
+                    "sentence": "The authors propose a mechanism where each token is represented by multiple embedding vectors (selected via hashing) and a weight vector, with the final representation being the weighted sum of these vectors.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999681711196899,
+                    "sentence": "This approach addresses key challenges in handling large vocabularies, such as parameter explosion and the need for pre-defined dictionaries, while maintaining or improving performance across various tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999722242355347,
+                    "sentence": "The authors demonstrate that hash embeddings reduce the number of parameters by orders of magnitude compared to standard embeddings, making them particularly suitable for tasks with massive vocabularies, such as online learning.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999648332595825,
+                    "sentence": "Experimental results across seven text classification datasets show that hash embeddings achieve comparable or superior performance to standard embeddings, even with significantly fewer parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999798536300659,
+                    "sentence": "Strengths:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999752044677734,
+                    "sentence": "1. Technical Soundness: The paper is technically rigorous, with clear mathematical formulations and theoretical justifications for the proposed method.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999830722808838,
+                    "sentence": "The authors provide a detailed analysis of hash collisions and demonstrate how their approach mitigates this issue using multiple hash functions and importance parameters.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999909400939941,
+                    "sentence": "2. Efficiency and Scalability: The reduction in parameters (e.g., 5x fewer in some cases) without sacrificing performance is a significant contribution, particularly for applications with large vocabularies or resource constraints.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999817609786987,
+                    "sentence": "3. Empirical Validation: The experiments are comprehensive, covering multiple datasets and configurations (with and without dictionaries).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999737739562988,
+                    "sentence": "The results consistently support the claims of the paper, showing that hash embeddings are competitive with or outperform standard embeddings.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999733567237854,
+                    "sentence": "4. Novelty: The method is a clear extension of existing techniques like feature hashing and standard embeddings, offering a novel hybrid approach.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999906420707703,
+                    "sentence": "The ability to handle dynamic vocabularies without pre-training or pruning is a notable advancement.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999823570251465,
+                    "sentence": "5. Practical Implications: The method's applicability to online learning and its potential for regularization (via parameter constraints) make it highly relevant for real-world scenarios.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999955296516418,
+                    "sentence": "Weaknesses:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999871253967285,
+                    "sentence": "1. Clarity: While the paper is thorough, some sections (e.g., the mathematical notation in Section 3) are dense and could benefit from additional explanation or visual aids to improve accessibility for a broader audience.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.999985933303833,
+                    "sentence": "2. Limited Scope of Comparisons: The experiments primarily compare hash embeddings to standard embeddings and the hashing trick.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9999858736991882,
+                    "sentence": "A comparison with more recent embedding techniques (e.g., subword-based methods like FastText) would strengthen the evaluation.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9994729161262512,
+                    "sentence": "3. Ensemble Complexity: The ensemble approach, while effective, introduces additional complexity.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.99949711561203,
+                    "sentence": "The trade-off between simplicity and performance could be discussed more explicitly.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9989420771598816,
+                    "sentence": "4. Generalization: The focus is on text classification tasks.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9980199337005615,
+                    "sentence": "It would be valuable to explore how hash embeddings perform in other NLP tasks (e.g., machine translation or question answering) to demonstrate broader applicability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9554403424263,
+                    "sentence": "Pro and Con Arguments for Acceptance:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9849315285682678,
+                    "sentence": "Pro:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9863522052764893,
+                    "sentence": "- The method is novel, efficient, and addresses a critical problem in NLP (handling large vocabularies).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9958863854408264,
+                    "sentence": "- Theoretical and empirical results are robust and well-documented.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9929625988006592,
+                    "sentence": "- The paper has practical value for researchers and practitioners working with resource-constrained systems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9297146797180176,
+                    "sentence": "Con:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9618878364562988,
+                    "sentence": "- The clarity of some sections could be improved.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8980957865715027,
+                    "sentence": "- The scope of experimental comparisons is somewhat narrow, leaving out newer embedding techniques.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9737899303436279,
+                    "sentence": "Recommendation:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.9722722768783569,
+                    "sentence": "I recommend acceptance of this paper.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.8843448162078857,
+                    "sentence": "It makes a meaningful contribution to the field by extending the state of the art in word embeddings, particularly for large-scale and dynamic vocabulary problems.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                },
+                {
+                    "generated_prob": 0.7177109718322754,
+                    "sentence": "While there are minor areas for improvement, the strengths of the paper far outweigh its weaknesses.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": true
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 5,
+                    "completely_generated_prob": 0.8871651474786718
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 13,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 15,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 16,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.8254776901813464
+                },
+                {
+                    "start_sentence_index": 22,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 24,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 26,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 27,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 28,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 29,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 30,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.8181818033057853
+                },
+                {
+                    "start_sentence_index": 31,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.45887534985363754
+                }
+            ],
+            "completely_generated_prob": 0.9134272769359614,
+            "class_probabilities": {
+                "human": 0.05427654434380296,
+                "ai": 0.9134272769359614,
+                "mixed": 0.03229617872023577
+            },
+            "average_generated_prob": 1,
+            "predicted_class": "ai",
+            "confidence_score": 0.9134272769359614,
+            "confidence_category": "medium",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.9134272769359614,
+                    "human": 0.05427654434380296,
+                    "mixed": 0.03229617872023577
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {
+                    "predicted_class": "pure_ai",
+                    "result_message": "",
+                    "confidence_score": 0.9999999998,
+                    "confidence_category": "high",
+                    "class_probabilities": {
+                        "pure_ai": 0.9999999999,
+                        "ai_paraphrased": 9.999999997e-11
+                    },
+                    "confidence_scores_raw": {
+                        "identity": {
+                            "pure_ai": 0.9999999998,
+                            "ai_paraphrased": 9.999999997e-11
+                        }
+                    },
+                    "confidence_thresholds_raw": {
+                        "identity": {
+                            "pure_ai": {
+                                "reject": 0.65,
+                                "low": 0.75,
+                                "medium": 0.92
+                            },
+                            "ai_paraphrased": {
+                                "reject": 0.85,
+                                "low": 0.9,
+                                "medium": 0.95
+                            }
+                        }
+                    }
+                },
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is moderately confident that the text is written by AI.",
+            "document_classification": "AI_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper introduces hash embeddings, a novel and efficient method for representing words as continuous vectors, which combines the strengths of standard word embeddings and embeddings derived via the hashing trick. The authors propose a mechanism where each token is represented by multiple embedding vectors (selected via hashing) and a weight vector, with the final representation being the weighted sum of these vectors. This approach addresses key challenges in handling large vocabularies, such as parameter explosion and the need for pre-defined dictionaries, while maintaining or improving performance across various tasks. The authors demonstrate that hash embeddings reduce the number of parameters by orders of magnitude compared to standard embeddings, making them particularly suitable for tasks with massive vocabularies, such as online learning. Experimental results across seven text classification datasets show that hash embeddings achieve comparable or superior performance to standard embeddings, even with significantly fewer parameters.\nStrengths:\n1. Technical Soundness: The paper is technically rigorous, with clear mathematical formulations and theoretical justifications for the proposed method. The authors provide a detailed analysis of hash collisions and demonstrate how their approach mitigates this issue using multiple hash functions and importance parameters.\n2. Efficiency and Scalability: The reduction in parameters (e.g., 5x fewer in some cases) without sacrificing performance is a significant contribution, particularly for applications with large vocabularies or resource constraints.\n3. Empirical Validation: The experiments are comprehensive, covering multiple datasets and configurations (with and without dictionaries). The results consistently support the claims of the paper, showing that hash embeddings are competitive with or outperform standard embeddings.\n4. Novelty: The method is a clear extension of existing techniques like feature hashing and standard embeddings, offering a novel hybrid approach. The ability to handle dynamic vocabularies without pre-training or pruning is a notable advancement.\n5. Practical Implications: The method's applicability to online learning and its potential for regularization (via parameter constraints) make it highly relevant for real-world scenarios.\nWeaknesses:\n1. Clarity: While the paper is thorough, some sections (e.g., the mathematical notation in Section 3) are dense and could benefit from additional explanation or visual aids to improve accessibility for a broader audience.\n2. Limited Scope of Comparisons: The experiments primarily compare hash embeddings to standard embeddings and the hashing trick. A comparison with more recent embedding techniques (e.g., subword-based methods like FastText) would strengthen the evaluation.\n3. Ensemble Complexity: The ensemble approach, while effective, introduces additional complexity. The trade-off between simplicity and performance could be discussed more explicitly.\n4. Generalization: The focus is on text classification tasks. It would be valuable to explore how hash embeddings perform in other NLP tasks (e.g., machine translation or question answering) to demonstrate broader applicability.\nPro and Con Arguments for Acceptance:\nPro:\n- The method is novel, efficient, and addresses a critical problem in NLP (handling large vocabularies).\n- Theoretical and empirical results are robust and well-documented.\n- The paper has practical value for researchers and practitioners working with resource-constrained systems.\nCon:\n- The clarity of some sections could be improved.\n- The scope of experimental comparisons is somewhat narrow, leaving out newer embedding techniques.\nRecommendation:\nI recommend acceptance of this paper. It makes a meaningful contribution to the field by extending the state of the art in word embeddings, particularly for large-scale and dynamic vocabulary problems. While there are minor areas for improvement, the strengths of the paper far outweigh its weaknesses."
+        }
+    ]
+}

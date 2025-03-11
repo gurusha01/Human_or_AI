@@ -1,0 +1,307 @@
+{
+    "version": "2025-01-09-base",
+    "scanId": "afdfafd6-ddb1-4230-a162-9db3891af850",
+    "documents": [
+        {
+            "sentences": [
+                {
+                    "generated_prob": 0.1051863431930542,
+                    "sentence": "The paper proposes a novel approach for learning visual servoing based on Q-iteration.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1178685799241066,
+                    "sentence": "The main contributions of the paper are:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07012347877025604,
+                    "sentence": "1. Bilinear dynamics model for predicting next frame (features) based on action and current frame",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.07508612424135208,
+                    "sentence": "2. Formulation of servoing with a Q-function that learns weights for different feature channels",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10752683877944946,
+                    "sentence": "3. An elegant method for optimizing the Bellman error to learn the Q-function",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0906977504491806,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03768057003617287,
+                    "sentence": "+ The paper does a good job of exploring different ways to connect the action (ut) and frame representation (yt) to predict next frame features (y_{t+1}).",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03199684992432594,
+                    "sentence": "They argue in favour of a locally connected bilinear model which strikes the balance between computation and expressive ability.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08821552991867065,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.0554535947740078,
+                    "sentence": "- While, sec.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.03325950726866722,
+                    "sentence": "4 makes good arguments for different choices, I would have liked to see more experimental results comparing the 3 approaches: fully connected, convolutional and locally connected dynamics.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06177125871181488,
+                    "sentence": "Pros:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.023713184520602226,
+                    "sentence": "+ The idea of weighting different channels to capture the importance of obejcts in different channels seems more effective than treating errors across all channels equally.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.01997174322605133,
+                    "sentence": "This is also validated experimentally, where unweighted performance suffers consistently.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.026591800153255463,
+                    "sentence": "+ Solving the Bellman error is a difficult problem in Q-learning approaches.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.02044879086315632,
+                    "sentence": "The current paper presents a solid optimization scheme based on the key-observation that scaling Q-function parameters does not affect the best policy chosen.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.027736717835068703,
+                    "sentence": "This enables a more elegant FQI approach as opposed to typical optimization schemes which (ct + \\gamma minu Q_{t+1}) fixed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.06659543514251709,
+                    "sentence": "Cons:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.050984304398298264,
+                    "sentence": "- However, I would have liked to see the difference between FQI and such an iterative approach which holds the second term in Eq.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08296332508325577,
+                    "sentence": "5 fixed.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08437375724315643,
+                    "sentence": "Experimental results:",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.04855082556605339,
+                    "sentence": "- Overall, I find the experimental results unsatisfying given the small scale and toy simulations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.1463833898305893,
+                    "sentence": "However, the lack of benchmarks in this domain needs to be recognized.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.10059387981891632,
+                    "sentence": "- Also, as pointed out in pre-review section, the idea of modifying the VGG needs to be experimentally validated.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.09140779823064804,
+                    "sentence": "In its current form, it is not clear whether the modified VGG would perform better than the original version.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.05772466957569122,
+                    "sentence": "Overall, the contribution of the paper is solid in terms of technical novelty and problem formulations.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                },
+                {
+                    "generated_prob": 0.08620256185531616,
+                    "sentence": "However, the paper could use stronger experiments as suggested to earlier to bolster its claims.",
+                    "perplexity": 0,
+                    "highlight_sentence_for_ai": false
+                }
+            ],
+            "paragraphs": [
+                {
+                    "start_sentence_index": 0,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 2,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 3,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 4,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 5,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 6,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 8,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 9,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 11,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 12,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 14,
+                    "num_sentences": 3,
+                    "completely_generated_prob": 0.00408719312638748
+                },
+                {
+                    "start_sentence_index": 17,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 18,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 20,
+                    "num_sentences": 1,
+                    "completely_generated_prob": 0.11111110864197542
+                },
+                {
+                    "start_sentence_index": 21,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 23,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                },
+                {
+                    "start_sentence_index": 25,
+                    "num_sentences": 2,
+                    "completely_generated_prob": 0.02318840472169716
+                }
+            ],
+            "completely_generated_prob": 0.039837804045504216,
+            "class_probabilities": {
+                "human": 0.9601216422360306,
+                "ai": 0.039837804045504216,
+                "mixed": 4.055371846526579e-05
+            },
+            "average_generated_prob": 0,
+            "predicted_class": "human",
+            "confidence_score": 0.9601216422360306,
+            "confidence_category": "high",
+            "confidence_scores_raw": {
+                "identity": {
+                    "ai": 0.039837804045504216,
+                    "human": 0.9601216422360306,
+                    "mixed": 4.055371846526579e-05
+                }
+            },
+            "confidence_thresholds_raw": {
+                "identity": {
+                    "ai": {
+                        "reject": 0.65,
+                        "low": 0.75,
+                        "medium": 0.92
+                    },
+                    "human": {
+                        "reject": 0.7,
+                        "low": 0.82,
+                        "medium": 0.92
+                    },
+                    "mixed": {
+                        "reject": 0.7,
+                        "low": 0.8,
+                        "medium": 0.88
+                    }
+                }
+            },
+            "overall_burstiness": 0,
+            "writing_stats": {},
+            "subclass": {
+                "ai": {},
+                "human": {},
+                "mixed": {}
+            },
+            "result_message": "Our detector is highly confident that the text is written entirely by a human.",
+            "document_classification": "HUMAN_ONLY",
+            "version": "2025-01-09-base",
+            "language": "en",
+            "inputText": "The paper proposes a novel approach for learning visual servoing based on Q-iteration. The main contributions of the paper are:\n1. Bilinear dynamics model for predicting next frame (features) based on action and current frame\n2. Formulation of servoing with a Q-function that learns weights for different feature channels\n3. An elegant method for optimizing the Bellman error to learn the Q-function\nPros:\n+ The paper does a good job of exploring different ways to connect the action (ut) and frame representation (yt) to predict next frame features (y_{t+1}). They argue in favour of a locally connected bilinear model which strikes the balance between computation and expressive ability. \nCons:\n- While, sec. 4 makes good arguments for different choices, I would have liked to see more experimental results comparing the 3 approaches: fully connected, convolutional and locally connected dynamics.\nPros: \n+ The idea of weighting different channels to capture the importance of obejcts in different channels seems more effective than treating errors across all channels equally. This is also validated experimentally, where unweighted performance suffers consistently.\n+ Solving the Bellman error is a difficult problem in Q-learning approaches. The current paper presents a solid optimization scheme based on the key-observation that scaling Q-function parameters does not affect the best policy chosen. This enables a more elegant FQI approach as opposed to typical optimization schemes which (ct + \\gamma minu Q_{t+1}) fixed. \nCons:\n- However, I would have liked to see the difference between FQI and such an iterative approach which holds the second term in Eq. 5 fixed.\nExperimental results:\n- Overall, I find the experimental results unsatisfying given the small scale and toy simulations. However, the lack of benchmarks in this domain needs to be recognized.\n- Also, as pointed out in pre-review section, the idea of modifying the VGG needs to be experimentally validated. In its current form, it is not clear whether the modified VGG would perform better than the original version.\nOverall, the contribution of the paper is solid in terms of technical novelty and problem formulations. However, the paper could use stronger experiments as suggested to earlier to bolster its claims."
+        }
+    ]
+}
