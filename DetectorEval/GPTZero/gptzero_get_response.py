@@ -25,7 +25,7 @@ sys.stdout= open("loggings.txt","w")
 url = "https://api.gptzero.me/v2/predict/files"
 headers = {
     "Accept": "application/json",
-    "x-api-key": "b4d94c480a0c413da2d3c0d980925e1a"  # Replace with your actual API key
+    "x-api-key": ""  # Replace with your actual API key
 }                 
 
 data = {
