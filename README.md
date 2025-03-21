@@ -10,7 +10,8 @@ First, install the Python dependencies:
 
     python3 -m venv env
     source env/bin/activate
-    pip install -r requirements.txt
+    pip3 install -r requirements.txt
+    python score_text.py --text "The quick brown fox jumps over the lazy dog."
 
 Second, run any of the scripts (or just individual commands) in `paper_scripts/`.
 
