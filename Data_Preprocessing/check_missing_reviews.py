@@ -8,15 +8,6 @@ sys.path.append(ai_generation_path)
 
 from utils import *
 
-def remove_markdown(text):
-    text = re.sub(r"#+\s*", "", text) # Remove headings (###, ##, #)
-    text = re.sub(r"\*\*(.*?)\*\*", r"\1", text)  # Remove **bold**
-    text = re.sub(r"\*(.*?)\*", r"\1", text)  # Remove *italic*
-    text = re.sub(r"_(.*?)_", r"\1", text)  # Remove _italic_
-    text = re.sub(r"\n{2,}", "\n", text)  # Reduce multiple newlines to 1
-    text = text.strip() 
-    return text
-
 
 def check_reviews():
 
